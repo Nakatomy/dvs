@@ -1,0 +1,43 @@
+/*** ball beat ***/
+/* HTML: <div class="loader-ball-beat"><div></div><div></div><div></div></div> */
+
+@include css3-keyframes(loader-ball-beat) {
+	50% {
+		@include css3-prefix(transform, scale(0.75));
+		@include css3-opacity(0.7);
+	}
+	100% {
+		@include css3-prefix(transform, scale(1));
+		@include css3-opacity(1);
+	}
+}
+
+.loader-ball-beat {
+
+	> div {
+		@include css3-animation(loader-ball-beat ( $project-loader-item-speed / 2 ) 0s infinite linear);
+		@include css3-border-radius(100%);
+		@include css3-prefix(animation-fill-mode, both);
+		display: inline-block;
+		height: $project-loader-item-size;
+		margin: $project-loader-item-distance;
+		vertical-align: middle;
+		width: $project-loader-item-size;
+
+		&:nth-child(2n-1) {
+			@include css3-prefix(animation-delay, -0.35s);
+		}
+
+		&:nth-child(1) {
+			background-color: $project-loader-item-1-color;
+		}
+
+		&:nth-child(2) {
+			background-color: $project-loader-item-2-color;
+		}
+
+		&:nth-child(3) {
+			background-color: $project-loader-item-3-color;
+		}
+	}
+}

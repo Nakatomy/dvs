@@ -1,0 +1,99 @@
+/*** Project loader ***/
+
+/* loader START */
+
+// basics
+.loader {
+
+	// layers
+	&:before{
+		@include css3-prefix(transform, translate3d(0, 0, 100px));
+		background-color: $project-loader-layer-color;
+		bottom: 0;
+		content: '';
+		display: block;
+		position: fixed;
+		top: 0;
+		z-index: 100;
+        left: 0;
+        width: 100vw;
+
+		// loaded
+		.loaded & {
+			@include css3-prefix(transition, all $project-loader-layer-speed $project-loader-layer-delay ease-out);
+            @include css3-opacity(0);
+			visibility: hidden;
+		}
+
+		// if no js
+		.no-js & {
+			display: none;
+		}
+	}
+
+	// animations
+	[class^="loader-"],
+	[class*=" loader-"] {
+		@include css3-opacity(1);
+		@include css3-prefix(transform, translate3d(0, 0, 101px));
+		display: block;
+		left: 50%;
+		height: $project-loader-item-size * 5;
+		line-height: $project-loader-item-size * 5;
+		margin-left: -( $project-loader-item-size * 10 ) / 2;
+		margin-top: -( $project-loader-item-size * 5 ) / 2;
+		position: fixed;
+		text-align: center;
+		top: 50%;
+		vertical-align: top;
+		width: $project-loader-item-size * 10;
+		z-index: 101;
+
+		// loaded
+		.loaded & {
+			@include css3-prefix(transition, all $project-loader-layer-speed 0s ease-out);
+            @include css3-transform(scale(.9));
+			@include css3-opacity(0);
+			visibility: hidden;
+		}
+
+		// if no js
+		.no-js & {
+			display: none;
+		}
+    }
+}
+
+// Components
+/* based on https://connoratherton.com/loadersloaders */
+// @import "components/loader/logo";                            // HTML: <div class="loader-logo"><div></div><div></div></div>
+//@import "components/loader/ball-pulse";                    // HTML: <div class="loader-ball-pulse"><div></div><div></div><div></div></div>
+@import "components/loader/ball-pulse-sync";               // HTML: <div class="loader-ball-pulse-sync"><div></div><div></div><div></div></div>
+//@import "components/loader/ball-scale";                    // HTML: <div class="loader-ball-scale"><div></div></div>
+//@import "components/loader/ball-rotate";                   // HTML: <div class="loader-ball-rotate"><div></div></div>
+//@import "components/loader/ball-clip-rotate";              // HTML: <div class="loader-ball-clip-rotate"><div></div></div>
+//@import "components/loader/ball-clip-rotate-pulse";        // HTML: <div class="loader-ball-clip-rotate-pulse"><div></div><div></div></div>
+//@import "components/loader/ball-clip-rotate-multiple";     // HTML: <div class="loader-ball-clip-rotate-multiple"><div></div><div></div></div>
+//@import "components/loader/ball-clip-rotate-multiple2";    // HTML: <div class="loader-ball-clip-rotate-multiple2"><div></div><div></div><div></div></div>
+//@import "components/loader/ball-scale-ripple";             // HTML: <div class="loader-ball-scale-ripple"><div></div></div>
+//@import "components/loader/ball-scale-ripple-multiple";    // HTML: <div class="loader-ball-scale-ripple-multiple"><div></div><div></div><div></div></div>
+//@import "components/loader/ball-beat";                     // HTML: <div class="loader-ball-beat"><div></div><div></div><div></div></div>
+//@import "components/loader/ball-scale-multiple";           // HTML: <div class="loader-ball-scale-multiple"><div></div><div></div><div></div></div>
+//@import "components/loader/ball-triangle-path";            // HTML: <div class="loader-ball-triangle-path"><div></div><div></div><div></div></div>
+//@import "components/loader/ball-pulse-rise";               // HTML: <div class="loader-ball-pulse-rise"><div></div><div></div><div></div><div></div><div></div></div>
+//@import "components/loader/ball-grid-beat";                // HTML: <div class="loader-ball-grid-beat"><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div>
+//@import "components/loader/ball-grid-pulse";               // HTML: <div class="loader-ball-grid-pulse"><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div>
+//@import "components/loader/ball-spin-fade-loader";         // HTML: <div class="loader-ball-spin-fade-loader"><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div>
+//@import "components/loader/ball-spin-loader";              // HTML: <div class="loader-ball-spin-loader"><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div>
+//@import "components/loader/ball-zig-zag";                  // HTML: <div class="loader-ball-zig-zag"><div><div></div><div></div></div></div>
+//@import "components/loader/ball-zig-zag-deflect";          // HTML: <div class="loader-ball-zig-zag-deflect"><div><div></div><div></div></div></div>
+//@import "components/loader/line-scale";                    // HTML: <div class="loader-line-scale"><div></div><div></div><div></div><div></div><div></div></div>
+//@import "components/loader/line-scale-party";              // HTML: <div class="loader-line-scale-party"><div></div><div></div><div></div><div></div></div>
+//@import "components/loader/line-scale-pulse-out";          // HTML: <div class="loader-line-scale-pulse-out"><div></div><div></div><div></div><div></div><div></div></div>
+//@import "components/loader/line-scale-pulse-out-rapid";    // HTML: <div class="loader-line-scale-pulse-out-rapid"><div></div><div></div><div></div><div></div><div></div></div>
+//@import "components/loader/line-spin-fade";                // HTML: <div class="loader-line-spin-fade"><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div>
+//@import "components/loader/triangle-skew-spin";            // HTML: <div class="loader-triangle-skew-spin"><div></div></div>
+//@import "components/loader/square-spin";                   // HTML: <div class="loader-square-spin"><div></div></div>
+//@import "components/loader/pacman";                        // HTML: <div class="loader-pacman"><div></div><div></div><div></div><div></div></div>
+//@import "components/loader/cube-transition";               // HTML: <div class="loader-cube-transition"><div><div></div><div></div></div></div>
+//@import "components/loader/semi-circle-spin";              // HTML: <div class="loader-semi-circle-spin"><div><div></div></div></div>

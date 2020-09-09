@@ -1,0 +1,12 @@
+@import 'project_defaults';
+
+.ccm-search-block-form{
+
+    .form-control{
+
+        // mobile
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 15px;
+        }
+    }
+}

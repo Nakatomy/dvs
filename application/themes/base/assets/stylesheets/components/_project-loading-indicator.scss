@@ -1,0 +1,45 @@
+/*** Project modal ***/
+
+/* loading indicator START */
+
+.loading-indicator{
+    @include css3-transition(all, .3s, ease-in-out);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color-white, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition-delay: .3s;
+
+    &-wrapper{
+        position: relative;
+    }
+
+    .fa{
+        display: inline-block;
+        font-size: 50px;
+        color: $color-black;
+
+        &:before{
+            @include css3-transition(all, .3s, ease-in-out);
+            display: inline-block;
+            transform: scale(.7);
+        }
+    }
+
+    &.loading {
+        transition-delay: 0s;
+        opacity: 1;
+
+        .fa:before{
+            transform: scale(1);
+        }
+    }
+}
+
+/* loading indicator START */

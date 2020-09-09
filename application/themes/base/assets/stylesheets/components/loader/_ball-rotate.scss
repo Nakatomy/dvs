@@ -1,0 +1,58 @@
+/*** ball rotate ***/
+/* HTML: <div class="loader-ball-rotate"><div></div></div> */
+
+@include css3-keyframes(loader-ball-rotate) {
+	0% {
+		@include css3-prefix(transform, rotate(0deg) scale(1));
+	}
+	50% {
+		@include css3-prefix(transform, rotate(180deg) scale(0.5));
+	}
+	100% {
+		@include css3-prefix(transform, rotate(360deg) scale(1));
+	}
+}
+
+.loader-ball-rotate {
+	position: relative;
+
+	> div {
+		@include css3-border-radius(100%);
+		@include css3-prefix(animation-fill-mode, both);
+		height: $project-loader-item-size;
+		margin: $project-loader-item-distance;
+		left: 50%;
+		margin-left: -( $project-loader-item-size / 2 );
+		margin-top: -( $project-loader-item-size / 2 );
+		position: absolute;
+		top: 50%;
+		width: $project-loader-item-size;
+
+		&:first-child {
+			@include css3-animation(loader-ball-rotate $project-loader-item-speed 0s cubic-bezier(.7, -.13, .22, .86) infinite);
+			background-color: $project-loader-item-1-color;
+		}
+
+		&:before,
+		&:after {
+			@include css3-border-radius(100%);
+			@include css3-opacity(0.8);
+			content: '';
+			height: $project-loader-item-size;
+			margin: 0;
+			position: absolute;
+			width: $project-loader-item-size;
+		}
+			&:before {
+				background-color: $project-loader-item-2-color;
+				left: -($project-loader-item-size * 1.666666666666667);
+				top: 0px;
+			}
+
+			&:after {
+				background-color: $project-loader-item-3-color;
+				left: ($project-loader-item-size * 1.666666666666667);
+				top: 0px;
+			}
+	}
+}

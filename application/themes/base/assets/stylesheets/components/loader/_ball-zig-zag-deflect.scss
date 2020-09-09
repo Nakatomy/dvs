@@ -1,0 +1,78 @@
+/*** ball zig zag deflect ***/
+/* HTML: <div class="loader-ball-zig-zag-deflect"><div><div></div><div></div></div></div> */
+
+@include css3-keyframes(loader-ball-zig-deflect) {
+	17% {
+		@include css3-prefix(transform, translate(-( $project-loader-item-size * 0.8 ), -( $project-loader-item-size * 1.6 )));
+	}
+	34% {
+		@include css3-prefix(transform, translate(( $project-loader-item-size * 0.8 ), -( $project-loader-item-size * 1.6 )));
+	}
+	50% {
+		@include css3-prefix(transform, translate(0, 0));
+	}
+	67% {
+		@include css3-prefix(transform, translate(( $project-loader-item-size * 0.8 ), -( $project-loader-item-size * 1.6 )));
+	}
+	84% {
+		@include css3-prefix(transform, translate(-( $project-loader-item-size * 0.8 ), -( $project-loader-item-size * 1.6 )));
+	}
+	100% {
+		@include css3-prefix(transform, translate(0, 0));
+	}
+}
+
+@include css3-keyframes(loader-ball-zag-deflect) {
+	17% {
+		@include css3-prefix(transform, translate(( $project-loader-item-size * 0.8 ), ( $project-loader-item-size * 1.6 )));
+	}
+	34% {
+		@include css3-prefix(transform, translate(-( $project-loader-item-size * 0.8 ), ( $project-loader-item-size * 1.6 )));
+	}
+	50% {
+		@include css3-prefix(transform, translate(0, 0));
+	}
+	67% {
+		@include css3-prefix(transform, translate(-( $project-loader-item-size * 0.8 ), ( $project-loader-item-size * 1.6 )));
+	}
+	84% {
+		@include css3-prefix(transform, translate(( $project-loader-item-size * 0.8 ), ($project-loader-item-size * 1.6 )));
+	}
+	100% {
+		@include css3-prefix(transform, translate(0, 0));
+	}
+}
+
+.loader-ball-zig-zag-deflect {
+
+	> div {
+		height: 0;
+		left: 50%;
+		position: absolute;
+		top: 50%;
+		text-align: center;
+		width: 0;
+
+		> div {
+			@include css3-border-radius(100%);
+			@include css3-prefix(animation-fill-mode, both);
+			height: $project-loader-item-size;
+			left: 0;
+			margin-left: -( $project-loader-item-size / 2 );
+			margin-top: -( $project-loader-item-size / 2 );
+			position: absolute;
+			top: 0;
+			width: $project-loader-item-size;
+
+			&:first-child {
+				@include css3-animation(loader-ball-zig-deflect ( $project-loader-item-speed * 2 ) 0s infinite linear);
+				background-color: $project-loader-item-1-color;
+			}
+
+			&:last-child {
+				@include css3-animation(loader-ball-zag-deflect ( $project-loader-item-speed * 2 ) 0s infinite linear);
+				background-color: $project-loader-item-2-color;
+			}
+		}
+	}
+}

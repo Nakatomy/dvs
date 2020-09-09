@@ -1,0 +1,32 @@
+/*** triangle skew spin ***/
+/* HTML: <div class="loader-triangle-skew-spin"><div></div></div> */
+
+@include css3-keyframes(loader-triangle-skew-spin) {
+	25% {
+		@include css3-prefix(transform, perspective(100px) rotateX(180deg) rotateY(0));
+	}
+	50% {
+		@include css3-prefix(transform, perspective(100px) rotateX(180deg) rotateY(180deg));
+	}
+	75% {
+		@include css3-prefix(transform, perspective(100px) rotateX(0) rotateY(180deg));
+	}
+	100% {
+		@include css3-prefix(transform, perspective(100px) rotateX(0) rotateY(0));
+	}
+}
+
+.loader-triangle-skew-spin {
+
+	> div {
+		@include css3-animation(loader-triangle-skew-spin ( $project-loader-item-speed * 2 ) 0s cubic-bezier(.09, .57, .49, .9) infinite);
+		@include css3-prefix(animation-fill-mode, both);
+		border-bottom: ( $project-loader-item-size * 1.5 ) solid $project-loader-item-1-color;
+		border-left: ( $project-loader-item-size * 1.5 ) solid transparent;
+		border-right: ( $project-loader-item-size * 1.5 ) solid transparent;
+		display: inline-block;
+		height: 0;
+		vertical-align: middle;
+		width: 0;
+	}
+}

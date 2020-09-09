@@ -1,0 +1,90 @@
+/*** pacman ***/
+/* HTML: <div class="loader-pacman"><div></div><div></div><div></div><div></div></div> */
+
+@include css3-keyframes(loader-rotate-pacman-half-up) {
+	0% {
+		transform: rotate(270deg);
+	}
+	50% {
+		transform: rotate(360deg);
+	}
+	100% {
+		transform: rotate(270deg);
+	}
+}
+
+@include css3-keyframes(loader-rotate-pacman-half-down) {
+	0% {
+		transform: rotate(90deg);
+	}
+	50% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(90deg);
+	}
+}
+
+@include css3-keyframes(loader-pacman-balls) {
+	75% {
+		@include css3-opacity(0.7);
+	}
+	100% {
+		@include css3-prefix(transform, translate( ( $project-loader-item-size * -6.666666666666667 ), ( $project-loader-item-size / -2 )));
+	}
+}
+
+.loader-pacman {
+	position: relative;
+
+	> div {
+		left: 50%;
+		top: 50%;
+
+		// head
+		&:nth-child(1),
+		&:nth-child(2) {
+			@include css3-border-radius( ( $project-loader-item-size * 1.666666666666667 ) );
+			border-style: solid;
+			border-width: ( $project-loader-item-size * 1.666666666666667 );
+			height: 0px;
+			margin-left: -( $project-loader-item-size * 1.666666666666667 ) * 3;
+			margin-top: -( $project-loader-item-size * 1.666666666666667 );
+			position: absolute;
+			width: 0px;
+			z-index: 2;
+		}
+
+		&:nth-child(1) {
+			@include css3-animation(loader-rotate-pacman-half-up ( $project-loader-item-speed * 0.5 ) 0s infinite);
+			border-color: $project-loader-item-1-color transparent $project-loader-item-1-color $project-loader-item-1-color;
+		}
+
+		&:nth-child(2) {
+			@include css3-animation(loader-rotate-pacman-half-down ( $project-loader-item-speed * 0.5 ) 0s infinite);
+			border-color: $project-loader-item-1-color transparent $project-loader-item-1-color $project-loader-item-1-color;
+		}
+
+		// balls
+		&:nth-child(3),
+		&:nth-child(4) {
+			@include css3-border-radius(100%);
+			@include css3-prefix(transform, translate(0, ( $project-loader-item-size / -2 )));
+			height: $project-loader-item-size;
+			margin-left: ( $project-loader-item-size * 1.666666666666667 ) * 2;
+			position: absolute;
+			width: $project-loader-item-size;
+			z-index: 1;
+		}
+
+		&:nth-child(3) {
+			@include css3-animation(loader-pacman-balls $project-loader-item-speed ( $project-loader-item-speed * -0.6 ) infinite linear);
+			background-color: $project-loader-item-2-color;
+		}
+
+		&:nth-child(4) {
+			@include css3-animation(loader-pacman-balls $project-loader-item-speed ( $project-loader-item-speed * -0.1 ) infinite linear);
+			background-color: $project-loader-item-3-color;
+		}
+	}
+}

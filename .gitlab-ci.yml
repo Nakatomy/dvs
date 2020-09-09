@@ -1,0 +1,75 @@
+stages:
+  - build-backend
+  - build-frontend
+  - install
+  - deploy
+cache:
+  key: "$CI_PROJECT_NAME-$CI_COMMIT_REF_NAME"
+  paths:
+    - application/css/dist
+    - application/js/dist
+    - packages/
+    
+build backend:
+  image: gbart:80/php:7.2-cli-latest
+  stage: build-backend
+  script:
+    - make composer-install
+  except:
+    - install
+    
+build frontend:
+  image: gbart:80/node:latest
+  stage: build-frontend
+  script:
+    - npm install
+    - npm run prod
+  dependencies:
+    - build backend
+  except:
+    - install
+    
+deploy site staging:
+  image: gbart:80/server-manager-cli:php7.2
+  stage: deploy
+  script:
+    - server-manager-cli deploy:begin --environment=staging
+    - make server-manager-deploy
+    - server-manager-cli deploy:end
+  dependencies:
+    - build frontend
+    - build backend
+  only:
+    - develop
+
+deploy site production:
+  image: gbart:80/server-manager-cli:php7.2
+  stage: deploy
+  script:
+    - server-manager-cli deploy:begin --environment=production
+    - make server-manager-deploy
+    - server-manager-cli deploy:end
+  dependencies:
+    - build frontend
+    - build backend
+  only:
+    - master
+
+install backend:
+  image: gbart:80/server-manager-cli:php7.2
+  stage: install
+  before_script:
+    - git config --global user.email "developers@gb-art.hu"
+    - git config --global user.name "Server-Manager Install Agent"
+    - git checkout install
+    - git remote set-url origin ssh://git@gitlab.assist01.gbart.h3.hu:53410/$CI_PROJECT_PATH.git
+    - git pull
+
+  script:
+    - server-manager-cli install:begin environment=staging
+    - server-manager-cli install:createConfig
+    - make server-manager-install
+    - server-manager-cli install:push
+    - server-manager-cli install:end
+  only:
+    - install

@@ -1,0 +1,62 @@
+/*** ball pulse rise ***/
+/* HTML: <div class="loader-ball-pulse-rise"><div></div><div></div><div></div><div></div><div></div></div> */
+
+@include css3-keyframes(loader-ball-pulse-rise-even) {
+	0% {
+		@include css3-prefix(transform, scale(1.1));
+	}
+	25% {
+		@include css3-prefix(transform, translateY(-30px));
+	}
+	50% {
+		@include css3-prefix(transform, scale(0.4));
+	}
+	75% {
+		@include css3-prefix(transform, translateY(30px));
+	}
+	100% {
+		@include css3-prefix(transform, translateY(0) scale(1));
+	}
+}
+
+@include css3-keyframes(loader-ball-pulse-rise-odd) {
+	0% {
+		@include css3-prefix(transform, scale(0.4));
+	}
+	25% {
+		@include css3-prefix(transform, translateY(30px));
+	}
+	50% {
+		@include css3-prefix(transform, scale(1.1));
+	}
+	75% {
+		@include css3-prefix(transform, translateY(-30px));
+	}
+	100% {
+		@include css3-prefix(transform, translateY(0) scale(0.75));
+	}
+}
+
+.loader-ball-pulse-rise {
+
+	> div {
+		@include css3-animation($project-loader-item-speed 0s infinite cubic-bezier(.15, .46, .9, .6));
+		@include css3-border-radius(100%);
+		@include css3-prefix(animation-fill-mode, both);
+		display: inline-block;
+		height: $project-loader-item-size;
+		margin: $project-loader-item-distance;
+		vertical-align: middle;
+		width: $project-loader-item-size;
+
+		&:nth-child(2n) {
+			@include css3-prefix(animation-name, loader-ball-pulse-rise-even);
+			background-color: $project-loader-item-1-color;
+		}
+
+		&:nth-child(2n-1) {
+			@include css3-prefix(animation-name, loader-ball-pulse-rise-odd);
+			background-color: $project-loader-item-2-color;
+		}
+	}
+}

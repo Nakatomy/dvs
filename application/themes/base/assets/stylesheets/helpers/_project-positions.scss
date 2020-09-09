@@ -1,0 +1,273 @@
+/*** Project positions ***/
+
+/* positions START */
+
+.relative {
+	position: relative;
+}
+
+.absolute {
+	position: absolute;
+}
+
+.fixed {
+	position: fixed;
+}
+
+	// mobile small
+	@include media-breakpoint-only(xs) {
+
+		.relative-xs-only {
+			position: relative;
+		}
+
+		.absolute-xs-only {
+			position: absolute;
+		}
+
+		.fixed-xs-only {
+			position: fixed;
+		}
+	}
+
+		// mobile small and up
+		@include media-breakpoint-up(xs) {
+
+			.relative-xs-up {
+				position: relative;
+			}
+
+			.absolute-xs-up {
+				position: absolute;
+			}
+
+			.fixed-xs-up {
+				position: fixed;
+			}
+		}
+
+	// mobile large
+	@include media-breakpoint-only(sm) {
+
+		.relative-sm-only {
+			position: relative;
+		}
+
+		.absolute-sm-only {
+			position: absolute;
+		}
+
+		.fixed-sm-only {
+			position: fixed;
+		}
+	}
+
+		// mobile large and up
+		@include media-breakpoint-up(sm) {
+
+			.relative-sm-up {
+				position: relative;
+			}
+
+			.absolute-sm-up {
+				position: absolute;
+			}
+
+			.fixed-sm-up {
+				position: fixed;
+			}
+		}
+
+		// mobile large and down
+		@include media-breakpoint-down(sm) {
+
+			.relative-sm-down {
+				position: relative;
+			}
+
+			.absolute-sm-down {
+				position: absolute;
+			}
+
+			.fixed-sm-down {
+				position: fixed;
+			}
+		}
+
+	// tablet small
+	@include media-breakpoint-only(md) {
+
+		.relative-md-only {
+			position: relative;
+		}
+
+		.absolute-md-only {
+			position: absolute;
+		}
+
+		.fixed-md-only {
+			position: fixed;
+		}
+	}
+
+		// tablet small and up
+		@include media-breakpoint-up(md) {
+
+			.relative-md-up {
+				position: relative;
+			}
+
+			.absolute-md-up {
+				position: absolute;
+			}
+
+			.fixed-md-up {
+				position: fixed;
+			}
+		}
+
+		// tablet small and down
+		@include media-breakpoint-down(md) {
+
+			.relative-md-down {
+				position: relative;
+			}
+
+			.absolute-md-down {
+				position: absolute;
+			}
+
+			.fixed-md-down {
+				position: fixed;
+			}
+		}
+
+	// tablet large
+	@include media-breakpoint-only(lg) {
+
+		.relative-lg-only {
+			position: relative;
+		}
+
+		.absolute-lg-only {
+			position: absolute;
+		}
+
+		.fixed-lg-only {
+			position: fixed;
+		}
+	}
+
+		// tablet large and up
+		@include media-breakpoint-up(lg) {
+
+			.relative-lg-up {
+				position: relative;
+			}
+
+			.absolute-lg-up {
+				position: absolute;
+			}
+
+			.fixed-lg-up {
+				position: fixed;
+			}
+		}
+
+		// tablet large and down
+		@include media-breakpoint-down(lg) {
+
+			.relative-lg-down {
+				position: relative;
+			}
+
+			.absolute-lg-down {
+				position: absolute;
+			}
+
+			.fixed-lg-down {
+				position: fixed;
+			}
+		}
+
+	// laptop
+	@include media-breakpoint-only(xl) {
+
+		.relative-xl-only {
+			position: relative;
+		}
+
+		.absolute-xl-only {
+			position: absolute;
+		}
+
+		.fixed-xl-only {
+			position: fixed;
+		}
+	}
+
+		// laptop and up
+		@include media-breakpoint-up(xl) {
+
+			.relative-xl-up {
+				position: relative;
+			}
+
+			.absolute-xl-up {
+				position: absolute;
+			}
+
+			.fixed-xl-up {
+				position: fixed;
+			}
+		}
+
+		// laptop and down
+		@include media-breakpoint-down(xl) {
+
+			.relative-xl-down {
+				position: relative;
+			}
+
+			.absolute-xl-down {
+				position: absolute;
+			}
+
+			.fixed-xl-down {
+				position: fixed;
+			}
+		}
+
+	// HD
+	@include media-breakpoint-up(hd) {
+
+		.relative-hd-only {
+			position: relative;
+		}
+
+		.absolute-hd-only {
+			position: absolute;
+		}
+
+		.fixed-hd-only {
+			position: fixed;
+		}
+	}
+
+		// HD and down
+		@include media-breakpoint-down(hd) {
+
+			.relative-hd-down {
+				position: relative;
+			}
+
+			.absolute-hd-down {
+				position: absolute;
+			}
+
+			.fixed-hd-down {
+				position: fixed;
+			}
+		}
+
+/* positions END */

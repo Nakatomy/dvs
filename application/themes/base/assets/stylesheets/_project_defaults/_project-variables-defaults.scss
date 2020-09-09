@@ -1,0 +1,240 @@
+// Project variables defaults
+
+// variables START
+
+// ---- setup GRID START
+
+	// these variables are included in '_bootstrap/_custom.sccs'
+	// which is overwrite '_bootstrap/_variables.scss'
+
+	// set this true to disable hovers on mobile devices
+	$enable-hover-media-query:				false;
+
+	// grid breakpoints
+	$grid-breakpoint-xs: 					0;
+	$grid-breakpoint-sm: 					576px;
+	$grid-breakpoint-md: 					768px;
+	$grid-breakpoint-lg: 					992px;
+	$grid-breakpoint-xl: 					1200px;
+	$grid-breakpoint-hd: 					1500px;
+
+	// container max widths
+	$container-max-width-sm: 				540px;
+	$container-max-width-md: 				720px;
+	$container-max-width-lg: 				960px;
+	$container-max-width-xl: 				1140px;
+	$container-max-width-hd: 				1500px; // _bootstrap_custom.sccs
+
+	// grid columns and gutter
+	$default-grid-colums:					12;
+	$default-gutter-width:					30px;
+
+	// default bootstrap z-index
+	$zindex-dropdown:           5 !default;
+	$zindex-sticky:             6 !default;
+	$zindex-fixed:              7 !default;
+	$zindex-modal-backdrop:     8 !default;
+	$zindex-modal:              9 !default;
+	$zindex-popover:            10 !default;
+	$zindex-tooltip:            11 !default;
+
+// ---- setup GRID START
+
+// ---- setup env START
+
+    $theme:                         'base';
+    // $themePath:                     '/application/themes/#{$theme}/assets';
+    $themePath:                     '/packages/base/themes/#{$theme}/assets';
+
+    // enable or disable rem calculations
+    $pxToRem:                       true;
+
+// ---- setup env END
+
+
+// ---- setup DEFAULTS START
+
+// border radius
+$project-default-border-radius:				rem(4px);
+
+// color
+
+	// basic colors
+    $color-black:							#000000;
+    $color-white:							#FFFFFF;
+    $color-red: 							#F23000;
+    $color-light-blue: 						#88B1E9;
+    $color-blue: 							#0065F2;
+    $color-dark-blue: 						#064CAD;
+	$color-green: 							#01B094;
+	$color-light-green: 				    #88E9BF;
+	$color-dark-green: 						#007670;
+	$color-orange: 							#FE9700;
+	$color-gray: 							#A0A0A1;
+	$color-light-gray: 						#F0F0F0;
+    $color-dark-gray: 						#3F3F3F;
+
+    // system colors
+    $color-theme-danger:                    #F23000;
+    $color-theme-success:                   #00F266;
+    $color-theme-info:                      #00C2F2;
+    $color-theme-warning:                   #FF8307;
+
+    $color-theme-primary:                   $color-blue;
+    $color-theme-primary-light:             $color-light-blue;
+    $color-theme-primary-dark:              $color-dark-blue;
+
+    $color-theme-secondary:                 $color-green;
+    $color-theme-secondary-light:           $color-light-green;
+    $color-theme-secondary-dark:            $color-dark-green;
+
+    // additional colors
+    $color-webery:                          #c80000;
+    $color-white-gray:                      $color-light-gray;
+
+	// social colors
+	$color-bandcamp:						#4E9BAC;
+	$color-delicious:						#248CFF;
+	$color-facebook:						#3B5998;
+	$color-ficly:							#B51C2C;
+	$color-flickr:							#FF0084;
+	$color-foursquare:						#0072B1;
+	$color-googleplus:						#DD4B39;
+	$color-github:							#4183C4;
+	$color-instagram:						#517FA4;
+	$color-kickstarter:						#76CC1E;
+	$color-lanyrd:							#152E51;
+	$color-lastfm:							#d51007;
+	$color-linkedin:						#007BB6;
+	$color-photodrop:						#CDB6E3;
+	$color-pinterest:						#CB2027;
+	$color-rdio:							#0088DA;
+	$color-quora:							#A82400;
+	$color-snapchat:						#FFFC00;
+	$color-soundcloud:						#FF6600;
+	$color-tumblr:							#32506D;
+	$color-twitter: 						#00ACED;
+	$color-vimeo:							#AAD450;
+	$color-vine:							#00BF8F;
+	$color-vk:								#45668E;
+	$color-youtube:							#BB0000;
+
+	// default
+	$project-default-color:					$color-black;
+
+// font family
+$project-default-font-family-WEBSAFE-1:		Arial, Helvetica, sans-serif;
+$project-default-font-family-WEBSAFE-2:		"Times New Roman", Times, serif;
+
+$project-default-font-family-1-REGULAR:		'Montserrat-Medium', $project-default-font-family-WEBSAFE-1;
+$project-default-font-family-1-ITALIC:		'Montserrat-MediumItalic', $project-default-font-family-WEBSAFE-1;
+$project-default-font-family-1-BOLD:		'Montserrat-Bold', $project-default-font-family-WEBSAFE-1;
+$project-default-font-family-1-BOLDITALIC:	'Montserrat-BoldItalic', $project-default-font-family-WEBSAFE-1;
+
+$project-default-icon-family:               "Font Awesome 5 Free";
+$project-default-icon-family-extra:         "icomoon";
+
+$project-default-font-family:				$project-default-font-family-1-REGULAR;
+
+	// strong
+	$project-strong-font-family:			$project-default-font-family-1-BOLD;
+
+	// em
+	$project-em-font-family:				$project-default-font-family-1-ITALIC;
+
+	// em + strong
+	$project-em-strong-font-family:			$project-default-font-family-1-BOLDITALIC;
+
+	// websafe font
+	$project-websafe-font-toggle:			false; // if false -> set font weights and styles to normal
+
+// font size
+$project-default-font-size-base:			16px;
+$project-default-font-size:					rem($project-default-font-size-base);
+
+// height
+$project-default-button-height:				rem(48px);
+
+// line height
+$project-default-line-height-diff:			rem(10px);
+$project-default-line-height:				$project-default-font-size + $project-default-line-height-diff;
+
+// margin
+$project-default-margin:					0px 0px $project-default-line-height 0px;
+$project-default-margin-bottom:				$project-default-line-height;
+
+// opacity
+$project-default-opacity-HOVER:				1;
+
+// transitions
+@mixin project-default-transition()			{ @include css3-transition(all, 0.25s, ease); will-change: transition; } // USE THIS: @include project-default-transition();
+
+
+// ---- setup DEFAULTS END
+
+
+
+// ---- create a LIST FROM DEAFULT COLORS START
+
+// list of colors for class generators
+$colors: (
+
+	// basic colors
+	color-black:							$color-black,
+	color-white:							$color-white,
+	color-red: 							    $color-red,
+	color-blue: 							$color-blue,
+	color-dark-blue: 						$color-dark-blue,
+	color-light-blue: 						$color-light-blue,
+	color-light-green: 						$color-light-green,
+	color-green: 							$color-green,
+	color-dark-green: 						$color-dark-green,
+	color-orange: 							$color-orange,
+	color-gray: 							$color-gray,
+    color-dark-gray: 						$color-dark-gray,
+	color-light-gray: 						$color-light-gray,
+    color-webery:                           $color-webery,
+
+    // theme colors
+    color-theme-primary:                    $color-theme-primary,
+    color-theme-primary-light:              $color-theme-primary-light,
+    color-theme-primary-dark:               $color-theme-primary-dark,
+
+    color-theme-secondary:                  $color-theme-secondary,
+    color-theme-secondary-light:            $color-theme-secondary-light,
+    color-theme-secondary-dark:             $color-theme-secondary-dark,
+
+    color-theme-danger:                     $color-theme-danger,
+    color-theme-warning:                    $color-theme-warning,
+    color-theme-info:                       $color-theme-info,
+    color-theme-success:                    $color-theme-success,
+
+	// social colors
+	color-bandcamp:		                    $color-bandcamp,
+	color-delicious:	                    $color-delicious,
+	color-facebook:		                    $color-facebook,
+	color-ficly:		                    $color-ficly,
+	color-flickr:		                    $color-flickr,
+	color-foursquare:	                    $color-foursquare,
+	color-googleplus:	                    $color-googleplus,
+	color-github:		                    $color-github,
+	color-instagram:	                    $color-instagram,
+	color-kickstarter:	                    $color-kickstarter,
+	color-lanyrd:		                    $color-lanyrd,
+	color-lastfm:		                    $color-lastfm,
+	color-linkedin:		                    $color-linkedin,
+	color-photodrop:	                    $color-photodrop,
+	color-pinterest:	                    $color-pinterest,
+	color-rdio:			                    $color-rdio,
+	color-quora:		                    $color-quora,
+	color-snapchat:		                    $color-snapchat,
+	color-soundcloud:	                    $color-soundcloud,
+	color-tumblr:		                    $color-tumblr,
+	color-twitter: 		                    $color-twitter,
+	color-vimeo:		                    $color-vimeo,
+	color-vine:			                    $color-vine,
+	color-vk:			                    $color-vk,
+	color-youtube:		                    $color-youtube
+);
+
+// ---- create a LIST FROM DEAFULT COLORS END

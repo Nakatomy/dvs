@@ -1,0 +1,36 @@
+@import 'project_defaults';
+
+.texts .color-list{
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    li{
+        list-style: none;
+        margin-right: 2rem;
+        margin-bottom: 2rem;
+
+        &:before{
+            display: none;
+        }
+
+        .color-globe{
+            border: 1px solid #EEE;
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+            border-radius: 100%;
+            line-height: 15;
+            text-align: center;
+        }
+
+        strong{
+            display: block;
+            max-width: 100px;
+            text-align: center;
+            font-size: 14px;
+            line-height: 1.2;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+@import 'project_defaults';
+
+.core-tag-cloud-list{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &-item{
+        list-style: none;
+        margin-right: 15px;
+    }
+}

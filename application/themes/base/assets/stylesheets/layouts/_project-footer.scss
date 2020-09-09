@@ -1,0 +1,85 @@
+/*** Project footer ***/
+
+/* footer START */
+
+.footer {
+    @include css3-box-shadow(0px, -2px, 3px, rgba($color-black, .15));
+
+    &-top{
+
+        .container,
+        .container-fluid {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+
+            // tablet large + desktop
+            @include media-breakpoint-up(lg) {
+                height: $footerHeight;
+            }
+
+            // mobile + tablet small
+            @include media-breakpoint-down(md) {
+                flex-direction: column;
+                height: auto;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                text-align: center;
+            }
+
+            > article,
+            > div,
+            > nav{
+                padding-left: 15px;
+                padding-right: 15px;
+
+                // mobile + tablet
+                @include media-breakpoint-down(lg) {
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                }
+            }
+
+            *{
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &-bottom{
+
+        .container,
+        .container-fluid {
+            height: $footerHeight / 2;
+
+            // mobile
+            @include media-breakpoint-down(sm) {
+                flex-flow: column;
+                height: auto;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+            *{
+                margin-bottom: 0 !important;
+            }
+        }
+    }
+
+    .logo{
+
+        // mobile + tablet
+        @include media-breakpoint-down(lg) {
+            order: -1;
+        }
+    }
+
+    .text-center{
+
+        .scrolltop a{
+            margin: 0 auto;
+        }
+    }
+}
+
+/* footer END */

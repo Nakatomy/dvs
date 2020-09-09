@@ -1,0 +1,401 @@
+/*** Project typography ***/
+
+/* typography START */
+
+// main
+.main {
+	color: $project-default-color;
+	font-family: $project-default-font-family;
+	font-size: $project-default-font-size;
+	line-height: $project-default-line-height;
+
+	// anchor
+	a {
+		@include project-default-transition();
+		outline: 0 !important;
+		color: $project-link-color;
+		cursor: pointer;
+		font-family: $project-link-font-family;
+		text-decoration: none;
+
+		// desktop
+		@include media-breakpoint-up(xl) {
+			&:hover,
+			&:focus {
+				@include css3-opacity($project-link-opacity-HOVER);
+				color: $project-link-color-HOVER;
+				outline: 0;
+				text-decoration: underline;
+			}
+		}
+	}
+
+	// strong
+	strong,
+	.strong {
+		font-family: $project-strong-font-family;
+
+		@if $project-websafe-font-toggle == false {
+			font-weight: normal;
+		}
+	}
+
+	// em
+	em,
+	.em {
+		font-family: $project-em-font-family;
+
+		@if $project-websafe-font-toggle == false {
+			font-style: normal;
+		}
+	}
+
+	// em + strong
+	em strong,
+	strong em,
+	.em-strong {
+		font-family: $project-em-strong-font-family;
+	}
+
+	// small
+	small,
+	.small {
+		font-size: $project-small-font-size;
+	}
+
+	// highlight
+	.highlight {
+		color: $project-highlight-color;
+		font-family: $project-highlight-font-family;
+		background-color: $project-highlight-background-color;
+		padding: $project-highlight-padding;
+    }
+
+    // images
+    img{
+        image-rendering: -webkit-optimize-contrast;
+    }
+
+	// headings
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6 {
+        font-weight: bold;
+
+		@if $project-websafe-font-toggle == false {
+			font-weight: normal;
+		}
+    }
+}
+
+// texts
+.texts {
+
+	// anchor
+	a {}
+
+	// headings
+	h1, h2, h3, h4, h5, h6,
+	.h1, .h2, .h3, .h4, .h5, .h6 {
+		margin: 0;
+		padding-bottom: 0;
+        padding-top: 0;
+
+		* {
+			color: inherit;
+			font-family: inherit;
+			font-size: inherit;
+			line-height: inherit;
+		}
+
+		a{
+
+			// desktop
+			@include media-breakpoint-up(xl) {
+				&:hover,
+				&:focus {
+					color: inherit;
+				}
+			}
+		}
+	}
+
+	h1,
+	.h1 {
+		@if $project-h1-uppercase-toggle == true {	text-transform: uppercase; }
+		color: $project-h1-color;
+		margin-bottom: $project-h1-margin;
+		font-family: $project-h1-font-family;
+		font-size: $project-h1-font-size;
+		line-height: $project-h1-line-height;
+        letter-spacing: $project-h1-letter-spacing;
+
+        // mobile
+        @include media-breakpoint-down(sm) {
+            font-size: $project-h1-font-size * 0.8;
+        }
+	}
+
+	h2,
+	.h2 {
+		@if $project-h2-uppercase-toggle == true {	text-transform: uppercase; }
+		color: $project-h2-color;
+		margin-bottom: $project-h2-margin;
+		font-family: $project-h2-font-family;
+		font-size: $project-h2-font-size;
+		line-height: $project-h2-line-height;
+		letter-spacing: $project-h2-letter-spacing;
+
+        // mobile
+        @include media-breakpoint-down(sm) {
+            font-size: $project-h2-font-size * 0.8;
+        }
+	}
+
+	h3,
+	.h3 {
+		@if $project-h3-uppercase-toggle == true {	text-transform: uppercase; }
+		color: $project-h3-color;
+		margin-bottom: $project-h3-margin;
+		font-family: $project-h3-font-family;
+		font-size: $project-h3-font-size;
+		line-height: $project-h3-line-height;
+		letter-spacing: $project-h3-letter-spacing;
+
+        // mobile
+        @include media-breakpoint-down(sm) {
+            font-size: $project-h3-font-size * 0.8;
+        }
+	}
+
+	h4,
+	.h4 {
+		@if $project-h4-uppercase-toggle == true {	text-transform: uppercase; }
+		color: $project-h4-color;
+		margin-bottom: $project-h4-margin;
+		font-family: $project-h4-font-family;
+		font-size: $project-h4-font-size;
+		line-height: $project-h4-line-height;
+        letter-spacing: $project-h4-letter-spacing;
+
+        // mobile
+        @include media-breakpoint-down(sm) {
+            font-size: $project-h4-font-size * 0.8;
+        }
+	}
+
+	h5,
+	.h5 {
+		@if $project-h5-uppercase-toggle == true {	text-transform: uppercase; }
+		color: $project-h5-color;
+		margin-bottom: $project-h5-margin;
+		font-family: $project-h5-font-family;
+		font-size: $project-h5-font-size;
+		line-height: $project-h5-line-height;
+		letter-spacing: $project-h5-letter-spacing;
+	}
+
+	h6,
+	.h6 {
+		@if $project-h6-uppercase-toggle == true {	text-transform: uppercase; }
+		color: $project-h6-color;
+		margin-bottom: $project-h6-margin;
+		font-family: $project-h6-font-family;
+		font-size: $project-h6-font-size;
+		line-height: $project-h6-line-height;
+		letter-spacing: $project-h6-letter-spacing;
+	}
+
+	// paragraph
+	p {
+		color: $project-p-color;
+		font-family: $project-p-font-family;
+		font-size: $project-p-font-size;
+		line-height: $project-p-line-height;
+		margin: 0 0 $project-p-margin 0;
+	}
+
+	// ul / ol
+	ul,
+	ol {
+		margin: 0 0 $project-list-margin 0;
+		padding: 0 0 0 $project-list-padding;
+
+		li {
+			color: $project-list-color;
+			font-family: $project-list-font-family;
+			font-size: $project-list-font-size;
+			line-height: $project-list-line-height;
+			list-style: none;
+
+			// remove this if you don't need skinned "list-style-type"
+			&:before {
+				display: inline-block;
+				margin-left: -$project-list-padding;
+				padding-right: $project-list-padding-list-style-type;
+				text-align: right;
+				vertical-align: top;
+				width: $project-list-padding;
+			}
+
+			// remove disances
+			> h1,
+			> .h1,
+			> h2,
+			> .h2,
+			> h3,
+			> .h3,
+			> h4,
+			> .h4,
+			> h5,
+			> .h5,
+			> h6,
+			> .h6,
+			> p,
+			> ul,
+			> ol {
+				&:first-child {
+					margin-top: -( $project-list-line-height );
+				}
+			}
+		}
+	}
+
+		// remove this if you don't need skinned "list-style-type"
+		ul {
+
+			> li {
+
+				&:before {
+					color: $project-ul-style-type-color;
+					content: $project-ul-style-type-content;
+					font-family: $project-ul-style-type-font-family;
+					font-size: $project-ul-style-type-font-size;
+				}
+			}
+		}
+
+		// remove this if you don't need skinned "list-style-type"
+		ol {
+			counter-reset: li;
+
+			> li {
+				counter-increment: li;
+
+				&:before {
+					color: $project-ol-style-type-color;
+					content: $project-ol-style-type-content;
+					font-family: $project-ol-style-type-font-family;
+					font-size: $project-ol-style-type-font-size;
+				}
+			}
+		}
+
+	// dl
+	dl {
+		margin-bottom: $project-dl-margin;
+
+		dt {
+			color: $project-dt-color;
+			font-family: $project-dt-font-family;
+			font-weight: bold;
+			font-size: $project-dt-font-size;
+            line-height: $project-dt-line-height;
+
+			@if $project-websafe-font-toggle == false {
+				font-weight: normal;
+			}
+		}
+
+		dd {
+			color: $project-dd-color;
+			font-family: $project-dd-font-family;
+			font-weight: normal;
+			font-size: $project-dd-font-size;
+			line-height: $project-dd-line-height;
+		}
+	}
+
+	blockquote{
+		@extend .blockquote;
+	}
+
+	// blockquote
+	blockquote,
+	.blockquote {
+		position: relative;
+		border-color: $project-blockquote-border-color;
+		border-width: $project-blockquote-border-width;
+		margin-bottom: $project-blockquote-margin;
+		padding: $project-blockquote-padding;
+
+		* {
+			color: $project-blockquote-color;
+			font-family: $project-blockquote-font-family;
+			font-size: $project-blockquote-font-size;
+			line-height: $project-blockquote-line-height;
+			font-style: italic;
+
+			&:last-child{
+				margin: 0;
+			}
+		}
+
+		p{
+
+			&:before{
+				position: absolute;
+				top: 0;
+				left: 0;
+				content: open-quote;
+				font-size: $project-blockquote-font-size + rem(3px);
+			}
+
+			&:after{
+				visibility: hidden;
+				content: close-quote;
+			}
+		}
+	}
+
+	// strong
+	strong,
+	.strong {}
+
+	// em
+	em,
+	.em {}
+
+	// highlight
+	.highlight {
+		font-size: inherit;
+		line-height: inherit;
+    }
+
+    img{
+        max-width: 100%;
+    }
+
+	&-color-white,
+	.texts-color-white{
+
+		h1, h2, h3, h4, h5, h6,
+		.h1, .h2, .h3, .h4, .h5, .h6,
+		ul li, ul li:before, ol li, ol li:before,
+		p, a, dl dt, dl dd, blockquote, .blockquote{
+			color: $color-white;
+		}
+	}
+
+	&-color-black,
+	.texts-color-black{
+
+		h1, h2, h3, h4, h5, h6,
+		.h1, .h2, .h3, .h4, .h5, .h6,
+		ul li, ul li:before, ol li, ol li:before,
+		p, a, dl dt, dl dd, blockquote, .blockquote{
+			color: $color-black;
+		}
+	}
+}
+
+/* typography END */

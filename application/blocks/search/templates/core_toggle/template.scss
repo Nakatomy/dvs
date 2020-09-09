@@ -1,0 +1,41 @@
+@import 'project_defaults';
+
+.core-search-toggle{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: $project-button-height;
+    width: 100%;
+    margin-left: 10px;
+
+    .btn{
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0;
+        width: $project-button-height;
+
+        i{
+            margin: 0;
+        }
+
+        .search-open &{
+            border-color: $color-white;
+        }
+    }
+
+    .form-control{
+        border-color: transparent;
+        width: 0;
+        padding: 0;
+        position: absolute;
+        right: 0;
+        top: $project-button-height;
+
+        .search-open &{
+            width: 100%;
+            padding: $project-form-control-padding;
+            border-color: $project-form-control-border-color;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+/*** line scale pulse out rapid ***/
+/* HTML: <div class="loader-line-scale-pulse-out-rapid"><div></div><div></div><div></div><div></div><div></div></div> */
+
+@include css3-keyframes(loader-line-scale-pulse-out-rapid) {
+	0% {
+		@include css3-prefix(transform, scale(1));
+	}
+	80% {
+		@include css3-prefix(transform, scale(0.4));
+	}
+	90% {
+		@include css3-prefix(transform, scale(1));
+	}
+}
+
+.loader-line-scale-pulse-out-rapid {
+
+	> div {
+		@include css3-animation(loader-line-scale-pulse-out-rapid $project-loader-item-speed ( $project-loader-item-speed * -0.6) infinite cubic-bezier(.11, .49, .38, .78));
+		@include css3-border-radius( ( ( $project-loader-item-size / 5 ) / 2 ) );
+		@include css3-prefix(animation-fill-mode, both);
+		background-color: $project-loader-item-1-color;
+		display: inline-block;
+		height: ( $project-loader-item-size * 2 );
+		margin: ( $project-loader-item-distance / 2.5 );
+		vertical-align: middle;
+		width: ( $project-loader-item-size / 5 );
+
+		&:nth-child(2),
+		&:nth-child(4) {
+			@include css3-prefix(animation-delay, ( $project-loader-item-speed * -0.4 ) );
+		}
+
+		&:nth-child(1),
+		&:nth-child(5) {
+			@include css3-prefix(animation-delay, ( $project-loader-item-speed * -0.2 ) );
+		}
+	}
+}
