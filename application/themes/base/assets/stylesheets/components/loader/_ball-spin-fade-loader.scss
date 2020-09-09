@@ -1,0 +1,84 @@
+/*** ball spin fade loader ***/
+/* HTML: <div class="loader-ball-spin-fade-loader"><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div> */
+
+@include css3-keyframes(loader-ball-spin-fade-loader) {
+	50% {
+		@include css3-opacity(0.3);
+		@include css3-prefix(transform, scale(0.4));
+	}
+	100% {
+		@include css3-opacity(1);
+		@include css3-prefix(transform, scale(1));
+	}
+}
+
+.loader-ball-spin-fade-loader {
+
+	> div {
+		height: 0;
+		left: 50%;
+		position: absolute;
+		text-align: center;
+		top: 50%;
+		width: 0;
+
+		> div {
+			@include css3-border-radius(100%);
+			@include css3-prefix(animation-fill-mode, both);
+			background-color: $project-loader-item-1-color;
+			height: $project-loader-item-size;
+			margin-left: -( $project-loader-item-size / 2 );
+			margin-top: -( $project-loader-item-size / 2 );
+			position: absolute;
+			width: $project-loader-item-size;
+
+			&:nth-child(8) {
+				@include css3-animation(loader-ball-spin-fade-loader $project-loader-item-speed ( $project-loader-item-speed * 0.96 - $project-loader-item-speed ) infinite linear);
+				left: 0;
+				top: ( $project-loader-item-size * 1.7 );
+			}
+
+			&:nth-child(7) {
+				@include css3-animation(loader-ball-spin-fade-loader $project-loader-item-speed ( $project-loader-item-speed * 0.84 - $project-loader-item-speed ) infinite linear);
+				left: ( $project-loader-item-size * 1.2 );
+				top: ( $project-loader-item-size * 1.2 );
+			}
+
+			&:nth-child(6) {
+				@include css3-animation(loader-ball-spin-fade-loader $project-loader-item-speed ( $project-loader-item-speed * 0.72 - $project-loader-item-speed ) infinite linear);
+				left: ( $project-loader-item-size * 1.7 );
+				top: 0;
+			}
+
+			&:nth-child(5) {
+				@include css3-animation(loader-ball-spin-fade-loader $project-loader-item-speed ( $project-loader-item-speed * 0.60 - $project-loader-item-speed ) infinite linear);
+				left: ( $project-loader-item-size * 1.2 );
+				top: -( $project-loader-item-size * 1.2 );
+			}
+
+			&:nth-child(4) {
+				@include css3-animation(loader-ball-spin-fade-loader $project-loader-item-speed ( $project-loader-item-speed * 0.48 - $project-loader-item-speed ) infinite linear);
+				left: 0;
+				top: -( $project-loader-item-size * 1.7 );
+			}
+
+			&:nth-child(3) {
+				@include css3-animation(loader-ball-spin-fade-loader $project-loader-item-speed ( $project-loader-item-speed * 0.36 - $project-loader-item-speed ) infinite linear);
+				left: -( $project-loader-item-size * 1.2 );
+				top: -( $project-loader-item-size * 1.2 );
+			}
+
+			&:nth-child(2) {
+				@include css3-animation(loader-ball-spin-fade-loader $project-loader-item-speed ( $project-loader-item-speed * 0.24 - $project-loader-item-speed ) infinite linear);
+				left: -( $project-loader-item-size * 1.7 );
+				top: 0;
+			}
+
+			&:nth-child(1) {
+				@include css3-animation(loader-ball-spin-fade-loader $project-loader-item-speed ( $project-loader-item-speed * 0.12 - $project-loader-item-speed ) infinite linear);
+				left: -( $project-loader-item-size * 1.2 );
+				top: ( $project-loader-item-size * 1.2 );
+			}
+		}
+	}
+}

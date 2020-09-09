@@ -1,0 +1,306 @@
+/*** Project checkbox + radio skin ***/
+
+/* checkbox + radio skin START */
+
+.main {
+
+	// checkbox skin + radio button skin
+	.checkbox-skin,
+	.radio-skin {
+
+		// label
+		label {
+
+			&.label-v1 {
+				padding-left: $project-checkradio-width-v1 + $project-checkradio-distance-v1;
+
+				// background + border
+				&:before {
+					background-color: $project-checkradio-background-color-v1;
+					border-color: $project-checkradio-border-color-v1;
+					border-width: $project-checkradio-border-width-v1;
+					height: $project-checkradio-height-v1;
+					width: $project-checkradio-width-v1;
+				}
+
+				// inside icon
+				&:after {}
+			}
+		}
+
+		// input
+		input[type="checkbox"],
+		input[type="radio"] {
+
+			// focus
+			&:focus + label {
+
+				&.label-v1 {
+
+					// background + border
+					&:before {
+						background-color: $project-checkradio-background-color-v1-FOCUS;
+						border-color: $project-checkradio-border-color-v1-FOCUS;
+					}
+
+					// inside icon
+					&:after {}
+				}
+			}
+
+			// checked
+			&:checked + label {
+
+				&.label-v1 {
+
+					// background + border
+					&:before {
+						background-color: $project-checkradio-background-color-v1-CHECKED;
+						border-color: $project-checkradio-border-color-v1-CHECKED;
+					}
+
+					// inside icon
+					&:after {}
+				}
+			}
+		}
+	}
+
+		// checkbox error + radio button error
+		.has-error .checkbox-skin input[type="checkbox"] + label,
+		.has-error .checkbox-skin input[type="radio"] + label,
+		.checkbox-skin input[type="checkbox"].error + label,
+		.checkbox-skin input[type="radio"].error + label,
+		.has-error .radio-skin input[type="checkbox"] + label,
+		.has-error .radio-skin input[type="radio"] + label,
+		.radio-skin input[type="checkbox"].error + label,
+		.radio-skin input[type="radio"].error + label {
+
+			&.label-v1 {
+
+				// background + border
+				&:before {
+					background-color: $project-checkradio-background-color-v1-ERROR;
+					border-color: $project-checkradio-border-color-v1-ERROR;
+				}
+
+				// inside icon
+				&:after {}
+			}
+		}
+
+		// checkbox disabled + radio button disabled
+		.disabled .checkbox-skin input[type="checkbox"] + label,
+		.disabled .checkbox-skin input[type="radio"] + label,
+		.checkbox-skin input[type="checkbox"]:disabled + label,
+		.checkbox-skin input[type="radio"]:disabled + label,
+		.disabled .radio-skin input[type="checkbox"] + label,
+		.disabled .radio-skin input[type="radio"] + label,
+		.radio-skin input[type="checkbox"]:disabled + label,
+		.radio-skin input[type="radio"]:disabled + label {
+
+			&.label-v1 {
+
+				// background + border
+				&:before {
+					background-color: $project-checkradio-background-color-v1-DISABLED;
+					border-color: $project-checkradio-border-color-v1-DISABLED;
+				}
+
+				// inside icon
+				&:after {}
+			}
+		}
+
+	// checkbox skin
+	.checkbox-skin {
+
+		// label
+		label {
+
+			&.label-v1 {
+
+				// background + border
+				&:before {
+					@include css3-border-radius($project-checkradio-border-radius-v1);
+				}
+
+				// inside icon
+				&:after {
+					color: $project-checkradio-inside-color-v1;
+					content: $project-checkradio-checkbox-icon-v1;
+					font-size: $project-checkradio-checkbox-size-v1;
+					height: $project-checkradio-height-v1;
+					line-height: $project-checkradio-height-v1;
+					width: $project-checkradio-width-v1;
+				}
+			}
+		}
+
+		// input
+		input[type="checkbox"],
+		input[type="radio"] {
+
+			// focus
+			&:focus + label {
+
+				&.label-v1 {
+
+					// background + border
+					&:before {}
+
+					// inside icon
+					&:after {
+						color: $project-checkradio-inside-color-v1-FOCUS;
+					}
+				}
+			}
+
+			// checked
+			&:checked + label {
+
+				&.label-v1 {
+
+					// background + border
+					&:before {}
+
+					// inside icon
+					&:after {
+						color: $project-checkradio-inside-color-v1-CHECKED;
+					}
+				}
+			}
+		}
+	}
+
+		// checkbox error
+		.has-error .checkbox-skin input[type="checkbox"] + label,
+		.has-error .checkbox-skin input[type="radio"] + label,
+		.checkbox-skin input[type="checkbox"].error + label,
+		.checkbox-skin input[type="radio"].error + label {
+
+			&.label-v1 {
+
+				// background + border
+				&:before {}
+
+				// inside icon
+				&:after {
+					color: $project-checkradio-inside-color-v1-ERROR;
+				}
+			}
+		}
+
+		// checkbox disabled
+		.disabled .checkbox-skin input[type="checkbox"] + label,
+		.disabled .checkbox-skin input[type="radio"] + label,
+		.checkbox-skin input[type="checkbox"]:disabled + label,
+		.checkbox-skin input[type="radio"]:disabled + label {
+
+			&.label-v1 {
+
+				// background + border
+				&:before {}
+
+				// inside icon
+				&:after {
+					color: $project-checkradio-inside-color-v1-DISABLED;
+				}
+			}
+		}
+
+	// radio button skin
+	.radio-skin {
+
+		// label
+		label {
+
+			&.label-v1 {
+
+				// background + border
+				&:before {}
+
+				// inside icon
+				&:after {
+					background-color: $project-checkradio-inside-color-v1;
+					height: $project-checkradio-radio-size-v1;
+					left: ( $project-checkradio-width-v1 - $project-checkradio-radio-size-v1 ) / 2;
+					top: ( $project-checkradio-height-v1 - $project-checkradio-radio-size-v1 ) / 2;
+					width: $project-checkradio-radio-size-v1;
+				}
+			}
+		}
+
+		// input
+		input[type="radio"] {
+
+			// focus
+			&:focus + label {
+
+				&.label-v1 {
+
+					// background + border
+					&:before {}
+
+					// inside icon
+					&:after {
+						background-color: $project-checkradio-inside-color-v1-FOCUS;
+					}
+				}
+			}
+
+			// checked
+			&:checked + label {
+
+				&.label-v1 {
+
+					// background + border
+					&:before {}
+
+					// inside icon
+					&:after {
+						background-color: $project-checkradio-inside-color-v1-CHECKED;
+					}
+				}
+			}
+		}
+	}
+
+		// radio button error
+		.has-error .radio-skin input[type="checkbox"] + label,
+		.has-error .radio-skin input[type="radio"] + label,
+		.radio-skin input[type="checkbox"].error + label,
+		.radio-skin input[type="radio"].error + label {
+
+			&.label-v1 {
+
+				// background + border
+				&:before {}
+
+				// inside icon
+				&:after {
+					background-color: $project-checkradio-inside-color-v1-ERROR;
+				}
+			}
+		}
+
+		// radio button disabled
+		.disabled .radio-skin input[type="checkbox"] + label,
+		.disabled .radio-skin input[type="radio"] + label,
+		.radio-skin input[type="checkbox"]:disabled + label,
+		.radio-skin input[type="radio"]:disabled + label {
+
+			&.label-v1 {
+
+				// background + border
+				&:before {}
+
+				// inside icon
+				&:after {
+					background-color: $project-checkradio-inside-color-v1-DISABLED;
+				}
+			}
+		}
+}
+
+/* checkbox + radio skin END */

@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+/* Import variables */
+
+	@import "project-variables-defaults";
+	@import "project-variables";
+
+/* Import Bootstrap elements */
+
+    @import "_bootstrap_custom";
+    @import "node_modules/bootstrap/scss/functions";
+    @import "node_modules/bootstrap/scss/variables";
+    @import "node_modules/bootstrap/scss/mixins";
+
+/* Import mixins */
+
+    @import "project-functions";
+    @import "project-mixins";
+    @import "project-mixins-css3";

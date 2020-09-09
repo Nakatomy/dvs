@@ -1,0 +1,86 @@
+/*** ball spin loader ***/
+/* HTML: <div class="loader-ball-spin-loader"><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div> */
+
+@include css3-keyframes(loader-ball-spin-loader) {
+	0% {
+		@include css3-opacity(0);
+	}
+	10% {
+		@include css3-opacity(1);
+	}
+	100% {
+		@include css3-opacity(0);
+	}
+}
+
+.loader-ball-spin-loader {
+
+	> div {
+		height: 0;
+		left: 50%;
+		position: absolute;
+		top: 50%;
+		text-align: center;
+		width: 0;
+
+		> div {
+			@include css3-border-radius(100%);
+			@include css3-opacity(0);
+			@include css3-prefix(animation-fill-mode, both);
+			background-color: $project-loader-item-1-color;
+			height: $project-loader-item-size;
+			margin-left: -( $project-loader-item-size / 2 );
+			margin-top: -( $project-loader-item-size / 2 );
+			position: absolute;
+			width: $project-loader-item-size;
+
+			&:nth-child(1) {
+				@include css3-animation(loader-ball-spin-loader ( $project-loader-item-speed ) 0s infinite linear);
+				left: 0;
+				top: ( $project-loader-item-size * 1.7 );
+			}
+
+			&:nth-child(2) {
+				@include css3-animation(loader-ball-spin-loader ( $project-loader-item-speed ) ( $project-loader-item-speed * -0.125 ) infinite linear);
+				left: ( $project-loader-item-size * 1.2 );
+				top: ( $project-loader-item-size * 1.2 );
+			}
+
+			&:nth-child(3) {
+				@include css3-animation(loader-ball-spin-loader ( $project-loader-item-speed ) ( $project-loader-item-speed * -0.25 ) infinite linear);
+				left: ( $project-loader-item-size * 1.7 );
+				top: 0;
+			}
+
+			&:nth-child(4) {
+				@include css3-animation(loader-ball-spin-loader ( $project-loader-item-speed ) ( $project-loader-item-speed * -0.375 ) infinite linear);
+				left: ( $project-loader-item-size * 1.2 );
+				top: -( $project-loader-item-size * 1.2 );
+			}
+
+			&:nth-child(5) {
+				@include css3-animation(loader-ball-spin-loader ( $project-loader-item-speed ) ( $project-loader-item-speed * -0.5 ) infinite linear);
+				left: 0;
+				top: -( $project-loader-item-size * 1.7 );
+			}
+
+			&:nth-child(6) {
+				@include css3-animation(loader-ball-spin-loader ( $project-loader-item-speed ) ( $project-loader-item-speed * -0.625 ) infinite linear);
+				left: -( $project-loader-item-size * 1.2 );
+				top: -( $project-loader-item-size * 1.2 );
+			}
+
+			&:nth-child(7) {
+				@include css3-animation(loader-ball-spin-loader ( $project-loader-item-speed ) ( $project-loader-item-speed * -0.75 ) infinite linear);
+				left: -( $project-loader-item-size * 1.7 );
+				top: 0;
+			}
+
+			&:nth-child(8) {
+				@include css3-animation(loader-ball-spin-loader ( $project-loader-item-speed ) ( $project-loader-item-speed * -0.875 ) infinite linear);
+				left: -( $project-loader-item-size * 1.2 );
+				top: ( $project-loader-item-size * 1.2 );
+			}
+		}
+	}
+}

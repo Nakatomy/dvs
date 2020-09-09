@@ -1,0 +1,47 @@
+/*** ball clip rotate multiple ***/
+/* HTML: <div class="loader-ball-clip-rotate-multiple"><div></div><div></div></div> */
+
+@include css3-keyframes(ball-clip-rotate-multiple) {
+	0% {
+		@include css3-prefix(transform, rotate(0deg) scale(1));
+	}
+	50% {
+		@include css3-prefix(transform, rotate(180deg) scale(0.6));
+	}
+	100% {
+		@include css3-prefix(transform, rotate(360deg) scale(1));
+	}
+}
+
+.loader-ball-clip-rotate-multiple {
+	position: relative;
+
+	> div {
+		@include css3-animation(ball-clip-rotate-multiple $project-loader-item-speed 0s ease-in-out infinite);
+		@include css3-border-radius(100%);
+		@include css3-prefix(animation-fill-mode, both);
+		border-color: transparent $project-loader-item-2-color;
+		border-style: solid;
+		border-width: ( $project-loader-item-size * 0.1333333333333333 );
+		height: ( $project-loader-item-size * 2.3 );
+		left: 50%;
+		margin-left: -( ( $project-loader-item-size * 2.3 ) / 2 );
+		margin-top: -( ( $project-loader-item-size * 2.3 ) / 2 );
+		position: absolute;
+		top: 50%;
+		width: ( $project-loader-item-size * 2.3 );
+
+		&:last-child {
+			@include css3-prefix(animation-duration, ( $project-loader-item-speed * 0.5 ) );
+			@include css3-prefix(animation-direction, reverse);
+			border-color: $project-loader-item-1-color transparent;
+			display: inline-block;
+			height: $project-loader-item-size;
+			left: 50%;
+			margin-left: -( $project-loader-item-size / 2 );
+			margin-top: -( $project-loader-item-size / 2 );
+			top: 50%;
+			width: $project-loader-item-size;
+		}
+	}
+}

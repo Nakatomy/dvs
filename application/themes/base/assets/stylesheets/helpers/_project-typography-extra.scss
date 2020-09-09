@@ -1,0 +1,474 @@
+/*** Project typography ***/
+
+/* typography START */
+
+// image fluid helper
+.img-fluid{
+	height: auto;
+}
+
+// text aligns
+.text-right {
+	@include list-right();
+}
+
+.text-center {
+	@include list-center();
+}
+
+.text-justify-center {
+	@include list-center();
+	text-align: justify !important;
+	text-align-last: center !important;
+	-moz-text-align-last: center !important;
+}
+
+	// mobile small
+	@include media-breakpoint-only(xs) {
+		.text-xs-left-only {
+			text-align: left !important;
+		}
+
+		.text-xs-right-only {
+			@include list-right();
+			text-align: right !important;
+		}
+
+		.text-xs-center-only {
+			@include list-center();
+			text-align: center !important;
+		}
+
+		.text-xs-justify-only {
+			text-align: justify !important;
+		}
+
+		.text-xs-justify-center-only {
+			@include list-center();
+			text-align: justify !important;
+			text-align-last: center !important;
+			-moz-text-align-last: center !important;
+		}
+	}
+
+		// mobile small and up
+		@include media-breakpoint-up(xs) {
+			.text-xs-left-up {
+				text-align: left !important;
+			}
+
+			.text-xs-right-up {
+				@include list-right();
+				text-align: right !important;
+			}
+
+			.text-xs-center-up {
+				@include list-center();
+				text-align: center !important;
+			}
+
+			.text-xs-justify-up {
+				text-align: justify !important;
+			}
+
+			.text-xs-justify-center-up {
+				@include list-center();
+				text-align: justify !important;
+				text-align-last: center !important;
+				-moz-text-align-last: center !important;
+			}
+		}
+
+	// mobile large
+	@include media-breakpoint-only(sm) {
+		.text-sm-left-only {
+			text-align: left !important;
+		}
+
+		.text-sm-right-only {
+			@include list-right();
+			text-align: right !important;
+		}
+
+		.text-sm-center-only {
+			@include list-center();
+			text-align: center !important;
+		}
+
+		.text-sm-justify-only {
+			text-align: justify !important;
+		}
+
+		.text-sm-justify-center-only {
+			@include list-center();
+			text-align: justify !important;
+			text-align-last: center !important;
+			-moz-text-align-last: center !important;
+		}
+	}
+
+		// mobile large and up
+		@include media-breakpoint-up(sm) {
+			.text-sm-left-up {
+				text-align: left !important;
+			}
+
+			.text-sm-right-up {
+				@include list-right();
+				text-align: right !important;
+			}
+
+			.text-sm-center-up {
+				@include list-center();
+				text-align: center !important;
+			}
+
+			.text-sm-justify-up {
+				text-align: justify !important;
+			}
+
+			.text-sm-justify-center-up {
+				@include list-center();
+				text-align: justify !important;
+				text-align-last: center !important;
+				-moz-text-align-last: center !important;
+			}
+		}
+
+		// mobile large and down
+		@include media-breakpoint-down(sm) {
+			.text-sm-left-down {
+				text-align: left !important;
+			}
+
+			.text-sm-right-down {
+				@include list-right();
+				text-align: right !important;
+			}
+
+			.text-sm-center-down {
+				@include list-center();
+				text-align: center !important;
+			}
+
+			.text-sm-justify-down {
+				text-align: justify !important;
+			}
+
+			.text-sm-justify-center-down {
+				@include list-center();
+				text-align: justify !important;
+				text-align-last: center !important;
+				-moz-text-align-last: center !important;
+			}
+		}
+
+	// tablet small
+	@include media-breakpoint-only(md) {
+		.text-md-left-only {
+			text-align: left !important;
+		}
+
+		.text-md-right-only {
+			@include list-right();
+			text-align: right !important;
+		}
+
+		.text-md-center-only {
+			@include list-center();
+			text-align: center !important;
+		}
+
+		.text-md-justify-only {
+			text-align: justify !important;
+		}
+
+		.text-md-justify-center-only {
+			@include list-center();
+			text-align: justify !important;
+			text-align-last: center !important;
+			-moz-text-align-last: center !important;
+		}
+	}
+
+		// tablet small and up
+		@include media-breakpoint-up(md) {
+			.text-md-left-up {
+				text-align: left !important;
+			}
+
+			.text-md-right-up {
+				@include list-right();
+				text-align: right !important;
+			}
+
+			.text-md-center-up {
+				@include list-center();
+				text-align: center !important;
+			}
+
+			.text-md-justify-up {
+				text-align: justify !important;
+			}
+
+			.text-md-justify-center-up {
+				@include list-center();
+				text-align: justify !important;
+				text-align-last: center !important;
+				-moz-text-align-last: center !important;
+			}
+		}
+
+		// tablet small and down
+		@include media-breakpoint-down(md) {
+			.text-md-left-down {
+				text-align: left !important;
+			}
+
+			.text-md-right-down {
+				@include list-right();
+				text-align: right !important;
+			}
+
+			.text-md-center-down {
+				@include list-center();
+				text-align: center !important;
+			}
+
+			.text-md-justify-down {
+				text-align: justify !important;
+			}
+
+			.text-md-justify-center-down {
+				@include list-center();
+				text-align: justify !important;
+				text-align-last: center !important;
+				-moz-text-align-last: center !important;
+			}
+		}
+
+	// tablet large
+	@include media-breakpoint-only(lg) {
+		.text-lg-left-only {
+			text-align: left !important;
+		}
+
+		.text-lg-right-only {
+			@include list-right();
+			text-align: right !important;
+		}
+
+		.text-lg-center-only {
+			@include list-center();
+			text-align: center !important;
+		}
+
+		.text-lg-justify-only {
+			text-align: justify !important;
+		}
+
+		.text-lg-justify-center-only {
+			@include list-center();
+			text-align: justify !important;
+			text-align-last: center !important;
+			-moz-text-align-last: center !important;
+		}
+	}
+
+		// tablet large and up
+		@include media-breakpoint-up(lg) {
+			.text-lg-left-up {
+				text-align: left !important;
+			}
+
+			.text-lg-right-up {
+				@include list-right();
+				text-align: right !important;
+			}
+
+			.text-lg-center-up {
+				@include list-center();
+				text-align: center !important;
+			}
+
+			.text-lg-justify-up {
+				text-align: justify !important;
+			}
+
+			.text-lg-justify-center-up {
+				@include list-center();
+				text-align: justify !important;
+				text-align-last: center !important;
+				-moz-text-align-last: center !important;
+			}
+		}
+
+		// tablet large and down
+		@include media-breakpoint-down(lg) {
+			.text-lg-left-down {
+				text-align: left !important;
+			}
+
+			.text-lg-right-down {
+				@include list-right();
+				text-align: right !important;
+			}
+
+			.text-lg-center-down {
+				@include list-center();
+				text-align: center !important;
+			}
+
+			.text-lg-justify-down {
+				text-align: justify !important;
+			}
+
+			.text-lg-justify-center-down {
+				@include list-center();
+				text-align: justify !important;
+				text-align-last: center !important;
+				-moz-text-align-last: center !important;
+			}
+		}
+
+	// laptop
+	@include media-breakpoint-only(xl) {
+		.text-xl-left-only {
+			text-align: left !important;
+		}
+
+		.text-xl-right-only {
+			@include list-right();
+			text-align: right !important;
+		}
+
+		.text-xl-center-only {
+			@include list-center();
+			text-align: center !important;
+		}
+
+		.text-xl-justify-only {
+			text-align: justify !important;
+		}
+
+		.text-xl-justify-center-only {
+			@include list-center();
+			text-align: justify !important;
+			text-align-last: center !important;
+			-moz-text-align-last: center !important;
+		}
+	}
+
+		// laptop and up
+		@include media-breakpoint-up(xl) {
+			.text-xl-left-up {
+				text-align: left !important;
+			}
+
+			.text-xl-right-up {
+				@include list-right();
+				text-align: right !important;
+			}
+
+			.text-xl-center-up {
+				@include list-center();
+				text-align: center !important;
+			}
+
+			.text-xl-justify-up {
+				text-align: justify !important;
+			}
+
+			.text-xl-justify-center-up {
+				@include list-center();
+				text-align: justify !important;
+				text-align-last: center !important;
+				-moz-text-align-last: center !important;
+			}
+		}
+
+		// laptop and down
+		@include media-breakpoint-down(xl) {
+			.text-xl-left-down {
+				text-align: left !important;
+			}
+
+			.text-xl-right-down {
+				@include list-right();
+				text-align: right !important;
+			}
+
+			.text-xl-center-down {
+				@include list-center();
+				text-align: center !important;
+			}
+
+			.text-xl-justify-down {
+				text-align: justify !important;
+			}
+
+			.text-xl-justify-center-down {
+				@include list-center();
+				text-align: justify !important;
+				text-align-last: center !important;
+				-moz-text-align-last: center !important;
+			}
+		}
+
+	// HD
+	@include media-breakpoint-up(hd) {
+		.text-hd-left-only {
+			text-align: left !important;
+		}
+
+		.text-hd-right-only {
+			@include list-right();
+			text-align: right !important;
+		}
+
+		.text-hd-center-only {
+			@include list-center();
+			text-align: center !important;
+		}
+
+		.text-hd-justify-only {
+			text-align: justify !important;
+		}
+
+		.text-hd-justify-center-only {
+			@include list-center();
+			text-align: justify !important;
+			text-align-last: center !important;
+			-moz-text-align-last: center !important;
+		}
+	}
+
+		// HD and down
+		@include media-breakpoint-down(hd) {
+			.text-hd-left-down {
+				text-align: left !important;
+			}
+
+			.text-hd-right-down {
+				@include list-right();
+				text-align: right !important;
+			}
+
+			.text-hd-center-down {
+				@include list-center();
+				text-align: center !important;
+			}
+
+			.text-hd-justify-down {
+				text-align: justify !important;
+			}
+
+			.text-hd-justify-center-down {
+				@include list-center();
+				text-align: justify !important;
+				text-align-last: center !important;
+				-moz-text-align-last: center !important;
+			}
+		}
+
+/* typography END */

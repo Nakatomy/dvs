@@ -1,0 +1,45 @@
+/*** Admin modifications ***/
+
+/* admin START */
+
+// edit mode fixes
+.ccm-edit-mode{
+
+    .header,
+    .footer{
+        position: relative;
+
+        .container{
+            height: auto;
+            min-height: $headerHeight;
+
+            .ccm-area{
+                width: 100%;
+            }
+        }
+    }
+
+    .footer{
+
+        .container{
+            padding-bottom: 40px;
+
+            .ccm-area{
+                width: 100%;
+            }
+        }
+    }
+
+    .ccm-area-block-list{
+        position: relative;
+
+        .container{
+            max-width: none;
+            width: auto;
+            height: auto;
+            max-width: $container-max-width-xl;
+        }
+    }
+}
+
+/* admin END */

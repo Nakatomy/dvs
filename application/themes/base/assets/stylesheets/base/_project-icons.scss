@@ -1,0 +1,41 @@
+@import "project_defaults";
+/*** Project icons ***/
+
+/* icomoon START */
+
+// include icomoon icons font
+@include css3-font-face(icomoon, icomoon);
+
+// setup icomoon
+@mixin icomoon() {
+	font-family: 'icomoon';
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: 1;
+	speak: none;
+	text-transform: none;
+
+	// Better Font Rendering
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icomoon,
+[class^="icomoon-"],
+[class*=" icomoon-"] {
+	@include icomoon();
+}
+
+// setup icomoon classes
+.icon-8-ways:before {
+    content: "\e900";
+}
+.icon-gbart:before {
+    content: "\e901";
+}
+.icon-webery:before {
+    content: "\e902";
+}
+
+/* icomoon END */

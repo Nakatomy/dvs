@@ -1,0 +1,23 @@
+/*** Project functions ***/
+
+/* functions START */
+
+// pixel to rem
+@function rem($pixels, $context: $project-default-font-size-base) {
+
+    @if ($pxToRem == true) {
+
+        @if (unitless($pixels)) { $pixels: $pixels * 1px; }
+        @if (unitless($context)) { $context: $context * 1px; }
+
+        @return $pixels / $context * 1rem;
+
+    } @else {
+
+        @return $pixels;
+
+    }
+}
+
+/* functions END */
+

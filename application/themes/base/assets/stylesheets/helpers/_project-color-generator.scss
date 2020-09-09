@@ -1,0 +1,41 @@
+/*** Project color generator ***/
+
+/* color generator START */
+
+// create colors & background colors from variables
+@each $color-line, $color-item in $colors {
+
+	// create color classes: e.g. .text-color-black { color: 'black'; }
+	.text-#{"" + $color-line} {
+
+        h1, h2, h3, h4, h5, h6,
+		.h1, .h2, .h3, .h4, .h5, .h6,
+		ul li, ul li:before, ol li, ol li:before,
+		i, span, p, a, dl dt, dl dd, blockquote, .blockquote{
+			color: $color-item;
+		}
+    }
+
+	// create color classes: e.g. .color-black { color: 'black'; }
+	.#{"" + $color-line} {
+
+        h1, h2, h3, h4, h5, h6,
+		.h1, .h2, .h3, .h4, .h5, .h6,
+		ul li, ul li:before, ol li, ol li:before,
+		i, span, p, a, dl dt, dl dd, blockquote, .blockquote{
+			color: $color-item;
+		}
+	}
+
+	// create background color classes: e.g. .bg-color-black { background-color: 'black'; }
+	.bg-#{"" + $color-line} {
+		background-color: $color-item;
+	}
+
+	// create border color classes: e.g. .border-color-black { border-color: 'black'; }
+	.border-#{"" + $color-line} {
+		border-color: $color-item;
+	}
+}
+
+/* color generator END */

@@ -1,0 +1,97 @@
+@import 'project_defaults';
+
+$languageHeight: rem(30px);
+$languageWidth: rem(80px); // including the 2 x 15px padding
+
+.lng-select{
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    width: $languageWidth;
+    height: $languageHeight;
+    cursor: pointer;
+
+    &:after{
+        @include project-default-transition();
+        content: "\f107";
+        font-family: 'Font Awesome 5 Free';
+        font-weight: 900;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: rem(15px);
+        font-size: rem(13px);
+        color: $project-link-color;
+        line-height: $languageHeight;
+    }
+
+    ul{
+        @include project-default-transition();
+        background-color: $color-white;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0 rem(15px);
+        margin: 0;
+        line-height: normal;
+        max-height: $languageHeight;
+        overflow: hidden;
+        width: 100%;
+        text-align: left;
+
+        li{
+            @include project-default-transition();
+            display: block;
+            width: 100%;
+            height: $languageHeight;
+            line-height: $languageHeight;
+            list-style: none;
+
+            &:first-child{
+
+                a{
+                    pointer-events: none;
+                }
+            }
+
+            a{
+                font-family: $project-default-font-family;
+                font-size: $project-default-font-size;
+                line-height: $project-default-line-height;
+                color: $project-link-color;
+                text-transform: uppercase;
+
+                // desktop
+                @include media-breakpoint-up(xl) {
+                    &:hover,
+                    &:focus {
+                        color: $color-theme-primary-light;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
+    &.open-language{
+
+        ul{
+            max-height: 300px;
+            padding-bottom: rem(10px);
+
+            li{
+
+                &:nth-child(2){
+                    padding-top: rem(5px);
+                }
+            }
+        }
+
+        &:after{
+            @include css3-transform(scale(1, -1));
+            line-height: $languageHeight + rem(4);
+        }
+    }
+}

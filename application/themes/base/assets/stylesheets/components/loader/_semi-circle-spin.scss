@@ -1,0 +1,37 @@
+/*** semi circle spin ***/
+/* HTML: <div class="loader-semi-circle-spin"><div><div></div></div></div> */
+
+@include css3-keyframes(loader-semi-circle-spin) {
+	0% {
+		@include css3-prefix(transform, rotate(0deg));
+	}
+	50% {
+		@include css3-prefix(transform, rotate(180deg));
+	}
+	100% {
+		@include css3-prefix(transform, rotate(360deg));
+	}
+}
+
+.loader-semi-circle-spin {
+
+	> div {
+		height: ( $project-loader-item-size * 3 );
+		left: 50%;
+		margin-left: -( $project-loader-item-size * 3 ) / 2;
+		margin-top: -( $project-loader-item-size * 3 ) / 2;
+		overflow: hidden;
+		position: absolute;
+		top: 50%;
+		width: ( $project-loader-item-size * 3 );
+
+		> div {
+			@include css3-animation(loader-semi-circle-spin $project-loader-item-speed 0s infinite linear);
+			@include css3-border-radius(100%);
+			@include css3-prefix(background-image, linear-gradient(transparent 0%, transparent 70%, $project-loader-item-1-color 30%, $project-loader-item-1-color 100%));
+			position: absolute;
+			height: 100%;
+			width: 100%;
+		}
+	}
+}

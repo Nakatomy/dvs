@@ -1,0 +1,30 @@
+/*** square spin ***/
+/* HTML: <div class="loader-square-spin"><div></div></div> */
+
+@include css3-keyframes(loader-square-spin) {
+	25% {
+		@include css3-prefix(transform, perspective(100px) rotateX(180deg) rotateY(0));
+	}
+	50% {
+		@include css3-prefix(transform, perspective(100px) rotateX(180deg) rotateY(180deg));
+	}
+	75% {
+		@include css3-prefix(transform, perspective(100px) rotateX(0) rotateY(180deg));
+	}
+	100% {
+		@include css3-prefix(transform, perspective(100px) rotateX(0) rotateY(0));
+	}
+}
+
+.loader-square-spin {
+
+	> div {
+		@include css3-animation(loader-square-spin ( $project-loader-item-speed * 2 ) 0s cubic-bezier(.09, .57, .49, .9) infinite);
+		@include css3-prefix(animation-fill-mode, both);
+		background-color: $project-loader-item-1-color;
+		display: inline-block;
+		height: ( $project-loader-item-size * 3 );
+		vertical-align: middle;
+		width: ( $project-loader-item-size * 3 );
+	}
+}

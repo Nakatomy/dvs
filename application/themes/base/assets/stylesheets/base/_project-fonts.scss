@@ -1,0 +1,21 @@
+/*** Project fonts ***/
+
+/* fonts START */
+
+// Montserrat-Medium
+@include css3-font-face('Montserrat-Medium', 'Montserrat-Medium');
+.Montserrat-Medium{ font-family: "Montserrat-Medium"; }
+
+// Montserrat-MediumItalic
+@include css3-font-face('Montserrat-MediumItalic', 'Montserrat-MediumItalic');
+.Montserrat-MediumItalic{ font-family: "Montserrat-MediumItalic"; }
+
+// Montserrat-Bold
+@include css3-font-face('Montserrat-Bold', 'Montserrat-Bold');
+.Montserrat-Bold{ font-family: "Montserrat-Bold"; }
+
+// Montserrat-BoldItalic
+@include css3-font-face('Montserrat-BoldItalic', 'Montserrat-BoldItalic');
+.Montserrat-BoldItalic{ font-family: "Montserrat-BoldItalic"; }
+
+/* fonts END */

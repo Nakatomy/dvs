@@ -1,0 +1,28 @@
+/*** Project embed responsive layer ***/
+
+/* embed responsive layer START */
+
+.embed-responsive-layer {
+	@include project-default-transition();
+	@include css3-opacity(1);
+	align-items: center;
+	cursor: pointer;
+	height: 100%;
+	justify-content: center;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	width: 100%;
+
+	p {
+		margin: 0;
+	}
+
+	// hide layer
+	&.fade-out-layer {
+		opacity: 0 !important;
+	}
+}
+
+/* embed responsive layer END */

@@ -1,0 +1,159 @@
+/*** Project bg image ***/
+
+/* bg image START */
+
+.bg-image {
+	display: block;
+	overflow: hidden;
+	position: relative;
+
+	img {
+		bottom: 0;
+		height: 100%;
+		left: 0;
+		object-fit: cover;
+		object-position: center;
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 100%;
+	}
+
+	// ie + edge fix
+	.ie &,
+	.edge & {
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		img {
+			display: none !important;
+			height: 0 !important;
+			width: 0 !important;
+		}
+
+		.bg-image-text {
+			display: block !important;
+			height: 0 !important;
+			overflow: hidden !important;
+			text-indent: -20000px !important;
+			width: 0 !important;
+		}
+	}
+
+	// ratios
+	&.bg-image-1by1,
+	&.bg-image-square {
+		padding-bottom: 100%;
+	}
+
+	&.bg-image-4by3 {
+        padding-bottom: 75%;
+    }
+
+        &.bg-image-4by3.inverse,
+        &.bg-image-3by4 {
+            padding-bottom: 133.33333%;
+        }
+
+	&.bg-image-3by2 {
+        padding-bottom: 66.66666%;
+    }
+
+        &.bg-image-3by2.inverse,
+        &.bg-image-2by3 {
+            padding-bottom: 150%;
+        }
+
+	&.bg-image-5by3 {
+		padding-bottom: 60%;
+    }
+
+        &.bg-image-5by3.inverse,
+        &.bg-image-3by5 {
+            padding-bottom: 166.66667%;
+        }
+
+	&.bg-image-16by9 {
+		padding-bottom: 56.25%;
+    }
+
+        &.bg-image-16by9.inverse,
+        &.bg-image-9by16 {
+            padding-bottom: 177.77778%;
+        }
+
+	&.bg-image-21by9 {
+		padding-bottom: 42.85%;
+    }
+
+        &.bg-image-21by9.inverse,
+        &.bg-image-9by21 {
+            padding-bottom: 233.33333%;
+        }
+
+	&.bg-image-3by1 {
+		padding-bottom: 33.33333%;
+    }
+
+        &.bg-image-3by1.inverse,
+        &.bg-image-1by3 {
+            padding-bottom: 300%;
+        }
+
+	&.bg-image-16by5 {
+		padding-bottom: 31.25%;
+    }
+
+        &.bg-image-16by5.inverse,
+        &.bg-image-5by16 {
+            padding-bottom: 320%;
+        }
+
+    &.bg-image-fix-small {
+        height: 400px;
+    }
+
+    &.bg-image-fix-window {
+        height: 100vh;
+
+        // mobile
+        @include media-breakpoint-down(sm) {
+            height: auto;
+            padding: 15px 0;
+        }
+    }
+}
+
+// embed resposnive helpers
+.embed-responsive-3by2:before{
+    padding-bottom: 66.6666%;
+}
+
+.embed-responsive-5by3:before{
+    padding-bottom: 60%;
+}
+
+.embed-responsive-3by1:before{
+    padding-bottom: 33.3333%;
+}
+
+.embed-responsive-16by5:before{
+    padding-bottom: 31.25%;
+}
+
+.embed-responsive-fix-small:before{
+    height: 400px;
+}
+
+.embed-responsive-fix-window:before{
+    height: 100vh;
+
+    // mobile
+    @include media-breakpoint-down(sm) {
+        height: auto;
+        padding: 15px 0;
+    }
+}
+
+/* bg image END */

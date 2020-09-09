@@ -1,0 +1,96 @@
+/*** Project buttons ***/
+
+/* buttons START */
+
+.main {
+
+	.btn {
+		@include css3-border-radius($project-button-border-radius);
+		@include project-button-box-shadow();
+		@include project-default-transition();
+		outline: 0 !important;
+		background: $project-button-background-color;
+		border-color: $project-button-border-color;
+		border-width: $project-button-border-width;
+		color: $project-button-color;
+		cursor: pointer;
+		font-family: $project-button-font-family;
+		font-size: $project-button-font-size;
+		height: $project-button-height;
+		line-height: $project-button-line-height;
+		margin: 0;
+		padding: $project-button-padding;
+		text-decoration: none;
+		vertical-align: top;
+
+		// desktop
+		@include media-breakpoint-up(xl) {
+			&:hover,
+			&:focus {
+				@include css3-opacity($project-button-opacity-HOVER);
+				background: $project-button-background-color-HOVER;
+				border-color: $project-button-border-color-HOVER;
+				color: $project-button-color-HOVER;
+				text-decoration: none !important;
+			}
+		}
+
+		&-multilines{
+            @include btn-multilines();
+        }
+
+		&-reset{
+            @include btn-reset();
+		}
+
+		// small
+		&.btn-sm {
+			@include css3-border-radius($project-button-border-radius-SMALL);
+			border-width: $project-button-border-width-SMALL;
+			font-size: $project-button-font-size-SMALL;
+			height: $project-button-height-SMALL;
+			line-height: $project-button-line-height-SMALL;
+			padding: $project-button-padding-SMALL;
+
+			&-multilines{
+				height: auto;
+				line-height: 1;
+				padding-bottom: ($project-button-height-SMALL - $project-button-font-size-SMALL) / 2 - $project-button-border-width-SMALL;
+				padding-top: ($project-button-height-SMALL - $project-button-font-size-SMALL) / 2 - $project-button-border-width-SMALL;
+				white-space: normal;
+				word-wrap: break-word;
+			}
+		}
+
+		// large
+		&.btn-lg {
+			@include css3-border-radius($project-button-border-radius-LARGE);
+			border-width: $project-button-border-width-LARGE;
+			font-size: $project-button-font-size-LARGE;
+			height: $project-button-height-LARGE;
+			line-height: $project-button-line-height-LARGE;
+			padding: $project-button-padding-LARGE;
+
+			&-multilines{
+				height: auto;
+				line-height: 1;
+				padding-top: ($project-button-height-LARGE - $project-button-font-size-LARGE) / 2 - $project-button-border-width-LARGE;
+				padding-bottom: ($project-button-height-LARGE - $project-button-font-size-LARGE) / 2 - $project-button-border-width-LARGE;
+				white-space: normal;
+				word-wrap: break-word;
+			}
+		}
+
+		// disabled
+		&[disabled] {
+			@include css3-opacity(1);
+			@include project-button-box-shadow-DISABLED();
+			background: $project-button-background-color-DISABLED;
+			border-color: $project-button-border-color-DISABLED;
+			color: $project-button-color-DISABLED;
+			cursor: default;
+		}
+	}
+}
+
+/* buttons END */

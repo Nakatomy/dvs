@@ -1,0 +1,49 @@
+/*** Project embed responsive layer for youtube ***/
+
+/* embed responsive layer for youtube START */
+
+.embed-responsive-youtube{
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.embed-responsive-layer-youtube {
+
+	p {
+		@include css3-background-opacity($project-embed-responsive-layer-youtube-background-color, $project-embed-responsive-layer-youtube-background-opacity);
+		@include css3-opacity($project-embed-responsive-layer-youtube-opacity);
+		@include project-default-transition();
+		align-items: center;
+		color: $project-embed-responsive-layer-youtube-color;
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		font-family: $project-embed-responsive-layer-youtube-font-family;
+		font-size: $project-embed-responsive-layer-youtube-font-size;
+		height: 100%;
+		justify-content: center;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+
+		// desktop
+		@include media-breakpoint-up(xl) {
+			&:hover,
+			&:focus {
+				@include css3-background-opacity($project-embed-responsive-layer-youtube-background-color-HOVER, $project-embed-responsive-layer-youtube-background-opacity-HOVER);
+				@include css3-opacity($project-embed-responsive-layer-youtube-opacity-HOVER);
+			}
+		}
+
+		// tablet
+		@include media-breakpoint-down(lg) {
+			@include css3-opacity($project-embed-responsive-layer-youtube-opacity-HOVER);
+		}
+	}
+}
+
+/* embed responsive layer for youtube END */

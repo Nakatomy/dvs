@@ -1,0 +1,92 @@
+/*** ball grid pulse ***/
+/* HTML: <div class="loader-ball-grid-pulse"><div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div> */
+
+@include css3-keyframes(loader-ball-grid-pulse) {
+	0% {
+		@include css3-prefix(transform, scale(1));
+	}
+	50% {
+		@include css3-opacity(0.7);
+		@include css3-prefix(transform, scale(0.5));
+	}
+	100% {
+		@include css3-opacity(1);
+		@include css3-prefix(transform, scale(1));
+	}
+}
+
+.loader-ball-grid-pulse {
+	text-align: center;
+
+	> div {
+		display: inline-block;
+		vertical-align: middle;
+		width: ($project-loader-item-size * 3) + ( $project-loader-item-distance * 6 );
+
+		> div {
+			@include css3-border-radius(100%);
+			@include css3-prefix(animation-delay, 0);
+			@include css3-prefix(animation-fill-mode, both);
+			@include css3-prefix(animation-iteration-count, infinite);
+			@include css3-prefix(animation-name, loader-ball-grid-pulse);
+			float: left;
+			height: $project-loader-item-size;
+			margin: $project-loader-item-distance;
+			width: $project-loader-item-size;
+
+			&:nth-child(1) {
+				@include css3-prefix(animation-delay, ( $project-loader-item-speed * 0.73 ) );
+				@include css3-prefix(animation-duration, ( $project-loader-item-speed * 1.3 ) );
+				background-color: $project-loader-item-1-color;
+			}
+
+			&:nth-child(2) {
+				@include css3-prefix(animation-delay, ( $project-loader-item-speed * 0.32 ) );
+				@include css3-prefix(animation-duration, ( $project-loader-item-speed * 1.3 ) );
+				background-color: $project-loader-item-2-color;
+			}
+
+			&:nth-child(3) {
+				@include css3-prefix(animation-delay, ( $project-loader-item-speed * 0.71 ) );
+				@include css3-prefix(animation-duration, ( $project-loader-item-speed * 0.88 ) );
+				background-color: $project-loader-item-3-color;
+			}
+
+			&:nth-child(4) {
+				@include css3-prefix(animation-delay, ( $project-loader-item-speed * 0.62 ) );
+				@include css3-prefix(animation-duration, ( $project-loader-item-speed * 1.06 ) );
+				background-color: $project-loader-item-1-color;
+			}
+
+			&:nth-child(5) {
+				@include css3-prefix(animation-delay, ( $project-loader-item-speed * 0.31 ) );
+				@include css3-prefix(animation-duration, ( $project-loader-item-speed * 0.62 ) );
+				background-color: $project-loader-item-2-color;
+			}
+
+			&:nth-child(6) {
+				@include css3-prefix(animation-delay, -( $project-loader-item-speed * 0.14 ) );
+				@include css3-prefix(animation-duration, ( $project-loader-item-speed * 1.48 ) );
+				background-color: $project-loader-item-3-color;
+			}
+
+			&:nth-child(7) {
+				@include css3-prefix(animation-delay, -( $project-loader-item-speed * 0.1 ) );
+				@include css3-prefix(animation-duration, ( $project-loader-item-speed * 1.47 ) );
+				background-color: $project-loader-item-1-color;
+			}
+
+			&:nth-child(8) {
+				@include css3-prefix(animation-delay, ( $project-loader-item-speed * 0.4 ) );
+				@include css3-prefix(animation-duration, ( $project-loader-item-speed * 1.49 ) );
+				background-color: $project-loader-item-2-color;
+			}
+
+			&:nth-child(9) {
+				@include css3-prefix(animation-delay, ( $project-loader-item-speed * 0.73 ) );
+				@include css3-prefix(animation-duration, ( $project-loader-item-speed * 0.7 ) );
+				background-color: $project-loader-item-3-color;
+			}
+		}
+	}
+}

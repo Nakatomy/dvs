@@ -1,0 +1,51 @@
+/*** line scale party ***/
+/* HTML: <div class="loader-line-scale-party"><div></div><div></div><div></div><div></div></div> */
+
+@include css3-keyframes(loader-line-scale-party) {
+	0% {
+		@include css3-prefix(transform, scale(1));
+	}
+	50% {
+		@include css3-prefix(transform, scale(0.4));
+	}
+	100% {
+		@include css3-prefix(transform, scale(1));
+	}
+}
+
+.loader-line-scale-party {
+
+	> div {
+		@include css3-border-radius( ( ( $project-loader-item-size / 5 ) / 2 ) );
+		@include css3-prefix(animation-delay, 0);
+		@include css3-prefix(animation-iteration-count, infinite);
+		@include css3-prefix(animation-fill-mode, both);
+		@include css3-prefix(animation-name, loader-line-scale-party);
+		background-color: $project-loader-item-1-color;
+		display: inline-block;
+		height: ( $project-loader-item-size * 2 );
+		margin: ( $project-loader-item-distance / 2.5 );
+		vertical-align: middle;
+		width: ( $project-loader-item-size / 5 );
+
+		&:nth-child(1) {
+			@include css3-prefix(animation-delay, ( $project-loader-item-speed * 0.23 ) );
+			@include css3-prefix(animation-duration, ( $project-loader-item-speed * 1.1 ) );
+		}
+
+		&:nth-child(2) {
+			@include css3-prefix(animation-delay, ( $project-loader-item-speed * 0.09 ) );
+			@include css3-prefix(animation-duration, ( $project-loader-item-speed * 1 ) );
+		}
+
+		&:nth-child(3) {
+			@include css3-prefix(animation-delay, ( $project-loader-item-speed * 0.44 ) );
+			@include css3-prefix(animation-duration, ( $project-loader-item-speed * 0.65 ) );
+		}
+
+		&:nth-child(4) {
+			@include css3-prefix(animation-delay, ( $project-loader-item-speed * -0.12 ) );
+			@include css3-prefix(animation-duration, ( $project-loader-item-speed * 1.01 ) );
+		}
+	}
+}

@@ -1,0 +1,193 @@
+/*** Project forms ***/
+
+/* forms START */
+
+.main {
+
+	// form control
+	.form-control {
+
+		&.input-v1 {
+			@include css3-border-radius($project-form-control-border-radius-v1);
+			@include css3-placeholder($project-form-control-color-v1-placeholder);
+			@include project-form-control-box-shadow-v1();
+			background-color: $project-form-control-background-color-v1;
+			border-color: $project-form-control-border-color-v1;
+			border-width: $project-form-control-border-width-v1;
+			color: $project-form-control-color-v1;
+			font-family: $project-form-control-font-family-v1;
+			font-size: $project-form-control-font-size-v1;
+			padding: $project-form-control-padding-v1;
+
+			&:-webkit-autofill,
+			&:-webkit-autofill:focus,
+			&:-webkit-autofill:hover {
+				@include css3-prefix('transition-delay','9999s');
+				-webkit-box-shadow: 0 0 0 9999px $project-form-control-background-color-v1-AUTOFILL inset; /* Change the color to your own background color */
+				-webkit-text-fill-color: $project-form-control-color-v1-AUTOFILL;
+			}
+
+			&:focus {
+				@include css3-placeholder($project-form-control-color-v1-placeholder-FOCUS);
+				@include project-form-control-box-shadow-v1-FOCUS();
+				background-color: $project-form-control-background-color-v1-FOCUS;
+				border-color: $project-form-control-border-color-v1-FOCUS;
+				color: $project-form-control-color-v1-FOCUS;
+			}
+		}
+
+		// small
+		&.form-control-sm {
+
+			&.input-v1 {
+				@include css3-border-radius($project-form-control-border-radius-v1-SMALL);
+				border-width: $project-form-control-border-width-v1-SMALL;
+				font-size: $project-form-control-font-size-v1-SMALL;
+				padding: $project-form-control-padding-v1-SMALL;
+			}
+		}
+
+		// large
+		&.form-control-lg {
+
+			&.input-v1 {
+				@include css3-border-radius($project-form-control-border-radius-v1-LARGE);
+				border-width: $project-form-control-border-width-v1-LARGE;
+				font-size: $project-form-control-font-size-v1-LARGE;
+				padding: $project-form-control-padding-v1-LARGE;
+			}
+		}
+
+
+		// form control fake to file upload skin
+		&-fake {
+
+			&.input-v1 {
+				height: $project-form-control-height-v1;
+				line-height: $project-form-control-height-v1;
+			}
+
+			// small
+			&.form-control-sm {
+
+				&.input-v1 {
+					height: $project-form-control-height-v1-SMALL;
+					line-height: $project-form-control-height-v1-SMALL;
+				}
+			}
+
+			// large
+			&.form-control-lg {
+
+				&.input-v1 {
+					height: $project-form-control-height-v1-LARGE;
+					line-height: $project-form-control-height-v1-LARGE;
+				}
+			}
+		}
+	}
+
+		// input
+		input.form-control {
+
+			&.input-v1 {
+				height: $project-form-control-height-v1;
+				line-height: $project-form-control-height-v1;
+			}
+
+			// small
+			&.form-control-sm {
+
+				&.input-v1 {
+					height: $project-form-control-height-v1-SMALL;
+					line-height: $project-form-control-height-v1-SMALL;
+				}
+			}
+
+			// large
+			&.form-control-lg {
+
+				&.input-v1 {
+					height: $project-form-control-height-v1-LARGE;
+					line-height: $project-form-control-height-v1-LARGE;
+				}
+			}
+		}
+
+		// textarea
+		textarea.form-control {
+
+			&.input-v1 {
+				padding: $project-form-control-padding-textarea-v1;
+			}
+			// small
+			&.form-control-sm {
+
+				&.input-v1 {
+					padding: $project-form-control-padding-textarea-v1-SMALL;
+				}
+			}
+
+			// large
+			&.form-control-lg {
+
+				&.input-v1 {
+					padding: $project-form-control-padding-textarea-v1-LARGE;
+				}
+			}
+		}
+
+	// help block
+	.form-text {
+
+		&.form-text-v1 {
+			color: $project-form-text-color-v1;
+			font-family: $project-form-text-font-family-v1;
+			font-size: $project-form-text-font-size-v1;
+			line-height: $project-form-text-line-height-v1;
+			margin: $project-form-text-margin-v1;
+		}
+	}
+
+	// error
+	.has-error .form-control,
+	.form-control.error {
+
+		&.input-v1 {
+			@include css3-placeholder($project-form-control-color-v1-placeholder-ERROR);
+			@include project-form-control-box-shadow-v1-ERROR();
+			background-color: $project-form-control-background-color-v1-ERROR;
+			color: $project-form-control-color-v1-ERROR;
+			border-color: $project-form-control-border-color-v1-ERROR;
+		}
+	}
+
+	.has-error .form-text {
+
+		&.form-text-v1 {
+			color: $project-form-text-color-v1-ERROR;
+		}
+	}
+
+	// disabled
+	.disabled .form-control,
+	.form-control.disabled {
+
+		&.input-v1 {
+			@include css3-placeholder($project-form-control-color-v1-placeholder-DISABLED);
+			@include project-form-control-box-shadow-v1-DISABLED();
+			background-color: $project-form-control-background-color-v1-DISABLED;
+			color: $project-form-control-color-v1-DISABLED;
+			border-color: $project-form-control-border-color-v1-DISABLED;
+		}
+	}
+
+	.disabled .form-text {
+
+		&.form-text-v1 {
+			color: $project-form-text-color-DISABLED;
+		}
+	}
+}
+
+/* forms END */

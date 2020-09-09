@@ -1,0 +1,150 @@
+/*** Project buttons ***/
+
+/* buttons START */
+
+.main {
+
+	.btn {
+
+		&-v1{
+
+			// options
+			&.btn-success,
+			&.btn-info,
+			&.btn-warning,
+			&.btn-danger,
+			&.btn-link{
+				@include css3-opacity(1);
+
+				// desktop
+				@include media-breakpoint-up(xl) {
+					&:hover,
+					&:focus {
+						@include css3-opacity(1);
+					}
+				}
+			}
+
+				// primary
+				// &.btn-primary {
+				// 	color: $project-button-option-color-PRIMARY-v1;
+				// 	background-color: $project-button-option-background-color-PRIMARY-v1;
+				// 	border-color: $project-button-option-border-color-PRIMARY-v1;
+
+				// 	// desktop
+				// 	@include media-breakpoint-up(xl) {
+				// 		&:hover,
+				// 		&:focus {
+				// 			color: $project-button-option-color-PRIMARY-v1-HOVER;
+				// 			background-color: $project-button-option-background-color-PRIMARY-v1-HOVER;
+				// 			border-color: $project-button-option-border-color-PRIMARY-v1-HOVER;
+				// 		}
+				// 	}
+				// }
+
+				// secondary
+				&.btn-secondary {
+					color: $project-button-option-color-SECONDARY-v1;
+					background-color: $project-button-option-background-color-SECONDARY-v1;
+					border-color: $project-button-option-border-color-SECONDARY-v1;
+
+					// desktop
+					@include media-breakpoint-up(xl) {
+						&:hover,
+						&:focus {
+							color: $project-button-option-color-SECONDARY-v1-HOVER;
+							background-color: $project-button-option-background-color-SECONDARY-v1-HOVER;
+							border-color: $project-button-option-border-color-SECONDARY-v1-HOVER;
+						}
+					}
+				}
+
+				// success
+				&.btn-success {
+					color: $project-button-option-color-SUCCESS-v1;
+					background-color: $project-button-option-background-color-SUCCESS-v1;
+					border-color: $project-button-option-border-color-SUCCESS-v1;
+
+					// desktop
+					@include media-breakpoint-up(xl) {
+						&:hover,
+						&:focus {
+							color: $project-button-option-color-SUCCESS-v1-HOVER;
+							background-color: $project-button-option-background-color-SUCCESS-v1-HOVER;
+							border-color: $project-button-option-border-color-SUCCESS-v1-HOVER;
+						}
+					}
+				}
+
+				// info
+				&.btn-info {
+					color: $project-button-option-color-INFO-v1;
+					background-color: $project-button-option-background-color-INFO-v1;
+					border-color: $project-button-option-border-color-INFO-v1;
+
+					// desktop
+					@include media-breakpoint-up(xl) {
+						&:hover,
+						&:focus {
+							color: $project-button-option-color-INFO-v1-HOVER;
+							background-color: $project-button-option-background-color-INFO-v1-HOVER;
+							border-color: $project-button-option-border-color-INFO-v1-HOVER;
+						}
+					}
+				}
+
+				// warning
+				&.btn-warning {
+					color: $project-button-option-color-WARNING-v1;
+					background-color: $project-button-option-background-color-WARNING-v1;
+					border-color: $project-button-option-border-color-WARNING-v1;
+
+					// desktop
+					@include media-breakpoint-up(xl) {
+						&:hover,
+						&:focus {
+							color: $project-button-option-color-WARNING-HOVER-v1;
+							background-color: $project-button-option-background-color-WARNING-v1-HOVER;
+							border-color: $project-button-option-border-color-WARNING-v1-HOVER;
+						}
+					}
+				}
+
+				// danger
+				&.btn-danger {
+					color: $project-button-option-color-DANGER-v1;
+					background-color: $project-button-option-background-color-DANGER-v1;
+					border-color: $project-button-option-border-color-DANGER-v1;
+
+					// desktop
+					@include media-breakpoint-up(xl) {
+						&:hover,
+						&:focus {
+							color: $project-button-option-color-DANGER-v1-HOVER;
+							background-color: $project-button-option-background-color-DANGER-v1-HOVER;
+							border-color: $project-button-option-border-color-DANGER-v1-HOVER;
+						}
+					}
+				}
+
+				// link
+				&.btn-link {
+					background-color: transparent;
+					border: 0;
+					color: $project-button-option-color-LINK-v1;
+
+					// desktop
+					@include media-breakpoint-up(xl) {
+						&:hover,
+						&:focus {
+							background-color: transparent;
+							color: $project-button-option-color-LINK-v1-HOVER;
+						}
+					}
+				}
+		}
+
+	}
+}
+
+/* buttons END */

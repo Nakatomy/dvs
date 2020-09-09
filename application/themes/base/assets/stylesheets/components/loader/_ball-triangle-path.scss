@@ -1,0 +1,78 @@
+/*** ball triangle path ***/
+/* HTML: <div class="loader-ball-triangle-path"><div></div><div></div><div></div></div> */
+
+@include css3-keyframes(loader-ball-triangle-path-1) {
+	33% {
+		@include css3-prefix(transform, translate( ( ( $project-loader-item-size * 3.333333333333333 ) / 2 ), -( $project-loader-item-size * 3.333333333333333 )));
+	}
+	66% {
+		@include css3-prefix(transform, translate( ( $project-loader-item-size * 3.333333333333333 ), 0px));
+	}
+	100% {
+		@include css3-prefix(transform, translate(0px, 0px));
+	}
+}
+
+@include css3-keyframes(loader-ball-triangle-path-2) {
+	33% {
+		@include css3-prefix(transform, translate(( ( $project-loader-item-size * 3.333333333333333 ) / 2 ), ( $project-loader-item-size * 3.333333333333333 )));
+	}
+	66% {
+		@include css3-prefix(transform, translate(-( ( $project-loader-item-size * 3.333333333333333 ) / 2 ), ( $project-loader-item-size * 3.333333333333333 )));
+	}
+	100% {
+		@include css3-prefix(transform, translate(0px, 0px));
+	}
+}
+
+@include css3-keyframes(loader-ball-triangle-path-3) {
+	33% {
+		@include css3-prefix(transform, translate(-( $project-loader-item-size * 3.333333333333333 ), 0px));
+	}
+	66% {
+		@include css3-prefix(transform, translate(-( ( $project-loader-item-size * 3.333333333333333 ) / 2 ), -( $project-loader-item-size * 3.333333333333333 )));
+	}
+	100% {
+		@include css3-prefix(transform, translate(0px, 0px));
+	}
+}
+
+.loader-ball-triangle-path {
+	height: $project-loader-item-size * 4.36 !important;
+	line-height: $project-loader-item-size * 4.36;
+	margin-left: -( $project-loader-item-size * 4.36 ) / 2 !important;
+	margin-top: -( $project-loader-item-size * 4.36 ) / 2 !important;
+	width: $project-loader-item-size * 4.36 !important;
+
+
+	position: relative;
+
+	> div {
+		@include css3-prefix(animation-fill-mode, both);
+		@include css3-border-radius(100%);
+		border-style: solid;
+		border-width: 1px;
+		position: absolute;
+		height: $project-loader-item-size;
+		width: $project-loader-item-size;
+
+		&:nth-of-type(1) {
+			@include css3-animation(loader-ball-triangle-path-1 $project-loader-item-speed 0s ease-in-out infinite);
+			border-color: $project-loader-item-1-color;
+			top: ( $project-loader-item-size * 3.333333333333333 );
+		}
+
+		&:nth-of-type(2) {
+			@include css3-animation(loader-ball-triangle-path-2 $project-loader-item-speed 0s ease-in-out infinite);
+			border-color: $project-loader-item-2-color;
+			left: ( ( $project-loader-item-size * 3.333333333333333 ) / 2 );
+		}
+
+		&:nth-of-type(3) {
+			@include css3-animation(loader-ball-triangle-path-3 $project-loader-item-speed 0s ease-in-out infinite);
+			border-color: $project-loader-item-3-color;
+			left: ( $project-loader-item-size * 3.333333333333333 );
+			top: ( $project-loader-item-size * 3.333333333333333 );
+		}
+	}
+}

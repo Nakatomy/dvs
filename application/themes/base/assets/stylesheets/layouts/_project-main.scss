@@ -1,0 +1,80 @@
+/*** Project layout ***/
+
+
+/* html + body START */
+
+html,
+body {
+    font-size: $project-default-font-size-base;
+
+    // tablet
+    @include media-breakpoint-between(md, lg) {
+        font-size: $project-default-font-size-base - 1;
+    }
+
+    // mobile
+    @include media-breakpoint-down(sm) {
+        font-size: $project-default-font-size-base - 2;
+    }
+
+/*
+	// mobile
+	@include media-breakpoint-down(sm) {
+		height: 100%;
+		overflow-y: scroll;
+		width: 100%;
+		-webkit-overflow-scrolling: touch;
+	}
+*/
+
+	*,
+	*:before,
+	*:after{
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+}
+
+html {}
+
+body {}
+
+/* html + body END */
+
+/* main START */
+
+.main {
+	background: $color-white;
+	min-width: 320px;
+	overflow: hidden;
+    position: relative;
+}
+
+.d-flex{
+	flex-wrap: wrap;
+}
+
+/* main END */
+
+/* contents START */
+
+.main{
+
+    .contents {
+        min-height: calc( 100vh - #{$headerHeight} - #{$footerHeight});
+    }
+
+    /* content START */
+
+    .content {}
+
+    /* content END */
+
+    /* sidebar START */
+
+    .sidebar {}
+
+    /* sidebar END */
+}
+
+/* contents END */

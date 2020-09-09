@@ -1,0 +1,124 @@
+@import "project_defaults";
+/*** Project alerts ***/
+
+/* alerts START */
+
+// main
+.main {
+
+	// alerts
+	.alert {
+		@include project-button-box-shadow();
+		@include css3-border-radius($project-alert-border-radius);
+		position: relative;
+		border-style: solid;
+		border-width: $project-alert-border-width;
+		margin: 0 0 $project-alert-margin 0;
+		padding: $project-alert-padding;
+
+		.close{
+			position: absolute;
+			top: 0;
+			right: 0;
+			color: inherit;
+			padding: 10px !important;
+			color: $color-white;
+			cursor: pointer;
+
+			// desktop
+			@include media-breakpoint-up(xl) {
+				&:hover,
+				&:focus {
+					text-decoration: none;
+				}
+			}
+		}
+
+		p,
+		p *,
+		ul,
+		ul *,
+		ol,
+		ol * {
+			font-family: $project-alert-font-family;
+			color: $project-alert-color;
+			font-size: $project-alert-font-size;
+			line-height: $project-alert-line-height;
+			margin: 0;
+		}
+
+		a {
+			text-decoration: underline;
+
+			// Extra large devices (large desktops, 1200px and up)
+			@include media-breakpoint-up(xl) {
+				&:hover,
+				&:focus {
+					color: $project-alert-color;
+				}
+			}
+		}
+
+		// success
+		&-success {
+			@include css3-background-opacity($project-alert-background-SUCCESS, $project-alert-background-opacity);
+			border-color: $project-alert-border-color-SUCCESS;
+
+			p,
+			p *,
+			ul,
+			ul *,
+			ol,
+			ol * {
+				color: $project-alert-color-SUCCESS;
+			}
+		}
+
+		// info
+		&-info {
+			@include css3-background-opacity($project-alert-background-INFO, $project-alert-background-opacity);
+			border-color: $project-alert-border-color-INFO;
+
+			p,
+			p *,
+			ul,
+			ul *,
+			ol,
+			ol * {
+				color: $project-alert-color-INFO;
+			}
+		}
+
+		// warning
+		&-warning {
+			@include css3-background-opacity($project-alert-background-WARNING, $project-alert-background-opacity);
+			border-color: $project-alert-border-color-WARNING;
+
+			p,
+			p *,
+			ul,
+			ul *,
+			ol,
+			ol * {
+				color: $project-alert-color-WARNING;
+			}
+		}
+
+		// danger
+		&-danger {
+			@include css3-background-opacity($project-alert-background-DANGER, $project-alert-background-opacity);
+			border-color: $project-alert-border-color-DANGER;
+
+			p,
+			p *,
+			ul,
+			ul *,
+			ol,
+			ol * {
+				color: $project-alert-color-DANGER;
+			}
+		}
+	}
+}
+
+/* alerts END */

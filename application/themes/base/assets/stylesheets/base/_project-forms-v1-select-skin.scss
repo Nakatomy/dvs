@@ -1,0 +1,97 @@
+/*** Project forms ***/
+
+/* forms START */
+
+.main {
+
+	// select
+	select.form-control,
+	select.form-control:not([size]):not([multiple]) {
+
+		&.input-v1 {
+			height: $project-form-control-height-v1;
+			line-height: $project-form-control-height-v1;
+		}
+
+		option {
+			font-family: $project-form-control-font-family-v1;
+		}
+
+		// small
+		&.form-control-sm {
+
+			&.input-v1 {
+				height: $project-form-control-height-v1-SMALL;
+				line-height: $project-form-control-height-v1-SMALL;
+			}
+		}
+
+		// large
+		&.form-control-lg {
+
+			&.input-v1 {
+				height: $project-form-control-height-v1-LARGE;
+				line-height: $project-form-control-height-v1-LARGE;
+			}
+		}
+
+		// select skin
+		& {
+
+			&.input-v1 {
+				@include css3-background-size($project-select-skin-background-size-x-v1, $project-select-skin-background-size-y-v1);
+				background-image: url($project-select-skin-background-image-v1);
+				background-position: right $project-select-skin-background-position-v1 center;
+
+				// small
+				&.form-control-sm {
+					@include css3-background-size($project-select-skin-background-size-x-v1-SMALL, $project-select-skin-background-size-y-v1-SMALL);
+					background-position: right $project-select-skin-background-position-v1-SMALL center;
+				}
+
+				// large
+				&.form-control-lg {
+					@include css3-background-size($project-select-skin-background-size-x-v1-LARGE, $project-select-skin-background-size-y-v1-LARGE);
+					background-position: right $project-select-skin-background-position-v1-LARGE center;
+				}
+			}
+		}
+
+		&.input-v1 {
+
+			// IE focus fix
+			&:focus::-ms-value {
+				background-color: $project-form-control-background-color-v1-FOCUS;
+				color: $project-form-control-color-v1-FOCUS;
+			}
+
+			&.error {
+
+				// IE focus fix
+				&:focus::-ms-value {
+					background-color: $project-form-control-background-color-v1-ERROR;
+					color: $project-form-control-color-v1-ERROR;
+				}
+			}
+
+			.ie & {
+				padding-right: 30px;
+			}
+		}
+	}
+
+	.has-error{
+
+		select.form-control.input-v1,
+		select.form-control.input-v1:not([size]):not([multiple]) {
+
+			// IE focus fix
+			&:focus::-ms-value {
+				background-color: $project-form-control-background-color-v1-ERROR;
+				color: $project-form-control-color-v1-ERROR;
+			}
+		}
+	}
+}
+
+/* forms END */

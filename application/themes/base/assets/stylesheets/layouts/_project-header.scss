@@ -1,0 +1,122 @@
+/*** Project header ***/
+
+/* header START */
+
+.header {
+    @include css3-box-shadow(0px, 2px, 3px, rgba($color-black, .2));
+    position: relative;
+    z-index: 5;
+
+    .header-fixed &{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    .container,
+    .container-fluid  {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        // tablet + desktop
+        @include media-breakpoint-up(md) {
+            height: $headerHeight;
+        }
+
+        // mobile
+        @include media-breakpoint-down(sm) {
+            min-height: $headerHeight * .7;
+        }
+    }
+
+    .logo {
+
+        a {
+
+            &:after{
+                display: none !important;
+            }
+
+            // mobile
+            @include media-breakpoint-down(sm) {
+                max-width: 35vw;
+            }
+
+            // desktop
+            @include media-breakpoint-up(xl) {
+                &:hover,
+                &:focus {
+                    @include css3-opacity(.7);
+                }
+            }
+        }
+    }
+
+    .d-flex.justify-content-end{
+
+        > nav,
+        > div{
+            margin-left: 30px;
+        }
+    }
+
+    .d-flex.justify-content-start{
+
+        > nav,
+        > div{
+            margin-right: 30px;
+        }
+    }
+
+    nav:not(.socials) &,
+    div:not(.socials) &{
+
+        a {
+
+            .fa {
+                display: inline-block;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    &-logo-centered{
+
+        .container,
+        .container-fluid {
+
+            > article,
+            > nav,
+            > div{
+
+                // tablet large + desktop
+                @include media-breakpoint-up(lg) {
+                    flex: 0 0 33.3333%;
+                    max-width: 33.3333%;
+                }
+
+                // mobile + tablet small
+                @include media-breakpoint-down(md) {
+                    flex: 0 0 100%;
+                    max-width: 100%;
+                    flex-flow: column;
+                    height: auto;
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+
+                    .logo,
+                    &.logo{
+                        order: -1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* header END */

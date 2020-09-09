@@ -1,0 +1,92 @@
+/*** Project forms ***/
+
+/* forms START */
+
+.main {
+
+	// label
+	.control-label {
+
+		&.label-v1 {
+			color: $project-label-checkradio-color-v1;
+			font-family: $project-label-font-family-v1;
+			font-size: $project-label-font-size-v1;
+			line-height: $project-label-line-height-v1;
+
+			// small
+			&.label-sm {
+				font-size: $project-label-font-size-v1-SMALL;
+				line-height: $project-label-line-height-v1-SMALL;
+			}
+
+			// large
+			&.label-lg {
+				font-size: $project-label-font-size-v1-LARGE;
+				line-height: $project-label-line-height-v1-LARGE;
+			}
+		}
+	}
+
+	.checkbox label,
+	.radio label {
+
+		&.label-v1 {
+			color: $project-label-checkradio-color-v1;
+			font-family: $project-label-checkradio-font-family-v1;
+			font-size: $project-label-checkradio-font-size-v1;
+			line-height: $project-label-checkradio-line-height-v1;
+
+			// small
+			&.label-sm {
+				font-size: $project-label-checkradio-font-size-v1-SMALL;
+				line-height: $project-label-checkradio-line-height-v1-SMALL;
+			}
+
+			// large
+			&.label-lg {
+				font-size: $project-label-checkradio-font-size-v1-LARGE;
+				line-height: $project-label-checkradio-line-height-v1-LARGE;
+			}
+		}
+	}
+
+	// error
+	.has-error .control-label,
+	.control-label.error {
+
+		&.label-v1 {
+			color: $project-label-checkradio-color-v1-ERROR;
+		}
+	}
+
+	.has-error .checkbox label,
+	.has-error .radio label,
+	.checkbox label.error,
+	.radio label.error {
+
+		&.label-v1 {
+			color: $project-label-checkradio-color-v1-ERROR;
+		}
+	}
+
+	// disabled
+	.disabled .control-label,
+	.control-label.disabled {
+
+		&.label-v1 {
+			color: $project-label-checkradio-color-v1-DISABLED;
+		}
+	}
+
+	.disabled .checkbox label,
+	.disabled .radio label,
+	.checkbox label.disabled,
+	.radio label.disabled {
+
+		&.label-v1 {
+			color: $project-label-checkradio-color-v1-DISABLED;
+		}
+	}
+}
+
+/* forms END */

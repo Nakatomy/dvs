@@ -1,0 +1,202 @@
+/*** Project mixins ***/
+
+/* mixins START */
+
+// list center
+@mixin list-center() {
+
+	ul, ol {
+		padding-left: 0;
+
+		li:before {
+			display: inline;
+			margin-left: 0;
+		}
+	}
+}
+
+// list right
+@mixin list-right() {
+
+	ul, ol {
+		padding-left: 0;
+
+		li:before {
+			display: inline;
+			margin-left: 0;
+		}
+	}
+}
+
+// aspect ratio calculation
+@mixin aspect-ratio($width, $height) {
+	position: relative;
+
+	&:before {
+		display: block;
+		content: "";
+		width: 100%;
+		padding-top: ($height / $width) * 100%;
+	}
+}
+
+// mixins - USE THIS: @include triangle();
+@mixin triangle() {
+	border-color: rgba(255, 255, 255, 0);
+	border-style: solid;
+	border-width: 0;
+	font-size: 0;
+	display: block;
+	height: 0;
+	line-height: 0;
+	min-height: 0;
+	min-width: 0;
+	margin: 0;
+	max-height: 0;
+	max-width: 0;
+	overflow: hidden;
+	padding: 0;
+	width: 0;
+}
+
+// triangle separate - USE THIS: @include triangle-separate(top, $color-black, 10px, 10px, 10px 10px);
+@mixin triangle-separate($orientation: top, $color: $color-black, $topWidth: 10px, $rightWidth: 10px, $bottomWidth: 10px, $leftWidth: 10px) {
+    // include triangle mixin
+    @include triangle();
+    // setup color
+    border-#{$orientation}-color: $color;
+    // setup width
+    border-bottom-width: $bottomWidth;
+    border-left-width: $leftWidth;
+    border-right-width: $rightWidth;
+    border-top-width: $topWidth;
+}
+
+// btn-multilines
+@mixin btn-multilines(){
+	height: auto;
+	line-height: 1;
+	padding-top: ($project-button-height - $project-button-font-size) / 2 - $project-button-border-width;
+	padding-bottom: ($project-button-height - $project-button-font-size) / 2 - $project-button-border-width;
+	white-space: normal;
+	word-wrap: break-word;
+};
+
+// btn-reset
+@mixin btn-reset(){
+    @include css3-border-radius(0);
+    @include css3-prefix(appearance, none);
+    @include project-default-transition();
+    background: transparent;
+    border: 0;
+    display: inline-block;
+    height: auto;
+    line-height: 1;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    vertical-align: top;
+    text-align: center;
+    width: auto;
+};
+
+// responsive backgrounds USE: @include responsive-backgrounds('../img/base/image', 'jpg');
+@mixin responsive-backgrounds($path, $filetype: 'jpg') {
+
+    // desktop
+    @include media-breakpoint-up(xl) {
+        background-image: url('#{$path}-desktop.#{$filetype}');
+    }
+
+    // tablet
+    @include media-breakpoint-between(md, lg) {
+        background-image: url('#{$path}-tablet.#{$filetype}');
+    }
+
+    // mobile
+    @include media-breakpoint-down(sm) {
+        background-image: url('#{$path}-mobile.#{$filetype}');
+	}
+};
+
+// grayscale
+@mixin grayscale() {
+	// add grayscale
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); // Firefox 10+
+	-webkit-filter: grayscale(100%);
+	-webkit-backface-visibility: hidden;
+}
+
+// grayscale-disabled
+@mixin grayscale-disabled() {
+	// remove grayscale
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+	-webkit-filter: grayscale(0%);
+}
+
+// underlinehover
+@mixin underlinehover($color){
+    display: inline-block;
+    position: relative;
+
+    &:after{
+        @include project-default-transition();
+        @include css3-opacity(0);
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background-color: $color;
+    }
+
+    // desktop
+    @include media-breakpoint-up(xl) {
+    	&:hover,
+    	&:focus {
+    		text-decoration: none;
+
+            &:after{
+                @include css3-opacity(1);
+                width: 100%;
+                left: 0;
+            }
+    	}
+    }
+};
+
+// underlinehover
+@mixin underlinehover-reverse($color){
+    display: inline-block;
+    position: relative;
+
+    &:after{
+        @include project-default-transition();
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: $color;
+    }
+
+    // desktop
+    @include media-breakpoint-up(xl) {
+    	&:hover,
+    	&:focus {
+    		text-decoration: none;
+
+            &:after{
+                width: 50%;
+                left: 25%;
+            }
+    	}
+    }
+};
+
+/* mixins END */
+
