@@ -345,6 +345,45 @@ function sameHeightInit() {
 
 };
 
+// header open
+function headerOpenInit() {
+
+  $('.menu-button').click(function() {
+    $('html').toggleClass('open-menu');
+  });
+
+};
+
+// fixedHeader
+function fixedHeader(){
+
+  function toggleFixedClass(){
+
+    var windowTop = $(window).scrollTop();
+
+    if ( windowTop > 0 ){
+      $('body').addClass('header-scrolled');
+    } else {
+      $('body').removeClass('header-scrolled');
+    }
+
+  };
+
+  if ( $(window).width() >= 1200 ){
+
+    toggleFixedClass();
+
+    // scroll event
+    $(window).scroll(function(){
+
+      toggleFixedClass();
+
+    });
+
+  }
+
+};
+
 // after resize
 var afterResizeInit = (function () {
 
@@ -377,7 +416,11 @@ $(function() {
 	embedResponsiveLayer();
 
 	// smooth scroll to
-	smoothScrollToInit(500); // setup speed (default: 500)
+  smoothScrollToInit(500); // setup speed (default: 500)
+
+  headerOpenInit();
+
+  fixedHeader();
 
 });
 
