@@ -34,7 +34,7 @@
 				display: inline-block;
 				height: $project-checkradio-height;
 				left: 0;
-				top: 0;
+				top: 5px;
 				position: absolute;
 				vertical-align: top;
                 width: $project-checkradio-width;
@@ -144,9 +144,9 @@
 				font-size: $project-checkradio-checkbox-size;
 				height: $project-checkradio-height;
 				left: 0;
-				line-height: $project-checkradio-height;
+				line-height: $project-checkradio-height !important;
 				text-align: center;
-				top: 0;
+				top: 5px;
 				width: $project-checkradio-width;
 
 				@if $project-checkradio-checkbox-font-family == icomoon {
@@ -251,7 +251,7 @@
 				content: '';
 				height: $project-checkradio-radio-size;
 				left: ( $project-checkradio-width - $project-checkradio-radio-size ) / 2;
-				top: ( $project-checkradio-height - $project-checkradio-radio-size ) / 2;
+				top: 10px;
 				width: $project-checkradio-radio-size;
 			}
 		}

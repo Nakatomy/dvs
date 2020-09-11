@@ -48,4 +48,19 @@ div.card{
     }
 }
 
+.cc-btn{
+    border-radius: $project-button-border-radius;
+
+    &.cc-dismiss {
+        border: 1px solid $project-button-option-border-color-PRIMARY;
+    }
+
+    &.cc-allow {
+        background-color: $project-cookie-bar-button-allow-background-color !important;
+        color: $project-cookie-bar-button-allow-text-color !important;
+        padding: $project-cookie-bar-button-allow-padding;
+    }
+
+}
+
 /* card END */

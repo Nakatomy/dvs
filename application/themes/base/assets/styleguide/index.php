@@ -62,10 +62,28 @@
 
         <h1>Used fonts</h1>
 
-        <div class="Montserrat-Medium"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, soluta.</p></div>
-        <div class="Montserrat-MediumItalic"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, soluta.</p></div>
-        <div class="Montserrat-Bold"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, soluta.</p></div>
-        <div class="Montserrat-BoldItalic"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, soluta.</p></div>
+        <div class="Montserrat-Medium"><p>Montserrat-Medium Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, soluta.</p></div>
+        <div class="Montserrat-Light"><p>Montserrat-Light Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, soluta.</p></div>
+        <div class="Montserrat-Regular"><p>Montserrat-Regular Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, soluta.</p></div>
+        <div class="Poppins-Italic"><p>Poppins-Italic Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, soluta.</p></div>
+        <div class="Poppins-Light"><p>Poppins-Light Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, soluta.</p></div>
+        <div class="Poppins-Medium"><p>Poppins-Medium Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, soluta.</p></div>
+        <div class="Poppins-Regular"><p>Poppins-Regular Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, soluta.</p></div>
+        <div class="Poppins-SemiBold"><p>Poppins-SemiBold Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, soluta.</p></div>
+        <div class="Poppins-SemiBoldItalic"><p>Poppins-SemiBoldItalic Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, soluta.</p></div>
+
+        <h1>Used icons</h1>
+
+        <div class="margin-bottom-default">
+            <i class="icomoon icon-8-ways"></i>
+            <i class="icomoon icon-gbart"></i>
+            <i class="icomoon icon-webery"></i>
+            <i class="icomoon icon-arrow-down"></i>
+            <i class="icomoon icon-arrow-up"></i>
+            <i class="icomoon icon-check-icon"></i>
+            <i class="icomoon icon-map-icon"></i>
+            <i class="icomoon icon-arrow-left"></i>
+        </div>
 
     </article>
 

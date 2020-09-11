@@ -4,8 +4,8 @@
 
 // ---- extras START
 
-$headerHeight:                                                      rem(100px);
-$footerHeight:                                                      rem(70px);
+$headerHeight:                                                      7rem;
+$footerHeight:                                                      34.75rem;
 
 // ---- extras END
 
@@ -46,57 +46,57 @@ $project-link-opacity-HOVER:										$project-default-opacity-HOVER;
 
 	// h1
 	$project-h1-color:												$color-theme-primary;
-	$project-h1-font-family:										$project-default-font-family-1-BOLD;
-	$project-h1-font-size:											rem($project-default-font-size-base + 44);
-	$project-h1-line-height:										1.2; // $project-h2-font-size + $project-default-line-height-diff;
+	$project-h1-font-family:										$project-default-font-family-2-LIGHT;
+	$project-h1-font-size:											6.25rem;
+	$project-h1-line-height:										6.25rem;
 	$project-h1-margin:												$project-default-margin-bottom;
 	$project-h1-uppercase-toggle:									false;
-	$project-h1-letter-spacing:										0px;
+	$project-h1-letter-spacing:										-0.25rem;
 
 	// h2
 	$project-h2-color:												$color-theme-primary;
-	$project-h2-font-family:										$project-default-font-family-1-BOLD;
-	$project-h2-font-size:											rem($project-default-font-size-base + 34);
-	$project-h2-line-height:										1.2; // $project-h2-font-size + $project-default-line-height-diff;
+	$project-h2-font-family:										$project-default-font-family-2-REGULAR;
+	$project-h2-font-size:											4.5rem;
+	$project-h2-line-height:										4.5rem;
 	$project-h2-margin:												$project-default-margin-bottom;
 	$project-h2-uppercase-toggle:									false;
-	$project-h2-letter-spacing:										0px;
+	$project-h2-letter-spacing:										-0.25rem;
 
 	// h3
 	$project-h3-color:												$color-theme-primary;
-	$project-h3-font-family:										$project-default-font-family-1-BOLD;
-	$project-h3-font-size:											rem($project-default-font-size-base + 24);
-	$project-h3-line-height:										1.2; // $project-h3-font-size + $project-default-line-height-diff;
+	$project-h3-font-family:										$project-default-font-family-2-LIGHT;
+	$project-h3-font-size:											4.5rem;
+	$project-h3-line-height:										5rem;
 	$project-h3-margin:												$project-default-margin-bottom;
 	$project-h3-uppercase-toggle:									false;
-	$project-h3-letter-spacing:										0px;
+	$project-h3-letter-spacing:										-0.25rem;
 
 	// h4
 	$project-h4-color:												$color-theme-primary;
-	$project-h4-font-family:										$project-default-font-family-1-BOLD;
-	$project-h4-font-size:											rem($project-default-font-size-base + 14);
-	$project-h4-line-height:										1.2; // $project-h4-font-size + $project-default-line-height-diff;
+	$project-h4-font-family:										$project-default-font-family-2-REGULAR;
+	$project-h4-font-size:											4rem;
+	$project-h4-line-height:										4.5rem;
 	$project-h4-margin:												$project-default-margin-bottom;
 	$project-h4-uppercase-toggle:									false;
-	$project-h4-letter-spacing:										0px;
+	$project-h4-letter-spacing:										-0.25rem;
 
 	// h5
 	$project-h5-color:												$color-theme-primary;
-	$project-h5-font-family:										$project-default-font-family-1-BOLD;
-	$project-h5-font-size:											rem($project-default-font-size-base + 4);
-	$project-h5-line-height:										1.2; // $project-h5-font-size + $project-default-line-height-diff;
+	$project-h5-font-family:										$project-default-font-family-2-REGULAR;
+	$project-h5-font-size:											3rem;
+	$project-h5-line-height:										3.5rem;
 	$project-h5-margin:												$project-default-margin-bottom;
 	$project-h5-uppercase-toggle:									false;
-	$project-h5-letter-spacing:										0px;
+	$project-h5-letter-spacing:										-0.125rem;
 
 	// h6
 	$project-h6-color:												$color-theme-primary;
-	$project-h6-font-family:										1.2; // $project-default-font-family-1-BOLD;
-	$project-h6-font-size:											rem($project-default-font-size-base + 2);
-	$project-h6-line-height:										$project-h6-font-size + $project-default-line-height-diff;
+	$project-h6-font-family:										$project-default-font-family-1-REGULAR;
+	$project-h6-font-size:											2rem;
+	$project-h6-line-height:										2rem;
 	$project-h6-margin:												$project-default-margin-bottom;
 	$project-h6-uppercase-toggle:									false;
-	$project-h6-letter-spacing:										0px;
+	$project-h6-letter-spacing:										-0.0625rem;
 
 // paragraph
 $project-p-color:													inherit;
@@ -123,7 +123,7 @@ $project-list-padding-list-style-type:								rem(10px);
 	// ol style type - remove this if you don't need skinned "list-style-type"
 	$project-ol-style-type-color:									inherit;
 	$project-ol-style-type-content:									counter(li, decimal)'.'; // '1.'
-	$project-ol-style-type-font-family:								inherit;
+	$project-ol-style-type-font-family:								$project-default-font-family-1-BOLD;
 	$project-ol-style-type-font-size:								inherit;
 
 // definition list
@@ -253,21 +253,21 @@ $project-alert-padding:												15px;
 
 		// background color
 		$project-button-background-color:							$color-theme-primary;
-		$project-button-background-color-HOVER:						$color-theme-primary-dark;
-		$project-button-background-color-DISABLED:					$color-theme-primary-light;
+		$project-button-background-color-HOVER:						transparent;
+		$project-button-background-color-DISABLED:					$color-gray;
 
 		// border color
 		$project-button-border-color:								$color-theme-primary;
-		$project-button-border-color-HOVER:							$color-theme-primary-dark;
-		$project-button-border-color-DISABLED:						$color-theme-primary-light;
+		$project-button-border-color-HOVER:							$color-theme-primary;
+		$project-button-border-color-DISABLED:						$color-gray;
 
 		// border radius
-		$project-button-border-radius:								$project-default-border-radius;
+		$project-button-border-radius:								rem(100px);
 		$project-button-border-radius-SMALL:						$project-button-border-radius;
 		$project-button-border-radius-LARGE:						$project-button-border-radius;
 
 		// border width
-		$project-button-border-width:								rem(0px);
+		$project-button-border-width:								rem(1px);
 		$project-button-border-width-SMALL:							$project-button-border-width;
 		$project-button-border-width-LARGE:							$project-button-border-width;
 
@@ -277,7 +277,7 @@ $project-alert-padding:												15px;
 
 		// color
 		$project-button-color:										$color-white;
-		$project-button-color-HOVER:								$color-white;
+		$project-button-color-HOVER:								$color-theme-primary;
 		$project-button-color-DISABLED:								$color-white;
 
 		// font family
@@ -285,13 +285,13 @@ $project-alert-padding:												15px;
 
 		// font size
 		$project-button-font-size:									$project-default-font-size;
-		$project-button-font-size-SMALL:							$project-button-font-size - rem(2px);
-		$project-button-font-size-LARGE:							$project-button-font-size;
+		$project-button-font-size-SMALL:							0.875rem;
+		$project-button-font-size-LARGE:							1.125rem;
 
 		// heights
 		$project-button-height: 									$project-default-button-height;
-		$project-button-height-SMALL: 								$project-button-height - rem(10px);
-		$project-button-height-LARGE: 								$project-button-height;
+		$project-button-height-SMALL: 								3rem;
+		$project-button-height-LARGE: 								4rem;
 
 		// line height
 		$project-button-line-height:								$project-button-height;
@@ -302,27 +302,27 @@ $project-alert-padding:												15px;
 		$project-button-opacity-HOVER:								$project-default-opacity-HOVER;
 
 		// padding
-		$project-button-padding:									0 rem(30px);
-		$project-button-padding-SMALL:								0 rem(30px);
-		$project-button-padding-LARGE:								0 rem(70px);
+		$project-button-padding:									0 1.4375rem;
+		$project-button-padding-SMALL:								0 1.25rem;
+		$project-button-padding-LARGE:								0 1.625rem;
 
 	// button options
 
-		// primary
-		// $project-button-option-color-PRIMARY:						$color-white;
-		// $project-button-option-color-PRIMARY-HOVER:					$color-white;
-		// $project-button-option-background-color-PRIMARY:			    $color-theme-primary;
-		// $project-button-option-background-color-PRIMARY-HOVER:		$color-theme-primary-light;
-		// $project-button-option-border-color-PRIMARY:				    $color-black;
-		// $project-button-option-border-color-PRIMARY-HOVER:			$color-black;
+		//primary
+		$project-button-option-color-PRIMARY:						$color-white;
+		$project-button-option-color-PRIMARY-HOVER:					$color-white;
+		$project-button-option-background-color-PRIMARY:			transparent;
+		$project-button-option-background-color-PRIMARY-HOVER:		rgba($color-white, 0.2);
+		$project-button-option-border-color-PRIMARY:				rgba($color-white, 0.2);
+		$project-button-option-border-color-PRIMARY-HOVER:			transparent;
 
 		// secondary
 		$project-button-option-color-SECONDARY:						$color-white;
 		$project-button-option-color-SECONDARY-HOVER:				$color-white;
 		$project-button-option-background-color-SECONDARY:			$color-theme-secondary;
-		$project-button-option-background-color-SECONDARY-HOVER:	$color-theme-secondary-dark;
-		$project-button-option-border-color-SECONDARY:				$color-black;
-		$project-button-option-border-color-SECONDARY-HOVER:		$color-black;
+		$project-button-option-background-color-SECONDARY-HOVER:	transparent;
+		$project-button-option-border-color-SECONDARY:				$color-theme-secondary;
+		$project-button-option-border-color-SECONDARY-HOVER:		$color-theme-secondary;
 
 		// success
 		$project-button-option-color-SUCCESS:						$color-white;
@@ -494,10 +494,10 @@ $project-alert-padding:												15px;
 	$project-form-control-background-color-DISABLED:				transparent;
 
 	// border color
-	$project-form-control-border-color:								$color-theme-primary-light;
+	$project-form-control-border-color:								$color-black-gray;
 	$project-form-control-border-color-AUTOFILL:					$project-form-control-border-color;
-	$project-form-control-border-color-FOCUS:						$color-theme-primary-dark;
-	$project-form-control-border-color-ERROR:						$color-theme-danger;
+	$project-form-control-border-color-FOCUS:						$color-black-gray;
+	$project-form-control-border-color-ERROR:						$color-black-gray;
 	$project-form-control-border-color-DISABLED:					$color-gray;
 
 	// border radius
@@ -506,7 +506,7 @@ $project-alert-padding:												15px;
 	$project-form-control-border-radius-LARGE:						$project-form-control-border-radius + rem(5px);
 
 	// border width
-	$project-form-control-border-width:								rem(2px);
+	$project-form-control-border-width:								rem(1px);
 	$project-form-control-border-width-SMALL:						$project-form-control-border-width;
 	$project-form-control-border-width-LARGE:						$project-form-control-border-width;
 
@@ -517,15 +517,15 @@ $project-alert-padding:												15px;
 	@mixin project-form-control-box-shadow-DISABLED()				{ @include css3-box-shadow(0, 0, 0, rgba($color-black, 0), ''); } // USE THIS: @include project-form-control-box-shadow-DISABLED();
 
 	// color
-	$project-form-control-color:									$color-theme-primary;
+	$project-form-control-color:									rgba($color-theme-primary, .7);
 	$project-form-control-color-AUTOFILL:							$project-form-control-color;
-	$project-form-control-color-FOCUS:								$color-theme-primary-dark;
-	$project-form-control-color-ERROR:								$color-theme-primary;
+	$project-form-control-color-FOCUS:								$color-theme-primary;
+	$project-form-control-color-ERROR:								$color-theme-danger;
 	$project-form-control-color-DISABLED:							$color-gray;
 
-	$project-form-control-color-placeholder:						$color-theme-primary-light;
-	$project-form-control-color-placeholder-FOCUS:					$color-theme-primary-dark;
-	$project-form-control-color-placeholder-ERROR:					$color-theme-primary;
+	$project-form-control-color-placeholder:						rgba($color-theme-primary, .5);
+	$project-form-control-color-placeholder-FOCUS:					rgba($color-theme-primary, .7);
+	$project-form-control-color-placeholder-ERROR:					rgba($color-theme-danger, .7);
 	$project-form-control-color-placeholder-DISABLED:				$color-gray;
 
 	// font family
@@ -533,8 +533,8 @@ $project-alert-padding:												15px;
 
 	// font size
 	$project-form-control-font-size:								$project-default-font-size;
-	$project-form-control-font-size-SMALL:							$project-form-control-font-size - rem(2px);
-	$project-form-control-font-size-LARGE:							$project-form-control-font-size + rem(2px);
+	$project-form-control-font-size-SMALL:							0.875rem;
+	$project-form-control-font-size-LARGE:							1.125rem;
 
 	// height
 	$project-form-control-height: 									$project-default-button-height;
@@ -547,14 +547,14 @@ $project-alert-padding:												15px;
 	$project-form-control-line-height-LARGE:						$project-form-control-height-LARGE;
 
 	// paddings
-	$project-form-control-padding:									0 rem(20px);
-	$project-form-control-padding-SMALL:							0 rem(15px);
-	$project-form-control-padding-LARGE:							0 rem(25px);
+	$project-form-control-padding:									0 0;
+	$project-form-control-padding-SMALL:							0 0;
+	$project-form-control-padding-LARGE:							0 0;
 
 	// textarea paddings
-	$project-form-control-padding-textarea:							rem(15px) rem(20px);
-	$project-form-control-padding-textarea-SMALL:					rem(10px) rem(15px);
-	$project-form-control-padding-textarea-LARGE:					rem(20px) rem(25px);
+	$project-form-control-padding-textarea:							rem(15px) 0;
+	$project-form-control-padding-textarea-SMALL:					rem(10px) 0;
+	$project-form-control-padding-textarea-LARGE:					rem(20px) 0;
 
 	// version 1
 
@@ -630,7 +630,7 @@ $project-alert-padding:												15px;
 // select skin
 
 	// select skin
-	$project-select-skin-background-image:							'#{$themePath}/img/icons/select-skin-arrow-default.svg';
+	$project-select-skin-background-image:							'#{$themePath}/img/icons/blue_arrow_down.svg';
 	$project-select-skin-background-size-x:							rem(10px);
 	$project-select-skin-background-size-y:							auto;
 	$project-select-skin-background-size-x-SMALL:					rem(8px);
@@ -657,52 +657,52 @@ $project-alert-padding:												15px;
 // checkbox skin + radio button skin
 
 	// background color
-	$project-checkradio-background-color:							$color-white;
-	$project-checkradio-background-color-FOCUS:						$color-theme-primary-dark;
-	$project-checkradio-background-color-CHECKED:					$color-theme-primary-dark;
-	$project-checkradio-background-color-ERROR:						$color-white;
-	$project-checkradio-background-color-DISABLED:					$color-light-gray;
+	$project-checkradio-background-color:							transparent;
+	$project-checkradio-background-color-FOCUS:						transparent;
+	$project-checkradio-background-color-CHECKED:					transparent;
+	$project-checkradio-background-color-ERROR:						transparent;
+	$project-checkradio-background-color-DISABLED:					transparent;
 
 	// border color
-	$project-checkradio-border-color:								$color-theme-primary-light;
-	$project-checkradio-border-color-FOCUS:							$color-theme-primary-dark;
-	$project-checkradio-border-color-CHECKED:						$color-theme-primary-dark;
+	$project-checkradio-border-color:								$color-theme-primary;
+	$project-checkradio-border-color-FOCUS:							$color-theme-primary;
+	$project-checkradio-border-color-CHECKED:						$color-gray;
 	$project-checkradio-border-color-ERROR:							$color-theme-danger;
-	$project-checkradio-border-color-DISABLED:						$color-dark-gray;
+	$project-checkradio-border-color-DISABLED:						$color-gray;
 
 	// border radius
 	$project-checkradio-border-radius:								$project-default-border-radius;
 
 	// border width
-	$project-checkradio-border-width:								rem(2px);
+	$project-checkradio-border-width:								rem(1px);
 
 	// distance
 	$project-checkradio-distance:									rem(10px);
 
 	// height
-	$project-checkradio-height:										$project-default-button-height / 2;
+	$project-checkradio-height:										rem(20px);
 
 	// inside color
 	$project-checkradio-inside-color:								$color-theme-primary;
-	$project-checkradio-inside-color-FOCUS:							$color-white;
-	$project-checkradio-inside-color-CHECKED:						$color-white;
+	$project-checkradio-inside-color-FOCUS:							$color-theme-primary;
+	$project-checkradio-inside-color-CHECKED:						$color-theme-primary;
 	$project-checkradio-inside-color-ERROR:							$color-theme-danger;
-    $project-checkradio-inside-color-DISABLED:						$color-dark-gray;
+    $project-checkradio-inside-color-DISABLED:						$color-gray;
 
 	// width
 	$project-checkradio-width:										$project-checkradio-height;
 
 	// checkbox icon
-	$project-checkradio-checkbox-icon:								'\f00c';
+	$project-checkradio-checkbox-icon:								'\e902';
 
 	// checkbox size
-	$project-checkradio-checkbox-size:								$project-checkradio-height - rem(14px);
+	$project-checkradio-checkbox-size:								$project-checkradio-height - rem(10px);
 
 	// checkbox font family
-	$project-checkradio-checkbox-font-family:						$project-default-icon-family;
+	$project-checkradio-checkbox-font-family:						$project-default-icon-family-extra;
 
 	// radio size
-	$project-checkradio-radio-size:									$project-checkradio-height - rem(14px);
+	$project-checkradio-radio-size:									$project-checkradio-height - rem(10px);
 
 	// version 1
 
@@ -757,17 +757,17 @@ $project-alert-padding:												15px;
 	// for form controls
 
 		// color
-		$project-label-color:										$project-default-color;
-		$project-label-color-ERROR:									$color-theme-danger;
+		$project-label-color:										rgba($project-default-color, .5);
+		$project-label-color-ERROR:									rgba($color-theme-danger, .7);
 		$project-label-color-DISABLED:								$color-gray;
 
 		// font family
-		$project-label-font-family:									$project-default-font-family-1-BOLD;
+		$project-label-font-family:									$project-default-font-family-1-REGULAR;
 
 		// font size
 		$project-label-font-size:									$project-default-font-size;
-		$project-label-font-size-SMALL:								$project-label-font-size - rem(2px);
-		$project-label-font-size-LARGE:								$project-label-font-size + rem(2px);
+		$project-label-font-size-SMALL:								0.875rem;
+		$project-label-font-size-LARGE:								1.125rem;
 
 		// height
 		$project-label-height:		 								$project-form-control-height;
@@ -809,7 +809,7 @@ $project-alert-padding:												15px;
 
 		// color
 		$project-label-checkradio-color:							$project-default-color;
-		$project-label-checkradio-color-ERROR:						$color-theme-danger;
+		$project-label-checkradio-color-ERROR:						$project-default-color;
 		$project-label-checkradio-color-DISABLED:					$color-gray;
 
 		// font family
@@ -817,8 +817,8 @@ $project-alert-padding:												15px;
 
 		// font size
 		$project-label-checkradio-font-size:						$project-default-font-size;
-		$project-label-checkradio-font-size-SMALL:					$project-label-checkradio-font-size - rem(2px);
-		$project-label-checkradio-font-size-LARGE:					$project-label-checkradio-font-size + rem(2px);
+		$project-label-checkradio-font-size-SMALL:					0.875rem;
+		$project-label-checkradio-font-size-LARGE:					1.125rem;
 
 		// line height
 		$project-label-checkradio-line-height:						$project-label-checkradio-font-size + $project-default-line-height-diff;
@@ -970,22 +970,22 @@ $project-breadcrumb-link-color-ACTIVE-HOVER:						$color-theme-primary;
 // ---- setup PADDINGS START
 
 // vertical padding
-$project-padding-vertical-MOBILE:									rem(25px);
-$project-padding-vertical-TABLET:									rem(40px);
-$project-padding-vertical-LAPTOP:									rem(55px);
-$project-padding-vertical-HD:										rem(70px);
+$project-padding-vertical-MOBILE:									rem(35px);
+$project-padding-vertical-TABLET:									rem(50px);
+$project-padding-vertical-LAPTOP:									rem(65px);
+$project-padding-vertical-HD:										rem(80px);
 
 // vertical padding small
-$project-padding-vertical-small-MOBILE:								rem(25px);
-$project-padding-vertical-small-TABLET:								rem(35px);
-$project-padding-vertical-small-LAPTOP:								rem(45px);
-$project-padding-vertical-small-HD:									rem(55px);
+$project-padding-vertical-small-MOBILE:								rem(35px);
+$project-padding-vertical-small-TABLET:								rem(45px);
+$project-padding-vertical-small-LAPTOP:								rem(55px);
+$project-padding-vertical-small-HD:									rem(65px);
 
 // vertical padding large
-$project-padding-vertical-large-MOBILE:								rem(25px);
-$project-padding-vertical-large-TABLET:								rem(45px);
-$project-padding-vertical-large-LAPTOP:								rem(65px);
-$project-padding-vertical-large-HD:									rem(85px);
+$project-padding-vertical-large-MOBILE:								rem(68px);
+$project-padding-vertical-large-TABLET:								rem(88px);
+$project-padding-vertical-large-LAPTOP:								rem(108px);
+$project-padding-vertical-large-HD:									rem(128px);
 
 
 // ---- setup PADDINGS END
@@ -1080,7 +1080,7 @@ $project-embed-responsive-layer-youtube-opacity-HOVER:				1;
 // ---- setup anchor-point START
 
 
-$project-anchor-point-top:											-0px;
+$project-anchor-point-top:											-$headerHeight;
 $project-fake-position-top:											$project-anchor-point-top; // NOTE: just for legacy sites
 
 
@@ -1232,7 +1232,7 @@ $project-cookie-bar-button-height:                      40px;
 $project-cookie-bar-button-font-family:                 $project-default-font-family;
 $project-cookie-bar-button-font-size:                   $project-default-font-size;
 
-$project-cookie-bar-button-dismiss-background-color:    $color-gray;
+$project-cookie-bar-button-dismiss-background-color:    $color-theme-primary;
 $project-cookie-bar-button-dismiss-text-color:          $color-white;
 $project-cookie-bar-button-dismiss-padding:             0 15px;
 

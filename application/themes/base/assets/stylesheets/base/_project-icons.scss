@@ -29,13 +29,29 @@
 
 // setup icomoon classes
 .icon-8-ways:before {
-    content: "\e900";
+    content: "\e904";
 }
 .icon-gbart:before {
-    content: "\e901";
+    content: "\e906";
 }
 .icon-webery:before {
+    content: "\e907";
+}
+.icon-arrow-down:before {
+    content: "\e900";
+}
+.icon-arrow-up:before {
+    content: "\e901";
+}
+.icon-check-icon:before {
     content: "\e902";
 }
+.icon-map-icon:before {
+    content: "\e903";
+}
+.icon-arrow-left:before {
+    content: "\e905";
+}
+
 
 /* icomoon END */

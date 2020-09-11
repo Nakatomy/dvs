@@ -22,7 +22,7 @@
 	$container-max-width-sm: 				540px;
 	$container-max-width-md: 				720px;
 	$container-max-width-lg: 				960px;
-	$container-max-width-xl: 				1140px;
+	$container-max-width-xl: 				1080px;
 	$container-max-width-hd: 				1500px; // _bootstrap_custom.sccs
 
 	// grid columns and gutter
@@ -43,8 +43,8 @@
 // ---- setup env START
 
     $theme:                         'base';
-    // $themePath:                     '/application/themes/#{$theme}/assets';
-    $themePath:                     '/packages/base/themes/#{$theme}/assets';
+    $themePath:                     '/application/themes/#{$theme}/assets';
+    // $themePath:                     '/packages/base/themes/#{$theme}/assets';
 
     // enable or disable rem calculations
     $pxToRem:                       true;
@@ -55,28 +55,29 @@
 // ---- setup DEFAULTS START
 
 // border radius
-$project-default-border-radius:				rem(4px);
+$project-default-border-radius:				rem(0px);
 
 // color
 
 	// basic colors
     $color-black:							#000000;
     $color-white:							#FFFFFF;
-    $color-red: 							#F23000;
-    $color-light-blue: 						#88B1E9;
-    $color-blue: 							#0065F2;
-    $color-dark-blue: 						#064CAD;
-	$color-green: 							#01B094;
-	$color-light-green: 				    #88E9BF;
-	$color-dark-green: 						#007670;
+    $color-red: 							#EB001B;
+    $color-light-blue: 					    #002673;
+    $color-blue: 							#001540;
+    $color-dark-blue: 					    #041428;
+	$color-green: 							#33A748;
+	$color-light-green: 				    #46c75e;
+	$color-dark-green: 					    #278037;
 	$color-orange: 							#FE9700;
-	$color-gray: 							#A0A0A1;
-	$color-light-gray: 						#F0F0F0;
-    $color-dark-gray: 						#3F3F3F;
+	$color-gray: 							#D8D8D8;
+	$color-light-gray: 						#EEEEEE;
+    $color-dark-gray: 						#707070;
+    $color-black-gray:                      #272727;
 
     // system colors
-    $color-theme-danger:                    #F23000;
-    $color-theme-success:                   #00F266;
+    $color-theme-danger:                    #EB001B;
+    $color-theme-success:                   #46c75e;
     $color-theme-info:                      #00C2F2;
     $color-theme-warning:                   #FF8307;
 
@@ -120,16 +121,21 @@ $project-default-border-radius:				rem(4px);
 	$color-youtube:							#BB0000;
 
 	// default
-	$project-default-color:					$color-black;
+	$project-default-color:					$color-theme-primary;
 
 // font family
 $project-default-font-family-WEBSAFE-1:		Arial, Helvetica, sans-serif;
 $project-default-font-family-WEBSAFE-2:		"Times New Roman", Times, serif;
 
-$project-default-font-family-1-REGULAR:		'Montserrat-Medium', $project-default-font-family-WEBSAFE-1;
-$project-default-font-family-1-ITALIC:		'Montserrat-MediumItalic', $project-default-font-family-WEBSAFE-1;
-$project-default-font-family-1-BOLD:		'Montserrat-Bold', $project-default-font-family-WEBSAFE-1;
-$project-default-font-family-1-BOLDITALIC:	'Montserrat-BoldItalic', $project-default-font-family-WEBSAFE-1;
+$project-default-font-family-1-REGULAR:		'Poppins-Regular', $project-default-font-family-WEBSAFE-1;
+$project-default-font-family-1-MEDIUM:		'Poppins-Medium', $project-default-font-family-WEBSAFE-1;
+$project-default-font-family-1-LIGHT:		'Poppins-Light', $project-default-font-family-WEBSAFE-1;
+$project-default-font-family-1-ITALIC:		'Poppins-Italic', $project-default-font-family-WEBSAFE-1;
+$project-default-font-family-1-BOLD:		'Poppins-SemiBold', $project-default-font-family-WEBSAFE-1;
+$project-default-font-family-1-BOLDITALIC:	'Poppins-SemiBoldItalic', $project-default-font-family-WEBSAFE-1;
+$project-default-font-family-2-REGULAR:		'Montserrat-Regular', $project-default-font-family-WEBSAFE-1;
+$project-default-font-family-2-LIGHT:		'Montserrat-Light', $project-default-font-family-WEBSAFE-1;
+$project-default-font-family-2-MEDIUM:		'Montserrat-Medium', $project-default-font-family-WEBSAFE-1;
 
 $project-default-icon-family:               "Font Awesome 5 Free";
 $project-default-icon-family-extra:         "icomoon";
@@ -153,10 +159,10 @@ $project-default-font-size-base:			16px;
 $project-default-font-size:					rem($project-default-font-size-base);
 
 // height
-$project-default-button-height:				rem(48px);
+$project-default-button-height:				3.5rem;
 
 // line height
-$project-default-line-height-diff:			rem(10px);
+$project-default-line-height-diff:			1rem;
 $project-default-line-height:				$project-default-font-size + $project-default-line-height-diff;
 
 // margin

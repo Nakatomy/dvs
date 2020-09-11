@@ -23,22 +23,22 @@
 			}
 		}
 
-			// primary
-			// &.btn-primary {
-			// 	color: $project-button-option-color-PRIMARY;
-			// 	background-color: $project-button-option-background-color-PRIMARY;
-			// 	border-color: $project-button-option-border-color-PRIMARY;
+			//primary
+			&.btn-primary {
+				color: $project-button-option-color-PRIMARY;
+				background-color: $project-button-option-background-color-PRIMARY;
+				border-color: $project-button-option-border-color-PRIMARY;
 
-			// 	// desktop
-			// 	@include media-breakpoint-up(xl) {
-			// 		&:hover,
-			// 		&:focus {
-			// 			color: $project-button-option-color-PRIMARY-HOVER;
-			// 			background-color: $project-button-option-background-color-PRIMARY-HOVER;
-			// 			border-color: $project-button-option-border-color-PRIMARY-HOVER;
-			// 		}
-			// 	}
-			// }
+				// desktop
+				@include media-breakpoint-up(xl) {
+					&:hover,
+					&:focus {
+						color: $project-button-option-color-PRIMARY-HOVER;
+						background-color: $project-button-option-background-color-PRIMARY-HOVER;
+						border-color: $project-button-option-border-color-PRIMARY-HOVER;
+					}
+				}
+			}
 
 			// secondary
 			&.btn-secondary {
