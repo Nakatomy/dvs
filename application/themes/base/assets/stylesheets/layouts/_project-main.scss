@@ -9,7 +9,7 @@ body {
 
     // tablet
     @include media-breakpoint-between(md, lg) {
-        font-size: $project-default-font-size-base - 1;
+        font-size: $project-default-font-size-base - 3;
     }
 
     // mobile
