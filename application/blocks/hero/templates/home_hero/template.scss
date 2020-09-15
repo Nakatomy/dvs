@@ -1,0 +1,80 @@
+@import 'project_defaults';
+
+.home-hero{
+    position: relative;
+    overflow: hidden;
+    background-color: $color-theme-primary;
+
+    // mobile
+    @include media-breakpoint-down(sm) {
+        padding-top: 4.25rem;
+    }
+
+    .container{
+        height: calc(100vh - #{$headerHeight});
+
+        // mobile
+        @include media-breakpoint-down(sm) {
+            max-height: 400px;
+        }
+
+        .home-hero-image{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -8vw;
+
+            img{
+                max-width: 100%;
+            }
+
+            // mobile + tablet
+            @include media-breakpoint-down(lg) {
+                right: 0;
+            }
+
+            // mobile
+            @include media-breakpoint-down(sm) {
+                right: 1rem;
+            }
+        }
+
+        .home-hero-content{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            color: $color-white;
+
+            .ccm-edit-mode &{
+                position: relative;
+            }
+
+            h1{
+                color: $color-white;
+            }
+
+            p{
+                color: rgba($color-white, 0.8);
+                max-width: 25rem;
+
+                strong{
+                    font-family: $project-default-font-family-1-REGULAR;
+                    text-transform: uppercase;
+                    letter-spacing: 0.125rem;
+                    font-size: 0.75rem;
+                    line-height: 0.875rem;
+                }
+            }
+
+            // mobile
+            @include media-breakpoint-down(sm) {
+                position: relative;
+                top: auto;
+                left: auto;
+                min-height: 35vh;
+            }
+        }
+    }
+}

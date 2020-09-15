@@ -131,7 +131,8 @@
 
         // mobile
         @include media-breakpoint-down(sm) {
-            font-size: $project-h1-font-size * 0.8;
+            font-size: $project-h1-font-size * 0.4;
+            line-height: $project-h1-line-height * 0.6;
         }
 	}
 

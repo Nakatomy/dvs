@@ -15,6 +15,10 @@
         margin-top: 48px;
     }
 
+    .ccm-edit-mode &{
+        background-color: $color-gray;
+    }
+
 
     &:before{
         @include project-default-transition();
@@ -34,11 +38,11 @@
             transform: translateY(0%);
         }
 
-        // mobile + tablet
+        /* // mobile + tablet
         @include media-breakpoint-down(lg) {
             opacity: 1;
             transform: translateY(0%);
-        }
+        } */
     }
 
     .container,
@@ -84,6 +88,7 @@
                 border-radius: 100%;
                 border: 1px solid rgba($color-white, .3);
                 text-align: center;
+                background-color: $color-theme-primary;
 
                 a{
                     color: $color-white;
@@ -95,6 +100,7 @@
                 .page-type-article &,
                 .page-type-case &{
                     border: 1px solid rgba($color-theme-primary, .3);
+                    background-color: transparent;
 
                     a{
                         color: $color-theme-primary;
@@ -115,6 +121,7 @@
 
                     // desktop
                     @include media-breakpoint-up(xl) {
+
                         &:hover{
                             background-color: rgba($color-white, .7);
 
@@ -456,6 +463,13 @@
         margin-top: 48px;
     }
 
+    .ccm-edit-mode &{
+        opacity: 1;
+        visibility: visible;
+        position: relative;
+        top: 0;
+    }
+
      // laptop
      @include media-breakpoint-only(xl) {
         padding-bottom: 10vh;
@@ -496,12 +510,16 @@
         .open-menu &{
             transform: translateY(0);
         }
+
+        .ccm-edit-mode &{
+            transform: translateY(0);
+        }
     }
 
     .menu-content{
         @include project-default-transition();
         opacity: 0;
-        transition-delay: 1s;
+        transition-delay: .25s;
 
         .open-menu &{
             opacity: 1;
@@ -517,6 +535,10 @@
             @include media-breakpoint-down(md) {
                 display: none;
             }
+        }
+
+        .ccm-edit-mode &{
+            opacity: 1;
         }
     }
 

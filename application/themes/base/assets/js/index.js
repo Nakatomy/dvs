@@ -369,7 +369,7 @@ function fixedHeader(){
 
   };
 
-  if ( $(window).width() >= 1200 ){
+  /* if ( $(window).width() >= 1200 ){ */
 
     toggleFixedClass();
 
@@ -380,7 +380,7 @@ function fixedHeader(){
 
     });
 
-  }
+  /* } */
 
 };
 
