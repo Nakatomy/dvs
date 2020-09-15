@@ -11,7 +11,15 @@
 		height: auto;
 		font-size: $project-label-font-size;
 		line-height: $project-label-line-height;
-		margin-bottom: 0;
+        margin-bottom: 0;
+        position: absolute;
+        top: 0;
+        transform-origin: left center;
+        @include project-default-transition();
+
+        &.required{
+            left: 1.5rem;
+        }
 
 		// small
 		&.label-sm {
@@ -24,7 +32,20 @@
 			font-size: $project-label-font-size-LARGE;
 			line-height: $project-label-line-height-LARGE;
 		}
-	}
+    }
+
+    .control-label + span{
+        color: $project-label-color;
+		font-family: $project-label-font-family;
+		height: auto;
+		font-size: $project-label-font-size;
+		line-height: $project-label-line-height;
+        margin-bottom: 0;
+        position: absolute;
+        top: 0;
+        transform-origin: left center;
+        @include project-default-transition();
+    }
 
 	.form-check-label,
 	.form-radio-label {

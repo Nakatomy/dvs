@@ -4,9 +4,24 @@
 
 .main {
 
-	// form groups
+    // form groups
 	.form-group {
-		margin-bottom: $project-form-group-margin;
+        margin-bottom: $project-form-group-margin;
+        position: relative;
+
+        &.focused,
+        &.filled{
+
+            .control-label{
+                transform: scale(.75);
+                top: -$project-label-line-height / 2;
+            }
+
+            .control-label + span{
+                transform: scale(.75);
+                top: -$project-label-line-height / 2;
+            }
+        }
 	}
 
 	// form control
@@ -18,7 +33,7 @@
 		background-color: $project-form-control-background-color;
 		border-color: $project-form-control-border-color;
 		border-style: solid;
-		border-width: $project-form-control-border-width;
+		border-width: 0 0 $project-form-control-border-width 0;
 		color: $project-form-control-color;
 		font-family: $project-form-control-font-family;
 		font-size: $project-form-control-font-size;

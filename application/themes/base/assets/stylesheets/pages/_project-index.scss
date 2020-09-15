@@ -2,6 +2,44 @@
 
 .home{
 
+    &-about-us-section{
+
+        .btn{
+            color: $color-theme-primary;
+            background-color: transparent;
+            border: none;
+            padding-left: 0;
+            position: relative;
+
+            &:after{
+                content: '\e901';
+                font-family: $project-default-icon-family-extra;
+                position: absolute;
+                right: -3rem;
+                height: 3.5rem;
+                width: 3.5rem;
+                line-height: 3.5rem;
+                border: 1px solid rgba($color-theme-primary, .2);
+                border-radius: 100%;
+                @include project-default-transition();
+                display: inline-block;
+            }
+
+            // desktop
+            @include media-breakpoint-up(xl) {
+                &:hover,
+                &:focus {
+
+                    &:after{
+                        background-color: rgba($color-theme-primary, .7);
+                        color: $color-white;
+                        transform: translateY(-3px);
+                    }
+                }
+            }
+        }
+    }
+
     &-about-us-section,
     &-contact-section{
 
@@ -47,6 +85,23 @@
 
             .page-title{
                 color: $color-white;
+            }
+        }
+    }
+
+    &-media-section{
+
+        .media-title{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .texts{
+
+                a{
+                    color: rgba($color-white, .8);
+                    @include underlinehover($color-white);
+                }
             }
         }
     }
@@ -119,6 +174,22 @@
                 a{
                     font-size: 1.125rem;
                     @include underlinehover($color-theme-primary);
+                }
+            }
+        }
+
+        .dynamic-form-container{
+
+            .btn{
+                position: relative;
+                line-height: 1;
+                padding-left: 3rem;
+
+                &:before{
+                    content: '\e905';
+                    font-family: $project-default-icon-family-extra;
+                    position: absolute;
+                    left: 1.25rem;
                 }
             }
         }
