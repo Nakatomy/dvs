@@ -146,7 +146,7 @@ class PageTheme extends Theme implements ThemeProviderInterface
             [
                 'handle' => 'center_2-3',
                 'name' => t('Center 2/3 + 1/3'),
-                'container' => '<div class="container d-flex no-padding-horizontal"></div>',
+                'container' => '<div class="container d-flex align-items-center no-padding-horizontal"></div>',
                 'columns' => [
                     '<div class="col-md-8"></div>',
                     '<div class="col-md-4"></div>'
@@ -356,6 +356,54 @@ class PageTheme extends Theme implements ThemeProviderInterface
                 'container' => '<div class="row"></div>',
                 'columns' => [
                     '<div class="col-12 no-padding-horizontal"></div>',
+                ],
+            ],
+            [
+                'handle' => 'home_about_us_section',
+                'name' => t('Home About Us Section'),
+                'container' => '<div class="home-about-us-section container d-flex no-padding-horizontal"></div>',
+                'columns' => [
+                    '<div class="col-12 col-md-8 offset-md-4"></div>',
+                    '<div class="col-md-4"></div>',
+                    '<div class="col-md-8"></div>'
+                ],
+            ],
+            [
+                'handle' => 'home_solutions_section',
+                'name' => t('Home Solutions Section'),
+                'container' => '<div class="home-solutions-section container d-flex no-padding-horizontal"></div>',
+                'columns' => [
+                    '<div class="col-12 col-md-8 offset-md-4"></div>',
+                    '<div class="col-md-4"></div>',
+                    '<div class="col-md-8"></div>',
+                    '<div class="col-md-12 infograph"></div>'
+                ],
+            ],
+            [
+                'handle' => 'home_guarantee_section',
+                'name' => t('Home Guarantee Section'),
+                'container' => '<div class="home-guarantee-section container d-flex no-padding-horizontal"></div>',
+                'columns' => [
+                    '<div class="col-md-8 mx-auto"></div>'
+                ],
+            ],
+            [
+                'handle' => 'home_media_section',
+                'name' => t('Home Media Section'),
+                'container' => '<div class="home-media-section container d-flex no-padding-horizontal"></div>',
+                'columns' => [
+                    '<div class="col-md-12 media-title"></div>',
+                    '<div class="col-md-12 media-content"></div>'
+                ],
+            ],
+            [
+                'handle' => 'home_contact_section',
+                'name' => t('Home Contact Section'),
+                'container' => '<div class="home-contact-section container d-flex no-padding-horizontal"></div>',
+                'columns' => [
+                    '<div class="col-12 col-md-8 offset-md-4"></div>',
+                    '<div class="col-md-4 contact-info"></div>',
+                    '<div class="col-md-8"></div>',
                 ],
             ],
         ];

@@ -1,3 +1,126 @@
 /*** Project index ***/
 
-.index{}
+.home{
+
+    &-about-us-section,
+    &-contact-section{
+
+        .texts{
+
+            h6{
+                font-size: 1.5rem;
+                font-family: $project-default-font-family-1-MEDIUM;
+            }
+        }
+    }
+
+    &-solutions-section,
+    &-guarantee-section,
+    &-media-section{
+        position: relative;
+
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 100%;
+            width: 100vw;
+            background-color: $color-theme-primary;
+        }
+
+        .texts{
+
+            h6{
+                color: $color-white;
+                font-size: 1.5rem;
+                font-family: $project-default-font-family-1-MEDIUM;
+            }
+
+            p{
+                color: rgba($color-white, .8);
+            }
+        }
+
+        .section-header{
+
+            .page-title{
+                color: $color-white;
+            }
+        }
+    }
+
+    &-guarantee-section{
+
+        @include media-breakpoint-down(sm) {
+            padding-bottom: $project-spacer-vertical-large-MOBILE;
+        }
+
+        // tablet
+        @include media-breakpoint-between(md, lg) {
+            padding-bottom: $project-spacer-vertical-large-TABLET;
+        }
+
+        // laptop
+        @include media-breakpoint-only(xl) {
+            padding-bottom: $project-spacer-vertical-large-LAPTOP;
+        }
+
+        // hd
+        @include media-breakpoint-up(hd) {
+            padding-bottom: $project-spacer-vertical-large-HD;
+        }
+
+        .section-header{
+            text-align: center;
+        }
+    }
+
+    &-solutions-section,
+    &-media-section{
+
+        @include media-breakpoint-down(sm) {
+            padding-top: $project-spacer-vertical-large-MOBILE;
+            padding-bottom: $project-spacer-vertical-large-MOBILE;
+        }
+
+        // tablet
+        @include media-breakpoint-between(md, lg) {
+            padding-top: $project-spacer-vertical-large-TABLET;
+            padding-bottom: $project-spacer-vertical-large-TABLET;
+        }
+
+        // laptop
+        @include media-breakpoint-only(xl) {
+            padding-top: $project-spacer-vertical-large-LAPTOP;
+            padding-bottom: $project-spacer-vertical-large-LAPTOP;
+        }
+
+        // hd
+        @include media-breakpoint-up(hd) {
+            padding-top: $project-spacer-vertical-large-HD;
+            padding-bottom: $project-spacer-vertical-large-HD;
+        }
+    }
+
+    &-contact-section{
+
+        .contact-info{
+
+            .texts{
+
+                h6{
+                    font-family: $project-h6-font-family;
+		            font-size: $project-h6-font-size;
+                    margin-bottom: 1rem;
+                }
+
+                a{
+                    font-size: 1.125rem;
+                    @include underlinehover($color-theme-primary);
+                }
+            }
+        }
+    }
+}
