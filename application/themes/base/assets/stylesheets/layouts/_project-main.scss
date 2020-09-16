@@ -62,6 +62,41 @@ body {}
 
     .contents {
         min-height: calc( 100vh - #{$headerHeight} - #{$footerHeight});
+
+        .background-dark-wrapper{
+            background-color: $color-theme-primary;
+
+            @include media-breakpoint-down(sm) {
+                padding-top: $project-spacer-vertical-large-MOBILE;
+                padding-bottom: $project-spacer-vertical-large-MOBILE;
+            }
+
+            // tablet
+            @include media-breakpoint-between(md, lg) {
+                padding-top: $project-spacer-vertical-large-TABLET;
+                padding-bottom: $project-spacer-vertical-large-TABLET;
+            }
+
+            // laptop
+            @include media-breakpoint-only(xl) {
+                padding-top: $project-spacer-vertical-large-LAPTOP;
+                padding-bottom: $project-spacer-vertical-large-LAPTOP;
+            }
+
+            // hd
+            @include media-breakpoint-up(hd) {
+                padding-top: $project-spacer-vertical-large-HD;
+                padding-bottom: $project-spacer-vertical-large-HD;
+            }
+        }
+
+        .title-w-button-wrapper{
+
+            .section-header,
+            .paget-title{
+                margin-bottom: 0 !important;
+            }
+        }
     }
 
     /* content START */

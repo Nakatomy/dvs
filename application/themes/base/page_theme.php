@@ -406,6 +406,33 @@ class PageTheme extends Theme implements ThemeProviderInterface
                     '<div class="col-md-8"></div>',
                 ],
             ],
+            [
+                'handle' => 'center_1_background_dark',
+                'name' => t('Center 1/1 Bakcground: Dark'),
+                'container' => '<div class="background-dark-wrapper"></div>',
+                'columns' => [
+                    '<div class="container"></div>',
+                ],
+            ],
+            [
+                'handle' => 'title_w_button',
+                'name' => t('Title with Button'),
+                'container' => '<div class="row title-w-button-wrapper"></div>',
+                'columns' => [
+                    '<div class="col-md-6"></div>',
+                    '<div class="col-md-6 align-items-center justify-content-around"></div>'
+                ],
+            ],
+            [
+                'handle' => 'team_wrapper_3',
+                'name' => t('Team Wrapper 3/3'),
+                'container' => '<div class="row team-wrapper"></div>',
+                'columns' => [
+                    '<div class="col-md-4"></div>',
+                    '<div class="col-md-4"></div>',
+                    '<div class="col-md-4"></div>'
+                ],
+            ],
         ];
 
         return $presets;

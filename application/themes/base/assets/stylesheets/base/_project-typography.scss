@@ -100,6 +100,10 @@
 		padding-bottom: 0;
         padding-top: 0;
 
+        .background-dark-wrapper &{
+            color: $color-white;
+        }
+
 		* {
 			color: inherit;
 			font-family: inherit;
