@@ -23,20 +23,20 @@ if (!isset($authTypeElement)) {
     'disable_theme_style_inheritance' => true
 ]); ?>
 
-<div class="user-management-page">
-    <div class="user-management-inside">
+<div class="user-management-custom-page texts">
+    <div class="user-management-custom-inside">
 
         <?php if ($logo = Core::make('base.logo')->getLogo()): ?>
-            <div class="user-management-logo">
+            <div class="user-management-custom-logo">
                 <img src="<?php echo $logo->getVersion()->getRelativePath(); ?>" class="img-fluid" alt="<?php echo t('Login'); ?>">
             </div>
         <?php endif; ?>
 
-        <header class="user-management-header">
-            <h1><?php echo t('Login'); ?></h1>
+        <header class="user-management-custom-header">
+            <h2><?php echo t('Login'); ?></h2>
         </header>
 
-        <div class="user-management-form">
+        <div class="user-management-custom-form">
             <?php if ($error): ?>
                 <div class="errors">
                     <div class="texts text-center alert alert-warning">
