@@ -90,6 +90,12 @@
 // texts
 .texts {
 
+    p{
+        .background-dark-wrapper &{
+            color: rgba($color-white, .8);
+        }
+    }
+
 	// anchor
 	a {}
 
