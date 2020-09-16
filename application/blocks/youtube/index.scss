@@ -59,4 +59,25 @@
 	}
 }
 
+.video-info{
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid $color-light-gray;
+
+    p{
+        font-size: .875rem;
+        line-height: 2;
+        color: $color-dark-gray;
+        opacity: .7;
+    }
+
+    h5{
+        font-family: $project-default-font-family-1-BOLD;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        letter-spacing: 0;
+    }
+}
+
 /* embed responsive layer for youtube END */
