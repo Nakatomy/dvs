@@ -9,8 +9,8 @@
         p{
 
             a{
-                color: rgba($color-white, .7);
-                @include underlinehover($color-white);
+                color: rgba($color-theme-primary, .8);
+                @include underlinehover($color-theme-primary);
                 font-size: 1.125rem;
                 line-height: 1.125rem;
                 @include project-default-transition();
@@ -19,7 +19,7 @@
                 @include media-breakpoint-up(xl) {
                     &:hover,
                     &:focus {
-                        color: $color-white;
+                        color: $color-theme-primary;
                     }
                 }
             }
@@ -27,7 +27,7 @@
             &.active{
 
                 a{
-                    color: $color-white;
+                    color: $color-theme-primary;
 
                     &:after{
                         opacity: 1;
@@ -40,21 +40,27 @@
     }
 
     .media-list-items{
-        border-bottom: 1px solid $color-medium-blue;
+        border-bottom: 1px solid rgba($color-theme-primary, .1);
+
+        // mobile
+        @include media-breakpoint-down(sm) {
+            padding: 0 30px;
+        }
     }
 
     .media-list-item{
         padding-top: 2rem;
-        border-top: 1px solid $color-medium-blue;
+        border-top: 1px solid rgba($color-theme-primary, .1);
 
         .media-card{
+            margin: 0 -15px;
 
             div.texts{
 
                 p{
                     font-size: 0.875rem;
                     line-height: 0.875rem;
-                    color: rgba($color-white, .4);
+                    color: rgba($color-theme-primary, .4);
                 }
             }
 
@@ -66,8 +72,8 @@
                         font-family: $project-default-font-family-1-MEDIUM;
                         font-size: 2rem;
                         line-height: 2.5rem;
-                        color: $color-white;
-                        @include underlinehover($color-white);
+                        color: $color-theme-primary;
+                        @include underlinehover($color-theme-primary);
                     }
                 }
             }

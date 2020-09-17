@@ -64,13 +64,13 @@ use Concrete\Attribute\Address\Value;
                             ">
                                 <div class="home-media-card">
                                     <div class="row">
-                                        <div class="col-3">
+                                        <div class="col-4 col-md-3">
                                             <div class="texts">
-                                                <p class="date"><?php echo $dh->formatCustom('d M Y', $page->getCollectionDatePublic()); ?></p>
-                                                <p class="category"><?php echo $page->getAttribute('media_category'); ?></p>
+                                                <p class="date mb-3"><?php echo $dh->formatCustom('d M Y', $page->getCollectionDatePublic()); ?></p>
+                                                <p class="category mb-0"><?php echo $page->getAttribute('media_category'); ?></p>
                                             </div>
                                         </div>
-                                        <div class="col-9">
+                                        <div class="col-8 col-md-9">
                                             <div class="home-media-card-body texts">
                                                 <h6 class="mb-0">
                                                     <a target="<?php echo $target; ?>" href="<?php echo $page->getCollectionLink(); ?>">

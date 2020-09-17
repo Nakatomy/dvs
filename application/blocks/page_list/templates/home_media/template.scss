@@ -41,6 +41,11 @@
 
     .home-media-list-items{
         border-bottom: 1px solid $color-medium-blue;
+
+        // mobile
+        @include media-breakpoint-down(sm) {
+            padding: 0 30px;
+        }
     }
 
     .home-media-list-item{
@@ -48,6 +53,7 @@
         border-top: 1px solid $color-medium-blue;
 
         .home-media-card{
+            margin: 0 -15px;
 
             div.texts{
 

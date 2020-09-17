@@ -65,17 +65,17 @@ use Concrete\Attribute\Address\Value;
                                 <div class="media-card">
                                     <div class="row">
                                         <?php if ($displayThumbnail && $thumbnail_type_object && $page->getAttribute("thumbnail")): ?>
-                                            <div class="col-12">
+                                            <div class="col-12 margin-bottom-default">
                                                 <img class="img-fluid" src="<?php echo $page->getAttribute("thumbnail")->getThumbnailURL($thumbnail_type_object->getBaseVersion()); ?>" alt="<?php echo $th->entities($page->getCollectionName()); ?>">
                                             </div>
                                         <?php endif; ?>
-                                        <div class="col-3">
+                                        <div class="col-4 col-md-3">
                                             <div class="texts">
-                                                <p class="date"><?php echo $dh->formatCustom('d M Y', $page->getCollectionDatePublic()); ?></p>
-                                                <p class="category"><?php echo $page->getAttribute('media_category'); ?></p>
+                                                <p class="date mb-3"><?php echo $dh->formatCustom('d M Y', $page->getCollectionDatePublic()); ?></p>
+                                                <p class="category mb-0"><?php echo $page->getAttribute('media_category'); ?></p>
                                             </div>
                                         </div>
-                                        <div class="col-9">
+                                        <div class="col-8 col-md-9">
                                             <div class="media-card-body texts">
                                                 <h6 class="mb-0">
                                                     <a target="<?php echo $target; ?>" href="<?php echo $page->getCollectionLink(); ?>">
