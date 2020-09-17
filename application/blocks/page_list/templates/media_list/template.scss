@@ -1,0 +1,76 @@
+@import 'project_defaults';
+
+.media-list{
+
+    .filter-menu{
+        display: flex;
+        flex-direction: column;
+
+        p{
+
+            a{
+                color: rgba($color-white, .7);
+                @include underlinehover($color-white);
+                font-size: 1.125rem;
+                line-height: 1.125rem;
+                @include project-default-transition();
+
+                // desktop
+                @include media-breakpoint-up(xl) {
+                    &:hover,
+                    &:focus {
+                        color: $color-white;
+                    }
+                }
+            }
+
+            &.active{
+
+                a{
+                    color: $color-white;
+
+                    &:after{
+                        opacity: 1;
+                        width: 100%;
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .media-list-items{
+        border-bottom: 1px solid $color-medium-blue;
+    }
+
+    .media-list-item{
+        padding-top: 2rem;
+        border-top: 1px solid $color-medium-blue;
+
+        .media-card{
+
+            div.texts{
+
+                p{
+                    font-size: 0.875rem;
+                    line-height: 0.875rem;
+                    color: rgba($color-white, .4);
+                }
+            }
+
+            &-body{
+
+                h6{
+
+                    a{
+                        font-family: $project-default-font-family-1-MEDIUM;
+                        font-size: 2rem;
+                        line-height: 2.5rem;
+                        color: $color-white;
+                        @include underlinehover($color-white);
+                    }
+                }
+            }
+        }
+    }
+}
