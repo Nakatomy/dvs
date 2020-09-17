@@ -174,7 +174,8 @@ $project-default-margin-bottom:				$project-default-line-height;
 $project-default-opacity-HOVER:				1;
 
 // transitions
-@mixin project-default-transition()			{ @include css3-transition(all, 0.25s, ease); will-change: transition; } // USE THIS: @include project-default-transition();
+@mixin project-default-transition()			{ @include css3-transition(all, .25s, ease); will-change: transition; } // USE THIS: @include project-default-transition();
+@mixin project-default-transition-long()	{ @include css3-transition(all, .5s, cubic-bezier(0.4, 0.2, 0.2, 1)); will-change: transition; } // USE THIS: @include project-default-transition();
 
 
 // ---- setup DEFAULTS END
