@@ -70,20 +70,22 @@ if (Page::getCurrentPage()->isEditMode()) { ?>
             data-video-params="<?php echo $paramstring; ?>&autoplay=1"
             data-layer-text-youtube="<i class='fa fa-play'></i>">
         </div>
-        <div class="video-info row texts">
-            <div class="col-md-4">
-                <p class="mb-0">
-                    <?php echo $videoDate; ?><br>
-                    <?php echo t('Video'); ?>
-                </p>
-            </div>
-            <div class="col-md-8">
-                <h5 class="mb-0">
-                    <?php echo $videoName; ?>
-                </h5>
-            </div>
+        <div class="video-info d-flex texts">
+            <?php if ($videoDate): ?>
+                <div class="col-md-4">
+                    <p class="mb-0">
+                        <?php echo $videoDate; ?><br>
+                        <?php echo t('Video'); ?>
+                    </p>
+                </div>
+            <?php endif; ?>
+            <?php if ($videoName): ?>
+                <div class="col-md-8">
+                    <h5 class="mb-0">
+                        <?php echo $videoName; ?>
+                    </h5>
+                </div>
+            <?php endif; ?>
         </div>
-        <p>
-        </p>
     <?php endif;  ?>
 <?php } ?>
