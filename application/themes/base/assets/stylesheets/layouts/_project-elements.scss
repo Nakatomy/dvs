@@ -80,6 +80,15 @@ div.card{
             font-size: 0.875rem;
             line-height: 1.2;
             color: $color-dark-gray;
+
+            // desktop
+            @include media-breakpoint-up(xl) {
+                &:hover,
+                &:focus {
+                    text-decoration: none;
+                    color: $color-black;
+                }
+            }
         }
 
         h1{

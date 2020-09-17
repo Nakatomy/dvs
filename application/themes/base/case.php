@@ -12,7 +12,7 @@
         <div class="row">
             <div class="col-md-11 col-lg-9 mx-auto">
                 <article class="texts">
-                    <p class="case-header"><?php echo t('Case Studies'); ?></p>
+                    <a href="<?php echo Page::getCollectionPathFromID($c->getCollectionParentID()); ?>" class="case-header" title="<?php echo t('Case Studies'); ?>"><?php echo t('Case Studies'); ?></a>
                     <?php if ($secondaryTitle): ?>
                         <h1><?php echo $secondaryTitle; ?></h1>
                     <?php else: ?>
