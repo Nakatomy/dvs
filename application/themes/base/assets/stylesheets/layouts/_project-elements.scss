@@ -72,5 +72,21 @@ div.card{
     @include media-breakpoint-down(sm) {
         padding: 2rem 0 4rem 0;
     }
+
+    &.case-studies{
+        text-align: left;
+
+        .case-header{
+            font-size: 0.875rem;
+            line-height: 1.2;
+            color: $color-dark-gray;
+        }
+
+        h1{
+            font-size: 4rem;
+            line-height: 4.5rem;
+            margin-bottom: 4rem;
+        }
+    }
 }
 /* card END */

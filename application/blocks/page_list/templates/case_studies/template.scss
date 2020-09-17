@@ -1,0 +1,50 @@
+@import 'project_defaults';
+
+.case-studies-list{
+
+    &-item{
+
+        // tablet + desktop
+        @include media-breakpoint-up(md) {
+
+            &.extra:nth-child(odd){
+                margin-top: 8.125rem;
+            }
+        }
+
+        .texts{
+            padding: 2rem 0;
+            border-bottom: 1px solid $color-light-gray;
+
+            &.texts-color-white{
+                border-bottom-color: $color-medium-blue;
+            }
+
+            // mobile
+            @include media-breakpoint-down(sm) {
+                margin-bottom: 1rem;
+                padding: 1rem 0;
+            }
+
+            h5{
+                font-family: $project-default-font-family-1-MEDIUM;
+                font-size: 1.5rem;
+                line-height: 2rem;
+                letter-spacing: 0;
+
+                a{
+                    display: inline-block;
+
+                    // desktop
+                    @include media-breakpoint-up(xl) {
+                        &:hover,
+                        &:focus {
+                            text-decoration: none;
+                            padding-left: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
