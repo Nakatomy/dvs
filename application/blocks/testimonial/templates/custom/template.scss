@@ -2,7 +2,60 @@
 
 .custom-testimonial-wrapper{
 
+    .slick-dots{
+
+
+        li{
+            counter-increment: li;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 100%;
+            position: relative;
+            @include project-default-transition();
+            cursor: pointer;
+
+            &:before{
+                content: counter(li, decimal-leading-zero);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                color: rgba($color-theme-primary, .2);
+            }
+
+            &.slick-active{
+                background-color: $color-theme-primary;
+
+                &:before{
+                    color: $color-white;
+                }
+            }
+
+            // desktop
+            @include media-breakpoint-up(xl) {
+                &:hover{
+
+                    background-color: $color-theme-primary-light;
+
+                    &:before{
+                        color: $color-white;
+                    }
+                }
+            }
+
+            button{
+                display: none;
+            }
+        }
+    }
+
     .custom-testimonial-slider-item{
+        margin-bottom: 8rem;
+
+        // mobile
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 2.5rem;
+        }
 
         .custom-testimonial-image{
             padding-top: 6.25rem;
