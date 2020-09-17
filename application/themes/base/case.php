@@ -41,7 +41,7 @@
 </div>
 <div class="bg-color-theme-primary">
     <div class="container padding-vertical-lg">
-        <?php $area = new GlobalArea('Content'); ?>
+        <?php $area = new GlobalArea('Case Bottom Content'); ?>
         <?php $area->display($c); ?>
     </div>
 </div>
