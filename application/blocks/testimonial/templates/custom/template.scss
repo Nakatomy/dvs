@@ -1,0 +1,77 @@
+@import 'project_defaults';
+
+.custom-testimonial-wrapper{
+
+    .custom-testimonial-slider-item{
+
+        .custom-testimonial-image{
+            padding-top: 6.25rem;
+
+            // mobile + tablet
+            @include media-breakpoint-down(md) {
+                padding: 2.5rem;
+
+                img{
+                    width: 100%;
+                }
+            }
+        }
+
+        article.texts{
+            border-bottom: 1px solid #E8E8E8;
+        }
+
+        .texts{
+
+            span{
+                font-size: 0.875rem;
+                line-height: 1.375rem;
+                color: rgba($color-theme-primary, .4);
+
+                a{
+                    text-decoration:underline;
+                    color: rgba($color-theme-primary, .4);
+                    @include project-default-transition();
+
+                    // desktop
+                    @include media-breakpoint-up(xl) {
+                        &:hover,
+                        &:focus {
+                            color: $color-theme-primary;
+                        }
+                    }
+                }
+            }
+
+            blockquote{
+                padding: 0;
+
+                p{
+                    font-style: normal;
+                    font-size: 1.5rem;
+                    line-height: 2.5rem;
+
+                    // mobile
+                    @include media-breakpoint-down(sm) {
+                        font-size: 1rem;
+                        line-height: 2rem;
+                    }
+
+                    &:before{
+                        content: open-quote;
+                        position: relative;
+                        top: auto;
+                        left: auto;
+                        font-size: $project-blockquote-font-size + rem(10px);
+                    }
+
+                    &:after{
+                        content: close-quote;
+                        visibility: visible;
+                        font-size: $project-blockquote-font-size + rem(10px);
+                    }
+                }
+            }
+        }
+    }
+}

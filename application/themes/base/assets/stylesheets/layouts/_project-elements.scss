@@ -67,5 +67,10 @@ div.card{
     margin-top: $headerHeight;
     padding: 2rem 0 8rem 0;
     text-align: center;
+
+    // mobile
+    @include media-breakpoint-down(sm) {
+        padding: 2rem 0 4rem 0;
+    }
 }
 /* card END */
