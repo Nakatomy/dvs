@@ -7,8 +7,12 @@
         // tablet + desktop
         @include media-breakpoint-up(md) {
 
-            &.extra:nth-child(odd){
+            &:nth-child(odd){
                 margin-top: 8.125rem;
+
+                .bg-color-theme-primary &{
+                    margin-top: 0;
+                }
             }
         }
 
@@ -16,7 +20,7 @@
             padding: 2rem 0;
             border-bottom: 1px solid $color-light-gray;
 
-            &.texts-color-white{
+            .bg-color-theme-primary &{
                 border-bottom-color: $color-medium-blue;
             }
 
@@ -34,6 +38,10 @@
 
                 a{
                     display: inline-block;
+
+                    .bg-color-theme-primary &{
+                        color: $color-white;
+                    }
 
                     // desktop
                     @include media-breakpoint-up(xl) {

@@ -14,7 +14,7 @@
                         <?php if ($displayThumbnail && $thumbnail_type_object && $page->getAttribute("thumbnail")): ?>
                             <img class="img-fluid" src="<?php echo $page->getAttribute("thumbnail")->getThumbnailURL($thumbnail_type_object->getBaseVersion()); ?>" alt="<?php echo $th->entities($page->getCollectionName()); ?>">
                         <?php endif; ?>
-                        <article class="texts texts-color-white" data-same-height="case-studies">
+                        <article class="texts">
                             <h5 class="mb-0">
                                 <a target="<?php echo $target; ?>" href="<?php echo $page->getCollectionLink(); ?>">
                                     <?php echo $th->entities($page->getCollectionName()); ?>
