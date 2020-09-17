@@ -34,7 +34,7 @@ $(function(){
     window.customTestimonialSliderInit(blockId);
   })
 
-  $(".custom-testimonial-wrapper .slick-dots button").click(function (){
+  $(".custom-testimonial-wrapper .slick-dots li").click(function (){
     $('html, body').animate({
         scrollTop: $(".main").offset().top - 200
     }, 500);
