@@ -2,6 +2,24 @@
 
 /* subpage name START */
 
-.subpage {}
+.page-type-article{
+
+    .contents{
+
+        img{
+            width: 100%;
+            margin-bottom: 2.5rem;
+        }
+
+        .texts{
+
+            h6{
+                font-family: $project-h6-font-family;
+                font-size: $project-h6-font-size;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
 
 /* subpage name END */

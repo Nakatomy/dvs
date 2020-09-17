@@ -13,6 +13,11 @@
     .container{
         height: calc(100vh - #{$headerHeight});
 
+        // desktop
+        @include media-breakpoint-only(xl) {
+            height: 100vh;
+        }
+
         // mobile
         @include media-breakpoint-down(sm) {
             max-height: 400px;
