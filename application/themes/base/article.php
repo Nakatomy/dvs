@@ -44,6 +44,22 @@
             <?php $area->enableGridContainer(); ?>
             <?php $area->display($c); ?>
         </div>
+
+    </div>
+
+    <div class="background-dark-wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <?php $area = new GlobalArea('Article Bottom Title'); ?>
+                    <?php $area->display(); ?>
+                </div>
+                <div class="col-md-8">
+                    <?php $area = new GlobalArea('Article Bottom News'); ?>
+                    <?php $area->display(); ?>
+                </div>
+            </div>
+        </div>
     </div>
 
 </div>

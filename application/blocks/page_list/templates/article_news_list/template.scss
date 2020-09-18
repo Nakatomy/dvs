@@ -1,0 +1,45 @@
+@import 'project_defaults';
+
+.article-news-list{
+
+    .article-news-list-items{
+        border-bottom: 1px solid $color-medium-blue;
+
+        // mobile
+        @include media-breakpoint-down(sm) {
+            padding: 0 30px;
+        }
+    }
+
+    .article-news-list-item{
+        padding-top: 2rem;
+        border-top: 1px solid $color-medium-blue;
+
+        .article-news-card{
+            margin: 0 -15px;
+
+            div.texts{
+
+                p{
+                    font-size: 0.875rem;
+                    line-height: 0.875rem;
+                    color: rgba($color-white, .4);
+                }
+            }
+
+            &-body{
+
+                h6{
+
+                    a{
+                        font-family: $project-default-font-family-1-MEDIUM;
+                        font-size: 1.5rem;
+                        line-height: 2rem;
+                        color: $color-white;
+                        @include underlinehover($color-white);
+                    }
+                }
+            }
+        }
+    }
+}
