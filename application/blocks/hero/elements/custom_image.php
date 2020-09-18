@@ -1,4 +1,4 @@
-<div class="home-hero-image">
+<div class="home-hero-image animation scale-up">
     <?php if ($image_url) : ?>
         <img src="<?php echo $image_url; ?>">
     <?php endif; ?>
