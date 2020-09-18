@@ -5,7 +5,7 @@
             <?php $area->display(); ?>
         </div>
         <div class="col-6 col-md-3">
-            <nav class="logo">
+            <nav class="logo animation scale-up">
                 <a href="/<?php echo Localization::activeLanguage(); ?>" title="Digital Vault Services">
                     <img src="<?php echo $this->getThemePath(); ?>/assets/img/dvs-logo.svg" alt="Digital Vault Services">
                     <img src="<?php echo $this->getThemePath(); ?>/assets/img/dvs-logo-inverse.svg" alt="Digital Vault Services">
@@ -18,7 +18,8 @@
         </div>
         <div class="col-3 col-md-3 col-lg-2 col-xl-1 d-flex align-items-center justify-content-end">
             <button type="button" name="menu-button" class="btn menu-button">
-                <p><?php echo t('Menu'); ?></p>
+                <p class="open"><?php echo t('Menu'); ?></p>
+                <p class="close-menu"><?php echo t('Close'); ?></p>
                 <span class="lines">
                     <span class="line1"></span>
                     <span class="line2"></span>

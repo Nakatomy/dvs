@@ -349,6 +349,25 @@
             display: inline-block;
             margin: 0;
 
+            &.open{
+                display: inline-block;
+            }
+
+            &.close-menu{
+                display: none;
+            }
+
+            .open-menu &{
+
+                &.open{
+                    display: none;
+                }
+
+                &.close-menu{
+                    display: inline-block;
+                }
+            }
+
             // mobile
             @include media-breakpoint-down(sm) {
                 display: none;
