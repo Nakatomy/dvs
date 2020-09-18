@@ -12,6 +12,12 @@
         vertical-align: top;
         display: flex;
         width: 100%;
+        margin-left: -8rem;
+
+        &-wrapper{
+            margin-top: 3rem;
+            position: relative;
+        }
 
 		.page-item {
 
@@ -27,10 +33,14 @@
 				color: $project-pagination-color;
 				font-family: $project-pagination-font-family;
 				font-size: $project-pagination-font-size;
-				height: auto;
+                height:  $project-pagination-line-height;
+                width:  $project-pagination-line-height;
 				line-height: $project-pagination-line-height;
-				padding: $project-pagination-padding;
-				text-decoration: none;
+				padding: 0;
+                text-decoration: none;
+                border-radius: $project-pagination-border-radius;
+                text-align: center;
+                margin: 0 5px;
 
 				// desktop
 				@include media-breakpoint-up(xl) {
@@ -48,10 +58,12 @@
 			// previous / next
 			&:first-child,
 			&:last-child {
+                position: absolute;
+
 				.page-link {
 					background: $project-pagination-background-color-PAGER;
 					border-color: $project-pagination-border-color-PAGER;
-					color: $project-pagination-color-PAGER;
+                    color: $color-theme-primary;
 
 					// desktop
 					@include media-breakpoint-up(xl) {
@@ -59,21 +71,25 @@
 						&:focus {
 							background: $project-pagination-background-color-PAGER-HOVER;
 							border-color: $project-pagination-border-color-PAGER-HOVER;
-							color: $project-pagination-color-PAGER-HOVER;
+							color: $color-theme-primary-light;
 						}
-					}
+                    }
 				}
 			}
 
 			// previous
 			&:first-child {
+                right: 3.5rem;
+
 				.page-link {
-					@include css3-border-radius-separate($project-pagination-border-radius, 0, 0, $project-pagination-border-radius);
+                    @include css3-border-radius-separate($project-pagination-border-radius, 0, 0, $project-pagination-border-radius);
 				}
 			}
 
 			// next
 			&:last-child {
+                right: -1.5rem;
+
 				.page-link {
 					@include css3-border-radius-separate(0, $project-pagination-border-radius, $project-pagination-border-radius, 0);
 				}

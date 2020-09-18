@@ -7,8 +7,8 @@ use Pagerfanta\View\Template\Template;
 class CustomTemplate extends Template
 {
     static protected $defaultOptions = array(
-        'previous_message'   => '<i class="fa fa-long-arrow-left"></i>',
-        'next_message'       => '<i class="fa fa-long-arrow-right"></i>',
+        'previous_message'   => 'Previous',
+        'next_message'       => 'Next',
         'css_disabled_class' => 'disabled',
         'css_dots_class'     => 'dots',
         'css_current_class'  => 'active',

@@ -9,13 +9,14 @@ window.customTestimonialSliderInit = function(bID) {
     customTestimonialSlider.each(function(){
       $(this).slick({
         accessibility: false,
-        nextArrow: '<button type="button" class="slick-button slider-next"><i class="fa fa-angle-right"></i></button>',
-        prevArrow: '<button type="button" class="slick-button slider-prev"><i class="fa fa-angle-left"></i></button>',
+        nextArrow: '<button type="button" class="slick-button slider-next">Next</button>',
+        prevArrow: '<button type="button" class="slick-button slider-prev">Previous</button>',
         appendDots: $(this).parent(),
         slidesToScroll: 3,
         slidesToShow: 3,
         vertical: true,
         verticalSwiping: false,
+        infinite: false,
       });
 
       $(this).on('swipe', function(event, slick, direction) {

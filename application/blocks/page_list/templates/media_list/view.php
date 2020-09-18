@@ -67,7 +67,9 @@ use Concrete\Attribute\Address\Value;
                                     <div class="row">
                                         <?php if ($displayThumbnail && $thumbnail_type_object && $page->getAttribute("thumbnail")): ?>
                                             <div class="col-12 margin-bottom-default">
-                                                <img class="img-fluid" src="<?php echo $page->getAttribute("thumbnail")->getThumbnailURL($thumbnail_type_object->getBaseVersion()); ?>" alt="<?php echo $th->entities($page->getCollectionName()); ?>">
+                                                <div class="bg-image bg-image-16by9">
+                                                    <img class="img-fluid" src="<?php echo $page->getAttribute("thumbnail")->getThumbnailURL($thumbnail_type_object->getBaseVersion()); ?>" alt="<?php echo $th->entities($page->getCollectionName()); ?>">
+                                                </div>
                                             </div>
                                         <?php endif; ?>
                                         <div class="col-4 col-md-3">

@@ -874,13 +874,13 @@ $project-alert-padding:												15px;
 // ---- setup PAGINATION START
 
 // background color
-$project-pagination-background-color:								$color-white;
-$project-pagination-background-color-HOVER:							$color-light-gray;
-$project-pagination-background-color-ACTIVE:						$color-white;
-$project-pagination-background-color-ACTIVE-HOVER:					$color-white;
-$project-pagination-background-color-DISABLED:						$color-white;
-$project-pagination-background-color-PAGER:							$color-white;
-$project-pagination-background-color-PAGER-HOVER:					$color-light-gray;
+$project-pagination-background-color:								transparent;
+$project-pagination-background-color-HOVER:							$color-theme-primary-light;
+$project-pagination-background-color-ACTIVE:						$color-theme-primary;
+$project-pagination-background-color-ACTIVE-HOVER:					$color-theme-primary-light;
+$project-pagination-background-color-DISABLED:						transparent;
+$project-pagination-background-color-PAGER:							transparent;
+$project-pagination-background-color-PAGER-HOVER:					transparent;
 
 // border color
 $project-pagination-border-color:									$color-black;
@@ -892,9 +892,9 @@ $project-pagination-border-color-PAGER:								$color-black;
 $project-pagination-border-color-PAGER-HOVER:						$color-theme-primary;
 
 // border radius
-$project-pagination-border-radius:									$project-default-border-radius;
-$project-pagination-border-radius-SMALL:							$project-pagination-border-radius - rem(5px);
-$project-pagination-border-radius-LARGE:							$project-pagination-border-radius + rem(5px);
+$project-pagination-border-radius:									100%;
+$project-pagination-border-radius-SMALL:							$project-pagination-border-radius;
+$project-pagination-border-radius-LARGE:							$project-pagination-border-radius;
 
 // border width
 $project-pagination-border-width:									0;
@@ -902,12 +902,12 @@ $project-pagination-border-width-SMALL:								$project-pagination-border-width;
 $project-pagination-border-width-LARGE:								$project-pagination-border-width;
 
 // color
-$project-pagination-color:											$color-black;
-$project-pagination-color-HOVER:									$color-theme-primary;
-$project-pagination-color-ACTIVE:									$color-theme-primary;
-$project-pagination-color-ACTIVE-HOVER:								$color-theme-primary;
-$project-pagination-color-DISABLED:									$color-gray;
-$project-pagination-color-PAGER:									$color-black;
+$project-pagination-color:											rgba($color-theme-primary, .2);
+$project-pagination-color-HOVER:									$color-white;
+$project-pagination-color-ACTIVE:									$color-white;
+$project-pagination-color-ACTIVE-HOVER:								$color-white;
+$project-pagination-color-DISABLED:									rgba($color-theme-primary, .2);
+$project-pagination-color-PAGER:									rgba($color-theme-primary, .2);
 $project-pagination-color-PAGER-HOVER:								$color-theme-primary;
 
 // font family
@@ -919,9 +919,9 @@ $project-pagination-font-size-SMALL:								$project-pagination-font-size - rem(
 $project-pagination-font-size-LARGE:								$project-pagination-font-size + rem(2px);
 
 // line height
-$project-pagination-line-height:									$project-button-height;
-$project-pagination-line-height-SMALL:								$project-button-height-SMALL;
-$project-pagination-line-height-LARGE:								$project-button-height-LARGE;
+$project-pagination-line-height:									3rem;
+$project-pagination-line-height-SMALL:								3rem;
+$project-pagination-line-height-LARGE:								3rem;
 
 // margin
 $project-pagination-margin:											$project-default-margin-bottom;

@@ -104,6 +104,41 @@
                 }
             }
         }
+
+        .btn{
+            color: $color-white;
+            background-color: transparent;
+            border: none;
+            padding-left: 0;
+            position: relative;
+
+            &:after{
+                content: '\e901';
+                font-family: $project-default-icon-family-extra;
+                position: absolute;
+                right: -3rem;
+                height: 3.5rem;
+                width: 3.5rem;
+                line-height: 3.5rem;
+                border: 1px solid rgba($color-white, .2);
+                border-radius: 100%;
+                @include project-default-transition();
+                display: inline-block;
+            }
+
+            // desktop
+            @include media-breakpoint-up(xl) {
+                &:hover,
+                &:focus {
+
+                    &:after{
+                        background-color: rgba($color-white, .7);
+                        color: $color-white;
+                        transform: translateY(-3px);
+                    }
+                }
+            }
+        }
     }
 
     &-guarantee-section{

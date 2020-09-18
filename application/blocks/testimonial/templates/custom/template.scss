@@ -2,8 +2,32 @@
 
 .custom-testimonial-wrapper{
 
-    .slick-dots{
+    .slick-button{
+        bottom: -4.5rem;
+        top: auto;
+        background: $project-pagination-background-color-PAGER;
+        border: none;
+        color: $color-theme-primary;
 
+        &.slider-prev{
+            left: auto;
+            right: 6rem;
+        }
+
+        &.slider-next{
+            right: 0;
+        }
+
+        // desktop
+        @include media-breakpoint-up(xl) {
+            &:hover{
+                color: $color-theme-primary-light;
+            }
+        }
+    }
+
+    .slick-dots{
+        margin-left: -7rem;
 
         li{
             counter-increment: li;
