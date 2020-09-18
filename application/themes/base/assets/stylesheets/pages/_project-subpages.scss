@@ -52,4 +52,56 @@
     }
 }
 
+.page-not-found{
+    height: 100vh;
+    padding: 5rem 1rem 0 1rem;
+
+    .logo{
+        position: absolute;
+        top: 5vh;
+        left: 4vw;
+
+        // mobile
+        @include media-breakpoint-down(sm) {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        a{
+            display: block;
+
+            img{
+                width: 17.5rem;
+            }
+        }
+    }
+
+    .four-oh-four{
+        margin-bottom: 9rem;
+        max-width: 61vw;
+
+        // laptop
+        @include media-breakpoint-only(xl) {
+            margin-bottom: 5rem;
+            max-width: 50vw;
+        }
+
+        // mobile
+        @include media-breakpoint-down(sm) {
+            max-width: 85vw;
+            margin-bottom: 2rem;
+        }
+    }
+
+    h6{
+        margin-bottom: 3.5rem;
+
+        // mobile
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+    }
+}
+
 /* subpage name END */
