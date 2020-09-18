@@ -1080,7 +1080,7 @@ $project-embed-responsive-layer-youtube-opacity-HOVER:				1;
 // ---- setup anchor-point START
 
 
-$project-anchor-point-top:											-$headerHeight;
+$project-anchor-point-top:											-$headerHeight - 20;
 $project-fake-position-top:											$project-anchor-point-top; // NOTE: just for legacy sites
 
 

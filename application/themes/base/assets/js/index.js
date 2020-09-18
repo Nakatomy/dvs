@@ -403,6 +403,10 @@ var afterResizeInit = (function () {
 // --- Ready
 $(function() {
 
+  $('.menu-content li a').on('click', function(){
+    $('html').removeClass('open-menu');
+  });
+
 	// device / os / broswer
 	osAndBrowserAndDeviceInit();
 

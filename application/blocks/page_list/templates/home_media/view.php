@@ -42,7 +42,7 @@ use Concrete\Attribute\Address\Value;
                         <?php foreach($filter_set as $fs) : ?>
                             <?php if($fs->title == 'Media Category'): ?>
                                 <?php foreach ($fs->attributes as $attr):?>
-                                    <p id="<?php echo str_replace(" ","",$attr); ?>">
+                                    <p data-id="<?php echo str_replace(" ","",$attr); ?>">
                                         <a>
                                             <?php echo $attr; ?>
                                         </a>
