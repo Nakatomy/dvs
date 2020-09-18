@@ -22,4 +22,34 @@
     }
 }
 
+.contents{
+
+    .core-vertical-menu{
+
+        ul{
+
+            li{
+                line-height: normal;
+                margin-bottom: 0;
+
+                &:not(:last-child){
+                    margin-bottom: 1.75rem;
+                }
+
+                a{
+                    opacity: .5;
+                    line-height: 1.25;
+                }
+
+                &.active{
+
+                    a{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+
 /* subpage name END */
