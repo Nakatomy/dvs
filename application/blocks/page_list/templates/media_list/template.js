@@ -3,7 +3,20 @@ import './template.scss'
 // --- Ready
 $(function() {
 
-  if (window.location.href.indexOf('News') > -1) {
+  var currentLocation = location.hash.split('#')[1];
+
+  console.log(currentLocation);
+
+  $('.media-list .filter-menu p').each(function() {
+    var filtertag = $(this).attr('id');
+
+    if(currentLocation == filtertag){
+      $(this).addClass('active');
+    }
+
+  });
+
+  /* if (window.location.href.indexOf('News') > -1) {
     $(".media-list #News").addClass("active");
   }
   if (window.location.href.indexOf('Pressrelease') > -1) {
@@ -11,7 +24,7 @@ $(function() {
   }
   if (window.location.href.indexOf('Mediacoverage') > -1) {
     $(".media-list #Mediacoverage").addClass("active");
-  }
+  } */
 
   $('.media-list .filter-menu p').each(function() {
 
