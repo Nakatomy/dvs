@@ -74,7 +74,7 @@
                 content: '';
                 width: 0%;
                 height: 1px;
-                border-bottom: 1px dashed rgba($color-white, .2);
+                border-bottom: 2px dashed rgba($color-white, .2);
                 display: block;
                 position: absolute;
                 opacity: 0;
@@ -236,12 +236,12 @@
                         .img-container{
 
                             &.active{
-                                transition-delay: 1s;
+                                //transition-delay: 1s;
 
                                 &:before{
                                     opacity: 1;
                                     width: 80%;
-                                    transition-delay: 1.5s;
+                                    transition-duration: .5s;
                                     right: -20%;
 
                                     // tablet large
@@ -267,7 +267,7 @@
                         .info-card-body{
 
                             &.active{
-                                transition-delay: 1s;
+                                //transition-delay: 1.5s;
                             }
                         }
                     }
@@ -282,12 +282,12 @@
                         .img-container{
 
                             &.active{
-                                transition-delay: 2s;
+                                transition-delay: 1s;
 
                                 &:before{
                                     opacity: 1;
                                     width: 65%;
-                                    transition-delay: 2.5s;
+                                    transition-delay: .5s;
                                     top: -100%;
 
                                     // tablet large
@@ -311,7 +311,7 @@
                         .info-card-body{
 
                             &.active{
-                                transition-delay: 2s;
+                                //transition-delay: .5s;
                             }
                         }
                     }
@@ -339,7 +339,7 @@
                             content: '';
                             height: 1px;
                             transform: rotate(90deg);
-                            border-width: 0 0 1px 0;
+                            border-width: 0 0 2px 0;
                             border-style: dashed;
                             border-color: rgba($color-white, .2);
                             display: block;
@@ -448,7 +448,7 @@
 
                                 &:after{
                                     opacity: 0;
-                                    transition-delay: 2s;
+                                    transition-delay: 1s;
                                     transition-duration: .5s;
                                 }
                             }
@@ -472,7 +472,7 @@
                             right: -100%;
                             border-style: solid;
                             border-color: $color-orange;
-                            border-width: 0 0 1px 0;
+                            border-width: 0 0 2px 0;
                         }
                     }
                 }
@@ -496,7 +496,7 @@
                             left: -100%;
                             border-style: solid;
                             border-color: $color-orange;
-                            border-width: 0 0 1px 0;
+                            border-width: 0 0 2px 0;
                         }
                     }
                 }
@@ -528,7 +528,7 @@
                                 &:before{
                                     opacity: 1;
                                     width: 80%;
-                                    transition-delay: 2s;
+                                    transition-delay: 1s;
                                     transition-duration: 1s;
                                     right: -20%;
 
@@ -575,7 +575,7 @@
                                 &:before{
                                     opacity: 1;
                                     width: 80%;
-                                    transition-delay: 2s;
+                                    transition-delay: 1s;
                                     transition-duration: .5s;
                                     left: -20%;
 
@@ -647,7 +647,7 @@
                             width: 80%;
                             border-style: solid;
                             border-color: $color-orange;
-                            border-width: 0 0 1px 0;
+                            border-width: 0 0 2px 0;
                             right: -20%;
 
                             // tablet large
@@ -688,7 +688,7 @@
                         &:before{
                             border-style: solid;
                             border-color: $color-orange;
-                            border-width: 0 0 1px 0;
+                            border-width: 0 0 2px 0;
                             left: -20%;
                             width: 80%;
 
