@@ -417,15 +417,18 @@ function infoGraph(){
 }
 
 $(window).scroll(function (event) {
-  var infograph = $("#infograph-wrapper").offset().top - $(window).height()/2;
-  var scroll = $(window).scrollTop();
 
-  if(scroll >= infograph){
-    $('#infograph-wrapper').addClass('autoplay-on');
-    $('#infograph-wrapper .animation').addClass('active');
-    $('.infograph-wrapper').slick('slickSetOption', {
-      'autoplay': true
-    }, true);
+  if($("#infograph-wrapper").length){
+    var infograph = $("#infograph-wrapper").offset().top - $(window).height()/2;
+    var scroll = $(window).scrollTop();
+
+    if(scroll >= infograph){
+      $('#infograph-wrapper').addClass('autoplay-on');
+      $('#infograph-wrapper .animation').addClass('active');
+      $('.infograph-wrapper').slick('slickSetOption', {
+        'autoplay': true
+      }, true);
+    }
   }
 });
 
