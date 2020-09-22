@@ -231,17 +231,18 @@
                 .info-card{
 
                     &:nth-child(2){
+                        transition-delay: 1s;
                         opacity: 1;
 
                         .img-container{
 
                             &.active{
-                                //transition-delay: 1s;
 
                                 &:before{
                                     opacity: 1;
                                     width: 80%;
-                                    transition-duration: .5s;
+                                    transition-delay: .5s;
+                                    transition-duration: 1s;
                                     right: -20%;
 
                                     // tablet large
@@ -263,13 +264,6 @@
                                 }
                             }
                         }
-
-                        .info-card-body{
-
-                            &.active{
-                                //transition-delay: 1.5s;
-                            }
-                        }
                     }
 
                     &:nth-child(3){
@@ -277,17 +271,18 @@
                     }
 
                     &:last-child{
+                        transition-delay: 1.5s;
                         opacity: 1;
 
                         .img-container{
 
                             &.active{
-                                transition-delay: 1s;
 
                                 &:before{
                                     opacity: 1;
                                     width: 65%;
-                                    transition-delay: .5s;
+                                    transition-delay: 1.5s;
+                                    transition-duration: 1s;
                                     top: -100%;
 
                                     // tablet large
@@ -324,6 +319,35 @@
 
             .info-card{
                 opacity: 0;
+
+                &:nth-child(2){
+
+                    .img-container{
+
+                        &:before{
+                            opacity: 1;
+                            width: 80%;
+                            right: -20%;
+
+                            // tablet large
+                            @include media-breakpoint-only(lg) {
+                                right: -15%;
+                                width: 70%;
+                            }
+
+                            // tablet small
+                            @include media-breakpoint-only(md) {
+                                right: 0%;
+                                width: 60%;
+                            }
+
+                            // mobile
+                            @include media-breakpoint-down(sm) {
+                                right: 5%;
+                            }
+                        }
+                    }
+                }
 
                 &:last-child{
 
@@ -374,35 +398,6 @@
 
                     &:nth-child(2){
                         opacity: 1;
-
-                        .img-container{
-
-                            &.active{
-
-                                &:before{
-                                    opacity: 1;
-                                    width: 80%;
-                                    right: -20%;
-
-                                    // tablet large
-                                    @include media-breakpoint-only(lg) {
-                                        right: -15%;
-                                        width: 70%;
-                                    }
-
-                                    // tablet small
-                                    @include media-breakpoint-only(md) {
-                                        right: 0%;
-                                        width: 60%;
-                                    }
-
-                                    // mobile
-                                    @include media-breakpoint-down(sm) {
-                                        right: 5%;
-                                    }
-                                }
-                            }
-                        }
                     }
 
                     &:nth-child(3){
@@ -449,7 +444,7 @@
                                 &:after{
                                     opacity: 0;
                                     transition-delay: 1s;
-                                    transition-duration: .5s;
+                                    transition-duration: 1s;
                                 }
                             }
                         }
@@ -576,7 +571,7 @@
                                     opacity: 1;
                                     width: 80%;
                                     transition-delay: 1s;
-                                    transition-duration: .5s;
+                                    transition-duration: 1s;
                                     left: -20%;
 
                                     // tablet large
