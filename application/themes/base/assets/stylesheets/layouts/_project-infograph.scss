@@ -4,29 +4,97 @@
 0% {
     -webkit-transform: scale(1);
             transform: scale(1);
+
+            // mobile
+    @include media-breakpoint-down(sm) {
+        -webkit-transform: scale(.6);
+            transform: scale(.6);
+    }
 }
 50% {
     -webkit-transform: scale(0.98);
             transform: scale(0.98);
+
+            // mobile
+    @include media-breakpoint-down(sm) {
+        -webkit-transform: scale(.58);
+            transform: scale(.58);
+    }
 }
 100% {
     -webkit-transform: scale(1);
             transform: scale(1);
+
+            // mobile
+    @include media-breakpoint-down(sm) {
+        -webkit-transform: scale(.6);
+            transform: scale(.6);
+    }
 }
 }
 @keyframes pulsate-bck {
 0% {
     -webkit-transform: scale(1);
             transform: scale(1);
+
+            // mobile
+    @include media-breakpoint-down(sm) {
+        -webkit-transform: scale(.6);
+            transform: scale(.6);
+    }
 }
 50% {
     -webkit-transform: scale(0.98);
             transform: scale(0.98);
+
+             // mobile
+    @include media-breakpoint-down(sm) {
+        -webkit-transform: scale(.58);
+            transform: scale(.58);
+    }
 }
 100% {
     -webkit-transform: scale(1);
             transform: scale(1);
+
+    // mobile
+    @include media-breakpoint-down(sm) {
+        -webkit-transform: scale(.6);
+            transform: scale(.6);
+    }
 }
+
+
+}
+@-webkit-keyframes pulsate-bck-mobile {
+0% {
+    -webkit-transform: scale(.6);
+            transform: scale(.6);
+}
+50% {
+    -webkit-transform: scale(.58);
+    transform: scale(.58);
+}
+100% {
+    -webkit-transform: scale(.6);
+            transform: scale(.6);
+}
+}
+@keyframes pulsate-bck-mobile {
+0% {
+    -webkit-transform: scale(.6);
+    transform: scale(.6);
+}
+50% {
+    -webkit-transform: scale(.58);
+    transform: scale(.58);
+}
+100% {
+    -webkit-transform: scale(.6);
+            transform: scale(.6);
+}
+
+
 }
 
 .infograph{
@@ -46,6 +114,11 @@
         // desktop
         @include media-breakpoint-down(xl) {
             margin-bottom: 5rem;
+        }
+
+        // tablet
+        @include media-breakpoint-between(md, lg) {
+            margin-bottom: 7rem;
         }
 
         h3{
@@ -140,7 +213,7 @@
 
                     // mobile
                     @include media-breakpoint-down(sm) {
-                        transform: scale(0.6);
+                        transform: scale(0.6) !important;
                         top: -115%;
                     }
                 }
@@ -407,7 +480,13 @@
 
                             &:after{
                                 -webkit-animation: pulsate-bck 1s ease-in-out 2.1s infinite both;
-                                        animation: pulsate-bck 1s ease-in-out 2.1s infinite both;
+                                animation: pulsate-bck 1s ease-in-out 2.1s infinite both;
+
+                                // mobile
+                                @include media-breakpoint-down(sm) {
+                                    -webkit-animation: pulsate-bck-mobile 1s ease-in-out 2.1s infinite both;
+                                    animation: pulsate-bck-mobile 1s ease-in-out 2.1s infinite both;
+                                }
                             }
                         }
                     }
@@ -556,6 +635,12 @@
                             &:after{
                                 -webkit-animation: pulsate-bck 1s ease-in-out 2 both;
                                         animation: pulsate-bck 1s ease-in-out 2 both;
+
+                                // mobile
+                                @include media-breakpoint-down(sm) {
+                                    -webkit-animation: pulsate-bck-mobile 1s ease-in-out 2 both;
+                                        animation: pulsate-bck-mobile 1s ease-in-out 2 both;
+                                }
                             }
                         }
                     }
@@ -577,11 +662,13 @@
                                     // tablet large
                                     @include media-breakpoint-only(lg) {
                                         left: -15%;
+                                        width: 70%;
                                     }
 
                                     // tablet small
                                     @include media-breakpoint-only(md) {
                                         left: 0%;
+                                        width: 60%;
                                     }
 
                                     // mobile
@@ -672,6 +759,12 @@
                         &:after{
                             -webkit-animation: pulsate-bck 1s ease-in-out 2.1s infinite both;
                                     animation: pulsate-bck 1s ease-in-out 2.1s infinite both;
+
+                            // mobile
+                            @include media-breakpoint-down(sm) {
+                                -webkit-animation: pulsate-bck-mobile 1s ease-in-out 2.1s infinite both;
+                                    animation: pulsate-bck-mobile 1s ease-in-out 2.1s infinite both;
+                            }
                         }
                     }
                 }
