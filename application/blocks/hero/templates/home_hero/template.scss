@@ -1,5 +1,7 @@
 @import 'project_defaults';
 
+$transitionType: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
 .home-hero{
     position: relative;
     overflow: hidden;
@@ -11,11 +13,11 @@
     }
 
     .container{
-        height: calc(100vh - #{$headerHeight});
+        height: 100vh;
 
-        // desktop
-        @include media-breakpoint-only(xl) {
-            height: 100vh;
+        // hd
+        @include media-breakpoint-up(hd) {
+            height: calc(100vh - #{$headerHeight});
         }
 
         // mobile
@@ -70,6 +72,42 @@
                     letter-spacing: 0.125rem;
                     font-size: 0.75rem;
                     line-height: 0.875rem;
+                }
+            }
+
+            html:not(.ccm-edit-mode) &{
+
+                h1{
+                    transition: transform 1.2s $transitionType, opacity 1.2s $transitionType;
+                    transition-delay: .5s;
+                    opacity: 0;
+                    transform: translateY(1rem);
+                }
+
+                p{
+                    display: inline-block;
+
+                    span{
+                        transform: translateY(.5rem);
+                        transition: transform 1.2s $transitionType, opacity 1.2s $transitionType;
+                        display: inline-block;
+                        opacity: 0;
+                    }
+
+                    @for $i from 1 through 20 {
+                        span:nth-child(#{$i}) {
+                            transition-delay: #{$i * .15}s;
+
+                        }
+                    }
+                }
+            }
+
+            html:not(.ccm-edit-mode).loaded &{
+
+                h1, p span{
+                    opacity: 1;
+                    transform: translateY(0);
                 }
             }
 
