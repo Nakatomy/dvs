@@ -94,10 +94,9 @@ $transitionType: cubic-bezier(0.25, 0.46, 0.45, 0.94);
                         opacity: 0;
                     }
 
-                    @for $i from 1 through 20 {
+                    @for $i from 1 through 50 {
                         span:nth-child(#{$i}) {
                             transition-delay: #{$i * .15}s;
-
                         }
                     }
                 }
