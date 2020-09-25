@@ -68,13 +68,13 @@ echo Core::make('helper/concrete/ui')->tabs(array(
             <div class="col-md-6">
                 <legend><?php echo t('Name'); ?></legend>
                 <div class="form-group">
-                    <?php echo $form->text('videoName', $videoName, array('required'=>'required'));?>
+                    <?php echo $form->text('videoName', $videoName);?>
                 </div>
             </div>
             <div class="col-md-6">
                 <legend><?php echo t('Date'); ?></legend>
                 <div class="form-group">
-                    <?php echo $form->text('videoDate', $videoDate, array('required'=>'required'));?>
+                    <?php echo $form->text('videoDate', $videoDate);?>
                 </div>
             </div>
         </div>
