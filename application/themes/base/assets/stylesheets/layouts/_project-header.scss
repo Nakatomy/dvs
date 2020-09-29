@@ -294,8 +294,8 @@
     }
 
     .btn.btn-sm{
-        background-color: $color-white;
-        color: $color-theme-primary;
+        // background-color: $color-white;
+        // color: $color-theme-primary;
         font-size: 1rem !important;
         padding: 0 2.125rem !important;
         margin-left: 2.5rem;
@@ -304,16 +304,16 @@
         @include media-breakpoint-up(xl) {
             &:hover,
             &:focus {
-                background-color: $color-theme-primary;
-                color: $color-white;
+                // background-color: $color-theme-primary;
+                // color: $color-white;
             }
         }
 
         .page-type-full &,
         .page-type-article &,
         .page-type-case &{
-            background-color: $color-theme-primary;
-            color: $color-white;
+            // background-color: $color-theme-primary;
+            // color: $color-white;
 
             // desktop
             @include media-breakpoint-up(xl) {
@@ -326,14 +326,12 @@
         }
 
         .header-scrolled &{
-            background-color: $color-white;
-            color: $color-theme-primary;
 
             // desktop
             @include media-breakpoint-up(xl) {
                 &:hover,
                 &:focus {
-                    background-color: $color-theme-primary;
+                    background-color: transparent;
                     color: $color-white;
                 }
             }
