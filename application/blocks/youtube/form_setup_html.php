@@ -27,22 +27,6 @@ echo Core::make('helper/concrete/ui')->tabs(array(
         </div>
     </fieldset>
     <fieldset>
-        <div class="row">
-            <div class="col-md-6">
-                <legend><?php echo t('Name'); ?></legend>
-                <div class="form-group">
-                    <?php echo $form->text('videoName', $videoName, array('required'=>'required'));?>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <legend><?php echo t('Date'); ?></legend>
-                <div class="form-group">
-                    <?php echo $form->text('videoDate', $videoDate, array('required'=>'required'));?>
-                </div>
-            </div>
-        </div>
-    </fieldset>
-    <fieldset>
         <legend><?php echo t('Size'); ?></legend>
         <div class="radio">
             <label>
@@ -75,6 +59,22 @@ echo Core::make('helper/concrete/ui')->tabs(array(
                 <div class="input-group">
                     <input type="text" class="form-control" id="YouTubeVideoHeight" name="vHeight" value="<?php echo $vHeight?>" />
                     <div class="input-group-addon"><?php echo t('px');?></div>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+    <fieldset>
+        <div class="row">
+            <div class="col-md-6">
+                <legend><?php echo t('Name'); ?></legend>
+                <div class="form-group">
+                    <?php echo $form->text('videoName', $videoName);?>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <legend><?php echo t('Date'); ?></legend>
+                <div class="form-group">
+                    <?php echo $form->text('videoDate', $videoDate);?>
                 </div>
             </div>
         </div>
