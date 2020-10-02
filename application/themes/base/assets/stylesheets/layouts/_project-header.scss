@@ -154,6 +154,7 @@
     }
 
     .logo {
+        max-width: 20rem;
 
         // tablet small
         @include media-breakpoint-up(md) {
@@ -165,50 +166,64 @@
             &:after{
                 display: none !important;
             }
+        }
 
-            img{
+        &-wrapper{
 
-                // mobile
-                @include media-breakpoint-down(sm) {
-                    width: 100%;
-                }
-
-
-                &:first-child{
-                    display: none;
-                }
+            svg{
+                fill: $color-white;
 
                 .page-type-full &,
                 .page-type-article &,
                 .page-type-case &{
+                    fill: $color-theme-primary;
+                }
 
-                    &:first-child{
-                        display: block;
-                    }
+                .header-scrolled &,
+                .open-menu &{
+                    fill: $color-white;
+                }
 
-                    &:last-child{
-                        display: none;
+                #logo{
+                    transition: opacity 1.2s linear;
+                    transition-delay: 1s;
+                    opacity: 0;
+
+                    .loaded &{
+                        opacity: 1;
+                        transition-delay: 1s;
                     }
                 }
 
-                .open-menu &,
-                .header-scrolled &{
+                .logo-element{
+                    transition: transform 1.2s linear, opacity 1.2s linear;
+                    transform-origin: 30% 50%;
+                    transform: scaleX(0);
+                    opacity: 0;
 
-                    &:first-child{
-                        display: none;
+                    &-1{
+                        transition-delay: 1.6s;
+                    }
+                    &-2{
+                        transition-delay: 1.7s;
+                    }
+                    &-3{
+                        transition-delay: 1.8s;
+                    }
+                    &-4{
+                        transition-delay: 1.9s;
+                    }
+                    &-5{
+                        transition-delay: 2s;
+                    }
+                    &-6{
+                        transition-delay: 2.1s;
                     }
 
-                    &:last-child{
-                        display: block;
+                    .loaded &{
+                        transform: scaleX(1);
+                        opacity: 1;
                     }
-                }
-            }
-
-            // desktop
-            @include media-breakpoint-up(xl) {
-                &:hover,
-                &:focus {
-                    @include css3-opacity(.7);
                 }
             }
         }

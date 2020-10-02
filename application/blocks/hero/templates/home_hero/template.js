@@ -7,5 +7,11 @@ $(window).on('load', function(){
       $(this).text().replace(/(^|<\/?[^>]+>|\s+)([^\s<]+)/g, '$1<span>$2</span>')
     );
   });
-});
+  /* $('.home-hero-content .texts strong').each(function(){
+    $(this).html(
+      $(this).text().replace(/(^|<\/?[^>]+>|\s+)([^\s<]+)/g, '$1<span>$2</span>')
+    );
+  }); */
 
+
+});
