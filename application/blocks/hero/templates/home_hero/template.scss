@@ -31,7 +31,7 @@ $transitionType: cubic-bezier(0.25, 0.46, 0.45, 0.94);
                 position: absolute;
                 top: 50%;
                 margin-top: -25%;
-                right: -5vw;
+                right: -3vw;
                 height: 100%;
                 width: 100%;
                 max-width: 40rem;
@@ -40,8 +40,10 @@ $transitionType: cubic-bezier(0.25, 0.46, 0.45, 0.94);
                     fill: #1b3357;
 
                     .logo-icon{
-                        transition: transform 1.2s linear, opacity 1.2s linear;
+                        transition: transform .8s linear, opacity .8s linear;
                         //transform-origin: 100% 50%;
+                        transform: translateY(3rem);
+                        opacity: 0;
 
                         &-1{
                             animation-delay: 1.6s;
@@ -64,7 +66,7 @@ $transitionType: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
                         @keyframes logoAnim {
                             0% {
-                                transform: translateY(-2rem);
+                                transform: translateY(-3rem);
                                 opacity: 0;
                             }
 
@@ -84,12 +86,12 @@ $transitionType: cubic-bezier(0.25, 0.46, 0.45, 0.94);
                             }
 
                             90%{
-                                transform: translateY(2rem);
+                                transform: translateY(.5rem);
                                 opacity: 0;
                             }
 
                             100%{
-                                transform: translateY(-1rem);
+                                transform: translateY(0rem);
                                 opacity: 0;
                             }
                         }
