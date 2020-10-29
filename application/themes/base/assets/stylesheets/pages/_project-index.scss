@@ -5,7 +5,7 @@
     &-about-us-section{
 
         .btn{
-            color: $color-theme-primary;
+            /* color: $color-theme-primary;
             background-color: transparent;
             border: none;
             padding-left: 0;
@@ -36,7 +36,7 @@
                         transform: translateY(-3px);
                     }
                 }
-            }
+            } */
         }
     }
 
@@ -216,7 +216,7 @@
         .dynamic-form-container{
 
             .btn{
-                position: relative;
+                /* position: relative;
                 line-height: 1;
                 padding-left: 3rem;
 
@@ -225,7 +225,7 @@
                     font-family: $project-default-icon-family-extra;
                     position: absolute;
                     left: 1.25rem;
-                }
+                } */
             }
         }
     }

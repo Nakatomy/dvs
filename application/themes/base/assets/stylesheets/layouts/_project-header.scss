@@ -109,13 +109,16 @@
 
                 .header-scrolled &{
                     border: 1px solid rgba($color-white, .3);
+                    background-color: $color-theme-primary;
 
                     a{
                         color: $color-white;
                     }
                 }
 
-                &:nth-child(2){
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4){
                     padding-top: 0 !important;
                     margin-top: 0.25rem;
 
@@ -140,6 +143,7 @@
                             }
 
                             .header-scrolled &{
+                                border: 1px solid rgba($color-theme-primary, .3);
                                 background-color: rgba($color-white, .7);
 
                                 a{
