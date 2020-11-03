@@ -309,19 +309,21 @@
                     }
                 }
 
-                ul{
+                > ul{
                     top: 2rem;
 
-                    li{
+                    > li{
 
-                        a{
+                        > a{
                             color: $color-theme-primary-light;
+                            opacity: 0.7;
 
                             // desktop
                             @include media-breakpoint-up(xl) {
                                 &:hover,
                                 &:focus {
                                     color: $color-theme-primary-dark;
+                                    opacity: 1;
                                 }
                             }
                         }
