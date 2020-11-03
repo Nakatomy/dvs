@@ -308,6 +308,25 @@
                         }
                     }
                 }
+
+                ul{
+                    top: 2rem;
+
+                    li{
+
+                        a{
+                            color: $color-theme-primary-light;
+
+                            // desktop
+                            @include media-breakpoint-up(xl) {
+                                &:hover,
+                                &:focus {
+                                    color: $color-theme-primary-dark;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
