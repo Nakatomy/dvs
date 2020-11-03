@@ -315,14 +315,14 @@
                     > li{
 
                         > a{
-                            color: $color-theme-primary-light;
+                            color: $color-theme-primary-light !important;
                             opacity: 0.7;
 
                             // desktop
                             @include media-breakpoint-up(xl) {
                                 &:hover,
                                 &:focus {
-                                    color: $color-theme-primary-dark;
+                                    color: $color-theme-primary-dark !important;
                                     opacity: 1;
                                 }
                             }
