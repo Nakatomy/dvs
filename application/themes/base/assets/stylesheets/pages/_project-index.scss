@@ -165,6 +165,16 @@
         .section-header{
             text-align: center;
         }
+
+        .core-image-gallery{
+            margin-right: -2rem !important;
+            margin-left: -2rem !important;
+
+            &-item{
+                padding-left: 2rem !important;
+                padding-right: 2rem !important;
+            }
+        }
     }
 
     &-solutions-section,
