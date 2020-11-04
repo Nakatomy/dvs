@@ -364,8 +364,7 @@ class PageTheme extends Theme implements ThemeProviderInterface
                 'container' => '<div class="home-about-us-section container d-flex no-padding-horizontal"></div>',
                 'columns' => [
                     '<div class="col-12 col-md-8 offset-md-4"></div>',
-                    '<div class="col-md-4"></div>',
-                    '<div class="col-md-8"></div>'
+                    '<div class="col-md-12"></div>',
                 ],
             ],
             [
