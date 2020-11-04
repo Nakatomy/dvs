@@ -242,14 +242,14 @@
             display: none;
         }
 
-        .open-menu &,
+        /* .open-menu &,
         .page-type-full &,
         .page-type-article &,
         .page-type-case &{
             opacity: 0;
             transform: translateX(3rem);
             visibility: hidden;
-        }
+        } */
 
         ul{
             justify-content: flex-end;

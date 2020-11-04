@@ -1,8 +1,7 @@
 <header class="header header-freeform">
     <div class="container-fluid">
         <div class="col-3 col-md-1">
-            <?php $area = new GlobalArea('Header Language Selector'); ?>
-            <?php $area->display(); ?>
+
         </div>
         <div class="col-6 col-md-3">
             <nav class="logo">
@@ -130,19 +129,21 @@
             <?php $area->display(); ?>
         </div>
         <div class="col-3 col-md-3 col-lg-2 col-xl-1 d-flex align-items-center justify-content-end">
-            <button type="button" name="menu-button" class="btn menu-button">
+            <!-- <button type="button" name="menu-button" class="btn menu-button">
                 <p class="open"><?php echo t('Menu'); ?></p>
                 <p class="close-menu"><?php echo t('Close'); ?></p>
                 <span class="lines">
                     <span class="line1"></span>
                     <span class="line2"></span>
                 </span>
-            </button>
+            </button> -->
+            <?php $area = new GlobalArea('Header Language Selector'); ?>
+            <?php $area->display(); ?>
         </div>
     </div>
 </header>
 
-<aside class="menu-container">
+<!-- <aside class="menu-container">
     <div class="row menu-content">
 
         <div class="col-6 offset-3 col-md-5 offset-md-1 main-section">
@@ -184,4 +185,4 @@
         </div>
 
     </div>
-</aside>
+</aside> -->
