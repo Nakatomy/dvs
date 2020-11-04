@@ -236,7 +236,11 @@
 			font-family: $project-list-font-family;
 			font-size: $project-list-font-size;
 			line-height: $project-list-line-height;
-			list-style: none;
+            list-style: none;
+
+            .background-dark-wrapper &{
+                color: $color-white;
+            }
 
 			// remove this if you don't need skinned "list-style-type"
 			&:before {
@@ -280,7 +284,11 @@
 					color: $project-ul-style-type-color;
 					content: $project-ul-style-type-content;
 					font-family: $project-ul-style-type-font-family;
-					font-size: $project-ul-style-type-font-size;
+                    font-size: $project-ul-style-type-font-size;
+
+                    .background-dark-wrapper &{
+                        color: $color-white;
+                    }
 				}
 			}
 		}
@@ -296,7 +304,11 @@
 					color: $project-ol-style-type-color;
 					content: $project-ol-style-type-content;
 					font-family: $project-ol-style-type-font-family;
-					font-size: $project-ol-style-type-font-size;
+                    font-size: $project-ol-style-type-font-size;
+
+                    .background-dark-wrapper &{
+                        color: $color-white;
+                    }
 				}
 			}
 		}
