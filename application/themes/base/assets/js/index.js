@@ -407,7 +407,7 @@ function infoGraph(){
     speed: 500,
     fade: true,
     cssEase: 'linear',
-    autoplaySpeed: 4000,
+    autoplaySpeed: 3000,
     arrows: false,
     dots: false,
     pauseOnHover: false,
