@@ -87,6 +87,17 @@
                 color: $color-white;
             }
         }
+
+        .btn-secondary{
+
+            // desktop
+            @include media-breakpoint-up(xl) {
+                &:hover,
+                &:focus {
+                    color: $project-button-option-color-SECONDARY-HOVER !important;
+                }
+            }
+        }
     }
 
     &-media-section{

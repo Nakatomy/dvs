@@ -50,9 +50,13 @@
 				@include media-breakpoint-up(xl) {
 					&:hover,
 					&:focus {
-						color: $project-button-option-color-SECONDARY-HOVER;
+						color: $color-theme-primary;
 						background-color: $project-button-option-background-color-SECONDARY-HOVER;
-						border-color: $project-button-option-border-color-SECONDARY-HOVER;
+                        border-color: $project-button-option-border-color-SECONDARY-HOVER;
+
+                        .background-dark-wrapper &{
+                            color: $project-button-option-color-SECONDARY-HOVER !important;
+                        }
 					}
 				}
 			}
