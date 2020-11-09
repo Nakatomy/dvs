@@ -65,12 +65,12 @@ div.card{
 
 .subpage-header{
     margin-top: $headerHeight;
-    padding: 2rem 0 8rem 0;
+    padding: 2rem 0 5rem 0;
     text-align: center;
 
     // mobile
     @include media-breakpoint-down(sm) {
-        padding: 2rem 0 4rem 0;
+        padding: 2rem 0 3rem 0;
     }
 
     &.case-studies{

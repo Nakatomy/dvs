@@ -8,11 +8,11 @@
 
         .col{
             padding: 0 2rem;
-            margin-bottom: 8rem;
+            margin-bottom: 5rem;
 
             // tablet
             @include media-breakpoint-between(md, lg) {
-                margin-bottom: 4rem;
+                margin-bottom: 3rem;
             }
 
             // mobile
