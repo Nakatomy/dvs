@@ -1,9 +1,9 @@
 <header class="header header-freeform">
     <div class="container-fluid">
-        <div class="col-3 col-md-1">
+        <!-- <div class="col-3 col-md-1">
 
-        </div>
-        <div class="col-6 col-md-3">
+        </div> -->
+        <div class="col-9 col-md-4">
             <nav class="logo">
                 <a href="/<?php echo Localization::activeLanguage(); ?>" title="Digital Vault Services">
                    <div class="logo-wrapper">
