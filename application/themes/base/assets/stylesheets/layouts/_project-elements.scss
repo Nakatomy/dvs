@@ -65,12 +65,30 @@ div.card{
 
 .subpage-header{
     margin-top: $headerHeight;
-    padding: 2rem 0 5rem 0;
+    padding-top: 2rem;
     text-align: center;
 
-    // mobile
     @include media-breakpoint-down(sm) {
-        padding: 2rem 0 3rem 0;
+        padding-bottom: $project-spacer-vertical-MOBILE;
+    }
+
+    // tablet
+    @include media-breakpoint-between(md, lg) {
+        padding-bottom: $project-spacer-vertical-TABLET;
+    }
+
+    // laptop
+    @include media-breakpoint-only(xl) {
+        padding-bottom: $project-spacer-vertical-LAPTOP;
+    }
+
+    // hd
+    @include media-breakpoint-up(hd) {
+        padding-bottom: $project-spacer-vertical-HD;
+    }
+
+    p{
+        margin-bottom: 0;
     }
 
     &.case-studies{
