@@ -67,26 +67,26 @@ body {}
             background-color: $color-theme-primary;
 
             @include media-breakpoint-down(sm) {
-                padding-top: $project-spacer-vertical-large-MOBILE;
-                padding-bottom: $project-spacer-vertical-large-MOBILE;
+                padding-top: $project-spacer-vertical-MOBILE;
+                padding-bottom: $project-spacer-vertical-MOBILE;
             }
 
             // tablet
             @include media-breakpoint-between(md, lg) {
-                padding-top: $project-spacer-vertical-large-TABLET;
-                padding-bottom: $project-spacer-vertical-large-TABLET;
+                padding-top: $project-spacer-vertical-TABLET;
+                padding-bottom: $project-spacer-vertical-TABLET;
             }
 
             // laptop
             @include media-breakpoint-only(xl) {
-                padding-top: $project-spacer-vertical-large-LAPTOP;
-                padding-bottom: $project-spacer-vertical-large-LAPTOP;
+                padding-top: $project-spacer-vertical-LAPTOP;
+                padding-bottom: $project-spacer-vertical-LAPTOP;
             }
 
             // hd
             @include media-breakpoint-up(hd) {
-                padding-top: $project-spacer-vertical-large-HD;
-                padding-bottom: $project-spacer-vertical-large-HD;
+                padding-top: $project-spacer-vertical-HD;
+                padding-bottom: $project-spacer-vertical-HD;
             }
         }
 
