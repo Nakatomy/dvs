@@ -280,6 +280,10 @@
 
 			> li {
 
+                strong{
+                    font-size: 1.2rem;
+                }
+
 				&:before {
 					color: $project-ul-style-type-color;
 					content: $project-ul-style-type-content;
