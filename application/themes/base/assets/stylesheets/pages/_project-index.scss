@@ -251,3 +251,118 @@
         }
     }
 }
+
+body{
+
+    #tarteaucitronServices{
+        background: $color-theme-primary;
+    }
+
+    #tarteaucitron #tarteaucitronServices .tarteaucitronMainLine {
+        background: $color-theme-primary;
+        border: 3px solid $color-theme-primary;
+        border-left: 9px solid $color-theme-primary;
+        border-top: 5px solid $color-theme-primary;
+        margin-bottom: 0;
+        margin-top: 21px;
+        position: relative;
+    }
+
+    #tarteaucitron #tarteaucitronServices .tarteaucitronMainLine:hover {
+        background: $color-theme-primary;
+    }
+
+    #tarteaucitronAlertSmall #tarteaucitronCookiesListContainer #tarteaucitronCookiesList .tarteaucitronTitle, #tarteaucitron #tarteaucitronServices .tarteaucitronTitle button, #tarteaucitron #tarteaucitronInfo, #tarteaucitron #tarteaucitronServices .tarteaucitronDetails{
+        background: $color-theme-primary;
+    }
+
+    #tarteaucitronClosePanel{
+        background: $color-theme-primary !important;
+    }
+
+    div#tarteaucitronRoot{
+
+        &:before{
+            display: none;
+        }
+
+        div#tarteaucitronAlertBig{
+            border-radius: $project-default-border-radius;
+            box-shadow: 0 0 5px -3px $color-white;
+            bottom: 1rem;
+            top: auto !important;
+            height: auto !important;
+            transform: translate(0, 0) !important;
+            width: calc(100vw - 2rem);
+            left: 1rem;
+            max-width: none;
+            display: flex;
+            box-sizing: border-box;
+            padding: 1rem;
+            background-color: $color-theme-primary;
+
+            &:before{
+                display: none;
+            }
+
+            #tarteaucitronDisclaimerAlert{
+                margin-bottom: 1rem;
+            }
+
+            .tarteaucitronCTAButton,
+            #tarteaucitronCloseAlert{
+                @include css3-border-radius($project-button-border-radius);
+                @include project-button-box-shadow();
+                @include project-default-transition();
+                outline: 0 !important;
+                border-width: $project-button-border-width;
+                border-style: solid;
+                cursor: pointer;
+                font-family: $project-button-font-family;
+                font-size: $project-button-font-size;
+                height: $project-button-height;
+                line-height: $project-button-line-height;
+                margin: 0;
+                padding: $project-button-padding;
+                text-decoration: none;
+                vertical-align: top;
+
+                &.tarteaucitronAllow{
+                    color: $project-button-option-color-SECONDARY;
+				background-color: $project-button-option-background-color-SECONDARY;
+				border-color: $project-button-option-border-color-SECONDARY;
+
+                    // desktop
+                    @include media-breakpoint-up(xl) {
+                        &:hover,
+                        &:focus {
+                            background-color: $project-button-option-background-color-SECONDARY-HOVER;
+                            border-color: $project-button-option-border-color-SECONDARY-HOVER;
+                            color: $project-button-option-color-SECONDARY-HOVER;
+                        }
+                    }
+                }
+
+                &.tarteaucitronDeny{
+                    color: $project-button-option-color-DANGER;
+                    background-color: $project-button-option-background-color-DANGER;
+                    border-color: $project-button-option-border-color-DANGER;
+
+                    // desktop
+                    @include media-breakpoint-up(xl) {
+                        &:hover,
+                        &:focus {
+                            color: $project-button-option-color-DANGER-HOVER;
+                            background-color: $project-button-option-background-color-DANGER-HOVER;
+                            border-color: $project-button-option-border-color-DANGER-HOVER;
+                        }
+                    }
+                }
+            }
+        }
+
+        #tarteaucitronScrollbarChild + a{
+            display: none !important;
+        }
+    }
+}
