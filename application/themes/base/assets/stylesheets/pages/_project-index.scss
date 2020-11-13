@@ -278,6 +278,10 @@ body{
 
     #tarteaucitronClosePanel{
         background: $color-theme-primary !important;
+
+        &:focus{
+            outline: none !important;
+        }
     }
 
     div#tarteaucitronRoot{
@@ -296,19 +300,29 @@ body{
             width: calc(100vw - 2rem);
             left: 1rem;
             max-width: none;
-            display: flex;
             box-sizing: border-box;
-            padding: 1rem;
+            padding: .5rem;
             background-color: $color-theme-primary;
+
+            // desktop
+            @include media-breakpoint-up(xl) {
+                display: flex !important;
+                align-items: center;
+                justify-content: center;
+            }
 
             &:before{
                 display: none;
             }
 
             #tarteaucitronDisclaimerAlert{
-                margin-bottom: 1rem;
+                font-size: 1rem;
+                margin: 1rem 0;
             }
 
+            .tarteaucitronCTAButton{
+                margin-right: .5rem;
+            }
             .tarteaucitronCTAButton,
             #tarteaucitronCloseAlert{
                 @include css3-border-radius($project-button-border-radius);
@@ -320,17 +334,17 @@ body{
                 cursor: pointer;
                 font-family: $project-button-font-family;
                 font-size: $project-button-font-size;
-                height: $project-button-height;
-                line-height: $project-button-line-height;
-                margin: 0;
+                height: $project-button-height / 2;
+                line-height: $project-button-line-height / 2;
+                //margin: 0;
                 padding: $project-button-padding;
                 text-decoration: none;
                 vertical-align: top;
 
                 &.tarteaucitronAllow{
                     color: $project-button-option-color-SECONDARY;
-				background-color: $project-button-option-background-color-SECONDARY;
-				border-color: $project-button-option-border-color-SECONDARY;
+                    background-color: $project-button-option-background-color-SECONDARY;
+                    border-color: $project-button-option-border-color-SECONDARY;
 
                     // desktop
                     @include media-breakpoint-up(xl) {
