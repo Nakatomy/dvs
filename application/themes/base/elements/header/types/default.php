@@ -124,7 +124,7 @@
                 </a>
             </nav>
         </div>
-        <div class="col col-6 col-md-8 d-flex justify-content-xl-between align-items-center justify-content-end">
+        <div class="col col-6 col-md-8 d-flex align-items-center justify-content-end">
             <?php $area = new GlobalArea('Header Navigation'); ?>
             <?php $area->display(); ?>
             <?php $area = new GlobalArea('Header Language Selector'); ?>

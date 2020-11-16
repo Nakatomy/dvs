@@ -339,18 +339,6 @@
                 }
             }
         }
-
-        // mobile + tablet
-        @include media-breakpoint-down(lg) {
-
-            &-wrapper{
-
-                & + .btn{
-
-                    display: none !important;
-                }
-            }
-        }
     }
 
     .core-menu-open-close{
@@ -364,6 +352,11 @@
         font-size: 1rem !important;
         padding: 0 2.125rem !important;
         margin-left: 2.5rem;
+
+        // mobile + tablet
+        @include media-breakpoint-down(lg) {
+            display: none;
+        }
 
         // desktop
         @include media-breakpoint-up(xl) {

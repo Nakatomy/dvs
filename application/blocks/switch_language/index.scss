@@ -11,7 +11,7 @@ $languageWidth: rem(50px); // including the 2 x 15px padding
     width: $languageWidth;
     height: $languageHeight;
     cursor: pointer;
-    margin-left: 1rem;
+    margin-left: 2.5rem;
 
     ul{
         @include project-default-transition();
