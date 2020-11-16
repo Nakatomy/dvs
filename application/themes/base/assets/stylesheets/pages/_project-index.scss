@@ -290,6 +290,12 @@ body{
 
     div#tarteaucitronRoot{
 
+        #tarteaucitronManager{
+            display: none !important;
+            visibility: hidden !important;
+            opacity: 0 !important;
+        }
+
         .ccm-edit-mode &{
             display: none !important;
         }
