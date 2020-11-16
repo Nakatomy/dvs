@@ -150,6 +150,7 @@
     line-height: 2rem;
     color: $color-white;
     margin-left: 3rem;
+    outline: 0 !important;
 
     // mobile
     @include media-breakpoint-down(sm) {
