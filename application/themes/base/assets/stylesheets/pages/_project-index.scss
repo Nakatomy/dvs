@@ -290,6 +290,10 @@ body{
 
     div#tarteaucitronRoot{
 
+        .ccm-edit-mode &{
+            display: none !important;
+        }
+
         &:before{
             display: none;
         }
