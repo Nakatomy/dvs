@@ -1,7 +1,7 @@
 @import 'project_defaults';
 
 $languageHeight: rem(30px);
-$languageWidth: rem(80px); // including the 2 x 15px padding
+$languageWidth: rem(50px); // including the 2 x 15px padding
 
 .lng-select{
     position: relative;
@@ -11,20 +11,7 @@ $languageWidth: rem(80px); // including the 2 x 15px padding
     width: $languageWidth;
     height: $languageHeight;
     cursor: pointer;
-
-    &:after{
-        @include project-default-transition();
-        content: "\f107";
-        font-family: 'Font Awesome 5 Free';
-        font-weight: 900;
-        display: inline-block;
-        position: absolute;
-        top: 0;
-        right: rem(15px);
-        font-size: rem(13px);
-        color: $project-link-color;
-        line-height: $languageHeight;
-    }
+    margin-left: 1rem;
 
     ul{
         @include project-default-transition();
@@ -48,6 +35,8 @@ $languageWidth: rem(80px); // including the 2 x 15px padding
             height: $languageHeight;
             line-height: $languageHeight;
             list-style: none;
+            margin: 0 !important;
+            padding: 0 !important;
 
             &:first-child{
 

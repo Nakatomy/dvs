@@ -25,6 +25,11 @@
 
                 ul{
 
+                    // desktop
+                    @include media-breakpoint-up(xl) {
+                        margin-left: 4.25rem ;
+                    }
+
                     li{
                         margin: 0 0.5rem;
 
@@ -33,9 +38,9 @@
                         }
 
                         a{
-                            color: $color-white;
-                            font-size: 1.5rem;
                             border-color: rgba($color-white, .3);
+                            font-size: 1.75rem;
+                            color: $color-white;
 
                             // desktop
                             @include media-breakpoint-up(xl) {
@@ -132,6 +137,10 @@
             margin: 0 auto;
         }
     }
+}
+
+.grecaptcha-badge{
+    display: none !important;
 }
 
 /* footer END */

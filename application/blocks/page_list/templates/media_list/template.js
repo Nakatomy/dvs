@@ -5,7 +5,7 @@ $(function() {
 
   var currentLocation = location.hash.split('#')[1];
 
-  console.log(currentLocation);
+  // console.log(currentLocation);
 
   $('.media-list .filter-menu p').each(function() {
     var filtertag = $(this).attr('id');

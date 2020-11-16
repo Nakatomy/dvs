@@ -19,42 +19,46 @@
             $htmlClasses.className = $htmlClasses.className.replace(/(\s|^)no-js(\s|$)/,' ').replace(/(\s$)(^\s)/,'');
         </script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tarteaucitronjs/1.8.3/css/tarteaucitron.min.css" integrity="sha512-FFOblsE1xWaJLWIWiI/AkEffGqv2OEQIGR1ghhEOnLKGPTed8Mhd0F/bsF+wcPduHyvp+WLCApQ6PLJ9WbALDQ==" crossorigin="anonymous" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/tarteaucitronjs/1.8.3/tarteaucitron.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tarteaucitronjs/1.8.3/tarteaucitron.min.js" integrity="sha512-WAqj4MLpgr7vodgq0OZ9u32+wRZez+DRulG6LCHmJeMKNuWMJzUzzE5poG05C6nLrNEojX+cxz8OEsBABpbEYQ==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tarteaucitronjs/1.8.3/lang/tarteaucitron.de.min.js" integrity="sha512-/sEbdNiXhbWCRTMd8jUSbJylMTTlA7efdy/UHb6L4KHUt7fwnUpS/8/6p+N7Sj86aAIVe5temG46Bw5ShkkZ0w==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tarteaucitronjs/1.8.3/lang/tarteaucitron.es.min.js" integrity="sha512-P8MpJGGkHdF1p9SLg4a2vC3Fmo+M5u/lVAInUOwAZFuHlc8zK5EX4+XE6h1VwxW+7wvKigxm92TOdsPforLZHA==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tarteaucitronjs/1.8.3/lang/tarteaucitron.fr.min.js" integrity="sha512-y81CmrLQFX6nXCApWuXW1Xa05UbucwCV3BTnpPcdGValbEeV2WGr1IVtO8F6hAE+JZ3weNBG30WE1UTmuQit6A==" crossorigin="anonymous"></script>
 
         <script type="text/javascript">
             tarteaucitron.init({
-            "privacyUrl": "", /* Privacy policy url */
+                "language": "fr_FR",
+                "privacyUrl": "", /* Privacy policy url */
 
-            "hashtag": "#tarteaucitron", /* Open the panel with this hashtag */
-            "cookieName": "tarteaucitron", /* Cookie name */
+                "hashtag": "#tarteaucitron", /* Open the panel with this hashtag */
+                "cookieName": "tarteaucitron", /* Cookie name */
 
-            "orientation": "middle", /* Banner position (top - bottom) */
+                "orientation": "middle", /* Banner position (top - bottom) */
 
-            "showAlertSmall": false, /* Show the small banner on bottom right */
-            "cookieslist": false, /* Show the cookie list */
+                "showAlertSmall": false, /* Show the small banner on bottom right */
+                "cookieslist": false, /* Show the cookie list */
 
-            "showIcon": true, /* Show cookie icon to manage cookies */
-            "iconPosition": "BottomLeft", /* BottomRight, BottomLeft, TopRight and TopLeft */
+                "showIcon": true, /* Show cookie icon to manage cookies */
+                "iconPosition": "BottomLeft", /* BottomRight, BottomLeft, TopRight and TopLeft */
 
-            "adblocker": false, /* Show a Warning if an adblocker is detected */
+                "adblocker": false, /* Show a Warning if an adblocker is detected */
 
-            "DenyAllCta" : true, /* Show the deny all button */
-            "AcceptAllCta" : true, /* Show the accept all button when highPrivacy on */
-            "highPrivacy": true, /* HIGHLY RECOMMANDED Disable auto consent */
+                "DenyAllCta" : true, /* Show the deny all button */
+                "AcceptAllCta" : true, /* Show the accept all button when highPrivacy on */
+                "highPrivacy": true, /* HIGHLY RECOMMANDED Disable auto consent */
 
-            "handleBrowserDNTRequest": false, /* If Do Not Track == 1, disallow all */
+                "handleBrowserDNTRequest": false, /* If Do Not Track == 1, disallow all */
 
-            "removeCredit": false, /* Remove credit link */
-            "moreInfoLink": true, /* Show more info link */
+                "removeCredit": false, /* Remove credit link */
+                "moreInfoLink": true, /* Show more info link */
 
-            "useExternalCss": false, /* If false, the tarteaucitron.css file will be loaded */
-            "useExternalJs": false, /* If false, the tarteaucitron.js file will be loaded */
+                "useExternalCss": false, /* If false, the tarteaucitron.css file will be loaded */
+                "useExternalJs": false, /* If false, the tarteaucitron.js file will be loaded */
 
-            //"cookieDomain": ".my-multisite-domaine.fr", /* Shared cookie for multisite */
+                //"cookieDomain": ".my-multisite-domaine.fr", /* Shared cookie for multisite */
 
-            "readmoreLink": "", /* Change the default readmore link */
+                "readmoreLink": "", /* Change the default readmore link */
 
-            "mandatory": true, /* Show a message about mandatory cookies */
+                "mandatory": true, /* Show a message about mandatory cookies */
             });
         </script>
         <script type="text/javascript">

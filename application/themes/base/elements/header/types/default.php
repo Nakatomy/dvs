@@ -3,7 +3,7 @@
         <!-- <div class="col-3 col-md-1">
 
         </div> -->
-        <div class="col-9 col-md-4">
+        <div class="col col-6 col-md-4">
             <nav class="logo">
                 <a href="/<?php echo Localization::activeLanguage(); ?>" title="Digital Vault Services">
                    <div class="logo-wrapper">
@@ -124,19 +124,9 @@
                 </a>
             </nav>
         </div>
-        <div class="col-md-5 col-lg-6 col-xl-7 d-none d-md-flex align-items-center justify-content-end">
+        <div class="col col-6 col-md-8 d-flex justify-content-xl-between align-items-center justify-content-end">
             <?php $area = new GlobalArea('Header Navigation'); ?>
             <?php $area->display(); ?>
-        </div>
-        <div class="col-3 col-md-3 col-lg-2 col-xl-1 d-flex align-items-center justify-content-end">
-            <!-- <button type="button" name="menu-button" class="btn menu-button">
-                <p class="open"><?php echo t('Menu'); ?></p>
-                <p class="close-menu"><?php echo t('Close'); ?></p>
-                <span class="lines">
-                    <span class="line1"></span>
-                    <span class="line2"></span>
-                </span>
-            </button> -->
             <?php $area = new GlobalArea('Header Language Selector'); ?>
             <?php $area->display(); ?>
         </div>
