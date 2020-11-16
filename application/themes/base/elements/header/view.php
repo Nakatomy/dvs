@@ -18,15 +18,16 @@
             var $htmlClasses = document.getElementById('html');
             $htmlClasses.className = $htmlClasses.className.replace(/(\s|^)no-js(\s|$)/,' ').replace(/(\s$)(^\s)/,'');
         </script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tarteaucitronjs/1.8.3/css/tarteaucitron.min.css" integrity="sha512-FFOblsE1xWaJLWIWiI/AkEffGqv2OEQIGR1ghhEOnLKGPTed8Mhd0F/bsF+wcPduHyvp+WLCApQ6PLJ9WbALDQ==" crossorigin="anonymous" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/tarteaucitronjs/1.8.3/tarteaucitron.min.js" integrity="sha512-WAqj4MLpgr7vodgq0OZ9u32+wRZez+DRulG6LCHmJeMKNuWMJzUzzE5poG05C6nLrNEojX+cxz8OEsBABpbEYQ==" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/tarteaucitronjs/1.8.3/lang/tarteaucitron.de.min.js" integrity="sha512-/sEbdNiXhbWCRTMd8jUSbJylMTTlA7efdy/UHb6L4KHUt7fwnUpS/8/6p+N7Sj86aAIVe5temG46Bw5ShkkZ0w==" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/tarteaucitronjs/1.8.3/lang/tarteaucitron.es.min.js" integrity="sha512-P8MpJGGkHdF1p9SLg4a2vC3Fmo+M5u/lVAInUOwAZFuHlc8zK5EX4+XE6h1VwxW+7wvKigxm92TOdsPforLZHA==" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/tarteaucitronjs/1.8.3/lang/tarteaucitron.fr.min.js" integrity="sha512-y81CmrLQFX6nXCApWuXW1Xa05UbucwCV3BTnpPcdGValbEeV2WGr1IVtO8F6hAE+JZ3weNBG30WE1UTmuQit6A==" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="<?php echo $this->getThemePath(); ?>/assets/tarteaucitron/css/tarteaucitron.css" />
+        <script src="<?php echo $this->getThemePath(); ?>/assets/tarteaucitron/tarteaucitron.js" crossorigin="anonymous"></script>
+        <script src="<?php echo $this->getThemePath(); ?>/assets/tarteaucitron/lang/tarteaucitron.de.js"></script>
+        <script src="<?php echo $this->getThemePath(); ?>/assets/tarteaucitron/lang/tarteaucitron.fr.js"></script>
+        <script src="<?php echo $this->getThemePath(); ?>/assets/tarteaucitron/lang/tarteaucitron.es.js"></script>
+        <script src="<?php echo $this->getThemePath(); ?>/assets/tarteaucitron/lang/tarteaucitron.en.js"></script>
 
         <script type="text/javascript">
             tarteaucitron.init({
-                "language": "fr_FR",
+                "lang": "fr",
                 "privacyUrl": "", /* Privacy policy url */
 
                 "hashtag": "#tarteaucitron", /* Open the panel with this hashtag */
