@@ -37,7 +37,7 @@ tarteaucitron.lang = {
     "cookieDetail": "Cookie Details für",
     "ourSite": "auf unserer Seite",
     "newWindow": "(neues Fenster)",
-    "allowAll": "Erlaube alle Cookies",
+    "allowAll": "Alle Cookies akzeptieren",
     "denyAll": "Alle Cookies ablehnen",
 
     "fallback": "ist deaktiviert.",
