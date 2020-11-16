@@ -141,6 +141,8 @@
         &-body{
 
             .texts{
+                position: relative;
+                padding-bottom: 1rem;
 
                 span{
                     color: $color-white;
@@ -149,7 +151,11 @@
 
                     // mobile
                     @include media-breakpoint-down(sm) {
-                        font-size: 1rem;
+                        font-size: .85rem;
+                        position: absolute;
+                        bottom: -2rem;
+                        left: 50%;
+                        transform: translateX(-50%);
                     }
                 }
             }

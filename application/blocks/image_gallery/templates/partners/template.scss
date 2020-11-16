@@ -98,15 +98,17 @@
 
             // mobile + tablet
             @include media-breakpoint-down(lg) {
+
                 .back{
-                    border: 1px solid rgba($color-white, .05);
-                    transform: rotateY(0deg);
-                    transform-style: preserve-3d;
+                    // border: 1px solid rgba($color-white, .05);
+                    // transform: rotateY(0deg);
+                    // transform-style: preserve-3d;
+                    display: none;
                 }
-                .front{
-                    transform: rotateY(-180deg);
-                    transform-style: preserve-3d;
-                }
+                // .front{
+                //     transform: rotateY(-180deg);
+                //     transform-style: preserve-3d;
+                // }
             }
         }
     }
