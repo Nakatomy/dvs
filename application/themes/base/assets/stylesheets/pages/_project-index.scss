@@ -326,6 +326,10 @@ body{
             #tarteaucitronDisclaimerAlert{
                 font-size: 1rem;
                 margin: 1rem 0;
+
+                .lang-de &{
+                    max-width: 690px;
+                }
             }
 
             .tarteaucitronCTAButton{

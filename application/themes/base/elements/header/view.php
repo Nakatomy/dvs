@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="<?php echo Localization::activeLanguage(); ?>" id="html" class="no-js">
+<html lang="<?php echo Localization::activeLanguage(); ?>" id="html" class="no-js lang-<?php echo Localization::activeLanguage(); ?>">
     <head>
         <?php View::element('seo/after_head_open', [], $theme->getPackageHandle()); ?>
         <?php View::element('meta/common', [], 'base'); ?>

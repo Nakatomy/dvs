@@ -356,6 +356,7 @@
         font-size: 1rem !important;
         padding: 0 2.125rem !important;
         margin-left: 2.5rem;
+        z-index: 1;
 
         // mobile + tablet
         @include media-breakpoint-down(lg) {
