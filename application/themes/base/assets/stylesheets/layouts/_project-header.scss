@@ -340,10 +340,15 @@
             }
         }
 
-        &-wrapper{
+        // mobile + tablet
+        @include media-breakpoint-down(lg) {
 
-            & + .btn{
-                display: none !important;
+            &-wrapper{
+
+                & + .btn{
+
+                    display: none !important;
+                }
             }
         }
     }
