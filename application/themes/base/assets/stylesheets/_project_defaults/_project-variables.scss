@@ -1,0 +1,1255 @@
+//** Project variables
+
+// variables START
+
+// ---- extras START
+
+$headerHeight:                                                      7rem;
+$footerHeight:                                                      26.625rem;
+
+// ---- extras END
+
+
+
+// ---- setup loader START
+
+// layer
+$project-loader-layer-color:										$color-white;
+$project-loader-layer-speed:										0.25s;
+$project-loader-layer-delay:										0.25s;
+
+// circles
+$project-loader-item-1-color:										$color-theme-primary;
+$project-loader-item-2-color:										$color-theme-primary-dark;
+$project-loader-item-3-color:										$color-theme-primary-light;
+$project-loader-item-distance:										5px;
+$project-loader-item-size:											20px;
+$project-loader-item-speed:											1.5s;
+
+// logo
+$project-loader-logo-src:											$themePath + '/img/logo.svg';
+
+
+// ---- setup loader END
+
+
+
+// ---- setup TYPOGRAPHY START
+
+// link
+$project-link-color:												$color-theme-primary;
+$project-link-color-HOVER:											$color-theme-primary-dark;
+$project-link-font-family:											$project-default-font-family;
+$project-link-opacity-HOVER:										$project-default-opacity-HOVER;
+
+// headings
+
+	// h1
+	$project-h1-color:												$color-theme-primary;
+	$project-h1-font-family:										$project-default-font-family-2-LIGHT;
+	$project-h1-font-size:											6.25rem;
+	$project-h1-line-height:										6.25rem;
+	$project-h1-margin:												$project-default-margin-bottom;
+	$project-h1-uppercase-toggle:									false;
+	$project-h1-letter-spacing:										-0.25rem;
+
+	// h2
+	$project-h2-color:												$color-theme-primary;
+	$project-h2-font-family:										$project-default-font-family-2-REGULAR;
+	$project-h2-font-size:											4.5rem;
+	$project-h2-line-height:										4.5rem;
+	$project-h2-margin:												$project-default-margin-bottom;
+	$project-h2-uppercase-toggle:									false;
+	$project-h2-letter-spacing:										-0.25rem;
+
+	// h3
+	$project-h3-color:												$color-theme-primary;
+	$project-h3-font-family:										$project-default-font-family-2-LIGHT;
+	$project-h3-font-size:											4.5rem;
+	$project-h3-line-height:										5rem;
+	$project-h3-margin:												$project-default-margin-bottom;
+	$project-h3-uppercase-toggle:									false;
+	$project-h3-letter-spacing:										-0.25rem;
+
+	// h4
+	$project-h4-color:												$color-theme-primary;
+	$project-h4-font-family:										$project-default-font-family-2-REGULAR;
+	$project-h4-font-size:											4rem;
+	$project-h4-line-height:										4.5rem;
+	$project-h4-margin:												$project-default-margin-bottom;
+	$project-h4-uppercase-toggle:									false;
+	$project-h4-letter-spacing:										-0.25rem;
+
+	// h5
+	$project-h5-color:												$color-theme-primary;
+	$project-h5-font-family:										$project-default-font-family-2-REGULAR;
+	$project-h5-font-size:											3rem;
+	$project-h5-line-height:										3.5rem;
+	$project-h5-margin:												$project-default-margin-bottom;
+	$project-h5-uppercase-toggle:									false;
+	$project-h5-letter-spacing:										-0.125rem;
+
+	// h6
+	$project-h6-color:												$color-theme-primary;
+	$project-h6-font-family:										$project-default-font-family-1-REGULAR;
+	$project-h6-font-size:											2rem;
+	$project-h6-line-height:										2rem;
+	$project-h6-margin:												$project-default-margin-bottom;
+	$project-h6-uppercase-toggle:									false;
+	$project-h6-letter-spacing:										-0.0625rem;
+
+// paragraph
+$project-p-color:													inherit;
+$project-p-font-family:												inherit;
+$project-p-font-size:												inherit;
+$project-p-line-height:												inherit;
+$project-p-margin:													$project-default-margin-bottom;
+
+// list
+$project-list-color:												inherit;
+$project-list-font-family:											inherit;
+$project-list-font-size:											inherit;
+$project-list-line-height:											inherit;
+$project-list-margin:												$project-default-margin-bottom;
+$project-list-padding:												rem(40px);
+$project-list-padding-list-style-type:								rem(10px);
+
+	// ul style type - remove this if you don't need skinned "list-style-type"
+	$project-ul-style-type-color:									inherit;
+	$project-ul-style-type-content:									'\27A4'; // '•'
+	$project-ul-style-type-font-family:								inherit;
+	$project-ul-style-type-font-size:								inherit;
+
+	// ol style type - remove this if you don't need skinned "list-style-type"
+	$project-ol-style-type-color:									inherit;
+	$project-ol-style-type-content:									counter(li, decimal)'.'; // '1.'
+	$project-ol-style-type-font-family:								$project-default-font-family-1-BOLD;
+	$project-ol-style-type-font-size:								inherit;
+
+// definition list
+$project-dl-margin:													$project-default-margin-bottom;
+
+$project-dt-color:													inherit;
+$project-dt-font-family:											$project-strong-font-family;
+$project-dt-font-size:												inherit;
+$project-dt-line-height:											inherit;
+
+$project-dd-color:													inherit;
+$project-dd-font-family:											inherit;
+$project-dd-font-size:												inherit;
+$project-dd-line-height:											inherit;
+
+// blockquote
+$project-blockquote-border-color:									$color-theme-primary;
+$project-blockquote-border-width:									0 0 0 0;
+$project-blockquote-color:											$project-default-color;
+$project-blockquote-font-family:									$project-default-font-family;
+$project-blockquote-font-size:										$project-default-font-size;
+$project-blockquote-line-height:									$project-default-line-height;
+$project-blockquote-margin:											$project-default-margin-bottom;
+$project-blockquote-padding:										0 0 0 rem(30px);
+
+// small
+$project-small-font-size:											$project-default-font-size - rem(2px);
+
+// highlight
+$project-highlight-color:											$color-white;
+$project-highlight-font-family:										inherit;
+$project-highlight-font-size:										inherit;
+$project-highlight-line-height:										inherit;
+$project-highlight-background-color:								$color-theme-primary;
+$project-highlight-padding:											2px 8px;
+
+
+// ---- setup TYPOGRAPHY END
+
+
+
+// ---- setup TABLES START
+
+// table
+$project-table-border-radius:										$project-default-border-radius;
+$project-table-margin:												$project-default-margin-bottom;
+
+// th
+$project-th-background-color:										$color-theme-primary;
+$project-th-background-color-HOVER:									$color-theme-primary;
+$project-th-border-color:											transparent;
+$project-th-border-width:											0;
+$project-th-color:													$color-white;
+$project-th-color-HOVER:											$color-white;
+$project-th-font-family:											$project-default-font-family-1-BOLD;
+$project-th-font-size:												$project-default-font-size;
+$project-th-line-height:											$project-default-line-height;
+$project-th-padding:												rem(10px) rem(20px);
+
+// td
+$project-td-background-color:										$color-white;
+$project-td-background-color-STRIPE:								$color-light-gray;
+$project-td-background-color-HOVER:									$color-theme-primary-light;
+$project-td-border-color:											$color-theme-primary;
+$project-td-border-width:											1px;
+$project-td-color:													$color-theme-primary;
+$project-td-color-HOVER:											$color-white;
+$project-td-font-family:											$project-default-font-family;
+$project-td-font-size:												$project-default-font-size;
+$project-td-line-height:											$project-default-line-height;
+$project-td-padding:												$project-th-padding;
+
+// table responsive
+$project-table-responsive-background-color:							$color-white;
+$project-table-responsive-border-color:								$color-black;
+$project-table-responsive-border-width:								1px;
+$project-table-responsive-margin:									$project-default-margin-bottom;
+
+
+// ---- setup TABLES END
+
+
+
+// ---- setup ALERTS START
+
+// defaults
+$project-alert-background-opacity:									0.95;
+$project-alert-border-radius:										$project-default-border-radius;
+$project-alert-border-width:										0;
+$project-alert-color:												$color-white;
+$project-alert-font-family:											$project-default-font-family;
+$project-alert-font-size:											$project-default-font-size;
+$project-alert-line-height:											$project-default-line-height;
+$project-alert-margin:												$project-default-margin-bottom;
+$project-alert-padding:												15px;
+
+// types
+
+	// success
+	$project-alert-background-SUCCESS:								$color-theme-success;
+	$project-alert-border-color-SUCCESS:							$color-theme-success;
+	$project-alert-color-SUCCESS:									$project-alert-color;
+
+	// info
+	$project-alert-background-INFO:									$color-theme-info;
+	$project-alert-border-color-INFO:								$color-theme-info;
+	$project-alert-color-INFO:										$project-alert-color;
+
+	// warning
+	$project-alert-background-WARNING:								$color-theme-warning;
+	$project-alert-border-color-WARNING:							$color-theme-warning;
+	$project-alert-color-WARNING:									$project-alert-color;
+
+	// danger
+	$project-alert-background-DANGER:								$color-theme-danger;
+	$project-alert-border-color-DANGER:								$color-theme-danger;
+	$project-alert-color-DANGER:									$project-alert-color;
+
+
+// ---- setup ALERTS END
+
+
+
+// ---- setup BUTTONS START
+
+	// default
+
+		// background color
+		$project-button-background-color:							$color-theme-primary;
+		$project-button-background-color-HOVER:						transparent;
+		$project-button-background-color-DISABLED:					$color-gray;
+
+		// border color
+		$project-button-border-color:								$color-theme-primary;
+		$project-button-border-color-HOVER:							$color-theme-primary;
+		$project-button-border-color-DISABLED:						$color-gray;
+
+		// border radius
+		$project-button-border-radius:								rem(100px);
+		$project-button-border-radius-SMALL:						$project-button-border-radius;
+		$project-button-border-radius-LARGE:						$project-button-border-radius;
+
+		// border width
+		$project-button-border-width:								rem(1px);
+		$project-button-border-width-SMALL:							$project-button-border-width;
+		$project-button-border-width-LARGE:							$project-button-border-width;
+
+		// box shadow
+		@mixin project-button-box-shadow()							{ @include css3-box-shadow(0, 0, 0, rgba($color-black, 0), ''); } // USE THIS: @include project-button-box-shadow();
+		@mixin project-button-box-shadow-DISABLED()					{ @include css3-box-shadow(0, 0, 0, rgba($color-black, 0), ''); } // USE THIS: @include project-button-box-shadow-DISABLED();
+
+		// color
+		$project-button-color:										$color-white;
+		$project-button-color-HOVER:								$color-theme-primary;
+		$project-button-color-DISABLED:								$color-white;
+
+		// font family
+		$project-button-font-family:								$project-default-font-family;
+
+		// font size
+		$project-button-font-size:									$project-default-font-size;
+		$project-button-font-size-SMALL:							0.875rem;
+		$project-button-font-size-LARGE:							1.125rem;
+
+		// heights
+		$project-button-height: 									$project-default-button-height;
+		$project-button-height-SMALL: 								3rem;
+		$project-button-height-LARGE: 								4rem;
+
+		// line height
+		$project-button-line-height:								$project-button-height;
+		$project-button-line-height-SMALL:							$project-button-height-SMALL;
+		$project-button-line-height-LARGE:							$project-button-height-LARGE;
+
+		// opacity
+		$project-button-opacity-HOVER:								$project-default-opacity-HOVER;
+
+		// padding
+		$project-button-padding:									0 1.4375rem;
+		$project-button-padding-SMALL:								0 1.25rem;
+		$project-button-padding-LARGE:								0 1.625rem;
+
+	// button options
+
+		//primary
+		$project-button-option-color-PRIMARY:						$color-white;
+		$project-button-option-color-PRIMARY-HOVER:					$color-white;
+		$project-button-option-background-color-PRIMARY:			transparent;
+		$project-button-option-background-color-PRIMARY-HOVER:		rgba($color-white, 0.2);
+		$project-button-option-border-color-PRIMARY:				rgba($color-white, 0.2);
+		$project-button-option-border-color-PRIMARY-HOVER:			transparent;
+
+		// secondary
+		$project-button-option-color-SECONDARY:						$color-white;
+		$project-button-option-color-SECONDARY-HOVER:				$color-white;
+		$project-button-option-background-color-SECONDARY:			$color-theme-secondary;
+		$project-button-option-background-color-SECONDARY-HOVER:	transparent;
+		$project-button-option-border-color-SECONDARY:				$color-theme-secondary;
+		$project-button-option-border-color-SECONDARY-HOVER:		$color-theme-secondary;
+
+		// success
+		$project-button-option-color-SUCCESS:						$color-white;
+		$project-button-option-color-SUCCESS-HOVER:					$color-white;
+		$project-button-option-background-color-SUCCESS:			$color-theme-success;
+		$project-button-option-background-color-SUCCESS-HOVER:		darken($color-theme-success, 5%);
+		$project-button-option-border-color-SUCCESS:				$color-black;
+		$project-button-option-border-color-SUCCESS-HOVER:			$color-black;
+
+		// info
+		$project-button-option-color-INFO:							$color-white;
+		$project-button-option-color-INFO-HOVER:					$color-white;
+		$project-button-option-background-color-INFO:				$color-theme-info;
+		$project-button-option-background-color-INFO-HOVER:			darken($color-theme-info, 5%);
+		$project-button-option-border-color-INFO:					$color-black;
+		$project-button-option-border-color-INFO-HOVER:				$color-black;
+
+		// warning
+		$project-button-option-color-WARNING:						$color-white;
+		$project-button-option-color-WARNING-HOVER:					$color-white;
+		$project-button-option-background-color-WARNING:			$color-theme-warning;
+		$project-button-option-background-color-WARNING-HOVER:		darken($color-theme-warning, 5%);
+		$project-button-option-border-color-WARNING:				$color-black;
+		$project-button-option-border-color-WARNING-HOVER:			$color-black;
+
+		// danger
+		$project-button-option-color-DANGER:						$color-white;
+		$project-button-option-color-DANGER-HOVER:					$color-white;
+		$project-button-option-background-color-DANGER:				$color-theme-danger;
+		$project-button-option-background-color-DANGER-HOVER:		darken($color-theme-danger, 5%);
+		$project-button-option-border-color-DANGER:					$color-black;
+		$project-button-option-border-color-DANGER-HOVER:			$color-black;
+
+		// link
+		$project-button-option-color-LINK:							$color-theme-primary;
+        $project-button-option-color-LINK-HOVER:					$color-theme-primary-dark;
+
+	// version 1
+
+		// background color
+		$project-button-background-color-v1:						transparent;
+		$project-button-background-color-v1-HOVER:					$color-theme-primary-dark;
+		$project-button-background-color-v1-DISABLED:				transparent;
+
+		// border color
+		$project-button-border-color-v1:							$color-theme-primary;
+		$project-button-border-color-v1-HOVER:						$color-theme-primary-dark;
+		$project-button-border-color-v1-DISABLED:					$color-theme-primary-light;
+
+		// border radius
+		$project-button-border-radius-v1:							$project-default-border-radius;
+		$project-button-border-radius-v1-SMALL:						$project-button-border-radius-v1;
+		$project-button-border-radius-v1-LARGE:						$project-button-border-radius-v1;
+
+		// border width
+		$project-button-border-width-v1:							rem(2px);
+		$project-button-border-width-v1-SMALL:						$project-button-border-width-v1;
+		$project-button-border-width-v1-LARGE:						$project-button-border-width-v1;
+
+		// box shadow
+		@mixin project-button-box-shadow-v1()						{ @include css3-box-shadow(0, 0, 0, rgba($color-black, 0), ''); } // USE THIS: @include project-button-box-shadow-v1();
+		@mixin project-button-box-shadow-v1-DISABLED()				{ @include css3-box-shadow(0, 0, 0, rgba($color-black, 0), ''); } // USE THIS: @include project-button-box-shadow-v1-DISABLED();
+
+		// color
+		$project-button-color-v1:									$color-theme-primary;
+		$project-button-color-v1-HOVER:								$color-white;
+		$project-button-color-v1-DISABLED:							$color-theme-primary-light;
+
+		// font family
+		$project-button-font-family-v1:								$project-default-font-family;
+
+		// font size
+		$project-button-font-size-v1:								$project-default-font-size;
+		$project-button-font-size-v1-SMALL:							$project-button-font-size-v1 - rem(2px);
+		$project-button-font-size-v1-LARGE:							$project-button-font-size-v1;
+
+		// heights
+		$project-button-height-v1: 									$project-default-button-height;
+		$project-button-height-v1-SMALL: 							$project-button-height-v1 - rem(10px);
+		$project-button-height-v1-LARGE: 							$project-button-height-v1;
+
+		// line height
+		$project-button-line-height-v1:								$project-button-height-v1;
+		$project-button-line-height-v1-SMALL:						$project-button-height-v1-SMALL;
+		$project-button-line-height-v1-LARGE:						$project-button-height-v1-LARGE;
+
+		// opacity
+		$project-button-opacity-v1-HOVER:							$project-default-opacity-HOVER;
+
+		// padding
+		$project-button-padding-v1:									0 rem(30px);
+		$project-button-padding-v1-SMALL:							0 rem(30px);
+		$project-button-padding-v1-LARGE:							0 rem(70px);
+
+	// button options
+
+		// primary
+		// $project-button-option-color-PRIMARY-v1:					$color-theme-primary;
+		// $project-button-option-color-PRIMARY-v1-HOVER:				$color-theme-primary;
+		// $project-button-option-background-color-PRIMARY-v1:			transparent;
+		// $project-button-option-background-color-PRIMARY-v1-HOVER:	$project-button-background-color-v1-HOVER;
+		// $project-button-option-border-color-PRIMARY-v1:				$color-black;
+		// $project-button-option-border-color-PRIMARY-v1-HOVER:		$color-black;
+
+		// secondary
+		$project-button-option-color-SECONDARY-v1:					$color-theme-secondary;
+		$project-button-option-color-SECONDARY-v1-HOVER:			$color-white;
+		$project-button-option-background-color-SECONDARY-v1:		transparent;
+		$project-button-option-background-color-SECONDARY-v1-HOVER:	$color-theme-secondary;
+		$project-button-option-border-color-SECONDARY-v1:			$color-theme-secondary;
+		$project-button-option-border-color-SECONDARY-v1-HOVER:		$color-theme-secondary;
+
+		// success
+		$project-button-option-color-SUCCESS-v1:					$color-theme-success;
+		$project-button-option-color-SUCCESS-v1-HOVER:				$color-white;
+		$project-button-option-background-color-SUCCESS-v1:			transparent;
+		$project-button-option-background-color-SUCCESS-v1-HOVER:	darken($color-theme-success, 5%);
+		$project-button-option-border-color-SUCCESS-v1:				$color-theme-success;
+		$project-button-option-border-color-SUCCESS-v1-HOVER:		darken($color-theme-success, 5%);
+
+		// info
+		$project-button-option-color-INFO-v1:						$color-theme-info;
+		$project-button-option-color-INFO-v1-HOVER:					$color-white;
+		$project-button-option-background-color-INFO-v1:			transparent;
+		$project-button-option-background-color-INFO-v1-HOVER:		darken($color-theme-info, 5%);
+		$project-button-option-border-color-INFO-v1:				$color-theme-info;
+		$project-button-option-border-color-INFO-v1-HOVER:			darken($color-theme-info, 5%);
+
+		// warning
+		$project-button-option-color-WARNING-v1:					$color-theme-warning;
+		$project-button-option-color-WARNING-HOVER-v1:				$color-white;
+		$project-button-option-background-color-WARNING-v1:			transparent;
+		$project-button-option-background-color-WARNING-v1-HOVER:	darken($color-theme-warning, 5%);
+		$project-button-option-border-color-WARNING-v1:				$color-theme-warning;
+		$project-button-option-border-color-WARNING-v1-HOVER:		darken($color-theme-warning, 5%);
+
+		// danger
+		$project-button-option-color-DANGER-v1:						$color-theme-danger;
+		$project-button-option-color-DANGER-v1-HOVER:				$color-white;
+		$project-button-option-background-color-DANGER-v1:			transparent;
+		$project-button-option-background-color-DANGER-v1-HOVER:	darken($color-theme-danger, 5%);
+		$project-button-option-border-color-DANGER-v1:				$color-theme-danger;
+		$project-button-option-border-color-DANGER-v1-HOVER:		darken($color-theme-danger, 5%);
+
+		// link
+		$project-button-option-color-LINK-v1:						$color-theme-primary;
+		$project-button-option-color-LINK-v1-HOVER:					$color-theme-primary-dark;
+
+
+// ---- setup BUTTONS END
+
+
+
+// ---- setup FORM ELEMENTS START
+
+// form group
+
+	// margin
+	$project-form-group-margin:										$project-default-margin-bottom;
+
+
+// form controls (input, select, textarea)
+
+	// background color
+	$project-form-control-background-color:							transparent;
+	$project-form-control-background-color-AUTOFILL:				transparent;
+	$project-form-control-background-color-FOCUS:					transparent;
+	$project-form-control-background-color-ERROR:					transparent;
+	$project-form-control-background-color-DISABLED:				transparent;
+
+	// border color
+	$project-form-control-border-color:								$color-black-gray;
+	$project-form-control-border-color-AUTOFILL:					$project-form-control-border-color;
+	$project-form-control-border-color-FOCUS:						$color-black-gray;
+	$project-form-control-border-color-ERROR:						$color-black-gray;
+	$project-form-control-border-color-DISABLED:					$color-gray;
+
+	// border radius
+	$project-form-control-border-radius:							$project-default-border-radius;
+	$project-form-control-border-radius-SMALL:						$project-form-control-border-radius - rem(5px);
+	$project-form-control-border-radius-LARGE:						$project-form-control-border-radius + rem(5px);
+
+	// border width
+	$project-form-control-border-width:								rem(1px);
+	$project-form-control-border-width-SMALL:						$project-form-control-border-width;
+	$project-form-control-border-width-LARGE:						$project-form-control-border-width;
+
+	// box shadow
+	@mixin project-form-control-box-shadow()						{ @include css3-box-shadow(0, 0, 0, rgba($color-black, 0), ''); } // USE THIS: @include project-form-control-box-shadow();
+	@mixin project-form-control-box-shadow-FOCUS()					{ @include css3-box-shadow(0, 0, 0, rgba($color-black, 0), ''); } // USE THIS: @include project-form-control-box-shadow-FOCUS();
+	@mixin project-form-control-box-shadow-ERROR()					{ @include css3-box-shadow(0, 0, 0, rgba($color-black, 0), ''); } // USE THIS: @include project-form-control-box-shadow-ERROR();
+	@mixin project-form-control-box-shadow-DISABLED()				{ @include css3-box-shadow(0, 0, 0, rgba($color-black, 0), ''); } // USE THIS: @include project-form-control-box-shadow-DISABLED();
+
+	// color
+	$project-form-control-color:									rgba($color-theme-primary, .7);
+	$project-form-control-color-AUTOFILL:							$project-form-control-color;
+	$project-form-control-color-FOCUS:								$color-theme-primary;
+	$project-form-control-color-ERROR:								$color-theme-danger;
+	$project-form-control-color-DISABLED:							$color-gray;
+
+	$project-form-control-color-placeholder:						rgba($color-theme-primary, .5);
+	$project-form-control-color-placeholder-FOCUS:					rgba($color-theme-primary, .7);
+	$project-form-control-color-placeholder-ERROR:					rgba($color-theme-danger, .7);
+	$project-form-control-color-placeholder-DISABLED:				$color-gray;
+
+	// font family
+	$project-form-control-font-family:								$project-default-font-family;
+
+	// font size
+	$project-form-control-font-size:								$project-default-font-size;
+	$project-form-control-font-size-SMALL:							0.875rem;
+	$project-form-control-font-size-LARGE:							1.125rem;
+
+	// height
+	$project-form-control-height: 									$project-default-button-height;
+	$project-form-control-height-SMALL: 							$project-button-height-SMALL;
+	$project-form-control-height-LARGE: 							$project-button-height-LARGE;
+
+	// line height
+	$project-form-control-line-height:								$project-form-control-height;
+	$project-form-control-line-height-SMALL:						$project-form-control-height-SMALL;
+	$project-form-control-line-height-LARGE:						$project-form-control-height-LARGE;
+
+	// paddings
+	$project-form-control-padding:									0 0;
+	$project-form-control-padding-SMALL:							0 0;
+	$project-form-control-padding-LARGE:							0 0;
+
+	// textarea paddings
+	$project-form-control-padding-textarea:							rem(15px) 0;
+	$project-form-control-padding-textarea-SMALL:					rem(10px) 0;
+	$project-form-control-padding-textarea-LARGE:					rem(20px) 0;
+
+	// version 1
+
+		// background color
+		$project-form-control-background-color-v1:					$color-light-gray;
+		$project-form-control-background-color-v1-AUTOFILL:			$project-form-control-background-color-v1;
+		$project-form-control-background-color-v1-FOCUS:			$color-light-gray;
+		$project-form-control-background-color-v1-ERROR:			$color-light-gray;
+		$project-form-control-background-color-v1-DISABLED:			$color-light-gray;
+
+		// border color
+		$project-form-control-border-color-v1:						$color-gray;
+		$project-form-control-border-color-v1-FOCUS:				$color-gray;
+		$project-form-control-border-color-v1-ERROR:				$color-theme-danger;
+		$project-form-control-border-color-v1-DISABLED:				$color-gray;
+
+		// border radius
+		$project-form-control-border-radius-v1:						$project-default-border-radius;
+		$project-form-control-border-radius-v1-SMALL:				$project-form-control-border-radius-v1 - rem(5px);
+		$project-form-control-border-radius-v1-LARGE:				$project-form-control-border-radius-v1 + rem(5px);
+
+		// border width
+		$project-form-control-border-width-v1:						rem(1px);
+		$project-form-control-border-width-v1-SMALL:				$project-form-control-border-width-v1;
+		$project-form-control-border-width-v1-LARGE:				$project-form-control-border-width-v1;
+
+		// box shadow
+		@mixin project-form-control-box-shadow-v1()					{ @include css3-box-shadow(0, 0, 0, rgba($color-black, 0), ''); } // USE THIS: @include project-form-control-box-shadow-v1();
+		@mixin project-form-control-box-shadow-v1-FOCUS()			{ @include css3-box-shadow(0, 0, 0, rgba($color-black, 0), ''); } // USE THIS: @include project-form-control-box-shadow-v1-FOCUS();
+		@mixin project-form-control-box-shadow-v1-ERROR()			{ @include css3-box-shadow(0, 0, 0, rgba($color-black, 0), ''); } // USE THIS: @include project-form-control-box-shadow-v1-ERROR();
+		@mixin project-form-control-box-shadow-v1-DISABLED()		{ @include css3-box-shadow(0, 0, 0, rgba($color-black, 0), ''); } // USE THIS: @include project-form-control-box-shadow-v1-DISABLED();
+
+		// color
+		$project-form-control-color-v1:								$color-gray;
+		$project-form-control-color-v1-AUTOFILL:					$project-form-control-color-v1;
+		$project-form-control-color-v1-FOCUS:						$color-black;
+		$project-form-control-color-v1-ERROR:						$color-theme-danger;
+		$project-form-control-color-v1-DISABLED:					$color-dark-gray;
+
+		$project-form-control-color-v1-placeholder:					$color-gray;
+		$project-form-control-color-v1-placeholder-FOCUS:			$color-black;
+		$project-form-control-color-v1-placeholder-ERROR:			$color-theme-danger;
+		$project-form-control-color-v1-placeholder-DISABLED:		$color-dark-gray;
+
+		// font family
+		$project-form-control-font-family-v1:						$project-default-font-family;
+
+		// font size
+		$project-form-control-font-size-v1:							$project-default-font-size;
+		$project-form-control-font-size-v1-SMALL:					$project-form-control-font-size-v1 - rem(2px);
+		$project-form-control-font-size-v1-LARGE:					$project-form-control-font-size-v1 + rem(2px);
+
+		// height
+		$project-form-control-height-v1: 							$project-button-height-v1;
+		$project-form-control-height-v1-SMALL: 						$project-button-height-v1-SMALL;
+		$project-form-control-height-v1-LARGE: 						$project-button-height-v1-LARGE;
+
+		// line height
+		$project-form-control-line-height-v1:						$project-form-control-height-v1;
+		$project-form-control-line-height-v1-SMALL:					$project-form-control-height-v1-SMALL;
+		$project-form-control-line-height-v1-LARGE:					$project-form-control-height-v1-LARGE;
+
+		// paddings
+		$project-form-control-padding-v1:							0 rem(15px);
+		$project-form-control-padding-v1-SMALL:						0 rem(10px);
+		$project-form-control-padding-v1-LARGE:						0 rem(20px);
+
+		// textarea paddings
+		$project-form-control-padding-textarea-v1:					rem(10px) rem(15px);
+		$project-form-control-padding-textarea-v1-SMALL:			 rem(5px) rem(10px);
+		$project-form-control-padding-textarea-v1-LARGE:			rem(15px) rem(20px);
+
+// select skin
+
+	// select skin
+	$project-select-skin-background-image:							'#{$themePath}/img/icons/blue_arrow_down.svg';
+	$project-select-skin-background-size-x:							rem(10px);
+	$project-select-skin-background-size-y:							auto;
+	$project-select-skin-background-size-x-SMALL:					rem(8px);
+	$project-select-skin-background-size-y-SMALL:					auto;
+	$project-select-skin-background-size-x-LARGE:					rem(15px);
+	$project-select-skin-background-size-y-LARGE:					auto;
+	$project-select-skin-background-position:						rem(15px);
+	$project-select-skin-background-position-SMALL:					rem(10px);
+	$project-select-skin-background-position-LARGE:					rem(20px);
+
+		// version 1
+		$project-select-skin-background-image-v1:					'#{$themePath}/img/icons/select-skin-arrow-v1.svg';
+		$project-select-skin-background-size-x-v1:					rem(14px);
+		$project-select-skin-background-size-y-v1:					auto;
+		$project-select-skin-background-size-x-v1-SMALL:			rem(12px);
+		$project-select-skin-background-size-y-v1-SMALL:			auto;
+		$project-select-skin-background-size-x-v1-LARGE:			rem(16px);
+		$project-select-skin-background-size-y-v1-LARGE:			auto;
+		$project-select-skin-background-position-v1:				rem(22px);
+		$project-select-skin-background-position-v1-SMALL:			rem(20px);
+		$project-select-skin-background-position-v1-LARGE:			rem(26px);
+
+
+// checkbox skin + radio button skin
+
+	// background color
+	$project-checkradio-background-color:							transparent;
+	$project-checkradio-background-color-FOCUS:						transparent;
+	$project-checkradio-background-color-CHECKED:					transparent;
+	$project-checkradio-background-color-ERROR:						transparent;
+	$project-checkradio-background-color-DISABLED:					transparent;
+
+	// border color
+	$project-checkradio-border-color:								$color-theme-primary;
+	$project-checkradio-border-color-FOCUS:							$color-theme-primary;
+	$project-checkradio-border-color-CHECKED:						$color-gray;
+	$project-checkradio-border-color-ERROR:							$color-theme-danger;
+	$project-checkradio-border-color-DISABLED:						$color-gray;
+
+	// border radius
+	$project-checkradio-border-radius:								$project-default-border-radius;
+
+	// border width
+	$project-checkradio-border-width:								rem(1px);
+
+	// distance
+	$project-checkradio-distance:									rem(10px);
+
+	// height
+	$project-checkradio-height:										rem(20px);
+
+	// inside color
+	$project-checkradio-inside-color:								$color-theme-primary;
+	$project-checkradio-inside-color-FOCUS:							$color-theme-primary;
+	$project-checkradio-inside-color-CHECKED:						$color-theme-primary;
+	$project-checkradio-inside-color-ERROR:							$color-theme-danger;
+    $project-checkradio-inside-color-DISABLED:						$color-gray;
+
+	// width
+	$project-checkradio-width:										$project-checkradio-height;
+
+	// checkbox icon
+	$project-checkradio-checkbox-icon:								'\e902';
+
+	// checkbox size
+	$project-checkradio-checkbox-size:								$project-checkradio-height - rem(10px);
+
+	// checkbox font family
+	$project-checkradio-checkbox-font-family:						$project-default-icon-family-extra;
+
+	// radio size
+	$project-checkradio-radio-size:									$project-checkradio-height - rem(10px);
+
+	// version 1
+
+		// background color
+		$project-checkradio-background-color-v1:					$color-light-gray;
+		$project-checkradio-background-color-v1-FOCUS:				$color-orange;
+		$project-checkradio-background-color-v1-CHECKED:			$color-light-gray;
+		$project-checkradio-background-color-v1-ERROR:				$color-light-gray;
+		$project-checkradio-background-color-v1-DISABLED:			$color-white;
+
+		// border color
+		$project-checkradio-border-color-v1:						$color-green;
+		$project-checkradio-border-color-v1-FOCUS:					$color-green;
+		$project-checkradio-border-color-v1-CHECKED:				$color-green;
+		$project-checkradio-border-color-v1-ERROR:					$color-theme-danger;
+		$project-checkradio-border-color-v1-DISABLED:				$color-light-gray;
+
+		// border radius
+		$project-checkradio-border-radius-v1:						$project-default-border-radius / 2 + rem(2);
+
+		// border width
+		$project-checkradio-border-width-v1:						rem(2px);
+
+		// distance
+		$project-checkradio-distance-v1:							rem(15px);
+
+		// height
+		$project-checkradio-height-v1:								$project-default-button-height / 2 + rem(2);
+
+		// inside color
+		$project-checkradio-inside-color-v1:						$color-green;
+		$project-checkradio-inside-color-v1-FOCUS:					$color-green;
+		$project-checkradio-inside-color-v1-CHECKED:				$color-green;
+		$project-checkradio-inside-color-v1-ERROR:					$color-theme-danger;
+		$project-checkradio-inside-color-v1-DISABLED:				$color-dark-gray;
+
+		// width
+		$project-checkradio-width-v1:								$project-checkradio-height-v1;
+
+		// checkbox icon
+		$project-checkradio-checkbox-icon-v1:						'\2661'; // '♡'
+
+		// checkbox size
+		$project-checkradio-checkbox-size-v1:						$project-checkradio-height-v1 - rem(4);
+
+		// radio size
+		$project-checkradio-radio-size-v1:							$project-checkradio-height-v1 - rem(10);
+
+
+// labels
+
+	// for form controls
+
+		// color
+		$project-label-color:										rgba($project-default-color, .5);
+		$project-label-color-ERROR:									rgba($color-theme-danger, .7);
+		$project-label-color-DISABLED:								$color-gray;
+
+		// font family
+		$project-label-font-family:									$project-default-font-family-1-REGULAR;
+
+		// font size
+		$project-label-font-size:									$project-default-font-size;
+		$project-label-font-size-SMALL:								0.875rem;
+		$project-label-font-size-LARGE:								1.125rem;
+
+		// height
+		$project-label-height:		 								$project-form-control-height;
+		$project-label-height-SMALL: 								$project-form-control-height-SMALL;
+		$project-label-height-LARGE: 								$project-form-control-height-LARGE;
+
+		// line height
+		$project-label-line-height:									$project-label-height;
+		$project-label-line-height-SMALL:							$project-label-height-SMALL;
+		$project-label-line-height-LARGE:							$project-label-height-LARGE;
+
+		// version 1
+
+			// color
+			$project-label-color-v1:								$color-green;
+			$project-label-color-v1-ERROR:							$color-theme-danger;
+			$project-label-color-v1-DISABLED:						$color-light-gray;
+
+			// font family
+			$project-label-font-family-v1:							$project-default-font-family;
+
+			// font size
+			$project-label-font-size-v1:							$project-default-font-size;
+			$project-label-font-size-v1-SMALL:						$project-label-font-size-v1 - rem(2px);
+			$project-label-font-size-v1-LARGE:						$project-label-font-size-v1 + rem(2px);
+
+			// height
+			$project-label-height-v1:		 						$project-form-control-height-v1;
+			$project-label-height-v1-SMALL: 						$project-form-control-height-v1-SMALL;
+			$project-label-height-v1-LARGE: 						$project-form-control-height-v1-LARGE;
+
+			// line height
+			$project-label-line-height-v1:							$project-label-height-v1;
+			$project-label-line-height-v1-SMALL:					$project-label-height-v1-SMALL;
+			$project-label-line-height-v1-LARGE:					$project-label-height-v1-LARGE;
+
+
+	// for checkbox + radio button
+
+		// color
+		$project-label-checkradio-color:							$project-default-color;
+		$project-label-checkradio-color-ERROR:						$project-default-color;
+		$project-label-checkradio-color-DISABLED:					$color-gray;
+
+		// font family
+		$project-label-checkradio-font-family:						$project-default-font-family;
+
+		// font size
+		$project-label-checkradio-font-size:						$project-default-font-size;
+		$project-label-checkradio-font-size-SMALL:					0.875rem;
+		$project-label-checkradio-font-size-LARGE:					1.125rem;
+
+		// line height
+		$project-label-checkradio-line-height:						$project-label-checkradio-font-size + $project-default-line-height-diff;
+		$project-label-checkradio-line-height-SMALL:				$project-label-checkradio-font-size-SMALL + $project-default-line-height-diff;
+		$project-label-checkradio-line-height-LARGE:				$project-label-checkradio-font-size-LARGE + $project-default-line-height-diff;
+
+		// version 1
+
+			// color
+			$project-label-checkradio-color-v1:						$project-label-color-v1;
+			$project-label-checkradio-color-v1-ERROR:				$project-label-color-v1-ERROR;
+			$project-label-checkradio-color-v1-DISABLED:			$project-label-color-v1-DISABLED;
+
+			// font family
+			$project-label-checkradio-font-family-v1:				$project-default-font-family;
+
+			// font size
+			$project-label-checkradio-font-size-v1:					$project-default-font-size;
+			$project-label-checkradio-font-size-v1-SMALL:			$project-label-checkradio-font-size-v1 - rem(2px);
+			$project-label-checkradio-font-size-v1-LARGE:			$project-label-checkradio-font-size-v1 + rem(2px);
+
+			// line height
+			$project-label-checkradio-line-height-v1:				$project-label-checkradio-font-size-v1 + $project-default-line-height-diff;
+			$project-label-checkradio-line-height-v1-SMALL:			$project-label-checkradio-font-size-v1-SMALL + $project-default-line-height-diff;
+			$project-label-checkradio-line-height-v1-LARGE:			$project-label-checkradio-font-size-v1-LARGE + $project-default-line-height-diff;
+
+// form text
+
+	// form text
+	$project-form-text-color: 										$project-default-color;
+	$project-form-text-color-ERROR:									$color-theme-danger;
+	$project-form-text-color-DISABLED:								$color-gray;
+	$project-form-text-font-family: 								$project-default-font-family;
+	$project-form-text-font-size: 									$project-default-font-size - rem(2px);
+	$project-form-text-line-height: 								$project-form-text-font-size + $project-default-line-height-diff;
+	$project-form-text-margin: 										rem(5px) 0 0 0;
+
+		// version 1
+		$project-form-text-color-v1: 								$color-gray;
+		$project-form-text-color-v1-ERROR:							$color-theme-danger;
+		$project-form-text-color-v1-DISABLED:						$color-dark-gray;
+		$project-form-text-font-family-v1: 							$project-default-font-family;
+		$project-form-text-font-size-v1: 							$project-default-font-size;
+		$project-form-text-line-height-v1: 							$project-form-text-font-size-v1 + $project-default-line-height-diff;
+		$project-form-text-margin-v1: 								rem(10px) 0 0 0;
+
+
+
+// ---- setup FORM ELEMENTS END
+
+
+
+// ---- setup PAGINATION START
+
+// background color
+$project-pagination-background-color:								transparent;
+$project-pagination-background-color-HOVER:							$color-theme-primary-light;
+$project-pagination-background-color-ACTIVE:						$color-theme-primary;
+$project-pagination-background-color-ACTIVE-HOVER:					$color-theme-primary-light;
+$project-pagination-background-color-DISABLED:						transparent;
+$project-pagination-background-color-PAGER:							transparent;
+$project-pagination-background-color-PAGER-HOVER:					transparent;
+
+// border color
+$project-pagination-border-color:									$color-black;
+$project-pagination-border-color-HOVER:								$color-theme-primary;
+$project-pagination-border-color-ACTIVE:							$color-theme-primary-dark;
+$project-pagination-border-color-ACTIVE-HOVER:						$color-theme-primary-dark;
+$project-pagination-border-color-DISABLED:							$color-gray;
+$project-pagination-border-color-PAGER:								$color-black;
+$project-pagination-border-color-PAGER-HOVER:						$color-theme-primary;
+
+// border radius
+$project-pagination-border-radius:									100%;
+$project-pagination-border-radius-SMALL:							$project-pagination-border-radius;
+$project-pagination-border-radius-LARGE:							$project-pagination-border-radius;
+
+// border width
+$project-pagination-border-width:									0;
+$project-pagination-border-width-SMALL:								$project-pagination-border-width;
+$project-pagination-border-width-LARGE:								$project-pagination-border-width;
+
+// color
+$project-pagination-color:											rgba($color-theme-primary, .2);
+$project-pagination-color-HOVER:									$color-white;
+$project-pagination-color-ACTIVE:									$color-white;
+$project-pagination-color-ACTIVE-HOVER:								$color-white;
+$project-pagination-color-DISABLED:									rgba($color-theme-primary, .2);
+$project-pagination-color-PAGER:									rgba($color-theme-primary, .2);
+$project-pagination-color-PAGER-HOVER:								$color-theme-primary;
+
+// font family
+$project-pagination-font-family:									$project-default-font-family;
+
+// font size
+$project-pagination-font-size:										$project-default-font-size;
+$project-pagination-font-size-SMALL:								$project-pagination-font-size - rem(2px);
+$project-pagination-font-size-LARGE:								$project-pagination-font-size + rem(2px);
+
+// line height
+$project-pagination-line-height:									3rem;
+$project-pagination-line-height-SMALL:								3rem;
+$project-pagination-line-height-LARGE:								3rem;
+
+// margin
+$project-pagination-margin:											$project-default-margin-bottom;
+
+// padding
+$project-pagination-padding:										0px rem(15px);
+$project-pagination-padding-SMALL:									0px rem(10px);
+$project-pagination-padding-LARGE:									0px rem(20px);
+
+// opacity
+$project-pagination-opacity-HOVER:									1;
+
+
+// ---- setup PAGINATION END
+
+
+
+// ---- setup BREADCRUMBS START
+
+
+$project-breadcrumb-background-color:								transparent;
+$project-breadcrumb-padding:										0 0 0 0;
+$project-breadcrumb-margin:											$project-default-margin;
+
+$project-breadcrumb-before-font-family:								$project-link-font-family;
+$project-breadcrumb-before-content:									"/";
+$project-breadcrumb-before-font-size:								$project-default-font-size;
+$project-breadcrumb-before-line-height:								$project-default-font-size + rem(10px);
+$project-breadcrumb-before-color:									$color-black;
+$project-breadcrumb-before-margin:									0 10px;
+$project-breadcrumb-before-padding:									0;
+
+$project-breadcrumb-link-font-family:								$project-link-font-family;
+$project-breadcrumb-link-font-size:									$project-default-font-size;
+$project-breadcrumb-link-line-height:								$project-default-font-size + rem(10px);
+$project-breadcrumb-link-color:										$color-black;
+$project-breadcrumb-link-color-HOVER:								$color-theme-primary;
+$project-breadcrumb-link-color-ACTIVE:								$color-theme-primary;
+$project-breadcrumb-link-color-ACTIVE-HOVER:						$color-theme-primary;
+
+
+// ---- setup BREADCRUMBS END
+
+
+
+// ---- setup PADDINGS START
+
+// vertical padding
+$project-padding-vertical-MOBILE:									rem(35px);
+$project-padding-vertical-TABLET:									rem(50px);
+$project-padding-vertical-LAPTOP:									rem(65px);
+$project-padding-vertical-HD:										rem(80px);
+
+// vertical padding small
+$project-padding-vertical-small-MOBILE:								rem(35px);
+$project-padding-vertical-small-TABLET:								rem(45px);
+$project-padding-vertical-small-LAPTOP:								rem(55px);
+$project-padding-vertical-small-HD:									rem(65px);
+
+// vertical padding large
+$project-padding-vertical-large-MOBILE:								rem(68px);
+$project-padding-vertical-large-TABLET:								rem(88px);
+$project-padding-vertical-large-LAPTOP:								rem(108px);
+$project-padding-vertical-large-HD:									rem(128px);
+
+
+// ---- setup PADDINGS END
+
+
+
+// ---- setup MARGINS START
+
+// vertical margin
+$project-margin-vertical-MOBILE:									$project-padding-vertical-MOBILE;
+$project-margin-vertical-TABLET:									$project-padding-vertical-TABLET;
+$project-margin-vertical-LAPTOP:									$project-padding-vertical-LAPTOP;
+$project-margin-vertical-HD:										$project-padding-vertical-HD;
+
+// vertical margin small
+$project-margin-vertical-small-MOBILE:								$project-padding-vertical-small-MOBILE;
+$project-margin-vertical-small-TABLET:								$project-padding-vertical-small-TABLET;
+$project-margin-vertical-small-LAPTOP:								$project-padding-vertical-small-LAPTOP;
+$project-margin-vertical-small-HD:									$project-padding-vertical-small-HD;
+
+// vertical margin large
+$project-margin-vertical-large-MOBILE:								$project-padding-vertical-large-MOBILE;
+$project-margin-vertical-large-TABLET:								$project-padding-vertical-large-TABLET;
+$project-margin-vertical-large-LAPTOP:								$project-padding-vertical-large-LAPTOP;
+$project-margin-vertical-large-HD:									$project-padding-vertical-large-HD;
+
+
+// ---- setup MARGINS END
+
+
+
+// ---- setup SPACER START
+
+// vertical margin
+$project-spacer-vertical-MOBILE:									$project-padding-vertical-MOBILE;
+$project-spacer-vertical-TABLET:									$project-padding-vertical-TABLET;
+$project-spacer-vertical-LAPTOP:									$project-padding-vertical-LAPTOP;
+$project-spacer-vertical-HD:										$project-padding-vertical-HD;
+
+// vertical margin small
+$project-spacer-vertical-small-MOBILE:								$project-padding-vertical-small-MOBILE;
+$project-spacer-vertical-small-TABLET:								$project-padding-vertical-small-TABLET;
+$project-spacer-vertical-small-LAPTOP:								$project-padding-vertical-small-LAPTOP;
+$project-spacer-vertical-small-HD:									$project-padding-vertical-small-HD;
+
+// vertical margin large
+$project-spacer-vertical-large-MOBILE:								$project-padding-vertical-large-MOBILE;
+$project-spacer-vertical-large-TABLET:								$project-padding-vertical-large-TABLET;
+$project-spacer-vertical-large-LAPTOP:								$project-padding-vertical-large-LAPTOP;
+$project-spacer-vertical-large-HD:									$project-padding-vertical-large-HD;
+
+
+// ---- setup SPACER END
+
+
+
+// ---- setup EMBED RESPONSIVE LAYER START
+
+$project-embed-responsive-layer-iframe-background-color:			$color-theme-primary;
+$project-embed-responsive-layer-iframe-background-color-HOVER:		$color-theme-primary;
+$project-embed-responsive-layer-iframe-background-opacity:			0.8;
+$project-embed-responsive-layer-iframe-background-opacity-HOVER:	0.8;
+$project-embed-responsive-layer-iframe-color:						$color-white;
+$project-embed-responsive-layer-iframe-font-family:					$project-default-font-family;
+$project-embed-responsive-layer-iframe-font-size:					$project-default-font-size;
+$project-embed-responsive-layer-iframe-opacity:						0;
+$project-embed-responsive-layer-iframe-opacity-HOVER:				1;
+
+
+// ---- setup EMBED RESPONSIVE LAYER END
+
+
+
+// ---- setup EMBED RESPONSIVE LAYER YOUTUBE START
+
+$project-embed-responsive-layer-youtube-background-color:			$color-theme-primary;
+$project-embed-responsive-layer-youtube-background-color-HOVER:		$color-theme-primary;
+$project-embed-responsive-layer-youtube-background-opacity:			0;
+$project-embed-responsive-layer-youtube-background-opacity-HOVER:	0.5;
+$project-embed-responsive-layer-youtube-color:						$color-white;
+$project-embed-responsive-layer-youtube-font-family:				$project-default-font-family;
+$project-embed-responsive-layer-youtube-font-size:					$project-default-font-size + rem(20px);
+$project-embed-responsive-layer-youtube-opacity:					1;
+$project-embed-responsive-layer-youtube-opacity-HOVER:				1;
+
+
+// ---- setup EMBED RESPONSIVE LAYER YOUTUBE END
+
+
+
+
+// ---- setup anchor-point START
+
+
+$project-anchor-point-top:											-$headerHeight - 20;
+$project-fake-position-top:											$project-anchor-point-top; // NOTE: just for legacy sites
+
+
+// ---- setup anchor-point END
+
+
+
+// ---- setup modals START
+
+// default padding
+$project-modal-padding-horizontal:									rem(30px);
+
+// backdrop
+$project-modal-backdrop-color:										$color-black;
+$project-modal-backdrop-opacity:									0.4;
+
+// dialog
+$project-modal-dialog-margin-MOBILE:								rem(15px);
+$project-modal-dialog-margin-TABLET:								rem(30px) auto;
+$project-modal-dialog-margin-LAPTOP:								rem(50px) auto;
+$project-modal-dialog-margin-HD:									rem(70px) auto;
+$project-modal-dialog-width-MOBILE:									100%;
+$project-modal-dialog-width-TABLET:									700px;
+$project-modal-dialog-width-LAPTOP:									900px;
+$project-modal-dialog-width-HD:										1100px;
+
+// content
+$project-modal-content-background-color:							$color-white;
+$project-modal-content-border-color:								$color-black;
+$project-modal-content-border-width:								0;
+$project-modal-content-border-radius:								0px;
+$project-modal-content-padding-vertical:							rem(15px);
+
+// header
+$project-modal-header-background-color:								$color-theme-primary-dark;
+$project-modal-header-border-color:									$color-white;
+$project-modal-header-border-width:									0 0 0 0;
+$project-modal-header-padding-vertical:								rem(15px);
+
+	// close
+	$project-modal-close-color:										$color-white;
+	$project-modal-close-color-HOVER:								$color-theme-danger;
+	$project-modal-close-font-family:								$project-default-font-family;
+	$project-modal-close-font-size:									rem(20px);
+
+	// title
+	$project-modal-title-color:										$color-white;
+	$project-modal-title-font-family:								$project-default-font-family;
+	$project-modal-title-font-size:									$project-default-font-size + rem(10);
+	$project-modal-title-line-height:								$project-modal-title-font-size + rem(2);
+	$project-modal-title-margin:									0;
+
+// footer
+$project-modal-footer-background-color:								$project-modal-content-background-color;
+$project-modal-footer-border-color:									$color-black;
+$project-modal-footer-border-width:									0 0 0 0;
+$project-modal-footer-padding-vertical:								rem(15px);
+
+
+
+// ---- setup modals END
+
+
+
+// ---- setup nav tabs START
+
+
+$project-nav-tab-base-background-color:								transparent;
+$project-nav-tab-base-background-color-HOVER:						transparent;
+$project-nav-tab-base-background-color-ACTIVE:						transparent;
+
+@mixin project-nav-tab-base-box-shadow()							{ @include css3-box-shadow(0px, 1px, 3px, rgba($color-black, .3)); }
+
+$project-nav-tab-base-border-width:									2px;
+$project-nav-tab-base-border-color:									$color-light-gray;
+
+$project-nav-tab-link-background-color:						        transparent;
+$project-nav-tab-link-background-color-HOVER:						transparent;
+$project-nav-tab-link-background-color-ACTIVE:						transparent;
+
+$project-nav-tab-link-border-width:									2px;
+$project-nav-tab-link-border-color:									transparent;
+$project-nav-tab-link-border-color-HOVER:							transparent;
+$project-nav-tab-link-border-color-ACTIVE:							$color-theme-primary-light;
+
+$project-nav-tab-link-font-family:									$project-default-font-family;
+$project-nav-tab-link-font-size:									$project-default-font-size;
+$project-nav-tab-link-line-height:									$project-button-height;
+
+$project-nav-tab-link-color:										$color-gray;
+$project-nav-tab-link-color-HOVER:									$project-link-color-HOVER;
+$project-nav-tab-link-color-ACTIVE:									$project-link-color;
+
+$project-nav-tab-link-padding:									    rem(10px) rem(15px);
+
+$project-tab-pane-padding:											rem(30px) rem(15px);
+$project-tab-pane-border-width:										0;
+$project-tab-pane-border-color:										$project-nav-tab-base-border-color;
+
+$project-tab-pane-margin:											$project-default-margin;
+
+
+// ---- setup nav tabs END
+
+
+
+// ---- setup for social blocks START
+
+$project-social-dimenson:                                           rem(60px);
+$project-social-margins:                                            rem(15px);
+$project-social-link-padding:                                       rem(20px);
+$project-social-link-color:                                         $project-link-color;
+$project-social-link-color-HOVER:                                   $project-link-color-HOVER;
+$project-social-link-font-size:                                     $project-default-font-size + 3;
+
+// ---- setup for social blocks END
+
+
+
+// ---- setup for animation libary START
+
+
+$project-animation-move-distance:                                   100px;
+$project-animation-scale-size:                                      0.8;
+
+@mixin anim-slow()                                                  { @include css3-transition(all, .75s, cubic-bezier(0.250, 0.460, 0.450, 0.940)); };
+@mixin anim-medium()                                                { @include css3-transition(all, .5s, cubic-bezier(0.250, 0.460, 0.450, 0.940)); };
+@mixin anim-fast()                                                  { @include css3-transition(all, .25s, cubic-bezier(0.250, 0.460, 0.450, 0.940)); };
+
+
+// ---- setup for animation libary END
+
+
+
+// ---- setup cookie bar START
+
+
+$project-cookie-bar-background-color:                   $color-theme-primary;
+$project-cookie-bar-padding:                            15px;
+$project-cookie-bar-border-radius:                      0;
+$project-cookie-bar-floating-padding:                   30px;
+$project-cookie-bar-floating-border-radius:             10px;
+
+$project-cookie-bar-text-font-family:                   $project-default-font-family;
+$project-cookie-bar-text-font-size:                     $project-default-font-size;
+$project-cookie-bar-text-color:                         $color-white;
+
+$project-cookie-bar-button-height:                      40px;
+$project-cookie-bar-button-font-family:                 $project-default-font-family;
+$project-cookie-bar-button-font-size:                   $project-default-font-size;
+
+$project-cookie-bar-button-dismiss-background-color:    $color-theme-primary;
+$project-cookie-bar-button-dismiss-text-color:          $color-white;
+$project-cookie-bar-button-dismiss-padding:             0 15px;
+
+$project-cookie-bar-button-allow-background-color:      $color-green;
+$project-cookie-bar-button-allow-text-color:            $color-white;
+$project-cookie-bar-button-allow-padding:               0 40px;
+
+$project-cookie-bar-revoke-background-color:            $color-theme-primary;
+$project-cookie-bar-revoke-font-family:                 $project-default-font-family;
+$project-cookie-bar-revoke-font-size:                   $project-default-font-size;
+$project-cookie-bar-revoke-color:                       $color-white;
+$project-cookie-bar-revoke-padding:                     10px 15px;
+$project-cookie-bar-revoke-background-color-HOVER:      $color-theme-primary-light;
+$project-cookie-bar-revoke-color-HOVER:                 $color-white;
+$project-cookie-bar-revoke-border-radius:               10px;
+
+
+// ---- setup cookie bar END
+
+// variables END

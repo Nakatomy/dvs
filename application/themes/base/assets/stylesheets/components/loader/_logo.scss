@@ -1,0 +1,42 @@
+/*** logo ***/
+/* HTML: <div class="loader-logo"><div></div><div></div></div> */
+
+@include css3-keyframes(loader-logo) {
+	0% {
+		left: -$project-loader-item-size * 20;
+	}
+	100% {
+		left: -$project-loader-item-size + ( $project-loader-item-size * 11 );
+	}
+}
+
+.loader .loader-logo {
+	height: $project-loader-item-size * 10;
+	line-height: $project-loader-item-size * 10;
+	margin-left: -( $project-loader-item-size * 10 ) / 2;
+	margin-top: -( $project-loader-item-size * 10 ) / 2;
+	width: $project-loader-item-size * 10;
+
+	 div {
+		 bottom: 0;
+		 position: absolute;
+		 top: 0;
+
+		 &:first-child {
+			 @include css3-background-size(100%, auto);
+			 background-color: transparent;
+			 background-image: url(#{$project-loader-logo-src});
+			 background-position: center center;
+			 background-repeat: no-repeat;
+			 left: 0;
+			 right: 0;
+		 }
+
+		 &:last-child {
+			 @include css3-animation(loader-logo $project-loader-item-speed 0s infinite linear);
+             @include gradient-x-three-colors($project-loader-layer-color, $project-loader-layer-color, 50%, $project-loader-layer-color);
+			 left: -$project-loader-item-size * 20;
+			 width: $project-loader-item-size * 20;
+		}
+	}
+}

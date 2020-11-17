@@ -1,0 +1,32 @@
+@import 'project_defaults';
+
+.main{
+
+    .breadcrumb{
+
+        &-autonav{
+            margin: 0;
+
+            li{
+
+                &:last-child,
+                &.active{
+
+                    &,
+                    a{
+                        color: $project-breadcrumb-link-color;
+                        pointer-events: all;
+
+                        // desktop
+                        @include media-breakpoint-up(xl) {
+                            &:hover,
+                            &:focus {
+                                color: $project-breadcrumb-link-color-HOVER;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

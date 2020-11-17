@@ -1,0 +1,208 @@
+@import 'project_defaults';
+
+$transitionType: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
+.home-hero{
+    position: relative;
+    overflow: hidden;
+    background-color: $color-theme-primary;
+
+    // mobile
+    @include media-breakpoint-down(sm) {
+        padding-top: 4.25rem;
+    }
+
+    .container{
+        height: 100vh;
+
+        // hd
+        @include media-breakpoint-up(hd) {
+            height: calc(100vh - #{$headerHeight});
+        }
+
+        // mobile
+        @include media-breakpoint-down(sm) {
+            max-height: 400px;
+        }
+
+        .home-hero-image{
+
+            .hero-logo{
+                position: absolute;
+                top: 50%;
+                margin-top: -25%;
+                right: -3vw;
+                height: 100%;
+                width: 100%;
+                max-width: 40rem;
+
+                svg{
+                    fill: #1b3357;
+
+                    .logo-icon{
+                        transition: transform .8s linear, opacity .8s linear;
+                        //transform-origin: 100% 50%;
+                        transform: translateY(3rem);
+                        opacity: 0;
+
+                        &-1{
+                            animation-delay: 1.6s;
+                        }
+                        &-2{
+                            animation-delay: 1.8s;
+                        }
+                        &-3{
+                            animation-delay: 2.2s;
+                        }
+                        &-4{
+                            animation-delay: 2.5s;
+                        }
+                        &-5{
+                            animation-delay: 2.8s;
+                        }
+                        &-6{
+                            animation-delay: 3.1s;
+                        }
+
+                        @keyframes logoAnim {
+                            0% {
+                                transform: translateY(-3rem);
+                                opacity: 0;
+                            }
+
+                            25% {
+                                transform: translateY(0);
+                                opacity: 1;
+                            }
+
+                            60% {
+                                transform: translateY(0);
+                                opacity: 1;
+                            }
+
+                            90%{
+                                transform: translateY(.5rem);
+                                opacity: 0;
+                            }
+
+                            100%{
+                                transform: translateY(0rem);
+                                opacity: 0;
+                            }
+                        }
+
+                        .loaded &{
+                            animation-duration: 7s;
+                            animation-name: logoAnim;
+                            animation-iteration-count: infinite;
+                            animation-direction: normal;
+                            animation-fill-mode: forwards;
+                        }
+                    }
+                }
+
+                // mobile + tablet
+                @include media-breakpoint-down(lg) {
+                    right: 0;
+                }
+
+                // mobile
+                @include media-breakpoint-down(sm) {
+                    right: 1rem;
+                }
+            }
+
+            img{
+                max-width: 100%;
+            }
+
+        }
+
+        .home-hero-content{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            color: $color-white;
+
+            .ccm-edit-mode &{
+                position: relative;
+            }
+
+            h1{
+                color: $color-white;
+            }
+
+            p{
+                color: rgba($color-white, 0.8);
+                max-width: 25rem;
+                padding-left: .5rem;
+
+                strong{
+                    font-family: $project-default-font-family-1-REGULAR;
+                    text-transform: uppercase;
+                    letter-spacing: 0.125rem;
+                    font-size: 0.75rem;
+                    line-height: 0.875rem;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    display: block;
+
+                    .loaded & {
+                        animation: animated-text 3s steps(30,end) 1s 1 normal both;
+                    }
+                }
+            }
+
+            html:not(.ccm-edit-mode) &{
+
+                h1{
+                    transition: transform 1.2s $transitionType, opacity 1.2s $transitionType;
+                    transition-delay: .5s;
+                    opacity: 0;
+                    transform: translateY(1rem);
+                }
+
+                p{
+                    display: inline-block;
+
+                    span{
+                        transform: translateY(.5rem);
+                        transition: transform 1.2s $transitionType, opacity 1.2s $transitionType;
+                        display: inline-block;
+                        opacity: 0;
+                    }
+
+                    @for $i from 1 through 50 {
+                        span:nth-child(#{$i}) {
+                            transition-delay: #{$i * .15}s;
+                        }
+                    }
+                }
+            }
+
+            html:not(.ccm-edit-mode).loaded &,
+            .ccm-toolbar-visible &{
+
+                h1, p span{
+                    opacity: 1 !important;
+                    transform: translateY(0) !important;
+                }
+            }
+
+            // mobile
+            @include media-breakpoint-down(sm) {
+                position: relative;
+                top: auto;
+                left: auto;
+                min-height: 35vh;
+            }
+        }
+    }
+}
+
+@keyframes animated-text{
+from{width: 0;}
+to{width: 100%;}
+}

@@ -1,0 +1,102 @@
+/*** Project forms ***/
+
+/* forms START */
+
+.main {
+
+	// label
+	.control-label {
+		color: $project-label-color;
+		font-family: $project-label-font-family;
+		height: auto;
+		font-size: $project-label-font-size;
+		line-height: $project-label-line-height;
+        margin-bottom: 0;
+        position: absolute;
+        top: 0;
+        transform-origin: left center;
+        @include project-default-transition();
+
+        &.required{
+            left: 1.5rem;
+        }
+
+		// small
+		&.label-sm {
+			font-size: $project-label-font-size-SMALL;
+			line-height: $project-label-line-height-SMALL;
+		}
+
+		// large
+		&.label-lg {
+			font-size: $project-label-font-size-LARGE;
+			line-height: $project-label-line-height-LARGE;
+		}
+    }
+
+    .control-label + span{
+        color: $project-label-color;
+		font-family: $project-label-font-family;
+		height: auto;
+		font-size: $project-label-font-size;
+		line-height: $project-label-line-height;
+        margin-bottom: 0;
+        position: absolute;
+        top: 0;
+        transform-origin: left center;
+        @include project-default-transition();
+    }
+
+	.form-check-label,
+	.form-radio-label {
+		color: $project-label-checkradio-color;
+		font-family: $project-label-checkradio-font-family;
+		font-size: $project-label-checkradio-font-size;
+		line-height: $project-label-checkradio-line-height;
+		height: auto;
+
+		// small
+		&.label-sm {
+			font-size: $project-label-checkradio-font-size-SMALL;
+			line-height: $project-label-checkradio-line-height-SMALL;
+		}
+
+		// large
+		&.label-lg {
+			font-size: $project-label-checkradio-font-size-LARGE;
+			line-height: $project-label-checkradio-line-height-LARGE;
+		}
+	}
+
+	// error
+	.has-error .control-label,
+	.control-label.error {
+		color: $project-label-color-ERROR;
+	}
+
+	.has-error .form-check-label,
+	.has-error .form-check-label,
+	.form-check-label.error,
+	.form-radio-label.error {
+		color: $project-label-checkradio-color-ERROR;
+	}
+
+
+	// disabled
+	.disabled .control-label,
+	.control-label.disabled {
+		color: $project-label-color-DISABLED;
+		cursor: not-allowed;
+	}
+
+	.disabled .form-check-label,
+	.disabled .form-radio-label,
+	.form-check-label.disabled,
+	.form-radio-label.disabled {
+		color: $project-label-checkradio-color-DISABLED;
+		cursor: not-allowed;
+	}
+
+}
+
+/* forms END */

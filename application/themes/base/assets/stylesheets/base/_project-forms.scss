@@ -1,0 +1,223 @@
+/*** Project forms ***/
+
+/* forms START */
+
+.main {
+
+    // form groups
+	.form-group {
+        margin-bottom: $project-form-group-margin;
+        position: relative;
+
+        &.focused,
+        &.filled{
+
+            .control-label{
+                // transform: scale(.75);
+                top: -$project-label-line-height / 2;
+            }
+
+            .control-label + span{
+                // transform: scale(.75);
+                top: -$project-label-line-height / 2;
+            }
+        }
+	}
+
+	// form control
+	.form-control {
+		@include css3-border-radius($project-form-control-border-radius);
+		@include css3-placeholder($project-form-control-color-placeholder);
+		@include project-default-transition();
+		@include project-form-control-box-shadow();
+		background-color: $project-form-control-background-color;
+		border-color: $project-form-control-border-color;
+		border-style: solid;
+		border-width: 0 0 $project-form-control-border-width 0;
+		color: $project-form-control-color;
+		font-family: $project-form-control-font-family;
+		font-size: $project-form-control-font-size;
+		padding: $project-form-control-padding;
+		outline: 0 !important;
+
+		&:-webkit-autofill,
+		&:-webkit-autofill:focus,
+		&:-webkit-autofill:hover {
+			@include css3-prefix('transition-delay','9999s');
+			-webkit-box-shadow: 0 0 0 9999px $project-form-control-background-color-AUTOFILL inset; /* Change the color to your own background color */
+			-webkit-text-fill-color: $project-form-control-color-AUTOFILL;
+			border-color: $project-form-control-border-color-AUTOFILL;
+		}
+
+		&:focus {
+			@include css3-placeholder($project-form-control-color-placeholder-FOCUS);
+			@include project-form-control-box-shadow-FOCUS();
+			background-color: $project-form-control-background-color-FOCUS;
+			border-color: $project-form-control-border-color-FOCUS;
+			color: $project-form-control-color-FOCUS;
+		}
+
+		// small
+		&.form-control-sm {
+			@include css3-border-radius($project-form-control-border-radius-SMALL);
+			border-width: $project-form-control-border-width-SMALL;
+			font-size: $project-form-control-font-size-SMALL;
+			padding: $project-form-control-padding-SMALL;
+		}
+
+		// large
+		&.form-control-lg {
+			@include css3-border-radius($project-form-control-border-radius-LARGE);
+			border-width: $project-form-control-border-width-LARGE;
+			font-size: $project-form-control-font-size-LARGE;
+			padding: $project-form-control-padding-LARGE;
+		}
+
+		// form control fake to file upload skin
+		&-fake {
+			height: $project-form-control-height;
+			line-height: $project-form-control-height;
+			overflow: hidden;
+			padding-bottom: 0 !important;
+			padding-top: 0 !important;
+			text-align: left;
+
+			* {
+				display: inline-block;
+				line-height: 1;
+				margin: -3px 0 0 0;
+				padding: 0;
+				vertical-align: middle;
+				width: 100%;
+				font-size: $project-default-font-size - 2;
+
+				.ie & {
+					margin-top: -4px;
+				}
+			}
+
+			// small
+			&.form-control-sm {
+				height: $project-form-control-height-SMALL;
+				line-height: $project-form-control-height-SMALL;
+			}
+
+			// large
+			&.form-control-lg {
+				height: $project-form-control-height-LARGE;
+				line-height: $project-form-control-height-LARGE;
+			}
+		}
+
+		&::-moz-placeholder { @include project-default-transition(); }
+		&:-ms-input-placeholder { @include project-default-transition(); }
+		&::-webkit-input-placeholder { @include project-default-transition(); }
+	}
+
+		// input
+		input.form-control {
+			@include css3-prefix(appearance, none);
+			height: $project-form-control-height;
+            line-height: $project-form-control-height;
+
+            .ie &{
+                line-height: $project-form-control-height - ($project-form-control-border-width * 2);
+            }
+
+			// small
+			&.form-control-sm {
+				height: $project-form-control-height-SMALL;
+                line-height: $project-form-control-height-SMALL;
+
+                .ie &{
+                    line-height: $project-form-control-height-SMALL - ($project-form-control-border-width * 2);
+                }
+			}
+
+			// large
+			&.form-control-lg {
+				height: $project-form-control-height-LARGE;
+                line-height: $project-form-control-height-LARGE;
+
+                .ie &{
+                    line-height: $project-form-control-height-LARGE - ($project-form-control-border-width * 2);
+                }
+			}
+		}
+
+		// textarea
+		textarea.form-control {
+			padding: $project-form-control-padding-textarea;
+
+			// small
+			&.form-control-sm {
+				padding: $project-form-control-padding-textarea-SMALL;
+			}
+
+			// large
+			&.form-control-lg {
+				padding: $project-form-control-padding-textarea-LARGE;
+			}
+		}
+
+	// checkbox / radio button
+	.form-check,
+	.form-radio {
+		margin-bottom: 0;
+		margin-top: 0;
+
+		&-input{
+			position: absolute; // hotfix
+		}
+	}
+
+	// help block
+	.form-text {
+		color: $project-form-text-color;
+		font-family: $project-form-text-font-family;
+		font-size: $project-form-text-font-size;
+		line-height: $project-form-text-line-height;
+		margin: $project-form-text-margin;
+	}
+
+	// error
+	.has-error .form-control,
+	.form-control.error {
+		@include css3-placeholder($project-form-control-color-placeholder-ERROR);
+		@include project-form-control-box-shadow-ERROR();
+		background-color: $project-form-control-background-color-ERROR;
+		color: $project-form-control-color-ERROR;
+		border-color: $project-form-control-border-color-ERROR;
+	}
+
+	.has-error .form-text {
+		color: $project-form-text-color-ERROR;
+	}
+
+	// disabled
+	.disabled .form-control,
+	.form-control.disabled {
+		@include css3-placeholder($project-form-control-color-placeholder-DISABLED);
+		@include project-form-control-box-shadow-DISABLED();
+		background-color: $project-form-control-background-color-DISABLED;
+		color: $project-form-control-color-DISABLED;
+		border-color: $project-form-control-border-color-DISABLED;
+	}
+
+	.disabled .form-text {
+		color: $project-form-text-color-DISABLED;
+	}
+
+	// checkbox / radio button
+	.form-check,
+	.form-radio {
+		margin-bottom: 0;
+		margin-top: 0;
+
+		&-input{
+			position: absolute; // hotfix
+		}
+	}
+}
+
+/* forms END */

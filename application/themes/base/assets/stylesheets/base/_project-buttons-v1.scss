@@ -1,0 +1,68 @@
+/*** Project buttons ***/
+
+/* buttons START */
+
+.main {
+
+	.btn {
+
+		// version 1
+		&.btn-v1 {
+			@include css3-border-radius($project-button-border-radius-v1);
+			@include project-button-box-shadow-v1();
+			background: $project-button-background-color-v1;
+			border-color: $project-button-border-color-v1;
+			border-width: $project-button-border-width-v1;
+			color: $project-button-color-v1;
+			font-family: $project-button-font-family-v1;
+			font-size: $project-button-font-size-v1;
+			height: $project-button-height-v1;
+			line-height: $project-button-line-height-v1;
+			padding: $project-button-padding-v1;
+
+			// desktop
+			@include media-breakpoint-up(xl) {
+				&:hover,
+				&:focus {
+					@include css3-opacity($project-button-opacity-v1-HOVER);
+					background: $project-button-background-color-v1-HOVER;
+					border-color: $project-button-border-color-v1-HOVER;
+					color: $project-button-color-v1-HOVER;
+				}
+			}
+
+			// small
+			&.btn-sm {
+				@include css3-border-radius($project-button-border-radius-v1-SMALL);
+				border-width: $project-button-border-width-v1-SMALL;
+				font-size: $project-button-font-size-v1-SMALL;
+				height: $project-button-height-v1-SMALL;
+				line-height: $project-button-line-height-v1-SMALL;
+				padding: $project-button-padding-v1-SMALL;
+			}
+
+			// large
+			&.btn-lg {
+				@include css3-border-radius($project-button-border-radius-v1-LARGE);
+				border-width: $project-button-border-width-v1-LARGE;
+				font-size: $project-button-font-size-v1-LARGE;
+				height: $project-button-height-v1-LARGE;
+				line-height: $project-button-line-height-v1-LARGE;
+				padding: $project-button-padding-v1-LARGE;
+			}
+		}
+
+			// disabled
+			&[disabled] {
+
+				&.btn-v1 {
+					@include project-button-box-shadow-v1-DISABLED();
+					color: $project-button-color-v1-DISABLED;
+					background: $project-button-background-color-v1-DISABLED;
+					border-color: $project-button-border-color-v1-DISABLED;
+				}
+			}
+	}
+}
+
+/* buttons END */

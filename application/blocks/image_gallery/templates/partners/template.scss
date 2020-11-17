@@ -1,0 +1,115 @@
+@import 'project_defaults';
+
+.partners-gallery{
+
+    &-item{
+
+        .wrapper{
+            transform-style: preserve-3d;
+            perspective: 1000px;
+
+            .front,
+            .back{
+                @include project-default-transition-long();
+                background-size: cover;
+                background-position: center;
+                backface-visibility: hidden;
+                text-align: center;
+                min-height: 17.5rem;
+                height: auto;
+            }
+
+            .front{
+                border: 1px solid $color-light-gray;
+                transform: rotateY(0deg);
+                transform-style: preserve-3d;
+
+                &:after{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 1;
+                    width: 100%;
+                    height: 100%;
+                    content: '';
+                    display: block;
+                    backface-visibility: hidden;
+                    background-color: $color-white;
+                }
+
+                .inner{
+
+                    img{
+                        max-width: 70%;
+                        position: relative;
+                    }
+                }
+            }
+
+            .back{
+                background: $color-theme-primary;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                transform: rotateY(180deg);
+                transform-style: preserve-3d;
+
+                .texts{
+
+                    h4{
+                        font-size: 2rem;
+                        line-height: 1.5;
+                    }
+
+                    p{
+                        line-height: 2rem;
+                    }
+                }
+            }
+
+            .inner{
+                transform: translateY(-50%) translateZ(60px) scale(0.94);
+                top: 50%;
+                position: absolute;
+                left: 0;
+                width: 100%;
+                padding: 2rem;
+                perspective: inherit;
+                z-index: 2;
+            }
+
+            // desktop
+            @include media-breakpoint-up(xl) {
+                &:hover,
+                &:focus {
+
+                    .back{
+                        transform: rotateY(0deg);
+                        transform-style: preserve-3d;
+                    }
+
+                    .front{
+                        transform: rotateY(-180deg);
+                        transform-style: preserve-3d;
+                    }
+                }
+            }
+
+            // mobile + tablet
+            @include media-breakpoint-down(lg) {
+
+                .back{
+                    // border: 1px solid rgba($color-white, .05);
+                    // transform: rotateY(0deg);
+                    // transform-style: preserve-3d;
+                    display: none;
+                }
+                // .front{
+                //     transform: rotateY(-180deg);
+                //     transform-style: preserve-3d;
+                // }
+            }
+        }
+    }
+}

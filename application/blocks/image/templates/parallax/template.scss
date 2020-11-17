@@ -1,0 +1,14 @@
+@import 'project_defaults';
+
+.parallax-image{
+
+    &-container{
+        overflow: hidden;
+        position: relative;
+
+        img{
+            top: -7.5vh;
+            height: calc( 100% + 15vh );
+        }
+    }
+}

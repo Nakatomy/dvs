@@ -1,0 +1,41 @@
+/*** Project fonts ***/
+
+/* fonts START */
+
+// Montserrat-Medium
+@include css3-font-face('Montserrat-Medium', 'Montserrat-Medium');
+.Montserrat-Medium{ font-family: "Montserrat-Medium"; }
+
+// Montserrat-Light
+@include css3-font-face('Montserrat-Light', 'Montserrat-Light');
+.Montserrat-Light{ font-family: "Montserrat-Light"; }
+
+// Montserrat-Regular
+@include css3-font-face('Montserrat-Regular', 'Montserrat-Regular');
+.Montserrat-Regular{ font-family: "Montserrat-Regular"; }
+
+// Poppins-Italic
+@include css3-font-face('Poppins-Italic', 'Poppins-Italic');
+.Poppins-Italic{ font-family: "Poppins-Italic"; }
+
+// Poppins-Light
+@include css3-font-face('Poppins-Light', 'Poppins-Light');
+.Poppins-Light{ font-family: "Poppins-Light"; }
+
+// Poppins-Medium
+@include css3-font-face('Poppins-Medium', 'Poppins-Medium');
+.Poppins-Medium{ font-family: "Poppins-Medium"; }
+
+// Poppins-Regular
+@include css3-font-face('Poppins-Regular', 'Poppins-Regular');
+.Poppins-Regular{ font-family: "Poppins-Regular"; }
+
+// Poppins-SemiBold
+@include css3-font-face('Poppins-SemiBold', 'Poppins-SemiBold');
+.Poppins-SemiBold{ font-family: "Poppins-SemiBold"; }
+
+// Poppins-SemiBoldItalic
+@include css3-font-face('Poppins-SemiBoldItalic', 'Poppins-SemiBoldItalic');
+.Poppins-SemiBoldItalic{ font-family: "Poppins-SemiBoldItalic"; }
+
+/* fonts END */

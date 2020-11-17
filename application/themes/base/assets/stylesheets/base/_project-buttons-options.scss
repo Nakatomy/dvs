@@ -1,0 +1,150 @@
+/*** Project buttons ***/
+
+/* buttons START */
+
+.main {
+
+	.btn {
+
+		// options
+		&.btn-success,
+		&.btn-info,
+		&.btn-warning,
+		&.btn-danger,
+		&.btn-link{
+			@include css3-opacity(1);
+
+			// desktop
+			@include media-breakpoint-up(xl) {
+				&:hover,
+				&:focus {
+					@include css3-opacity(1);
+				}
+			}
+		}
+
+			//primary
+			&.btn-primary {
+				color: $project-button-option-color-PRIMARY;
+				background-color: $project-button-option-background-color-PRIMARY;
+				border-color: $project-button-option-border-color-PRIMARY;
+
+				// desktop
+				@include media-breakpoint-up(xl) {
+					&:hover,
+					&:focus {
+						color: $project-button-option-color-PRIMARY-HOVER;
+						background-color: $project-button-option-background-color-PRIMARY-HOVER;
+						border-color: $project-button-option-border-color-PRIMARY-HOVER;
+					}
+				}
+			}
+
+			// secondary
+			&.btn-secondary {
+				color: $project-button-option-color-SECONDARY;
+				background-color: $project-button-option-background-color-SECONDARY;
+				border-color: $project-button-option-border-color-SECONDARY;
+
+				// desktop
+				@include media-breakpoint-up(xl) {
+					&:hover,
+					&:focus {
+						color: $color-theme-primary;
+						background-color: $project-button-option-background-color-SECONDARY-HOVER;
+                        border-color: $project-button-option-border-color-SECONDARY-HOVER;
+
+                        .background-dark-wrapper &{
+                            color: $project-button-option-color-SECONDARY-HOVER !important;
+                        }
+					}
+				}
+			}
+
+			// success
+			&.btn-success {
+				color: $project-button-option-color-SUCCESS;
+				background-color: $project-button-option-background-color-SUCCESS;
+				border-color: $project-button-option-border-color-SUCCESS;
+
+				// desktop
+				@include media-breakpoint-up(xl) {
+					&:hover,
+					&:focus {
+						color: $project-button-option-color-SUCCESS-HOVER;
+						background-color: $project-button-option-background-color-SUCCESS-HOVER;
+						border-color: $project-button-option-border-color-SUCCESS-HOVER;
+					}
+				}
+			}
+
+			// info
+			&.btn-info {
+				color: $project-button-option-color-INFO;
+				background-color: $project-button-option-background-color-INFO;
+				border-color: $project-button-option-border-color-INFO;
+
+				// desktop
+				@include media-breakpoint-up(xl) {
+					&:hover,
+					&:focus {
+						color: $project-button-option-color-INFO-HOVER;
+						background-color: $project-button-option-background-color-INFO-HOVER;
+						border-color: $project-button-option-border-color-INFO-HOVER;
+					}
+				}
+			}
+
+			// warning
+			&.btn-warning {
+				color: $project-button-option-color-WARNING;
+				background-color: $project-button-option-background-color-WARNING;
+				border-color: $project-button-option-border-color-WARNING;
+
+				// desktop
+				@include media-breakpoint-up(xl) {
+					&:hover,
+					&:focus {
+						color: $project-button-option-color-WARNING-HOVER;
+						background-color: $project-button-option-background-color-WARNING-HOVER;
+						border-color: $project-button-option-border-color-WARNING-HOVER;
+					}
+				}
+			}
+
+			// danger
+			&.btn-danger {
+				color: $project-button-option-color-DANGER;
+				background-color: $project-button-option-background-color-DANGER;
+				border-color: $project-button-option-border-color-DANGER;
+
+				// desktop
+				@include media-breakpoint-up(xl) {
+					&:hover,
+					&:focus {
+						color: $project-button-option-color-DANGER-HOVER;
+						background-color: $project-button-option-background-color-DANGER-HOVER;
+						border-color: $project-button-option-border-color-DANGER-HOVER;
+					}
+				}
+			}
+
+			// link
+			&.btn-link {
+				background-color: transparent;
+				border: 0;
+				color: $project-button-option-color-LINK;
+
+				// desktop
+				@include media-breakpoint-up(xl) {
+					&:hover,
+					&:focus {
+						background-color: transparent;
+						color: $project-button-option-color-LINK-HOVER;
+					}
+				}
+			}
+	}
+}
+
+/* buttons END */

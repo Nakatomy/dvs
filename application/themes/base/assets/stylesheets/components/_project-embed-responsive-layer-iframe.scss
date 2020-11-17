@@ -1,0 +1,32 @@
+/*** Project embed responsive layer ***/
+
+/* embed responsive layer for iframe START */
+
+.embed-responsive-layer-iframe {
+	@include css3-background-opacity($project-embed-responsive-layer-iframe-background-color, $project-embed-responsive-layer-iframe-background-opacity);
+	@include css3-opacity($project-embed-responsive-layer-iframe-opacity);
+
+	p {
+		color: $project-embed-responsive-layer-iframe-color;
+		font-family: $project-embed-responsive-layer-iframe-font-family;
+		font-size: $project-embed-responsive-layer-iframe-font-size;
+	}
+
+	// desktop
+	@include media-breakpoint-up(xl) {
+		&:hover{
+			@include css3-background-opacity($project-embed-responsive-layer-iframe-background-color-HOVER, $project-embed-responsive-layer-iframe-background-opacity-HOVER);
+			@include css3-opacity($project-embed-responsive-layer-iframe-opacity-HOVER);
+		}
+		&:focus{
+			@include css3-opacity(0);
+		}
+	}
+
+	// mobile + tablet
+	@include media-breakpoint-down(lg) {
+		@include css3-opacity($project-embed-responsive-layer-iframe-opacity-HOVER);
+	}
+}
+
+/* embed responsive layer for iframe END */

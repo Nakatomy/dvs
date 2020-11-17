@@ -1,0 +1,133 @@
+/*** Project modal ***/
+
+/* modal START */
+
+.modal{
+
+	// modal page background
+	&-backdrop{
+		background-color: $project-modal-backdrop-color;
+
+		&.show{
+			@include css3-opacity($project-modal-backdrop-opacity);
+		}
+	}
+
+	// modal box
+	&-dialog{
+
+		// mobile
+		@include media-breakpoint-down(sm) {
+			margin: $project-modal-dialog-margin-MOBILE;
+			max-width: $project-modal-dialog-width-MOBILE;
+		}
+
+		// tablet
+		@include media-breakpoint-between(md, lg) {
+			margin: $project-modal-dialog-margin-TABLET;
+			max-width: $project-modal-dialog-width-TABLET;
+		}
+
+		// laptop
+		@include media-breakpoint-only(xl) {
+			margin: $project-modal-dialog-margin-LAPTOP;
+			max-width: $project-modal-dialog-width-LAPTOP;
+		}
+
+		// hd
+		@include media-breakpoint-up(hd) {
+			margin: $project-modal-dialog-margin-HD;
+			max-width: $project-modal-dialog-width-HD;
+		}
+	}
+
+	// modal content
+	&-content{
+		@include css3-border-radius($project-modal-content-border-radius);
+		background-color: $project-modal-content-background-color;
+		border-width: $project-modal-content-border-width;
+		border-style: solid;
+		border-color: $project-modal-content-border-color;
+		overflow: hidden;
+
+		// mobile
+		@include media-breakpoint-down(sm) {
+			height: 100%;
+			overflow-y: scroll;
+			width: 100%;
+			-webkit-overflow-scrolling: touch;
+		}
+	}
+
+		&-header{
+            @include css3-border-radius(0);
+			position: relative;
+			background-color: $project-modal-header-background-color;
+			border-width: $project-modal-header-border-width;
+			border-style: solid;
+			border-color: $project-modal-header-border-color;
+            padding: $project-modal-header-padding-vertical $project-modal-padding-horizontal;
+
+			// mobile
+			@include media-breakpoint-down(sm) {
+				padding-left: 15px;
+			}
+
+			.close{
+                @include project-default-transition();
+                @include css3-text-shadow(0px, 0px, 0px, rgba($color-black, 0));
+				position: absolute;
+				top: 0;
+				right: 0;
+				height: 100%;
+				width: $project-modal-padding-horizontal * 1.5;
+				background: none;
+				border: 0;
+				text-align: center;
+				padding: 0;
+				margin: 0;
+				cursor: pointer;
+				font-family: $project-modal-close-font-family;
+				font-size: $project-modal-close-font-size;
+				color: $project-modal-close-color;
+
+				&:not(.disabled):hover{
+					color: $project-modal-close-color-HOVER;
+				}
+			}
+
+			.modal-title{
+				font-family: $project-modal-title-font-family;
+				font-size: $project-modal-title-font-size;
+				line-height: $project-modal-title-line-height;
+				color: $project-modal-title-color;
+				margin: $project-modal-title-margin;
+			}
+		}
+
+		&-body{
+            padding: $project-modal-content-padding-vertical $project-modal-padding-horizontal;
+
+			// mobile
+			@include media-breakpoint-down(sm) {
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+		}
+
+		&-footer{
+			background-color: $project-modal-footer-background-color;
+			border-width: $project-modal-footer-border-width;
+			border-style: solid;
+			border-color: $project-modal-footer-border-color;
+            padding: $project-modal-footer-padding-vertical $project-modal-padding-horizontal;
+
+			// mobile
+			@include media-breakpoint-down(sm) {
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+		}
+}
+
+/* modal END */

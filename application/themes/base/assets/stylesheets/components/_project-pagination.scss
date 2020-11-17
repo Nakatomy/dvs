@@ -1,0 +1,161 @@
+/*** Project pagination ***/
+
+/* pagination START */
+
+// main
+.main {
+
+	.pagination {
+		@include css3-border-radius($project-pagination-border-radius);
+		margin: 0 0 $project-pagination-margin 0;
+		padding: 0;
+        vertical-align: top;
+        display: flex;
+        width: 100%;
+        margin-left: -8rem;
+
+        &-wrapper{
+            margin-top: 3rem;
+            position: relative;
+        }
+
+		.page-item {
+
+			&:before {
+				display: none;
+			}
+
+			.page-link {
+				background: $project-pagination-background-color;
+				border-color: $project-pagination-border-color;
+				border-style: solid;
+				border-width: $project-pagination-border-width;
+				color: $project-pagination-color;
+				font-family: $project-pagination-font-family;
+				font-size: $project-pagination-font-size;
+                height:  $project-pagination-line-height;
+                width:  $project-pagination-line-height;
+				line-height: $project-pagination-line-height;
+				padding: 0;
+                text-decoration: none;
+                border-radius: $project-pagination-border-radius;
+                text-align: center;
+                margin: 0 5px;
+
+				// desktop
+				@include media-breakpoint-up(xl) {
+					&:hover,
+					&:focus {
+						@include css3-opacity($project-pagination-opacity-HOVER);
+						background: $project-pagination-background-color-HOVER;
+						border-color: $project-pagination-border-color-HOVER;
+						color: $project-pagination-color-HOVER;
+						text-decoration: none;
+					}
+				}
+			}
+
+			// previous / next
+			&:first-child,
+			&:last-child {
+                position: absolute;
+
+				.page-link {
+					background: $project-pagination-background-color-PAGER;
+					border-color: $project-pagination-border-color-PAGER;
+                    color: $color-theme-primary;
+
+					// desktop
+					@include media-breakpoint-up(xl) {
+						&:hover,
+						&:focus {
+							background: $project-pagination-background-color-PAGER-HOVER;
+							border-color: $project-pagination-border-color-PAGER-HOVER;
+							color: $color-theme-primary-light;
+						}
+                    }
+				}
+			}
+
+			// previous
+			&:first-child {
+                right: 3.5rem;
+
+				.page-link {
+                    @include css3-border-radius-separate($project-pagination-border-radius, 0, 0, $project-pagination-border-radius);
+				}
+			}
+
+			// next
+			&:last-child {
+                right: -1.5rem;
+
+				.page-link {
+					@include css3-border-radius-separate(0, $project-pagination-border-radius, $project-pagination-border-radius, 0);
+				}
+			}
+
+			// active
+			&.active {
+
+				.page-link {
+					background: $project-pagination-background-color-ACTIVE;
+					color: $project-pagination-color-ACTIVE;
+					border-color: $project-pagination-border-color-ACTIVE;
+
+					// desktop
+					@include media-breakpoint-up(xl) {
+						&:hover,
+						&:focus {
+							background: $project-pagination-background-color-ACTIVE-HOVER;
+							color: $project-pagination-color-ACTIVE-HOVER;
+							border-color: $project-pagination-border-color-ACTIVE-HOVER;
+						}
+					}
+				}
+			}
+
+			// disabled
+			&.disabled {
+
+				.page-link {
+					background: $project-pagination-background-color-DISABLED !important;
+					color: $project-pagination-color-DISABLED !important;
+					border-color: $project-pagination-border-color-DISABLED;
+				}
+			}
+		}
+
+		// small
+		&-sm {
+			@include css3-border-radius($project-pagination-border-radius-SMALL);
+
+			.page-item {
+
+				.page-link {
+					border-width: $project-pagination-border-width-SMALL;
+					font-size: $project-pagination-font-size-SMALL;
+					line-height: $project-pagination-line-height-SMALL;
+					padding: $project-pagination-padding-SMALL;
+				}
+			}
+		}
+
+		// large
+		&-lg {
+			@include css3-border-radius($project-pagination-border-radius-LARGE);
+
+			.page-item {
+
+				.page-link {
+					border-width: $project-pagination-border-width-LARGE;
+					font-size: $project-pagination-font-size-LARGE;
+					line-height: $project-pagination-line-height-LARGE;
+					padding: $project-pagination-padding-LARGE;
+				}
+			}
+		}
+	}
+}
+
+/* pagination END */

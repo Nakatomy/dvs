@@ -1,0 +1,32 @@
+/*** Project print ***/
+
+/* print START */
+
+@media print {
+
+	.printselector { display: none !important; }
+	.printselector { display: block !important; }
+	.printselector { background: none !important; }
+	.printselector { width: auto !important; }
+	.printselector { width: 100% !important; }
+	.printselector { max-width: auto !important; }
+	.printselector { min-width: auto !important; }
+	.printselector { height: auto !important; }
+	.printselector { max-height: auto !important; }
+	.printselector { min-height: auto !important; }
+	.printselector { margin: 0px !important; }
+	.printselector { padding: 0px !important; }W
+	.printselector { border: 0px !important; }
+	.printselector { border-radius: 0px !important; }
+	.printselector { position: static !important; }
+	.printselector { top: auto !important; }
+	.printselector { right: auto !important; }
+	.printselector { bottom: auto !important; }
+	.printselector { left: auto !important; }
+	.printselector { float: none !important; }
+	.printselector { page-break-before: always !important; }
+	.printselector { page-break-after: always !important; }
+
+}
+
+/* print END */

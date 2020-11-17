@@ -1,0 +1,32 @@
+/*** ball scale ***/
+/* HTML: <div class="loader-ball-scale"><div></div></div> */
+
+@include css3-keyframes(loader-ball-scale) {
+	0% {
+		@include css3-prefix(transform, scale(0));
+		@include css3-opacity(0);
+	}
+	50% {
+		@include css3-prefix(transform, scale(0.5));
+		@include css3-opacity(1);
+	}
+	100% {
+		@include css3-prefix(transform, scale(1));
+		@include css3-opacity(0);
+	}
+}
+
+.loader-ball-scale {
+
+	> div {
+		@include css3-animation(loader-ball-scale $project-loader-item-speed 0s linear infinite);
+		@include css3-border-radius(100%);
+		@include css3-prefix(animation-fill-mode, both);
+		background-color: $project-loader-item-1-color;
+		display: inline-block;
+		height: ( $project-loader-item-size * 3.333333333333333 );
+		margin: $project-loader-item-distance;
+		vertical-align: middle;
+		width: ( $project-loader-item-size * 3.333333333333333 );
+	}
+}

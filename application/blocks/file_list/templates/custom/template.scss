@@ -1,0 +1,56 @@
+@import 'project_defaults';
+
+.file-list-custom{
+
+    &-item{
+
+        a{
+            color: $color-white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 6.5rem;
+            line-height: 1.5;
+            border-bottom: 1px solid $color-medium-blue;
+
+            // mobile + tablet
+            @include media-breakpoint-down(lg) {
+                word-break: break-all;
+            }
+
+            span{
+                min-width: 10rem;
+            }
+
+            i{
+                height: 3.5rem;
+                width: 3.5rem;
+                line-height: 3.5rem;
+                text-align: center;
+                border: 1px solid rgba($color-medium-blue, .4);
+                border-radius: 100%;
+                margin-left: 1rem;
+
+                &:before{
+                    @include project-default-transition();
+                    display: inline-block;
+                }
+            }
+
+            // desktop
+            @include media-breakpoint-up(xl) {
+                &:hover,
+                &:focus {
+                    text-decoration: none;
+                    color: $color-white;
+                    border-bottom-color: $color-white;
+                    padding-left: 1rem;
+
+                    i:before{
+                        transform: translateY(5px);
+                    }
+                }
+            }
+        }
+    }
+}

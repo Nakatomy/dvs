@@ -1,0 +1,15 @@
+/*** Project triangles ***/
+
+/* triangles START */
+
+// classes
+.triangle {
+	@include triangle();
+}
+
+// triangle flying
+.triangle-flying {
+	position: absolute;
+}
+
+/* triangles END */

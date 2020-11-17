@@ -1,0 +1,29 @@
+/*** Project mobile scrollbar ***/
+
+/* mobile scrollbar for iPhone / iPad START */
+
+// mobile
+@include media-breakpoint-down(lg) {
+
+	::-webkit-scrollbar {
+		-webkit-appearance: none;
+		width: 3px;
+	}
+
+	::-webkit-scrollbar:horizontal {
+		-webkit-appearance: none;
+		height: 3px;
+	}
+
+	::-webkit-scrollbar-thumb {
+		border-radius: 2px;
+		background-color: rgba(0,0,0,0.4);
+	}
+
+	::-webkit-scrollbar-thumb:horizontal {
+		border-radius: 2px;
+		background-color: rgba(0,0,0,0.4);
+	}
+}
+
+/* mobile scrollbar END */

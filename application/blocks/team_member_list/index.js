@@ -1,0 +1,2 @@
+import './templates/custom/template';
+

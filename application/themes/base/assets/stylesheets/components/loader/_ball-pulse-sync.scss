@@ -1,0 +1,46 @@
+/*** ball pulse sync ***/
+/* HTML: <div class="loader-ball-pulse-sync"><div></div><div></div><div></div></div> */
+
+@include css3-keyframes(loader-ball-pulse-sync) {
+	33% {
+		@include css3-prefix(transform, translateY(10px));
+	}
+	66% {
+		@include css3-prefix(transform, translateY(-10px));
+	}
+	100% {
+		@include css3-prefix(transform, translateY(0));
+	}
+}
+
+.loader-ball-pulse-sync {
+
+	> div {
+		@include css3-border-radius(100%);
+		@include css3-prefix(animation-fill-mode, both);
+		display: inline-block;
+		height: $project-loader-item-size;
+		margin: $project-loader-item-distance;
+		vertical-align: middle;
+		width: $project-loader-item-size;
+
+		&:nth-child(0) {
+			@include css3-animation(loader-ball-pulse-sync $project-loader-item-speed -0.21s infinite ease-in-out);
+		}
+
+		&:nth-child(1) {
+			@include css3-animation(loader-ball-pulse-sync $project-loader-item-speed -0.14s infinite ease-in-out);
+			background-color: $project-loader-item-1-color;
+		}
+
+		&:nth-child(2) {
+			@include css3-animation(loader-ball-pulse-sync $project-loader-item-speed -0.07s infinite ease-in-out);
+			background-color: $project-loader-item-2-color;
+		}
+
+		&:nth-child(3) {
+			@include css3-animation(loader-ball-pulse-sync $project-loader-item-speed 0s infinite ease-in-out);
+			background-color: $project-loader-item-3-color;
+		}
+	}
+}

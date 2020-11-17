@@ -1,0 +1,44 @@
+/*** cube transition ***/
+/* HTML: <div class="loader-cube-transition"><div><div></div><div></div></div></div> */
+
+@include css3-keyframes(loader-cube-transition) {
+	25% {
+		@include css3-prefix(transform, translateX(( $project-loader-item-size * 3 )) scale(0.5) rotate(-90deg));
+	}
+	50% {
+		@include css3-prefix(transform, translate(( $project-loader-item-size * 3 ), ( $project-loader-item-size * 3 )) rotate(-180deg));
+	}
+	75% {
+		@include css3-prefix(transform, translateY(( $project-loader-item-size * 3 )) scale(0.5) rotate(-270deg));
+	}
+	100% {
+		@include css3-prefix(transform, rotate(-360deg));
+	}
+}
+
+.loader-cube-transition {
+
+	> div {
+		left: 50%;
+		position: absolute;
+		top: 50%;
+
+		> div {
+			@include css3-animation(loader-cube-transition $project-loader-item-speed 0s infinite ease-in-out);
+			@include css3-prefix(animation-fill-mode, both);
+			background-color: $project-loader-item-1-color;
+			height: $project-loader-item-size;
+			left: 50%;
+			margin-left: -( $project-loader-item-size * 2 );
+			margin-top: -( $project-loader-item-size * 2 );
+			position: absolute;
+			top: 50%;
+			width: $project-loader-item-size;
+
+			&:last-child {
+				@include css3-prefix(animation-delay, ( $project-loader-item-speed * -0.5 ));
+				background-color: $project-loader-item-2-color;
+			}
+		}
+	}
+}

@@ -1,0 +1,48 @@
+/*** ball scale multiple ***/
+/* HTML: <div class="loader-ball-scale-multiple"><div></div><div></div><div></div></div> */
+
+@include css3-keyframes(loader-ball-scale-multiple) {
+	0% {
+		@include css3-prefix(transform, scale(0));
+		@include css3-opacity(0);
+	}
+	5% {
+		@include css3-opacity(1);
+	}
+	100% {
+		@include css3-prefix(transform, scale(1));
+		@include css3-opacity(0);
+	}
+}
+
+.loader-ball-scale-multiple {
+	position: relative;
+
+	> div {
+		@include css3-animation(loader-ball-scale-multiple $project-loader-item-speed 0s linear infinite);
+		@include css3-prefix(animation-fill-mode, both);
+		@include css3-border-radius(100%);
+		@include css3-opacity(0);
+		height: ( $project-loader-item-size * 3.333333333333333 );
+		left: 50%;
+		margin-left: -( ( $project-loader-item-size * 3.333333333333333 ) / 2 );
+		margin-top: -( ( $project-loader-item-size * 3.333333333333333 ) / 2 );
+		position: absolute;
+		top: 50%;
+		width: ( $project-loader-item-size * 3.333333333333333 );
+
+		&:nth-child(1) {
+			background-color: $project-loader-item-1-color;
+		}
+
+		&:nth-child(2) {
+			@include css3-prefix(animation-delay, -( $project-loader-item-speed / 5 ) * 2 );
+			background-color: $project-loader-item-2-color;
+		}
+
+		&:nth-child(3) {
+			@include css3-prefix(animation-delay, -( $project-loader-item-speed / 5 ) * 1 );
+			background-color: $project-loader-item-3-color;
+		}
+	}
+}

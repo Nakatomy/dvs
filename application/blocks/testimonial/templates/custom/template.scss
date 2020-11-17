@@ -1,0 +1,154 @@
+@import 'project_defaults';
+
+.custom-testimonial-wrapper{
+
+    .slick-button{
+        bottom: -4.5rem;
+        top: auto;
+        background: $project-pagination-background-color-PAGER;
+        border: none;
+        color: $color-theme-primary;
+
+        &.slider-prev{
+            left: auto;
+            right: 6rem;
+        }
+
+        &.slider-next{
+            right: 0;
+        }
+
+        // desktop
+        @include media-breakpoint-up(xl) {
+            &:hover{
+                color: $color-theme-primary-light;
+            }
+        }
+    }
+
+    .slick-dots{
+        margin-left: -7rem;
+
+        li{
+            counter-increment: li;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 100%;
+            position: relative;
+            @include project-default-transition();
+            cursor: pointer;
+
+            &:before{
+                content: counter(li, decimal-leading-zero);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                color: rgba($color-theme-primary, .2);
+            }
+
+            &.slick-active{
+                background-color: $color-theme-primary;
+
+                &:before{
+                    color: $color-white;
+                }
+            }
+
+            // desktop
+            @include media-breakpoint-up(xl) {
+                &:hover{
+
+                    background-color: $color-theme-primary-light;
+
+                    &:before{
+                        color: $color-white;
+                    }
+                }
+            }
+
+            button{
+                display: none;
+            }
+        }
+    }
+
+    .custom-testimonial-slider-item{
+        margin-bottom: 8rem;
+
+        // mobile
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 2.5rem;
+        }
+
+        .custom-testimonial-image{
+            padding-top: 6.25rem;
+
+            // mobile + tablet
+            @include media-breakpoint-down(md) {
+                padding: 2.5rem;
+
+                img{
+                    width: 100%;
+                }
+            }
+        }
+
+        article.texts{
+            border-bottom: 1px solid #E8E8E8;
+        }
+
+        .texts{
+
+            span{
+                font-size: 0.875rem;
+                line-height: 1.375rem;
+                color: rgba($color-theme-primary, .4);
+
+                a{
+                    text-decoration:underline;
+                    color: rgba($color-theme-primary, .4);
+                    @include project-default-transition();
+
+                    // desktop
+                    @include media-breakpoint-up(xl) {
+                        &:hover,
+                        &:focus {
+                            color: $color-theme-primary;
+                        }
+                    }
+                }
+            }
+
+            blockquote{
+                padding: 0;
+
+                p{
+                    font-style: normal;
+                    font-size: 1.5rem;
+                    line-height: 2.5rem;
+
+                    // mobile
+                    @include media-breakpoint-down(sm) {
+                        font-size: 1rem;
+                        line-height: 2rem;
+                    }
+
+                    &:before{
+                        content: open-quote;
+                        position: relative;
+                        top: auto;
+                        left: auto;
+                        font-size: $project-blockquote-font-size + rem(10px);
+                    }
+
+                    &:after{
+                        content: close-quote;
+                        visibility: visible;
+                        font-size: $project-blockquote-font-size + rem(10px);
+                    }
+                }
+            }
+        }
+    }
+}

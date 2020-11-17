@@ -1,0 +1,30 @@
+/*** ball scale ripple ***/
+/* HTML: <div class="loader-ball-scale-ripple"><div></div></div> */
+
+@include css3-keyframes(loader-ball-scale-ripple) {
+	0% {
+		@include css3-prefix(transform, scale(0.1));
+		@include css3-opacity(1);
+	}
+	70% {
+		@include css3-prefix(transform, scale(1));
+		@include css3-opacity(0.7);
+	}
+	100% {
+		@include css3-opacity(0);
+	}
+}
+
+.loader-ball-scale-ripple {
+
+	> div {
+		@include css3-animation(loader-ball-scale-ripple $project-loader-item-speed 0s infinite cubic-bezier(.21, .53, .56, .8));
+		@include css3-border-radius(100%);
+		@include css3-prefix(animation-fill-mode, both);
+		border: ( $project-loader-item-size * 0.1333333333333333 ) solid $project-loader-item-1-color;
+		display: inline-block;
+		height: ( $project-loader-item-size * 3.333333333333333 );
+		vertical-align: middle;
+		width: ( $project-loader-item-size * 3.333333333333333 );
+	}
+}

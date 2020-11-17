@@ -1,0 +1,330 @@
+/*** Project padding ***/
+
+/* padding START */
+
+/* vertical padding helpers */
+.padding {
+
+	&-col{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	// padding bottom
+	&-bottom {
+
+		// default
+		&-default {
+			padding-bottom: $project-default-margin-bottom;
+		}
+
+		// mobile
+		@include media-breakpoint-down(sm) {
+			padding-bottom: $project-padding-vertical-MOBILE;
+		}
+
+		// tablet
+		@include media-breakpoint-between(md, lg) {
+			padding-bottom: $project-padding-vertical-TABLET;
+		}
+
+		// laptop
+		@include media-breakpoint-only(xl) {
+			padding-bottom: $project-padding-vertical-LAPTOP;
+		}
+
+		// hd
+		@include media-breakpoint-up(hd) {
+			padding-bottom: $project-padding-vertical-HD;
+		}
+
+			// padding bottom for texts
+			&-texts {
+
+				// mobile
+				@include media-breakpoint-down(sm) {
+					padding-bottom: $project-padding-vertical-MOBILE - $project-default-margin-bottom;
+				}
+
+				// tablet
+				@include media-breakpoint-between(md, lg) {
+					padding-bottom: $project-padding-vertical-TABLET - $project-default-margin-bottom;
+				}
+
+				// laptop
+				@include media-breakpoint-only(xl) {
+					padding-bottom: $project-padding-vertical-LAPTOP - $project-default-margin-bottom;
+				}
+
+				// hd
+				@include media-breakpoint-up(hd) {
+					padding-bottom: $project-padding-vertical-HD - $project-default-margin-bottom;
+				}
+			}
+
+		// padding bottom small
+		&-sm {
+
+			// mobile
+			@include media-breakpoint-down(sm) {
+				padding-bottom: $project-padding-vertical-small-MOBILE;
+			}
+
+			// tablet
+			@include media-breakpoint-between(md, lg) {
+				padding-bottom: $project-padding-vertical-small-TABLET;
+			}
+
+			// laptop
+			@include media-breakpoint-only(xl) {
+				padding-bottom: $project-padding-vertical-small-LAPTOP;
+			}
+
+			// hd
+			@include media-breakpoint-up(hd) {
+				padding-bottom: $project-padding-vertical-small-HD;
+			}
+
+				// padding bottom for texts
+				&-texts {
+
+					// mobile
+					@include media-breakpoint-only(xs) {
+						padding-bottom: $project-padding-vertical-small-MOBILE - $project-default-margin-bottom;
+					}
+
+					// tablet
+					@include media-breakpoint-between(md, lg) {
+						padding-bottom: $project-padding-vertical-small-TABLET - $project-default-margin-bottom;
+					}
+
+					// laptop
+					@include media-breakpoint-only(xl) {
+						padding-bottom: $project-padding-vertical-small-LAPTOP - $project-default-margin-bottom;
+					}
+
+					// hd
+					@include media-breakpoint-up(hd) {
+						padding-bottom: $project-padding-vertical-small-HD - $project-default-margin-bottom;
+					}
+				}
+		}
+
+		// padding bottom large
+		&-lg {
+
+			// mobile
+			@include media-breakpoint-down(sm) {
+				padding-bottom: $project-padding-vertical-large-MOBILE;
+			}
+
+			// tablet
+			@include media-breakpoint-between(md, lg) {
+				padding-bottom: $project-padding-vertical-large-TABLET;
+			}
+
+			// laptop
+			@include media-breakpoint-only(xl) {
+				padding-bottom: $project-padding-vertical-large-LAPTOP;
+			}
+
+			// hd
+			@include media-breakpoint-up(hd) {
+				padding-bottom: $project-padding-vertical-large-HD;
+			}
+
+				// padding bottom for texts
+				&-texts {
+
+					// mobile
+					@include media-breakpoint-down(sm) {
+						padding-bottom: $project-padding-vertical-large-MOBILE - $project-default-margin-bottom;
+					}
+
+					// tablet
+					@include media-breakpoint-between(md, lg) {
+						padding-bottom: $project-padding-vertical-large-TABLET - $project-default-margin-bottom;
+					}
+
+					// laptop
+					@include media-breakpoint-only(xl) {
+						padding-bottom: $project-padding-vertical-large-LAPTOP - $project-default-margin-bottom;
+					}
+
+					// hd
+					@include media-breakpoint-up(hd) {
+						padding-bottom: $project-padding-vertical-large-HD - $project-default-margin-bottom;
+					}
+				}
+		}
+	}
+
+	// padding top
+	&-top {
+
+		// default
+		&-default {
+			padding-top: $project-default-margin-bottom;
+		}
+
+		// mobile
+		@include media-breakpoint-down(sm) {
+			padding-top: $project-padding-vertical-MOBILE;
+		}
+
+		// tablet
+		@include media-breakpoint-between(md, lg) {
+			padding-top: $project-padding-vertical-TABLET;
+		}
+
+		// laptop
+		@include media-breakpoint-only(xl) {
+			padding-top: $project-padding-vertical-LAPTOP;
+		}
+
+		// hd
+		@include media-breakpoint-up(hd) {
+			padding-top: $project-padding-vertical-HD;
+		}
+
+		// padding top small
+		&-sm {
+
+			// mobile
+			@include media-breakpoint-down(sm) {
+				padding-top: $project-padding-vertical-small-MOBILE;
+			}
+
+			// tablet
+			@include media-breakpoint-between(md, lg) {
+				padding-top: $project-padding-vertical-small-TABLET;
+			}
+
+			// laptop
+			@include media-breakpoint-only(xl) {
+				padding-top: $project-padding-vertical-small-LAPTOP;
+			}
+
+			// hd
+			@include media-breakpoint-up(hd) {
+				padding-top: $project-padding-vertical-small-HD;
+			}
+		}
+
+		// padding top large
+		&-lg {
+
+			// mobile
+			@include media-breakpoint-down(sm) {
+				padding-top: $project-padding-vertical-large-MOBILE;
+			}
+
+			// tablet
+			@include media-breakpoint-between(md, lg) {
+				padding-top: $project-padding-vertical-large-TABLET;
+			}
+
+			// laptop
+			@include media-breakpoint-only(xl) {
+				padding-top: $project-padding-vertical-large-LAPTOP;
+			}
+
+			// hd
+			@include media-breakpoint-up(hd) {
+				padding-top: $project-padding-vertical-large-HD;
+			}
+		}
+	}
+
+	// vertical
+	&-vertical{
+
+		// default
+		&-default {
+			padding-top: $project-default-margin-bottom;
+			padding-bottom: $project-default-margin-bottom;
+		}
+
+		// mobile
+		@include media-breakpoint-down(sm) {
+			padding-top: $project-padding-vertical-MOBILE;
+			padding-bottom: $project-padding-vertical-MOBILE;
+		}
+
+		// tablet
+		@include media-breakpoint-between(md, lg) {
+			padding-top: $project-padding-vertical-TABLET;
+			padding-bottom: $project-padding-vertical-TABLET;
+		}
+
+		// laptop
+		@include media-breakpoint-only(xl) {
+			padding-top: $project-padding-vertical-LAPTOP;
+			padding-bottom: $project-padding-vertical-LAPTOP;
+		}
+
+		// hd
+		@include media-breakpoint-up(hd) {
+			padding-top: $project-padding-vertical-HD;
+			padding-bottom: $project-padding-vertical-HD;
+		}
+
+		// padding vertical small
+		&-sm {
+
+			// mobile
+			@include media-breakpoint-down(sm) {
+				padding-top: $project-padding-vertical-small-MOBILE;
+				padding-bottom: $project-padding-vertical-small-MOBILE;
+			}
+
+			// tablet
+			@include media-breakpoint-between(md, lg) {
+				padding-top: $project-padding-vertical-small-TABLET;
+				padding-bottom: $project-padding-vertical-small-TABLET;
+			}
+
+			// laptop
+			@include media-breakpoint-only(xl) {
+				padding-top: $project-padding-vertical-small-LAPTOP;
+				padding-bottom: $project-padding-vertical-small-LAPTOP;
+			}
+
+			// hd
+			@include media-breakpoint-up(hd) {
+				padding-top: $project-padding-vertical-small-HD;
+				padding-bottom: $project-padding-vertical-small-HD;
+			}
+		}
+
+		// padding vertical large
+		&-lg {
+
+			// mobile
+			@include media-breakpoint-down(sm) {
+				padding-top: $project-padding-vertical-large-MOBILE;
+				padding-bottom: $project-padding-vertical-large-MOBILE;
+			}
+
+			// tablet
+			@include media-breakpoint-between(md, lg) {
+				padding-top: $project-padding-vertical-large-TABLET;
+				padding-bottom: $project-padding-vertical-large-TABLET;
+			}
+
+			// laptop
+			@include media-breakpoint-only(xl) {
+				padding-top: $project-padding-vertical-large-LAPTOP;
+				padding-bottom: $project-padding-vertical-large-LAPTOP;
+			}
+
+			// hd
+			@include media-breakpoint-up(hd) {
+				padding-top: $project-padding-vertical-large-HD;
+				padding-bottom: $project-padding-vertical-large-HD;
+			}
+		}
+	}
+}
+
+/* padding END */

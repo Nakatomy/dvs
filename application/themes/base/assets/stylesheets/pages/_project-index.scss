@@ -1,0 +1,409 @@
+/*** Project index ***/
+
+.home{
+
+    &-about-us-section{
+
+        .btn{
+            /* color: $color-theme-primary;
+            background-color: transparent;
+            border: none;
+            padding-left: 0;
+            position: relative;
+
+            &:after{
+                content: '\e901';
+                font-family: $project-default-icon-family-extra;
+                position: absolute;
+                right: -3rem;
+                height: 3.5rem;
+                width: 3.5rem;
+                line-height: 3.5rem;
+                border: 1px solid rgba($color-theme-primary, .2);
+                border-radius: 100%;
+                @include project-default-transition();
+                display: inline-block;
+            }
+
+            // desktop
+            @include media-breakpoint-up(xl) {
+                &:hover,
+                &:focus {
+
+                    &:after{
+                        background-color: rgba($color-theme-primary, .7);
+                        color: $color-white;
+                        transform: translateY(-3px);
+                    }
+                }
+            } */
+        }
+    }
+
+    &-about-us-section,
+    &-contact-section{
+
+        .texts{
+
+            h6{
+                font-size: 1.5rem;
+                font-family: $project-default-font-family-1-MEDIUM;
+            }
+        }
+    }
+
+    &-guarantee-section{
+
+        .core-image-gallery{
+
+            img{
+                display: block;
+                max-width: 75%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+
+    &-solutions-section,
+    &-guarantee-section,
+    &-media-section{
+        position: relative;
+
+        &::before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 100%;
+            width: 100vw;
+            background-color: $color-theme-primary;
+        }
+
+        .texts{
+
+            h6{
+                color: $color-white;
+                font-size: 1.5rem;
+                font-family: $project-default-font-family-1-MEDIUM;
+            }
+
+            p{
+                color: rgba($color-white, .8);
+            }
+        }
+
+        .section-header{
+
+            .page-title{
+                color: $color-white;
+            }
+        }
+
+        .btn-secondary{
+
+            // desktop
+            @include media-breakpoint-up(xl) {
+                &:hover,
+                &:focus {
+                    color: $project-button-option-color-SECONDARY-HOVER !important;
+                }
+            }
+        }
+    }
+
+    &-media-section{
+
+        .media-title{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .texts{
+
+                a{
+                    color: rgba($color-white, .8);
+                    @include underlinehover($color-white);
+                }
+            }
+        }
+
+        .btn{
+            color: $color-white;
+            background-color: transparent;
+            border: none;
+            padding-left: 0;
+            position: relative;
+
+            &:after{
+                content: '\e901';
+                font-family: $project-default-icon-family-extra;
+                position: absolute;
+                right: -3rem;
+                height: 3.5rem;
+                width: 3.5rem;
+                line-height: 3.5rem;
+                border: 1px solid rgba($color-white, .2);
+                border-radius: 100%;
+                @include project-default-transition();
+                display: inline-block;
+            }
+
+            // desktop
+            @include media-breakpoint-up(xl) {
+                &:hover,
+                &:focus {
+
+                    &:after{
+                        background-color: rgba($color-white, .7);
+                        color: $color-white;
+                        transform: translateY(-3px);
+                    }
+                }
+            }
+        }
+    }
+
+    &-guarantee-section{
+
+        @include media-breakpoint-down(sm) {
+            padding-bottom: $project-spacer-vertical-MOBILE;
+        }
+
+        // tablet
+        @include media-breakpoint-between(md, lg) {
+            padding-bottom: $project-spacer-vertical-TABLET;
+        }
+
+        // laptop
+        @include media-breakpoint-only(xl) {
+            padding-bottom: $project-spacer-vertical-LAPTOP;
+        }
+
+        // hd
+        @include media-breakpoint-up(hd) {
+            padding-bottom: $project-spacer-vertical-HD;
+        }
+
+        .section-header{
+            text-align: center;
+        }
+
+        .core-image-gallery{
+            margin-right: -2rem !important;
+            margin-left: -2rem !important;
+
+            &-item{
+                padding-left: 2rem !important;
+                padding-right: 2rem !important;
+            }
+        }
+    }
+
+    &-solutions-section,
+    &-media-section{
+
+        @include media-breakpoint-down(sm) {
+            padding-top: $project-spacer-vertical-MOBILE;
+            padding-bottom: $project-spacer-vertical-MOBILE;
+        }
+
+        // tablet
+        @include media-breakpoint-between(md, lg) {
+            padding-top: $project-spacer-vertical-TABLET;
+            padding-bottom: $project-spacer-vertical-TABLET;
+        }
+
+        // laptop
+        @include media-breakpoint-only(xl) {
+            padding-top: $project-spacer-vertical-LAPTOP;
+            padding-bottom: $project-spacer-vertical-LAPTOP;
+        }
+
+        // hd
+        @include media-breakpoint-up(hd) {
+            padding-top: $project-spacer-vertical-HD;
+            padding-bottom: $project-spacer-vertical-HD;
+        }
+    }
+
+    &-contact-section{
+
+        .contact-info{
+
+            .texts{
+
+                h6{
+                    font-family: $project-h6-font-family;
+		            font-size: $project-h6-font-size;
+                    margin-bottom: 1rem;
+                }
+
+                a{
+                    font-size: 1.125rem;
+                    @include underlinehover($color-theme-primary);
+                }
+            }
+        }
+
+        .dynamic-form-container{
+
+            .btn{
+                /* position: relative;
+                line-height: 1;
+                padding-left: 3rem;
+
+                &:before{
+                    content: '\e905';
+                    font-family: $project-default-icon-family-extra;
+                    position: absolute;
+                    left: 1.25rem;
+                } */
+            }
+        }
+    }
+}
+
+body{
+
+    #tarteaucitronServices{
+        background: $color-theme-primary;
+    }
+
+    #tarteaucitron #tarteaucitronServices .tarteaucitronMainLine {
+        background: $color-theme-primary;
+        border: 3px solid $color-theme-primary;
+        border-left: 9px solid $color-theme-primary;
+        border-top: 5px solid $color-theme-primary;
+        margin-bottom: 0;
+        margin-top: 21px;
+        position: relative;
+    }
+
+    #tarteaucitron #tarteaucitronServices .tarteaucitronMainLine:hover {
+        background: $color-theme-primary;
+    }
+
+    #tarteaucitronAlertSmall #tarteaucitronCookiesListContainer #tarteaucitronCookiesList .tarteaucitronTitle, #tarteaucitron #tarteaucitronServices .tarteaucitronTitle button, #tarteaucitron #tarteaucitronInfo, #tarteaucitron #tarteaucitronServices .tarteaucitronDetails{
+        background: $color-theme-primary;
+    }
+
+    #tarteaucitronClosePanel{
+        background: $color-theme-primary !important;
+
+        &:focus{
+            outline: none !important;
+        }
+    }
+
+    div#tarteaucitronRoot{
+
+        #tarteaucitronManager{
+            display: none !important;
+            visibility: hidden !important;
+            opacity: 0 !important;
+        }
+
+        .ccm-edit-mode &{
+            display: none !important;
+        }
+
+        &:before{
+            display: none;
+        }
+
+        div#tarteaucitronAlertBig{
+            border-radius: $project-default-border-radius;
+            box-shadow: 0 0 5px -3px $color-white;
+            bottom: 1rem;
+            top: auto !important;
+            height: auto !important;
+            transform: translate(0, 0) !important;
+            width: calc(100vw - 2rem);
+            left: 1rem;
+            max-width: none;
+            box-sizing: border-box;
+            padding: .5rem;
+            background-color: $color-theme-primary;
+
+            // desktop
+            @include media-breakpoint-up(xl) {
+                display: flex !important;
+                align-items: center;
+                justify-content: center;
+            }
+
+            &:before{
+                display: none;
+            }
+
+            #tarteaucitronDisclaimerAlert{
+                font-size: 1rem;
+                margin: 1rem 0;
+
+                .lang-de &{
+                    max-width: 500px;
+                }
+            }
+
+            .tarteaucitronCTAButton{
+                margin-right: .5rem;
+            }
+            .tarteaucitronCTAButton,
+            #tarteaucitronCloseAlert{
+                @include css3-border-radius($project-button-border-radius);
+                @include project-button-box-shadow();
+                @include project-default-transition();
+                outline: 0 !important;
+                border-width: $project-button-border-width;
+                border-style: solid;
+                cursor: pointer;
+                font-family: $project-button-font-family;
+                font-size: $project-button-font-size;
+                height: $project-button-height / 2;
+                line-height: $project-button-line-height / 2;
+                //margin: 0;
+                padding: $project-button-padding;
+                text-decoration: none;
+                vertical-align: top;
+
+                &.tarteaucitronAllow{
+                    color: $project-button-option-color-SECONDARY;
+                    background-color: $project-button-option-background-color-SECONDARY;
+                    border-color: $project-button-option-border-color-SECONDARY;
+
+                    // desktop
+                    @include media-breakpoint-up(xl) {
+                        &:hover,
+                        &:focus {
+                            background-color: $project-button-option-background-color-SECONDARY-HOVER;
+                            border-color: $project-button-option-border-color-SECONDARY-HOVER;
+                            color: $project-button-option-color-SECONDARY-HOVER;
+                        }
+                    }
+                }
+
+                &.tarteaucitronDeny{
+                    color: $project-button-option-color-DANGER;
+                    background-color: $project-button-option-background-color-DANGER;
+                    border-color: $project-button-option-border-color-DANGER;
+
+                    // desktop
+                    @include media-breakpoint-up(xl) {
+                        &:hover,
+                        &:focus {
+                            color: $project-button-option-color-DANGER-HOVER;
+                            background-color: $project-button-option-background-color-DANGER-HOVER;
+                            border-color: $project-button-option-border-color-DANGER-HOVER;
+                        }
+                    }
+                }
+            }
+        }
+
+        #tarteaucitronScrollbarChild + a{
+            display: none !important;
+        }
+    }
+}

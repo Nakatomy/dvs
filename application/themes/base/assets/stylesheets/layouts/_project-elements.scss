@@ -1,0 +1,128 @@
+/*** Project elements ***/
+
+/* card START */
+
+.main{
+
+    .card{
+        @include project-default-transition();
+        @include css3-border-radius(3px);
+        @include css3-box-shadow(0px, 1px, 3px, rgba($color-black, .3));
+        border: 1px solid rgba($color-black, .1);
+        padding: 0;
+
+        .ie &{
+            display: block;
+        }
+
+        &-image{
+
+        }
+
+        &-body{
+            padding: 15px;
+        }
+
+        a{
+            display: inline-block;
+
+            &:not(.btn){
+                padding: 0;
+            }
+        }
+
+        // desktop
+        @include media-breakpoint-up(xl) {
+            &:hover,
+            &:focus {
+                @include css3-box-shadow(0px, 2px, 4px, rgba($color-black, .4));
+            }
+        }
+    }
+}
+
+div.card{
+
+    a{
+        padding: 0;
+    }
+}
+
+.cc-btn{
+    border-radius: $project-button-border-radius;
+
+    &.cc-dismiss {
+        border: 1px solid $project-button-option-border-color-PRIMARY;
+    }
+
+    &.cc-allow {
+        background-color: $project-cookie-bar-button-allow-background-color !important;
+        color: $project-cookie-bar-button-allow-text-color !important;
+        padding: $project-cookie-bar-button-allow-padding;
+    }
+
+}
+
+.subpage-header{
+    margin-top: $headerHeight;
+    padding-top: 2rem;
+    text-align: center;
+
+    @include media-breakpoint-down(sm) {
+        padding-bottom: $project-spacer-vertical-MOBILE;
+    }
+
+    // tablet
+    @include media-breakpoint-between(md, lg) {
+        padding-bottom: $project-spacer-vertical-TABLET;
+    }
+
+    // laptop
+    @include media-breakpoint-only(xl) {
+        padding-bottom: $project-spacer-vertical-LAPTOP;
+    }
+
+    // hd
+    @include media-breakpoint-up(hd) {
+        padding-bottom: $project-spacer-vertical-HD;
+    }
+
+    p{
+        margin-bottom: 0;
+    }
+
+    &.case-studies{
+        text-align: left;
+
+        .case-header{
+            font-size: 0.875rem;
+            line-height: 1.2;
+            color: $color-dark-gray;
+
+            // desktop
+            @include media-breakpoint-up(xl) {
+                &:hover,
+                &:focus {
+                    text-decoration: none;
+                    color: $color-black;
+                }
+            }
+        }
+
+        h1{
+            font-size: 4rem;
+            line-height: 4.5rem;
+            margin-bottom: 4rem;
+        }
+    }
+
+    .subpage-top{
+
+        p{
+            font-size: 0.875rem;
+            line-height: 0.875rem;
+            color: rgba($color-theme-primary, .4);
+        }
+    }
+}
+/* card END */

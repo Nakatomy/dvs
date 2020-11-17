@@ -1,0 +1,275 @@
+/*** Admin modifications ***/
+
+/* admin START */
+
+// edit mode fixes
+.ccm-edit-mode{
+
+    .header,
+    .footer{
+        position: relative;
+
+        .container{
+            height: auto;
+            min-height: $headerHeight;
+
+            .ccm-area{
+                width: 100%;
+            }
+        }
+    }
+
+    .footer{
+
+        .container{
+            padding-bottom: 40px;
+
+            .ccm-area{
+                width: 100%;
+            }
+        }
+    }
+
+    .ccm-area-block-list{
+        position: relative;
+
+        .container{
+            max-width: none;
+            width: auto;
+            height: auto;
+            max-width: $container-max-width-xl;
+        }
+    }
+}
+
+$color-white:             #FFFFFF !default;
+$color-white-gray:        #F9F9F9 !default;
+$login-color-light-gray:        #E5E5E5 !default;
+$login-color-gray:              #9D9D9D !default;
+$login-color-black:             #000000 !default;
+$login-color-light-blue:        #F4F5F7 !default;
+
+$login-font-size:               16px !default;
+$login-font-family:             $project-default-font-family !default;
+
+.user-management-custom{
+
+    &-page{
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 5% 0;
+        background-color: $color-theme-primary;
+    }
+
+    &-inside{
+        border-radius: 1rem;
+        padding: 2rem 1.5rem;
+        width: 500px;
+        background: $color-white;
+        box-shadow: 0 0 15px 5px rgba($color-white, .3);
+
+        // mobile
+        @include media-breakpoint-down(sm) {
+            width: auto;
+            width: 290px;
+            padding: 20px 15px;
+        }
+    }
+
+    &-logo{
+        text-align: center;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid $login-color-light-gray;
+
+        img{
+            max-width: 200px;
+        }
+    }
+
+    &-header{
+        margin-bottom: 20px;
+        text-align: center;
+
+        img{
+            display: block;
+            max-width: 90px;
+            margin: 0 auto;
+        }
+
+        h1{
+            font-size: 2.75rem;
+            line-height: 3rem;
+        }
+    }
+
+    &-form{
+        width: 350px;
+        margin: 0 auto;
+
+        // mobile
+        @include media-breakpoint-down(sm) {
+            width: 100%;
+        }
+
+        p{
+            font-family: $login-font-family;
+            font-size: $login-font-size;
+            line-height: 24px;
+            font-weight: 300;
+            color: $login-color-black;
+            margin-bottom: 22px;
+        }
+
+        a{
+            font-family: $login-font-family;
+            font-size: $login-font-size;
+            line-height: 24px;
+            font-weight: 700;
+            color: $login-color-gray;
+            text-decoration: none !important;
+
+            &:before,
+            &:after{
+                display: none !important;
+            }
+
+            // desktop
+            @include media-breakpoint-up(xl) {
+                &:hover,
+                &:focus {
+                    color: $color-theme-primary;
+                }
+            }
+        }
+
+        .alert{
+            @include css3-border-radius(0);
+        }
+
+        input.form-control{
+            background: #fff !important;
+            border-top: 0 !important;
+            border-left: 0 !important;
+            border-right: 0 !important;
+            border-color: $color-theme-primary-dark !important;
+            border-style: solid;
+            border-radius: 0 !important;
+            padding: 0 15px !important;
+
+            &:-webkit-autofill,
+            &:-webkit-autofill:focus,
+            &:-webkit-autofill:hover{
+                background: #fff !important;
+                outline: 0 !important;
+            }
+        }
+
+        .form-checkbox{
+
+            label{
+                position: relative;
+                cursor: pointer;
+                height: 20px;
+                line-height: 20px;
+                padding-left: 25px;
+                font-size: .7rem;
+
+                &:before,
+                &:after{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 20px;
+                    height: 20px;
+                    text-align: center;
+                }
+
+                &:before{
+                    background-color: $color-white;
+                    border: 1px solid $color-gray;
+                }
+
+                &:after{
+                    @include project-default-transition();
+                    @include css3-opacity(0);
+                    @include css3-transform(scale(.7));
+                    font-family: "Font Awesome 5 Free";
+                    content: '\f00c';
+                    font-weight: 900;
+                    font-size: 14px;
+                }
+            }
+
+            input{
+                visibility: hidden;
+                display: none;
+
+                &:checked + label:after{
+                    @include css3-transform(scale(1));
+                    @include css3-opacity(1);
+                }
+            }
+        }
+
+        .btn{
+            @include css3-border-radius($project-button-border-radius);
+            @include project-button-box-shadow();
+            @include project-default-transition();
+            outline: 0 !important;
+            background: $project-button-background-color;
+            border-color: $project-button-border-color;
+            border-width: $project-button-border-width;
+            color: $project-button-color;
+            cursor: pointer;
+            font-family: $project-button-font-family;
+            font-size: $project-button-font-size;
+            height: $project-button-height;
+            line-height: $project-button-line-height;
+            margin: 0;
+            padding: $project-button-padding;
+            text-decoration: none;
+            vertical-align: top;
+            text-transform: uppercase;
+            letter-spacing: 0.125rem;
+            position: relative;
+            margin-right: 5px;
+            margin-left: 5px;
+
+            i{
+
+                &:before{
+                    color: $color-white;
+                }
+            }
+
+            // desktop
+            @include media-breakpoint-up(xl) {
+                &:hover,
+                &:focus {
+                    @include css3-opacity($project-button-opacity-HOVER);
+                    background: $project-button-background-color-HOVER;
+                    border-color: $project-button-border-color-HOVER;
+                    color: $project-button-color-HOVER;
+                    text-decoration: none !important;
+
+                    i{
+
+                        &:before{
+                            color: $project-button-color-HOVER;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+/* admin END */
+
+
+/* admin END */

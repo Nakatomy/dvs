@@ -1,0 +1,54 @@
+/*** ball scale ripple multiple ***/
+/* HTML: <div class="loader-ball-scale-ripple-multiple"><div></div><div></div><div></div></div> */
+
+@include css3-keyframes(loader-ball-scale-ripple-multiple) {
+	0% {
+		@include css3-prefix(transform, scale(0.1));
+		@include css3-opacity(1);
+	}
+	70% {
+		@include css3-prefix(transform, scale(1));
+		@include css3-opacity(0.7);
+	}
+	100% {
+		@include css3-opacity(0);
+	}
+}
+
+.loader-ball-scale-ripple-multiple {
+	position: relative;
+
+	> div {
+		@include css3-animation(loader-ball-scale-ripple-multiple $project-loader-item-speed 0s infinite cubic-bezier(.21, .53, .56, .8));
+		@include css3-border-radius(100%);
+		@include css3-prefix(animation-fill-mode, both);
+		border-style: solid;
+		border-width: ( $project-loader-item-size * 0.1333333333333333 );
+		height: ( $project-loader-item-size * 3.333333333333333 );
+		left: 50%;
+		margin-left: -( ( $project-loader-item-size * 3.333333333333333 ) / 2 );
+		margin-top: -( ( $project-loader-item-size * 3.333333333333333 ) / 2 );
+		position: absolute;
+		top: 50%;
+		width: ( $project-loader-item-size * 3.333333333333333 );
+
+		&:nth-child(0) {
+			@include css3-prefix(animation-delay, -( ( $project-loader-item-speed / 10 ) * 4 ) );
+		}
+
+		&:nth-child(1) {
+			@include css3-prefix(animation-delay, -( ( $project-loader-item-speed / 10 ) * 3 ) );
+			border-color: $project-loader-item-1-color;
+		}
+
+		&:nth-child(2) {
+			@include css3-prefix(animation-delay, -( ( $project-loader-item-speed / 10 ) * 2 ) );
+			border-color: $project-loader-item-2-color;
+		}
+
+		&:nth-child(3) {
+			@include css3-prefix(animation-delay, -( ( $project-loader-item-speed / 10 ) * 1 ) );
+			border-color: $project-loader-item-3-color;
+		}
+	}
+}

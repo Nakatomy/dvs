@@ -1,0 +1,312 @@
+/*** Project checkbox + radio skin ***/
+
+/* checkbox + radio skin START */
+
+.main {
+
+	// checkbox skin + radio button skin
+	.checkbox-skin,
+	.radio-skin {
+
+        &.form-check{
+            padding: 0;
+        }
+
+		&-inline{
+			display: inline-block;
+			margin-right: 5px;
+		}
+
+		// label
+		label {
+			display: inline-block;
+			padding-left: $project-checkradio-width + $project-checkradio-distance;
+			position: relative;
+			vertical-align: top;
+			cursor: pointer;
+
+			// background + border
+			&:before {
+				@include project-default-transition();
+				background-color: $project-checkradio-background-color;
+				border: $project-checkradio-border-width solid $project-checkradio-border-color;
+				content: '';
+				display: inline-block;
+				height: $project-checkradio-height;
+				left: 0;
+				top: 5px;
+				position: absolute;
+				vertical-align: top;
+                width: $project-checkradio-width;
+			}
+
+			// inside icon
+			&:after {
+				@include project-default-transition();
+				cursor: pointer;
+				display: inline-block;
+				position: absolute;
+				vertical-align: top;
+                font-weight: 900;
+			}
+		}
+
+		// input
+		input[type="checkbox"],
+		input[type="radio"] {
+			margin: 0;
+			opacity: 0;
+			z-index: 1;
+			display: none; // hotfix
+
+			// focus
+			&:focus + label {
+
+				// background + border
+				&:before {
+					background-color: $project-checkradio-background-color-FOCUS;
+					border-color: $project-checkradio-border-color-FOCUS;
+				}
+
+				// inside icon
+				&:after {}
+			}
+
+			// checked
+			&:checked + label {
+
+				// background + border
+				&:before {
+					background-color: $project-checkradio-background-color-CHECKED;
+					border-color: $project-checkradio-border-color-CHECKED;
+				}
+
+				// inside icon
+				&:after {}
+			}
+		}
+	}
+
+		// checkbox error + radio button error
+		.has-error .checkbox-skin input[type="checkbox"] + label,
+		.has-error .checkbox-skin input[type="radio"] + label,
+		.checkbox-skin input[type="checkbox"].error + label,
+		.checkbox-skin input[type="radio"].error + label,
+		.has-error .radio-skin input[type="checkbox"] + label,
+		.has-error .radio-skin input[type="radio"] + label,
+		.radio-skin input[type="checkbox"].error + label,
+		.radio-skin input[type="radio"].error + label {
+
+			&:before {
+				background-color: $project-checkradio-background-color-ERROR;
+				border-color: $project-checkradio-border-color-ERROR;
+			}
+
+			&:after {}
+		}
+
+		// checkbox disabled + radio button disabled
+		.disabled .checkbox-skin input[type="checkbox"] + label,
+		.disabled .checkbox-skin input[type="radio"] + label,
+		.checkbox-skin input[type="checkbox"]:disabled + label,
+		.checkbox-skin input[type="radio"]:disabled + label,
+		.disabled .radio-skin input[type="checkbox"] + label,
+		.disabled .radio-skin input[type="radio"] + label,
+		.radio-skin input[type="checkbox"]:disabled + label,
+		.radio-skin input[type="radio"]:disabled + label {
+
+			&:before {
+				background-color: $project-checkradio-background-color-DISABLED;
+				border-color: $project-checkradio-border-color-DISABLED;
+				cursor: not-allowed;
+			}
+
+			&:after {}
+		}
+
+	// checkbox skin
+	.checkbox-skin {
+
+		// label
+		label {
+
+			// background + border
+			&:before {
+				@include css3-border-radius($project-checkradio-border-radius);
+			}
+
+			// inside icon
+			&:after {
+				@include css3-transform(scale(0, 0));
+				@include css3-opacity(0);
+				color: $project-checkradio-inside-color;
+				content: $project-checkradio-checkbox-icon;
+				font-size: $project-checkradio-checkbox-size;
+				height: $project-checkradio-height;
+				left: 0;
+				line-height: $project-checkradio-height !important;
+				text-align: center;
+				top: 5px;
+				width: $project-checkradio-width;
+
+				@if $project-checkradio-checkbox-font-family == icomoon {
+					@include icomoon();
+				} @else {
+					font-family: $project-checkradio-checkbox-font-family;
+				}
+
+				// chrome + opera bugfix
+				// .chrome &,
+				// .opera & {
+				// 	margin-top: 1px;
+				// }
+			}
+		}
+
+		// input
+		input[type="checkbox"] {
+
+			// checked
+			&:checked + label {
+
+				&:after {
+					@include css3-transform(scale(1));
+				}
+			}
+		}
+
+		// input
+		input[type="checkbox"],
+		input[type="radio"] {
+
+			// focus
+			&:focus + label {
+
+				&:before {}
+
+				&:after {
+					color: $project-checkradio-inside-color-FOCUS;
+				}
+			}
+
+			// checked
+			&:checked + label {
+
+				&:before {}
+
+				&:after {
+					@include css3-opacity(1);
+					color: $project-checkradio-inside-color-CHECKED;
+				}
+			}
+		}
+
+		// circle
+		&.checkbox-skin-circle label:before {
+			@include css3-border-radius(50%);
+		}
+	}
+
+		// checkbox error
+		.has-error .checkbox-skin input[type="checkbox"] + label,
+		.has-error .checkbox-skin input[type="radio"] + label,
+		.checkbox-skin input[type="checkbox"].error + label,
+		.checkbox-skin input[type="radio"].error + label {
+
+			&:before {}
+
+			&:after {
+				color: $project-checkradio-inside-color-ERROR;
+			}
+		}
+
+		// checkbox disabled
+		.disabled .checkbox-skin input[type="checkbox"] + label,
+		.disabled .checkbox-skin input[type="radio"] + label,
+		.checkbox-skin input[type="checkbox"]:disabled + label,
+		.checkbox-skin input[type="radio"]:disabled + label {
+
+			&:before {}
+
+			&:after {
+				color: $project-checkradio-inside-color-DISABLED;
+			}
+		}
+
+	// radio button skin
+	.radio-skin {
+
+		// label
+		label {
+
+			// background + border
+			&:before {
+				@include css3-border-radius(50%);
+			}
+
+			// inside icon
+			&:after {
+				@include css3-border-radius(100%);
+				@include css3-transform(scale(0));
+				content: '';
+				height: $project-checkradio-radio-size;
+				left: ( $project-checkradio-width - $project-checkradio-radio-size ) / 2;
+				top: 10px;
+				width: $project-checkradio-radio-size;
+			}
+		}
+
+		// input
+		input[type="radio"] {
+
+			// focus
+			&:focus + label {
+
+				&:before {}
+
+				&:after {
+					background-color: $project-checkradio-inside-color-FOCUS;
+				}
+			}
+
+			// checked
+			&:checked + label {
+
+				&:before {}
+
+				&:after {
+					@include css3-transform(scale(1));
+					background-color: $project-checkradio-inside-color-CHECKED;
+				}
+			}
+		}
+	}
+
+		// radio button error
+		.has-error .radio-skin input[type="checkbox"] + label,
+		.has-error .radio-skin input[type="radio"] + label,
+		.radio-skin input[type="checkbox"].error + label,
+		.radio-skin input[type="radio"].error + label {
+
+			&:before {}
+
+			&:after {
+				background-color: $project-checkradio-inside-color-ERROR;
+			}
+		}
+
+		// radio button disabled
+		.disabled .radio-skin input[type="checkbox"] + label,
+		.disabled .radio-skin input[type="radio"] + label,
+		.radio-skin input[type="checkbox"]:disabled + label,
+		.radio-skin input[type="radio"]:disabled + label {
+
+			&:before {}
+
+			&:after {
+				background-color: $project-checkradio-inside-color-DISABLED;
+			}
+		}
+}
+
+/* checkbox + radio skin END */
