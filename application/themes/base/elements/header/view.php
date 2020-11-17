@@ -21,9 +21,10 @@
         <link rel="stylesheet" href="<?php echo $this->getThemePath(); ?>/assets/tarteaucitron/css/tarteaucitron.css" />
         <script src="<?php echo $this->getThemePath(); ?>/assets/tarteaucitron/tarteaucitron.js" crossorigin="anonymous"></script>
         <script src="<?php echo $this->getThemePath(); ?>/assets/tarteaucitron/lang/tarteaucitron.de.js"></script>
+        <script src="<?php echo $this->getThemePath(); ?>/assets/tarteaucitron/lang/tarteaucitron.de.js"></script>
         <script src="<?php echo $this->getThemePath(); ?>/assets/tarteaucitron/lang/tarteaucitron.fr.js"></script>
         <script src="<?php echo $this->getThemePath(); ?>/assets/tarteaucitron/lang/tarteaucitron.es.js"></script>
-        <script src="<?php echo $this->getThemePath(); ?>/assets/tarteaucitron/lang/tarteaucitron.en.js"></script>
+        <script src="<?php echo $this->getThemePath(); ?>/assets/stylesheets/new.css"></script>
 
         <script type="text/javascript">
             tarteaucitron.init({

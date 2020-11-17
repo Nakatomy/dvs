@@ -28,3 +28,5 @@
         </div>
     </div>
 </footer>
+
+<button id="tarteaucitronManager" class="cookie-open">Cookie Einstellungen</button>

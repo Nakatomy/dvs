@@ -13,12 +13,12 @@
         &.filled{
 
             .control-label{
-                transform: scale(.75);
+                // transform: scale(.75);
                 top: -$project-label-line-height / 2;
             }
 
             .control-label + span{
-                transform: scale(.75);
+                // transform: scale(.75);
                 top: -$project-label-line-height / 2;
             }
         }

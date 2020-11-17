@@ -808,10 +808,11 @@ var tarteaucitron = {
 
                 if (property == "display" && value == "none" && (id == "tarteaucitron" || id == "tarteaucitronBack" || id == "tarteaucitronAlertBig")) {
                     document.getElementById(id).style["opacity"] = "0";
+                    document.getElementById(id).style["visibility"] = "hidden";
 
                     setTimeout(function() {document.getElementById(id).style[property] = value;}, 200);
-                } else {
-
+                  } else {
+                    document.getElementById(id).style["visibility"] = "visible";
                     document.getElementById(id).style[property] = value;
 
                     if (property == "display" && value == "block" && (id == "tarteaucitron" || id == "tarteaucitronAlertBig")) {
