@@ -30,6 +30,11 @@
                         margin-left: 4.25rem ;
                     }
 
+                    // tablet
+                    @include media-breakpoint-between(md, lg) {
+                        margin-left: 5.5rem;
+                    }
+
                     li{
                         margin: 0 0.5rem;
 
