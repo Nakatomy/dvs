@@ -137,6 +137,7 @@ $transitionType: cubic-bezier(0.25, 0.46, 0.45, 0.94);
             p{
                 color: rgba($color-white, 0.8);
                 max-width: 25rem;
+                padding-left: .5rem;
 
                 strong{
                     font-family: $project-default-font-family-1-REGULAR;
