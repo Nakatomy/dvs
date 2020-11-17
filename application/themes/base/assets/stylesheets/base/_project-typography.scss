@@ -222,7 +222,11 @@
 		font-family: $project-p-font-family;
 		font-size: $project-p-font-size;
 		line-height: $project-p-line-height;
-		margin: 0 0 $project-p-margin 0;
+        margin: 0 0 $project-p-margin 0;
+
+        a{
+            font-size: $project-p-font-size !important;
+        }
 	}
 
 	// ul / ol
