@@ -276,8 +276,8 @@
                     .page-type-full &{
                         color: $color-theme-primary;
 
-                        // mobile
-                        @include media-breakpoint-down(sm) {
+                        // mobile + tablet
+                        @include media-breakpoint-down(lg) {
                             color: $color-white;
                         }
 
