@@ -27,12 +27,12 @@
 
                     // desktop
                     @include media-breakpoint-up(xl) {
-                        margin-left: 4.25rem ;
+                        margin-left: 5.75rem ;
                     }
 
                     // tablet
                     @include media-breakpoint-between(md, lg) {
-                        margin-left: 5.5rem;
+                        margin-left: 7.5rem;
                     }
 
                     li{
