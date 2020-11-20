@@ -2,6 +2,8 @@
 <html lang="<?php echo Localization::activeLanguage(); ?>" id="html" class="no-js lang-<?php echo Localization::activeLanguage(); ?>">
     <head>
         <?php View::element('seo/after_head_open', [], $theme->getPackageHandle()); ?>
+        <link rel="preload" href="<?php echo BASE_URL; ?>/application/css/dist/base.css" as="style">
+        <link rel="preload" href="<?php echo BASE_URL; ?>/application/js/dist/base.js" as="script">
         <?php View::element('meta/common', [], 'base'); ?>
         <?php View::element('meta/viewport', [], 'base'); ?>
         <?php View::element('seo/meta_colors', ['color' => '#101112'], 'base'); ?>
@@ -18,13 +20,12 @@
             var $htmlClasses = document.getElementById('html');
             $htmlClasses.className = $htmlClasses.className.replace(/(\s|^)no-js(\s|$)/,' ').replace(/(\s$)(^\s)/,'');
         </script>
-        <link rel="stylesheet" href="<?php echo $this->getThemePath(); ?>/assets/tarteaucitron/css/tarteaucitron.css" />
-        <script src="<?php echo $this->getThemePath(); ?>/assets/tarteaucitron/tarteaucitron.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="<?php echo $this->getThemePath(); ?>/assets/tarteaucitron/css/tarteaucitron.min.css" />
+        <script src="<?php echo $this->getThemePath(); ?>/assets/tarteaucitron/tarteaucitron.min.js" crossorigin="anonymous"></script>
         <script src="<?php echo $this->getThemePath(); ?>/assets/tarteaucitron/lang/tarteaucitron.de.js"></script>
         <script src="<?php echo $this->getThemePath(); ?>/assets/tarteaucitron/lang/tarteaucitron.de.js"></script>
         <script src="<?php echo $this->getThemePath(); ?>/assets/tarteaucitron/lang/tarteaucitron.fr.js"></script>
         <script src="<?php echo $this->getThemePath(); ?>/assets/tarteaucitron/lang/tarteaucitron.es.js"></script>
-        <script src="<?php echo $this->getThemePath(); ?>/assets/stylesheets/new.css"></script>
 
         <script type="text/javascript">
             tarteaucitron.init({
