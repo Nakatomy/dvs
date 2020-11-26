@@ -29,4 +29,4 @@
     </div>
 </footer>
 
-<button id="tarteaucitronManager" class="cookie-open">Cookie Einstellungen</button>
+<button id="tarteaucitronManager" class="cookie-open"><?php echo t("Cookie Settings");?></button>
