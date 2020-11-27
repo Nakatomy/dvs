@@ -446,7 +446,6 @@
                 "type": "zip",
                 "url": "https://composer.dev.webery.com/repo/private/dists/concrete5/accordion/1.2.3.0/75ca5e289894b73e31e39aee2f57d85f2dcde7bc.zip",
                 "reference": "75ca5e289894b73e31e39aee2f57d85f2dcde7bc",
-                "shasum": null,
                 "mirrors": [
                     {
                         "url": "https://composer.dev.webery.com/repo/private/dists/%package%/%version%/%reference%.%type%",
@@ -486,7 +485,6 @@
                 "type": "zip",
                 "url": "http://composer.assist01.gbart.h3.hu/repo/private/dists/concrete5/advertisement/1.0.1.0/de1c09ae9791d24f1c60c8f8335416e9dc8cfded.zip",
                 "reference": "de1c09ae9791d24f1c60c8f8335416e9dc8cfded",
-                "shasum": null,
                 "mirrors": [
                     {
                         "url": "https://composer.dev.webery.com/repo/private/dists/%package%/%version%/%reference%.%type%",
@@ -525,7 +523,6 @@
                 "type": "zip",
                 "url": "https://composer.dev.webery.com/repo/private/dists/concrete5/afixia_seo_redirects/1.0.1.0/5dd213f4dcb8d83b8801dd9d1173771a011b63a5.zip",
                 "reference": "5dd213f4dcb8d83b8801dd9d1173771a011b63a5",
-                "shasum": null,
                 "mirrors": [
                     {
                         "url": "https://composer.dev.webery.com/repo/private/dists/%package%/%version%/%reference%.%type%",
@@ -564,7 +561,6 @@
                 "type": "zip",
                 "url": "https://composer.dev.webery.com/repo/private/dists/concrete5/animations/1.0.2.0/9bf2090bfd9156d4ab7762e54012a4d3aee17727.zip",
                 "reference": "9bf2090bfd9156d4ab7762e54012a4d3aee17727",
-                "shasum": null,
                 "mirrors": [
                     {
                         "url": "https://composer.dev.webery.com/repo/private/dists/%package%/%version%/%reference%.%type%",
@@ -603,7 +599,6 @@
                 "type": "zip",
                 "url": "https://composer.dev.webery.com/repo/private/dists/concrete5/base/1.2.4.0/c372c9c5ad364705178019e0e02379a0f879c998.zip",
                 "reference": "c372c9c5ad364705178019e0e02379a0f879c998",
-                "shasum": null,
                 "mirrors": [
                     {
                         "url": "https://composer.dev.webery.com/repo/private/dists/%package%/%version%/%reference%.%type%",
@@ -643,7 +638,6 @@
                 "type": "zip",
                 "url": "https://composer.dev.webery.com/repo/private/dists/concrete5/breadcrumb/1.0.1.0/f5fc9528666d3f67ca522f560efc11fe105f8adf.zip",
                 "reference": "f5fc9528666d3f67ca522f560efc11fe105f8adf",
-                "shasum": null,
                 "mirrors": [
                     {
                         "url": "https://composer.dev.webery.com/repo/private/dists/%package%/%version%/%reference%.%type%",
@@ -682,7 +676,6 @@
                 "type": "zip",
                 "url": "https://composer.dev.webery.com/repo/private/dists/concrete5/ck_editor4/1.0.7.0/d19499e70b87a5560d615c976f50e8fae1ee2dc2.zip",
                 "reference": "d19499e70b87a5560d615c976f50e8fae1ee2dc2",
-                "shasum": null,
                 "mirrors": [
                     {
                         "url": "https://composer.dev.webery.com/repo/private/dists/%package%/%version%/%reference%.%type%",
@@ -716,7 +709,6 @@
                 "type": "zip",
                 "url": "https://composer.dev.webery.com/repo/private/dists/concrete5/concrete/1.0.15.0-beta/9c4131b76c8aa6cc0a9eb59e44f5bcf9b3026ac5.zip",
                 "reference": "9c4131b76c8aa6cc0a9eb59e44f5bcf9b3026ac5",
-                "shasum": null,
                 "mirrors": [
                     {
                         "url": "https://composer.dev.webery.com/repo/private/dists/%package%/%version%/%reference%.%type%",
@@ -750,7 +742,6 @@
                 "type": "zip",
                 "url": "https://composer.dev.webery.com/repo/private/dists/concrete5/divided_content/1.0.2.0/102436dc62acb0e3bea7023f00837022a2edc0fd.zip",
                 "reference": "102436dc62acb0e3bea7023f00837022a2edc0fd",
-                "shasum": null,
                 "mirrors": [
                     {
                         "url": "https://composer.dev.webery.com/repo/private/dists/%package%/%version%/%reference%.%type%",
@@ -830,7 +821,6 @@
                 "type": "zip",
                 "url": "http://composer.assist01.gbart.h3.hu/repo/private/dists/concrete5/featured_content/1.0.0.0/aa0084b6729d9fe930693edc869215fe5874e5fb.zip",
                 "reference": "aa0084b6729d9fe930693edc869215fe5874e5fb",
-                "shasum": null,
                 "mirrors": [
                     {
                         "url": "https://composer.dev.webery.com/repo/private/dists/%package%/%version%/%reference%.%type%",
@@ -869,7 +859,6 @@
                 "type": "zip",
                 "url": "https://composer.dev.webery.com/repo/private/dists/concrete5/file_list/1.2.1.0/d1b6e1973d2652c6279cdcf8b7425d8deb85ff33.zip",
                 "reference": "d1b6e1973d2652c6279cdcf8b7425d8deb85ff33",
-                "shasum": null,
                 "mirrors": [
                     {
                         "url": "https://composer.dev.webery.com/repo/private/dists/%package%/%version%/%reference%.%type%",
@@ -975,7 +964,6 @@
                 "type": "zip",
                 "url": "https://composer.dev.webery.com/repo/private/dists/concrete5/form/1.3.4.0/c4d33faa480d1fa51316ffee702a670dc2220191.zip",
                 "reference": "c4d33faa480d1fa51316ffee702a670dc2220191",
-                "shasum": null,
                 "mirrors": [
                     {
                         "url": "https://composer.dev.webery.com/repo/private/dists/%package%/%version%/%reference%.%type%",
@@ -1009,7 +997,6 @@
                 "type": "zip",
                 "url": "https://composer.dev.webery.com/repo/private/dists/concrete5/gdpr/1.1.2.0/079f6639bf6831c37da4d581afb8fadfba7c53c2.zip",
                 "reference": "079f6639bf6831c37da4d581afb8fadfba7c53c2",
-                "shasum": null,
                 "mirrors": [
                     {
                         "url": "https://composer.dev.webery.com/repo/private/dists/%package%/%version%/%reference%.%type%",
@@ -1048,7 +1035,6 @@
                 "type": "zip",
                 "url": "https://composer.dev.webery.com/repo/private/dists/concrete5/google_map/2.1.4.0/0ccb2fb51ea2b76ce04e3a9776f219ae0eb5688a.zip",
                 "reference": "0ccb2fb51ea2b76ce04e3a9776f219ae0eb5688a",
-                "shasum": null,
                 "mirrors": [
                     {
                         "url": "https://composer.dev.webery.com/repo/private/dists/%package%/%version%/%reference%.%type%",
@@ -1082,7 +1068,6 @@
                 "type": "zip",
                 "url": "https://composer.dev.webery.com/repo/private/dists/concrete5/hero/1.1.3.0/39ed5605f131ab94613aad9dfaf34767ffb18fa1.zip",
                 "reference": "39ed5605f131ab94613aad9dfaf34767ffb18fa1",
-                "shasum": null,
                 "mirrors": [
                     {
                         "url": "https://composer.dev.webery.com/repo/private/dists/%package%/%version%/%reference%.%type%",
@@ -1121,7 +1106,6 @@
                 "type": "zip",
                 "url": "https://composer.dev.webery.com/repo/private/dists/concrete5/image_gallery/1.0.10.0/6f12f178b4a5a0dc67bfbd53450530cab42fd03c.zip",
                 "reference": "6f12f178b4a5a0dc67bfbd53450530cab42fd03c",
-                "shasum": null,
                 "mirrors": [
                     {
                         "url": "https://composer.dev.webery.com/repo/private/dists/%package%/%version%/%reference%.%type%",
@@ -1160,7 +1144,6 @@
                 "type": "zip",
                 "url": "https://composer.dev.webery.com/repo/private/dists/concrete5/material_dashboard/1.1.11.0-beta/4c158612f121326cbd0fc089a03a4b021c8b21de.zip",
                 "reference": "4c158612f121326cbd0fc089a03a4b021c8b21de",
-                "shasum": null,
                 "mirrors": [
                     {
                         "url": "https://composer.dev.webery.com/repo/private/dists/%package%/%version%/%reference%.%type%",
@@ -1205,7 +1188,6 @@
                 "type": "zip",
                 "url": "https://composer.dev.webery.com/repo/private/dists/concrete5/modal_manager/1.0.6.0/3fa0c28dcdb3f40093268ce4856523f15a7fe276.zip",
                 "reference": "3fa0c28dcdb3f40093268ce4856523f15a7fe276",
-                "shasum": null,
                 "mirrors": [
                     {
                         "url": "https://composer.dev.webery.com/repo/private/dists/%package%/%version%/%reference%.%type%",
@@ -1244,7 +1226,6 @@
                 "type": "zip",
                 "url": "https://composer.dev.webery.com/repo/private/dists/concrete5/navigation/1.0.8.0/f3348af3482f383b3d1a7113fdd885786276c163.zip",
                 "reference": "f3348af3482f383b3d1a7113fdd885786276c163",
-                "shasum": null,
                 "mirrors": [
                     {
                         "url": "https://composer.dev.webery.com/repo/private/dists/%package%/%version%/%reference%.%type%",
@@ -1283,7 +1264,6 @@
                 "type": "zip",
                 "url": "https://composer.dev.webery.com/repo/private/dists/concrete5/opening_hours/1.0.3.0/190d138b9766777689af510e40d240c0c3660599.zip",
                 "reference": "190d138b9766777689af510e40d240c0c3660599",
-                "shasum": null,
                 "mirrors": [
                     {
                         "url": "https://composer.dev.webery.com/repo/private/dists/%package%/%version%/%reference%.%type%",
@@ -1322,7 +1302,6 @@
                 "type": "zip",
                 "url": "https://composer.dev.webery.com/repo/private/dists/concrete5/service_card/1.0.6.0/b9990cd8a0d31dac3622467858694d55232c6d26.zip",
                 "reference": "b9990cd8a0d31dac3622467858694d55232c6d26",
-                "shasum": null,
                 "mirrors": [
                     {
                         "url": "https://composer.dev.webery.com/repo/private/dists/%package%/%version%/%reference%.%type%",
@@ -1361,7 +1340,6 @@
                 "type": "zip",
                 "url": "https://composer.dev.webery.com/repo/private/dists/concrete5/share_this_page/1.0.1.0/f1ae14da2c45ee4455ec7a7c1ce3110492b13c79.zip",
                 "reference": "f1ae14da2c45ee4455ec7a7c1ce3110492b13c79",
-                "shasum": null,
                 "mirrors": [
                     {
                         "url": "https://composer.dev.webery.com/repo/private/dists/%package%/%version%/%reference%.%type%",
@@ -1400,7 +1378,6 @@
                 "type": "zip",
                 "url": "http://composer.assist01.gbart.h3.hu/repo/private/dists/concrete5/soundcloud/1.0.0.0/c15e6b9626fac5cdc934963e616335db3bdf3d96.zip",
                 "reference": "c15e6b9626fac5cdc934963e616335db3bdf3d96",
-                "shasum": null,
                 "mirrors": [
                     {
                         "url": "https://composer.dev.webery.com/repo/private/dists/%package%/%version%/%reference%.%type%",
@@ -1439,7 +1416,6 @@
                 "type": "zip",
                 "url": "https://composer.dev.webery.com/repo/private/dists/concrete5/symfony_forms/1.0.0.0/80387fb5ac6310883c6f32c993a000dd921e12a5.zip",
                 "reference": "80387fb5ac6310883c6f32c993a000dd921e12a5",
-                "shasum": null,
                 "mirrors": [
                     {
                         "url": "https://composer.dev.webery.com/repo/private/dists/%package%/%version%/%reference%.%type%",
@@ -1473,7 +1449,6 @@
                 "type": "zip",
                 "url": "https://composer.dev.webery.com/repo/private/dists/concrete5/team_member_list/1.1.4.0/c9a64c2e3bd88ce8e0a992b99e9ac2f71d650256.zip",
                 "reference": "c9a64c2e3bd88ce8e0a992b99e9ac2f71d650256",
-                "shasum": null,
                 "mirrors": [
                     {
                         "url": "https://composer.dev.webery.com/repo/private/dists/%package%/%version%/%reference%.%type%",
@@ -1512,7 +1487,6 @@
                 "type": "zip",
                 "url": "https://composer.dev.webery.com/repo/private/dists/concrete5/testimonial/1.0.2.0/a7ab592dc0644715f57f15c4a65dfb9117b11d09.zip",
                 "reference": "a7ab592dc0644715f57f15c4a65dfb9117b11d09",
-                "shasum": null,
                 "mirrors": [
                     {
                         "url": "https://composer.dev.webery.com/repo/private/dists/%package%/%version%/%reference%.%type%",
@@ -1551,7 +1525,6 @@
                 "type": "zip",
                 "url": "https://composer.dev.webery.com/repo/private/dists/concrete5/text_slider/1.0.3.0/1e7f527ce52b8a822ce2de8b1e3b8d8be06d392f.zip",
                 "reference": "1e7f527ce52b8a822ce2de8b1e3b8d8be06d392f",
-                "shasum": null,
                 "mirrors": [
                     {
                         "url": "https://composer.dev.webery.com/repo/private/dists/%package%/%version%/%reference%.%type%",
@@ -1590,7 +1563,6 @@
                 "type": "zip",
                 "url": "https://composer.dev.webery.com/repo/private/dists/concrete5/timeline/1.0.5.0/c91cd0676d6f3ec7e74730e8b6e5a7d0858f91fd.zip",
                 "reference": "c91cd0676d6f3ec7e74730e8b6e5a7d0858f91fd",
-                "shasum": null,
                 "mirrors": [
                     {
                         "url": "https://composer.dev.webery.com/repo/private/dists/%package%/%version%/%reference%.%type%",
@@ -1629,7 +1601,6 @@
                 "type": "zip",
                 "url": "http://composer.assist01.gbart.h3.hu/repo/private/dists/concrete5/twig/1.0.0.0/ea9fdfa6189b31742a6beb90668cca745219fcc5.zip",
                 "reference": "ea9fdfa6189b31742a6beb90668cca745219fcc5",
-                "shasum": null,
                 "mirrors": [
                     {
                         "url": "https://composer.dev.webery.com/repo/private/dists/%package%/%version%/%reference%.%type%",
@@ -2720,6 +2691,7 @@
             "keywords": [
                 "reflection"
             ],
+            "abandoned": "roave/better-reflection",
             "time": "2018-06-14T14:45:07+00:00"
         },
         {
@@ -8328,5 +8300,6 @@
     "platform": {
         "php": ">=5.3.3"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
