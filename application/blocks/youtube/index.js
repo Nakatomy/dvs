@@ -14,7 +14,7 @@ function embedResponsiveYoutube() {
 			var $dataEmbedYoutubeParams = $(this).data('video-params');
 			var $dataEmbedYoutubeId = $(this).data('video-id');
 
-      $(this).attr('style','background-image: url(http://img.youtube.com/vi/' + $dataEmbedYoutubeId + '/hqdefault.jpg);');
+      $(this).attr('style','background-image: url(http://img.youtube.com/vi/' + $dataEmbedYoutubeId + '/maxresdefault.jpg);');
 			$(this).append('<div class="embed-responsive-layer embed-responsive-layer-youtube"><p>' + $dataEmbedYoutubeLayerText + '</p></div>');
 
 			$(this).click(function() {
@@ -26,7 +26,7 @@ function embedResponsiveYoutube() {
 					$dataLayer.addClass('hide');
 				}, 500);
 
-        $(this).append('<iframe src="https://www.youtube.com/embed/' + $dataEmbedYoutubeId + $dataEmbedYoutubeParams +'" frameborder="0" allowfullscreen></iframe>');
+        $(this).append('<iframe src="https://www.youtube.com/embed/' + $dataEmbedYoutubeId + $dataEmbedYoutubeParams +'" frameborder="0" allow="autoplay" allowfullscreen></iframe>');
 
 			});
 
