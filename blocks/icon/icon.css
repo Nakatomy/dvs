@@ -1,0 +1,11 @@
+@import url('./--login/icon--login.css');
+@import url('./--arrow-down/icon--arrow-down.css');
+@import url('./--de-flag/icon--de-flag.css');
+@import url('./--gb-flag/icon--gb-flag.css');
+@import url('./--size-xs/icon--size-xs.css');
+@import url('./--size-s/icon--size-s.css');
+@import url('./--size-m/icon--size-m.css');
+
+.icon {
+    margin-left: 8px;
+}

@@ -1,0 +1,15 @@
+.intro__description {
+    /* display: flex;
+    flex-direction: row;
+    margin-top: 48px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 92px;
+}
+
+@media screen and (max-width: 625px) {
+	.intro__description  {
+        flex-direction: column;
+        margin-top: 32px;
+	}
+}

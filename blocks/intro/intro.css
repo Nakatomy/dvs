@@ -1,0 +1,39 @@
+@import url('./__title/intro__title.css');
+@import url('./__paragraph/intro__paragraph.css');
+@import url('./__place/intro__container.css');
+@import url('./__title/intro__title.css');
+@import url('./__image/intro__image.css');
+@import url('./__text/intro__text.css');
+@import url('./__description/intro__description.css');
+@import url('./__paragraph/--accent/intro__paragraph--accent.css');
+
+
+.intro {
+	padding: 96px 0 96px 0;
+	width: 100%;
+
+
+	background: linear-gradient(306.12deg, rgba(255, 255, 255, 0) 8.64%, rgba(0, 41, 125, 0.1) 100%),
+	#FFFFFF;
+}
+/* 
+@media screen and (max-width: 1024px) {
+	.intro {
+		max-width: 928px;
+		padding: 88px 48px 0;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.intro {
+		max-width: calc(100% - 24px * 2);
+		padding: 88px 24px 0;
+	}
+}
+
+@media screen and (max-width: 625px) {
+	.intro {
+		max-width: 100%;
+		padding: 88px 0 0;
+	}
+} */

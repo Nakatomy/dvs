@@ -1,0 +1,11 @@
+.btn--text-only {
+    background-color: transparent;
+    border: none;
+    opacity: .5;
+    transition: opacity ease-in 0.3s;
+}
+
+.btn--text-only:hover {
+    opacity: 1;
+    transition: opacity ease-in 0.3s;
+}

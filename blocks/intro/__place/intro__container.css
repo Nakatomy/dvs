@@ -1,0 +1,29 @@
+.intro__container {
+	display: flex;
+	margin: 0 auto;
+	max-width: 1920px;
+	margin-bottom: 80px;
+	flex-direction: column;
+}
+
+.intro__place:last-child {
+	margin-bottom: 0;
+}
+
+/* @media screen and (max-width: 1024px) {
+	.places__place {
+		margin-bottom: 80px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.places__place {
+		margin-bottom: 72px;
+	}
+}
+
+@media screen and (max-width: 625px) {
+	.places__place {
+		margin-bottom: 48px;
+	}
+} */

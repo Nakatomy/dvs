@@ -1,0 +1,11 @@
+.testimonials__author {
+    font-family: Soehne,Inter,Helvetica,Arial,sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    color: #001540;
+    width: 100%;
+    align-content: flex-end;
+    margin: 0;
+    letter-spacing: 1px;
+}

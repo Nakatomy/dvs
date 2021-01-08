@@ -1,0 +1,9 @@
+.section-container {
+    /* padding: 96px 0 96px 0; */
+    width: calc(100% - 72px * 2);
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    /* padding: 112px 72px 112px 72px; */
+    margin: 0 auto;
+}

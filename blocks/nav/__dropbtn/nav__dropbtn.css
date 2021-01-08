@@ -1,0 +1,23 @@
+.nav__dropbtn {
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.5px;
+    align-items: center;    
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+    padding: 12px 0;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+}
+
+@media screen and (max-width: 1500px) {
+    .nav__dropbtn {
+        font-size: 13px;
+    }
+}

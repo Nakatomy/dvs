@@ -1,0 +1,26 @@
+.nav__list-item {
+    margin-right: 40px; 
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.5px;
+}
+
+.nav__list-item:last-child {
+    margin-right: 0;
+}
+
+	@media screen and (max-width: 1500px) {
+	    .nav__list-item {
+	        font-size: 13px;
+	    }
+    }
+    
+
+    @media screen and (max-width: 1500px) {
+        .nav__list-item {
+             margin-right: 24px;
+        }
+    }
+

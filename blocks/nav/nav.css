@@ -1,0 +1,48 @@
+@import url('./__logo/nav__logo.css');
+@import url('./__items/nav__items.css');
+@import url('./__lang-link/nav__lang-link.css');
+@import url('./__lang-link/--active/nav__lang-link--active.css');
+@import url('./__list-item/nav__list-item.css');
+@import url('./__link/nav__link.css');
+@import url('./__dropdown-content/nav__dropdown-content.css');
+@import url('./__dropdown/nav__dropdown.css');
+@import url('./__dropbtn/nav__dropbtn.css');
+@import url('./__droplink/nav__droplink.css');
+@import url('./__container/nav__container.css');
+@import url('./--sticky/nav--sticky.css');
+@import url('./--display-none/nav--display-none.css');
+@import url('./__container/--sticky/nav__container--sticky.css');
+@import url('./__logo/--sticky/nav__logo--sticky.css');
+
+.nav {
+	width: 100%;
+
+	/* overflow: hidden;
+	flex-direction: row; */
+}
+
+/* @media screen and (max-width: 1560px) {
+	.nav {
+		width: calc(100% - 56px * 2);
+	}
+} */
+
+/* @media screen and  (max-width: 768px) {
+	.nav {
+		width: calc(100% - 24px * 2);
+		max-width: calc(768px - 24px * 2);
+		padding: 0 24px;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.nav {
+		width: calc(100% - 16px * 2);
+		max-width: calc(425px - 16px * 2);
+		padding: 0 16px;
+	}
+} */
+
+
+
+

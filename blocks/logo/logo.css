@@ -1,0 +1,11 @@
+@import url('./--bayernlb/logo--bayernlb.css');
+@import url('./--eulerhermes/logo--eulerhermes.css');
+@import url('./--eurovia/logo--eurovia.css');
+@import url('./--siemens/logo--siemens.css');
+
+.logo {
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: auto; 
+}

@@ -1,0 +1,17 @@
+.nav__logo {
+	width: 100%;
+	max-width: 300px;
+	height: auto;
+	background-size: contain;
+	background-repeat: no-repeat;
+	fill: #fff;
+	align-self: flex-start;
+	cursor: pointer;
+	margin-left: -16px;
+}
+
+@media screen and (max-width: 1500px)  {
+	.nav__logo{
+		width: 250px;
+	}
+}

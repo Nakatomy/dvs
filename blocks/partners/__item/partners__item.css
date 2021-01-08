@@ -1,0 +1,8 @@
+
+.partners__item {
+    
+    display: flex;
+    justify-self: center;
+        object-fit: cover;
+        align-items: center;
+}
