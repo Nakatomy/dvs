@@ -1,5 +1,4 @@
 @import url('./__item/section-ol__item.css');
-@import url('./__paragraph/section-ol__paragraph.css');
 
 .section-ol {
         list-style: decimal;
