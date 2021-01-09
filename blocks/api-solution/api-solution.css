@@ -1,0 +1,13 @@
+@import url('./__container/api-solution__container.css');
+@import url('./__wrapper/api-solution__wrapper.css');
+
+.api-solution {
+ background-image: ;
+     background: linear-gradient(306.12deg, rgba(255, 255, 255, 0) 8.64%, rgba(0, 41, 125, 0.1) 100%),
+     #ffffff;
+ background-position: top right;
+ background-repeat: no-repeat;
+  padding: 96px 0 96px 0;
+  width: 100%;
+
+}

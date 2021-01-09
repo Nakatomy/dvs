@@ -2,7 +2,6 @@
 
 .section-ol {
         list-style: decimal;
-       
 }
 
 .section-ol::marker {

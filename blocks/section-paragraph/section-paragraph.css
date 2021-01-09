@@ -1,3 +1,5 @@
+@import url('./--accent/section-paragraph--accent.css');
+
 .section-paragraph {
     font-style: normal;
     font-weight: 300;
@@ -5,6 +7,7 @@
     line-height: 1.67;
     color: #001540;
     letter-spacing: normal;
+    margin-top: 0;
     /* margin: 0;
     padding: 0; */
 }
