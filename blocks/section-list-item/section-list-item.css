@@ -1,4 +1,7 @@
 .section-list-item {
     margin-bottom: 16px;
+}
 
+.section-list-item::marker {
+     list-style-position: inside;
 }

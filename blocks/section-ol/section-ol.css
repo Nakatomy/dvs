@@ -1,9 +1,11 @@
-@import url('./__item/section-ol__item.css');
+
 
 .section-ol {
         list-style: decimal;
+        margin: 0;
+        padding: 0;
 }
 
-.section-ol::marker {
+/* .section-ol::marker {
          list-style-position: inside;
-}
+} */

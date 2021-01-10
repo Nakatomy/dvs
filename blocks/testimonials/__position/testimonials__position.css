@@ -1,9 +1,9 @@
 .testimonials__position {
     color: #001540;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.4;
     font-style: normal;
     font-weight: 300;
     text-align: right;
-    margin: 0;
+    margin: 8px 0 0 0;
 }
