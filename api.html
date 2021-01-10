@@ -213,71 +213,91 @@
     </header>
     <div class="spacer-m"></div>
     <main class="content">
-        <article id="services" class="services section section--bg-gradient">
+        <article class="api-solution section section--bg-gradient ">
             <div class="section-container section-container--normal-width">
-                <h1 class="section-title">Services throughout the guarantee life-cycle</h1>
+                <h2 class="section-title">
+                    Guarantee Vault is a <span class="section-paragraph--accent">REST API Solution</span>
+                </h2>
                 <p class="section-paragraph">
-                    Guarantee Vault offers long-term, secure and cost-effective services to applicants, guarantors,
-                    beneficiaries and intermediaries right across the life of a guarantee including application,
-                    issuance and post-issuance.
+                    Guarantee Vault delivers its services using a suite of REST APIs allowing all market participants to
+                    seamlessly connect and interact.
                 </p>
-                <img src="./images/service-life-cycle2.png" alt="Services throughout the guarantee life-cycle"
-                    class="section-image">
-                <ul class="section-ul--list-style-none">
-                    <li class="section-item section-heading">
-                        <h3 class="section-heading">1. Application</h3>
-                        <ul class="section-ul">
-                            <li class="section-list-item section-paragraph">
-                                Applicants through their existing systems can make requests for digital guarantees
-                            </li>
-                            <li class="section-list-item section-paragraph">
-                                Guarantors receive standardized requests for digital guarantees from applicants and
-                                beneficiaries
-                            </li>
-                        </ul>
+                <p class="section-paragraph">
+                    Corporates, sureties, banks and other intermediaries can interface with Guarantee Vault via
+                    their existing platform, portal or other in-house systems.
+                </p>
+                <p class="section-paragraph">
+                    In this way all participants can connect to access and consume data,
+                    <span class="section-paragraph--accent"> at source and in real-time.</span>
+                </p>
+                <p class="section-paragraph">
+                    Data is exchanged using <span class="section-paragraph--accent">JSON format</span>
+                    whilst Guarantee Vault APIs are secured using market standard authentication protocol
+                    <span class="section-paragraph--accent">OpenId Connect.</span></p>
+                <figure class="section-image">
+                    <img src="./images/solution-rest-api.png" alt="Services throughout the guarantee life-cycle"
+                        class="section-image">
+                    <figcaption class="section-image__caption">
+                        Participants connect to Guarantee Vault through their existing system via REST APIs
+                    </figcaption>
+                </figure>
+
+                <h3 class="section-heading">API Scope: Corporates</h3>
+                <p class="section-paragraph">
+                    Corporates acting as applicant or beneficiary are able to make a number of requests via API
+                    including:
+                </p>
+                <ul class="section-ul">
+                    <li class="section-list-item section-paragraph">
+                        <span class="section-paragraph--accent">Guarantee Request</span>
+                        - Applicant request to guarantor to issue guarantee
                     </li>
-                    <li class="section-item section-heading">
-                        <h3 class="section-heading">2. Issuance</h3>
-                        <ul class="section-ul">
-                            <li class="section-list-item section-paragraph">
-                                Guarantors can issue, store and make available digital guarantees
-                            </li>
-                            <li class="section-list-item section-paragraph">
-                                Applicants and beneficiaries can access digital guarantees instantly at source
-                            </li>
-                        </ul>
+                    <li class="section-list-item section-paragraph">
+                        <span class="section-paragraph--accent">Amendment Request </span>
+                        - Applicant request to guarantor to make a change to an existing guarantee
                     </li>
-                    <li class="section-item section-heading">
-                        <h3 class="section-heading">3. Post-Issuance</h3>
-                        <ul class="section-ul">
-                            <li class="section-list-item section-paragraph">
-                                Applicants & beneficiaries through their existing systems can make post-issuance
-                                requests directly on digital guarantees stored in the vault (includes amendments,
-                                releases, claims)
-                            </li>
-                            <li class="section-list-item section-paragraph">
-                                Banks and sureties can execute post-issuance requests (changes) on digital guarantees
-                            </li>
-                        </ul>
+                    <li class="section-list-item section-paragraph">
+                        <span class="section-paragraph--accent">Claim Request</span>
+                        - Beneficiary request to guarantor to claim on an existing guarantee
                     </li>
-                    <li class="section-item section-heading">
-                        <h3 class="section-heading">4. Safe Keeping Services</h3>
-                        <ul class="section-ul">
-                            <li class="section-list-item section-paragraph">
-                                <p>
-                                    Safe keeping of digital guarantees issued and stored on Guarantee Vault
-                                </p>
-                                <ul class="section-ul ">
-                                    <li class="section-list-item section-paragraph">
-                                        Secured on the cloud to ISO27001 standards
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="section-list-item section-paragraph">Reporting for reconciliation and oversight
-                            </li>
-                        </ul>
+                    <li class="section-list-item section-paragraph">
+                        <span class="section-paragraph--accent"> Release </span>
+                        - Beneficiary instruction to guarantor to release the guarantor from their obligation and close
+                        the guarantee (in case where guarantee validity is open ended)
                     </li>
                 </ul>
+                <img src="./images/api-scope-corporates.png" alt="Services throughout the guarantee life-cycle"
+                    class="section-image">
+                <h3 class="section-heading">API Scope: Guarantors</h3>
+                <p class="section-paragraph">
+                    Banks or Sureties acting as guarantor will have the possibility to execute the following actions in
+                    Guarantee Vault via API:
+                </p>
+                <ul class="section-ul">
+                    <li class="section-list-item section-paragraph">
+                        <span class="section-paragraph--accent">Issue Request</span>
+                        - Instruction to the Guarantee Vault to issue a guarantee or post-issuance event (includes
+                        Amendment, Claim, Release)
+                    </li>
+                    <li class="section-list-item section-paragraph">
+                        <span class="section-paragraph--accent">Close Guarantee</span>
+                        - Instruction to close guarantee either via issuance of release instruction or direct expiry
+                    </li>
+                    <li class="section-list-item section-paragraph">
+                        <span class="section-paragraph--accent"> Return Request </span>
+                        - Return any request received to the sender (applicant or beneficiary)
+                    </li>
+                </ul>
+                <img src="./images/api-scope-guarantors.png" alt="Services throughout the guarantee life-cycle"
+                    class="section-image">
+                <p class="section-paragraph">
+                    When connecting with us, participants will be offered the full range of support throughout including
+                    API specifications, guides, sandbox and more.
+                </p>
+                <p class="section-paragraph">
+                    Feel free to contact us if your interested in connecting to Guarantee Vault or would just like to
+                    know more about what we are doing with APIs.
+                </p>
             </div>
         </article>
         <section class="benefits section">
