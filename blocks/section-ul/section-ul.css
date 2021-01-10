@@ -1,6 +1,7 @@
 @import url('./__item/section-ul__item.css');
 @import url('./__paragraph/section-ul__paragraph.css');
-@import url('./--list-style-none/section-ul--list-style-none.css');
+
+
 
 .section-ul {
     list-style-type: square;
