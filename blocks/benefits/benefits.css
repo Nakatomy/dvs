@@ -1,6 +1,6 @@
 @import url('./__ul/benefits__ul.css');
 @import url('./__icon/benefits__icon.css');
-@import url('./__ul-item/benefits__ul-item.css');
+@import url('./__list-item/benefits__list-item.css');
 
 .benefits {
     background: none;

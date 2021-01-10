@@ -1,14 +1,9 @@
 .testimonials__position {
-    font-family: Soehne,
-    Inter,
-    Helvetica,
-    Arial,
-    sans-serif;
-    color: rgb(42, 46, 97);
-    font-size: 24px; 
-    text-align: right;
-    margin: 8px 0;
+    color: #001540;
+    font-size: 16px;
+    line-height: 1.4;
     font-style: normal;
     font-weight: 300;
     text-align: right;
+    margin: 0;
 }
