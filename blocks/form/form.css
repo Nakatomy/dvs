@@ -9,7 +9,3 @@
 @import url('./__label-error/form__label-error.css');
 @import url('./__checkbox/form__checkbox.css');
 
-.form {
-    width: 100%;
-    margin: 0 auto;
-}
