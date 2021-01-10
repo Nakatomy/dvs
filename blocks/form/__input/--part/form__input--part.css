@@ -1,5 +1,9 @@
 .form__input--part {
-    width: 330px;
+    margin-right: 32px;
+}
+
+.form__input--part:last-child {
+    margin-right: 0;
 }
 
 @media screen and (max-width: 860px) {

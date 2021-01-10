@@ -10,7 +10,6 @@
 @import url('./__checkbox/form__checkbox.css');
 
 .form {
-    max-width: 690px;
     width: 100%;
     margin: 0 auto;
 }
