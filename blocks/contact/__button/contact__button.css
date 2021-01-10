@@ -1,11 +1,3 @@
-.contact__button {
-    width: 134px;
-    height: 46px;
-    border: none;
-    font-size: 12px;
-    padding: 0;
-}
-
 @media screen and (max-width: 600px) {
 	.contact__button {
        margin-top: 16px;
