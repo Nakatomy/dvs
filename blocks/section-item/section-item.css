@@ -1,5 +1,5 @@
 .section-item {
-    margin-bottom: 72px;
+    margin: 0 0 72px 0;
 }
 
 .section-item:last-child {

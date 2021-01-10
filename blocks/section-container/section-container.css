@@ -7,3 +7,15 @@
     flex-direction: column;
     margin: 0 auto;
 }
+
+@media screen and (max-width: 945px) {
+    .section-container {
+     width: calc(100% - 48px * 2);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .section-container {
+        width: calc(100% - 24px * 2);
+    }
+}
