@@ -8,4 +8,6 @@
 @import url('./__input-error/form__input-error.css');
 @import url('./__label-error/form__label-error.css');
 @import url('./__checkbox/form__checkbox.css');
+@import url('./__input-error/--active/form__input-error--active.css');
+@import url('./__input/--type/form__input--type--error.css');
 

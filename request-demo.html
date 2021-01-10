@@ -216,7 +216,7 @@
         <section class="contact section">
             <div class="section-container section-container--normal-width">
                 <h2 class="section-title">Request Demo</h2>
-                <form action="#" class="form">
+                <form action="#" class="form" novalidate>
                     <!-- <div class="form__data">
                         <label class="form__label"><span>&#42;</span> How can we help you? </label>
                         <select name="" id="">
@@ -227,23 +227,23 @@
                         </select>
                     </div> -->
                     <div class="form__data">
-                        <label class="form__label"><span>&#42;</span>Contact person </label>
-                        <input class="form__input" id='contact-input' type="text" autocomplete="off" required />
+                        <label class="form__label"><span>&#42;</span>Contact Person </label>
+                        <input class="form__input" id='contact-input' name="contact-input" type="text" autocomplete="off" required />
                         <span class='form__input-error' id='contact-input-error'></span>
                     </div>
                     <div class="form__data">
-                        <label class="form__label"><span>&#42;</span>Company name </label>
-                        <input class="form__input" id='company-input' type="text" autocomplete="off" required />
+                        <label class="form__label"><span>&#42;</span>Company Name </label>
+                        <input class="form__input" id='company-input' name="company-input" type="text" autocomplete="off" required />
                         <span class='form__input-error' id='company-input-error'></span>
                     </div>
                     <div class="form__data">
-                        <label class="form__label">Function & title </label>
-                        <input class="form__input" type="text" autocomplete="off" />
+                        <label class="form__label">Function & Title </label>
+                        <input class="form__input" type="text"  autocomplete="off" />
                     </div>
                     <div class="form__data-group">
                         <div class="form__data">
-                            <label class="form__label"><span>&#42;</span>E-Mail adress </label>
-                            <input class="form__input form__input--part" id='email-input' type="email"
+                            <label class="form__label"><span>&#42;</span>E-Mail Address </label>
+                            <input class="form__input form__input--part" name="email-input" id='email-input' type="email"
                                 autocomplete="off" required />
                             <span class='form__input-error' id='email-input-error'></span>
                         </div>
@@ -258,7 +258,7 @@
                     </div>
                     <div class="form__data">
                         <label class="form__label"><span>&#42;</span>City / Country </label>
-                        <input class="form__input" id='city-input' type="text" autocomplete="off" required />
+                        <input class="form__input" id='city-input' name="city-input" type="text" autocomplete="off" required />
                         <span class='form__input-error' id='city-input-error'></span>
                     </div>
                     <div class="form__data">
@@ -268,7 +268,7 @@
                     <div class="form__data-action">
                         <div class="form__checkbox">
                             <div>
-                                <input class="form__input" type="checkbox" id="checkbox-1" required>
+                                <input class="form__input" name="checkbox-input" type="checkbox" id="checkbox-1" required>
                                 <label for="checkbox-1" class="form__label"><span>&#42;</span>I have read and agree to
                                     the
                                     <a class="form__link" target="_blank" href="">Privacy
