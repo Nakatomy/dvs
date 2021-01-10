@@ -29,3 +29,6 @@
 @import url('../blocks/section-list-item/section-list-item.css');
 @import url('../blocks/section-item/section-item.css');
 @import url('../blocks/section-grid/section-grid.css');
+@import url('../blocks/contact/contact.css');
+@import url('../blocks/form/form.css');
+@import url('../blocks/form/__input/--part/form__input--part.css');

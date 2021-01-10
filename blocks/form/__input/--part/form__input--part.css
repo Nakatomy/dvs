@@ -1,0 +1,9 @@
+.form__input--part {
+    width: 330px;
+}
+
+@media screen and (max-width: 860px) {
+    .form__input--part {
+        width: 100%;
+    }
+}

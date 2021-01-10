@@ -1,0 +1,16 @@
+@import url('./__input/form__input.css');
+@import url('./__text/form__text.css');
+@import url('./__data/form__data.css');
+@import url('./__label/form__label.css');
+@import url('./__data-action/form__data-action.css');
+@import url('./__link/form__link.css');
+@import url('./__data-group/form__data-group.css');
+@import url('./__input-error/form__input-error.css');
+@import url('./__label-error/form__label-error.css');
+@import url('./__checkbox/form__checkbox.css');
+
+.form {
+    max-width: 690px;
+    width: 100%;
+    margin: 0 auto;
+}
