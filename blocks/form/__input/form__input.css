@@ -1,14 +1,16 @@
 @import url('./--part/form__input--part.css');
 .form__input {
     border: 0;
-    border-bottom: 1px solid #272727;
+    border-bottom: 1px solid #535353;
     color: #000;
     padding: 10px 0;
     box-sizing: border-box;
     outline: none;
-    font-weight: 200;
+    font-weight: 300;
+    font-size: 24px;
 }
 
-.form__input:focus {
+.form__input:focus  {
     border-bottom: 1px solid #0075FF;
 }
+
