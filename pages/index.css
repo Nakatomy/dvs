@@ -33,4 +33,6 @@
 @import url('../blocks/form/form.css');
 @import url('../blocks/form/__input/--part/form__input--part.css');
 @import url('../blocks/section-ul/--list-style-none/section-ul--list-style-none.css');
+@import url('../blocks/modal/modal.css');
+@import url('../blocks/modal/--opened/modal--opened.css');
 

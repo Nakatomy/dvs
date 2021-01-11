@@ -5,6 +5,7 @@ const validationParams = {
     errorClass: 'form__input-error--active'
 };
 
+
 const showInputError = (formElement, inputElement, errorMessage) => {
     const errorElement = formElement.querySelector(`#${inputElement.name}-error`);
     inputElement.classList.add(validationParams.inputErrorClass);
