@@ -5,4 +5,7 @@
 @import url('./__position/testimonials__position.css');
 
 .testimonials {
+    min-height: 80vh;
+
+    
 }

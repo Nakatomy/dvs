@@ -1,7 +1,5 @@
-@import url('./__container/legal__container.css');
-
-.legal {
+.services {
     min-height: 80vh;
     display: flex;
     align-items: center;
-}
+    }
