@@ -9,9 +9,7 @@
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	padding: 92px 48px 24px;
-	width: calc(100% - 48px * 2);
-
+	padding: 92px 24px;
 	margin: 0 auto;
 }
 
