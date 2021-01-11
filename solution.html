@@ -152,7 +152,6 @@
                     </g>
                 </svg>
             </a>
-
             <ul class="nav__items">
                 <li class="nav__list-item">
                     <a href="#" class="nav__link nav__link--active">Product Overview</a>
@@ -190,13 +189,14 @@
                     <a href="#" class="nav__link">Contact</a>
                 </li>
                 <li class="nav__list-item">
-                    <a class="btn btn--text-white btn--size-m btn--border-white">Login<div
-                            class="icon icon--size-m icon--login">
-                        </div>
+                    <a class="btn btn--text-white btn--size-m btn--border-white">Login
+                        <span class="icon material-icons">
+                            login
+                        </span>
                     </a>
                 </li>
                 <li class="nav__list-item">
-                    <button class="btn btn--text-white btn--size-m btn--green">Request Demo</button>
+                    <a href="./request-demo.html" class="btn btn--text-white btn--size-m btn--green">Request Demo</a>
                 </li>
                 <li class="nav__list-item">
                     <a href="#" class="nav__lang-link nav__lang-link--active">
@@ -214,11 +214,9 @@
     <div class="spacer-m"></div>
     <main class="content">
         <section class="problem section">
-            <div class="section-container section-container--normal-width">
-                <div class="section-item">
+            <div class="section-grid section-container--full-width">
+                <div class="section-grid__item">
                     <h1 class="section-title">The problem today</h1>
-                    <img src="./images/grey-smoke-png-6-original.png" alt="grey smoke"
-                        class="section-image section-item">
                     <h4 class="section-heading">The decentralized paper-based process</h4>
                     <p class="section-paragraph">
                         In the course of business many companies by nature will issue numerous guarantees to
@@ -233,108 +231,108 @@
                         outstanding guarantees physically held across a wide range of counterparts.
                     </p>
                     <p class="section-paragraph">And this is where the problem begins.</p>
+                    <p class="section-paragraph"> At heart, the problem today is that the issuance and storage of
+                        guarantees is spread across multiple
+                        participants while the guarantee related process is manual and paper based.</p>
                 </div>
+                <img src="./images/clouds.png" alt="grey smoke" class="section-image section-grid__item ">
             </div>
-            <div class="section-grid section-container--normal-width">
-                <p class="section-paragraph section-grid__item">
-                    At heart, the problem today is that the issuance and storage of guarantees is spread across multiple
-                    participants while the guarantee related process is manual and paper based.
-                </p>
+
+
+            <div class="section-grid section-container--full-width">
                 <figure class="section-image section-grid__item">
-                    <img src="./images/decentralized.png" alt="Services throughout the guarantee life-cycle"
-                        class="section-image">
+                    <img src="./images/decentralized.svg" alt="Services throughout the guarantee life-cycle"
+                        class="section-image section-modal__image section-image--link">
                     <figcaption class="section-image__caption">
                         The result is a messy distribution of guarantees across a wide range of counterparts
                     </figcaption>
                 </figure>
-            </div>
-            <div class="spacer-m"></div>
-            <div class="section-container section-container--normal-width">
-                <div class="section-item">
-                    <p class="section-heading">
-                        This creates a number of challenges for all involved parties including:
-                    </p>
-                    <ul class="section-ul">
-                        <li class="section-list-item section-paragraph">
-                            Reduced transparency
-                        </li>
-                        <li class="section-list-item section-paragraph">
-                            Labour-intensive reconciliation & reporting
-                        </li>
-                        <li class="section-list-item section-paragraph">
-                            Delays in processing of guarantee issuance & post issuance requests
-                        </li>
-                        <li class="section-list-item section-paragraph">
-                            Manual, time consuming and non-standard process
-                        </li>
-                        <li class="section-list-item section-paragraph">
-                            Cumbersome manual release process for the discharging of guarantees
-                        </li>
-                        <li class="section-list-item section-paragraph">
-                            Vulnerability to tampering and fraud
-                        </li>
-                    </ul>
-
-                </div>
-                <p class="section-paragraph">
-                    The above challenges impose a number of costs on participants including courier
-                    fees, resource
-                    costs, unnecessary provisions and issuance fees paid by the applicant.
-                </p>
-            </div>
-
-        </section>
-        <section class="solution section">
-
-            <div class="section-container section-container--normal-width">
-                <h3 class="section-title">Our solution</h3>
-            </div>
-            <div class="section-item">
-                <div class="section-grid section-container--normal-width">
-                    <div class="section-grid__item">
-
-                        <h4 class="section-heading">Transparency through Digital Guarantees</h4>
-                        <p class="section-paragraph">
-                            Guarantee Vault is a solution to digitize the existing paper-based process through the
-                            central
-                            issuance of digital guarantees that are requested, secured and stored electronically.
+                <div class=" section-grid__item">
+                    <div class="section-item">
+                        <p class="section-heading">
+                            This creates a number of challenges for all involved parties including:
                         </p>
+                        <ul class="section-ul">
+                            <li class="section-list-item section-paragraph">
+                                Reduced transparency
+                            </li>
+                            <li class="section-list-item section-paragraph">
+                                Labour-intensive reconciliation & reporting
+                            </li>
+                            <li class="section-list-item section-paragraph">
+                                Delays in processing of guarantee issuance & post issuance requests
+                            </li>
+                            <li class="section-list-item section-paragraph">
+                                Manual, time consuming and non-standard process
+                            </li>
+                            <li class="section-list-item section-paragraph">
+                                Cumbersome manual release process for the discharging of guarantees
+                            </li>
+                            <li class="section-list-item section-paragraph">
+                                Vulnerability to tampering and fraud
+                            </li>
+                        </ul>
                     </div>
+                    <p class="section-paragraph">
+                        The above challenges impose a number of costs on participants including courier
+                        fees, resource
+                        costs, unnecessary provisions and issuance fees paid by the applicant.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="solution">
+            <div class="section-grid section-container--full-width">
+                <div class="section-grid__item">
+
+                    <h3 class="section-title">Our solution</h3>
+                    <h4 class="section-heading">Transparency through Digital Guarantees</h4>
+                    <p class="section-paragraph">
+                        Guarantee Vault is a solution to digitize the existing paper-based process through the
+                        central
+                        issuance of digital guarantees that are requested, secured and stored electronically.
+                    </p>
+                    <p class="section-paragraph">
+                        Through this innovation of digital guarantees, Guarantee Vault brings issuance through a
+                        common digital channel allowing market participants <span class="section-paragraph--accent">
+                            real-time updates, certainty,
+                            transparency, convenience and predictability </span>in contrast to the challenges
+                        inherent in
+                        the
+                        process today.
+                    </p>
+                </div>
+
+                <div class="section-grid__item">
+
                     <img src="./images/our-solution.png" alt="" class="section-image section-grid__item">
                 </div>
-            </div>
-            <div class="section-container section-container--normal-width">
-                <p class="section-paragraph">
-                    Through this innovation of digital guarantees, Guarantee Vault brings issuance through a
-                    common digital channel allowing market participants <span class="section-paragraph--accent">
-                        real-time updates, certainty,
-                        transparency, convenience and predictability </span>in contrast to the challenges inherent in
-                    the
-                    process today.
-                </p>
-                <p class="section-paragraph">
-                    Delivering its service via its suite of REST APIs, Guarantee Vault allows market participants the
-                    possibility to seamlessly connect and benefit via their existing platforms, portals or other
-                    in-house
-                    systems.
-                </p>
-                <p class="section-paragraph">
 
-                </p>
             </div>
-            <div class="section-grid section-container--normal-width">
+
+            <div class="section-grid section-container--full-width">
                 <figure class="section-image section-grid__item">
-                    <img src="./images/transparency.png" alt="Services throughout the guarantee life-cycle"
-                        class="section-image">
+                    <img src="./images/transparency.svg" alt="Services throughout the guarantee life-cycle"
+                        class="section-image section-modal__image section-image--link">
                     <figcaption class="section-image__caption">
                         Guarantee Vault facilitates the central issuance and storage of digital guarantees thereby
                         removing the paper and fully digitizing the process.
                     </figcaption>
                 </figure>
-                <p class="section-paragraph section-grid__item">
-                    In the end Guarantee Vault allows market participants to save costs, improve efficiency, reduce
-                    operational / financial risks and more.
-                </p>
+                <div class="section-grid__item">
+                    <h4 class="section-heading">
+                        Guarantee Vault allows market participants to save costs, improve efficiency, reduce
+                        operational / financial risks and more
+                    </h4>
+                    <p class="section-paragraph">
+                        Delivering its service via its suite of REST APIs, Guarantee Vault allows market participants
+                        the
+                        possibility to seamlessly connect and benefit via their existing platforms, portals or other
+                        in-house
+                        systems.
+                    </p>
+                </div>
                 <a href="./index.html#whatWeDo" class="btn btn--text-blue btn--size-l btn--border-blue">
                     Back to Home Page
                 </a>
@@ -356,10 +354,19 @@
         </nav>
         <p class="footer__copyright">&copy; 2021. Digital Vault Service Gmbh</p>
     </footer>
+    <!--Modal Image-->
+    <div class="modal ">
+        <div class="modal__content">
+            <img class="modal__image" src="#" alt="Фото">
+            <p class="modal__caption"></p>
+            <button class="modal__close-button" aria-label="Close" type="button"></button>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-2.1.0.js"
         integrity="sha256-D6d1KSapXjq2tfZ6Ie9AYozkRHyB3fT2ys9mO2+4Wvc=" crossorigin="anonymous"></script>
     <script src="scripts/validate.js"></script>
-
+    <script src="scripts/index.js"></script>
+    <script src="./scripts/modal.js"></script>
 
 </body>
 
