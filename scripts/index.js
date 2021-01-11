@@ -1,3 +1,9 @@
+//expand testimonials
+const expandTestimonialsBtn = document.getElementsByClassName("expand-testimonials-btn");
+
+
+
+
 // script to scroll smoothly on click on link
 
 $(document).on('click', 'a[href^="#"]', function(e) {

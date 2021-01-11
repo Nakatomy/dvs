@@ -1,5 +1,5 @@
 .btn--border-white {
-    border: solid 1px #fff;
+    border: solid 2px #fff;
     background-color: transparent;
     transition: background-color 0.3s ease-out;
 }
