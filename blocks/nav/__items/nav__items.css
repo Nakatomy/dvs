@@ -7,3 +7,16 @@
 	justify-self: flex-end;
 }
 
+.nav__items.open {
+	display: flex;
+  }
+
+  @media screen and (max-width: 1200px) {
+	.nav__items  {
+		display: none;
+		width: 100%;
+		flex-direction: column;
+		justify-content: space-evenly;
+		height: 90vh;
+	}
+}

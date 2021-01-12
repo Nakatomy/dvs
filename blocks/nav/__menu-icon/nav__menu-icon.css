@@ -1,0 +1,9 @@
+.nav__menu-icon {
+    display: block;
+	align-self: flex-end;
+    cursor: pointer;
+    right: 5%;
+    top: 35%;
+    transform: translate(-5%, -50%);
+    z-index: 2;
+}

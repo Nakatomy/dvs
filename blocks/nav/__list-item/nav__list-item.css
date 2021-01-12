@@ -24,3 +24,11 @@
         }
     }
 
+
+    @media screen and (max-width: 1200px) {
+        .nav__list-item:last-child {
+            margin-right: 24px;
+        }
+
+
+    }

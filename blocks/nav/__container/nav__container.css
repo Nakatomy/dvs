@@ -1,6 +1,12 @@
 .nav__container {
+    display: flex;
     width: calc(100% - 72px * 2);
 	margin: 0 auto;
-	display: flex;
     justify-content: space-between;
+}
+
+@media screen and (max-width: 1200px) {
+    .nav__container  {
+        flex-direction: column;
+    }
 }
