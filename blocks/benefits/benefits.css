@@ -3,8 +3,8 @@
 @import url('./__list-item/benefits__list-item.css');
 
 .benefits {
-    background: none;
+    /* background: none;
     background-image: url('../../images/benefits-bubles.png');
     background-repeat: no-repeat;
-    background-position: top right;
+    background-position: top right; */
 }

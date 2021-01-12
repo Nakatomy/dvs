@@ -23,7 +23,8 @@
 }
 
 @media screen and (max-width: 1200px) {
-
-
-    
+.nav__dropbtn {
+    font-size: 24px;
+    font-weight: 400;
+}
 }

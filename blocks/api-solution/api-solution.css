@@ -2,7 +2,7 @@
 @import url('./__wrapper/api-solution__wrapper.css');
 
 .api-solution {
-    min-height: 80vh;
+    /* min-height: 80vh;
     display: flex;
-    align-items: center;
+    align-items: center; */
 }
