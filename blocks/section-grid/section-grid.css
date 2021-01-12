@@ -11,10 +11,9 @@
 
 @media screen and (max-width: 945px) {
     .section-grid {
-        width: calc(100% - 48px * 2);
+    width: calc(100% - 48px * 2);
      grid-template-columns: 1fr;
-     gap: 24px;
-
+     gap: 48px;
     }
 }
 

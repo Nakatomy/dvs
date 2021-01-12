@@ -5,7 +5,8 @@
     background-size: contain;
     width: 100%;
     height: auto;
-    align-self: flex-start;
+    align-self: center;
+    justify-self: center;
     margin: 60px 0; 
     user-select: none;
     -moz-user-select: none;
