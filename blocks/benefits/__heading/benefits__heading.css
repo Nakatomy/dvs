@@ -3,8 +3,17 @@
     background-color: #00986A;
     color: #ffffff;
 
-          font-size: 32px;
-          font-weight: 400;
-          line-height: 1.2;
-          margin: 0 0 32px;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0 0 32px;
+}
+
+
+
+
+@media screen and (max-width: 760px) {
+    .benefits__heading {
+        font-size: 24px;
+    }
 }
