@@ -25,7 +25,7 @@
 @media screen and (max-width: 760px) {
     .partners__grid {
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(12, 170px);
+        grid-template-rows: repeat(11, 170px);
     }
 }
 
