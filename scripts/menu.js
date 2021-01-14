@@ -3,21 +3,23 @@ const leadSectionNavItems = document.querySelector('.lead__nav-items');
 const leadMenuButton = document.querySelector('.lead__menu-icon');
 const navMenuButton = document.querySelector('.nav__menu-icon');
 let menuOpen = false;
+let leadMenuOpen = false;
+
 
 
 function toggleMenuIcon(icon) {
-  icon.classList.toggle('open');
+  icon.classList.toggle('show');
 };
 
 
 if (leadMenuButton) {
   leadMenuButton.addEventListener('click', () => {
-    if (!menuOpen) {
+    if (!leadMenuOpen) {
       leadMenuButton.classList.add('open');
-      menuOpen = true;
+      leadMenuOpen = true;
     } else {
       leadMenuButton.classList.remove('open');
-      menuOpen = false;
+      leadMenuOpen = false;
     }
     toggleMenuIcon(leadSectionNavItems);
   });
@@ -34,3 +36,4 @@ navMenuButton.addEventListener('click', () => {
   }
   toggleMenuIcon(navUl);
 });
+

@@ -1,13 +1,13 @@
 .nav__items {
 	display: flex;
 	list-style-type: none;
-	margin: 0;
+	margin-top: 24px;
 	padding: 0;
 	align-items: center;
 	justify-self: flex-end;
 }
 
-.nav__items.open {
+.nav__items.show {
 	display: flex;
   }
 
@@ -16,7 +16,8 @@
 		display: none;
 		width: 100%;
 		flex-direction: column;
-		justify-content: space-evenly;
-		height: 90vh;
+		justify-content: space-between;
+		height: 60vh;
 	}
 }
+

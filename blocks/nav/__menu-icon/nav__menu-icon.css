@@ -1,6 +1,5 @@
 .nav__menu-icon {
-    position: relative;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
     width: 40px;
@@ -47,4 +46,15 @@
 
 .nav__menu-icon.open .line::after {
     transform: rotate(-45deg) translate(35px, 35px);
+}
+@media screen and (max-width: 1200px) {
+	.nav__menu-icon  {
+		display: flex;
+	}
+}
+
+@media screen and (max-width: 325px) {
+	.nav__menu-icon  {
+		padding-left: 20px;
+	}
 }
