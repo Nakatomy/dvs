@@ -1,9 +1,8 @@
-// const navMenuButton = document.querySelector('.nav__menu-icon');
-// let menuOpen = false;
-// const navUl = document.querySelector('.nav__items');
-
-// const leadNavMenuIcon = document.querySelector('.lead__menu-icon');
+const navUl = document.querySelector('.nav__items');
 const leadSectionNavItems = document.querySelector('.lead__nav-items');
+const leadMenuButton = document.querySelector('.lead__menu-icon');
+const navMenuButton = document.querySelector('.nav__menu-icon');
+let menuOpen = false;
 
 
 function toggleMenuIcon(icon) {
@@ -11,35 +10,27 @@ function toggleMenuIcon(icon) {
 };
 
 
-// navMenuButton.addEventListener('click', () => {
-//   toggleMenuIcon(navUl);
-// })
+if (leadMenuButton) {
+  leadMenuButton.addEventListener('click', () => {
+    if (!menuOpen) {
+      leadMenuButton.classList.add('open');
+      menuOpen = true;
+    } else {
+      leadMenuButton.classList.remove('open');
+      menuOpen = false;
+    }
+    toggleMenuIcon(leadSectionNavItems);
+  });
+}
 
-// if (leadNavMenuIcon) {
-//   leadNavMenuIcon.addEventListener('click', () => {
-//     toggleMenuIcon(leadSectionNavItems);
-
-//   })
-// }
-// navMenuButton.addEventListener('click', () => {
-//   if(!menuOpen)
-//   {
-//     navMenuButton.classList.add('')
-//   }
-// })
-
-
-const menuBtn = document.querySelector('.lead__menu-icon');
-let menuOpen = false;
-menuBtn.addEventListener('click', () => {
-  if(!menuOpen) {
-    menuBtn.classList.add('open');
+navMenuButton.addEventListener('click', () => {
+  if (!menuOpen) {
+    navMenuButton.classList.add('open');
 
     menuOpen = true;
   } else {
-    menuBtn.classList.remove('open');
+    navMenuButton.classList.remove('open');
     menuOpen = false;
   }
-
-  toggleMenuIcon(leadSectionNavItems);
+  toggleMenuIcon(navUl);
 });
