@@ -46,5 +46,7 @@
 @import url('../blocks/team/team.css');
 @import url('../blocks/content/--sub-page/content--sub-page.css');
 @import url('../blocks/video-container/video-container.css');
+@import url('../blocks/section-mobile-image/section-mobile-image.css');
+@import url('../blocks/section-desktop-image/section-desktop-image.css');
 
 
