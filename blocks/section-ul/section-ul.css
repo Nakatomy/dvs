@@ -7,6 +7,7 @@
     list-style-type: square;
     margin: 0;
     padding-left: 24px;
+    margin-bottom: 24px;
 }
 
 .section-ul::marker {
