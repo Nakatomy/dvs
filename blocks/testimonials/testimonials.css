@@ -3,6 +3,7 @@
 @import url('./__company-logo/testimonials__company-logo.css');
 @import url('./__author/testimonials__author.css');
 @import url('./__position/testimonials__position.css');
+@import url('./__logo/testimonials__logo.css');
 
 .testimonials {
     /* min-height: 80vh; */
