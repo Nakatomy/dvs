@@ -1,5 +1,6 @@
 .team__member-name {
-    font-size: 2rem;
+    font-size: 32px;
+    font-weight: 500;
     letter-spacing: -.0625rem;
     color: #001540;
     margin:  1rem 0;
@@ -7,12 +8,12 @@
 
 @media screen and (max-width: 1160px) {
     .team__member-name{
-        font-size: 1.5rem;
+        font-size: 24px;
     }
 }
 
 @media screen and (max-width: 575px) {
     .team__member-name{
-        font-size: 2rem;
+        font-size: 20px;
     }
 }
