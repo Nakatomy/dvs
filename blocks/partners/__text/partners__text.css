@@ -1,12 +1,12 @@
 .partners__text {
-    color: #ffffff;
-    background-color: #000C23;
+    color: #001540;
+    background-color: #b5c9f3;
     width: 100%;
     text-align: center;
     margin: 0;
     padding: 6px 0;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 13px;
     letter-spacing: 2px;
 }
