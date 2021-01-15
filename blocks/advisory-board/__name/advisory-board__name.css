@@ -1,8 +1,14 @@
 .advisory-board__name {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 48px;
     line-height: 1.67;
     color: #001540;
     margin: 0;
     padding: 0;
+}
+
+@media screen and (max-width: 760px) {
+    .advisory-board__name {
+        font-size: 32px;
+    }
 }
