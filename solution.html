@@ -7,6 +7,7 @@
     <title>What we do - Digital Vault Services</title>
     <link rel="stylesheet" href="./pages/index.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="icon" href="./images/favicon.ico">
 </head>
 
 <body class="page">
@@ -159,8 +160,12 @@
                 </div>
             </div>
             <ul class="nav__items">
-                <li class="nav__list-item">
-                    <a href="#" class="nav__link nav__link--active">Product Overview</a>
+                <li class="nav__dropdown">
+                    <button class="nav__dropbtn">Product Overview</button>
+                    <ul class="nav__dropdown-content">
+                        <li><a href="./services.html" class="nav__droplink">Services</a></li>
+                        <li><a href="./api.html" class="nav__droplink">REST Api Solution</a></li>
+                    </ul>
                 </li>
                 <li class="nav__dropdown">
                     <button class="nav__dropbtn">Legal Corner
@@ -168,8 +173,8 @@
                             </div>-->
                     </button>
                     <ul class="nav__dropdown-content">
-                        <li><a href="#" class="nav__droplink">Legal</a></li>
-                        <li><a href="./terms-of-use.html" class="nav__droplink">Terms Of Use</a></li>
+                        <li><a href="./legal.html" class="nav__droplink">Legal</a></li>
+                        <!-- <li><a href="./terms-of-use.html" class="nav__droplink">Terms Of Use</a></li> -->
                     </ul>
                 </li>
                 <li class="nav__dropdown">
@@ -199,7 +204,7 @@
                     </a>
                 </li> -->
                 <li class="nav__list-item">
-                    <a href="./contacts.html" class="btn btn--text-white btn--size-m btn--green">Request Demo</a>
+                    <a href="./contacts.html" class="btn btn--text-white btn--size-m btn--blue">Contact us</a>
                 </li>
                 <!-- <li class="nav__list-item">
                     <a href="#" class="nav__lang-link nav__lang-link--active">
@@ -519,23 +524,25 @@
 
                 </div>
                 <div class="footer__contact">
-                    <p class="footer__heading">Phone</p>
+                    <p class="footer__heading">Digital Vault Service GmbH <br> Handelsregister - HRB 249553</p>
+
                     <a class="footer__link" href="tel:+491758868021">
                         +49 175 8868021
                     </a>
                 </div>
                 <div class="footer__contact">
-                    <p class="footer__heading">Address</p>
-                    <a class="footer__link" href="https://goo.gl/maps/7shPSvq8q65kGU5W9" target="_blank">
-                        Stahlgruberring 43, 81829 München
-                    </a>
-                </div>
-                <div class="footer__contact">
-                    <p class="footer__heading">Email</p>
+                    <!-- <p class="footer__heading">Email</p> -->
                     <a class="footer__link" href="mailto:contact@digitalvaultservices.com">
                         contact@digitalvaultservices.com
                     </a>
                 </div>
+                <div class="footer__contact">
+                    <!-- <p class="footer__heading">Address</p> -->
+                    <a class="footer__link" href="https://goo.gl/maps/7shPSvq8q65kGU5W9" target="_blank">
+                        Stahlgruberring 43, 81829 München
+                    </a>
+                </div>
+
 
             </div>
             <div class="footer__container">
@@ -543,7 +550,7 @@
                     <p class="footer__heading">Product Overview</p>
                     <ul class="footer__ul">
                         <li class="footer__list-item"><a href="./services.html" class="footer__link">Services</a></li>
-                        <li class="footer__list-item"><a href="./api.html" class="footer__link">REST Api Solution</a>
+                        <li class="footer__list-item"><a href="./api.html" class="footer__link">REST API Solution</a>
                         </li>
                     </ul>
                 </div>
@@ -551,8 +558,8 @@
                     <p class="footer__heading">Legal Corner</p>
                     <ul class="footer__ul">
                         <li class="footer__list-item"><a href="./legal.html" class="footer__link">Legal</a></li>
-                        <li class="footer__list-item"><a href="./terms-of-use.html" class="footer__link">Terms Of
-                                Use</a></li>
+                        <!-- <li class="footer__list-item"><a href="./terms-of-use.html" class="footer__link">Terms Of
+                                Use</a></li> -->
                     </ul>
                 </div>
                 <div class="footer__item">
@@ -577,7 +584,7 @@
             </div>
         </nav>
         <div class="section-container section-container--full-width">
-            <p class="footer__copyright ">&copy; 2021. Digital Vault Service gmbh</p>
+            <p class="footer__copyright ">&copy; 2021. Digital Vault Service GmbH</p>
         </div>
     </footer>
 
@@ -591,7 +598,6 @@
     </div>
     <script src="https://code.jquery.com/jquery-2.1.0.js"
         integrity="sha256-D6d1KSapXjq2tfZ6Ie9AYozkRHyB3fT2ys9mO2+4Wvc=" crossorigin="anonymous"></script>
-    <script src="scripts/validate.js"></script>
     <script src="scripts/index.js"></script>
     <script src="./scripts/modal.js"></script>
     <script src="scripts/menu.js"></script>
