@@ -9,30 +9,31 @@
 }
 
 .line {
-    width: 40px;
-    height: 5px;
+    width: 24px;
+    height: 3px;
     background: #fff;
-    border-radius: 5px;
+
     transition: all .5s ease-in-out;
+    
 }
 
 .line::before,
 .line::after {
     content: '';
     position: absolute;
-    width: 40px;
-    height: 5px;
+   width: 24px;
+   height: 3px;
     background: #fff;
-    border-radius: 5px;
+
     transition: all .5s ease-in-out;
 }
 
 .line::before {
-    transform: translateY(-12px);
+    transform: translateY(-8px);
 }
 
 .line::after {
-    transform: translateY(12px);
+    transform: translateY(8px);
 }
 
 .nav__menu-icon.open .line {
