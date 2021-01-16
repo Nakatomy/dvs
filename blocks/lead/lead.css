@@ -9,12 +9,11 @@
 .lead {
 	display: flex;
 	flex-direction: column;
-	width: 100%;
 	background-image: url('./../../images/cover-image.png');
-	background-attachment: scroll;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
+	width: 100%;
 	height: auto;
 	padding: 56px 0 0;
 }
@@ -28,8 +27,8 @@
 @media screen and (max-width: 856px) {
 	.lead {
 		background-image: url('./../../images/cover-image-w856.png');
-		background-position: center right;
-		background-attachment: scroll;
+		/* background-position: center right; */
+		/* background-attachment: scroll; */
 	}
 }
 
