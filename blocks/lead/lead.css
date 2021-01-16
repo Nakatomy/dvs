@@ -11,7 +11,7 @@
 	flex-direction: column;
 	width: 100%;
 	background-image: url('./../../images/cover-image.png');
-	background-attachment: fixed;
+	background-attachment: scroll;
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
