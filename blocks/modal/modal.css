@@ -21,3 +21,9 @@
     transition: visibility .3s ease-out,
     opacity .3s ease-in-out;
 }
+
+@media screen and (max-width: 520px) {
+    .modal {
+        padding: 0;
+    }
+}
