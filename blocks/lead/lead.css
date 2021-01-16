@@ -28,6 +28,7 @@ padding: 48px 0 0;
 @media screen and (max-width: 856px) {
 	.lead {
 		background-image: url('./../../images/cover-image-w856.png');
-
+background-position: center right;
 	}
 }
+
