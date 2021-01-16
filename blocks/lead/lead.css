@@ -22,13 +22,14 @@
 @media screen and (max-width: 1560px) {
 	.lead {
 		background-image: url('./../../images/cover-image-w1560.png');
-padding: 48px 0 0;
+		padding: 48px 0 0;
 }
 
 @media screen and (max-width: 856px) {
 	.lead {
 		background-image: url('./../../images/cover-image-w856.png');
-background-position: center right;
+		background-position: center right;
+		background-attachment: scroll;
 	}
 }
 
