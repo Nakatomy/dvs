@@ -49,5 +49,6 @@
 @import url('../blocks/contact-us-box/contact-us-box.css');
 @import url('../blocks/section-link/section-link.css');
 @import url('../blocks/advisory-board/advisory-board.css');
-
+@import url('../blocks/nav/__lang-link/--active/nav__lang-link--active.css');
+@import url('../blocks/nav/__dropdown-content/--coming-soon/nav__dropdown-content--coming-soon.css');
 

@@ -1,5 +1,5 @@
 .nav__lang-link--active {
-	opacity: 1;
+	opacity: .5;
 	/* border-bottom: 1px solid black; */
 }
 
