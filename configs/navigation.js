@@ -1,5 +1,4 @@
 export default [{
-    'productOverview': {
         'title': 'Product Overview',
         'links': [{
                 'title': 'Solution',
@@ -15,14 +14,14 @@ export default [{
             }
         ]
     },
-    'legalCorner': {
+    {
         'title': 'Legal Corner',
         'links': [{
             'title': 'Legal',
             'href': '/legal'
         }]
     },
-    'aboutUs': {
+    {
         'title': 'About Us',
         'links': [{
                 'title': 'Partners',
@@ -47,7 +46,7 @@ export default [{
         ]
     },
 
-    'help': {
+   {
         'title': 'Help',
         'links': [{
                 'title': 'Privacy Policy',
@@ -59,5 +58,4 @@ export default [{
             }
         ]
     }
-
-}]
+]
