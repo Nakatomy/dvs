@@ -12,4 +12,4 @@ const Container = ({ children, modifier }) => {
   );
 };
 
-export default Container;
+export default Container
