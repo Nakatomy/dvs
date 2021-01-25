@@ -3,9 +3,9 @@ import cn from "classnames";
 import LinkComponent from "../link";
 import Link from 'next/link'
 import Logo from "../logo";
-import navProduct from "configs/footerNav/productOverview";
-import navAbout from "configs/footerNav/about-us";
-import navHelp from "configs/footerNav/help";
+import navProduct from "configs/navigation/productOverview";
+import navAbout from "configs/navigation/about-us";
+import navHelp from "configs/navigation/help";
 
 
 
