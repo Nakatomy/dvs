@@ -1,4 +1,6 @@
 import {Header, Footer} from '../components'
+import '../vendor/normalize.css'
+import './style.css'
 
 
 // This default export is required in a new `pages/_app.js` file.
