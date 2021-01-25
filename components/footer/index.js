@@ -1,11 +1,11 @@
 import styles from "./style.module.css";
 import cn from "classnames";
 import LinkComponent from "../link";
+import Link from 'next/link'
 import Logo from "../logo";
 import navProduct from "configs/footerNav/productOverview";
 import navAbout from "configs/footerNav/about-us";
 import navHelp from "configs/footerNav/help";
-
 
 
 const Footer = () => {
@@ -15,12 +15,11 @@ const Footer = () => {
         <div className={cn(styles.footer__item, styles.footer__line)}>
           <div className={styles.footer__item}>
             <div className={styles.footer__contact}>
-              <a href="index">
+              <Link href="/">
               <Logo className={styles.footer__logo}></Logo>
-              </a>
+              </Link>
             </div>
           </div>
-
           <div className={styles.footer__contact}>
             <p className={styles.footer__heading}>
               Digital Vault Services GmbH Handelsregister - HRB 249553
