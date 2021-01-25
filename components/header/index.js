@@ -8,6 +8,7 @@ import navAbout from 'configs/navigation/aboutUs';
 import navHelp from 'configs/navigation/help';
 import navLegalCorner from 'configs/navigation/legalCorner';
 import { Button } from 'components';
+import navigation from 'configs/navigation/navigation';
 
 
 const Header = () => {
@@ -27,7 +28,7 @@ const Header = () => {
                     <ul className={styles['nav__dropdown-content']}>
                         {navProduct.map((item) => {
                             return (
-                            <li>
+                            <li key={item.id}>
                                 <LinkComponent
                                 title={item.title}
                                 href={item.href}
@@ -43,7 +44,7 @@ const Header = () => {
                     <ul className={styles['nav__dropdown-content']}>
                         {navLegalCorner.map((item) => {
                             return (
-                            <li>
+                            <li key={item.id}>
                                 <LinkComponent
                                 title={item.title}
                                 href={item.href}
@@ -59,7 +60,7 @@ const Header = () => {
                      <ul className={styles['nav__dropdown-content']}>
                          {navAbout.map((item) => {
                             return (
-                            <li>
+                            <li key={item.id}>
                                 <LinkComponent
                                 title={item.title}
                                 href={item.href}
@@ -75,7 +76,7 @@ const Header = () => {
                     <ul className={styles['nav__dropdown-content']}>
                         {navHelp.map((item) => {
                             return (
-                            <li>
+                            <li key={item.id}>
                                 <LinkComponent
                                 title={item.title}
                                 href={item.href}
@@ -97,9 +98,7 @@ const Header = () => {
                     </a>
                 </li> --> */}
                 <li className={styles['nav__list-item']}>
-                    <LinkComponent href="./contacts">
-                      <Button title='Contact us' size='size-m' textColor='text-white' background='blue' border='border-white' />
-                    </LinkComponent>
+                      <Button href="/contacts" title='Contact us' size='size-m' textColor='text-white' background='blue' border='border-white' />
                 </li>
                 {/* <!-- <li className="nav__list-item">
                     <a href="#" className="nav__lang-link nav__lang-link--active">
