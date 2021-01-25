@@ -13,6 +13,7 @@ const Button = ({ children, title, background, textColor, size, border }) => {
     >
       {children}
       {title}
+
     </button>
   );
 };

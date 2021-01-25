@@ -1,11 +1,12 @@
-import styles from "./style.module.css";
-import cn from "classnames";
-import LinkComponent from "../link";
-import Link from 'next/link'
-import Logo from "../logo";
-import navProduct from "configs/navigation/productOverview";
-import navAbout from "configs/navigation/about-us";
-import navHelp from "configs/navigation/help";
+import styles from './style.module.css';
+import cn from 'classnames';
+import LinkComponent from '../link';
+import Link from 'next/link';
+import Logo from '../logo';
+import navProduct from 'configs/navigation/productOverview';
+import navAbout from 'configs/navigation/aboutUs';
+import navHelp from 'configs/navigation/help';
+import navLegalCorner from 'configs/navigation/legalCorner';
 
 
 
