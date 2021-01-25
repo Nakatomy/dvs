@@ -4,6 +4,7 @@ import Button from './button'
 import LinkComponent from './link'
 import Logo from './logo'
 import Paragraph from './paragraph'
+import Container from './container'
 
 export {
     Header,
@@ -11,5 +12,6 @@ export {
     LinkComponent,
     Logo,
     Button,
-    Paragraph
+    Paragraph,
+    Container
 }
