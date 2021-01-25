@@ -8,6 +8,7 @@ import navAbout from "configs/footerNav/about-us";
 import navHelp from "configs/footerNav/help";
 
 
+
 const Footer = () => {
   return (
     <footer className={styles.footer}>

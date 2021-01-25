@@ -4,5 +4,5 @@ import Button from './button'
 export {
     Header,
     Footer,
-    Button
+    Button,
 }
