@@ -15,9 +15,9 @@ const Header = () => {
     return  <header className={cn(styles.nav, styles['nav--sticky'], styles['nav--display-none'])}>
         <nav className={cn(styles.nav__container, styles['nav__container--sticky'])}>
             <div className={styles['nav__group-items']}>
-                <Link href="./index.html">
+                <LinkComponent href="/">
                     <Logo className={cn(styles.nav__logo, styles['nav__logo--sticky'])}></Logo>
-                </Link>
+                </LinkComponent>
                 <div className={styles['nav__menu-icon']}>
                     <div className={ styles.line }></div>
                 </div>
