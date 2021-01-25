@@ -121,11 +121,11 @@ const Footer = () => {
           </div>
         </nav>
       </Container>
-     <Container>
+      <Container modifier="full-width">
         <p className={styles.footer__copyright}>
           &copy; 2021. Digital Vault Services GmbH
         </p>
-        </Container>
+      </Container>
     </footer>
   );
 };
