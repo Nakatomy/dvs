@@ -1,12 +1,13 @@
 import styles from "./style.module.css";
 import cn from "classnames";
 import LinkComponent from "../link";
-import Link from 'next/link'
+import Link from "next/link";
 import Logo from "../logo";
 import navProduct from "configs/navigation/productOverview";
 import navAbout from "configs/navigation/aboutUs";
 import navHelp from "configs/navigation/help";
-import navLegalCorner from 'configs/navigation/legalCorner';
+import navLegalCorner from "configs/navigation/legalCorner";
+
 
 
 const Footer = () => {
@@ -16,9 +17,8 @@ const Footer = () => {
         <div className={cn(styles.footer__item, styles.footer__line)}>
           <div className={styles.footer__item}>
             <div className={styles.footer__contact}>
-            <LinkComponent href="/">
-              <Logo className={styles.footer__logo}>
-              </Logo>
+              <LinkComponent href="/">
+                <Logo className={styles.footer__logo}></Logo>
               </LinkComponent>
             </div>
           </div>
@@ -40,7 +40,6 @@ const Footer = () => {
               className={styles.footer__link}
             ></LinkComponent>
           </div>
-
           <div className={styles.footer__contact}>
             <LinkComponent
               title=" Stahlgruberring 43, 81829 Munich"
@@ -55,7 +54,7 @@ const Footer = () => {
             <ul className={styles.footer__ul}>
               {navProduct.map((item) => {
                 return (
-                  <li key={item.id} className={styles['footer__list-item']}>
+                  <li key={item.id} className={styles["footer__list-item"]}>
                     <LinkComponent
                       title={item.title}
                       href={item.href}
@@ -70,9 +69,9 @@ const Footer = () => {
           <div className={styles.footer__item}>
             <p className={styles.footer__heading}>Legal Corner</p>
             <ul className={styles.footer__ul}>
-            {navLegalCorner.map((item) => {
+              {navLegalCorner.map((item) => {
                 return (
-                  <li key={item.id} className={styles['footer__list-item']}>
+                  <li key={item.id} className={styles["footer__list-item"]}>
                     <LinkComponent
                       title={item.title}
                       href={item.href}
@@ -89,7 +88,7 @@ const Footer = () => {
             <ul className={styles.footer__ul}>
               {navAbout.map((item) => {
                 return (
-                  <li key={item.id} className={styles['footer__list-item']}>
+                  <li key={item.id} className={styles["footer__list-item"]}>
                     <LinkComponent
                       title={item.title}
                       href={item.href}
@@ -106,7 +105,7 @@ const Footer = () => {
             <ul className={styles.footer__ul}>
               {navHelp.map((item) => {
                 return (
-                  <li key={item.id} className={styles['footer__list-item']}>
+                  <li key={item.id} className={styles["footer__list-item"]}>
                     <LinkComponent
                       title={item.title}
                       href={item.href}
