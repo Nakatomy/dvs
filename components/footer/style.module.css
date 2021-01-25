@@ -1,9 +1,7 @@
 .footer {
   background-color: #001540;
-}
+  padding: 96px 0 96px 0;
 
-.section {
-	padding: 96px 0 96px 0;
 }
 
 .footer__ul {
@@ -60,6 +58,7 @@
 }
 
 .footer__grid {
+  
     display: grid;
     grid-template-columns: 1fr 4fr;
     gap: 48px;

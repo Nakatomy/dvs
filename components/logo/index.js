@@ -1,4 +1,4 @@
-function SvgLogo(props) {
+const Logo = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -54,4 +54,4 @@ function SvgLogo(props) {
   );
 }
 
-export default SvgLogo;
+export default Logo;
