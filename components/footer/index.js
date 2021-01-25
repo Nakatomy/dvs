@@ -1,7 +1,10 @@
 import styles from "./style.module.css";
 import cn from "classnames";
 import LinkComponent from "../link";
-import nav from "configs/navigation";
+import navProduct from "configs/footerNav/productOverview";
+import navAbout from "configs/footerNav/about-us";
+import navHelp from "configs/footerNav/help";
+
 
 
 const Footer = () => {
@@ -46,24 +49,20 @@ const Footer = () => {
         </div>
         <div className={styles.footer__container}>
           <div className={styles.footer__item}>
-            {nav.map((item) => {
-              return (
-                  <p className={styles.footer__heading}>Product Overview</p>
-                  <ul className={styles.footer__ul}>
-                    {nav.map((item) => {
-                      return (
-                        <li className={styles['footer__list-item']}>
-                          <LinkComponent
-                            title={item.title}
-                            href={item.href}
-                            className={styles.footer__link}
-                          />
-                        </li>
-                      );
-                    })}
-                  </ul>);
-  }
-
+            <p className={styles.footer__heading}>Product Overview</p>
+            <ul className={styles.footer__ul}>
+              {navProduct.map((item) => {
+                return (
+                  <li className={styles['footer__list-item']}>
+                    <LinkComponent
+                      title={item.title}
+                      href={item.href}
+                      className={styles.footer__link}
+                    />
+                  </li>
+                );
+              })}
+            </ul>
           </div>
 
           <div className={styles.footer__item}>
