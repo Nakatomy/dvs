@@ -121,11 +121,11 @@ const Footer = () => {
           </div>
         </nav>
       </Container>
-      <div>
+     <Container>
         <p className={styles.footer__copyright}>
           &copy; 2021. Digital Vault Services GmbH
         </p>
-      </div>
+        </Container>
     </footer>
   );
 };
