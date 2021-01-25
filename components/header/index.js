@@ -4,10 +4,10 @@ import { LinkComponent } from 'components';
 import Link from 'next/link';
 import Logo from '../logo';
 import navProduct from 'configs/navigation/productOverview';
-import navAbout from 'configs/Navigation/about-us';
-import navHelp from 'configs/Navigation/help';
-import navLegalCorner from 'configs/navigation/legal-corner';
-import { Button } from 'components'
+import navAbout from 'configs/navigation/aboutUs';
+import navHelp from 'configs/navigation/help';
+import navLegalCorner from 'configs/navigation/legalCorner';
+import { Button } from 'components';
 
 
 const Header = () => {
@@ -96,8 +96,10 @@ const Header = () => {
                         </span>
                     </a>
                 </li> --> */}
-                <li className="nav__list-item">
-                    <a href="./contacts.html" className="btn btn--text-white btn--size-m btn--blue">Contact us</a>
+                <li className={styles['nav__list-item']}>
+                    <LinkComponent href="./contacts">
+                      <Button title='Contact us' size='size-m' textColor='text-white' background='blue' border='border-white' />
+                    </LinkComponent>
                 </li>
                 {/* <!-- <li className="nav__list-item">
                     <a href="#" className="nav__lang-link nav__lang-link--active">
