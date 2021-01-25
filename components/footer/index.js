@@ -8,7 +8,6 @@ import navAbout from "configs/navigation/about-us";
 import navHelp from "configs/navigation/help";
 
 
-
 const Footer = () => {
   return (
     <footer className={styles.footer}>
@@ -16,9 +15,10 @@ const Footer = () => {
         <div className={cn(styles.footer__item, styles.footer__line)}>
           <div className={styles.footer__item}>
             <div className={styles.footer__contact}>
-              <Link href="/">
-              <Logo className={styles.footer__logo}></Logo>
-              </Link>
+            <LinkComponent href="/">
+              <Logo className={styles.footer__logo}>
+              </Logo>
+              </LinkComponent>
             </div>
           </div>
           <div className={styles.footer__contact}>

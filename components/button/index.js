@@ -1,9 +1,9 @@
 import styles from "./style.module.css";
 import cn from "classnames";
+import React from "react";
 
-const Button = ({ children, title, background, textColor, size, border }) => {
-  return (
-    <button
+const Button  = React.forwardRef(({ children, title, href, background, textColor, size, border }, ref) => {
+return (<a href={href} ref={ref}
       className={cn(styles.btn, {
         [styles[`btn--${background}`]]: background,
         [styles[`btn--${textColor}`]]: textColor,
@@ -13,8 +13,8 @@ const Button = ({ children, title, background, textColor, size, border }) => {
     >
       {children}
       {title}
-    </button>
+    </a>
   );
-};
+});
 
 export default Button;
