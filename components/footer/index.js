@@ -1,13 +1,9 @@
 import styles from "./style.module.css";
 import cn from "classnames";
 import LinkComponent from "../link";
-import Link from "next/link";
 import Logo from "../logo";
-import navProduct from "configs/navigation/productOverview";
-import navAbout from "configs/navigation/aboutUs";
-import navHelp from "configs/navigation/help";
-import navLegalCorner from "configs/navigation/legalCorner";
-import { Container} from "components";
+import navigation from 'configs/navigation/navigation';
+import {Container} from "components";
 
 const Footer = () => {
   const br = `\n`;
@@ -51,23 +47,45 @@ const Footer = () => {
             </div>
           </div>
           <div className={styles.footer__container}>
-            <div className={styles.footer__item}>
-              <p className={styles.footer__heading}>Product Overview</p>
-              <ul className={styles.footer__ul}>
-                {navProduct.map((item) => {
-                  return (
-                    <li key={item.id} className={styles["footer__list-item"]}>
-                      <LinkComponent
-                        title={item.title}
-                        href={item.href}
-                        className={styles.footer__link}
-                      />
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
 
+            {navigation.map(({ id, title, items: subItems }) => {
+                return ( <div className={styles.footer__item}>
+                            <p key={id} className={styles.footer__heading}>{title}</p>
+                            <ul className={styles.footer__ul}>
+                              {subItems.map((subItem) => {
+                                return (
+                                  <li key={subItem.id} className={styles["footer__list-item"]}>
+                                    <LinkComponent
+                                      title={subItem.title}
+                                      href={subItem.href}
+                                      className={styles.footer__link}
+                                    />
+                                  </li>
+                                );
+                              })}
+                            </ul>
+                          </div>
+                );
+            })}
+
+          </div>
+        </nav>
+      </Container>
+
+      <Container modifier="full-width">
+        <p className={styles.footer__copyright}>
+          &copy; 2021. Digital Vault Services GmbH
+        </p>
+      </Container>
+    </footer>
+  );
+};
+
+export default Footer;
+
+
+
+{/* 
             <div className={styles.footer__item}>
               <p className={styles.footer__heading}>Legal Corner</p>
               <ul className={styles.footer__ul}>
@@ -117,17 +135,4 @@ const Footer = () => {
                   );
                 })}
               </ul>
-            </div>
-          </div>
-        </nav>
-      </Container>
-      <Container modifier="full-width">
-        <p className={styles.footer__copyright}>
-          &copy; 2021. Digital Vault Services GmbH
-        </p>
-      </Container>
-    </footer>
-  );
-};
-
-export default Footer;
+            </div> */}
