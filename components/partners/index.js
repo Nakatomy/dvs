@@ -5,9 +5,9 @@ import partners from "configs/partners/partners";
 const Partners = () => {
   return (
     <section className={styles.partners}>
-      <p class={styles.partners__text}>Our partners</p>
+      <p className={styles.partners__text}>Our partners</p>
       <Container>
-        <ul class={styles.partners__items}>
+        <ul className={styles.partners__items}>
           {partners.map((item) => {
             return (
               <li key={item.id} className={styles["partners__item"]}>
