@@ -14,6 +14,8 @@ import Lead from './lead'
 import Navigation from './navigation'
 import Section from './section'
 import GridItem from './grid-item'
+import Menu from './menu'
+import Nav from './nav'
 
 export {
     Header,
@@ -31,5 +33,7 @@ export {
     Lead, 
     Navigation,
     Section,
-    GridItem
+    GridItem,
+    Menu,
+    Nav
 }
