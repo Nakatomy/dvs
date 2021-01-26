@@ -1,14 +1,17 @@
 import styles from "./style.module.css";
 import cn from "classnames";
-const Container = ({ children, modifier }) => {
+const Container = ({ children, display, width }) => {
   return (
     <div
       className={cn(styles.container, {
-        [styles[`container--${modifier}`]]: modifier,
+        [styles[`container--${display}`]] : display,
+        [styles[`container--${width}`]]: width
       })}
     >
       {children}
     </div>
+
+
   );
 };
 

@@ -1,9 +1,11 @@
 import styles from './style.module.css'
 
-const Title = (title ) => {
-  return <h2 className={styles.sectionTitle}>
-    {title}
+const Title = ({ children }) => {
+  return (
+    <h2 className={styles.sectionTitle}>
+      {children}
     </h2>
-};
+  );
+}
 
 export default Title;

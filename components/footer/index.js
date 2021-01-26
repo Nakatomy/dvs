@@ -8,7 +8,7 @@ import {Container} from "components";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <Container modifier="full-width">
+      <Container width="full-width">
         <nav className={styles.footer__grid}>
           <div className={cn(styles.footer__item, styles.footer__line)}>
             <div className={styles.footer__item}>
@@ -71,7 +71,7 @@ const Footer = () => {
         </nav>
       </Container>
 
-      <Container modifier="full-width">
+      <Container display="full-width">
         <p className={styles.footer__copyright}>
           &copy; 2021. Digital Vault Services GmbH
         </p>

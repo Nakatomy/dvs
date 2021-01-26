@@ -1,12 +1,7 @@
 import styles from './style.module.css';
 import cn from 'classnames';
-import { LinkComponent } from 'components';
+import { LinkComponent, Button } from 'components';
 import Logo from '../logo';
-import navProduct from 'configs/navigation/productOverview';
-import navAbout from 'configs/navigation/aboutUs';
-import navHelp from 'configs/navigation/help';
-import navLegalCorner from 'configs/navigation/legalCorner';
-import { Button } from 'components';
 import navigation from 'configs/navigation/navigation'
 
 

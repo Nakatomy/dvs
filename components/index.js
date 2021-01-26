@@ -10,6 +10,10 @@ import Container from './container'
 import Heading from './heading'
 import ImageComponent from './image'
 import Partners from './partners'
+import Lead from './lead'
+import Navigation from './navigation'
+import Section from './section'
+import GridItem from './grid-item'
 
 export {
     Header,
@@ -23,5 +27,9 @@ export {
     Container,
     Heading,
     ImageComponent,
-    Partners
+    Partners,
+    Lead, 
+    Navigation,
+    Section,
+    GridItem
 }

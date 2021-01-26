@@ -1,0 +1,22 @@
+.sectionTitle {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 1.1;
+    color: #001540;
+    width: 100%;
+    margin: 0 0 40px 0;
+}
+
+
+@media screen and (max-width: 760px) {
+    .sectionTitle {
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .sectionTitle {
+        font-size: 40px;
+    }
+}

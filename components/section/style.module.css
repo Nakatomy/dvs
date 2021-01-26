@@ -1,0 +1,13 @@
+.section {
+    padding: 96px 0 96px 0;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.section--bg-gradient {
+    background: #EBF1FE;
+}
+
+
+
