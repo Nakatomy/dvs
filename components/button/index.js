@@ -17,4 +17,4 @@ return (<a href={href} ref={ref}
   );
 });
 
-export default Button;
+export default Button
