@@ -10,6 +10,8 @@ import Container from './container'
 import Heading from './heading'
 import ImageComponent from './image'
 import Partners from './partners'
+import Menu from './menu'
+import Nav from './nav'
 
 export {
     Header,
@@ -23,5 +25,7 @@ export {
     Container,
     Heading,
     ImageComponent,
-    Partners
+    Partners,
+    Menu,
+    Nav
 }
