@@ -3,6 +3,8 @@ import Footer from './footer'
 import Button from './button'
 import LinkComponent from './link'
 import Logo from './logo'
+import Title from './title'
+import Main from './main'
 import Paragraph from './paragraph'
 import Container from './container'
 import Heading from './heading'
@@ -15,6 +17,8 @@ export {
     LinkComponent,
     Logo,
     Button,
+    Title, 
+    Main,
     Paragraph,
     Container,
     Heading,

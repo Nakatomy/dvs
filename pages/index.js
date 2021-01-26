@@ -1,5 +1,6 @@
+import {Partners} from 'components'
 function HomePage() {
-    return <div>Welcome to Next.js!</div>
+    return <Partners />
   }
   
   export default HomePage
