@@ -8,6 +8,8 @@ import Main from './main'
 import Paragraph from './paragraph'
 import Container from './container'
 import Heading from './heading'
+import ImageComponent from './image'
+import Partners from './partners'
 
 export {
     Header,
@@ -19,5 +21,7 @@ export {
     Main,
     Paragraph,
     Container,
-    Heading
+    Heading,
+    ImageComponent,
+    Partners
 }

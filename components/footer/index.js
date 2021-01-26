@@ -6,7 +6,6 @@ import navigation from 'configs/navigation/navigation';
 import {Container} from "components";
 
 const Footer = () => {
-  const br = `\n`;
   return (
     <footer className={styles.footer}>
       <Container modifier="full-width">
