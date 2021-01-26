@@ -48,8 +48,8 @@ const Footer = () => {
           <div className={styles.footer__container}>
 
             {navigation.map(({ id, title, items: subItems }) => {
-                return ( <div className={styles.footer__item}>
-                            <p key={id} className={styles.footer__heading}>{title}</p>
+                return ( <div key={id} className={styles.footer__item}>
+                            <p  className={styles.footer__heading}>{title}</p>
                             <ul className={styles.footer__ul}>
                               {subItems.map((subItem) => {
                                 return (
@@ -80,58 +80,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
-
-
-
-{/* 
-            <div className={styles.footer__item}>
-              <p className={styles.footer__heading}>Legal Corner</p>
-              <ul className={styles.footer__ul}>
-                {navLegalCorner.map((item) => {
-                  return (
-                    <li key={item.id} className={styles["footer__list-item"]}>
-                      <LinkComponent
-                        title={item.title}
-                        href={item.href}
-                        className={styles.footer__link}
-                      />
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-
-            <div className={styles.footer__item}>
-              <p className={styles.footer__heading}>About Us</p>
-              <ul className={styles.footer__ul}>
-                {navAbout.map((item) => {
-                  return (
-                    <li key={item.id} className={styles["footer__list-item"]}>
-                      <LinkComponent
-                        title={item.title}
-                        href={item.href}
-                        className={styles.footer__link}
-                      />
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-
-            <div className={styles.footer__item}>
-              <p className={styles.footer__heading}>Help</p>
-              <ul className={styles.footer__ul}>
-                {navHelp.map((item) => {
-                  return (
-                    <li key={item.id} className={styles["footer__list-item"]}>
-                      <LinkComponent
-                        title={item.title}
-                        href={item.href}
-                        className={styles.footer__link}
-                      />
-                    </li>
-                  );
-                })}
-              </ul>
-            </div> */}
+export default Footer
