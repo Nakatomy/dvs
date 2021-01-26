@@ -7,6 +7,7 @@ import Title from './title'
 import Main from './main'
 import Paragraph from './paragraph'
 import Container from './container'
+import Heading from './heading'
 
 export {
     Header,
@@ -17,5 +18,6 @@ export {
     Title, 
     Main,
     Paragraph,
-    Container
+    Container,
+    Heading
 }
