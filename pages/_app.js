@@ -1,4 +1,4 @@
-import {Header, Footer} from '../components'
+import {Header, Footer, Partners} from '../components'
 import '../vendor/normalize.css'
 import './style.css'
 

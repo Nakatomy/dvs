@@ -1,7 +1,6 @@
 import styles from "./style.module.css";
 import cn from "classnames";
 import LinkComponent from "../link";
-import Link from "next/link";
 import Logo from "../logo";
 import navProduct from "configs/navigation/productOverview";
 import navAbout from "configs/navigation/aboutUs";
@@ -10,7 +9,6 @@ import navLegalCorner from "configs/navigation/legalCorner";
 import { Container} from "components";
 
 const Footer = () => {
-  const br = `\n`;
   return (
     <footer className={styles.footer}>
       <Container modifier="full-width">
