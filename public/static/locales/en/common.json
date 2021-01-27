@@ -1,5 +1,62 @@
 {
-  "guarantee-Vault": "Guarantee Vault",
   "error-with-status": "A {{statusCode}} error occurred on server",
-  "error-without-status": "An error occurred on the server"
+  "error-without-status": "An error occurred on the server",
+  "ButtonNameMore": "More",
+
+  "leadTitle": "Guarantee Vault",
+  "leadSubtitle": "For the Issuance & Safekeeping of Digital Guarantees",
+  "leadStatement": "All parties, at source and in real-time.",
+  "leadPrimaryButtonName": "Contact us",
+  "leadSecondaryButtonName": "Find out more",
+
+  "partnersTitle": "Our partners",
+
+  "solutionTitle": "What we do",
+  "solutionParagraph1": "Guarantee Vault is a place for the issuance and safekeeping of digital guarantees. It gives banks &amp; sureties the possibility to centrally issue and store instruments such as Bank Guarantees, Surety Bonds and Standby Letters of Credit in an electronic (paperless) form.",
+  "solutionParagraph2": "This combination of central issuance with digital guarantees is an innovation that delivers significant value to all market participants including applicants, guarantors and beneficiaries.",
+  "solutionParagraph3": "Through the transparency it brings, Guarantee Vault adds an additional layer of efficiency right throughout the guarantee life-cycle.",
+  
+  "testimonialLindnerParagraph1": "“Over the last 2 years we have worked closely with 15 corporates, sureties and banks to help make Guarantee Vault a reality. Our shared experiences, collaborative spirit and common vision are at the heart and soul of what Guarantee Vault is.",
+  "testimonialLindnerParagraph2": "We proudly see this as a true market initiative, one that solves a wide spread common problem and brings efficiencies to all involved.”",
+
+  "testimonialEulerHermesParagraph1": "“Running a paper based manual guarantee process has always been a challenge, even more so in this Covid-19 environment. We believe that digital guarantees are the solution, they increase transparency, create efficiencies and minimize risk.",
+  "testimonialEulerHermesParagraph2": "The innovation that Guarantee Vault brings will benefit all parties including applicants, guarantors and beneficiaries”  ",
+
+  "testimonialBayernLbParagraph1": "“It has been a great experience working with both corporate and financial stakeholders on the digitization of guarantees.",
+  "testimonialBayernLbParagraph2": "Through Guarantee Vault we now have the possibility to offer all our customers the issuance, safe keeping and administration of digital guarantees in a secure and central place.",
+  "testimonialBayernLbParagraph3": "For the first time, the complete end-to-end digitization of the entire guarantee transaction is possible, from applicant and issuer right through to beneficiary.",
+  "testimonialBayernLbParagraph4": "We look forward to go-live and future developments.”",
+
+  "testimonialPorrParagraph1": "“Working closely on the Guarantee Vault project with other market participants has been a great experience. For many years the lack of transparency in the Guarantee process today has been an on-going problem for us.",
+  "testimonialPorrParagraph2": "Because of this, managing our portfolio of outstanding guarantees across all our banking and surety partners has been a significant challenge.",
+  "testimonialPorrParagraph3": "Through the added transparency it brings, Guarantee Vault gives us oversight at source which solves the problem.”",
+
+  "testimonialAtradiusParagraph1": "“Guarantee Vault’s digital guarantee solution enables a true end-to-end digitization of the guarantee life-cycle.",
+  "testimonialAtradiusParagraph2": "The solution allows us to expand our service offering to clients, helping them better manage their business, reduce costs, improve efficiency and reduce risk.",
+  "testimonialAtradiusParagraph3": "We are proud to be part of this true market initiative and look forward to the exciting journey ahead.”",
+
+  "testimonialGlobalTradeCorpParagraph1": "“This is a first universal digital network that connects corporates with all types of guarantee issuers: banks, insurance companies and agents as well as export development and other government agencies. It also directly links corporates with each other, as applicants and beneficiaries.",
+  "testimonialGlobalTradeCorpParagraph2": "The Guarantee Vault offering is based on open collaboration and transparent pricing. This approach facilitates acceptance by providers of trade finance IT solutions – one of the key elements for the wider market adoption.",
+  "testimonialGlobalTradeCorpParagraph3": "We are pleased to offer seamless connectivity to the Guarantee Vault for all clients of the @GlobalTrade platform.”",
+
+  "servicesTitle": "Services throughout the guarantee life-cycle",
+  "servicesParagraph" : "Guarantee Vault offers long-term, secure and cost-effective services to applicants, guarantors, beneficiaries and intermediaries right across the life of a guarantee including application, issuance and post-issuance.",
+
+  "restApiTitle": "REST API Solution",
+  "restApiParagraph1": "Guarantee Vault delivers its services using a suite of REST APIs allowing all market participants to seamlessly connect and interact.",
+  "restApiParagraph2": "Corporates, sureties, banks and other intermediaries can interface with Guarantee Vault via their existing platform, portal or other in-house systems.",
+  "restApiParagraph3": "In this way all participants can connect to access and consume data, at source and in real-time.",
+  "restApiParagraph4": "Data is exchanged using JSON format whilst Guarantee Vault APIs are secured using market standard authentication protocol OpenId Connect.",
+
+  "legalTitle": "Legal",
+  "legalParagraph1": "Electronic guarantees issued via Guarantee Vault are as legal, valid and binding as traditional (paper) guarantees.",
+  "legalParagraph2": "When issuing guarantees on Guarantee Vault only the form of the guarantee is changed (i.e. paper to electronic) not their content.",
+  "legalParagraph3": "Before offering its services in any country, Digital Vault Services GmbH conducts a thorough analysis and validates that the national law governing guarantees in that market allows for electronic form.",
+  "legalParagraph4": "Digital Vault Services GmbH works with the following legal partners in this regard",
+
+  "newsTitle": "Structured Finance Digital Week 2020",
+  "newsSubtitle": "Digitization of Guarantees",
+  "newsParagraph1": "Together with Peter Grätz from Bayerische Landesbank and Sven Matzelsberger from Lindner Group KG our managing director Ludger Janssen presented the Guarantee Vault, a place for the issuance and safe-keeping of digital guarantees.",
+  "newsParagraph2": "For further information, please contact us."
+
 }

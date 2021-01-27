@@ -3,14 +3,12 @@ import cn from 'classnames';
 import { Nav } from 'components';
 import PropTypes from 'prop-types'
 
-const Header = ({ children}) => {
+const Header = ({ children }) => {
 
-    return ( <header className={cn(styles.nav, styles['nav--sticky'], styles['nav--display-none'])}>
-         <h1>
-    
-    </h1>
-    {children}
-        <Nav/>
+    return (<header className={cn(styles.nav, styles['nav--sticky'], styles['nav--display-none'])}>
+
+        {children}
+        <Nav />
     </header>
     )
 }

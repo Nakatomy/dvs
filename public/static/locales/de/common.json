@@ -1,5 +1,62 @@
 {
-  "guarantee-Vault": "Gewölbe garantieren",
   "error-with-status": "Auf dem Server ist ein Fehler ({{statusCode}}) aufgetreten",
-  "error-without-status": "Auf dem Server ist ein Fehler aufgetreten"
+  "error-without-status": "Auf dem Server ist ein Fehler aufgetreten",
+   "ButtonNameMore": "Mehr",
+
+  "leadTitle": "Guarantee Vault",
+  "leadSubtitle": "Erstellung, Verwaltung & sichere Aufbewahrung digitaler Bürgschaften und Garantien",
+  "leadStatement": "Alle Beteiligten. An der gleichen Datenquelle. In Echtzeit.",
+  "leadPrimaryButtonName": "Kontakt",
+  "leadSecondaryButtonName": "Mehr Informationen",
+ 
+  "partnersTitle": "Unsere Partner",
+
+  "solutionTitle": "Was wir machen",
+  "solutionParagraph1": "Der Guarantee Vault ist die optimale Lösung zur vollständig digitalen Erstellung, sicheren Aufbewahrung und effizientem Management digitaler Bürgschaften und Garantien. Er ermöglicht Banken und Kreditversicherern sämtliche Arten von Avalen wie Garantien, Bürgschaften, Kautions- und Delkredeversicherungen sowie Standby-Akkreditive papierlos und elektronisch auszustellen und effizient aufzubewahren.",
+  "solutionParagraph2": "Die Kombination aus elektronischer Bearbeitung und zentraler Speicherung von diversen Avalen ist die vom Markt lange geforderte Innovation. Sie bringt allen Beteiligten einen enormen Mehrwert, vom Auftraggeber über die Garanten bis hin zum Begünstigten.",
+  "solutionParagraph3": "Der für alle Beteiligten zugängliche, zentrale Datenhaushalt führt nicht nur zu bislang ungekannter Transparenz, sondern auch zu erheblicher Effizienzsteigerung bei allen Beteiligten während des gesamten Lebenszyklus des Avals.",
+  
+  "testimonialLindnerParagraph1": "“Gemeinsam mit 15 Unternehmen, Kreditversicherern und Banken haben wir die letzten beiden Jahre daran gearbeitet, den Guarantee Vault Wirklichkeit werden zu lassen. Die geteilten Erfahrungen, der Teamgeist und die gemeinsame Vision sind das Herz und die Seele des Guarantee Vaults.",
+  "testimonialLindnerParagraph2": "Wir sind stolz darauf mit einer echten Marktinitiative ein weit verbreitetes, allgemeines Problem lösen und Effizienzgewinne für alle Beteiligten generieren zu können.”",
+
+  "testimonialEulerHermesParagraph1": "“Bürgschaften und Garantien in Papierform waren schon immer eine besondere Herausforderung, umso mehr aber in Zeiten von Covid-19. Digitale Urkunden sind die Zukunft: Sie ermöglichen mehr Transparenz, schaffen erhebliche Effizienzgewinne und minimieren Risiken.",
+  "testimonialEulerHermesParagraph2": "Durch die Innovation, die der Guarantee Vault mit sich bringt, profitieren Auftraggeber, Bürgen und Begünstige gleichermaßen”",
+
+  "testimonialBayernLbParagraph1": "“Es ist eine tolle Erfahrung, zusammen mit Vertretern aus Wirtschaft und Finanzindustrie, erfolgreich an einer Lösung zur Digitalisierung von Garantien mitzuarbeiten.",
+  "testimonialBayernLbParagraph2": "Mit Guarantee Vault haben wir die Möglichkeit unseren Kunden die digitale Erstellung, Verwahrung und Verwaltung von Avalen (Garantien und Bürgschaften) anzubieten.",
+  "testimonialBayernLbParagraph3": "Somit ist erstmals die volldigitale Abwicklung von Avalgeschäften, entlang der gesamten Wetschöpfungskette vom Auftraggeber über den Ersteller bis hin zum Begünstigten möglich. Wir werden diese Option nicht nur Großunternehmen sondern auch allen Firmen mit umfangreichem Avalgeschäft anbieten können.",
+  "testimonialBayernLbParagraph4": "Ich freue mich auf das Go-Live und die weitere Entwicklung.”",
+
+  "testimonialPorrParagraph1": "“Gemeinsam mit einer Arbeitsgruppe, bestehend aus Kollegen und Partnern unterschiedlicher Branchen, aktiv an der Entwicklung des Guarantee Vaults beteiligt gewesen zu sein, war eine großartige Erfahrung.",
+  "testimonialPorrParagraph2": "Der Guarantee Vault verschafft uns mehr Transparenz und Überblick über unsere ausstehenden Garantien bei unseren Banken und Kreditversicherern, sowohl aus Sicht als Auftraggeber einer Haftung als auch als Begünstigter.",
+  "testimonialPorrParagraph3": "Da alle Garantien zentral an einem Ort ausgestellt und sicher verwahrt werden und sie jederzeit von überall abrufbar sind, können die Bearbeitungs- und Durchlaufzeiten verkürzt werden. Das ist für uns ein erheblicher Vorteil.”",
+
+  "testimonialAtradiusParagraph1": "“Guarantee Vault’s digital guarantee solution enables a true end-to-end digitization of the guarantee life-cycle.",
+  "testimonialAtradiusParagraph2": "The solution allows us to expand our service offering to clients, helping them better manage their business, reduce costs, improve efficiency and reduce risk.",
+  "testimonialAtradiusParagraph3": "We are proud to be part of this true market initiative and look forward to the exciting journey ahead.”",
+
+  "testimonialGlobalTradeCorpParagraph1": "“This is a first universal digital network that connects corporates with all types of guarantee issuers: banks, insurance companies and agents as well as export development and other government agencies. It also directly links corporates with each other, as applicants and beneficiaries.",
+  "testimonialGlobalTradeCorpParagraph2": "The Guarantee Vault offering is based on open collaboration and transparent pricing. This approach facilitates acceptance by providers of trade finance IT solutions – one of the key elements for the wider market adoption.",
+  "testimonialGlobalTradeCorpParagraph3": "We are pleased to offer seamless connectivity to the Guarantee Vault for all clients of the @GlobalTrade platform.”",
+
+  "servicesTitle": "Leistungen über alle verschiedenen Stadien des Avals",
+  "servicesParagraph": "Der Guarantee Vault bietet langfristige, sichere und kosteneffiziente Services für Auftraggeber, Garanten, Begünstigte und Intermediäre während der gesamten Laufzeit eines Avals; Beantragung, Ausstellung, Änderungen und Avalrückgabe eingeschlossen.",
+
+  "restApiTitle": "REST API",
+  "restApiParagraph1": "Die wesentlichen Vorteile des Guarantee Vault erfolgen über eine Reihe von REST APIs, die allen Nutzern eine nahtlose Anbindung und Zusammenarbeit mit dem Tool ermöglichen.",
+  "restApiParagraph2": "Unternehmen, Kreditversicherer, Banken und Intermediäre können sich über ihre bestehenden Plattformen, Portale oder In-House-Systeme nahtlos an den Guarantee Vault anbinden.",
+  "restApiParagraph3": "Auf diese Weise können sich alle Beteiligten vernetzen und auf die zentral vorgehaltenen Daten zugreifen, um diese unmittelbar und in Echtzeit verarbeiten zu können.",
+  "restApiParagraph4": "Der Datentransfer erfolgt im JSON Format, die Guarantee Vault APIs sind mit dem marktüblichen Authentifizierungsprotokoll OpenId Connect geschützt.",
+  
+  "legalTitle": "Rechtliches",
+  "legalParagraph1": "Elektronische Garantien, die über Guarantee Vault ausgestellt werden, sind genauso rechtswirksam und verbindlich wie traditionelle (Papier-)Garantien. Details finden Sie im Legal Corner.",
+  "legalParagraph2": "Bei der Ausstellung von Garantien über Guarantee Vault wird nur die Form eines Avals geändert (d. h. von Papier zu elektronisch), nie ihr Inhalt.",
+  "legalParagraph3": "Bevor die Digital Vault Services GmbH ihre Dienstleistungen in einem Land anbietet, führt sie eine gründliche juristische Analyse durch und prüft, ob das nationale Recht für Avale in diesem Markt die elektronische Form zulässt.",
+  "legalParagraph4": "Die Digital Vault Services GmbH arbeitet in diesem Zusammenhang mit folgenden internationalen Kanzleien zusammen:",
+
+  "newsTitle": "Structured Finance Digital Week 2020",
+  "newsSubtitle": "Digitalisierung von Garantien",
+  "newsParagraph1": "Unser Geschäftsführer Ludger Janßen stellt zusammen mit Sven Matzelsberger, Head of Treasury der Lindner Group KG und Peter Grätz, Head of Export and Trade Finance der Bayerischen Landesbank den Guarantee Vault auf der Structured Finance Digital 2020 vor.",
+  "newsParagraph2": "Kontaktieren Sie uns gern für weitere Informationen oder Details."
+
 }
