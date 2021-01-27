@@ -5,3 +5,81 @@
     font-family: 'Inter', 'Helvetica', sans-serif;
 }
 
+.nav__dropbtn {
+    display: flex;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: 0.5px;
+    align-items: center;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+    padding: 12px 0;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+}
+
+@media screen and (max-width: 1500px) {
+    .nav__dropbtn {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .nav__dropbtn {
+        font-size: 24px;
+        font-weight: 400;
+    }
+}
+
+
+
+.nav__comming-soon-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.nav__coming-soon {
+    float: none;
+    color: #001540;
+    margin: 0;
+    padding: 0 0 6px 0;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+
+} 
+
+   .nav__lang-link {
+    text-decoration: none;
+}
+
+.nav__lang-link--active {
+    opacity: .5;
+}
+
+.icon--size-m {
+    width: 24px;
+    height: 24px;
+}
+
+.icon--de-flag {
+    background-image: url('images/de.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon--gb-flag {
+    background-image: url('images/gb.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+ }
+

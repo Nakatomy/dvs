@@ -1,9 +1,11 @@
-import { Container, Lead, Partners, Section, ImageComponent, GridItem, Title, Paragraph, Button } from 'components'
+import { Container, Lead, Partners, Section, ImageComponent, GridItem, Title, Paragraph, Button, Header } from 'components'
 import abstractWaves from "images/abstract-waves.png";
 import solution from 'configs/solution'
 import Image from 'next/image'
+import PropTypes from 'prop-types'
+import { i18n, Link, withTranslation } from '../i18n'
 
-function HomePage() {
+function HomePage({ t }) {
   return (
     <> 
     <Lead />
@@ -43,5 +45,13 @@ function HomePage() {
   </>
   );
   }
+
+  HomePage.getInitialProps = async () => ({
+    namespacesRequired: ['common'],
+  })
   
-  export default HomePage
+  HomePage.propTypes = {
+    t: PropTypes.func.isRequired,
+  }
+  
+  export default withTranslation('common')(HomePage)

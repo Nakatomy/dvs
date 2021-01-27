@@ -96,7 +96,7 @@
 
 
 
-    /* .nav__comming-soon-list {
+    .nav__comming-soon-list {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -123,4 +123,21 @@
     .nav__lang-link--active {
         opacity: .5;
     }
-    */
+   
+    .icon--size-m {
+        width: 24px;
+        height: 24px;
+        margin-left: 15px;
+    }
+
+    .icon--de-flag {
+        background-image: url('images/de.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .icon--gb-flag {
+        background-image: url('images/gb.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+     }
