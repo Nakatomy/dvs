@@ -1,0 +1,48 @@
+.image {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: auto;
+    align-self: center;
+    justify-self: center;
+    margin: 60px 0;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.image__caption {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.45;
+    border-top: solid 1px #c3cee2;
+    padding-top: 8px;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 945px) {
+    .image--desktop {
+        display: none;
+        visibility: hidden;
+        /* margin-bottom: 48px; */
+    }
+}
+
+.image--mobile {
+    display: none;
+    visibility: hidden;
+}
+
+@media screen and (max-width: 945px) {
+    .image--mobile {
+        display: flex;
+        flex-direction: column;
+        visibility: visible;
+        margin-bottom: 48px;
+    }
+}

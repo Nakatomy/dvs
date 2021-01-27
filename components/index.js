@@ -1,21 +1,23 @@
-import Header from './header'
-import Footer from './footer'
-import Button from './button'
-import LinkComponent from './link'
-import Logo from './logo'
-import Title from './title'
-import Main from './main'
-import Paragraph from './paragraph'
-import Container from './container'
-import Heading from './heading'
-import ImageComponent from './image'
-import Partners from './partners'
-import Lead from './lead'
-import Navigation from './navigation'
-import Section from './section'
-import GridItem from './grid-item'
-import Menu from './menu'
-import Nav from './nav'
+import Header from './header';
+import Footer from './footer';
+import Button from './button';
+import LinkComponent from './link';
+import Logo from './logo';
+import Title from './title';
+import Main from './main';
+import Paragraph from './paragraph';
+import Container from './container';
+import Heading from './heading';
+import ImageComponent from './image';
+import Partners from './partners';
+import Lead from './lead';
+import Navigation from './navigation';
+import Section from './section';
+import GridItem from './grid-item';
+import Menu from './menu';
+import Nav from './nav';
+import ButtonWrapper from './button-wrapper';
+import Testimonial from './testimonial';
 
 export {
     Header,
@@ -23,17 +25,19 @@ export {
     LinkComponent,
     Logo,
     Button,
-    Title, 
+    ButtonWrapper,
+    Title,
     Main,
     Paragraph,
     Container,
     Heading,
     ImageComponent,
     Partners,
-    Lead, 
+    Lead,
     Navigation,
     Section,
     GridItem,
     Menu,
-    Nav
-}
+    Nav,
+    Testimonial
+};

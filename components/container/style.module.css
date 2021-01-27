@@ -17,6 +17,10 @@
     }
 }
 
+.container--minHeight {
+    min-height: 80vh;
+}
+
 .container--full-width {
     max-width: 1480px;
 }

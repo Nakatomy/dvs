@@ -110,3 +110,9 @@
         background-color: #2e90ff;
         transition: background-color ease-in 0.3s;
     }
+
+    .btn--spaceBetween {
+        margin-right: 24px;
+        margin-bottom: 24px;
+    }
+
