@@ -1,5 +1,7 @@
 import styles from "./style.module.css";
 import { Button } from 'components'
+import PropTypes from 'prop-types'
+import { withTranslation } from 'i18n'
 
 const Lead = ({ title, subtitle, statement }) => {
 	return (

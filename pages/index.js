@@ -23,15 +23,14 @@ import bayernLbLogo from 'images/partners/partner-bayernlb.svg'
 import porrLogo from 'images/partners/partner-porr.jpg'
 import atradiusLogo from 'images/partners/partner-atradius.svg'
 import globalTradeLogo from 'images/partners/partner-gtc.png'
+import PropTypes from 'prop-types'
+import { i18n, withTranslation } from '../i18n'
 
-import solution from 'configs/solution';
-
-
-function HomePage() {
+function HomePage({ t }) {
   return (
     <div>
       <Lead
-        title="Guarantee Vault"
+        title={t('guarantee-Vault')}
         subtitle="For the Issuance & Safekeeping of Digital Guarantees"
         statement="All parties, at source and in real-time."
       />
@@ -262,4 +261,12 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+HomePage.getInitialProps = async () => ({
+  namespacesRequired: ['common'],
+})
+
+HomePage.propTypes = {
+  t: PropTypes.func.isRequired,
+}
+
+export default withTranslation('common')(HomePage)

@@ -19,7 +19,7 @@ const Nav = () => {
   }
 
   if (showMenu) {
-    menu = <Menu className={styles["nav__items--active"]} />;
+    menu = <Menu className={styles["nav__items--active"]}></Menu>;
   }
   return (
     <nav
@@ -39,7 +39,7 @@ const Nav = () => {
         </div>
       </div>
       {menu}
-      <Menu className={styles.nav__items} />
+      <Menu className={styles.nav__items}></Menu>
     </nav>
   );
 };

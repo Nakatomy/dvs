@@ -1,9 +1,11 @@
 import styles from "./style.module.css";
 import navigation from "configs/navigation/navigation";
 import { LinkComponent, Button } from "components";
+import cn from "classnames";
+import PropTypes from "prop-types";
+import { i18n, Link, withTranslation } from "i18n";
 
-
-const Menu = ({ className }) => {
+const Menu = ({ className, t }) => {
   return (
     <ul className={className}>
       {navigation.map(({ id, title, items: subItems }) => {
@@ -36,8 +38,39 @@ const Menu = ({ className }) => {
           border="border-white"
         />
       </li>
+    
+        <Button
+          className={styles.nav__dropbtn}
+          type="button"
+          onClick={() =>
+            i18n.changeLanguage('en')
+          }
+        >
+          <div
+            className={cn(styles["icon--size-m"], styles["icon--gb-flag"])}
+          ></div>
+        </Button>
+        <Button
+          className={styles.nav__dropbtn}
+          type="button"
+          onClick={() =>
+            i18n.changeLanguage('de')
+          }
+        >
+          <div
+            className={cn(styles["icon--size-m"], styles["icon--de-flag"])}
+          ></div>
+        </Button>
     </ul>
   );
 };
 
-export default Menu;
+Menu.getInitialProps = async () => ({
+  namespacesRequired: ["common"],
+});
+
+Menu.propTypes = {
+  t: PropTypes.func.isRequired,
+};
+
+export default withTranslation("common")(Menu);
