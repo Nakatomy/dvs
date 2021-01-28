@@ -10,7 +10,7 @@ const AdvisoryBoard = ({t}) => {
     <Section>
     
     <Container  width="normal-width" margin="marginTop">
-    <Title>Advisory Board</Title>
+    <Title>{t('pageTitle')}</Title>
     </Container>
         <Container display="grid" width="normal-width" margin="marginBottom80" >
         <AdvisoryMember name="Alex Gurin" title='Chairman of the Investment Committee' company="GlobalTrade Corporation" location="Toronto/Canada"/>
@@ -35,11 +35,11 @@ const AdvisoryBoard = ({t}) => {
 }
 
 AdvisoryBoard.getInitialProps = async () => ({
-    namespacesRequired: ['advisoryBoard'],
+    namespacesRequired: ['advisoryBoardPage'],
   })
   
   AdvisoryBoard.propTypes = {
     t: PropTypes.func.isRequired,
   }
   
-  export default withTranslation('advisoryBoard')(AdvisoryBoard)
+  export default withTranslation('advisoryBoardPage')(AdvisoryBoard)
