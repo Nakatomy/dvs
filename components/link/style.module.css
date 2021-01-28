@@ -5,11 +5,12 @@
 .link--paragraph {
     color: #0075FF;
     text-decoration: none;
+    font-size: 20px;
 }
 
-.link--paragraph:visited {
+/* .link--paragraph:visited {
     color: #0075FF;
-}
+} */
 
 .link--paragraph:hover {
     text-decoration: underline;

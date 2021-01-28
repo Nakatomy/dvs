@@ -1,4 +1,5 @@
 import {
+  Meta,
   Container,
   Lead,
   Partners,
@@ -11,8 +12,8 @@ import {
   ButtonWrapper,
   LinkComponent,
   Testimonial,
-   Header,
-   Nav,
+  Header,
+  Nav,
   Heading,
   YoutubeVideo
 } from 'components';
@@ -31,8 +32,6 @@ import PropTypes from 'prop-types'
 import { i18n, withTranslation } from '../i18n'
 import { useState, useEffect } from "react";
 import cn from "classnames";
-
-
 
 function HomePage({ t }) {
 
@@ -58,10 +57,13 @@ function HomePage({ t }) {
       </Header>
     );
   }
-
   return (
     <div>
-     {nav}
+      <Meta
+        title={t('leadTitle') + ' | Digital Vault Services'}
+        desc={t('solutionParagraph1')}
+      />
+      {nav}
       <Lead
         title={t('leadTitle')}
         subtitle={t('leadSubtitle')}
@@ -212,17 +214,17 @@ function HomePage({ t }) {
             <Paragraph>{t('legalParagraph3')}</Paragraph>
             <Paragraph>{t('legalParagraph4')}</Paragraph>
             <Paragraph>
-              <LinkComponent href="https://www.cliffordchance.com/people_and_places/places/europe/germany.html" type="paragraph">CLIFFORD CHANCE</LinkComponent>
+              <LinkComponent href="https://www.cliffordchance.com/people_and_places/places/europe/germany.html" type="paragraph" target="_blank">CLIFFORD CHANCE</LinkComponent>
               <Paragraph>
                 Partnerschaft mit beschränkter Berufshaftung von Rechtsanwälten, Steuerberatern und Solicitors
               </Paragraph>
             </Paragraph>
             <Paragraph>
-              <LinkComponent href="https://www.wolftheiss.com/countries/offices/austria/" type="paragraph">WOLF THEISS</LinkComponent>
+              <LinkComponent href="https://www.wolftheiss.com/countries/offices/austria/" type="paragraph" target="_blank">WOLF THEISS</LinkComponent>
               <Paragraph>Rechtsanwälte GmbH & Co KG</Paragraph>
             </Paragraph>
             <Paragraph>
-              <LinkComponent href="https://www.clydeco.com/en" type="paragraph">CLYDE & CO LLP</LinkComponent>
+              <LinkComponent href="https://www.clydeco.com/en" type="paragraph" target="_blank">CLYDE & CO LLP</LinkComponent>
             </Paragraph>
             <ButtonWrapper>
               <Button

@@ -1,7 +1,6 @@
 import App from "next/app";
 import { Header, Footer, Main, Nav } from "../components";
 import "../vendor/normalize.css";
-import cn from "classnames";
 import styles from "./style.css";
 import { appWithTranslation } from "../i18n";
 
