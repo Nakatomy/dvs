@@ -2,7 +2,6 @@ import styles from "./style.module.css";
 import cn from "classnames";
 import { Nav, Button } from "components";
 import PropTypes from "prop-types";
-import { useEffect, useState } from "react";
 
 const Header = () => {
   return (

@@ -18,6 +18,7 @@ import Menu from './menu';
 import Nav from './nav';
 import ButtonWrapper from './button-wrapper';
 import Testimonial from './testimonial';
+import YoutubeVideo from './youtubeVideo'
 
 export {
     Header,
@@ -39,5 +40,6 @@ export {
     GridItem,
     Menu,
     Nav,
-    Testimonial
+    Testimonial,
+    YoutubeVideo
 };

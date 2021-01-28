@@ -5,7 +5,7 @@ import { withTranslation } from 'i18n'
 import cn from 'classnames';
 import Login from '@material-ui/icons/ExitToApp';
 
-const Lead = ({ title, subtitle, statement }) => {
+const Lead = ({ title, subtitle, statement, primaryButtonName, secondaryButtonName }) => {
 	return (
 		<section className={styles.lead}>
 			<Nav className={styles.nav__container}>
@@ -27,10 +27,10 @@ const Lead = ({ title, subtitle, statement }) => {
 				<p className={styles.lead__text}>{statement}</p>
 				<ul className={styles.lead__buttons}>
 					<li className={styles.lead['__btn-list']}>
-						<Button href="/contacts" title='Contact us' size='size-l' textColor='text-white' background='blue' space='spaceBetween' />
+						<Button href="/contacts" title={primaryButtonName} size='size-l' textColor='text-white' background='blue' space='spaceBetween' />
 					</li>
 					<li className={styles.lead['__btn-list']}>
-						<Button href="#whatWeDo" title='Find Out More' size='size-l' textColor='text-white' background='text-only' />
+						<Button href="#solution" title={secondaryButtonName} size='size-l' textColor='text-white' background='text-only' />
 					</li>
 				</ul>
 			</div>

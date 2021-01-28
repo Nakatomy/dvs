@@ -3,10 +3,10 @@ import { Container, ImageComponent } from 'components';
 import partners from 'configs/partners/partners';
 import Image from 'next/image';
 
-const Partners = () => {
+const Partners = ({ title }) => {
   return (
     <section className={styles.partners}>
-      <p className={styles.partners__text}>Our partners</p>
+      <p className={styles.partners__text}>{title}</p>
       <Container>
         <ul className={styles.partners__items}>
           {partners.map((item) => {
