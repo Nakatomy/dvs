@@ -21,7 +21,7 @@ const Team = ({t}) => {
     <>
     <Header />
     <Section>
-    <Container width="full-width" height="minHeight" marginTop="marginTop">
+    <Container width="normal-width" height="minHeight" margin="marginTop">
         <Title>{t('pageTitle')}</Title>
         <div className={styles.team__container}>
         <Member src={ludgerPhoto} name="Ludger Janßen" job="MD - Sales, Business Analysis, Onboarding, Legal" />

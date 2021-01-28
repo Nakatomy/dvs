@@ -25,6 +25,10 @@
     margin-top: 100px;
 }
 
+.container--marginBottom80 {
+    margin-bottom: 80px;
+}
+
 .container--full-width {
     max-width: 1480px;
 }
@@ -57,7 +61,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 92px;
     width: calc(100% - 72px * 2);
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 @media screen and (max-width: 945px) {

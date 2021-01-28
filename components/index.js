@@ -21,6 +21,7 @@ import ButtonWrapper from './button-wrapper';
 import Testimonial from './testimonial';
 import YoutubeVideo from './youtubeVideo'
 import Member from './member'
+import AdvisoryMember from './advisoryMember'
 
 
 export {
@@ -46,5 +47,6 @@ export {
     Nav,
     Testimonial,
     YoutubeVideo,
-    Member
+    Member,
+    AdvisoryMember
 };

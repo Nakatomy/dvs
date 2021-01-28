@@ -1,0 +1,51 @@
+.advisory-board__name {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 1.67;
+    color: #001540;
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 760px) {
+    .advisory-board__name {
+        font-size: 32px;
+    }
+}
+
+.advisory-board__location {
+    font-weight: 400;
+    font-size: 16px;
+    color: #001540;
+    margin: 0 0 16px;
+    padding: 0;
+}
+
+.advisory-board__company {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.67;
+    color: #001540;
+    margin: 0 ;
+    padding: 0;
+}
+
+@media screen and (max-width: 760px) {
+    .advisory-board__company {
+        font-size: 18px;
+    }
+}
+
+.advisory-board__title {
+    font-size: 24px;
+    font-weight: 300;
+    color: #001540;
+    margin: 0 0 16px;
+    padding: 0;
+}
+
+@media screen and (max-width: 760px) {
+    .advisory-board__company {
+        font-size: 20px;
+    }
+}
