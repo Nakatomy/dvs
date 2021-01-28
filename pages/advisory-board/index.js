@@ -1,7 +1,6 @@
 import {Header, Section, Container, AdvisoryMember, Title, Button} from 'components'
-// import styles from './style.module.css';
 import PropTypes from 'prop-types'
-import { i18n, withTranslation } from 'i18n'
+import { withTranslation } from 'i18n'
 
 const AdvisoryBoard = ({t}) => {
     return (

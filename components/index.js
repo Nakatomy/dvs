@@ -22,6 +22,7 @@ import Testimonial from './testimonial';
 import YoutubeVideo from './youtubeVideo'
 import Member from './member'
 import AdvisoryMember from './advisoryMember'
+import Testimonials from './testimonials'
 
 
 export {
@@ -48,5 +49,6 @@ export {
     Testimonial,
     YoutubeVideo,
     Member,
-    AdvisoryMember
+    AdvisoryMember,
+    Testimonials
 };
