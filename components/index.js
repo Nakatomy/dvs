@@ -1,3 +1,4 @@
+import Meta from './meta'
 import Header from './header';
 import Footer from './footer';
 import Button from './button';
@@ -20,7 +21,9 @@ import ButtonWrapper from './button-wrapper';
 import Testimonial from './testimonial';
 import YoutubeVideo from './youtubeVideo'
 
+
 export {
+    Meta,
     Header,
     Footer,
     LinkComponent,
