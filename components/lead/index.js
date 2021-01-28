@@ -1,11 +1,26 @@
 import styles from "./style.module.css";
-import { Button } from 'components'
+import { Button, Nav, Menu } from 'components'
 import PropTypes from 'prop-types'
 import { withTranslation } from 'i18n'
+import cn from 'classnames';
+import Login from '@material-ui/icons/ExitToApp';
 
 const Lead = ({ title, subtitle, statement }) => {
 	return (
 		<section className={styles.lead}>
+			<Nav className={styles.nav__container}>
+			<li className={styles["nav__list-item"]}>
+        <Button
+          href="https://guarantee-vault.com/"
+          title="Login"
+          size="size-m"
+          textColor="text-white"
+		  border="border-white">
+		 <Login className={styles.icon}/>
+	  </Button>
+      </li>
+			</Nav>
+			
 			<div className={styles.lead__container}>
 				<h1 className={styles.lead__title}> {title}</h1>
 				<h2 className={styles.lead__subtitle}>{subtitle}</h2>

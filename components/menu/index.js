@@ -5,7 +5,7 @@ import cn from "classnames";
 import PropTypes from "prop-types";
 import { i18n, Link, withTranslation } from "i18n";
 
-const Menu = ({ className, t }) => {
+const Menu = ({ className, t, children, language }) => {
   return (
     <ul className={className}>
       {navigation.map(({ id, title, items: subItems }) => {
@@ -28,39 +28,33 @@ const Menu = ({ className, t }) => {
           </li>
         );
       })}
-      <li className={styles["nav__list-item"]}>
-        <Button
-          href="/contacts"
-          title="Contact us"
-          size="size-m"
-          textColor="text-white"
-          background="blue"
-          border="border-white"
-        />
+      {children}
+
+      <li className={styles.nav__dropdown}>
+        <button className={styles.nav__dropbtn}>
+          <Button onClick={() => i18n.changeLanguage("en")}>
+            <div
+              className={cn(styles["icon--size-m"], styles["icon--gb-flag"])}
+            ></div>
+            <span>En</span>
+          </Button>
+        </button>
+        <ul
+          className={cn(
+            styles["nav__dropdown-content"],
+            styles["nav__dropdown-content--coming-soon"]
+          )}
+        >
+          <li className={styles["nav__comming-soon-list"]}>
+            <Button onClick={() => i18n.changeLanguage("de")}>
+              <div
+                className={cn(styles["icon--size-m"], styles["icon--de-flag"])}
+              ></div>
+              <span>De</span>
+            </Button>
+          </li>
+        </ul>
       </li>
-    
-        <Button
-          className={styles.nav__dropbtn}
-          type="button"
-          onClick={() =>
-            i18n.changeLanguage('en')
-          }
-        >
-          <div
-            className={cn(styles["icon--size-m"], styles["icon--gb-flag"])}
-          ></div>
-        </Button>
-        <Button
-          className={styles.nav__dropbtn}
-          type="button"
-          onClick={() =>
-            i18n.changeLanguage('de')
-          }
-        >
-          <div
-            className={cn(styles["icon--size-m"], styles["icon--de-flag"])}
-          ></div>
-        </Button>
     </ul>
   );
 };
