@@ -149,3 +149,34 @@
 .lead__btn-list:last-child {
     margin-right: 0;
 }
+
+.icon {
+    margin-left: 8px;
+
+}
+
+.nav__container {
+    padding: 0;
+}
+
+.nav__container {
+    display: flex;
+    width: calc(100% - 72px * 2);
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 1200px) {
+    .nav__container {
+        flex-direction: column;
+        width: calc(100% - 48px * 2);
+    }
+}
+
+
+@media screen and (max-width: 760px) {
+    .nav__container {
+        width: calc(100% - 24px * 2);
+
+    }
+}

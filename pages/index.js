@@ -12,6 +12,8 @@ import {
   ButtonWrapper,
   LinkComponent,
   Testimonial,
+  Header,
+  Nav,
   Heading,
   YoutubeVideo
 } from 'components';
@@ -28,17 +30,40 @@ import atradiusLogo from 'images/partners/partner-atradius.svg'
 import globalTradeLogo from 'images/partners/partner-gtc.png'
 import PropTypes from 'prop-types'
 import { i18n, withTranslation } from '../i18n'
-
-
-
+import { useState, useEffect } from "react";
+import cn from "classnames";
 
 function HomePage({ t }) {
+
+  const [scrolled, setScrolled] = useState(false);
+  const handleScroll = () => {
+    const offset = window.scrollY;
+    if (offset > 600) {
+      setScrolled(true);
+    } else {
+      setScrolled(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  });
+
+  let nav;
+  if (scrolled) {
+    nav = (
+      <Header className="nav">
+        <Nav className="nav__container--sticky" />
+      </Header>
+    );
+  }
   return (
     <div>
       <Meta
         title={t('leadTitle') + ' | Digital Vault Services'}
         desc={t('solutionParagraph1')}
       />
+      {nav}
       <Lead
         title={t('leadTitle')}
         subtitle={t('leadSubtitle')}

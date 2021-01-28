@@ -12,8 +12,8 @@ const Button = React.forwardRef(({ children, title, href, background, textColor,
       [styles[`btn--${space}`]]: space,
     })}
   >
-    {children}
     {title}
+    {children}
 
   </a>
   );

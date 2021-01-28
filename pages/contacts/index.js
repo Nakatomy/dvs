@@ -1,6 +1,10 @@
-
+import { Header } from "components";
 function Contacts() {
-    return <div>Contacts Page!</div>
-  }
-  
-  export default Contacts
+  return (
+    <>
+      <Header />
+    </>
+  );
+}
+
+export default Contacts;

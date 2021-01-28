@@ -1,10 +1,10 @@
 import styles from "./style.module.css";
 import cn from "classnames";
-import { LinkComponent, Menu } from "components";
+import { LinkComponent, Menu, Button } from "components";
 import Logo from "../logo";
 import { useState } from "react";
 
-const Nav = () => {
+const Nav = ({children, className}) => {
   const [showMenu, setShowMenu] = useState(false);
   const [status, setStatus] = useState(styles.close);
   let menu;
@@ -19,11 +19,11 @@ const Nav = () => {
   }
 
   if (showMenu) {
-    menu = <Menu className={styles["nav__items--active"]}></Menu>;
+  
+    menu = <Menu className={styles["nav__items--active"]}>{children}</Menu>;
   }
   return (
-    <nav
-      className={cn(styles.nav__container, styles["nav__container--sticky"])}
+    <nav className={className}
     >
       <div className={styles["nav__group-items"]}>
         <LinkComponent
@@ -39,7 +39,10 @@ const Nav = () => {
         </div>
       </div>
       {menu}
-      <Menu className={styles.nav__items}></Menu>
+      <Menu className={styles.nav__items}>
+        {children}
+      </Menu>
+      
     </nav>
   );
 };

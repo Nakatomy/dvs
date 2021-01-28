@@ -1,20 +1,23 @@
-import styles from './style.module.css';
-import cn from 'classnames';
-import { Nav } from 'components';
-import PropTypes from 'prop-types'
+import styles from "./style.module.css";
+import cn from "classnames";
+import { Nav, Button } from "components";
+import PropTypes from "prop-types";
 
-const Header = ({ children }) => {
-
-    return (<header className={cn(styles.nav, styles['nav--sticky'], styles['nav--display-none'])}>
-
-        {children}
-        <Nav />
+const Header = () => {
+  return (
+    <header className={cn(styles.nav, styles["nav--sticky"])}>
+      <Nav className={styles["nav__container--sticky"]}>
+        <Button
+          href="/contacts"
+          title="Contact us"
+          size="size-m"
+          textColor="text-white"
+          background="blue"
+          border="border-white"
+        />
+      </Nav>
     </header>
-    )
-}
+  );
+};
 
-// Header.propTypes = {
-//     title: PropTypes.string.isRequired,
-//   }
-
-export default Header
+export default Header;
