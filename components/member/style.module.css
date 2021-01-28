@@ -1,0 +1,34 @@
+.team__member-image {
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+    height: auto;
+}
+
+.team__member-job {
+    margin-top: 0;
+    font-size: 18px;
+    line-height: 1.67;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+}
+
+.team__member-name {
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: -.0625rem;
+    color: #001540;
+    margin:  1rem 0;
+}
+
+@media screen and (max-width: 1160px) {
+    .team__member-name{
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .team__member-name{
+        font-size: 20px;
+    }
+}

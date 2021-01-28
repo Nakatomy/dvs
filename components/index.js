@@ -20,6 +20,7 @@ import Nav from './nav';
 import ButtonWrapper from './button-wrapper';
 import Testimonial from './testimonial';
 import YoutubeVideo from './youtubeVideo'
+import Member from './member'
 
 
 export {
@@ -44,5 +45,6 @@ export {
     Menu,
     Nav,
     Testimonial,
-    YoutubeVideo
+    YoutubeVideo,
+    Member
 };
