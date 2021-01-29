@@ -28,6 +28,8 @@ const Legal = ({ t }) => {
             <LinkComponent
               href="https://www.gesetze-im-internet.de/bgb/__766.html"
               color="blue"
+              target="_blank"
+                rel="noopener"
             >
               § 766{" "}
             </LinkComponent>
@@ -35,6 +37,8 @@ const Legal = ({ t }) => {
             <LinkComponent
               href="https://www.gesetze-im-internet.de/hgb/__350.html"
               color="blue"
+              target="_blank"
+                rel="noopener"
             >
               § 350{" "}
             </LinkComponent>
@@ -42,7 +46,9 @@ const Legal = ({ t }) => {
             <LinkComponent
               href="https://www.gesetze-im-internet.de/bgb/__766.html"
               color="blue"
-            ></LinkComponent>
+              target="_blank"
+                rel="noopener"
+            > § 766 {" "}</LinkComponent>
             {t("paragraph3-4")}
           </Paragraph>
           <Paragraph> {t("paragraph4")}</Paragraph>
@@ -56,7 +62,7 @@ const Legal = ({ t }) => {
           <Spacer size="s" />
           <Heading>
             {t("heading5-1")}
-            <LinkComponent href="./contacts" color="blue">
+            <LinkComponent href="./contacts" color="blue" >
               {t("heading5-2")}
             </LinkComponent>
           </Heading>

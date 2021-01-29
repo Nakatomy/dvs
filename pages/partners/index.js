@@ -20,7 +20,8 @@ const PartnersPage = () => {
           <div className={styles.partners__grid}>
             {partners.map((item) => {
               return (
-                <LinkComponent href={item.href} className={styles.link}>
+                <LinkComponent href={item.href} className={styles.link} target="_blank"
+                rel="noopener">
                   <img
                     className={styles.logo}
                     alt={item.alt}
