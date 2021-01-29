@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { withTranslation } from "i18n";
-import { Section, Container, Testimonial, Paragraph } from "components";
+import { Section, Container, Testimonial, Paragraph, Spacer, Button } from "components";
 import lindnerLogo from "images/partners/partner-lindner.svg";
 import eurlerHermesLogo from "images/partners/partner-eulerhermes.svg";
 import bayernLbLogo from "images/partners/partner-bayernlb.svg";
@@ -121,6 +121,7 @@ const Testimonials = ({ t, children }) => {
       </Container>
       {children}
     </Section>
+    
   );
 };
 

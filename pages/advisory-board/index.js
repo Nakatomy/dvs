@@ -21,7 +21,7 @@ const AdvisoryBoard = ({t}) => {
       <Container width="normal-width">
         <Button
           href="/"
-          title="Back to Home Page"
+          title={t('ButtonBackToHomePage')}
           size="size-l"
           textColor="text-white"
           background="blue"

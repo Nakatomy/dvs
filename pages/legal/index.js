@@ -70,7 +70,7 @@ const Legal = ({ t }) => {
           <Spacer size="s" />
           <Button
             href="/"
-            title="Back to Home Page"
+            title={t('ButtonBackToHomePage')}
             size="size-l"
             textColor="text-white"
             background="blue"

@@ -75,6 +75,8 @@
     "paragraph20" : "The data are deleted as soon as they are no longer necessary for the purpose for which they were collected. For personal data sent by e-mail, this is the case when the respective conversation with you has ended. The conversation ends when it is clear from the circumstances that the matter in question has been conclusively clarified. There is only an exception for deletion if there is a legal obligation to preserve records. If such are existent, we restrict the processing. The additional personal data collected during the sending process, i.e. the IP address and the date and time of the request, will be deleted after a period of seven days at the latest.",
 
     "heading7" : "VII. Transfer of data to third countries",
-    "paragraph21" : "The data will not be forwarded to third countries."
+    "paragraph21" : "The data will not be forwarded to third countries.",
+
+    "ButtonBackToHomePage" : "Back to home page"
 
   }

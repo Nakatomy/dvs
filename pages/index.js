@@ -23,7 +23,7 @@ import servicesImg from "images/services-life-cycle.svg";
 import restApiImg from "images/solution-rest-api.svg";
 import legalImg from "images/legal-feather.jpg";
 import PropTypes from "prop-types";
-import {  withTranslation } from "../i18n";
+import { withTranslation } from "../i18n";
 import { useState, useEffect } from "react";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
@@ -161,7 +161,12 @@ function HomePage({ t }) {
             <Paragraph>{t("restApiParagraph1")}</Paragraph>
             <Paragraph>{t("restApiParagraph2")}</Paragraph>
             <Paragraph>{t("restApiParagraph3")}</Paragraph>
-            <Paragraph>{t("restApiParagraph4")}</Paragraph>
+            <Paragraph>
+              {t("restApiParagraph4-1")}
+              <span className="accent"> {t("restApiParagraph4-2")}</span>{" "}
+              {t("restApiParagraph4-3")}
+              <span className="accent"> {t("restApiParagraph4-4")}</span>
+            </Paragraph>
             <ButtonWrapper>
               <Button
                 href="/rest-api"
@@ -184,7 +189,7 @@ function HomePage({ t }) {
               imgType="mobile"
             />
             <Paragraph>{t("legalParagraph1")}</Paragraph>
-            <Paragraph>{t("legalParagraph2")}</Paragraph>
+            <Paragraph><span className="accent">{t("legalParagraph2")}</span></Paragraph>
             <Paragraph>{t("legalParagraph3")}</Paragraph>
             <Paragraph>{t("legalParagraph4")}</Paragraph>
             <Paragraph>
@@ -250,7 +255,7 @@ function HomePage({ t }) {
             <Title>{t("newsTitle")}</Title>
             <Heading>{t("newsSubtitle")}</Heading>
             <Paragraph>{t("newsParagraph1")}</Paragraph>
-            <Paragraph>{t("newsParagraph2")}</Paragraph>
+            <Paragraph>{t("newsParagraph2-1")}<LinkComponent href="./contacts" color="blue">{t("newsParagraph2-2")}</LinkComponent></Paragraph>
           </GridItem>
         </Container>
       </Section>

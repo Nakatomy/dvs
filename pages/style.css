@@ -26,3 +26,7 @@
 .container--none {
     display: none;
 }
+
+.accent {
+    font-weight: 600;
+}
