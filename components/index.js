@@ -25,6 +25,7 @@ import AdvisoryMember from './advisoryMember'
 import Testimonials from './testimonials'
 import ListItem from './listItem'
 import UlList from './ul'
+import Spacer from './spacer'
 
 
 export {
@@ -54,5 +55,6 @@ export {
     AdvisoryMember,
     Testimonials,
     ListItem,
-    UlList
+    UlList,
+    Spacer
 };

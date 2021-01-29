@@ -1,0 +1,14 @@
+.spacer--s {
+    width: 100%;
+    height: 40px;
+}
+
+.spacer--m {
+    width: 100%;
+    height: 80px;
+
+}
+
+.spacer {
+    margin : 0 auto;
+}
