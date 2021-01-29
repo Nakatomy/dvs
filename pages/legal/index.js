@@ -9,6 +9,7 @@ import {
   Title,
   LinkComponent,
   Spacer,
+  Button
 } from "components";
 
 const Legal = ({ t }) => {
@@ -66,6 +67,15 @@ const Legal = ({ t }) => {
               {t("heading5-2")}
             </LinkComponent>
           </Heading>
+          <Spacer size="s" />
+          <Button
+            href="/"
+            title="Back to Home Page"
+            size="size-l"
+            textColor="text-white"
+            background="blue"
+            border="border-white"
+          />
         </Container>
       </Section>
     </>
