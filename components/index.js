@@ -23,6 +23,8 @@ import YoutubeVideo from './youtubeVideo'
 import Member from './member'
 import AdvisoryMember from './advisoryMember'
 import Testimonials from './testimonials'
+import ListItem from './listItem'
+import UlList from './ul'
 
 
 export {
@@ -50,5 +52,7 @@ export {
     YoutubeVideo,
     Member,
     AdvisoryMember,
-    Testimonials
+    Testimonials,
+    ListItem,
+    UlList
 };

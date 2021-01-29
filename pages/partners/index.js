@@ -15,7 +15,7 @@ const PartnersPage = () => {
     <>
       <Header />
       <Section style="gradient">
-        <Container width="full-width" margin="marginTop">
+        <Container width="full-width" margin="marginTop96">
           <Title>Our Partners</Title>
           <div className={styles.partners__grid}>
             {partners.map((item) => {

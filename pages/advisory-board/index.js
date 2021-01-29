@@ -8,7 +8,7 @@ const AdvisoryBoard = ({t}) => {
     <Header />
     <Section>
     
-    <Container  width="normal-width" margin="marginTop">
+    <Container  width="normal-width" margin="marginTop96">
     <Title>{t('pageTitle')}</Title>
     </Container>
         <Container display="grid" width="normal-width" margin="marginBottom80" >

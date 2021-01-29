@@ -1,0 +1,18 @@
+.paragraph {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.67;
+    color: #001540;
+    letter-spacing: normal;
+    margin-top: 0;
+    margin-bottom: 24px;
+    /* margin: 0;
+    padding: 0; */
+}
+
+@media screen and (max-width: 1365px) {
+    .paragraph {
+        font-size: 18px;
+    }
+}
