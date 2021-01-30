@@ -29,9 +29,7 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 function HomePage({ t }) {
   // const [collapseOpen, setCollapseOpen] = useState(false);
-  function displayItems() {
-    console.log("hello");
-  }
+
 
   const [scrolled, setScrolled] = useState(false);
   const handleScroll = () => {
@@ -100,7 +98,6 @@ function HomePage({ t }) {
       <Testimonials>
         <Container width="full-width">
           <Button
-            onClick={displayItems}
             title="Show More"
             size="size-l"
             textColor="text-blue"

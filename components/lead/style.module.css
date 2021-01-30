@@ -24,20 +24,21 @@
     line-height: 1.1;
     color: #ffffff;
     text-rendering: optimizeLegibility;
-    margin: 0 0 24px;
+    margin: 0 0 8px;
 
 }
 
 @media screen and (max-width: 1560px) {
     .lead__title {
         font-size: 56px;
+        margin: 0 0 8px;
     }
 }
 
 @media screen and (max-width: 760px) {
     .lead__title {
         font-size: 48px;
-        margin: 0 0 16px;
+        margin: 0 0 8px;
     }
 }
 
@@ -62,14 +63,14 @@
     .lead__text {
         font-size: 16px;
         max-width: 480px;
-        margin: 0 0 16px;
+       
     }
 }
 
 .lead__subtitle {
     font-weight: 400;
     font-size: 36px;
-    line-height: 1.2;
+    line-height: 1.4;
     color: #ffffff;
     margin: 0 0 12px;
     justify-self: center;
