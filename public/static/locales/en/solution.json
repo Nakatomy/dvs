@@ -1,0 +1,62 @@
+{
+    "pageTitle": "The problem today",
+    "heading1" : "The decentralized paper-based process",
+    "paragraph1" : "In the course of business many companies by nature will issue numerous guarantees to their customers through banks and sureties. Over time they find themselves accumulating a significant number of outstanding guarantees issued by different guarantors for different beneficiaries.",
+    "paragraph2" : "In the end participants find themselves with a messy distribution of outstanding guarantees physically held across a wide range of counterparts.",
+    "paragraph3" : "And this is where the problem begins.",
+    "paragraph4" : "At heart, the problem today is that the issuance and storage of guarantees is spread across multiple participants while the guarantee related process is manual and paper based.",
+
+    "heading2" : "This creates a number of challenges for all parties involved including:",
+    "listItem1" : "Reduced transparency",
+    "listItem2" : "Labour-intensive reconciliation & reporting",
+    "listItem3" : "Delays in processing of guarantee issuance & post issuance requests",
+    "listItem4" : "Manual, time consuming and non-standard process",
+    "listItem5" : "Cumbersome manual release process for the discharging of guarantees",
+    "listItem6" : "Vulnerability to tampering and fraud",
+    "paragraph5" : "The above challenges impose a number of costs on participants including courier fees, resource costs, unnecessary provisions and issuance fees paid by the applicant.",
+    "photoCaption1" : "The result is a messy distribution of guarantees across a wide range of counterparts",
+
+    "pageTitle2": "Our solution",
+    "heading3" : "Transparency through Digital Guarantees",
+    "paragraph6" : "Guarantee Vault is a solution to digitize the existing paper-based process through the central issuance of digital guarantees that are requested, secured and stored electronically.",
+    "paragraph7-1" : "Through this innovation of digital guarantees, Guarantee Vault brings issuance through a common digital channel allowing market participants",
+    "paragraph-7-2" : "real-time updates, certainty, transparency, convenience and predictability",
+    "paragraph-7-3" : "in contrast to the challenges inherent in the process today.",
+
+    "heading4" : "Save costs, improve efficiency, reduce risks",
+    "paragraph8" : "Guarantee Vault allows market participants to save costs, improve efficiency, reduce operational risks and more.",
+    "paragraph9" : "Delivering its service via its suite of REST APIs, Guarantee Vault allows market participants the possibility to seamlessly connect and benefit via their existing platforms, portals or other in-house systems.",
+    "photoCaption2" : "Guarantee Vault facilitates the central issuance and storage of digital guarantees therebyremoving the paper and fully digitizing the process.",
+
+    "pageTitle3" : "Benefits",
+    "benefitsHeading1" : "Applicants, Guarantors & Beneficiaries",
+    "listItem7" : "Standardization of incoming / outbound requests (single source)",
+    "listItem8" : "Resource savings through digitization efficiencies",
+    "listItem9" : "Better oversight and control of outstanding guarantee portfolio",
+    "listItem10" : "Significantly reduced reconciliation effort between all parties",
+    "listItem11" : "Secure records resistant to tampering, fraud",
+    "listItem12" : "Digital process that facilitates remote working (covid-19 impact)",
+
+    "benefitsHeading2" : "Applicants & Guarantors",
+    "listItem13" : "Seamless integration of issuance, request and release processe",
+    "listItem14" : "Elimination of courier fees",
+
+    "benefitsHeading3" : "Applicants",
+    "listItem15" : "Access all guarantors through the one platform (both banks & sureties)",
+    "listItem16" : "Fast, efficient guarantee release",
+    "listItem17" : "Faster repayment (where contingent on guarantee receipt)",
+    "listItem18" : "Elimination of commission fees (from outstanding guarantees)",
+
+    "benefitsHeading4" : "Guarantors",
+    "listItem19" : "Increased level of service to clients",
+    "listItem20" : "Digital Guarantees as a new product offering",
+    "listItem21" : "Reduced time & effort on queries from clients",
+    "listItem22" : "Guarantee Vault as a new channel for origination",
+
+    "benefitsHeading5" : "Beneficiaries",
+    "listItem23" : "Faster receipt of issued guarantees",
+    "listItem24" : "Eliminates the problem of misplaced or lost guarantees",
+
+    "ButtonBackToHomePage" : "Back to home page"
+  }
+  
