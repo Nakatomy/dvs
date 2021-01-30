@@ -103,10 +103,7 @@
         /* Important for vertical align on mobile phones */
     }
 
-    .nav__dropbtn:last-of-type {
-        margin-left: 12px;
-    }
-
+  
     @media screen and (max-width: 1500px) {
         .nav__dropbtn {
             font-size: 13px;
