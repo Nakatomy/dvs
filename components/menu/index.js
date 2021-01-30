@@ -27,7 +27,7 @@ const Menu = ({ className, children }) => {
       {navigation.map(({ id, title, items: subItems, index }) => {
         return (
           <li key={`${id}:${index}`} className={styles.nav__dropdown}>
-            <button className={styles.nav__dropbtn}>{title}</button>
+            <button className={styles.nav__dropbtn}>{[i18n.language]}</button>
             <ul className={styles["nav__dropdown-content"]}>
               {subItems.map((subItem) => {
                 return (
