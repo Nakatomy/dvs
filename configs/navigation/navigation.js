@@ -4,37 +4,41 @@ export default [
 
 	{
 		id: 'product-overview',
-		title: 'Product Overview',
+		en: 'Product Overview',
+		de: 'Produkt',
 		items: [
-			{ id: 'solution', title: 'Solution', href: '/solution' },
-			{ id: 'services', title: 'Services', href: '/services' },
-			{ id: 'rest-api', title: 'REST API', href: '/rest-api' }
+			{ id: 'solution', en: 'Solution', de: 'Die Lösung', href: '/solution' },
+			{ id: 'services', en: 'Services', de: 'Services', href: '/services' },
+			{ id: 'rest-api', en: 'REST API', de: 'REST API', href: '/rest-api' }
 		]
 	},
 	{
 		id: 'legal-corner',
-		title: 'Legal Corner',
+		en: 'Legal Corner',
+		de: 'Legal Corner',
 		items: [
-			{ id: 'legal', title: 'Legal', href: '/legal' }
+			{ id: 'legal', en: 'Legal', de: 'Rechtliches', href: '/legal' }
 		]
 	},
 	{
 		id: 'about-us',
-		title: 'About us',
+		en: 'About us',
+		de: 'Über Uns',
 		items: [
-			{ id: 'partners', title: 'Partners', href: '/partners' },
-			{ id: 'advisory-board', title: 'Advisory Board', href: '/advisory-board' },
-			{ id: 'team', title: 'Team', href: '/our-team' },
-			{ id: 'news', title: 'News', href: '/news' },
-			{ id: 'contacts', title: 'Contacts', href: '/contacts' }
+			{ id: 'partners', en: 'Partners', de: 'Partner', href: '/partners' },
+			{ id: 'advisory-board', en: 'Advisory Board', de: 'Beirat', href: '/advisory-board' },
+			{ id: 'team', en: 'Team', de: 'Team', href: '/our-team' },
+			{ id: 'news', en: 'News', de: 'News', href: '/news' },
+			{ id: 'contacts', en: 'Contacts', de: 'Kontakt', href: '/contacts' }
 		]
 	},
 	{
 		id: 'help',
-		title: 'Help',
+		en: 'Help',
+		de: 'Hilfe',
 		items: [
-			{ id: 'privacy-policy', title: 'Privacy Policy', href: '/privacy-policy' },
-			{ id: 'imprint', title: 'Imprint', href: '/imprint' }
+			{ id: 'privacy-policy', en: 'Privacy Policy', de: 'Datenschutz', href: '/privacy-policy' },
+			{ id: 'imprint', en: 'Imprint', de: 'Impressum', href: '/imprint' }
 		]
 	}
 

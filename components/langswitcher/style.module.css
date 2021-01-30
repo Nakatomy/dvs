@@ -1,0 +1,66 @@
+.icon--de-selected-flag {
+
+  background-image: url('images/de.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  
+    width: 24px;
+    height: 24px;
+     justify-content: center;
+}
+
+.icon--en-selected-flag {
+ 
+      background-image: url('images/gb.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+       justify-content: center;
+   
+    width: 24px;
+    height: 24px;
+}
+
+.icon--de-flag {
+  
+     background-image: url('images/de.svg');
+     background-repeat: no-repeat;
+     background-position: center;
+     justify-content: center;
+       width: 100%;
+        width: 24px;
+        height: 24px;
+
+ }
+
+ .icon--en-flag {
+    background-image: url('images/gb.svg');
+     background-repeat: no-repeat;
+     background-position: center;
+    
+    width: 24px;
+    height: 24px;
+ }
+
+
+
+
+
+
+.form__input {
+    background-color: transparent;
+    border: none;
+    /* border-bottom: 1px solid #535353; */
+    /* color: #000; */
+    /* padding: 16px 0; */
+    box-sizing: border-box;
+    outline: none;
+    font-weight: 300;
+    /* font-size: 32px; */
+    display: flex;
+    justify-items: center;
+    position: relative;
+}
+
+.form__input:focus {
+    /* border-bottom: 1px solid #0075FF; */
+}

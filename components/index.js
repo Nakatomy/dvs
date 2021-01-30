@@ -22,6 +22,8 @@ import Testimonial from './testimonial';
 import YoutubeVideo from './youtubeVideo'
 import Member from './member'
 import AdvisoryMember from './advisoryMember'
+import LanguageSwitcher from './langswitcher'
+import SvgGb from './flag'
 
 
 export {
@@ -48,5 +50,7 @@ export {
     Testimonial,
     YoutubeVideo,
     Member,
-    AdvisoryMember
+    AdvisoryMember,
+    LanguageSwitcher,
+    SvgGb
 };

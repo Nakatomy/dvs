@@ -8,3 +8,14 @@ module.exports = new NextI18Next({
   localeSubpaths,
   localePath: path.resolve("./public/static/locales"),
 });
+
+
+
+
+
+// module.exports = {
+//   NextI18Next: {
+//     locales: ['de', 'en'],
+//     defaultLocale: 'de',
+//   },
+// }

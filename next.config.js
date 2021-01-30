@@ -10,4 +10,7 @@ module.exports = withImages({
   publicRuntimeConfig: {
     localeSubpaths,
   },
+
 })
+
+

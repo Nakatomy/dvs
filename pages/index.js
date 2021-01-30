@@ -239,7 +239,7 @@ function HomePage({ t }) {
           <GridItem>
             <ImageComponent
               src={legalImg}
-              alt="feather illustration"
+              alt="Feather illustration"
               imgType="desktop"
             />
           </GridItem>

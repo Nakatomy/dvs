@@ -175,3 +175,25 @@
     .lang {
         color: #fff;
     }
+
+    .nav__list-item {
+        margin-right: 40px;
+
+    }
+
+    .nav__list-item:last-child {
+        margin-right: 0;
+    }
+
+    @media screen and (max-width: 1500px) {
+        .nav__list-item {
+   
+            margin-right: 24px;
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        .nav__list-item {
+                   margin-right: 0;
+        }
+    }
