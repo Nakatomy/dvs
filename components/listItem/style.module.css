@@ -5,3 +5,42 @@
 .list-item::marker {
      list-style-position: inside;
 }
+
+.list-item--paragraph {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.67;
+    color: #001540;
+    letter-spacing: normal;
+    margin-top: 0;
+    /* margin-bottom: 24px; */
+    /* margin: 0;
+    padding: 0; */
+}
+
+@media screen and (max-width: 1365px) {
+    .list-item--paragraph {
+  
+        font-size: 18px;
+    }
+}
+
+.list-item--iconCheck {
+    list-style-type: none;}
+
+.list-item--iconCheck::before {
+    content: "";
+    background-size: contain;
+    background-image: url('images/checkmark-circle-outline.svg');
+    background-repeat: no-repeat;
+    width: 100%;
+    max-width: 32px;
+    height: 32px;
+    display: flex;
+    margin-right: 16px;
+}
+
+.list-item--flex {
+    display: flex;
+}

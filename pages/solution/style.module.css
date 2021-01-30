@@ -1,0 +1,44 @@
+
+
+@media screen and (max-width: 945px) {
+    .desktop-image {
+        display: none;
+        visibility: hidden;
+        margin-bottom: 48px;
+    }
+}
+
+.mobile-image {
+    display: none;
+    visibility: hidden;
+}
+
+@media screen and (max-width: 945px) {
+    .mobile-image {
+         display: flex;
+         flex-direction: column;
+         visibility: visible;
+         margin-bottom: 48px;
+    }
+}
+
+.image {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: auto;
+    align-self: center;
+    justify-self: center;
+    margin: 60px 0; 
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.accent {
+    font-weight: 600;
+}
+
+

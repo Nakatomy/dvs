@@ -28,6 +28,7 @@ import Testimonials from './testimonials'
 import ListItem from './listItem'
 import UlList from './ul'
 import Spacer from './spacer'
+import Item from './item'
 
 
 export {
@@ -60,5 +61,6 @@ export {
     Testimonials,
     ListItem,
     UlList,
-    Spacer
+    Spacer,
+    Item
 };
