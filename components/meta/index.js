@@ -15,8 +15,8 @@ const Meta = (props) => (
         <meta name="twitter:description" content={props.desc} />
         <meta name="twitter:site" content="@" />
         <meta name="twitter:creator" content="@" /> */}
-        <link rel="icon" href={favIcon} />
-        <link rel="apple-touch-icon" href="images/favicon.ico" />
+        {/* <link rel="icon" href={favIcon} />
+        <link rel="apple-touch-icon" href="images/favicon.ico" /> */}
         {
             props.css &&
             <link rel="stylesheet" href={`${props.css}`} />

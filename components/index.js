@@ -22,6 +22,8 @@ import Testimonial from './testimonial';
 import YoutubeVideo from './youtubeVideo'
 import Member from './member'
 import AdvisoryMember from './advisoryMember'
+import LanguageSwitcher from './langswitcher'
+import SvgGb from './flag'
 import Testimonials from './testimonials'
 import ListItem from './listItem'
 import UlList from './ul'
@@ -53,6 +55,8 @@ export {
     YoutubeVideo,
     Member,
     AdvisoryMember,
+    LanguageSwitcher,
+    SvgGb,
     Testimonials,
     ListItem,
     UlList,
