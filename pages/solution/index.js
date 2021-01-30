@@ -14,6 +14,7 @@ import {
 const Solution = ({t}) => {
     return (
         <>
+        <Header />
         </>
     )
 }
