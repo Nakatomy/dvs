@@ -7,14 +7,15 @@ const Header = () => {
   return (
     <header className={cn(styles.nav, styles["nav--sticky"])}>
       <Nav className={styles["nav__container--sticky"]}>
+      <li className={styles["nav__list-item"]}>
         <Button
           href="/contacts"
           title="Contact us"
           size="size-m"
           textColor="text-white"
           background="blue"
-          border="border-white"
         />
+        </li>
       </Nav>
     </header>
   );

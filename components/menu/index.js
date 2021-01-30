@@ -24,10 +24,10 @@ const Menu = ({ className, children }) => {
   const { i18n } = useTranslation();
   return (
     <ul className={className}>
-      {navigation.map(({ id, title, items: subItems, index }) => {
+      {navigation.map(({ id, title, en, de, items: subItems, index }) => {
         return (
           <li key={`${id}:${index}`} className={styles.nav__dropdown}>
-            <button className={styles.nav__dropbtn}>{[i18n.language]}</button>
+            <button className={styles.nav__dropbtn}>{(i18n.language === 'en') ?  en : de }</button>
             <ul className={styles["nav__dropdown-content"]}>
               {subItems.map((subItem) => {
                 return (
@@ -52,13 +52,11 @@ const Menu = ({ className, children }) => {
 
 
       {/* 
-
       <Button onClick={() => i18n.changeLanguage(
         {
           lang = getCurrentLng()
           return (
             <div
-
           className={cn(styles["icon--size-m"], { lang === 'en' ? styles["icon--gb-flag"] : styles["icon--de-flag"] })}
           ></div>
           )
@@ -66,7 +64,6 @@ const Menu = ({ className, children }) => {
       )}>
         
         </Button>
-
       </button >
   <ul
     className={cn(
@@ -79,7 +76,6 @@ const Menu = ({ className, children }) => {
         <div
           className={cn(styles["icon--size-m"], styles["icon--de-flag"])}
         ></div>
-
       </Button> */}
 
 

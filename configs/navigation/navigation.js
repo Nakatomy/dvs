@@ -1,5 +1,3 @@
-
-
 export default [
 
 	{
@@ -44,4 +42,3 @@ export default [
 
 
 ];
-
