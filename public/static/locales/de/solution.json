@@ -1,0 +1,62 @@
+{
+    "pageTitle": "Das heutige Problem",
+    "heading1" : "Der dezentrale, beleghafte Prozess",
+    "paragraph1" : "In Folge ihrer Geschäftstätigkeit stellen viele Unternehmen naturgemäß zahlreiche Avale über Banken und Kreditversicherer zugunsten ihrer Geschäftspartner aus. Auf Dauer sammelt sich somit eine nennenswerte Anzahl ausstehender Avale an.",
+    "paragraph2" : "Es ist für alle Beteiligten eine große Herausforderung, den Überblick über alle ausstehende Garantien zu behalten, die bei verschiedenen Garanten beauftragt sind und zugunsten verschiedener Begünstigter bestehen.",
+    "paragraph3" : "And this is where the problem begins.",
+    "paragraph4" : "Im Kern besteht das Problem darin, dass Ausstellung und Aufbewahrung des manuellen, beleghaften Garantieprozesses auf verschiedenste Beteiligte verteilt und dadurch sehr unübersichtlich ist.",
+
+    "heading2" : "Dies führt zu einer Vielzahl von Herausforderungen für alle Beteiligten:",
+    "listItem1" : "Geringere Transparenz",
+    "listItem2" : "Datenabgleich & Statistik sehr arbeitsintensiv",
+    "listItem3" : "Langsame Bearbeitung von Avalaufträgen und Avaländerungen",
+    "listItem4" : "Manuelle, zeitaufwändige und uneinheitliche Prozesse",
+    "listItem5" : "Langwieriger, manueller Prozess zur Rückgabe oder Haftungsentlassung von Avalen",
+    "listItem6" : "Risiko der Fälschung der beleghaften Urkunde und Unterschriften",
+    "paragraph5" : "Diese Punkte verursachen für alle Beteiligten erhebliche Kosten, u. a. Kurier- und Postgebühren, erhebliche Personalkosten, Versicherungsprämien und Rückstellungen, Kosten der Unterschriftsbestätigung sowie unnötige Avalprovisionen für den Auftraggeber.",
+    "photoCaption1" : "The result is a messy distribution of guarantees across a wide range of counterparts",
+
+    "pageTitle2": "Unsere Lösung",
+    "heading3" : "Transparenz durch digitale Garantien",
+    "paragraph6" : "Guarantee Vault ist die Lösung zur Digitalisierung des bestehenden beleghaften Prozesses durch die zentrale Ausstellung und Verwahrung digitaler Garantien, die elektronisch beauftragt, gespeichert und verwaltet werden.",
+    "paragraph7-1" : "Guarantee Vault bringt alle Avale auf ein gemeinsames digitales Zentralregister, das den Beteiligten",
+    "paragraph-7-2" : "in Echtzeit Effizienz, Transparenz, Sicherheit, Komfort und Planbarkeit ermöglicht",
+    "paragraph-7-3" : "Ganz im Gegensatz zu den bisherigen beleghaften Prozessen.",
+
+    "heading4" : "Kosteneinsparung, Effizienzgewinne, Risikominimierung",
+    "paragraph8" : "Letztlich ermöglicht Guarantee Vault allen Marktteilnehmern u. a. Kosten zu reduzieren, Effizienz und Geschwindigkeit zu steigern sowie operative Risiken zu minimieren.",
+    "paragraph9" : "Alle Beteiligten können ihre Bearbeitung über eine klassische Web-Anwendung bearbeiten, bei größeren Stückzahlen empfiehlt sich eindeutig der Wechsel zu einer REST API Anbindung, so dass bestehende Plattformen, Portale oder In-House-Systeme mit dem Guarantee Vault verbinden werden und direkt interagieren können.",
+    "photoCaption2" : "Guarantee Vault facilitates the central issuance and storage of digital guarantees therebyremoving the paper and fully digitizing the process.",
+
+    "pageTitle3" : "Vorteile",
+    "benefitsHeading1" : "Auftraggeber, Garanten & Begünstigte",
+    "listItem7" : "Standardisierung eingehender / ausgehender Aufträge (single source)",
+    "listItem8" : "Ressourcenoptimierung durch Digitalisierung",
+    "listItem9" : "Besserer Überblick und bessere Kontrolle ausstehender Garantien",
+    "listItem10" : "Erhebliche Aufwandsreduzierung für (Daten-)Abgleich zwischen allen Beteiligten",
+    "listItem11" : "Schutz vor Betrug  und (Urkunden-)Fälschung durch digitale Abläufe und maximale Datensicherheit",
+    "listItem12" : "Digitale Prozesse, die Homeoffice-Arbeit ermöglicht (nicht nur in Corona-Zeiten)",
+
+    "benefitsHeading2" : "Auftraggeber & Garanten",
+    "listItem13" : "Nahtlose Integration von Ausstellungs-, Antrags- und Rückgabeprozessen",
+    "listItem14" : "Einsparung Porto- und Kurierkosten",
+
+    "benefitsHeading3" : "Auftraggeber",
+    "listItem15" : "Alle Garanten auf einer Plattform (Banken als auch Kreditversicherer)",
+    "listItem16" : "Schnelle und effiziente Rückgabe bzw. Enthaftung eines Avals",
+    "listItem17" : "Schnellere Avalausbuchung",
+    "listItem18" : "Einsparung von Avalprovisionen (unnötiger lang ausstehender Avale)",
+
+    "benefitsHeading4" : "Garanten",
+    "listItem19" : "Höheres Servicelevel und besserer Service für relevante Kundengruppen",
+    "listItem20" : "Digitale Avale als neues Produkt im Produktportfolio",
+    "listItem21" : "Effiziente und schnelle Erledigung von Kundenaufträgen und Beantwortung von Anfragen",
+    "listItem22" : "Guarantee Vault als neuer Eingangskanal zur Erstellung von Avalen",
+
+    "benefitsHeading5" : "Begünstigte",
+    "listItem23" : "Schnellstmögliche Avisierung erstellter Avale",
+    "listItem24" : "Ausschluss des Verlustrisikos von (beleghaften) Avalurkunden",
+
+    "ButtonBackToHomePage" : "Zurück zur Startseite"
+  }
+  

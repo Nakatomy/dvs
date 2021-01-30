@@ -21,8 +21,11 @@
     min-height: 80vh;
 }
 
-.container--marginTop {
+.container--marginTop100 {
     margin-top: 100px;
+}
+.container--marginTop96 {
+    margin-top: 96px;
 }
 
 .container--marginBottom80 {
@@ -62,6 +65,10 @@
     gap: 92px;
     width: calc(100% - 72px * 2);
     /* margin: 0 auto; */
+}
+
+.container--none {
+    display: none;
 }
 
 @media screen and (max-width: 945px) {

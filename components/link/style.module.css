@@ -17,3 +17,16 @@
 
 }
 
+.link--blue {
+    color: #0075FF;
+}
+
+.link--blue:visited {
+color: #0075FF;
+}
+
+.link--blue:hover {
+  text-decoration: underline;
+    
+}
+

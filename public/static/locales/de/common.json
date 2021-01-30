@@ -42,11 +42,15 @@
   "servicesTitle": "Leistungen über alle verschiedenen Stadien des Avals",
   "servicesParagraph": "Der Guarantee Vault bietet langfristige, sichere und kosteneffiziente Services für Auftraggeber, Garanten, Begünstigte und Intermediäre während der gesamten Laufzeit eines Avals; Beantragung, Ausstellung, Änderungen und Avalrückgabe eingeschlossen.",
 
-  "restApiTitle": "REST API",
+ 
+  "restApiTitle": "REST API Solution",
   "restApiParagraph1": "Die wesentlichen Vorteile des Guarantee Vault erfolgen über eine Reihe von REST APIs, die allen Nutzern eine nahtlose Anbindung und Zusammenarbeit mit dem Tool ermöglichen.",
   "restApiParagraph2": "Unternehmen, Kreditversicherer, Banken und Intermediäre können sich über ihre bestehenden Plattformen, Portale oder In-House-Systeme nahtlos an den Guarantee Vault anbinden.",
   "restApiParagraph3": "Auf diese Weise können sich alle Beteiligten vernetzen und auf die zentral vorgehaltenen Daten zugreifen, um diese unmittelbar und in Echtzeit verarbeiten zu können.",
-  "restApiParagraph4": "Der Datentransfer erfolgt im JSON Format, die Guarantee Vault APIs sind mit dem marktüblichen Authentifizierungsprotokoll OpenId Connect geschützt.",
+  "restApiParagraph4-1": "Der Datentransfer erfolgt im",
+  "restApiParagraph4-2" : "JSON format,",
+  "restApiParagraph4-3" : "die Guarantee Vault APIs sind mit dem marktüblichen Authentifizierungsprotokoll",
+  "restApiParagraph4-4" : "OpenId Connect geschützt.",
   
   "legalTitle": "Rechtliches",
   "legalParagraph1": "Elektronische Garantien, die über Guarantee Vault ausgestellt werden, sind genauso rechtswirksam und verbindlich wie traditionelle (Papier-)Garantien. Details finden Sie im Legal Corner.",
@@ -57,6 +61,7 @@
   "newsTitle": "Structured Finance Digital Week 2020",
   "newsSubtitle": "Digitalisierung von Garantien",
   "newsParagraph1": "Unser Geschäftsführer Ludger Janßen stellt zusammen mit Sven Matzelsberger, Head of Treasury der Lindner Group KG und Peter Grätz, Head of Export and Trade Finance der Bayerischen Landesbank den Guarantee Vault auf der Structured Finance Digital 2020 vor.",
-  "newsParagraph2": "Kontaktieren Sie uns gern für weitere Informationen oder Details."
+  "newsParagraph2-1": "Kontaktieren Sie uns gern für weitere Informationen",
+  "newsParagraph2-2": " oder Details."
 
 }

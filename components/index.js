@@ -24,6 +24,10 @@ import Member from './member'
 import AdvisoryMember from './advisoryMember'
 import LanguageSwitcher from './langswitcher'
 import SvgGb from './flag'
+import Testimonials from './testimonials'
+import ListItem from './listItem'
+import UlList from './ul'
+import Spacer from './spacer'
 
 
 export {
@@ -52,5 +56,9 @@ export {
     Member,
     AdvisoryMember,
     LanguageSwitcher,
-    SvgGb
+    SvgGb,
+    Testimonials,
+    ListItem,
+    UlList,
+    Spacer
 };

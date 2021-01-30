@@ -21,7 +21,7 @@ const Team = ({t}) => {
     <>
     <Header />
     <Section>
-    <Container width="normal-width" height="minHeight" margin="marginTop">
+    <Container width="normal-width" height="minHeight" margin="marginTop96">
         <Title>{t('pageTitle')}</Title>
         <div className={styles.team__container}>
         <Member src={ludgerPhoto} name="Ludger Janßen" job="MD - Sales, Business Analysis, Onboarding, Legal" />
@@ -40,7 +40,7 @@ const Team = ({t}) => {
         </div>
         <Button
           href="/"
-          title="Back to Home Page"
+          title={t('ButtonBackToHomePage')}
           size="size-l"
           textColor="text-white"
           background="blue"

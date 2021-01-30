@@ -46,7 +46,11 @@
   "restApiParagraph1": "Guarantee Vault delivers its services using a suite of REST APIs allowing all market participants to seamlessly connect and interact.",
   "restApiParagraph2": "Corporates, sureties, banks and other intermediaries can interface with Guarantee Vault via their existing platform, portal or other in-house systems.",
   "restApiParagraph3": "In this way all participants can connect to access and consume data, at source and in real-time.",
-  "restApiParagraph4": "Data is exchanged using JSON format whilst Guarantee Vault APIs are secured using market standard authentication protocol OpenId Connect.",
+  "restApiParagraph4-1": "Data is exchanged using",
+  "restApiParagraph4-2" : "JSON format",
+  "restApiParagraph4-3" : "whilst Guarantee Vault APIs are secured using market standard authentication protocol",
+  "restApiParagraph4-4" : "OpenId Connect.",
+
 
   "legalTitle": "Legal",
   "legalParagraph1": "Electronic guarantees issued via Guarantee Vault are as legal, valid and binding as traditional (paper) guarantees.",
@@ -57,6 +61,7 @@
   "newsTitle": "Structured Finance Digital Week 2020",
   "newsSubtitle": "Digitization of Guarantees",
   "newsParagraph1": "Together with Peter Grätz from Bayerische Landesbank and Sven Matzelsberger from Lindner Group KG our managing director Ludger Janssen presented the Guarantee Vault, a place for the issuance and safe-keeping of digital guarantees.",
-  "newsParagraph2": "For further information, please contact us."
+  "newsParagraph2-1": "For further information, please",
+  "newsParagraph2-2": "contact us."
 
 }

@@ -14,3 +14,19 @@
     width: 100%;
     z-index: 1;
 }
+
+.container--grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 92px;
+    width: calc(100% - 72px * 2);
+    /* margin: 0 auto; */
+}
+
+.container--none {
+    display: none;
+}
+
+.accent {
+    font-weight: 600;
+}
