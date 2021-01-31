@@ -28,35 +28,6 @@
     "paragraph9" : "Alle Beteiligten können ihre Bearbeitung über eine klassische Web-Anwendung bearbeiten, bei größeren Stückzahlen empfiehlt sich eindeutig der Wechsel zu einer REST API Anbindung, so dass bestehende Plattformen, Portale oder In-House-Systeme mit dem Guarantee Vault verbinden werden und direkt interagieren können.",
     "photoCaption2" : "Guarantee Vault facilitates the central issuance and storage of digital guarantees therebyremoving the paper and fully digitizing the process.",
 
-    "pageTitle3" : "Vorteile",
-    "benefitsHeading1" : "Auftraggeber, Garanten & Begünstigte",
-    "listItem7" : "Standardisierung eingehender / ausgehender Aufträge (single source)",
-    "listItem8" : "Ressourcenoptimierung durch Digitalisierung",
-    "listItem9" : "Besserer Überblick und bessere Kontrolle ausstehender Garantien",
-    "listItem10" : "Erhebliche Aufwandsreduzierung für (Daten-)Abgleich zwischen allen Beteiligten",
-    "listItem11" : "Schutz vor Betrug  und (Urkunden-)Fälschung durch digitale Abläufe und maximale Datensicherheit",
-    "listItem12" : "Digitale Prozesse, die Homeoffice-Arbeit ermöglicht (nicht nur in Corona-Zeiten)",
-
-    "benefitsHeading2" : "Auftraggeber & Garanten",
-    "listItem13" : "Nahtlose Integration von Ausstellungs-, Antrags- und Rückgabeprozessen",
-    "listItem14" : "Einsparung Porto- und Kurierkosten",
-
-    "benefitsHeading3" : "Auftraggeber",
-    "listItem15" : "Alle Garanten auf einer Plattform (Banken als auch Kreditversicherer)",
-    "listItem16" : "Schnelle und effiziente Rückgabe bzw. Enthaftung eines Avals",
-    "listItem17" : "Schnellere Avalausbuchung",
-    "listItem18" : "Einsparung von Avalprovisionen (unnötiger lang ausstehender Avale)",
-
-    "benefitsHeading4" : "Garanten",
-    "listItem19" : "Höheres Servicelevel und besserer Service für relevante Kundengruppen",
-    "listItem20" : "Digitale Avale als neues Produkt im Produktportfolio",
-    "listItem21" : "Effiziente und schnelle Erledigung von Kundenaufträgen und Beantwortung von Anfragen",
-    "listItem22" : "Guarantee Vault als neuer Eingangskanal zur Erstellung von Avalen",
-
-    "benefitsHeading5" : "Begünstigte",
-    "listItem23" : "Schnellstmögliche Avisierung erstellter Avale",
-    "listItem24" : "Ausschluss des Verlustrisikos von (beleghaften) Avalurkunden",
-
     "ButtonBackToHomePage" : "Zurück zur Startseite"
   }
   

@@ -28,35 +28,6 @@
     "paragraph9" : "Delivering its service via its suite of REST APIs, Guarantee Vault allows market participants the possibility to seamlessly connect and benefit via their existing platforms, portals or other in-house systems.",
     "photoCaption2" : "Guarantee Vault facilitates the central issuance and storage of digital guarantees therebyremoving the paper and fully digitizing the process.",
 
-    "pageTitle3" : "Benefits",
-    "benefitsHeading1" : "Applicants, Guarantors & Beneficiaries",
-    "listItem7" : "Standardization of incoming / outbound requests (single source)",
-    "listItem8" : "Resource savings through digitization efficiencies",
-    "listItem9" : "Better oversight and control of outstanding guarantee portfolio",
-    "listItem10" : "Significantly reduced reconciliation effort between all parties",
-    "listItem11" : "Secure records resistant to tampering, fraud",
-    "listItem12" : "Digital process that facilitates remote working (covid-19 impact)",
-
-    "benefitsHeading2" : "Applicants & Guarantors",
-    "listItem13" : "Seamless integration of issuance, request and release processe",
-    "listItem14" : "Elimination of courier fees",
-
-    "benefitsHeading3" : "Applicants",
-    "listItem15" : "Access all guarantors through the one platform (both banks & sureties)",
-    "listItem16" : "Fast, efficient guarantee release",
-    "listItem17" : "Faster repayment (where contingent on guarantee receipt)",
-    "listItem18" : "Elimination of commission fees (from outstanding guarantees)",
-
-    "benefitsHeading4" : "Guarantors",
-    "listItem19" : "Increased level of service to clients",
-    "listItem20" : "Digital Guarantees as a new product offering",
-    "listItem21" : "Reduced time & effort on queries from clients",
-    "listItem22" : "Guarantee Vault as a new channel for origination",
-
-    "benefitsHeading5" : "Beneficiaries",
-    "listItem23" : "Faster receipt of issued guarantees",
-    "listItem24" : "Eliminates the problem of misplaced or lost guarantees",
-
     "ButtonBackToHomePage" : "Back to home page"
   }
   

@@ -1,0 +1,21 @@
+{
+    "pageTitle": "Leistungen währen der gesamten Laufzeit ",
+    "paragraph1" : "Der Guarantee Vault bietet langfristige, sichere und kosteneffiziente Services für Auftraggeber, Garanten, Begünstigte und Intermediäre während der gesamten Laufzeit des Avals; Beantragung, Ausstellung und Änderungen eingeschlossen.",
+    "heading1" : "1. Beantragung",
+    "listItem1" : "Auftraggeber können über ihre vorhandenen Systeme digitale Garantien beantragen",
+    "listItem2" : "Garanten erhalten standardisierte Anfragen und Aufträge für digitale Avale von Auftraggebern und Begünstigten",
+
+    "heading2" : "2. Ausstellung",
+    "listItem3" : "Garanten können Avale digital austellen, speichern und dem Begünstigten avisieren",
+    "listItem4" : "Auftraggeber und Begünstigte können jeweils direkt auf die digitalen Avale zugreifen (über Webbrowser aber insbesondere auch mittels API-Schnittstelle)",
+
+    "heading3" : "3. Änderungen",
+    "listItem5" : "Avalauftraggeber und -begünstigte können über ihre vorhandenen Portale oder Plattformen alle möglichen An- oder Rückfragen zu im Guarantee Vault erstellten Avalen unmittelbar stellen (inkl. Änderung, (Teil-)Inanspruchnahme und Avalrückgabe)",
+    "listItem6" : "Banken und Kreditversicherer können ihre Avaländerungen digital & unmittelbar ausführen",
+
+    "heading4" : "4. Sichere Aufbewahrung",
+    "listItem7" : "Sichere Speicherung und Aufbewahrung digitaler Avale im Guarantee Vault",
+    "listItem8" : "Speicherung der Avale in der Cloud gemäß ISO 27001 Standard",
+    "listItem9" : "Verschiedene Reportingfunktion, z. B. für (Daten-)Abgleich, Reconciliation und Statistiken",
+    "ButtonBackToHomePage" : "Zurück zur Startseite"
+  }

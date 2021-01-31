@@ -46,3 +46,7 @@
         margin-bottom: 48px;
     }
 }
+
+.image--marginNone {
+    margin : 0;
+}
