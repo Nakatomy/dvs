@@ -1,110 +1,110 @@
 import {
-    Header,
-    Section,
-    Container,
-    Title,
-    Heading,
-    Button,
-    Spacer,
-    GridItem,
-    Paragraph,
-    ImageComponent,
-    Item,
-    UlList,
-    ListItem
-  } from "components";
-  import styles from "./style.module.css";
-  import cn from "classnames";
-  import PropTypes from "prop-types";
+  Header,
+  Section,
+  Container,
+  Title,
+  Heading,
+  Button,
+  Spacer,
+  GridItem,
+  Paragraph,
+  ImageComponent,
+  Item,
+  UlList,
+  ListItem
+} from "components";
+import styles from "./style.module.css";
+import cn from "classnames";
+import PropTypes from "prop-types";
 import { withTranslation } from "i18n";
-const Benefits = ({t}) => {
-    return (
-        <>
-              <Section>
+const Benefits = ({ t }) => {
+  return (
+    <>
+      <Section>
         <Container width="full-width">
-          <Title>{t("pageTitle")}</Title>
+          <Title>{t("benefitsTitle")}</Title>
         </Container>
         <Container display="grid" width="full-width">
           <div>
-            <Heading background="green">{t("heading1")}</Heading>
+            <Heading background="green">{t("agbHeading1")}</Heading>
             <UlList padding="padding-none">
               <ListItem display="flex" marker="iconCheck">
-                {t("listItem1")}
+                {t("benefitsListItem1")}
               </ListItem>
               <ListItem display="flex" marker="iconCheck">
-                {t("listItem2")}
+                {t("benefitsListItem2")}
               </ListItem>
               <ListItem display="flex" marker="iconCheck">
-                {t("listItem3")}
+                {t("benefitsListItem3")}
               </ListItem>
               <ListItem display="flex" marker="iconCheck">
-                {t("listItem4")}
+                {t("benefitsListItem4")}
               </ListItem>
               <ListItem display="flex" marker="iconCheck">
-                {t("listItem5")}
+                {t("benefitsListItem5")}
               </ListItem>
               <ListItem display="flex" marker="iconCheck">
-                {t("listItem6")}
+                {t("benefitsListItem6")}
               </ListItem>
             </UlList>
           </div>
 
           <div>
-            <Heading background="green">{t("heading2")}</Heading>
+            <Heading background="green">{t("agHeading2")}</Heading>
             <UlList padding="padding-none">
               <ListItem display="flex" marker="iconCheck">
-                {t("listItem7")}
+                {t("agListItem7")}
               </ListItem>
               <ListItem display="flex" marker="iconCheck">
-                {t("listItem8")}
+                {t("agListItem8")}
               </ListItem>
             </UlList>
           </div>
 
           <div>
-            <Heading background="green">{t("heading3")}</Heading>
+            <Heading background="green">{t("aHeading3")}</Heading>
             <UlList padding="padding-none">
               <ListItem display="flex" marker="iconCheck">
-                {t("listItem9")}
+                {t("aListItem9")}
               </ListItem>
               <ListItem display="flex" marker="iconCheck">
-                {t("listItem10")}
+                {t("aListItem10")}
               </ListItem>
               <ListItem display="flex" marker="iconCheck">
-                {t("listItem11")}
+                {t("aListItem11")}
               </ListItem>
               <ListItem display="flex" marker="iconCheck">
-                {t("listItem12")}
+                {t("aListItem12")}
               </ListItem>
             </UlList>
           </div>
 
           <div>
-            <Heading background="green">{t("heading4")}</Heading>
+            <Heading background="green">{t("gHeading4")}</Heading>
             <UlList padding="padding-none">
               <ListItem display="flex" marker="iconCheck">
-                {t("listItem13")}
+                {t("gListItem13")}
               </ListItem>
               <ListItem display="flex" marker="iconCheck">
-                {t("listItem14")}
+                {t("gListItem14")}
               </ListItem>
               <ListItem display="flex" marker="iconCheck">
-                {t("listItem15")}
+                {t("gListItem15")}
               </ListItem>
               <ListItem display="flex" marker="iconCheck">
-                {t("listItem16")}
+                {t("gListItem16")}
               </ListItem>
             </UlList>
           </div>
 
           <div>
-            <Heading background="green">{t("heading5")}</Heading>
+            <Heading background="green">{t("bHeading5")}</Heading>
             <UlList padding="padding-none">
               <ListItem display="flex" marker="iconCheck">
-                {t("listItem17")}
+                {t("bListItem17")}
               </ListItem>
               <ListItem display="flex" marker="iconCheck">
-                {t("listItem18")}
+                {t("bListItem18")}
               </ListItem>
             </UlList>
           </div>
@@ -113,7 +113,7 @@ const Benefits = ({t}) => {
         <Container width="full-width">
           <Button
             href="/"
-            title={t("ButtonBackToHomePage")}
+            title={t("backToHomePage")}
             size="size-l"
             textColor="text-white"
             background="blue"
@@ -121,16 +121,16 @@ const Benefits = ({t}) => {
           />
         </Container>
       </Section>
-        </>
-    )
+    </>
+  )
 }
 
 Benefits.getInitialProps = async () => ({
-    namespacesRequired: ["benefits"],
-  });
-  
-  Benefits.propTypes = {
-    t: PropTypes.func.isRequired,
-  };
-  
-  export default withTranslation("benefits")(Benefits);
+  namespacesRequired: ["benefits"],
+});
+
+Benefits.propTypes = {
+  t: PropTypes.func.isRequired,
+};
+
+export default withTranslation("benefits")(Benefits);

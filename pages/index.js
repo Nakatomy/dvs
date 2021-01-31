@@ -19,7 +19,7 @@ import {
   Testimonial,
   Spacer
 } from "components";
-import Link from "next/link";
+// import Link from "next/link";
 import bayernLbLogo from "images/partners/partner-bayernlb.svg";
 import porrLogo from "images/partners/partner-porr.jpg";
 import atradiusLogo from "images/partners/partner-atradius.svg";
@@ -32,9 +32,15 @@ import PropTypes from "prop-types";
 import { withTranslation } from "../i18n";
 import { useState, useEffect } from "react";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import * as Scroll from 'react-scroll';
+import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 
 function HomePage({ t }) {
+  let LinkToSolution = Scroll.Link;
+  let Element = Scroll.Element;
+
+
   // const [collapseOpen, setCollapseOpen] = useState(false);
 
   const [showMe, setShowMe] = useState(false);
@@ -74,37 +80,66 @@ function HomePage({ t }) {
         title={t("leadTitle")}
         subtitle={t("leadSubtitle")}
         statement={t("leadStatement")}
-        primaryButtonName={t("leadPrimaryButtonName")}
-        secondaryButtonName={t("leadSecondaryButtonName")}
-      />
+        primaryButtonName={t("leadPrimaryButtonName")}>
+
+        <LinkToSolution to="solution"
+          style={{
+            borderRadius: "32px",
+            fontSize: "14px",
+            fontWeight: "600",
+            letterSpacing: "0.5px",
+            cursor: "pointer",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            textTransform: "uppercase",
+            lineHeight: "24px",
+            width: "max-content",
+            textDecoration: "none",
+            color: "#ffffff",
+            border: "none",
+            opacity: ".5",
+            transition: "opacity ease-in 0.3s",
+            marginRight: "24px",
+            marginBottom: "24px",
+            padding: "20px 40px"
+          }}
+          spy={true} smooth={true} duration={500}>
+          {t("leadSecondaryButtonName")}
+        </LinkToSolution>
+      </Lead>
       <Partners title={t("partnersTitle")} />
-      <Section id="solution" style="gradient">
-        <Container display="grid" width="full-width" height="minHeight">
-          <GridItem>
-            <ImageComponent
-              src={abstractWaves}
-              alt="Asbtract waves"
-              width="921"
-              height="647"
-            />
-          </GridItem>
-          <GridItem>
-            <Title>{t("solutionTitle")}</Title>
-            <Paragraph>{t("solutionParagraph1")}</Paragraph>
-            <Paragraph>{t("solutionParagraph2")}</Paragraph>
-            <Paragraph>{t("solutionParagraph3")}</Paragraph>
-            <ButtonWrapper>
-              <Button
-                href="./solution"
-                title={t("ButtonNameMore")}
-                size="size-l"
-                textColor="text-blue"
-                border="border-blue"
+      <Element name="solution">
+        <Section style="gradient">
+
+          <Container display="grid" width="full-width" height="minHeight">
+            <GridItem>
+              <ImageComponent
+                src={abstractWaves}
+                alt="Asbtract waves"
+                width="921"
+                height="647"
               />
-            </ButtonWrapper>
-          </GridItem>
-        </Container>
-      </Section>
+            </GridItem>
+            <GridItem>
+              <Title>{t("solutionTitle")}</Title>
+              <Paragraph>{t("solutionParagraph1")}</Paragraph>
+              <Paragraph>{t("solutionParagraph2")}</Paragraph>
+              <Paragraph>{t("solutionParagraph3")}</Paragraph>
+              <ButtonWrapper>
+                <Button
+                  href="/solution"
+                  title={t("ButtonNameMore")}
+                  size="size-l"
+                  textColor="text-blue"
+                  border="border-blue"
+                />
+              </ButtonWrapper>
+            </GridItem>
+          </Container>
+
+        </Section>
+      </Element>
       <Testimonials>
 
 
@@ -116,16 +151,16 @@ function HomePage({ t }) {
           author="Brigitte Schmidt"
           authorTitle="Head of Guarantees"
         >
-          <Paragraph isTestimonial="true">
+          <Paragraph isTestimonial={true}>
             {t("testimonialBayernLbParagraph1")}
           </Paragraph>
-          <Paragraph isTestimonial="true">
+          <Paragraph isTestimonial={true}>
             {t("testimonialBayernLbParagraph2")}
           </Paragraph>
-          <Paragraph isTestimonial="true">
+          <Paragraph isTestimonial={true}>
             {t("testimonialBayernLbParagraph3")}
           </Paragraph>
-          <Paragraph isTestimonial="true">
+          <Paragraph isTestimonial={true}>
             {t("testimonialBayernLbParagraph4")}
           </Paragraph>
         </Testimonial>
@@ -138,13 +173,13 @@ function HomePage({ t }) {
           author="Nicole Kerndler"
           authorTitle="Deputy Head of Bank Guarantee Management"
         >
-          <Paragraph isTestimonial="true">
+          <Paragraph isTestimonial={true}>
             {t("testimonialPorrParagraph1")}
           </Paragraph>
-          <Paragraph isTestimonial="true">
+          <Paragraph isTestimonial={true}>
             {t("testimonialPorrParagraph2")}
           </Paragraph>
-          <Paragraph isTestimonial="true">
+          <Paragraph isTestimonial={true}>
             {t("testimonialPorrParagraph3")}
           </Paragraph>
         </Testimonial>
@@ -157,13 +192,13 @@ function HomePage({ t }) {
           author="Susanne Offermann-Tesch"
           authorTitle="Country Manager Bonding Germany"
         >
-          <Paragraph isTestimonial="true">
+          <Paragraph isTestimonial={true}>
             {t("testimonialAtradiusParagraph1")}
           </Paragraph>
-          <Paragraph isTestimonial="true">
+          <Paragraph isTestimonial={true}>
             {t("testimonialAtradiusParagraph2")}
           </Paragraph>
-          <Paragraph isTestimonial="true">
+          <Paragraph isTestimonial={true}>
             {t("testimonialAtradiusParagraph3")}
           </Paragraph>
         </Testimonial>
@@ -176,13 +211,13 @@ function HomePage({ t }) {
           author="Nick Pachnev"
           authorTitle="Chief Executive Officer"
         >
-          <Paragraph isTestimonial="true">
+          <Paragraph isTestimonial={true}>
             {t("testimonialGlobalTradeCorpParagraph1")}
           </Paragraph>
-          <Paragraph isTestimonial="true">
+          <Paragraph isTestimonial={true}>
             {t("testimonialGlobalTradeCorpParagraph2")}
           </Paragraph>
-          <Paragraph isTestimonial="true">
+          <Paragraph isTestimonial={true}>
             {t("testimonialGlobalTradeCorpParagraph3")}
           </Paragraph>
         </Testimonial>
@@ -215,7 +250,7 @@ function HomePage({ t }) {
             <Paragraph>{t("servicesParagraph")}</Paragraph>
             <ButtonWrapper>
               <Button
-                href="./services"
+                href="/services"
                 title={t("ButtonNameMore")}
                 size="size-l"
                 textColor="text-blue"
@@ -284,7 +319,7 @@ function HomePage({ t }) {
             <Paragraph><span className="accent">{t("legalParagraph2")}</span></Paragraph>
             <Paragraph>{t("legalParagraph3")}</Paragraph>
             <Paragraph>{t("legalParagraph4")}</Paragraph>
-            <Paragraph>
+            <div>
               <LinkComponent
                 href="https://www.cliffordchance.com/people_and_places/places/europe/germany.html"
                 type="paragraph"
@@ -297,8 +332,8 @@ function HomePage({ t }) {
                 Partnerschaft mit beschränkter Berufshaftung von Rechtsanwälten,
                 Steuerberatern und Solicitors
               </Paragraph>
-            </Paragraph>
-            <Paragraph>
+            </div>
+            <div>
               <LinkComponent
                 href="https://www.wolftheiss.com/countries/offices/austria/"
                 type="paragraph"
@@ -308,8 +343,8 @@ function HomePage({ t }) {
                 WOLF THEISS
               </LinkComponent>
               <Paragraph>Rechtsanwälte GmbH & Co KG</Paragraph>
-            </Paragraph>
-            <Paragraph>
+            </div>
+            <div>
               <LinkComponent
                 href="https://www.clydeco.com/en"
                 type="paragraph"
@@ -318,10 +353,10 @@ function HomePage({ t }) {
               >
                 CLYDE & CO LLP
               </LinkComponent>
-            </Paragraph>
+            </div>
             <ButtonWrapper>
               <Button
-                href="./legal"
+                href="/legal"
                 title={t("ButtonNameMore")}
                 size="size-l"
                 textColor="text-blue"
@@ -347,7 +382,7 @@ function HomePage({ t }) {
             <Title>{t("newsTitle")}</Title>
             <Heading>{t("newsSubtitle")}</Heading>
             <Paragraph>{t("newsParagraph1")}</Paragraph>
-            <Paragraph>{t("newsParagraph2-1")}<LinkComponent href="./contacts" color="blue">{t("newsParagraph2-2")}</LinkComponent></Paragraph>
+            <Paragraph>{t("newsParagraph2-1")}<LinkComponent href="/contacts" color="blue">{t("newsParagraph2-2")}</LinkComponent></Paragraph>
           </GridItem>
         </Container>
       </Section>

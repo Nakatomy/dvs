@@ -68,7 +68,7 @@ const Legal = ({ t }) => {
           <Spacer size="s" />
           <Heading>
             {t("heading5-1")}
-            <LinkComponent href="./contacts" color="blue" >
+            <LinkComponent href="/contacts" color="blue" >
               {t("heading5-2")}
             </LinkComponent>
           </Heading>

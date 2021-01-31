@@ -1,5 +1,8 @@
 import Head from 'next/head'
 import favIcon from 'images/favicon.ico'
+import favIcon32 from 'images/favicon-32x32.png'
+import favIcon16 from 'images/favicon-16x16.png'
+import favIconAppleTouch from 'images/apple-touch-icon.png'
 
 const Meta = (props) => (
     <Head>
@@ -10,6 +13,11 @@ const Meta = (props) => (
         <meta name="og:description" property="og:description" content={props.desc} />
         <meta property="og:site_name" content="Proper Noun" />
         <meta property="og:url" content={`${props.canonical}`} />
+        <link rel="apple-touch-icon" sizes="180x180" href={favIconAppleTouch} />
+        <link rel="icon" type="image/png" sizes="32x32" href={favIcon32} />
+        <link rel="icon" type="image/png" sizes="16x16" href={favIcon16} />
+
+        <link rel="icon" href={favIcon} />
         {/* <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content={props.title} />
         <meta name="twitter:description" content={props.desc} />

@@ -13,7 +13,7 @@ const Testimonial = ({ children, logoSrc, logoAlt, logoWidth, author, authorTitl
 
             { children}
 
-            <p p className={styles['testimonials__author']} > {author}</p >
+            <p className={styles['testimonials__author']} > {author}</p >
             <p className={styles['testimonials__authorTitle']}>{authorTitle}</p>
         </div >
 

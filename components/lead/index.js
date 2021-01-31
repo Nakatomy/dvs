@@ -1,8 +1,9 @@
 import styles from "./style.module.css";
 import { Button, Nav } from 'components'
 import Login from '@material-ui/icons/ExitToApp';
+import { Children } from "react";
 
-const Lead = ({ title, subtitle, statement, primaryButtonName, secondaryButtonName }) => {
+const Lead = ({ children, title, subtitle, statement, primaryButtonName, secondaryButtonName }) => {
 	return (
 		<section className={styles.lead}>
 			<Nav className={styles.nav__container}>
@@ -27,7 +28,7 @@ const Lead = ({ title, subtitle, statement, primaryButtonName, secondaryButtonNa
 						<Button href="/contacts" title={primaryButtonName} size='size-l' textColor='text-white' background='blue' space='spaceBetween' />
 					</li>
 					<li className={styles.lead['__btn-list']}>
-						<Button href="#solution" title={secondaryButtonName} size='size-l' textColor='text-white' background='text-only' />
+						{children}
 					</li>
 				</ul>
 			</div>

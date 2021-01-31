@@ -1,33 +1,33 @@
 {
-    "pageTitle" : "Vorteile",
-    "heading1" : "Auftraggeber, Garanten & Begünstigte",
-    "listItem1" : "Standardisierung eingehender / ausgehender Aufträge (single source)",
-    "listItem2" : "Ressourcenoptimierung durch Digitalisierung",
-    "listItem3" : "Besserer Überblick und bessere Kontrolle ausstehender Garantien",
-    "listItem4" : "Erhebliche Aufwandsreduzierung für (Daten-)Abgleich zwischen allen Beteiligten",
-    "listItem5" : "Schutz vor Betrug  und (Urkunden-)Fälschung durch digitale Abläufe und maximale Datensicherheit",
-    "listItem6" : "Digitale Prozesse, die Homeoffice-Arbeit ermöglicht (nicht nur in Corona-Zeiten)",
+    "benefitsTitle" : "Vorteile",
+    "agbHeading1" : "Auftraggeber, Garanten & Begünstigte",
+    "agbListItem1" : "Standardisierung eingehender / ausgehender Aufträge (single source)",
+    "agbListItem2" : "Ressourcenoptimierung durch Digitalisierung",
+    "agbListItem3" : "Besserer Überblick und bessere Kontrolle ausstehender Garantien",
+    "agbListItem4" : "Erhebliche Aufwandsreduzierung für (Daten-)Abgleich zwischen allen Beteiligten",
+    "agbListItem5" : "Schutz vor Betrug  und (Urkunden-)Fälschung durch digitale Abläufe und maximale Datensicherheit",
+    "agbListItem6" : "Digitale Prozesse, die Homeoffice-Arbeit ermöglicht (nicht nur in Corona-Zeiten)",
 
-    "heading2" : "Auftraggeber & Garanten",
-    "listItem7" : "Nahtlose Integration von Ausstellungs-, Antrags- und Rückgabeprozessen",
-    "listItem8" : "Einsparung Porto- und Kurierkosten",
+    "agHeading2" : "Auftraggeber & Garanten",
+    "agListItem7" : "Nahtlose Integration von Ausstellungs-, Antrags- und Rückgabeprozessen",
+    "agListItem8" : "Einsparung Porto- und Kurierkosten",
 
-    "heading3" : "Auftraggeber",
-    "listItem9" : "Alle Garanten auf einer Plattform (Banken als auch Kreditversicherer)",
-    "listItem10" : "Schnelle und effiziente Rückgabe bzw. Enthaftung eines Avals",
-    "listItem11" : "Schnellere Avalausbuchung",
-    "listItem12" : "Einsparung von Avalprovisionen (unnötiger lang ausstehender Avale)",
+    "aHeading3" : "Auftraggeber",
+    "aListItem9" : "Alle Garanten auf einer Plattform (Banken als auch Kreditversicherer)",
+    "alistItem10" : "Schnelle und effiziente Rückgabe bzw. Enthaftung eines Avals",
+    "aListItem11" : "Schnellere Avalausbuchung",
+    "aListItem12" : "Einsparung von Avalprovisionen (unnötiger lang ausstehender Avale)",
 
-    "heading4" : "Garanten",
-    "listItem13" : "Höheres Servicelevel und besserer Service für relevante Kundengruppen",
-    "listItem14" : "Digitale Avale als neues Produkt im Produktportfolio",
-    "listItem15" : "Effiziente und schnelle Erledigung von Kundenaufträgen und Beantwortung von Anfragen",
-    "listItem16" : "Guarantee Vault als neuer Eingangskanal zur Erstellung von Avalen",
+    "gHeading4" : "Garanten",
+    "gListItem13" : "Höheres Servicelevel und besserer Service für relevante Kundengruppen",
+    "gListItem14" : "Digitale Avale als neues Produkt im Produktportfolio",
+    "gListItem15" : "Effiziente und schnelle Erledigung von Kundenaufträgen und Beantwortung von Anfragen",
+    "gListItem16" : "Guarantee Vault als neuer Eingangskanal zur Erstellung von Avalen",
 
-    "heading5" : "Begünstigte",
-    "listItem17" : "Schnellstmögliche Avisierung erstellter Avale",
-    "listItem18" : "Ausschluss des Verlustrisikos von (beleghaften) Avalurkunden",
-    "ButtonBackToHomePage" : "Zurück zur Startseite"
+    "bHeading5" : "Begünstigte",
+    "bListItem17" : "Schnellstmögliche Avisierung erstellter Avale",
+    "blistItem18" : "Ausschluss des Verlustrisikos von (beleghaften) Avalurkunden",
+    "backToHomePage" : "Zurück zur Startseite"
     
   }
   

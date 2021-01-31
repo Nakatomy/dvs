@@ -1,8 +1,12 @@
 import styles from './style.module.css'
-const Paragraph = ({ children, isTestimonial }) => {
+import cn from 'classnames'
+const ParagraphComponent = ({ children }, props) => {
     return (
-        <p className={isTestimonial ? styles['testimonials__paragraph'] : styles.paragraph}>{children}</p>
+        <p className={cn(styles.paragraph, {
+            [styles[`testimonials__paragraph`]]: props.isTestimonial
+        })}>
+            {children}</p>
     );
 }
 
-export default Paragraph
+export default ParagraphComponent
