@@ -12,7 +12,8 @@ import {
   Item,
   UlList,
   ListItem,
-  Benefits
+  Benefits,
+  Meta
 } from "components";
 import styles from "./style.module.css";
 import cloud from "images/solution/cloud.png";
@@ -25,6 +26,10 @@ import cn from "classnames";
 const Solution = ({ t }) => {
   return (
     <>
+      <Meta
+        title={t("pageTitle") + " | Digital Vault Services"}
+        desc={t("paragraph1")}
+      />
       <Header />
       <Section>
         <Container display="grid" width="full-width" margin="marginTop96">
@@ -120,7 +125,7 @@ const Solution = ({ t }) => {
           <Paragraph>{t("paragraph9")}</Paragraph>
         </GridItem>
       </Container>
-      
+
       <Benefits />
     </>
   );

@@ -9,12 +9,17 @@ import {
   Title,
   LinkComponent,
   Spacer,
-  Button
+  Button,
+  Meta,
 } from "components";
 
 const Legal = ({ t }) => {
   return (
     <>
+      <Meta
+        title={t("pageTitle") + " | Digital Vault Services"}
+        desc={t("paragraph1")}
+      />
       <Header />
       <Section>
         <Container width="normal-width" margin="marginTop96">
@@ -30,7 +35,7 @@ const Legal = ({ t }) => {
               href="https://www.gesetze-im-internet.de/bgb/__766.html"
               color="blue"
               target="_blank"
-                rel="noopener"
+              rel="noopener"
             >
               § 766{" "}
             </LinkComponent>
@@ -39,7 +44,7 @@ const Legal = ({ t }) => {
               href="https://www.gesetze-im-internet.de/hgb/__350.html"
               color="blue"
               target="_blank"
-                rel="noopener"
+              rel="noopener"
             >
               § 350{" "}
             </LinkComponent>
@@ -48,7 +53,7 @@ const Legal = ({ t }) => {
               href="https://www.gesetze-im-internet.de/bgb/__766.html"
               color="blue"
               target="_blank"
-                rel="noopener"
+              rel="noopener"
             > § 766 {" "}</LinkComponent>
             {t("paragraph3-4")}
           </Paragraph>

@@ -1,4 +1,4 @@
-import {Header, Section, Container, Member, Title, Button} from 'components'
+import { Header, Section, Container, Member, Title, Button, Meta } from 'components'
 import ludgerPhoto from 'images/team/MG_Janssen_Ludger_HF.jpg'
 import svenPhoto from 'images/team/_MG_Matzelsberger-Sven-QF.jpg'
 import jaimePhoto from 'images/team/_MG_Gimeno-Jaime-QF.jpg'
@@ -16,48 +16,52 @@ import styles from './style.module.css';
 import PropTypes from 'prop-types'
 import { i18n, withTranslation } from 'i18n'
 
-const Team = ({t}) => {
-    return (
+const Team = ({ t }) => {
+  return (
     <>
-    <Header />
-    <Section>
-    <Container width="normal-width" height="minHeight" margin="marginTop96">
-        <Title>{t('pageTitle')}</Title>
-        <div className={styles.team__container}>
-        <Member src={ludgerPhoto} name="Ludger Janßen" job="MD - Sales, Business Analysis, Onboarding, Legal" />
-        <Member src={svenPhoto} name="Sven Matzelsberger" job="MD – Finance, HR" />
-        <Member src={jaimePhoto} name="Jaime Gimeno" job="Head of Technology, Product" />
-        <Member src={davidPhoto} name="Dr. iur. David Saive" job="Head of Legal" />
-        <Member src={felixPhoto} name="Felix Scholle" job="Sales Director" />
-        <Member src={valeriePhoto} name="Valerie Pfannenstiel" job="Onboarding Manager" />
-        <Member src={lenaPhoto} name="Lena Kimpfbeck" job="Onboarding Manager" />
-        <Member src={marinaPhoto} name="Marina Simmerl" job="PR & Marketing Manager" />
-        <Member src={sabinePhoto} name="Sabine Ostermeier" job="Office Manager"/>
-        <Member src={jaimePhoto} name="Julian Geddo" job="Business Analyst"/>
-        <Member src={araPhoto} name="Ara Trujillo" job="Onboarding Manager"/>
-        <Member src={annaPhoto} name="Anna Mitrovic" job="Business Analyst" />
-        <Member src={udoPhoto} name="Udo Holschuh" job="Onboarding Manager"/>
-        </div>
-        <Button
-          href="/"
-          title={t('ButtonBackToHomePage')}
-          size="size-l"
-          textColor="text-white"
-          background="blue"
-          border="border-white"
-        />
-    </Container>
-    </Section>
+      <Meta
+        title={t("pageTitle") + " | Digital Vault Services"}
+
+      />
+      <Header />
+      <Section>
+        <Container width="normal-width" height="minHeight" margin="marginTop96">
+          <Title>{t('pageTitle')}</Title>
+          <div className={styles.team__container}>
+            <Member src={ludgerPhoto} name="Ludger Janßen" job="MD - Sales, Business Analysis, Onboarding, Legal" />
+            <Member src={svenPhoto} name="Sven Matzelsberger" job="MD – Finance, HR" />
+            <Member src={jaimePhoto} name="Jaime Gimeno" job="Head of Technology, Product" />
+            <Member src={davidPhoto} name="Dr. iur. David Saive" job="Head of Legal" />
+            <Member src={felixPhoto} name="Felix Scholle" job="Sales Director" />
+            <Member src={valeriePhoto} name="Valerie Pfannenstiel" job="Onboarding Manager" />
+            <Member src={lenaPhoto} name="Lena Kimpfbeck" job="Onboarding Manager" />
+            <Member src={marinaPhoto} name="Marina Simmerl" job="PR & Marketing Manager" />
+            <Member src={sabinePhoto} name="Sabine Ostermeier" job="Office Manager" />
+            <Member src={jaimePhoto} name="Julian Geddo" job="Business Analyst" />
+            <Member src={araPhoto} name="Ara Trujillo" job="Onboarding Manager" />
+            <Member src={annaPhoto} name="Anna Mitrovic" job="Business Analyst" />
+            <Member src={udoPhoto} name="Udo Holschuh" job="Onboarding Manager" />
+          </div>
+          <Button
+            href="/"
+            title={t('ButtonBackToHomePage')}
+            size="size-l"
+            textColor="text-white"
+            background="blue"
+            border="border-white"
+          />
+        </Container>
+      </Section>
     </>
-    )
+  )
 }
 
 Team.getInitialProps = async () => ({
-    namespacesRequired: ['teamPage'],
-  })
-  
-  Team.propTypes = {
-    t: PropTypes.func.isRequired,
-  }
-  
-  export default withTranslation('teamPage')(Team)
+  namespacesRequired: ['teamPage'],
+})
+
+Team.propTypes = {
+  t: PropTypes.func.isRequired,
+}
+
+export default withTranslation('teamPage')(Team)

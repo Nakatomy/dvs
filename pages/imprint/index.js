@@ -12,24 +12,29 @@ import {
   Button,
   UlList,
   ListItem,
+  Meta,
 } from "components";
 const Imprint = ({ t }) => {
   return (
     <>
+      <Meta
+        title={t("pageTitle") + " | Digital Vault Services"}
+        desc={t("paragraph1")}
+      />
       <Header />
       <Section>
         <Container width="normal-width" margin="marginTop96">
           <Title>{t("pageTitle")}</Title>
-        
-            <UlList listStyle="list-style-none">
-              <ListItem>Digital Vault Services GmbH</ListItem>
-              <ListItem>Stahlgruberring 43</ListItem>
-              <ListItem>81829 Munich</ListItem>
-              <ListItem>Tel.: +49 175 8868021</ListItem>
-              <ListItem>E-Mail: contact@digitalvaultservices.com</ListItem>
-              <ListItem>Website: https://www.digitalvaultservices.com</ListItem>
-            </UlList>
-        
+
+          <UlList listStyle="list-style-none">
+            <ListItem>Digital Vault Services GmbH</ListItem>
+            <ListItem>Stahlgruberring 43</ListItem>
+            <ListItem>81829 Munich</ListItem>
+            <ListItem>Tel.: +49 175 8868021</ListItem>
+            <ListItem>E-Mail: contact@digitalvaultservices.com</ListItem>
+            <ListItem>Website: https://www.digitalvaultservices.com</ListItem>
+          </UlList>
+
 
           <Paragraph>{t("paragraph1")}</Paragraph>
           <Paragraph>{t("paragraph2")}</Paragraph>

@@ -1,4 +1,4 @@
-import { Header, Section, Container, Heading, Title, GridItem, Button, Paragraph, LinkComponent, YoutubeVideo } from 'components'
+import { Header, Section, Container, Heading, Title, GridItem, Meta, Button, Paragraph, LinkComponent, YoutubeVideo } from 'components'
 import ludgerPhoto from 'images/team/MG_Janssen_Ludger_HF.jpg'
 import svenPhoto from 'images/team/_MG_Matzelsberger-Sven-QF.jpg'
 import jaimePhoto from 'images/team/_MG_Gimeno-Jaime-QF.jpg'
@@ -19,6 +19,10 @@ import { i18n, withTranslation } from 'i18n'
 const News = ({ t }) => {
     return (
         <>
+            <Meta
+                title={t("pageTitle") + " | Digital Vault Services"}
+                desc={t("newsTitle")}
+            />
             <Header />
             <Section>
                 <Container width="full-width" margin="marginTop96">
