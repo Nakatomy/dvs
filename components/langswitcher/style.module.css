@@ -3,7 +3,6 @@
   background-image: url('images/de.svg');
   background-repeat: no-repeat;
   background-position: center;
-  
     width: 24px;
     height: 24px;
      justify-content: center;
@@ -19,6 +18,7 @@
     width: 24px;
     height: 24px;
 }
+
 
 .icon--de-flag {
   
