@@ -13,7 +13,8 @@ import {
   UlList,
   ListItem,
   Benefits,
-  Meta
+  Meta,
+  ModalImage
 } from "components";
 import styles from "./style.module.css";
 import cloud from "images/solution/cloud.png";
@@ -23,7 +24,37 @@ import transparencyImage from "images/transparency.svg";
 import PropTypes from "prop-types";
 import { withTranslation } from "i18n";
 import cn from "classnames";
-const Solution = ({ t }) => {
+import {useState,  useEffect} from 'react'
+const Solution = ({ t}) => {
+
+  const [isModalImageOpen, setModalImage] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
+  
+
+
+  function handleImageClick(image) {
+    setSelectedImage(image);
+    setModalImage(true);
+    console.log(image);
+  }
+  function closeAllModals() {
+    setModalImage(false);
+  }
+
+  function handlerEscClose(evt) {
+    if (evt.key === "Escape") {
+      closeAllModals();
+    }
+  }
+
+
+  useEffect(() => {
+    document.addEventListener("keydown", handlerEscClose);
+    return () => {
+      document.removeEventListener("keydown", handlerEscClose);
+
+    };
+  });
   return (
     <>
       <Meta
@@ -44,11 +75,12 @@ const Solution = ({ t }) => {
             <Paragraph>{t("paragraph1")}</Paragraph>
             <Paragraph>{t("paragraph2")}</Paragraph>
             <Paragraph>{t("paragraph3")}</Paragraph>
-            <figure className={styles["mobile-image"]}>
+            <figure className={styles["mobile-image"]} >
               <ImageComponent
                 className={cn(styles.image, styles["mobile-image"])}
                 src={services}
                 alt="Services throughout the guarantee life-cycle"
+                onClick={handleImageClick}
               ></ImageComponent>
               <figcaption>{t("photoCaption1")}</figcaption>
             </figure>
@@ -64,6 +96,7 @@ const Solution = ({ t }) => {
         <Container display="grid" width="full-width">
           <figure className={styles["desktop-image"]}>
             <ImageComponent
+              onClick={handleImageClick}
               className={cn(styles.image, styles["desktop-image"])}
               src={services}
               alt="Services throughout the guarantee life-cycle"
@@ -127,6 +160,11 @@ const Solution = ({ t }) => {
       </Container>
 
       <Benefits />
+      <ModalImage
+            isOpen={isModalImageOpen}
+            onClose={closeAllModals}
+            image={selectedImage}
+          />
     </>
   );
 };

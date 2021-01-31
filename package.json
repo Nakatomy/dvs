@@ -33,6 +33,7 @@
     "next-images": "^1.7.0",
     "react-cookie-consent": "^6.2.2",
     "react-flags-select": "^2.0.2",
-    "react-i18next": "^11.8.5"
+    "react-i18next": "^11.8.5",
+    "react-modal": "^3.12.1"
   }
 }

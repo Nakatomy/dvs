@@ -3,8 +3,8 @@ import styles from './style.module.css'
 import cn from 'classnames'
 
 
-const Main = ({ children }) => {
-    return <main className={styles.content}>
+const Main = ({ children,onClick }) => {
+    return <main className={styles.content} onClick={onClick}>
         {children}
     </main>
 }

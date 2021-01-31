@@ -30,6 +30,7 @@ import UlList from './ul'
 import Spacer from './spacer'
 import Item from './item'
 import Benefits from './benefits'
+import ModalImage from './modalImage'
 
 
 export {
@@ -64,5 +65,6 @@ export {
     UlList,
     Spacer,
     Item,
-    Benefits
+    Benefits,
+    ModalImage
 };

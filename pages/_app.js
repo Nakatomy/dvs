@@ -4,9 +4,12 @@ import "../vendor/normalize.css";
 import styles from "./style.css";
 import { appWithTranslation } from "../i18n";
 import CookieConsent from "react-cookie-consent";
+import {useState} from 'react'
+
 
 // This default export is required in a new `pages/_app.js` file.
 function MyApp({ Component, pageProps }) {
+
   return (
     <div>
       <Main>
