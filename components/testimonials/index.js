@@ -7,9 +7,15 @@ import bayernLbLogo from "images/partners/partner-bayernlb.svg";
 import porrLogo from "images/partners/partner-porr.jpg";
 import atradiusLogo from "images/partners/partner-atradius.svg";
 import globalTradeLogo from "images/partners/partner-gtc.png";
+import React, { Children, useEffect, useState } from "react";
+
+
 
 const Testimonials = ({ t, children }) => {
+
+
   return (
+
     <Section>
       <Container display="grid" width="full-width">
         <Testimonial
@@ -42,84 +48,16 @@ const Testimonials = ({ t, children }) => {
             {t("testimonialEulerHermesParagraph2")}
           </Paragraph>
         </Testimonial>
+
+        {children}
       </Container>
-      <Container display="grid" width="full-width">
-        <Testimonial
-          logoSrc={bayernLbLogo}
-          logoAlt="BayernLB logo"
-          logoWidth="184"
-          author="Brigitte Schmidt"
-          authorTitle="Head of Guarantees"
-        >
-          <Paragraph isTestimonial="true">
-            {t("testimonialBayernLbParagraph1")}
-          </Paragraph>
-          <Paragraph isTestimonial="true">
-            {t("testimonialBayernLbParagraph2")}
-          </Paragraph>
-          <Paragraph isTestimonial="true">
-            {t("testimonialBayernLbParagraph3")}
-          </Paragraph>
-          <Paragraph isTestimonial="true">
-            {t("testimonialBayernLbParagraph4")}
-          </Paragraph>
-        </Testimonial>
 
-        <Testimonial
-          logoSrc={porrLogo}
-          logoAlt="Porr logo"
-          logoWidth="100"
-          author="Nicole Kerndler"
-          authorTitle="Deputy Head of Bank Guarantee Management"
-        >
-          <Paragraph isTestimonial="true">
-            {t("testimonialPorrParagraph1")}
-          </Paragraph>
-          <Paragraph isTestimonial="true">
-            {t("testimonialPorrParagraph2")}
-          </Paragraph>
-          <Paragraph isTestimonial="true">
-            {t("testimonialPorrParagraph3")}
-          </Paragraph>
-        </Testimonial>
+      {/* 
+      <Spacer size="s" />
 
-        <Testimonial
-          logoSrc={atradiusLogo}
-          logoAlt="Atradius logo"
-          logoWidth="184"
-          author="Susanne Offermann-Tesch"
-          authorTitle="Country Manager Bonding Germany"
-        >
-          <Paragraph isTestimonial="true">
-            {t("testimonialAtradiusParagraph1")}
-          </Paragraph>
-          <Paragraph isTestimonial="true">
-            {t("testimonialAtradiusParagraph2")}
-          </Paragraph>
-          <Paragraph isTestimonial="true">
-            {t("testimonialAtradiusParagraph3")}
-          </Paragraph>
-        </Testimonial>
+      <Container display="flex" width="full-width">
 
-        <Testimonial
-          logoSrc={globalTradeLogo}
-          logoAlt="Global Trade Corporation logo"
-          logoWidth="200"
-          author="Nick Pachnev"
-          authorTitle="Chief Executive Officer"
-        >
-          <Paragraph isTestimonial="true">
-            {t("testimonialGlobalTradeCorpParagraph1")}
-          </Paragraph>
-          <Paragraph isTestimonial="true">
-            {t("testimonialGlobalTradeCorpParagraph2")}
-          </Paragraph>
-          <Paragraph isTestimonial="true">
-            {t("testimonialGlobalTradeCorpParagraph3")}
-          </Paragraph>
-        </Testimonial>
-      </Container>
-      {children}
+      </Container> */}
     </Section>
 
   );
