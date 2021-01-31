@@ -12,6 +12,7 @@ import {
   ImageComponent,
   UlList,
   ListItem,
+  Meta
 } from "components";
 import styles from "./style.module.css";
 import solutionImage from "images/solution-rest-api-smaller.svg";
@@ -24,6 +25,10 @@ import { withTranslation } from "i18n";
 const Api = ({ t }) => {
   return (
     <>
+      <Meta
+        title={t("pageTitle1") + " | Digital Vault Services"}
+        desc={t("paragraph1")}
+      />
       <Header />
       <Section>
         <Container display="grid" width="full-width" margin="marginTop96">

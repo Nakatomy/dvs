@@ -12,11 +12,16 @@ import {
   ListItem,
   LinkComponent,
   Spacer,
+  Meta
 } from "components";
 
 const PrivacyPolicy = ({ t }) => {
   return (
     <>
+      <Meta
+        title={t("pageTitle") + " | Digital Vault Services"}
+        desc={t("paragraph2")}
+      />
       <Header />
       <Section>
         <Container width="normal-width" margin="marginTop96">

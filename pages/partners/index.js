@@ -8,7 +8,8 @@ import {
   Testimonial,
   Button,
   Spacer,
-  Paragraph
+  Paragraph,
+  Meta,
 } from "components";
 import styles from "./style.module.css";
 import PropTypes from "prop-types";
@@ -24,6 +25,9 @@ import partners from "configs/partners/partners";
 const PartnersPage = ({ t }) => {
   return (
     <>
+      <Meta
+        title={t("pageTitle") + " | Digital Vault Services"}
+      />
       <Header />
       <Section style="gradient">
         <Container width="full-width" margin="marginTop96">
