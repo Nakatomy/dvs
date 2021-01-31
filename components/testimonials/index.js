@@ -115,13 +115,13 @@ const Testimonials = ({ t, children }) => {
             {t("testimonialGlobalTradeCorpParagraph2")}
           </Paragraph>
           <Paragraph isTestimonial="true">
-            {t("testimonialGlobalTradeCorpParagraph")}
+            {t("testimonialGlobalTradeCorpParagraph3")}
           </Paragraph>
         </Testimonial>
       </Container>
       {children}
     </Section>
-    
+
   );
 };
 
