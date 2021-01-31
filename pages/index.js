@@ -16,8 +16,14 @@ import {
   Heading,
   YoutubeVideo,
   Testimonials,
+  Testimonial,
+  Spacer
 } from "components";
 import Link from "next/link";
+import bayernLbLogo from "images/partners/partner-bayernlb.svg";
+import porrLogo from "images/partners/partner-porr.jpg";
+import atradiusLogo from "images/partners/partner-atradius.svg";
+import globalTradeLogo from "images/partners/partner-gtc.png";
 import abstractWaves from "images/abstract-waves.png";
 import servicesImg from "images/services-life-cycle.svg";
 import restApiImg from "images/solution-rest-api.svg";
@@ -27,10 +33,14 @@ import { withTranslation } from "../i18n";
 import { useState, useEffect } from "react";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
+
 function HomePage({ t }) {
   // const [collapseOpen, setCollapseOpen] = useState(false);
 
-
+  const [showMe, setShowMe] = useState(false);
+  function toggle() {
+    setShowMe(!showMe);
+  }
   const [scrolled, setScrolled] = useState(false);
   const handleScroll = () => {
     const offset = window.scrollY;
@@ -96,17 +106,102 @@ function HomePage({ t }) {
         </Container>
       </Section>
       <Testimonials>
-        <Container width="full-width">
-          <Button
-            title="Show More"
-            size="size-l"
-            textColor="text-blue"
-            background="text-only"
-          >
-            <ExpandMoreIcon />
-          </Button>
-        </Container>
+
+
+        <Testimonial
+          display={showMe ? "grid" : "none"}
+          logoSrc={bayernLbLogo}
+          logoAlt="BayernLB logo"
+          logoWidth="184"
+          author="Brigitte Schmidt"
+          authorTitle="Head of Guarantees"
+        >
+          <Paragraph isTestimonial="true">
+            {t("testimonialBayernLbParagraph1")}
+          </Paragraph>
+          <Paragraph isTestimonial="true">
+            {t("testimonialBayernLbParagraph2")}
+          </Paragraph>
+          <Paragraph isTestimonial="true">
+            {t("testimonialBayernLbParagraph3")}
+          </Paragraph>
+          <Paragraph isTestimonial="true">
+            {t("testimonialBayernLbParagraph4")}
+          </Paragraph>
+        </Testimonial>
+
+        <Testimonial
+          display={showMe ? "grid" : "none"}
+          logoSrc={porrLogo}
+          logoAlt="Porr logo"
+          logoWidth="100"
+          author="Nicole Kerndler"
+          authorTitle="Deputy Head of Bank Guarantee Management"
+        >
+          <Paragraph isTestimonial="true">
+            {t("testimonialPorrParagraph1")}
+          </Paragraph>
+          <Paragraph isTestimonial="true">
+            {t("testimonialPorrParagraph2")}
+          </Paragraph>
+          <Paragraph isTestimonial="true">
+            {t("testimonialPorrParagraph3")}
+          </Paragraph>
+        </Testimonial>
+
+        <Testimonial
+          display={showMe ? "grid" : "none"}
+          logoSrc={atradiusLogo}
+          logoAlt="Atradius logo"
+          logoWidth="184"
+          author="Susanne Offermann-Tesch"
+          authorTitle="Country Manager Bonding Germany"
+        >
+          <Paragraph isTestimonial="true">
+            {t("testimonialAtradiusParagraph1")}
+          </Paragraph>
+          <Paragraph isTestimonial="true">
+            {t("testimonialAtradiusParagraph2")}
+          </Paragraph>
+          <Paragraph isTestimonial="true">
+            {t("testimonialAtradiusParagraph3")}
+          </Paragraph>
+        </Testimonial>
+
+        <Testimonial
+          display={showMe ? "grid" : "none"}
+          logoSrc={globalTradeLogo}
+          logoAlt="Global Trade Corporation logo"
+          logoWidth="200"
+          author="Nick Pachnev"
+          authorTitle="Chief Executive Officer"
+        >
+          <Paragraph isTestimonial="true">
+            {t("testimonialGlobalTradeCorpParagraph1")}
+          </Paragraph>
+          <Paragraph isTestimonial="true">
+            {t("testimonialGlobalTradeCorpParagraph2")}
+          </Paragraph>
+          <Paragraph isTestimonial="true">
+            {t("testimonialGlobalTradeCorpParagraph3")}
+          </Paragraph>
+        </Testimonial>
+
       </Testimonials>
+      <Container display="flex" width="full-width">
+        <Button
+          title="Show More"
+          size="size-l"
+          textColor="text-blue"
+          background="text-only"
+          alignSelf="center"
+          onClick={toggle}
+          display={!showMe ? "flex" : "none"}
+        >
+          <ExpandMoreIcon />
+        </Button>
+        <Spacer size="m"></Spacer>
+      </Container>
 
       <Section id="services" style="gradient">
         <Container display="grid" width="full-width" height="minHeight">

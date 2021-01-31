@@ -152,7 +152,7 @@ const Api = ({ t }) => {
               textColor="text-white"
               background="blue"
               border="border-white"
-              alignCenter="alignCenter"
+              alignSelf="center"
             />
           </div>
         </Container>

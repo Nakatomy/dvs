@@ -72,12 +72,12 @@ const PrivacyPolicy = ({ t }) => {
           <div>
             <Paragraph>{t("paragraph7")}</Paragraph>
             <UlList>
-              <ListItem>{t("listItem3")}</ListItem>
-              <ListItem>{t("listItem4")}</ListItem>
-              <ListItem>{t("listItem5")}</ListItem>
-              <ListItem>{t("listItem6")}</ListItem>
-              <ListItem>{t("listItem7")}</ListItem>
-              <ListItem>{t("listItem8")}</ListItem>
+              <ListItem> {t("listItem3")}</ListItem>
+              <ListItem> {t("listItem4")}</ListItem>
+              <ListItem> {t("listItem5")}</ListItem>
+              <ListItem> {t("listItem6")}</ListItem>
+              <ListItem> {t("listItem7")}</ListItem>
+              <ListItem> {t("listItem8")}</ListItem>
             </UlList>
           </div>
 
@@ -100,57 +100,57 @@ const PrivacyPolicy = ({ t }) => {
 
           <UlList>
             <ListItem>
-              <strong>{t("name")}</strong>
-              {t("name1")}
+              <strong>{t("name")} </strong>
+              {" "}{t("name1")}
             </ListItem>
             <ListItem>
               <strong>{t("functionality")}</strong>
-              {t("functionality1")}
+              {" "}{t("functionality1")}
             </ListItem>
             <ListItem>
               <strong>{t("expiration")}</strong>
-              {t("expiration1")}
+              {" "} {t("expiration1")}
             </ListItem>
           </UlList>
 
           <UlList>
             <ListItem>{" "}
               <strong>{t("name")}</strong>
-              {t("name2")}
+              {" "} {t("name2")}
             </ListItem>
             <ListItem>
               <strong>{t("functionality")}</strong>
-              {t("functionality2")}
+              {" "} {t("functionality2")}
             </ListItem>
             <ListItem>
               <strong>{t("expiration")}</strong>
-              {t("expiration2")}
+              {" "}{t("expiration2")}
             </ListItem>
           </UlList>
 
           <UlList>
             <ListItem>
               <strong>{t("name")}</strong>
-              {t("name3")}
+              {" "}{t("name3")}
             </ListItem>
             <ListItem>
               <strong>{t("functionality")}</strong>
-              {t("functionality3")}
+              {" "} {t("functionality3")}
             </ListItem>
             <ListItem>
               <strong>{t("expiration")}</strong>
-              {t("expiration3")}
+              {" "} {t("expiration3")}
             </ListItem>
           </UlList>
 
           <UlList>
             <ListItem>
               <strong>{t("name")}</strong>
-              {t("name4")}
+              {" "}{t("name4")}
             </ListItem>
             <ListItem>
               <strong>{t("expiration")}</strong>
-              {t("expiration4")}
+              {" "}{t("expiration4")}
             </ListItem>
           </UlList>
 
