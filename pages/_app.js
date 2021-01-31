@@ -3,7 +3,7 @@ import { Header, Footer, Main, Nav } from "../components";
 import "../vendor/normalize.css";
 import styles from "./style.css";
 import { appWithTranslation } from "../i18n";
-
+import CookieConsent from "react-cookie-consent";
 
 // This default export is required in a new `pages/_app.js` file.
 function MyApp({ Component, pageProps }) {
@@ -13,6 +13,15 @@ function MyApp({ Component, pageProps }) {
         <Component {...pageProps} />
       </Main>
       <Footer />
+      <CookieConsent
+        enableDeclineButton
+        flipButtons
+        style={{ background: "#001540", alignItems: "center" }}
+        buttonStyle={{ background: "#fff", color: "#4e503b" }}
+        buttonText="Accept cookies"
+      >
+        This website uses cookies to enhance the user experience.
+      </CookieConsent>
     </div>
   );
 }
