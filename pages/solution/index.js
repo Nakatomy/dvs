@@ -11,7 +11,8 @@ import {
   ImageComponent,
   Item,
   UlList,
-  ListItem
+  ListItem,
+  Benefits
 } from "components";
 import styles from "./style.module.css";
 import cloud from "images/solution/cloud.png";
@@ -119,108 +120,8 @@ const Solution = ({ t }) => {
           <Paragraph>{t("paragraph9")}</Paragraph>
         </GridItem>
       </Container>
-
-      <Section>
-        <Container width="full-width">
-          <Title>{t("pageTitle3")}</Title>
-        </Container>
-        <Container display="grid" width="full-width">
-          <div>
-            <Heading background="green">{t("benefitsHeading1")}</Heading>
-            <UlList padding="padding-none">
-              <ListItem display="flex" marker="iconCheck">
-                {t("listItem7")}
-              </ListItem>
-              <ListItem display="flex" marker="iconCheck">
-                {t("listItem8")}
-              </ListItem>
-              <ListItem display="flex" marker="iconCheck">
-                {t("listItem9")}
-              </ListItem>
-              <ListItem display="flex" marker="iconCheck">
-                {t("listItem10")}
-              </ListItem>
-              <ListItem display="flex" marker="iconCheck">
-                {t("listItem11")}
-              </ListItem>
-              <ListItem display="flex" marker="iconCheck">
-                {t("listItem12")}
-              </ListItem>
-            </UlList>
-          </div>
-
-          <div>
-            <Heading background="green">{t("benefitsHeading2")}</Heading>
-            <UlList padding="padding-none">
-              <ListItem display="flex" marker="iconCheck">
-                {t("listItem13")}
-              </ListItem>
-              <ListItem display="flex" marker="iconCheck">
-                {t("listItem14")}
-              </ListItem>
-            </UlList>
-          </div>
-
-          <div>
-            <Heading background="green">{t("benefitsHeading3")}</Heading>
-            <UlList padding="padding-none">
-              <ListItem display="flex" marker="iconCheck">
-                {t("listItem15")}
-              </ListItem>
-              <ListItem display="flex" marker="iconCheck">
-                {t("listItem16")}
-              </ListItem>
-              <ListItem display="flex" marker="iconCheck">
-                {t("listItem17")}
-              </ListItem>
-              <ListItem display="flex" marker="iconCheck">
-                {t("listItem18")}
-              </ListItem>
-            </UlList>
-          </div>
-
-          <div>
-            <Heading background="green">{t("benefitsHeading4")}</Heading>
-            <UlList padding="padding-none">
-              <ListItem display="flex" marker="iconCheck">
-                {t("listItem19")}
-              </ListItem>
-              <ListItem display="flex" marker="iconCheck">
-                {t("listItem20")}
-              </ListItem>
-              <ListItem display="flex" marker="iconCheck">
-                {t("listItem21")}
-              </ListItem>
-              <ListItem display="flex" marker="iconCheck">
-                {t("listItem22")}
-              </ListItem>
-            </UlList>
-          </div>
-
-          <div>
-            <Heading background="green">{t("benefitsHeading5")}</Heading>
-            <UlList padding="padding-none">
-              <ListItem display="flex" marker="iconCheck">
-                {t("listItem23")}
-              </ListItem>
-              <ListItem display="flex" marker="iconCheck">
-                {t("listItem24")}
-              </ListItem>
-            </UlList>
-          </div>
-        </Container>
-        <Spacer size="m" />
-        <Container width="full-width">
-          <Button
-            href="/"
-            title={t("ButtonBackToHomePage")}
-            size="size-l"
-            textColor="text-white"
-            background="blue"
-            border="border-white"
-          />
-        </Container>
-      </Section>
+      
+      <Benefits />
     </>
   );
 };
