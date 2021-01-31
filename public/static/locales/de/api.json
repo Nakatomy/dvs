@@ -1,0 +1,48 @@
+{
+    "pageTitle1": "REST API Lösung",
+    "heading1" : "Direkter Zugriff auf die Daten, in Echtzeit.",
+    "paragraph1" :"Guarantee Vault stellt seine Leistung über eine Reihe von REST APIs bereit, die allen Marktteilnehmern eine nahtlose Anbindung ihrer Infrastruktur zur Interaktion mit dem Tool ermöglicht.",
+    "paragraph2" : "Unternehmen, Kreditversicherer, Banken und Intermediäre können sich über ihre bestehenden Plattformen, Portale oder In-House-Systeme an den Guarantee Vault anbinden.",
+    "paragraph3" : "Dadurch können sich alle Beteiligten unmittelbar miteinander vernetzen und auf Daten zugreifen, um diese direkt und in Echtzeit zu verarbeiten.",
+   
+    "paragraph4-1": "Der Datentransfer erfolgt im",
+    "paragraph4-2" : "JSON format,",
+    "paragraph4-3" : "die Guarantee Vault APIs sind mit dem marktüblichen Authentifizierungsprotokoll",
+    "paragraph4-4" : "OpenId Connect geschützt.",
+    "photoCaption1" : "Participants connect to Guarantee Vault through their existing system via REST APIs",
+
+    "pageTitle2" : "API Anwendungsbereich",
+    "heading2" : "Unternehmen",
+    "paragraph5" : "Unternehmen, die als Auftragegeber oder Begünstigter eines Avals handeln, können über die API eine Vielzahl vorhandener Software features nutzen. Diese beinhalten u. a.",
+    "listItem1-1" : "Avalantrag ",
+    "listItem1-2" : "- Antrag des Auftragebers an den Garanten, ein Aval auszustellen",
+
+    "listItem2-1" : "Änderungsantrag",
+    "listItem2-2" : "- Antrag des Auftraggebers an den Garanten, eine Änderung eines schon bestehenden Avales vorzunehmen",
+
+    "listItem3-1" : "(Teil-)Inanspruchnahme",
+    "listItem3-2" : "- Mitteilung des Begünstigten an den Garanten, eine bestehende Garantie (teilweise) auf Zahlung in Anspruch zu nehmen",
+
+    "listItem4-1" : "Haftungsentlassung ",
+    "listItem4-2" : "- Rückgabe bzw. Haftungsentlassung des Begünstigten an den Garanten, um eine Ausbuchung des Avals vor Laufzeitende zu ermöglichen (z.B. aufgrund von vorzeitiger Erledigung des dem Aval zugrundeliegenden Grundgeschäftes zwischen Auftraggeber und Begünstigten)",
+
+    "heading3" : "Garanten",
+    "paragraph6" : "Banken und Kreditversicherer, die als Garanten agieren, haben die Möglichkeit, folgende Aktionen via API im Vault vorzunehmen:",
+    "listItem5-1" : "Ausstellungsantrag",
+    "listItem5-2" : "- Elektronische Erstellung und/oder Änderung eines Avals über den Guarantee Vault (beinhaltet Änderungen, (Teil-)Inanspruchnahmen, Haftungsentlassungen)",
+
+    "listItem6-1" : "Avalausbuchung",
+    "listItem6-2" : " - Anweisung, ein Aval zu schliessen, entweder durch Rückgabe des Avals oder durch Ablauf der Avallaufzeit",
+
+    "listItem7-1" : "Rücksendung",
+    "listItem7-2" : "- Bitte um Beantwortung einer Anfrage des Absenders (Auftraggeber oder Begünstigter)",
+
+    "paragraph7" : "Bei der technischen Anbindung an den Guarantee Vault bieten wir allen Beteiligten umfangreiche Unterstützung, angefangen über API Spezifikationen, Leitfäden bis hin zu Sandbox und unserem Onboarding Service.",
+    "paragraph8-1" : "Falls Sie weitere Informationen zur API-Nutzung wünschen oder Interesse an einer Anbindung an den Guarantee Vault besteht, ",
+    "paragraph8-2" : "kontaktieren Sie",
+    "paragraph8-3" : "uns gerne jederzeit.",
+
+    "ButtonBackToHomePage" : "Zurück zur Startseite"
+  }
+  
+  

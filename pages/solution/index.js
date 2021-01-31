@@ -39,7 +39,7 @@ const Solution = ({ t }) => {
             <Paragraph>{t("paragraph1")}</Paragraph>
             <Paragraph>{t("paragraph2")}</Paragraph>
             <Paragraph>{t("paragraph3")}</Paragraph>
-            <figure>
+            <figure className={styles["mobile-image"]}>
               <ImageComponent
                 className={cn(styles.image, styles["mobile-image"])}
                 src={services}
@@ -57,7 +57,7 @@ const Solution = ({ t }) => {
         </Container>
 
         <Container display="grid" width="full-width">
-          <figure>
+          <figure className={styles["desktop-image"]}>
             <ImageComponent
               className={cn(styles.image, styles["desktop-image"])}
               src={services}

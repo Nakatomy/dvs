@@ -1,0 +1,46 @@
+{
+    "pageTitle1": "REST API Solution",
+    "heading1" : "Consume data, at source and in real-time.",
+    "paragraph1" :"Guarantee Vault delivers its services using a suite of REST APIs allowing all market participants to seamlessly connect and interact.",
+    "paragraph2" : "Corporates, sureties, banks and other intermediaries can interface with Guarantee Vault via their existing platform, portal or other in-house systems.",
+    "paragraph3" : "In this way all participants can connect to access and consume data, at source and in real-time.",
+    "paragraph4-1": "Data is exchanged using",
+    "paragraph4-2" : "JSON format",
+    "paragraph4-3" : "whilst Guarantee Vault APIs are secured using market standard authentication protocol",
+    "paragraph4-4" : "OpenId Connect.",
+    "photoCaption1" : "Participants connect to Guarantee Vault through their existing system via REST APIs",
+
+    "pageTitle2" : "API Scope",
+    "heading2" : "Corporates",
+    "paragraph5" : "Corporates acting as applicant or beneficiary are able to make a number of requests via API including:",
+    "listItem1-1" : "Guarantee Request ",
+    "listItem1-2" : "- Applicant request to guarantor to issue guarantee",
+
+    "listItem2-1" : "Amendment Request",
+    "listItem2-2" : "- Applicant request to guarantor to make a change to an existing guarantee",
+
+    "listItem3-1" : "Claim Request",
+    "listItem3-2" : "- Beneficiary request to guarantor to claim on an existing guarantee",
+
+    "listItem4-1" : "Release",
+    "listItem4-2" : "- Beneficiary instruction to guarantor to release the guarantor from their obligation and close the guarantee (in case where guarantee validity is open ended)",
+
+    "heading3" : "Guarantors",
+    "paragraph6" : "Banks or Sureties acting as guarantor will have the possibility to execute the following actions in Guarantee Vault via API:",
+    "listItem5-1" : "Issue Request",
+    "listItem5-2" : "- Instruction to the Guarantee Vault to issue a guarantee or post-issuance event (includes Amendment, Claim, Release)",
+
+    "listItem6-1" : "Close Guarantee",
+    "listItem6-2" : "- Instruction to close guarantee either via issuance of release instruction or direct expiry",
+
+    "listItem7-1" : "Return Request",
+    "listItem7-2" : "- Return any request received to the sender (applicant or beneficiary)",
+
+    "paragraph7" : "When connecting with us, participants will be offered the full range of support throughout including API specifications, guides, sandbox and more.",
+    "paragraph8-1" : "Feel free to",
+    "paragraph8-2" : "contacts us",
+    "paragraph8-3" : "if you are interested in connecting to Guarantee Vault or would just like to know more about what we are doing with APIs.",
+
+    "ButtonBackToHomePage" : "Back to home page"
+  }
+  

@@ -2,7 +2,7 @@ import styles from "./style.module.css";
 import cn from "classnames";
 import React from "react";
 
-const Button = React.forwardRef(({ children, title, href, background, textColor, size, border, space, onClick, margin }, ref) => {
+const Button = React.forwardRef(({ children, title, href, background, textColor, size, border, space, onClick, margin, alignCenter }, ref) => {
   return (<a href={href} ref={ref} onClick={onClick}
     className={cn(styles.btn, {
       [styles[`btn--${background}`]]: background,
@@ -11,6 +11,7 @@ const Button = React.forwardRef(({ children, title, href, background, textColor,
       [styles[`btn--${border}`]]: border,
       [styles[`btn--${space}`]]: space,
       [styles[`btn--${margin}`]]: margin,
+      [styles[`btn--${alignCenter}`]]: alignCenter,
     })}
   >
     {title}

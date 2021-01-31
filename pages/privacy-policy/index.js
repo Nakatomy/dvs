@@ -114,7 +114,7 @@ const PrivacyPolicy = ({ t }) => {
           </UlList>
 
           <UlList>
-            <ListItem>
+            <ListItem>{" "}
               <strong>{t("name")}</strong>
               {t("name2")}
             </ListItem>
