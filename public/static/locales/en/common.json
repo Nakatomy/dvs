@@ -2,6 +2,7 @@
   "error-with-status": "A {{statusCode}} error occurred on server",
   "error-without-status": "An error occurred on the server",
   "ButtonNameMore": "More",
+  "buttonContactUs" : "Contact Us",
 
   "leadTitle": "Guarantee Vault",
   "leadSubtitle": "For the Issuance & Safekeeping of Digital Guarantees",

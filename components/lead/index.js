@@ -1,5 +1,7 @@
 import styles from "./style.module.css";
-import { Button, Nav } from 'components'
+import { Button, Nav, LinkComponent } from 'components'
+import Logo from "../logo";
+import cn from "classnames";
 import Login from '@material-ui/icons/ExitToApp';
 import { Children } from "react";
 
@@ -7,6 +9,7 @@ const Lead = ({ children, title, subtitle, statement, primaryButtonName, seconda
 	return (
 		<section className={styles.lead}>
 			<Nav className={styles.nav__container}>
+
 				<li className={styles["nav__list-item"]}>
 					<Button
 						href="https://guarantee-vault.com/"

@@ -1,33 +1,23 @@
 import styles from "./style.module.css";
 import navigation from "configs/navigation/navigation";
-import { LinkComponent, Button, LanguageSwitcher } from "components";
+import { LinkComponent, Button, LanguageSwitcher, Logo } from "components";
 import cn from "classnames";
 import PropTypes from "prop-types";
 import { withTranslation } from "i18n";
 
-
-import React from 'react';
-import { useTranslation } from 'react-i18next';
-
-
-{/* <Trans i18nKey="list_map">
-  My dogs are named:
-  <ul i18nIsDynamicList>
-    {['rupert', 'max'].map(dog => (<li>{dog}</li>))}
-  </ul>
-</Trans>
- */}
-
+import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Menu = ({ className, children }) => {
-
   const { i18n } = useTranslation();
-  return (
+  return ( <>
     <ul className={className}>
       {navigation.map(({ id, title, en, de, items: subItems, index }) => {
         return (
           <li key={`${id}:${index}`} className={styles.nav__dropdown}>
-            <button className={styles.nav__dropbtn}>{(i18n.language === 'en') ?  en : de }</button>
+            <button className={styles.nav__dropbtn}>
+              {i18n.language === "en" ? en : de}
+            </button>
             <ul className={styles["nav__dropdown-content"]}>
               {subItems.map((subItem) => {
                 return (
@@ -41,54 +31,21 @@ const Menu = ({ className, children }) => {
                 );
               })}
             </ul>
+            
           </li>
+          
         );
       })}
-
-
       {children}
-      <LanguageSwitcher className={styles['nav__list-item']} />
-
-
-
-      {/* 
-      <Button onClick={() => i18n.changeLanguage(
-        {
-          lang = getCurrentLng()
-          return (
-            <div
-          className={cn(styles["icon--size-m"], { lang === 'en' ? styles["icon--gb-flag"] : styles["icon--de-flag"] })}
-          ></div>
-          )
-        }
-      )}>
-        
-        </Button>
-      </button >
-  <ul
-    className={cn(
-      styles["nav__dropdown-content"],
-      styles["nav__dropdown-content--coming-soon"]
-    )}
-  >
-    <li className={styles["nav__comming-soon-list"]}>
-      <Button onClick={() => i18n.changeLanguage("de")}>
-        <div
-          className={cn(styles["icon--size-m"], styles["icon--de-flag"])}
-        ></div>
-      </Button> */}
-
-
-
-
-
-
+      <LanguageSwitcher className={styles["nav__list-item"]} />
+      
     </ul>
-
+  
+    </>
   );
 };
 
-export default Menu
+export default Menu;
 
 // Menu.getInitialProps = async () => ({
 //   namespacesRequired: ["common"],

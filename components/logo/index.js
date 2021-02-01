@@ -1,6 +1,8 @@
+import styles from "./style.module.css";
+import cn from "classnames";
 const Logo = (props) => {
   return (
-    <svg
+    <svg className={props.className}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 682.1 167.5"
       {...props}
