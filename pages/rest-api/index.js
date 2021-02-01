@@ -16,13 +16,17 @@ import {
 } from "components";
 import styles from "./style.module.css";
 import solutionImage from "images/solution-rest-api-smaller.svg";
-import scopeImage from "images/api-scope-corporates.svg";
-import guarantorsImage from "images/api-scope-guarantors.svg";
+import scopeImageEn from "images/api-scope-corporates.svg";
+import scopeImageDe from "images/api-scope-corporates-de.svg";
+import guarantorsImageEn from "images/api-scope-guarantors.svg";
+import guarantorsImageDe from "images/api-scope-guarantors-de.svg";
 import PropTypes from "prop-types";
 import cn from "classnames";
 import { withTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 
 const Api = ({ t }) => {
+  const { i18n } = useTranslation();
   return (
     <>
       <Meta
@@ -71,14 +75,14 @@ const Api = ({ t }) => {
         <Container display="grid" width="full-width">
           <GridItem>
             <ImageComponent
-              src={scopeImage}
+              src={i18n.language === "de" ? scopeImageDe : scopeImageEn}
               className={cn(styles.image, styles["desktop-image"])}
               alt="Services throughout the guarantee life-cycle"
             ></ImageComponent>
           </GridItem>
           <GridItem>
             <ImageComponent
-              src={scopeImage}
+              src={i18n.language === "de" ? scopeImageDe : scopeImageEn}
               className={cn(styles.image, styles["mobile-image"])}
               alt="Services throughout the guarantee life-cycle"
             ></ImageComponent>
@@ -110,7 +114,7 @@ const Api = ({ t }) => {
         <Container display="grid" width="full-width">
           <GridItem>
             <ImageComponent
-              src={guarantorsImage}
+              src={i18n.language === "de" ? guarantorsImageDe : guarantorsImageEn}
               className={cn(styles.image, styles["mobile-image"])}
               alt="Services throughout the guarantee life-cycle"
             ></ImageComponent>
@@ -132,7 +136,7 @@ const Api = ({ t }) => {
             </UlList>
           </GridItem>
           <ImageComponent
-            src={guarantorsImage}
+            src={i18n.language === "de" ? guarantorsImageDe : guarantorsImageEn}
             className={cn(styles.image, styles["desktop-image"])}
             alt="Services throughout the guarantee life-cycle"
           ></ImageComponent>

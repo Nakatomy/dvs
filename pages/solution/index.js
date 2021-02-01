@@ -17,13 +17,17 @@ import {
 } from "components";
 import styles from "./style.module.css";
 import cloud from "images/solution/cloud.png";
-import services from "images/decentralized.svg";
+import decentralizedEn from "images/decentralized.svg";
+import decentralizedDe from "images/decentralized-de.svg";
 import crystalBall from "images/crystal-ball.png";
-import transparencyImage from "images/transparency.svg";
+import transparencyEn from "images/transparency.svg";
+import transparencyDe from "images/transparency-de.svg";
 import PropTypes from "prop-types";
 import { withTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 import cn from "classnames";
 const Solution = ({ t }) => {
+  const { i18n } = useTranslation();
   return (
     <>
       <Meta
@@ -47,10 +51,10 @@ const Solution = ({ t }) => {
             <figure>
               <ImageComponent
                 className={cn(styles.image, styles["mobile-image"])}
-                src={services}
+                src={i18n.language === "de" ? decentralizedDe : decentralizedEn}
                 alt="Services throughout the guarantee life-cycle"
               ></ImageComponent>
-              <figcaption className={styles.image__caption}>{t("photoCaption1")}</figcaption>
+              <figcaption className={cn(styles.image__caption, styles["image__caption--none"], styles["image__caption--flex"])}>{t("photoCaption1")}</figcaption>
             </figure>
             <Paragraph>{t("paragraph4")}</Paragraph>
           </GridItem>
@@ -65,10 +69,10 @@ const Solution = ({ t }) => {
           <figure className={styles["desktop-image"]}>
             <ImageComponent
               className={cn(styles.image, styles["desktop-image"])}
-              src={services}
+              src={i18n.language === "de" ? decentralizedDe : decentralizedEn}
               alt="Services throughout the guarantee life-cycle"
             ></ImageComponent>
-            <figcaption className={styles.image__caption}>{t("photoCaption1")}</figcaption>
+            <figcaption className={cn(styles.image__caption)}>{t("photoCaption1")}</figcaption>
           </figure>
           <GridItem>
             <Item>
@@ -114,7 +118,7 @@ const Solution = ({ t }) => {
         <figure>
           <ImageComponent
             className={styles.image}
-            src={transparencyImage}
+            src={i18n.language === "de" ? transparencyDe : transparencyEn}
             alt="Services throughout the guarantee life-cycle"
           ></ImageComponent>
           <figcaption className={styles.image__caption}>{t("photoCaption2")}</figcaption>

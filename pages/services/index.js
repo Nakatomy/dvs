@@ -12,11 +12,14 @@ import {
   ListItem,
   Benefits
 } from "components";
-import services from "images/services-life-cycle.svg";
+import servicesEn from "images/services-life-cycle.svg";
+import servicesDe from "images/services-life-cycle-de.svg";
 import PropTypes from "prop-types";
 import { withTranslation } from "i18n";
+import { useTranslation } from "react-i18next";
 
 const Services = ({ t }) => {
+  const { i18n } = useTranslation();
   return (
     <>
       <Header />
@@ -26,7 +29,7 @@ const Services = ({ t }) => {
             <Title>{t("pageTitle")}</Title>
             <Paragraph>{t("paragraph1")}</Paragraph>
           </GridItem>
-          <ImageComponent margin="marginNone" src={services}></ImageComponent>
+          <ImageComponent margin="marginNone" src={i18n.language === "de" ? servicesDe : servicesEn}></ImageComponent>
 
           <GridItem>
             <Heading>{t("heading1")}</Heading>

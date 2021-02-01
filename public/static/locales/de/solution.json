@@ -14,19 +14,19 @@
     "listItem5" : "Langwieriger, manueller Prozess zur Rückgabe oder Haftungsentlassung von Avalen",
     "listItem6" : "Risiko der Fälschung der beleghaften Urkunde und Unterschriften",
     "paragraph5" : "Diese Punkte verursachen für alle Beteiligten erhebliche Kosten, u. a. Kurier- und Postgebühren, erhebliche Personalkosten, Versicherungsprämien und Rückstellungen, Kosten der Unterschriftsbestätigung sowie unnötige Avalprovisionen für den Auftraggeber.",
-    "photoCaption1" : "The result is a messy distribution of guarantees across a wide range of counterparts",
+    "photoCaption1" : "Im Ergebnis sind die Avale unstrukturiert über viele Beteiligte verteilt",
 
     "pageTitle2": "Unsere Lösung",
     "heading3" : "Transparenz durch digitale Garantien",
     "paragraph6" : "Guarantee Vault ist die Lösung zur Digitalisierung des bestehenden beleghaften Prozesses durch die zentrale Ausstellung und Verwahrung digitaler Garantien, die elektronisch beauftragt, gespeichert und verwaltet werden.",
     "paragraph7-1" : "Guarantee Vault bringt alle Avale auf ein gemeinsames digitales Zentralregister, das den Beteiligten",
-    "paragraph7-2" : "in Echtzeit Effizienz, Transparenz, Sicherheit, Komfort und Planbarkeit ermöglicht",
+    "paragraph7-2" : "in Echtzeit Effizienz, Transparenz, Sicherheit, Komfort und Planbarkeit ermöglicht.",
     "paragraph7-3" : "Ganz im Gegensatz zu den bisherigen beleghaften Prozessen.",
 
     "heading4" : "Kosteneinsparung, Effizienzgewinne, Risikominimierung",
     "paragraph8" : "Letztlich ermöglicht Guarantee Vault allen Marktteilnehmern u. a. Kosten zu reduzieren, Effizienz und Geschwindigkeit zu steigern sowie operative Risiken zu minimieren.",
-    "paragraph9" : "Alle Beteiligten können ihre Bearbeitung über eine klassische Web-Anwendung bearbeiten, bei größeren Stückzahlen empfiehlt sich eindeutig der Wechsel zu einer REST API Anbindung, so dass bestehende Plattformen, Portale oder In-House-Systeme mit dem Guarantee Vault verbinden werden und direkt interagieren können.",
-    "photoCaption2" : "Guarantee Vault facilitates the central issuance and storage of digital guarantees therebyremoving the paper and fully digitizing the process.",
+    "paragraph9" : "Alle Beteiligten können ihre Bearbeitung über eine klassische Web-Anwendung bearbeiten, bei größeren Stückzahlen empfiehlt sich eindeutig der Wechsel zu einer REST API Anbindung, so dass bestehende Plattformen, Portale oder In-House-Systeme mit dem Guarantee Vault verbunden werden und direkt interagieren können.",
+    "photoCaption2" : "Der Guarantee Vault ermöglicht die zentrale Erstellung und Speicherung digitaler Avale und ersetzt somit den papierhaften- durch einen vollständig digitalen Prozess",
 
     "ButtonBackToHomePage" : "Zurück zur Startseite"
   }

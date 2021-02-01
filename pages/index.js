@@ -25,12 +25,14 @@ import porrLogo from "images/partners/partner-porr.jpg";
 import atradiusLogo from "images/partners/partner-atradius.svg";
 import globalTradeLogo from "images/partners/partner-gtc.png";
 import abstractWaves from "images/abstract-waves.png";
-import servicesImg from "images/services-life-cycle.svg";
+import servicesEn from "images/services-life-cycle.svg";
+import servicesDe from "images/services-life-cycle-de.svg";
 import restApiImg from "images/solution-rest-api.svg";
 import legalImg from "images/legal-feather.jpg";
 import PropTypes from "prop-types";
 import { withTranslation } from "../i18n";
 import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import * as Scroll from 'react-scroll';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
@@ -69,6 +71,9 @@ function HomePage({ t }) {
       </Header>
     );
   }
+
+  const { i18n } = useTranslation();
+
   return (
     <div>
       <Meta
@@ -243,7 +248,7 @@ function HomePage({ t }) {
           <GridItem>
             <Title>{t("servicesTitle")}</Title>
             <ImageComponent
-              src={servicesImg}
+               src={i18n.language === "de" ? servicesDe : servicesEn}
               alt="Asbtract waves"
               imgType="mobile"
             />
@@ -260,7 +265,7 @@ function HomePage({ t }) {
           </GridItem>
           <GridItem>
             <ImageComponent
-              src={servicesImg}
+              src={i18n.language === "de" ? servicesDe : servicesEn}
               alt="Asbtract waves"
               width="921"
               height="647"

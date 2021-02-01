@@ -52,3 +52,24 @@
     padding-top: 8px;
     text-align: center;
 }
+
+.image__caption--none {
+    display: none;
+}
+
+
+@media screen and (min-width: 945px) and (max-width : 1400px) {
+    .image__caption--none {
+        display: none;
+    }
+
+ 
+}
+
+@media screen and (max-width : 945px)  {
+
+    .image__caption--flex {
+        display: flex;
+        justify-content: center;
+    }
+}
