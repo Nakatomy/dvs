@@ -64,5 +64,6 @@
 
 .testimonials--none {
     display: none;
+    visibility: hidden;
 
 }
