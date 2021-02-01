@@ -18,6 +18,10 @@
     }
 }
 
+.paragraph--alignCenter {
+    text-align: center;
+}
+
 .paragraph--accent {
     font-weight: 600;
 }

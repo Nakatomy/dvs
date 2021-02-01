@@ -20,3 +20,7 @@
         font-size: 40px;
     }
 }
+
+.sectionTitle--alignCenter {
+    text-align: center;
+}

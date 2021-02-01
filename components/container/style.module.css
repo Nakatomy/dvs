@@ -85,3 +85,7 @@
         width: calc(100% - 24px * 2);
     }
 }
+
+.container--alignCenter {
+    align-items: center;
+}
