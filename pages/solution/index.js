@@ -44,13 +44,13 @@ const Solution = ({ t }) => {
             <Paragraph>{t("paragraph1")}</Paragraph>
             <Paragraph>{t("paragraph2")}</Paragraph>
             <Paragraph>{t("paragraph3")}</Paragraph>
-            <figure className={styles["mobile-image"]}>
+            <figure>
               <ImageComponent
                 className={cn(styles.image, styles["mobile-image"])}
                 src={services}
                 alt="Services throughout the guarantee life-cycle"
               ></ImageComponent>
-              <figcaption>{t("photoCaption1")}</figcaption>
+              <figcaption className={styles.image__caption}>{t("photoCaption1")}</figcaption>
             </figure>
             <Paragraph>{t("paragraph4")}</Paragraph>
           </GridItem>
@@ -68,7 +68,7 @@ const Solution = ({ t }) => {
               src={services}
               alt="Services throughout the guarantee life-cycle"
             ></ImageComponent>
-            <figcaption>{t("photoCaption1")}</figcaption>
+            <figcaption className={styles.image__caption}>{t("photoCaption1")}</figcaption>
           </figure>
           <GridItem>
             <Item>
@@ -117,7 +117,7 @@ const Solution = ({ t }) => {
             src={transparencyImage}
             alt="Services throughout the guarantee life-cycle"
           ></ImageComponent>
-          <figcaption>{t("photoCaption2")}</figcaption>
+          <figcaption className={styles.image__caption}>{t("photoCaption2")}</figcaption>
         </figure>
         <GridItem>
           <Heading>{t("heading4")}</Heading>

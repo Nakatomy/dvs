@@ -40,7 +40,7 @@ const Api = ({ t }) => {
                 src={solutionImage}
                 alt="Services throughout the guarantee life-cycle"
               ></ImageComponent>
-              <figcaption>{t("photoCaption1")}</figcaption>
+              <figcaption className={styles.image__caption}>{t("photoCaption1")}</figcaption>
             </figure>
             <Heading>{t("heading1")}</Heading>
             <Paragraph>{t("paragraph1")}</Paragraph>
@@ -59,7 +59,7 @@ const Api = ({ t }) => {
               src={solutionImage}
               alt="Services throughout the guarantee life-cycle"
             ></ImageComponent>
-            <figcaption>{t("photoCaption1")}</figcaption>
+            <figcaption className={styles.image__caption}>{t("photoCaption1")}</figcaption>
           </figure>
         </Container>
       </Section>
