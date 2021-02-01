@@ -29,22 +29,22 @@ const Benefits = ({ t }) => {
             <Heading background="green">{t("agbHeading1")}</Heading>
             <UlList padding="padding-none">
               <ListItem display="flex" marker="iconCheck">
-                {t("benefitsListItem1")}
+                {t("agbListItem1")}
               </ListItem>
               <ListItem display="flex" marker="iconCheck">
-                {t("benefitsListItem2")}
+                {t("agbListItem2")}
               </ListItem>
               <ListItem display="flex" marker="iconCheck">
-                {t("benefitsListItem3")}
+                {t("agbListItem3")}
               </ListItem>
               <ListItem display="flex" marker="iconCheck">
-                {t("benefitsListItem4")}
+                {t("agbListItem4")}
               </ListItem>
               <ListItem display="flex" marker="iconCheck">
-                {t("benefitsListItem5")}
+                {t("agbListItem5")}
               </ListItem>
               <ListItem display="flex" marker="iconCheck">
-                {t("benefitsListItem6")}
+                {t("agbListItem6")}
               </ListItem>
             </UlList>
           </div>
