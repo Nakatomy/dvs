@@ -29,7 +29,7 @@ const WhitePaper = ({ t }) => {
           <Paragraph>
             {" "}
             {t("paragraph1")}
-            <LinkComponent color="blue" href="./" target="_blank" download>
+            <LinkComponent color="blue" href="/" target="_blank" download>
             {t("link")}
             </LinkComponent>
           </Paragraph>

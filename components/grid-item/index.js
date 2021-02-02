@@ -1,8 +1,11 @@
 import styles from "./style.module.css";
+import cn from "classnames";
 
-const GridItem = ({children}) => { 
+const GridItem = ({children, margin}) => { 
     return (
-        <div className={styles.gridItem}>
+        <div className={cn(styles.gridItem, {
+            [styles[`gridItem--${margin}`]]: margin
+          })}>
             {children}
         </div>
     );

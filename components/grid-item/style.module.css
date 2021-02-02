@@ -1,3 +1,7 @@
 .gridItem {
     margin: auto 0;
 }
+
+.gridItem--marginNone {
+    margin: 0;
+}
