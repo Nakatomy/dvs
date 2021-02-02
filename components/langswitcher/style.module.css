@@ -1,50 +1,38 @@
 .icon--de-selected-flag {
-
   background-image: url('images/de.svg');
   background-repeat: no-repeat;
   background-position: center;
-    width: 24px;
-    height: 24px;
-     justify-content: center;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
 }
 
 .icon--en-selected-flag {
- 
-      background-image: url('images/gb.svg');
-      background-repeat: no-repeat;
-      background-position: center;
-       justify-content: center;
-   
-    width: 24px;
-    height: 24px;
+  background-image: url('images/gb.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
 }
 
-
 .icon--de-flag {
-  
-     background-image: url('images/de.svg');
-     background-repeat: no-repeat;
-     background-position: center;
-     justify-content: center;
-       width: 100%;
-        width: 24px;
-        height: 24px;
-
+  background-image: url('images/de.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: center;
+  width: 100%;
+  width: 24px;
+  height: 24px;
  }
 
  .icon--en-flag {
-    background-image: url('images/gb.svg');
-     background-repeat: no-repeat;
-     background-position: center;
-    
-    width: 24px;
-    height: 24px;
+  background-image: url('images/gb.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 24px;
+  height: 24px;
  }
-
-
-
-
-
 
 .form__input {
     background-color: transparent;
@@ -60,7 +48,7 @@
     justify-items: center;
     position: relative;
 }
-
+/* 
 .form__input:focus {
-    /* border-bottom: 1px solid #0075FF; */
-}
+    border-bottom: 1px solid #0075FF;
+} */

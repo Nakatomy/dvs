@@ -393,11 +393,7 @@ function HomePage({ t }) {
       </Section>
 
 
-      <form action="https://formspree.io/f/xvovyzvl" method="POST" redirect="/solution">
-        <input type="text" name="name" />
-        <input type="email" name="_replyto" />
-        <input type="submit" value="Send" />
-      </form>
+
 
     </div>
   );
