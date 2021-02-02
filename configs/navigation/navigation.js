@@ -16,7 +16,7 @@ export default [
 		de: 'Legal Corner',
 		items: [
 			{ id: 'legal', en: 'Legal', de: 'Rechtliches', href: '/legal' },
-			{ id: 'whitepaper', en: 'Whitepaper', de: 'Whitepaper', href: '/whitepaper' }
+			// { id: 'whitepaper', en: 'Whitepaper', de: 'Whitepaper', href: '/whitepaper' }
 		]
 	},
 	{
