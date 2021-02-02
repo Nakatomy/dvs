@@ -1,0 +1,19 @@
+{
+    "pageTitle": "Download the full whitepaper",
+    "paragraph1" : "Please fill in following fields.",
+    "firstName" : "First Name *",
+    "lastName" : "Last Name*",
+    "companyName" : "Company Name*",
+    "country" : "Country*",
+    "position" : "Postion*",
+    "email" : "E-Mail Address*",
+    "phone" : "Phone number",
+    "inquiry" : "Provide more details about your inquiry",
+    "paragraph2-1" : "I read",
+    "paragraph2-2" : "Privacy Policy",
+    "paragraph2-3" : "and accepted it.",
+    "ButtonBackToHomePage" : "Back to home page",
+    "requiredField" : "This field is required",
+    "errorEmail" : "Wrong email format"
+  }
+  

@@ -1,0 +1,151 @@
+.btn {
+    border-radius: 32px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    line-height: 24px;
+    width: max-content;
+    text-decoration: none;
+}
+
+.btn--center {
+justify-self: center;
+align-self: center;
+}
+
+.btn--flex {
+    display: flex;
+}
+
+
+.btn--none {
+    display: none;
+
+}
+
+
+
+
+.btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px transparent,
+        0 0 0px 2px #0075FF;
+}
+
+@media screen and (max-width: 1500px) {
+    .btn {
+        font-size: 13px;
+    }
+}
+
+.btn--text-white {
+    color: #ffffff;
+}
+
+.btn--text-only {
+    background-color: transparent;
+    border: none;
+    opacity: .5;
+    transition: opacity ease-in 0.3s;
+}
+
+.btn--text-only:hover {
+    opacity: 1;
+    transition: opacity ease-in 0.3s;
+}
+
+.btn--text-blue {
+    color: #001540;
+
+}
+
+.btn--size-m {
+    padding: 12px 32px;
+}
+@media screen and (max-width: 1500px) {
+    .btn--size-m {
+        padding: 8px 24px;
+    }
+}
+
+.btn--size-l {
+    padding: 20px 40px;
+}
+
+	@media screen and (max-width: 1500px) {
+	    .btn--size-l {
+	         padding: 16px 32px;
+	    }
+	}
+
+    .btn--green {
+        background-color: #00986A;
+        border: none;
+        transition: background-color ease-in 0.3s;
+    }
+    
+    .btn--green:hover {
+        background-color: #00B47E;
+        transition: background-color ease-in 0.3s;
+    }
+
+    .btn--border-white {
+        border: solid 2px #fff;
+        background-color: transparent;
+        transition: background-color 0.3s ease-out;
+    }
+    
+    .btn--border-white:hover {
+    transition: background-color 0.3s ease-out;
+    background-color:rgba(255, 255, 255, 0.1);
+    }
+
+    .btn--border-blue {
+        border: solid 2px #001540;
+        background-color: transparent;
+        transition: background-color 0.3s ease-out;
+    }
+    
+    .btn--border-blue:hover {
+        transition: background-color 0.3s ease-out;
+        background-color: #001540;
+        color: #ffffff;
+        border: solid 2px #001540;
+        ;
+    }
+
+    .btn--blue {
+        background-color: #0075FF;
+        border: none;
+        transition: background-color ease-in 0.3s;
+    }
+    
+    .btn--blue:hover {
+        background-color: #2e90ff;
+        transition: background-color ease-in 0.3s;
+    }
+
+    .btn--spaceBetween {
+        margin-right: 24px;
+        margin-bottom: 24px;
+    }
+
+    .btn--marginTop {
+        margin-top: 40px;
+    }
+
+.btn--alignCenter {
+    align-self: center;
+}
+
+.btn--fullWidth {
+    width: 100%;
+    padding: 20px 40px;
+
+    
+}

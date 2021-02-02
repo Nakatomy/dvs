@@ -1,0 +1,9 @@
+.form {
+    min-width: 480px;
+}
+
+@media screen and (max-width: 530px) {
+    .form {
+        min-width: calc(100% - 90px * 2);
+    }
+}

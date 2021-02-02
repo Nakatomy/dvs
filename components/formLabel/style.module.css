@@ -1,0 +1,9 @@
+.form__label {
+    color: rgba(0, 21, 64, 0.5);
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.form__label:last-child {
+    cursor: pointer;
+}

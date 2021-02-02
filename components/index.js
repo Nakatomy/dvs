@@ -30,6 +30,12 @@ import UlList from './ul'
 import Spacer from './spacer'
 import Item from './item'
 import Benefits from './benefits'
+import Form from './form'
+import FormLabel from './formLabel'
+import FormData from './formData'
+import FormDataGroup from './formDataGroup'
+import FormTextArea from './formText'
+import ButtonForm from './buttonForm'
 
 
 
@@ -65,5 +71,11 @@ export {
     UlList,
     Spacer,
     Item,
-    Benefits
+    Benefits,
+    Form,
+    FormData,
+    FormLabel,
+    FormDataGroup,
+    FormTextArea,
+    ButtonForm
 };

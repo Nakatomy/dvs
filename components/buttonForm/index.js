@@ -1,9 +1,9 @@
 import styles from "./style.module.css";
 import cn from "classnames";
-import React from "react";
 
-const Button = React.forwardRef(({ children, title, href, background, textColor, size, border, space, onClick, margin, display, alignSelf }, ref) => {
-  return (<a href={href} ref={ref}  onClick={onClick}
+
+const ButtonForm = ({ children, title, background,type, textColor, size, border, space, onClick, margin, display, alignSelf }) => {
+  return (<button  onClick={onClick} type={type}
     className={cn(styles.btn, {
       [styles[`btn--${background}`]]: background,
       [styles[`btn--${display}`]]: display,
@@ -18,8 +18,8 @@ const Button = React.forwardRef(({ children, title, href, background, textColor,
     {title}
     {children}
 
-  </a>
+  </button>
   );
-});
+};
 
-export default Button;
+export default ButtonForm;

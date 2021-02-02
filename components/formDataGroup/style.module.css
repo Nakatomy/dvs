@@ -1,0 +1,9 @@
+.form__data-group {
+    display: flex;
+}
+
+@media screen and (max-width: 860px) {
+	.form__data-group {
+        flex-direction: column;
+	}
+}
