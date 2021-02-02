@@ -1,9 +1,0 @@
-.btn--size-m {
-    padding: 12px 32px;
-}
-@media screen and (max-width: 1500px) {
-    .btn--size-m {
-        padding: 8px 24px;
-    }
-}
-
