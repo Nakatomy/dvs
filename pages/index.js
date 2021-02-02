@@ -248,7 +248,7 @@ function HomePage({ t }) {
           <GridItem>
             <Title>{t("servicesTitle")}</Title>
             <ImageComponent
-               src={i18n.language === "de" ? servicesDe : servicesEn}
+              src={i18n.language === "de" ? servicesDe : servicesEn}
               alt="Asbtract waves"
               imgType="mobile"
             />
@@ -391,6 +391,14 @@ function HomePage({ t }) {
           </GridItem>
         </Container>
       </Section>
+
+
+      <form action="https://formspree.io/f/xvovyzvl" method="POST" redirect="/solution">
+        <input type="text" name="name" />
+        <input type="email" name="_replyto" />
+        <input type="submit" value="Send" />
+      </form>
+
     </div>
   );
 }

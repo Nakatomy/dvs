@@ -9,12 +9,12 @@ import CookieConsent from "react-cookie-consent";
 // This default export is required in a new `pages/_app.js` file.
 function MyApp({ Component, pageProps }) {
   return (
-    <div>
+    <>
       <Main>
         <Component {...pageProps} />
       </Main>
       <Footer />
-      <CookieConsent contentStyle={{ lineHeight: "1.6", maxWidth: "1500px", display: "flex", justifyItems: "center" }}
+      <CookieConsent contentStyle={{ lineHeight: "1.6", display: "flex", justifyItems: "center" }}
         enableDeclineButton
         flipButtons
         declineButtonStyle={{
@@ -36,7 +36,7 @@ function MyApp({ Component, pageProps }) {
           textTransform: "uppercase",
           fontSize: "14px",
           fontWeight: "700",
-          padding: "20px 32px"
+          padding: "16px 32px"
         }}
         buttonText="Continue"
 
@@ -49,7 +49,7 @@ function MyApp({ Component, pageProps }) {
         </span>
 
       </CookieConsent>
-    </div >
+    </ >
   );
 }
 
