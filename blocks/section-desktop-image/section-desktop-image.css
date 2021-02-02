@@ -1,0 +1,11 @@
+.section-desktop-image {
+
+}
+
+@media screen and (max-width: 945px) {
+    .section-desktop-image {
+        display: none;
+        visibility: hidden;
+        margin-bottom: 48px;
+    }
+}

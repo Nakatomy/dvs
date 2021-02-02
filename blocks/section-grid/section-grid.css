@@ -1,0 +1,25 @@
+@import url('./__item/section-grid__item.css');
+@import url('./__item/--text/section-grid--text.css');
+
+.section-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 92px;
+    width: calc(100% - 72px * 2);
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 945px) {
+    .section-grid {
+    width: calc(100% - 48px * 2);
+     grid-template-columns: 1fr;
+     gap: 48px;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+    .section-grid {
+        width: calc(100% - 24px * 2);
+    }
+}

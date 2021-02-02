@@ -1,0 +1,11 @@
+.intro__text {
+
+width: calc(100% - 96px);
+}
+
+/* @media screen and (max-width: 625px) {
+	.intro__text {
+		max-width: calc(100% - 32px);
+		padding: 0 16px;
+	}
+} */

@@ -1,0 +1,11 @@
+@import url('./__ul/benefits__ul.css');
+@import url('./__icon/benefits__icon.css');
+@import url('./__list-item/benefits__list-item.css');
+@import url('./__heading/benefits__heading.css');
+
+.benefits {
+    /* background: none;
+    background-image: url('../../images/benefits-bubles.png');
+    background-repeat: no-repeat;
+    background-position: top right; */
+}

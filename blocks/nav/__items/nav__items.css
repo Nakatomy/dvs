@@ -1,0 +1,25 @@
+.nav__items {
+	display: flex;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	align-items: center;
+	justify-self: flex-end;
+}
+
+.nav__items.show {
+	display: flex;
+  }
+
+  @media screen and (max-width: 1200px) {
+	.nav__items  {
+		display: none;
+		margin-top: 48px;
+		width: 100%;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 50vh;
+		margin-bottom: 48px;
+	}
+}
+

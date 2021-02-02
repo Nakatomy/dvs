@@ -1,0 +1,11 @@
+.footer__line {
+    border-right: solid 1px rgba(255, 255, 255, 0.2);
+    padding-right: 48px;
+}
+
+@media screen and (max-width: 600px) {
+    .footer__line {
+        border: 0;
+        padding-right: 0;
+    }
+}

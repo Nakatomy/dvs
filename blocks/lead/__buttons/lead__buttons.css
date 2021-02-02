@@ -1,0 +1,14 @@
+.lead__buttons {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* .lead__buttons:first-child {
+    margin-right: 40px;
+} */
+

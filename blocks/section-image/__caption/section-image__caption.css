@@ -1,0 +1,11 @@
+.section-image__caption {
+	/* text-transform: uppercase; */
+	font-style: italic;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1.45;
+	/* letter-spacing: 0.15em; */
+	border-top: solid 1px #c3cee2;
+	padding-top: 8px;
+	text-align: center;
+}

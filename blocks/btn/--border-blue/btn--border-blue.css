@@ -1,0 +1,15 @@
+.btn--border-blue {
+    border: solid 2px #001540;
+    background-color: transparent;
+    transition: background-color 0.3s ease-out;
+}
+
+.btn--border-blue:hover {
+    transition: background-color 0.3s ease-out;
+    background-color: #001540;
+    color: #ffffff;
+    border: solid 2px #001540;
+    ;
+}
+
+

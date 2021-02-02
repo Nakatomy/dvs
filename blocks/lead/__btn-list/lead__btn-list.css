@@ -1,0 +1,9 @@
+.lead__btn-list {
+    margin-right: 24px;
+    margin-top: 24px;
+}
+
+
+.lead__btn-list:last-child {
+    margin-right: 0;
+}

@@ -1,0 +1,15 @@
+@import url('./__title/intro__title.css');
+@import url('./__paragraph/intro__paragraph.css');
+
+@import url('./__title/intro__title.css');
+@import url('./__image/intro__image.css');
+@import url('./__text/intro__text.css');
+@import url('./__description/intro__description.css');
+
+
+.intro {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    }
+}

@@ -1,0 +1,11 @@
+@import url('./__container/api-solution__container.css');
+@import url('./__wrapper/api-solution__wrapper.css');
+
+.api-solution {
+
+    display: flex;
+
+    min-height: 80vh;
+    /* display: flex;
+    align-items: center; */
+}

@@ -1,0 +1,13 @@
+.advisory-board__title {
+    font-size: 24px;
+    font-weight: 300;
+    color: #001540;
+    margin: 0 0 16px;
+    padding: 0;
+}
+
+@media screen and (max-width: 760px) {
+    .advisory-board__company {
+        font-size: 20px;
+    }
+}

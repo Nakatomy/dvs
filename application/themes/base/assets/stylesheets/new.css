@@ -1,0 +1,5 @@
+@media all and (max-width: 576px) {
+.info-form-captcha p {
+	padding-left: 1.875rem;
+}
+}

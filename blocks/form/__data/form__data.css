@@ -1,0 +1,6 @@
+.form__data {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    width: 100%;
+}

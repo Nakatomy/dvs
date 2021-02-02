@@ -1,0 +1,25 @@
+.nav__dropdown {
+    margin-right: 40px;
+    /* overflow: hidden; */
+    
+}
+
+.nav__dropdown:focus .nav__dropdown-content,
+.nav__dropdown:focus-within .nav__dropdown-content,
+.nav__dropdown:hover .nav__dropdown-content {
+    visibility: visible; 
+    opacity: 1;
+}
+
+@media screen and (max-width: 1500px) {
+    .nav__dropdown {
+        margin-right: 24px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .nav__dropdown {
+        margin-right: 0;
+    }
+}
+

@@ -1,0 +1,21 @@
+.testimonials__paragraph {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 1.67;
+    color: #001540;
+    font-style: italic;
+}
+
+@media screen and (max-width: 768px) {
+    .testimonials__paragraph {
+        font-size: 18px;
+        line-height: 1.63;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .testimonials__paragraph:first-child {
+        margin-top: 32px;
+    }
+}

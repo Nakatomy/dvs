@@ -1,0 +1,11 @@
+.footer__logo {
+    margin-bottom: 8px;
+    width: 235px;
+    height: auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+    fill: #a7b7d8;
+    align-self: flex-start;
+    cursor: pointer;
+    margin-left: -16px;
+}
