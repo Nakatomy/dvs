@@ -27,7 +27,7 @@ const Nav = ({children, className}) => {
     >
       <div className={styles["nav__group-items"]}>
         <LinkComponent
-          className={cn(styles.nav__logo, styles["nav__logo"], styles["nav__logo--sticky"])}
+          className={cn(styles.nav__logo, styles["nav__logo--sticky"])}
           href="/"
         >
           <Logo />

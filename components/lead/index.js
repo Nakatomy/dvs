@@ -1,5 +1,5 @@
 import styles from "./style.module.css";
-import { Button, Nav, LinkComponent } from 'components'
+import { Button, Nav, LinkComponent, LeadNav } from 'components'
 import Logo from "../logo";
 import cn from "classnames";
 import Login from '@material-ui/icons/ExitToApp';
@@ -8,7 +8,7 @@ import { Children } from "react";
 const Lead = ({ children, title, subtitle, statement, primaryButtonName, secondaryButtonName }) => {
 	return (
 		<section className={styles.lead}>
-			<Nav className={styles.nav__container}>
+			<LeadNav className={styles.nav__container}>
 
 				<li className={styles["nav__list-item"]}>
 					<Button
@@ -20,7 +20,8 @@ const Lead = ({ children, title, subtitle, statement, primaryButtonName, seconda
 						<Login className={styles.icon} />
 					</Button>
 				</li>
-			</Nav>
+			</LeadNav>
+
 
 			<div className={styles.lead__container}>
 				<h1 className={styles.lead__title}> {title}</h1>

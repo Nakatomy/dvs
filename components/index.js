@@ -36,6 +36,7 @@ import FormData from './formData'
 import FormDataGroup from './formDataGroup'
 import FormTextArea from './formText'
 import ButtonForm from './buttonForm'
+import LeadNav from './leadNav'
 
 
 
@@ -77,5 +78,6 @@ export {
     FormLabel,
     FormDataGroup,
     FormTextArea,
-    ButtonForm
+    ButtonForm,
+    LeadNav
 };

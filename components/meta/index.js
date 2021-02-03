@@ -11,7 +11,7 @@ const Meta = (props) => (
         <meta property="og:type" content="website" />
         <meta name="og:title" property="og:title" content={props.title} />
         <meta name="og:description" property="og:description" content={props.desc} />
-        <meta property="og:site_name" content="Proper Noun" />
+        <meta property="og:site_name" content="Digital Vault Services" />
         <meta property="og:url" content={`${props.canonical}`} />
         <link rel="apple-touch-icon" sizes="180x180" href={favIconAppleTouch} />
         <link rel="icon" type="image/png" sizes="32x32" href={favIcon32} />
