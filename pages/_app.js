@@ -11,15 +11,12 @@ import TagManager from 'react-gtm-module';
 
 function MyApp({ Component, pageProps }) {
 
-  const tagManagerArgs = {
-    gtmId: 'GTM-KGX8T4V'
-  }
-
-  if (getCookieConsentValue() === true) {
-    useEffect(() => {
-      TagManager.initialize(tagManagerArgs)
-    }, [])
-  }
+  // const tagManagerArgs = {
+  //   gtmId: 'GTM-KGX8T4V'
+  // }
+  //   useEffect(() => {
+  //     TagManager.initialize(tagManagerArgs)
+  //   }, [])
 
 
   return (
