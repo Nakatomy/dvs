@@ -156,6 +156,15 @@ const Careers = () => {
           <Paragraph>
             Sperrvermerke werden selbstverständlich beachtet.
           </Paragraph>
+          <Spacer size="s" />
+          <Button
+            href="/"
+            title="Zurück zur Startseite"
+            size="size-l"
+            textColor="text-white"
+            background="blue"
+            border="border-white"
+          />
         </Container>
       </Section>
     </>
