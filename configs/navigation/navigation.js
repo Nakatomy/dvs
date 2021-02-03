@@ -32,6 +32,14 @@ export default [
 		]
 	},
 	{
+		id: 'careers',
+		en: 'Careers',
+		de: 'Careers',
+		items: [
+			{ id: 'positions', en: 'Open Positions', de: 'Open Positions', href: '/careers' }
+		]
+	},
+	{
 		id: 'help',
 		en: 'Help',
 		de: 'Hilfe',
