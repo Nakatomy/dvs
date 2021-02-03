@@ -40,7 +40,7 @@ const Team = ({ t }) => {
             <Member src={julianPhoto} name="Julian Geddo" job="Business Analyst" />
             <Member src={araPhoto} name="Ara Trujillo" job="Onboarding Manager" />
             <Member src={annaPhoto} name="Anna Mitrovic" job="Business Analyst" />
-            <Member src={udoPhoto} name="Udo Holschuh" job="Onboarding Manager" />
+            <Member src={udoPhoto} name="Udo Holschuh" job="Senior Onboarding Manager" />
           </div>
           <Button
             href="/"
