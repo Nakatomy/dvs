@@ -29,7 +29,7 @@ const TermsOfUse = ({ t }) => {
           <LinkComponent
             className={styles.link}
             align="center"
-            href={i18n.language === "de" ? 'documents/20210114_DVS_ToU_2.2_signable_version.pdf' : 'documents/20210127_DVS_ToU_2.2_ENG.pdf'}
+            href={i18n.language === "de" ? '/documents/20210114_DVS_ToU_2.2_signable_version.pdf' : '/documents/20210127_DVS_ToU_2.2_ENG.pdf'}
             target="_blank"
             download
           >
