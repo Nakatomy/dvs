@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
     gtmId: 'GTM-KGX8T4V'
   }
 
-  useEffect(() => {
+  const cookieAccepted = useEffect(() => {
     TagManager.initialize(tagManagerArgs)
   }, [])
 
@@ -51,6 +51,8 @@ function MyApp({ Component, pageProps }) {
           padding: "16px 32px"
         }}
         buttonText="Continue"
+
+        onAccept={cookieAccepted}
 
       >
         <span >
