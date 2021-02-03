@@ -207,7 +207,7 @@ const WhitepaperForm = ({ t }) => {
             </FormData>
             <div>
               <div>
-                <input
+                <input className={styles.checkbox}
                   name="checkbox"
                   ref={register({ required: true })}
                   type="checkbox"
@@ -242,7 +242,7 @@ const WhitepaperForm = ({ t }) => {
                 textColor="text-white"
                 background="blue"
                 size="fullWidth"
-                title="Send message"
+                title={t("confirmButton")}
               ></ButtonForm>
             </ButtonWrapper>
           </Form>

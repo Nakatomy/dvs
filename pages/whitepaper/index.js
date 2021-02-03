@@ -150,7 +150,7 @@ import {
               factors in place, uptake could follow at great speed.
             </Paragraph>
             <Paragraph>
-              <LinkComponent href="/" color="blue">
+              <LinkComponent href="whitepaper-form" color="blue">
                 Download the whitepaper “Upping the game: Revolutionising
                 Guarantees”
               </LinkComponent>{" "}

@@ -20,7 +20,7 @@ const TermsOfUse = ({ t }) => {
     <>
       <Meta
         title={t("pageTitle") + " | Digital Vault Services"}
-        desc={t("paragraph1")}
+        desc="Download Terms of Use"
       />
       <Header />
       <Section>
