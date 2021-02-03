@@ -4,7 +4,7 @@ import { LinkComponent, Menu, Button } from "components";
 import Logo from "../logo";
 import { useState } from "react";
 
-const Nav = ({children, className}) => {
+const LeadNav = ({children, className}) => {
   const [showMenu, setShowMenu] = useState(false);
   const [status, setStatus] = useState(styles.close);
   let menu;
@@ -27,7 +27,7 @@ const Nav = ({children, className}) => {
     >
       <div className={styles["nav__group-items"]}>
         <LinkComponent
-          className={cn(styles.nav__logo, styles["nav__logo--sticky"])}
+          className={cn(styles.nav__logo)}
           href="/"
         >
           <Logo />
@@ -47,4 +47,4 @@ const Nav = ({children, className}) => {
   );
 };
 
-export default Nav;
+export default LeadNav;
