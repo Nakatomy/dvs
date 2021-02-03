@@ -11,13 +11,13 @@ import TagManager from 'react-gtm-module';
 
 function MyApp({ Component, pageProps }) {
 
-const tagManagerArgs = {
-  gtmId: 'GTM-KGX8T4V'
-}
+// const tagManagerArgs = {
+//   gtmId: 'GTM-KGX8T4V'
+// }
 
-useEffect(() => {
-  TagManager.initialize(tagManagerArgs)
-}, [])
+// useEffect(() => {
+//   TagManager.initialize(tagManagerArgs)
+// }, [])
 
 
   return (
