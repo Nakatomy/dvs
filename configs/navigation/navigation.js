@@ -16,6 +16,7 @@ export default [
 		de: 'Legal Corner',
 		items: [
 			{ id: 'legal', en: 'Legal', de: 'Rechtliches', href: '/legal' },
+			{ id: 'termsOfUse', en: 'Terms of Use', de: 'Nutzungsbedingungen', href: '/terms-of-use' },
 			// { id: 'whitepaper', en: 'Whitepaper', de: 'Whitepaper', href: '/whitepaper' }
 		]
 	},

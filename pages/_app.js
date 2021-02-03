@@ -5,9 +5,21 @@ import "../vendor/normalize.css";
 import styles from "./style.css";
 import { appWithTranslation } from "../i18n";
 import CookieConsent from "react-cookie-consent";
+import { FC, useEffect } from 'react';
+import { AppProps } from 'next/app';
+import TagManager from 'react-gtm-module';
 
-// This default export is required in a new `pages/_app.js` file.
 function MyApp({ Component, pageProps }) {
+
+// const tagManagerArgs = {
+//   gtmId: 'GTM-KGX8T4V'
+// }
+
+// useEffect(() => {
+//   TagManager.initialize(tagManagerArgs)
+// }, [])
+
+
   return (
     <>
       <Main>
