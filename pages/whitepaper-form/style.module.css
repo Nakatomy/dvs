@@ -98,3 +98,9 @@
 .form__checkbox {
     display: inline;
 }
+
+.checkbox {
+    transform: scale(1.5);
+    margin-right: 10px;
+}
+
