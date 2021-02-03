@@ -21,6 +21,11 @@
     color: #0075FF;
 }
 
+.link--center {
+    display: flex;
+    align-items: center;
+}
+
 .link--blue:visited {
 color: #0075FF;
 }

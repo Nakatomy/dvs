@@ -1,11 +1,26 @@
 const withImages = require('next-images')
+
 const { nextI18NextRewrites } = require('next-i18next/rewrites')
 
 const localeSubpaths = {}
 module.exports = withImages({
-  webpack(config, options) {
+  webpack: (config, options) => {
+    config.module.rules.push({
+      test: /\.(pdf|zip)$/,
+      use: [
+        {
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]'
+          }
+        }
+      ]
+    })
+
     return config
   },
+
+  
   rewrites: async () => nextI18NextRewrites(localeSubpaths),
   publicRuntimeConfig: {
     localeSubpaths,
