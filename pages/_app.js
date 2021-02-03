@@ -4,7 +4,7 @@ import Link from 'next/link'
 import "../vendor/normalize.css";
 import styles from "./style.css";
 import { appWithTranslation } from "../i18n";
-import CookieConsent from "react-cookie-consent";
+import CookieConsent, { getCookieConsentValue } from "react-cookie-consent";
 import { FC, useEffect } from 'react';
 import { AppProps } from 'next/app';
 import TagManager from 'react-gtm-module';
@@ -15,9 +15,11 @@ function MyApp({ Component, pageProps }) {
     gtmId: 'GTM-KGX8T4V'
   }
 
-  const cookieAccepted = useEffect(() => {
-    TagManager.initialize(tagManagerArgs)
-  }, [])
+  if (getCookieConsentValue() === true) {
+    useEffect(() => {
+      TagManager.initialize(tagManagerArgs)
+    }, [])
+  }
 
 
   return (
@@ -52,7 +54,7 @@ function MyApp({ Component, pageProps }) {
         }}
         buttonText="Continue"
 
-        onAccept={cookieAccepted}
+
 
       >
         <span >
