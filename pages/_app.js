@@ -20,7 +20,7 @@ function MyApp({ Component, pageProps }) {
     Cookies.set("CookieConsent-legacy", "true");
     ReactGA.initialize(gtmId);
     ReactGA.pageview(window.location.pathname + window.location.search);
-   hotjarTracking();
+  //  hotjarTracking();
   };
   
   function hotjarTracking () {
