@@ -6,8 +6,10 @@ import navigation from 'configs/navigation/navigation';
 import { Container } from "components";
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import PropTypes from "prop-types";
+import { withTranslation } from "i18n";
 
-const Footer = () => {
+const Footer = ({t}) => {
   const { i18n } = useTranslation();
   return (
     <footer className={styles.footer}>
@@ -42,7 +44,7 @@ const Footer = () => {
             </div>
             <div className={styles.footer__contact}>
               <LinkComponent
-                title=" Stahlgruberring 43, 81829 Munich"
+                title={t("contact")}
                 href="https://goo.gl/maps/7shPSvq8q65kGU5W9"
                 className={styles.footer__link}
               ></LinkComponent>
@@ -83,4 +85,12 @@ const Footer = () => {
   );
 };
 
-export default Footer
+Footer.getInitialProps = async () => ({
+  namespacesRequired: ["footer"],
+});
+
+Footer.propTypes = {
+  t: PropTypes.func.isRequired,
+};
+
+export default withTranslation("footer")(Footer);
