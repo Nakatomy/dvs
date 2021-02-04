@@ -8,8 +8,35 @@ import CookieConsent, {getCookieConsentValue } from "react-cookie-consent";
 import { FC, useEffect } from 'react';
 import { AppProps } from 'next/app';
 import TagManager from 'react-gtm-module';
+import ReactGA from "react-ga";
+import Cookies from "js-cookie";
 
 function MyApp({ Component, pageProps }) {
+
+  function setTrackingCookies() {
+    Cookies.set("CookieConsent", "true");
+    Cookies.set("CookieConsent-legacy", "true");
+    ReactGA.initialize("GTM-KGX8T4V");
+    ReactGA.pageview(window.location.pathname + window.location.search);
+   hotjarTracking();
+  };
+  
+  function hotjarTracking () {
+  // copied-and-pasted directly from HJ. I could probably have refactored it a little to match my coding style but it's an IIFE and I don't wanna mess with that noise.
+    (function (h, o, t, j, a, r) {
+      h.hj =
+        h.hj ||
+        function () {
+          (h.hj.q = h.hj.q || []).push(arguments);
+        };
+      h._hjSettings = { hjid: "GTM-KGX8T4V", hjsv: 6 };
+      a = o.getElementsByTagName("head")[0];
+      r = o.createElement("script");
+      r.async = 1;
+      r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+      a.appendChild(r);
+    })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+  };
 
   // const tagManagerArgs = {
   //   gtmId: 'GTM-KGX8T4V'
@@ -27,6 +54,7 @@ function MyApp({ Component, pageProps }) {
       </Main>
       <Footer />
       <CookieConsent 
+      onAccept={setTrackingCookies}
       contentStyle={{ lineHeight: "1.6", display: "flex", justifyItems: "center" }}
         enableDeclineButton
         flipButtons
