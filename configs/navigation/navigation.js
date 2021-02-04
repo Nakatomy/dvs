@@ -35,9 +35,9 @@ export default [
 	{
 		id: 'careers',
 		en: 'Careers',
-		de: 'Careers',
+		de: 'Karriere',
 		items: [
-			{ id: 'positions', en: 'Open Positions', de: 'Open Positions', href: '/careers' }
+			{ id: 'positions', en: 'Open Positions', de: 'Offene Stellen', href: '/careers' }
 		]
 	},
 	{
