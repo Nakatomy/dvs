@@ -44,10 +44,11 @@ const Footer = ({t}) => {
             </div>
             <div className={styles.footer__contact}>
               <LinkComponent
-                title={t("contact")}
+                target="_blank"
                 href="https://goo.gl/maps/7shPSvq8q65kGU5W9"
                 className={styles.footer__link}
-              ></LinkComponent>
+              > Stahlgruberring 43, <br />
+              81829 {t("Munich")}</LinkComponent>
             </div>
           </div>
           <div className={styles.footer__container}>

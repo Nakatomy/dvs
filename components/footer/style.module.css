@@ -80,7 +80,7 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 670px) {
     .footer__grid {
         grid-template-columns: 1fr;
     }
@@ -94,7 +94,7 @@
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 670px) {
     .footer__line {
         border: 0;
         padding-right: 0;
