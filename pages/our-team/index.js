@@ -28,8 +28,8 @@ const Team = ({ t }) => {
         <Container width="normal-width" height="minHeight" margin="marginTop96">
           <Title>{t('pageTitle')}</Title>
           <div className={styles.team__container}>
-            <Member src={ludgerPhoto} name="Ludger Janßen" job="MD - Sales, Business Analysis, Onboarding, Legal" />
-            <Member src={svenPhoto} name="Sven Matzelsberger" job="MD – Finance, HR" />
+            <Member src={ludgerPhoto} name="Ludger Janßen" job={t("MD") + " - Sales, Business Analysis, Onboarding, Legal"} />
+            <Member src={svenPhoto} name="Sven Matzelsberger" job={t("MD") + " – Finance, HR"} />
             <Member src={jaimePhoto} name="Jaime Gimeno" job="Head of Technology, Product" />
             <Member src={davidPhoto} name="Dr. iur. David Saive" job="Head of Legal" />
             <Member src={felixPhoto} name="Felix Scholle" job="Sales Director" />

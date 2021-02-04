@@ -48,7 +48,7 @@ const Contacts = ({ t }) => {
               target="_blank"
             >
               Stahlgruberring 43, <br />
-              81829 Munich
+              81829 {t("Munich")}
             </LinkComponent>
           </Paragraph>
           <Spacer size="s" />
