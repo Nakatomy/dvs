@@ -20,7 +20,7 @@ module.exports = withImages({
     return config
   },
 
-  
+
   rewrites: async () => nextI18NextRewrites(localeSubpaths),
   publicRuntimeConfig: {
     localeSubpaths,
@@ -47,7 +47,157 @@ module.exports = withImages({
         destination: '/partners',
         permanent: true,
       },
+      {
+        source: '/de/kontakt',
+        destination: '/contacts',
+        permanent: true,
+      },
+      {
+        source: '/en/imprint',
+        destination: '/imprint',
+        permanent: true,
+      },
+      {
+        source: '/en/imprint',
+        destination: '/imprint',
+        permanent: true,
+      },
+      {
+        source: '/de',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/en',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/de/impressum',
+        destination: '/imprint',
+        permanent: true,
+      },
+      {
+        source: '/en/contact',
+        destination: '/contacts',
+        permanent: true,
+      },
+      {
+        source: '/switch_language/322/338',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/application/files/8416/0553/3474/Datenschutz.pdf',
+        destination: '/privacy-policy',
+        permanent: true,
+      },
+      {
+        source: '/de/datenschutz',
+        destination: '/privacy-policy',
+        permanent: true,
+      },
+      {
+        source: '/login/concrete/forgot_password',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/de/unsere-partner',
+        destination: '/partners',
+        permanent: true,
+      },
+      {
+        source: '/private-pages/en/our-solution',
+        destination: '/solution',
+        permanent: true,
+      },
+      {
+        source: '/private-pages/en/testimonials',
+        destination: '/partners',
+        permanent: true,
+      },
+      {
+        source: '/private-pages/en/about-us',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/private-pages/en/under-construction',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/en/videos',
+        destination: '/news',
+        permanent: true,
+      },
+      {
+        source: '/de/videos',
+        destination: '/news',
+        permanent: true,
+      },
+      {
+        source: '/application/files/8516/0683/7489/Data_Privacy_Policy_ENG.pdf',
+        destination: '/privacy-policy',
+        permanent: true,
+      },
+      {
+        source: '/en/advisory-board',
+        destination: '/advisory-board',
+        permanent: true,
+      },
+      {
+        source: '/en/under-construction',
+        destination: '/',
+        permanent: true,
+      },
+      {
+        source: '/en/terms-of-use',
+        destination: '/terms-of-use',
+        permanent: true,
+      },
+      {
+        source: '/en/our-partners',
+        destination: '/partners',
+        permanent: true,
+      },
+      {
+        source: '/en/testimonials',
+        destination: '/partners',
+        permanent: true,
+      },
+      {
+        source: '/en/our-team',
+        destination: '/our-team',
+        permanent: true,
+      },
+      {
+        source: '/en/about-us',
+        destination: '/',
+        permanent: true,
+      },
+
     ]
   },
 
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
