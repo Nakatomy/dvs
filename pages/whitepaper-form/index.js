@@ -31,6 +31,8 @@ const WhitepaperForm = ({ t }) => {
 
   return (
     <>
+      <Meta
+        content="noindex" />
       <Header />
       <Section>
         <Container margin="marginTop96">
@@ -80,7 +82,7 @@ const WhitepaperForm = ({ t }) => {
                         styles["form__input-error--active"]
                       )}
                     >
-                        {t("requiredField")}
+                      {t("requiredField")}
                     </p>
                   )}
                 </Alert>
@@ -103,7 +105,7 @@ const WhitepaperForm = ({ t }) => {
                         styles["form__input-error--active"]
                       )}
                     >
-                        {t("requiredField")}
+                      {t("requiredField")}
                     </p>
                   )}
                 </Alert>
@@ -126,7 +128,7 @@ const WhitepaperForm = ({ t }) => {
                         styles["form__input-error--active"]
                       )}
                     >
-                        {t("requiredField")}
+                      {t("requiredField")}
                     </p>
                   )}
                 </Alert>
@@ -149,58 +151,58 @@ const WhitepaperForm = ({ t }) => {
                         styles["form__input-error--active"]
                       )}
                     >
-                        {t("requiredField")}
+                      {t("requiredField")}
                     </p>
                   )}
                 </Alert>
               )}
             </FormData>
 
-        
-              <FormData>
-                <FormLabel>{t("email")}</FormLabel>
-                <input
-                  className={styles.form__input}
-                  name="email"
-                  type="email"
-                  ref={register({
-                    required: true,
-                    pattern: {
-                      value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                      message: "invalid email address",
-                    },
-                  })}
-                ></input>
-                {errors.email && (
-                  <Alert variant="danger">
-                    {errors.email?.type === "required" && (
-                      <p
-                        className={cn(
-                          styles["form__input-error"],
-                          styles["form__input-error--active"]
-                        )}
-                      >
-                          {t("requiredField")}
-                      </p>
-                    )}
-                    {errors.email?.type === "pattern" && (
-                      <p
-                        className={cn(
-                          styles["form__input-error"],
-                          styles["form__input-error--active"]
-                        )}
-                      >
-                        {t("errorEmail")}
-                      </p>
-                    )}
-                  </Alert>
-                )}
-              </FormData>
-              <FormData>
-                <FormLabel>{t("phone")}</FormLabel>
-                <input className={styles.form__input}></input>
-              </FormData>
-         
+
+            <FormData>
+              <FormLabel>{t("email")}</FormLabel>
+              <input
+                className={styles.form__input}
+                name="email"
+                type="email"
+                ref={register({
+                  required: true,
+                  pattern: {
+                    value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                    message: "invalid email address",
+                  },
+                })}
+              ></input>
+              {errors.email && (
+                <Alert variant="danger">
+                  {errors.email?.type === "required" && (
+                    <p
+                      className={cn(
+                        styles["form__input-error"],
+                        styles["form__input-error--active"]
+                      )}
+                    >
+                      {t("requiredField")}
+                    </p>
+                  )}
+                  {errors.email?.type === "pattern" && (
+                    <p
+                      className={cn(
+                        styles["form__input-error"],
+                        styles["form__input-error--active"]
+                      )}
+                    >
+                      {t("errorEmail")}
+                    </p>
+                  )}
+                </Alert>
+              )}
+            </FormData>
+            <FormData>
+              <FormLabel>{t("phone")}</FormLabel>
+              <input className={styles.form__input}></input>
+            </FormData>
+
             <FormData>
               <FormLabel>{t("inquiry")}</FormLabel>
               <FormTextArea></FormTextArea>

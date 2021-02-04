@@ -17,6 +17,8 @@ const Meta = (props) => (
         <link rel="icon" type="image/png" sizes="32x32" href={favIcon32} />
         <link rel="icon" type="image/png" sizes="16x16" href={favIcon16} />
         <meta name="google-site-verification" content="XpsIbQ2rPh2xr-kO10TUVH-xj_pJVZyt1VnIUhjEIM4" />
+        <meta name="robots" content={props.content}></meta>
+
         {/* <link rel="icon" type="image/x-icon" href={favIcon} /> */}
         {/* <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content={props.title} />
