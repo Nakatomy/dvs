@@ -13,12 +13,13 @@ import Cookies from "js-cookie";
 
 function MyApp({ Component, pageProps }) {
 
-  const gtmId = 'GTM-KGX8T4V';
+  // const gtmId = 'GTM-KGX8T4V';
+  const gaId = "G-ZZJ15WBGXZ";
 
   function setTrackingCookies() {
     Cookies.set("CookieConsent", "true");
     Cookies.set("CookieConsent-legacy", "true");
-    ReactGA.initialize(gtmId);
+    ReactGA.initialize(gaId);
     ReactGA.pageview(window.location.pathname + window.location.search);
   //  hotjarTracking();
   };
