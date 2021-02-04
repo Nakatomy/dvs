@@ -41,14 +41,14 @@ function MyApp({ Component, pageProps }) {
   //   })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
   // };
 
-  const tagManagerArgs = {
-    gtmId: 'GTM-KGX8T4V'
-}
+//   const tagManagerArgs = {
+//     gtmId: 'GTM-KGX8T4V'
+// }
 
  
-    useEffect(() => {
-      TagManager.initialize(tagManagerArgs)
-    }, [])
+//     useEffect(() => {
+//       TagManager.initialize(tagManagerArgs)
+//     }, [])
  
 
 
