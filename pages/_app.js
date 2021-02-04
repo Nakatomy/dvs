@@ -4,7 +4,7 @@ import Link from 'next/link'
 import "../vendor/normalize.css";
 import styles from "./style.css";
 import { appWithTranslation } from "../i18n";
-import CookieConsent, { getCookieConsentValue } from "react-cookie-consent";
+import CookieConsent, {getCookieConsentValue } from "react-cookie-consent";
 import { FC, useEffect } from 'react';
 import { AppProps } from 'next/app';
 import TagManager from 'react-gtm-module';
@@ -14,9 +14,17 @@ function MyApp({ Component, pageProps }) {
   // const tagManagerArgs = {
   //   gtmId: 'GTM-KGX8T4V'
   // }
-  //   useEffect(() => {
-  //     TagManager.initialize(tagManagerArgs)
-  //   }, [])
+
+  function onAcceptCookies ()
+  {
+    const tagManagerArgs = {
+      gtmId: 'GTM-KGX8T4V'
+    }
+      useEffect(() => {
+        TagManager.initialize(tagManagerArgs)
+      }, [])
+  }
+
 
 
   return (
@@ -25,7 +33,9 @@ function MyApp({ Component, pageProps }) {
         <Component {...pageProps} />
       </Main>
       <Footer />
-      <CookieConsent contentStyle={{ lineHeight: "1.6", display: "flex", justifyItems: "center" }}
+      <CookieConsent 
+      onAccept={onAcceptCookies}
+      contentStyle={{ lineHeight: "1.6", display: "flex", justifyItems: "center" }}
         enableDeclineButton
         flipButtons
         declineButtonStyle={{
@@ -50,8 +60,6 @@ function MyApp({ Component, pageProps }) {
           padding: "16px 32px"
         }}
         buttonText="Continue"
-
-
 
       >
         <span >
