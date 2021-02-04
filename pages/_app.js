@@ -13,14 +13,12 @@ import Cookies from "js-cookie";
 
 function MyApp({ Component, pageProps }) {
 
-  const tagManagerArgs = {
-    gtmId: 'GTM-KGX8T4V'
-  }
+  const gtmId = 'GTM-KGX8T4V';
 
   function setTrackingCookies() {
     Cookies.set("CookieConsent", "true");
     Cookies.set("CookieConsent-legacy", "true");
-    ReactGA.initialize(tagManagerArgs);
+    ReactGA.initialize(gtmId);
     ReactGA.pageview(window.location.pathname + window.location.search);
    hotjarTracking();
   };
@@ -33,7 +31,7 @@ function MyApp({ Component, pageProps }) {
         function () {
           (h.hj.q = h.hj.q || []).push(arguments);
         };
-      h._hjSettings = { hjid: tagManagerArgs, hjsv: 6 };
+      h._hjSettings = { hjid: gtmId, hjsv: 6 };
       a = o.getElementsByTagName("head")[0];
       r = o.createElement("script");
       r.async = 1;
