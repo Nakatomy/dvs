@@ -42,7 +42,7 @@ const Footer = () => {
             </div>
             <div className={styles.footer__contact}>
               <LinkComponent
-                title=" Stahlgruberring 43, 81829 München"
+                title=" Stahlgruberring 43, 81829 Munich"
                 href="https://goo.gl/maps/7shPSvq8q65kGU5W9"
                 className={styles.footer__link}
               ></LinkComponent>
