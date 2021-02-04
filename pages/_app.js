@@ -14,17 +14,10 @@ function MyApp({ Component, pageProps }) {
   // const tagManagerArgs = {
   //   gtmId: 'GTM-KGX8T4V'
   // }
-
-  function onAcceptCookies ()
-  {
-    const tagManagerArgs = {
-      gtmId: 'GTM-KGX8T4V'
-    }
-      useEffect(() => {
-        TagManager.initialize(tagManagerArgs)
-      }, [])
-  }
-
+  //   useEffect(() => {
+  //     TagManager.initialize(tagManagerArgs)
+  //   }, [])
+ 
 
 
   return (
@@ -34,7 +27,6 @@ function MyApp({ Component, pageProps }) {
       </Main>
       <Footer />
       <CookieConsent 
-      onAccept={onAcceptCookies}
       contentStyle={{ lineHeight: "1.6", display: "flex", justifyItems: "center" }}
         enableDeclineButton
         flipButtons
