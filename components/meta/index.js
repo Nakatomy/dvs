@@ -34,9 +34,13 @@ const Meta = (props) => (
         }
         {
             props.image ? (
-                <meta property="og:image" content={`${props.image}`} />
+                <meta property="og:image" content={`${props.image}`} />,
+                <meta property="og:image:width" content="1200" />,
+                <meta property="og:image:height" content="675" />
             ) : (
-                    <meta property="og:image" content={`${ogImage}`} />
+                    <meta property="og:image" content={`${ogImage}`} />,
+                    <meta property="og:image:width" content="1200" />,
+                    <meta property="og:image:height" content="675" />
                 )
         }
         {
