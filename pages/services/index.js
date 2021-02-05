@@ -22,6 +22,10 @@ const Services = ({ t }) => {
   const { i18n } = useTranslation();
   return (
     <>
+      <Meta
+        title={t("pageTitle1") + " | Digital Vault Services"}
+        desc={t("paragraph1")}
+      />
       <Header />
       <Section style="gradient">
         <Container display="grid" width="full-width" margin="marginTop96">
