@@ -30,4 +30,4 @@ const DvsCom = () => {
     </>
   );
 };
-export default DvsCom;
+export default DvsCom
