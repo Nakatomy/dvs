@@ -18,11 +18,24 @@ import collegues from "images/colleagues-giving-fist-bump.png";
 const Careers = () => {
   return (
     <>
+      <Meta
+        title="Justitiar / Syndikus IT-Recht (m/w/d)"
+        desc="Wir sind ein junges, innovatives und schnell wachsendes
+            SaaS-Unternehmen mit solidem, teilweise internationalem
+            Gesellschafterhintergrund. Als IT-Dienstleister haben wir gemeinsam
+            mit 16 führenden nationalen und internationalen Partnern aus
+            Wirtschaft und Finanzindustrie unsere Plattform Guarantee Vault als
+            B2B-Lösung zur Erstellung, Abwicklung und sicheren Aufbewahrung
+            digitaler Garantien und Bürgschaften zur Marktreife entwickelt und
+            in Deutschland und Österreich gelauncht."
+        image={collegues}
+
+      />
       <Header />
       <Section>
-          <Container width="normal-width" margin="marginTop96">
-      <ImageComponent margin="marginNone" src={collegues}></ImageComponent>
-      </Container>
+        <Container width="normal-width" margin="marginTop96">
+          <ImageComponent margin="marginNone" src={collegues}></ImageComponent>
+        </Container>
         <Container width="normal-width" margin="marginTop96">
           <Title>Justitiar / Syndikus IT-Recht (m/w/d)</Title>
         </Container>
@@ -145,8 +158,8 @@ const Careers = () => {
             direkt an unsere Geschäftsleitung:
           </Paragraph>
           <Paragraph>
-          <LinkComponent color="blue" href="mailto:careers@digitalvaultservices.com">
-            careers@digitalvaultservices.com
+            <LinkComponent color="blue" href="mailto:careers@digitalvaultservices.com">
+              careers@digitalvaultservices.com
           </LinkComponent>
           </Paragraph>
           <Paragraph>
