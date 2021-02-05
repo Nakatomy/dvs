@@ -33,6 +33,37 @@ module.exports = withImages({
         permanent: true,
       },
       {
+        source: '/our-team.html',
+        destination: '/our-team',
+        permanent: true,
+      },
+      {
+        source: '/legal.html',
+        destination: '/legal',
+        permanent: true,
+      },
+      {
+        source: '/advisory-board.html',
+        destination: '/advisory-board',
+        permanent: true,
+      },
+      {
+        source: '/privacy-policy.html',
+        destination: '/privacy-policy',
+        permanent: true,
+      },
+      {
+        source: '/news.html',
+        destination: '/news',
+        permanent: true,
+      },
+      {
+        source: '/contacts.html',
+        destination: '/contacts',
+        permanent: true,
+      },
+
+      {
         source: '/services.html',
         destination: '/services',
         permanent: true,
