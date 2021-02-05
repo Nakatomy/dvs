@@ -15,6 +15,7 @@ import {
 } from "components";
 import collegues from "images/colleagues-giving-fist-bump.png";
 
+
 const Careers = () => {
   return (
     <>
@@ -28,7 +29,7 @@ const Careers = () => {
             B2B-Lösung zur Erstellung, Abwicklung und sicheren Aufbewahrung
             digitaler Garantien und Bürgschaften zur Marktreife entwickelt und
             in Deutschland und Österreich gelauncht."
-        image={collegues}
+        image="https://digitalvaultservices.com/_next/static/images/colleagues-giving-fist-bump-fce3aa52e8f30c9d822e48d6194f5801.png"
       />
       <Header />
       <Section>
