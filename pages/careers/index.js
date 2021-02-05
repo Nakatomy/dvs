@@ -29,7 +29,6 @@ const Careers = () => {
             digitaler Garantien und Bürgschaften zur Marktreife entwickelt und
             in Deutschland und Österreich gelauncht."
         image={collegues}
-
       />
       <Header />
       <Section>

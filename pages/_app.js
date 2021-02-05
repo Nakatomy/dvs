@@ -4,11 +4,11 @@ import Link from 'next/link'
 import "../vendor/normalize.css";
 import styles from "./style.css";
 import { appWithTranslation } from "../i18n";
-import CookieConsent, {getCookieConsentValue } from "react-cookie-consent";
+import CookieConsent, { getCookieConsentValue } from "react-cookie-consent";
 import { FC, useEffect } from 'react';
 import { AppProps } from 'next/app';
 import TagManager from 'react-gtm-module';
-import ReactGA from "react-ga";
+// import ReactGA from "react-ga";
 import Cookies from "js-cookie";
 
 function MyApp({ Component, pageProps }) {
@@ -21,9 +21,9 @@ function MyApp({ Component, pageProps }) {
     Cookies.set("CookieConsent-legacy", "true");
     ReactGA.initialize(gaId);
     ReactGA.pageview(window.location.pathname + window.location.search);
-  //  hotjarTracking();
+    //  hotjarTracking();
   };
-  
+
   // function hotjarTracking () {
   // // copied-and-pasted directly from HJ. I could probably have refactored it a little to match my coding style but it's an IIFE and I don't wanna mess with that noise.
   //   (function (h, o, t, j, a, r) {
@@ -41,15 +41,15 @@ function MyApp({ Component, pageProps }) {
   //   })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
   // };
 
-//   const tagManagerArgs = {
-//     gtmId: 'GTM-KGX8T4V'
-// }
+  //   const tagManagerArgs = {
+  //     gtmId: 'GTM-KGX8T4V'
+  // }
 
- 
-//     useEffect(() => {
-//       TagManager.initialize(tagManagerArgs)
-//     }, [])
- 
+
+  //     useEffect(() => {
+  //       TagManager.initialize(tagManagerArgs)
+  //     }, [])
+
 
 
   return (
@@ -58,9 +58,9 @@ function MyApp({ Component, pageProps }) {
         <Component {...pageProps} />
       </Main>
       <Footer />
-      <CookieConsent 
-      onAccept={setTrackingCookies}
-      contentStyle={{ lineHeight: "1.6", display: "flex", justifyItems: "center" }}
+      <CookieConsent
+        onAccept={setTrackingCookies}
+        contentStyle={{ lineHeight: "1.6", display: "flex", justifyItems: "center" }}
         enableDeclineButton
         flipButtons
         declineButtonStyle={{

@@ -13,7 +13,18 @@ const Meta = (props) => (
         <meta name="og:title" property="og:title" content={props.title} />
         <meta name="og:description" property="og:description" content={props.desc} />
         <meta property="og:site_name" content="Digital Vault Services" />
-        <meta property="og:url" content={`${props.canonical}`} />
+        <meta property="og:url" content={`${props.url}`} />
+        {
+            props.image ? (
+                <meta property="og:image" content={`${props.image}`} />,
+                <meta property="og:image:width" content="1200" />,
+                <meta property="og:image:height" content="675" />
+            ) : (
+                    <meta property="og:image" content={`${ogImage}`} />,
+                    <meta property="og:image:width" content="1200" />,
+                    <meta property="og:image:height" content="675" />
+                )
+        }
         <link rel="apple-touch-icon" sizes="180x180" href={favIconAppleTouch} />
         <link rel="icon" type="image/png" sizes="32x32" href={favIcon32} />
         <link rel="icon" type="image/png" sizes="16x16" href={favIcon16} />
@@ -32,21 +43,11 @@ const Meta = (props) => (
             props.css &&
             <link rel="stylesheet" href={`${props.css}`} />
         }
-        {
-            props.image ? (
-                <meta property="og:image" content={`${props.image}`} />,
-                <meta property="og:image:width" content="1200" />,
-                <meta property="og:image:height" content="675" />
-            ) : (
-                    <meta property="og:image" content={`${ogImage}`} />,
-                    <meta property="og:image:width" content="1200" />,
-                    <meta property="og:image:height" content="675" />
-                )
-        }
-        {
+
+        {/* {
             props.image &&
             <meta name="twitter:image" content={`${props.image}`} />
-        }
+        } */}
         {
             props.canonical &&
             <link rel="canonical" href={`${props.canonical}`} />
