@@ -18,7 +18,7 @@ const DvsCom = () => {
         style={{
           width: 1200,
           height: 630,
-          backgroundColor: "#fff;",
+          backgroundColor: "#fff",
           color: "#000",
           border: "#001540 16px solid",
         }}
