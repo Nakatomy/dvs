@@ -17,20 +17,21 @@ import PropTypes from 'prop-types'
 import { i18n, withTranslation } from 'i18n'
 import getOgImage from '@lib/getOgImage';
 
-const Team = ({ t, ogImage }) => {
-  export async function getStaticProps() {
-    const title = 'our-team';
-    const ogImage = await getOgImage(
-      `/digitalvaultservices.com?title=${title}&url=${process.env.BASE_URL}/our-team`
-    );
-    const baseUrl = process.env.BASE_URL;
-  
-    return {
-      props: { ogImage, baseUrl },
-      revalidate: 60 * 60 * 24
-    };
-  }
+export async function getStaticProps() {
+  const title = 'our-team';
+  const ogImage = await getOgImage(
+    `/digitalvaultservices.com?title=${title}&url=${process.env.BASE_URL}/our-team`
+  );
+  const baseUrl = process.env.BASE_URL;
 
+  return {
+    props: { ogImage, baseUrl },
+    revalidate: 60 * 60 * 24
+  };
+}
+
+
+const Team = ({ t, ogImage }) => {
   return (
     <>
       <Meta
