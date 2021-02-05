@@ -16,15 +16,17 @@ const Meta = (props) => (
         <meta property="og:url" content={`${props.url}`} />
         {
             props.image ? (
-                <meta property="og:image" content={`${props.image}`} />,
-                <meta property="og:image:width" content="1200" />,
-                <meta property="og:image:height" content="675" />
+                <meta property="og:image" content={`${props.image}`} />
+                // <meta property="og:image:width" content="1200" />,
+                // <meta property="og:image:height" content="675" />
             ) : (
-                    <meta property="og:image" content={`${ogImage}`} />,
-                    <meta property="og:image:width" content="1200" />,
-                    <meta property="og:image:height" content="675" />
+                    <meta property="og:image" content={`${ogImage}`} />
+                    // <meta property="og:image:width" content="1200" />,
+                    // <meta property="og:image:height" content="675" />
                 )
         }
+        <meta property="og:image:width" content="1200" />,
+        <meta property="og:image:height" content="675" />
         <link rel="apple-touch-icon" sizes="180x180" href={favIconAppleTouch} />
         <link rel="icon" type="image/png" sizes="32x32" href={favIcon32} />
         <link rel="icon" type="image/png" sizes="16x16" href={favIcon16} />
