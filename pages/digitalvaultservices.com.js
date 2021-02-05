@@ -24,7 +24,7 @@ const DvsCom = () => {
         }}
       >
         <Heading>{title}</Heading>
-        <Paragraph>DigitalVaultServices.com</Paragraph>
+        <Paragraph>digitalvaultdervices.com</Paragraph>
         <span>{linkURL.pathname}</span>
       </div>
     </>
