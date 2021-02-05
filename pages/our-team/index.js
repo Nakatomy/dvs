@@ -15,7 +15,7 @@ import udoPhoto from 'images/team/_MG_Hohlschuh-Udo-QF.jpg'
 import styles from './style.module.css';
 import PropTypes from 'prop-types'
 import { i18n, withTranslation } from 'i18n'
-import getOgImage from '@lib/getOgImage';
+import getOgImage from 'lib/getOgImage';
 
 export async function getStaticProps() {
   const title = 'our-team';
