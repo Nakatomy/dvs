@@ -5,6 +5,7 @@ import favIcon16 from 'favicon-16x16.png'
 import favIconAppleTouch from 'apple-touch-icon.png'
 import ogImage from 'images/cover-image-w1560.png'
 
+
 const Meta = (props) => (
     <Head>
         <title>{props.title}</title>
@@ -20,7 +21,7 @@ const Meta = (props) => (
                 // <meta property="og:image:width" content="1200" />,
                 // <meta property="og:image:height" content="675" />
             ) : (
-                    <meta property="og:image" content={`${ogImage}`} />
+                    <meta property="og:image" content={`'https://digitalvaultservices.com/'+ ${ogImage}`} />
                     // <meta property="og:image:width" content="1200" />,
                     // <meta property="og:image:height" content="675" />
                 )
