@@ -23,7 +23,7 @@ const Services = ({ t }) => {
   return (
     <>
       <Meta
-        title={t("pageTitle1") + " | Digital Vault Services"}
+        title={t("pageTitle") + " | Digital Vault Services"}
         desc={t("paragraph1")}
       />
       <Header />
