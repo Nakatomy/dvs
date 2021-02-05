@@ -15,8 +15,18 @@ import udoPhoto from 'images/team/_MG_Hohlschuh-Udo-QF.jpg'
 import styles from './style.module.css';
 import PropTypes from 'prop-types'
 import { i18n, withTranslation } from 'i18n'
+import getOgImage from '@lib/getOgImage';
 
 const Team = ({ t }) => {
+  export async function getStaticProps({ params: { slug } }) {
+    const post = await contentful.getEntry('post', slug);
+    const ogImage = await getOgImage(
+      `/phiilu.com?title=${post.title}&url=${process.env.BASE_URL}/${slug}`
+    );
+    return {
+      props: { post, ogImage }
+    };
+  }
   return (
     <>
       <Meta
