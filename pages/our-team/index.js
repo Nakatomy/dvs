@@ -17,20 +17,24 @@ import PropTypes from 'prop-types'
 import { i18n, withTranslation } from 'i18n'
 import getOgImage from '@lib/getOgImage';
 
-const Team = ({ t }) => {
-  export async function getStaticProps({ params: { slug } }) {
-    const post = await contentful.getEntry('post', slug);
+const Team = ({ t, ogImage }) => {
+  export async function getStaticProps() {
+    const title = 'our-team';
     const ogImage = await getOgImage(
-      `/phiilu.com?title=${post.title}&url=${process.env.BASE_URL}/${slug}`
+      `/digitalvaultservices.com?title=${title}&url=${process.env.BASE_URL}/our-team`
     );
+    const baseUrl = process.env.BASE_URL;
+  
     return {
-      props: { post, ogImage }
+      props: { ogImage, baseUrl },
+      revalidate: 60 * 60 * 24
     };
   }
+
   return (
     <>
       <Meta
-        title={t("pageTitle") + " | Digital Vault Services"}
+        title={t("pageTitle") + " | Digital Vault Services"} image={ogImage} url={`${baseUrl}/our-team`}
 
       />
       <Header />
