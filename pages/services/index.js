@@ -10,7 +10,8 @@ import {
   Item,
   UlList,
   ListItem,
-  Benefits
+  Benefits,
+  Meta
 } from "components";
 import servicesEn from "images/services-life-cycle.svg";
 import servicesDe from "images/services-life-cycle-de.svg";
