@@ -3,6 +3,7 @@ import Head from 'next/head'
 import favIcon32 from 'favicon-32x32.png'
 import favIcon16 from 'favicon-16x16.png'
 import favIconAppleTouch from 'apple-touch-icon.png'
+import ogImage from 'images/cover-image-w1560.png'
 
 const Meta = (props) => (
     <Head>
@@ -35,7 +36,7 @@ const Meta = (props) => (
             props.image ? (
                 <meta property="og:image" content={`${props.image}`} />
             ) : (
-                    <meta property="og:image" content="images/cover-image-w1560.png" />
+                    <meta property="og:image" content={`${ogImage}`} />
                 )
         }
         {
