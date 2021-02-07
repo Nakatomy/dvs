@@ -1,8 +1,17 @@
 {
     "pageTitle": "News",
+    
     "newsTitle": "Structured Finance Digital Week 2020",
     "newsSubtitle": "Digitization of Guarantees",
     "newsParagraph1": "Together with Peter Grätz from Bayerische Landesbank and Sven Matzelsberger from Lindner Group KG our managing director Ludger Janssen presented the Guarantee Vault, a place for the issuance and safe-keeping of digital guarantees.",
     "newsParagraph2-1": "For further information, please",
-    "newsParagraph2-2": "contact us."
+    "newsParagraph2-2": "contact us.",
+
+    "newsTitle2" : "Public launch of Guarantee Vault",
+    "newsSubtitle2"  : "Press Release",
+    "newsParagraph3" : "We’re happy Guarantee Vault was launched 18.01.2021 and first transactions have been issued successfully.",
+    "newsParagraph4" : "A special thanks to our working group members als well as our team! This success would not have been possible without you and your support!",
+    "newsParagraph5" : "We’re looking forward to next steps in 2021!",
+    "newsParagraph6-1" : "Read more on",
+    "newsParagraph6-2" : "Business Wire."
 }
