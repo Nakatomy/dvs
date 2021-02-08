@@ -13,6 +13,7 @@ import {
   UlList,
   ListItem,
   Meta,
+  Spacer
 } from "components";
 const Imprint = ({ t }) => {
   return (
@@ -36,8 +37,22 @@ const Imprint = ({ t }) => {
           </UlList>
 
 
+
           <Paragraph>{t("paragraph1")}</Paragraph>
           <Paragraph>{t("paragraph2")}</Paragraph>
+
+          <Spacer size="s" />
+
+<UlList listStyle="list-style-none">
+  <Heading>{t("heading3")}</Heading>
+  <ListItem>{t("listItem1")}</ListItem>
+  <ListItem>{t("listItem2")}</ListItem>
+  <ListItem>{t("listItem3")}</ListItem>
+  <ListItem>{t("listItem4")}</ListItem>
+  <ListItem>{t("listItem5")}</ListItem>
+</UlList>
+<Spacer size="s" />
+
           <Heading>{t("heading1")}</Heading>
           <Paragraph>{t("paragraph3")}</Paragraph>
           <Heading>{t("heading2")}</Heading>
