@@ -50,3 +50,13 @@
 .image--marginNone {
     margin : 0;
 }
+
+.image--marginTop0{
+    margin-top: 0;
+}
+
+.image--whitepaper {
+    min-height: 240px;
+    object-fit: contain;
+    object-position: center;
+}

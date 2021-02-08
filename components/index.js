@@ -37,6 +37,7 @@ import FormDataGroup from './formDataGroup'
 import FormTextArea from './formText'
 import ButtonForm from './buttonForm'
 import LeadNav from './leadNav'
+import Cover from './cover'
 
 
 
@@ -79,5 +80,6 @@ export {
     FormDataGroup,
     FormTextArea,
     ButtonForm,
-    LeadNav
+    LeadNav,
+    Cover
 };
