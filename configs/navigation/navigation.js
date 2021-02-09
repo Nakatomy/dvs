@@ -8,7 +8,7 @@ export default [
 			{ id: 'solution', en: 'Solution', de: 'Die Lösung', href: '/solution' },
 			{ id: 'services', en: 'Services', de: 'Services', href: '/services' },
 			{ id: 'rest-api', en: 'REST API', de: 'REST API', href: '/rest-api' },
-			// { id: 'whitepaper', en: 'Whitepaper', de: 'Whitepaper', href: '/whitepaper' }
+			{ id: 'whitepaper', en: 'Whitepaper', de: 'Whitepaper', href: '/whitepaper' }
 		]
 	},
 	{
