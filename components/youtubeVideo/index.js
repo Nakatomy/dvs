@@ -1,9 +1,11 @@
+import styles from './style.module.css'
+import cn from 'classnames'
 
-
-const YoutubeVideo = ({ src }) => {
+const YoutubeVideo = ({ src, videoType }) => {
     return (
         <div
-            className="video"
+            className={cn(
+                { [styles[`video--${videoType}`]]: videoType })}
             style={{
                 position: "relative",
                 paddingBottom: "56.25%" /* 16:9 */,

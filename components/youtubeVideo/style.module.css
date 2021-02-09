@@ -1,0 +1,22 @@
+@media screen and (max-width: 945px) {
+    .video--desktop {
+        display: none;
+        visibility: hidden;
+        /* margin-bottom: 48px; */
+    }
+}
+
+.video--mobile {
+    display: none;
+    visibility: hidden;
+}
+
+@media screen and (max-width: 945px) {
+    .video--mobile {
+        display: flex;
+        flex-direction: column;
+        visibility: visible;
+        margin-bottom: 48px;
+        margin-top: 0;
+    }
+}

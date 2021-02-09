@@ -381,9 +381,10 @@ function HomePage({ t }) {
       <Section id="news">
         <Container display="grid" width="full-width" height="minHeight">
           <GridItem>
-            <YoutubeVideo src="https://www.youtube.com/embed/_X0rziclDpI" />
+            <YoutubeVideo src="https://www.youtube.com/embed/_X0rziclDpI" videoType="desktop" />
           </GridItem>
           <GridItem>
+            <YoutubeVideo src="https://www.youtube.com/embed/_X0rziclDpI" videoType="mobile" />
             <Title>{t("newsTitle")}</Title>
             <Heading>{t("newsSubtitle")}</Heading>
             <Paragraph>{t("newsParagraph1")}</Paragraph>
