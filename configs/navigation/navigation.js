@@ -8,7 +8,7 @@ export default [
 			{ id: 'solution', en: 'Solution', de: 'Die Lösung', href: '/solution' },
 			{ id: 'services', en: 'Services', de: 'Services', href: '/services' },
 			{ id: 'rest-api', en: 'REST API', de: 'REST API', href: '/rest-api' },
-			{ id: 'whitepaper', en: 'Whitepaper', de: 'Whitepaper', href: '/whitepaper' }
+			// { id: 'whitepaper', en: 'Whitepaper', de: 'Whitepaper', href: '/whitepaper' }
 		]
 	},
 	{
@@ -17,8 +17,7 @@ export default [
 		de: 'Legal Corner',
 		items: [
 			{ id: 'legal', en: 'Legal', de: 'Rechtliches', href: '/legal' },
-			{ id: 'termsOfUse', en: 'Terms of Use', de: 'Nutzungsbedingungen', href: '/terms-of-use' },
-			// { id: 'whitepaper', en: 'Whitepaper', de: 'Whitepaper', href: '/whitepaper' }
+			{ id: 'termsOfUse', en: 'Terms of Use', de: 'Nutzungsbedingungen', href: '/terms-of-use' }
 		]
 	},
 	{
