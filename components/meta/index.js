@@ -15,6 +15,8 @@ const Meta = (props) => (
         <meta name="og:description" property="og:description" content={props.desc} />
         <meta property="og:site_name" content="Digital Vault Services" />
         <meta property="og:url" content={`${props.url}`} />
+        <meta property="publish_date" content={`${props.publishDate}`} />
+
         {
             props.image ? (
                 <meta property="og:image" content={`${props.image}`} />

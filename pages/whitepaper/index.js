@@ -33,6 +33,7 @@ const Whitepaper = () => {
         title={"Revolutionising guarantees" + " | Digital Vault Services"}
         desc="A new whitepaper from PwC Belgium’s Treasury Consulting Centre of Excellence explores how digitisation can make it safer, faster and simpler to process bonds and guarantees."
         image="https://digitalvaultservices.com/_next/static/images/double-exposure-image-many-business-people-c0bba04f433a136a4fd81edeacefd5d9.png"
+        publishDate="2021-02-09T14:28:57+00:00"
       />
       <Header />
       <Section>
@@ -83,7 +84,7 @@ const Whitepaper = () => {
 
           <Container display="grid-3col" width="full-width">
             <GridItem margin="marginNone">
-              <ImageComponent src={centralisation}></ImageComponent>
+              <ImageComponent src={centralisation} alt="Centralisation Cloud abstract technology big data"></ImageComponent>
               <Heading>Centralisation</Heading>
               <Paragraph>
                 Under the current system, information is scattered, making it
@@ -98,7 +99,7 @@ const Whitepaper = () => {
             </GridItem>
 
             <GridItem margin="marginNone">
-              <ImageComponent src={standardisation}></ImageComponent>
+              <ImageComponent src={standardisation} alt="Glass globe on a laptop"></ImageComponent>
               <Heading>Standardisation</Heading>
               <Paragraph>
                 Today, each actor in the ecosystem uses different conventions
@@ -111,7 +112,7 @@ const Whitepaper = () => {
             </GridItem>
 
             <GridItem margin="marginNone">
-              <ImageComponent src={automation}></ImageComponent>
+              <ImageComponent src={automation} alt="science background with molecule atom abstract structure"></ImageComponent>
               <Heading>Automation</Heading>
               <Paragraph>
                 Perpetual paperwork leads to inefficiencies in processing and an
@@ -130,7 +131,7 @@ const Whitepaper = () => {
           </Paragraph>
           <Container display="grid-3col" width="full-width">
             <GridItem margin="marginNone">
-              <ImageComponent src={security}></ImageComponent>
+              <ImageComponent src={security} alt="lock on a laptop secure system"></ImageComponent>
               <Heading>Security</Heading>
               <Paragraph>
                 When it comes to bonds and guarantees, the stakes are high –
@@ -142,7 +143,7 @@ const Whitepaper = () => {
             </GridItem>
 
             <GridItem margin="marginNone">
-              <ImageComponent src={validity}></ImageComponent>
+              <ImageComponent src={validity} alt="Digital Guarantee Legal validity"></ImageComponent>
               <Heading>Validity</Heading>
               <Paragraph>
                 The <b>legal framework</b> must enable confidence in the
@@ -152,7 +153,7 @@ const Whitepaper = () => {
             </GridItem>
 
             <GridItem margin="marginNone">
-              <ImageComponent src={acceptance}></ImageComponent>
+              <ImageComponent src={acceptance} alt="business hands joined together"></ImageComponent>
               <Heading>Acceptance</Heading>
               <Paragraph>
                 The solution must be something that
