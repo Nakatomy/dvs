@@ -229,6 +229,7 @@ function HomePage({ t }) {
 
       </Testimonials>
       <Container display="flex" width="full-width">
+
         <Button
           title="Show More"
           size="size-l"
@@ -240,7 +241,20 @@ function HomePage({ t }) {
         >
           <ExpandMoreIcon />
         </Button>
+
+
+        <Button
+          href="/partners"
+          title={t("ButtonNameMore")}
+          size="size-l"
+          textColor="text-blue"
+          alignSelf="center"
+          border="border-blue"
+          display={!showMe ? "none" : "flex"}
+        />
+
         <Spacer size="m"></Spacer>
+
       </Container>
 
       <Section id="services" style="gradient">
