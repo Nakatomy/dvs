@@ -1,14 +1,25 @@
 .cover {
     width: 100%;
-    padding: 300px 0 0;
-    background-position: center;
+    padding: 360px 0 0px;
+    background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 900px) {
     .cover {
-        padding: 100px 0 0;
+        padding: 260px 0 0;
+        background-position: bottom left;
     }
 }
+
+
+@media screen and (max-width: 620px) {
+    .cover {
+        padding: 100px 0 0;
+
+    }
+}
+
+
 
