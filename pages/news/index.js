@@ -45,9 +45,10 @@ const News = ({ t }) => {
         </Container>
         <Container display="grid" width="full-width">
           <GridItem>
-            <ImageComponent src={pressRelease}></ImageComponent>
+            <ImageComponent src={pressRelease} imgType="desktop"></ImageComponent>
           </GridItem>
           <GridItem>
+            <ImageComponent src={pressRelease} imgType="mobile"></ImageComponent>
             <Title>{t("newsTitle2")}</Title>
             <Heading>{t("newsSubtitle2")}</Heading>
             <Paragraph>{t("newsParagraph3")}</Paragraph>
@@ -69,9 +70,10 @@ const News = ({ t }) => {
 
         <Container display="grid" width="full-width">
           <GridItem>
-            <YoutubeVideo src="https://www.youtube.com/embed/_X0rziclDpI" />
+            <YoutubeVideo src="https://www.youtube.com/embed/_X0rziclDpI" videoType="desktop" />
           </GridItem>
           <GridItem>
+            <YoutubeVideo src="https://www.youtube.com/embed/_X0rziclDpI" videoType="mobile" />
             <Title>{t("newsTitle")}</Title>
             <Heading>{t("newsSubtitle")}</Heading>
             <Paragraph>{t("newsParagraph1")}</Paragraph>
