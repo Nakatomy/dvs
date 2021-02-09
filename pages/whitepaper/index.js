@@ -33,6 +33,7 @@ const Whitepaper = () => {
         title={"Revolutionising guarantees" + " | Digital Vault Services"}
         desc="A new whitepaper from PwC Belgium’s Treasury Consulting Centre of Excellence explores how digitisation can make it safer, faster and simpler to process bonds and guarantees."
         content="noindex"
+        image="https://digitalvaultservices.com/_next/static/images/double-exposure-image-many-business-people-c0bba04f433a136a4fd81edeacefd5d9.png"
       />
       <Header />
       <Section>
