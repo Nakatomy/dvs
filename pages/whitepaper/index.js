@@ -37,9 +37,9 @@ const Whitepaper = () => {
       <Header />
       <Section>
         <Cover style={{ backgroundImage: `url(${cover})` }}>
-          <Container width="full-width">
-            <Title>Revolutionising guarantees</Title>
-            <Paragraph>
+          <Container width="normal-width" >
+            <Title coverTitle>Revolutionising guarantees</Title>
+            <Paragraph coverParagraph>
               A new whitepaper from PwC Belgium’s Treasury Consulting Centre of
               Excellence explores how digitisation can make it safer, faster and
               simpler to process bonds and guarantees.
@@ -171,7 +171,7 @@ const Whitepaper = () => {
             factors in place, uptake could follow at great speed.
           </Paragraph>
           <Paragraph>
-            <LinkComponent href="/whitepaper-form" color="blue">
+            <LinkComponent href="https://www.pwc.be/en/news-publications/2021/revolutionising-guarantees.html#bottom-kick-isection" color="blue" target="_blank">
               Download the whitepaper “Upping the game: Revolutionising
               Guarantees”
             </LinkComponent>{" "}

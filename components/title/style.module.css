@@ -5,6 +5,7 @@
     line-height: 1.1;
     color: #001540;
     width: 100%;
+    max-width: fit-content;
     margin: 0 0 40px 0;
 }
 
@@ -23,4 +24,11 @@
 
 .sectionTitle--alignCenter {
     text-align: center;
+}
+
+.coverTitleBackground {
+    color: #fff;
+    background-color: rgba(0, 21, 64, .8);
+    padding: 16px;
+    margin-bottom: 16px;
 }

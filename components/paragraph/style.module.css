@@ -47,3 +47,10 @@
         margin-top: 32px;
     }
 }
+
+.coverParagraphBackground {
+    background-color: rgba(255, 225, 255, .8);
+    padding: 16px;
+ color: #fff;
+ background-color: rgba(0, 21, 64, .8);
+}
