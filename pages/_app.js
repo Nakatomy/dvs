@@ -59,7 +59,7 @@ function MyApp({ Component, pageProps }) {
       </Main>
       <Footer />
       <CookieConsent
-        onAccept={setTrackingCookies}
+        // onAccept={setTrackingCookies}
         contentStyle={{ lineHeight: "1.6", display: "flex", justifyItems: "center" }}
         enableDeclineButton
         flipButtons
