@@ -12,6 +12,8 @@ import {
   LinkComponent,
   YoutubeVideo,
   ImageComponent,
+  ButtonWrapper
+
 } from "components";
 import ludgerPhoto from "images/team/MG_Janssen_Ludger_HF.jpg";
 import svenPhoto from "images/team/_MG_Matzelsberger-Sven-QF.jpg";
@@ -27,6 +29,7 @@ import araPhoto from "images/team/_MG_Trujillo-Ara.jpg";
 import annaPhoto from "images/team/_MG_Mitrovic-Anna-QF.jpg";
 import udoPhoto from "images/team/_MG_Hohlschuh-Udo-QF.jpg";
 import pressRelease from "images/news.jpg";
+import whitepaper from "images/whitepaper/revolutionising-guarantees.png";
 import styles from "./style.module.css";
 import PropTypes from "prop-types";
 import { i18n, withTranslation } from "i18n";
@@ -43,6 +46,27 @@ const News = ({ t }) => {
         <Container width="full-width" margin="marginTop96">
           <Title>{t("pageTitle")}</Title>
         </Container>
+        <Container display="grid" width="full-width">
+          <GridItem>
+            <ImageComponent src={whitepaper} imgType="desktop"></ImageComponent>
+          </GridItem>
+          <GridItem>
+            <ImageComponent src={whitepaper} imgType="mobile"></ImageComponent>
+            <Title>{t("newsTitle3")}</Title>
+
+            <Paragraph>{t("newsParagraph7")}</Paragraph>
+            <ButtonWrapper>
+              <Button
+                href="/whitepaper"
+                title={t("ButtonNameReadMore")}
+                size="size-l"
+                textColor="text-blue"
+                border="border-blue"
+              />
+            </ButtonWrapper>
+          </GridItem>
+        </Container>
+        <Spacer size="m" />
         <Container display="grid" width="full-width">
           <GridItem>
             <ImageComponent src={pressRelease} imgType="desktop"></ImageComponent>
