@@ -39,7 +39,6 @@ const News = ({ t }) => {
     <>
       <Meta
         title={t("pageTitle") + " | Digital Vault Services"}
-        desc={t("newsTitle")}
       />
       <Header />
       <Section>
