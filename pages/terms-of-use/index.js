@@ -36,18 +36,18 @@ const TermsOfUse = ({ t }) => {
         <Container width="normal-width" margin="marginTop96">
           <Title>{t("pageTitle")}</Title>
           <Paragraph>
+         
             <LinkComponent
               color="blue"
               href={
                 i18n.language === "de"
-                  ? "/documents/20210114_DVS_ToU_2.2_signable_version.pdf"
-                  : "/documents/20210127_DVS_ToU_2.2_ENG.pdf"
+                  ? "mailto:contact@digitalvaultservices.com?subject=Anfrage%20-%20Nutzungsbedingungen"
+                  : "mailto:contact@digitalvaultservices.com?subject=Request%20-%20Terms%20of%20Use"
               }
               target="_blank"
-              download
             >
               <GlobalCss />
-              <DownloadIcon /> {t("downloadLink")}
+               {" "} {t("link1-2")}
             </LinkComponent>
           </Paragraph>
 
