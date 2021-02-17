@@ -38,7 +38,7 @@ const Whitepaper = ({t}) => {
       <Header />
       <Section>
         <Cover style={{ backgroundImage: `url(${cover})` }}>
-          <Container width="normal-width" >
+          <Container width="full-width" >
             <Title coverTitle>{t("pageTitle")}</Title>
             <Paragraph coverParagraph>
             {t("pageDescription")}
