@@ -12,6 +12,8 @@ import julianPhoto from 'images/team/_MG_Geddo-Julian-QF.jpg'
 import araPhoto from 'images/team/_MG_Trujillo-Ara.jpg'
 import annaPhoto from 'images/team/_MG_Mitrovic-Anna-QF.jpg'
 import udoPhoto from 'images/team/_MG_Hohlschuh-Udo-QF.jpg'
+import isabellaPhoto from 'images/team/Isabella.jpg'
+import oskarPhoto from 'images/team/Oskar.jpg'
 import styles from './style.module.css';
 import PropTypes from 'prop-types'
 import { i18n, withTranslation } from 'i18n'
@@ -31,16 +33,23 @@ const Team = ({ t }) => {
             <Member src={ludgerPhoto} name="Ludger Janßen" job={t("MD") + " - Sales, Business Analysis, Onboarding, Legal"} />
             <Member src={svenPhoto} name="Sven Matzelsberger" job={t("MD") + " – Finance, HR"} />
             <Member src={jaimePhoto} name="Jaime Gimeno" job="Head of Technology, Product" />
-            <Member src={davidPhoto} name="Dr. iur. David Saive" job="Head of Legal" />
-            <Member src={felixPhoto} name="Felix Scholle" job="Sales Director" />
-            <Member src={valeriePhoto} name="Valerie Pfannenstiel" job="Onboarding Manager" />
-            <Member src={lenaPhoto} name="Lena Kimpfbeck" job="Onboarding Manager" />
-            <Member src={marinaPhoto} name="Marina Simmerl" job="PR & Marketing Manager" />
+
             <Member src={sabinePhoto} name="Sabine Ostermeier" job="Office Manager" />
-            <Member src={julianPhoto} name="Julian Geddo" job="Business Analyst" />
-            <Member src={araPhoto} name="Ara Trujillo" job="Onboarding Manager" />
+            <Member src={felixPhoto} name="Felix Scholle" job="Sales Director" />
+            <Member src={marinaPhoto} name="Marina Simmerl" job="PR & Marketing Manager" />
+
+            <Member src={davidPhoto} name="Dr. iur. David Saive" job="Head of Legal" />
             <Member src={annaPhoto} name="Anna Mitrovic" job="Business Analyst" />
+            <Member src={julianPhoto} name="Julian Geddo" job="Business Analyst" />
+
+            <Member src={valeriePhoto} name="Valerie Pfannenstiel" job="Onboarding Manager" />
             <Member src={udoPhoto} name="Udo Holschuh" job="Senior Onboarding Manager" />
+            <Member src={lenaPhoto} name="Lena Kimpfbeck" job="Onboarding Manager" />
+
+            <Member src={araPhoto} name="Ara Trujillo" job="Onboarding Manager" />
+            <Member src={oskarPhoto} name="Oscar Rönngren" job="Onboarding Manager" />
+            <Member src={isabellaPhoto} name="Isabella Wagner" job="HR Manager" />
+
           </div>
           <Button
             href="/"
