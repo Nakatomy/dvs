@@ -26,7 +26,7 @@ import validity from "images/whitepaper/close-up-detail-of-the-scales-of-justice
 import acceptance from "images/whitepaper/business-hands-joined-together-teamwork.png";
 import cover from "images/whitepaper/double-exposure-image-many-business-people.png";
 
-const Whitepaper = () => {
+const Whitepaper = ({t}) => {
   return (
     <>
       <Meta
@@ -39,150 +39,117 @@ const Whitepaper = () => {
       <Section>
         <Cover style={{ backgroundImage: `url(${cover})` }}>
           <Container width="normal-width" >
-            <Title coverTitle>Revolutionising guarantees</Title>
+            <Title coverTitle>{t("pageTitle")}</Title>
             <Paragraph coverParagraph>
-              A new whitepaper from PwC Belgium’s Treasury Consulting Centre of
-              Excellence explores how digitisation can make it safer, faster and
-              simpler to process bonds and guarantees.
+            {t("pageDescription")}
             </Paragraph>
           </Container>
         </Cover>
 
         <Container width="normal-width" height="minHeight">
           <Spacer size="m" />
-          <Heading>A pillar of the financial system</Heading>
+          <Heading>{t("heading1")}</Heading>
           <Paragraph>
-            Across the globe, businesses rely on bonds and guarantees to support
-            their growth. They are essential to the financial system. Yet the
-            processes involved are all too often fraught with cumbersome pain
-            points from end to end. Even in today’s digital era, the world of
-            bonds and guarantees comprises a multitude of eclectic systems and
-            is largely paper-based. With bespoke agreements and lengthy
-            back-and-forth sign-off procedures, a guarantee or bond can take
-            weeks to put in place and even longer to release. But it doesn’t
-            have to be that way.
+          {t("paragraph1")}
           </Paragraph>
           <Spacer size="s" />
-          <Heading>Safer, faster, simpler</Heading>
+          <Heading>{t("heading2")}</Heading>
           <Paragraph>
-            We have spent two years collaborating with a working group of 16
-            leaders from major corporations, banks and credit insurance
-            companies, to investigate the best solution for centrally issuing
-            and storing instruments such as bank guarantees, surety bonds and
-            standby letters of credit.
+          {t("paragraph2")}
           </Paragraph>
           <Paragraph>
-            Drawing on their in-house knowledge of the landscape, as well as
-            surveys and interviews with these experts, PwC has developed an
-            independent perspective on the possibility of digitising the
-            guarantee business and the benefits it could bring.
+          {t("paragraph3")}
           </Paragraph>
           <Paragraph>
-            The resulting paper identifies the typical pain points in today’s
-            processes and examines how digitisation can mitigate them.
+          {t("paragraph4")}
           </Paragraph>
 
           <Container display="grid-3col" width="full-width">
             <GridItem margin="marginNone">
               <ImageComponent src={centralisation} alt="Centralisation Cloud abstract technology big data"></ImageComponent>
-              <Heading>Centralisation</Heading>
+              <Heading>{t("heading3")}</Heading>
               <Paragraph>
-                Under the current system, information is scattered, making it
-                difficult to achieve oversight and control large numbers of
-                guarantees. Digitisation can provide:
+              {t("paragraph5")}
               </Paragraph>
+              <Paragraph>{t("paragraph6")}</Paragraph>
               <UlList>
-                <ListItem>a single, central repository</ListItem>
-                <ListItem>an up-to-date audit trail</ListItem>
-                <ListItem>streamlined communication</ListItem>
+                <ListItem>{t("listItem1")}</ListItem>
+                <ListItem>{t("listItem2")}</ListItem>
+                <ListItem>{t("listItem3")}</ListItem>
               </UlList>
             </GridItem>
 
             <GridItem margin="marginNone">
               <ImageComponent src={standardisation} alt="Glass globe on a laptop"></ImageComponent>
-              <Heading>Standardisation</Heading>
+              <Heading>{t("heading4")}</Heading>
               <Paragraph>
-                Today, each actor in the ecosystem uses different conventions
-                and set-ups. A digital revolution could quickly and efficiently:
+              {t("paragraph7")}
               </Paragraph>
+              <Paragraph>{t("paragraph8")}</Paragraph>
               <UlList>
-                <ListItem>establish a single set standard </ListItem>
-                <ListItem>simplify the procedure</ListItem>
+                <ListItem>{t("listItem4")} </ListItem>
+                <ListItem>{t("listItem5")}</ListItem>
               </UlList>
             </GridItem>
 
             <GridItem margin="marginNone">
               <ImageComponent src={automation} alt="science background with molecule atom abstract structure"></ImageComponent>
-              <Heading>Automation</Heading>
+              <Heading>{t("heading5")}</Heading>
               <Paragraph>
-                Perpetual paperwork leads to inefficiencies in processing and an
-                increase in the risk of error. An automated system would:
+              {t("paragraph9")}
               </Paragraph>
+              <Paragraph>{t("paragraph10")}</Paragraph>
               <UlList>
-                <ListItem>eliminate potential for human error</ListItem>
-                <ListItem>speed up the process</ListItem>
+                <ListItem>{t("listItem6")}</ListItem>
+                <ListItem>{t("listItem7")}</ListItem>
               </UlList>
             </GridItem>
           </Container>
           <Spacer size="s" />
           <Paragraph>
-            The paper also identifies the perceived prerequisites for a
-            successful digital revolution of the system.{" "}
+          {t("paragraph11")}
           </Paragraph>
           <Container display="grid-3col" width="full-width">
             <GridItem margin="marginNone">
               <ImageComponent src={security} alt="lock on a laptop secure system"></ImageComponent>
-              <Heading>Security</Heading>
+              <Heading>{t("heading6")}</Heading>
               <Paragraph>
-                When it comes to bonds and guarantees, the stakes are high –
-                there can be{" "}
-                <b>no compromise on data security and integrity.</b> This has
-                been a key focus in the development of our digital guarantee
-                platform.
+              {t("paragraph12")}
               </Paragraph>
             </GridItem>
 
             <GridItem margin="marginNone">
               <ImageComponent src={validity} alt="Digital Guarantee Legal validity"></ImageComponent>
-              <Heading>Validity</Heading>
+              <Heading>{t("heading7")}</Heading>
               <Paragraph>
-                The <b>legal framework</b> must enable confidence in the
-                digitised system: the validity and enforceability of the
-                guarantee is key.
+              {t("paragraph13")}
               </Paragraph>
             </GridItem>
 
             <GridItem margin="marginNone">
               <ImageComponent src={acceptance} alt="business hands joined together"></ImageComponent>
-              <Heading>Acceptance</Heading>
+              <Heading>{t("heading8")}</Heading>
               <Paragraph>
-                The solution must be something that
-                <b> works for all parties.</b> Banks, credit insurers and the
-                corporates – both the issuers and beneficiaries – must all be on
-                board.
+              {t("paragraph14")}
               </Paragraph>
             </GridItem>
           </Container>
           <Spacer size="s" />
 
-          <Heading>The road ahead</Heading>
+          <Heading>{t("heading9")}</Heading>
           <Paragraph>
-            PwC’s whitepaper serves not only to validate our solution, but also
-            to forecast the road ahead. The paper indicates that with the above
-            factors in place, uptake could follow at great speed.
+          {t("paragraph15")}
           </Paragraph>
           <Paragraph>
             <LinkComponent href="https://www.pwc.be/en/news-publications/2021/revolutionising-guarantees.html#bottom-kick-isection" color="blue" target="_blank">
-              Download the whitepaper “Upping the game: Revolutionising
-              Guarantees”
+            {t("paragraph16-1")}
             </LinkComponent>{" "}
-            to find out more about how and why digitisation is on the horizon
-            for guarantees, bonds and sureties.
+            {t("paragraph16-2")}
           </Paragraph>
           <Spacer size="s" />
           <Button
             href="/"
-            title="Back to home page"
+            title={t("ButtonBackToHomePage")}
             size="size-l"
             textColor="text-white"
             background="blue"
@@ -193,4 +160,13 @@ const Whitepaper = () => {
     </>
   );
 };
-export default Whitepaper;
+
+Whitepaper.getInitialProps = async () => ({
+  namespacesRequired: ['whitepaper'],
+})
+
+Whitepaper.propTypes = {
+  t: PropTypes.func.isRequired,
+}
+
+export default withTranslation('whitepaper')(Whitepaper)
