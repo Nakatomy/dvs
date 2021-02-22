@@ -93,10 +93,10 @@ const News = ({ t }) => {
 
         <Container display="grid" width="full-width">
           <GridItem>
-            <YoutubeVideo src="https://www.youtube.com/embed/_X0rziclDpI" videoType="desktop" />
+            <YoutubeVideo src="https://www.youtube.com/embed/_X0rziclDpI?start=385" videoType="desktop" />
           </GridItem>
           <GridItem>
-            <YoutubeVideo src="https://www.youtube.com/embed/_X0rziclDpI" videoType="mobile" />
+            <YoutubeVideo src="https://www.youtube.com/embed/_X0rziclDpI?start=385" videoType="mobile" />
             <Title>{t("newsTitle")}</Title>
             <Heading>{t("newsSubtitle")}</Heading>
             <Paragraph>{t("newsParagraph1")}</Paragraph>
