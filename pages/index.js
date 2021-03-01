@@ -29,6 +29,7 @@ import servicesEn from "images/services-life-cycle.svg";
 import servicesDe from "images/services-life-cycle-de.svg";
 import restApiImg from "images/solution-rest-api.svg";
 import legalImg from "images/legal-feather.jpg";
+import whitepaper from "images/whitepaper/revolutionising-guarantees.png";
 import PropTypes from "prop-types";
 import { withTranslation } from "../i18n";
 import { useState, useEffect } from "react";
@@ -404,13 +405,25 @@ function HomePage({ t }) {
             <Paragraph>{t("newsParagraph1")}</Paragraph>
             <Paragraph>{t("newsParagraph2-1")}<LinkComponent href="/contacts" color="blue">{t("newsParagraph2-2")}</LinkComponent></Paragraph>
           </GridItem>
+
+          <GridItem>
+            <ImageComponent src={whitepaper} imgType="desktop"></ImageComponent>
+          </GridItem>
+          <GridItem>
+            <ImageComponent src={whitepaper} imgType="mobile"></ImageComponent>
+            <Title>{t("newsTitle2")}</Title>
+            <Heading>{t("newsSubtitle2")}</Heading>
+            <Paragraph>{t("newsParagraph3")}</Paragraph>
+            <Paragraph><LinkComponent href="/whitepaper" color="blue">{t("ButtonNameReadMore")}</LinkComponent></Paragraph>
+          </GridItem>
+
         </Container>
       </Section>
 
 
 
 
-    </div>
+    </div >
   );
 }
 
