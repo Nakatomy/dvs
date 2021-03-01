@@ -1,8 +1,4 @@
-import sven from "images/gvp-email/sven-matzelsberger.png"
-import ludger from "images/gvp-email/ludger-janssen.png"
-import logoHeader from "images/gvp-email/logo_header.png"
-import logoFooterOnWhite from "images/gvp-email/logo__footer-w.png"
-import logoFooterOnDark from "images/gvp-email/logo__footer-b.png"
+
 import { Meta, ImageComponent } from "components"
 
 
@@ -14,20 +10,30 @@ const GvpEmail = ({ t }) => {
                 content="noindex"
             />
             <ImageComponent
-                src={sven}
+                src="static/assets/gvp-email/sven-matzelsberger.png"
+                width={80}
+                height={80}
 
             />
             <ImageComponent
-                src={ludger}
+                src="static/assets/gvp-email/ludger-janssen.png"
+                width={80}
+                height={80}
             />
             <ImageComponent
-                src={logoHeader}
+                src="static/assets/gvp-email/logo-header.png"
+                width={250}
+                height={211}
             />
             <ImageComponent
-                src={logoFooterOnWhite}
+                src="static/assets/gvp-email/logo__footer-w.png"
+                width={221}
+                height={73}
             />
             <ImageComponent
-                src={logoFooterOnDark}
+                src="static/assets/gvp-email/logo__footer-b.png"
+                width={221}
+                height={73}
             />
         </>
     )
