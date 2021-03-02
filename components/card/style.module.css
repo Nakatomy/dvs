@@ -1,0 +1,19 @@
+.card {
+  background: #f6f9ff;
+  border: 1px solid #e4ebf9;
+  box-sizing: border-box;
+  border-radius: 6px;
+  padding: 32px;
+}
+
+.card__link--wrapper {
+  margin-top: 16px;
+}
+
+.card__date {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #001540;
+  opacity: 0.7;
+}
