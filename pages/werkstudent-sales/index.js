@@ -19,8 +19,8 @@ const StudentJob = () => {
   return (
     <>
       <Meta
-        title="Werkstudent (m/w/d) im Marketing und Vertrieb gesucht!"
-        desc="Wir sind ein junges, innovatives und schnell wachsendes SaaS-Unternehmen mit solidem, teilweise internationalem Gesellschafterhintergrund. Als IT-Dienstleister haben wir gemeinsam mit 16 führenden nationalen und internationalen Partnern aus Wirtschaft und Finanzindustrie unsere Plattform Guarantee Vault als B2B-Lösung zur Erstellung, Abwicklung und sicheren Aufbewahrung digitaler Garantien und Bürgschaften zur Marktreife entwickelt und in Deutschland und Österreich gelauncht."
+        title="Werkstudent (m/w/d)"
+        desc="Wir sind ein junges, innovatives und schnell wachsendes SaaS-Unternehmen mit solidem, teilweise internationalem Gesellschafterhintergrund."
         image="https://digitalvaultservices.com/_next/static/images/colleagues-giving-fist-bump-fce3aa52e8f30c9d822e48d6194f5801.png"
       />
       <Header />
@@ -59,38 +59,44 @@ const StudentJob = () => {
           <Heading>Deine Aufgaben</Heading>
           <UlList>
             <ListItem>
-            Aktive Mitarbeit an unterschiedlichen Projekten im internationalen Kontext
+              Aktive Mitarbeit an unterschiedlichen Projekten im internationalen
+              Kontext
             </ListItem>
             <ListItem>
-            Vorbereitung von Markt- und Wettbewerbsanalysen sowie Erstellung von Berichten
+              Vorbereitung von Markt- und Wettbewerbsanalysen sowie Erstellung
+              von Berichten
             </ListItem>
             <ListItem>
-            Mitgestaltung von Vertriebsaktivitäten und Vertriebspräsentationen
+              Mitgestaltung von Vertriebsaktivitäten und Vertriebspräsentationen
             </ListItem>
-            <ListItem>
-            Mitarbeit bei Vertriebsprozessen
-            </ListItem>
+            <ListItem>Mitarbeit bei Vertriebsprozessen</ListItem>
           </UlList>
           <Spacer size="s" />
           <Heading>Dein Profil</Heading>
           <UlList>
             <ListItem>
-            Du absolvierst aktuell erfolgreich ein kaufmännisches Studium (z. B. BWL, VWL, oder Wirtschaftsinformatik) und bist IT-affin
+              Du absolvierst aktuell erfolgreich ein kaufmännisches Studium (z.
+              B. BWL, VWL, oder Wirtschaftsinformatik) und bist IT-affin
             </ListItem>
             <ListItem>
-            Du hast mindestens 16h / Woche Zeit und bist noch mindestens 1 Jahr immatrikuliert
+              Du hast mindestens 16h / Woche Zeit und bist noch mindestens 1
+              Jahr immatrikuliert
             </ListItem>
             <ListItem>
-            Du hast Lust auf spannende Aufgaben und Interesse am Vertrieb
+              Du hast Lust auf spannende Aufgaben und Interesse am Vertrieb
             </ListItem>
             <ListItem>
-            Du verfügst über sichere Kenntnisse in Office, insbesondere Powerpoint und Excel
+              Du verfügst über sichere Kenntnisse in Office, insbesondere
+              Powerpoint und Excel
             </ListItem>
             <ListItem>
-            Du kommunizierst selbstbewusst und klar in fließendem Deutsch und Englisch, weitere Fremdsprachen (insbesondere Französisch) sind von Vorteil
+              Du kommunizierst selbstbewusst und klar in fließendem Deutsch und
+              Englisch, weitere Fremdsprachen (insbesondere Französisch) sind
+              von Vorteil
             </ListItem>
             <ListItem>
-            Dich zeichnet eine selbstständige Arbeitsweise mit guter analytischer Auffassungsgabe aus
+              Dich zeichnet eine selbstständige Arbeitsweise mit guter
+              analytischer Auffassungsgabe aus
             </ListItem>
           </UlList>
           <Spacer size="s" />
@@ -99,22 +105,26 @@ const StudentJob = () => {
             <ListItem>Flache Hierarchien und kurze Entscheidungswege</ListItem>
             <ListItem>Leistungsgerechte Vergütung</ListItem>
             <ListItem>
-            Flexible Arbeitszeiten, angepasst an Dein Studium, Home-Office Anteile nach Absprache möglich 
+              Flexible Arbeitszeiten, angepasst an Dein Studium, Home-Office
+              Anteile nach Absprache möglich
             </ListItem>
             <ListItem>
-            Spannende, innovative und sehr internationale Arbeitsumgebung
+              Spannende, innovative und sehr internationale Arbeitsumgebung
             </ListItem>
             <ListItem>
-            Enge Zusammenarbeit mit einem sympathischen, professionellen und leidenschaftlichen Team 
+              Enge Zusammenarbeit mit einem sympathischen, professionellen und
+              leidenschaftlichen Team
             </ListItem>
             <ListItem>
-            Wir leben eine offene Feedbackkultur, um uns stets weiterzuentwickeln
+              Wir leben eine offene Feedbackkultur, um uns stets
+              weiterzuentwickeln
             </ListItem>
           </UlList>
           <Spacer size="s" />
           <Heading>Kontakt</Heading>
           <Paragraph>
-          Bitte sende Deine vollständigen Bewerbungsunterlagen, inkl. deines möglichem Startdatums an:
+            Bitte sende Deine vollständigen Bewerbungsunterlagen, inkl. deines
+            möglichem Startdatums an:
           </Paragraph>
           <Paragraph>
             <LinkComponent
@@ -125,7 +135,8 @@ const StudentJob = () => {
             </LinkComponent>
           </Paragraph>
           <Paragraph>
-          Für Rückfragen steht Dir unsere HR Managerin, Isabella Wagner, gern unter +49 151 46156294 zur Verfügung.
+            Für Rückfragen steht Dir unsere HR Managerin, Isabella Wagner, gern
+            unter +49 151 46156294 zur Verfügung.
           </Paragraph>
           <Paragraph>Wir freuen uns auf Deine Bewerbung!</Paragraph>
           <Spacer size="s" />
