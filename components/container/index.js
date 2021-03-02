@@ -1,6 +1,6 @@
 import styles from "./style.module.css";
 import cn from "classnames";
-const Container = ({ children, display, width, height, margin, align }) => {
+const Container = ({ children, display, width, height, margin, align, gap }) => {
   return (
     <div
       className={cn(styles.container, {
@@ -8,7 +8,8 @@ const Container = ({ children, display, width, height, margin, align }) => {
         [styles[`container--${width}`]]: width,
         [styles[`container--${height}`]]: height,
         [styles[`container--${margin}`]]: margin,
-        [styles[`container--${align}`]]: align
+        [styles[`container--${align}`]]: align,
+        [styles[`container--${gap}`]]: gap
       })}
     >
       {children}

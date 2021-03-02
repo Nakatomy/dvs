@@ -61,3 +61,12 @@ color: #0075FF;
     }
 }
 
+.link--flex {
+    display: flex;
+    width: fit-content;
+}
+
+.link--fontW600 {
+    font-weight: 600;
+}
+
