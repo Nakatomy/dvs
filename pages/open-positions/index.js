@@ -8,7 +8,8 @@ import {
   Button,
   LinkComponent,
   UlList,
-  ListItem
+  ListItem,
+  Card,
 } from "components";
 
 const OpenPositions = () => {
@@ -20,30 +21,27 @@ const OpenPositions = () => {
         <Container width="full-width" margin="marginTop96">
           <Title>Open Positions</Title>
         </Container>
+        <Container display="gridCards" width="full-width">
+          {/* Column 1 */}
+          <Container display="gridCard">
+            <Card
+              heading="Werkstudent (m/w/d) im Marketing und Vertrieb gesucht!"
+              date="Feb 26"
+              href="/werkstudent-im-marketing-und-vertrieb"
+            ></Card>
+          </Container>
+
+          {/* Column 2 */}
+          <Container display="gridCard">
+            <Card
+              heading="Werkstudent (m/w/d)"
+              date="Feb 26"
+              href="/werkstudent-sales"
+            ></Card>
+          </Container>
+        </Container>
+        <Spacer size="m" />
         <Container width="full-width">
-          <Spacer size="s" />
-          <UlList listStyle="list-style-none">
-            <ListItem>
-              <LinkComponent
-                color="blue"
-                href="/justitiar-syndikus-it-recht"
-                heading="heading"
-              >
-                Justitiar / Syndikus IT-Recht (m/w/d)
-              </LinkComponent>
-            </ListItem>
-            <Spacer size="s" />
-            <ListItem>
-              <LinkComponent
-                href="/werkstudent-im-marketing-und-vertrieb"
-                color="blue"
-                heading="heading"
-              >
-                Werkstudent (m/w/d) im Marketing und Vertrieb gesucht!{" "}
-              </LinkComponent>
-            </ListItem>
-          </UlList>
-          <Spacer size="m" />
           <Button
             href="/"
             title="Back to home page"
