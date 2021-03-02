@@ -11,7 +11,8 @@ import {
   Meta,
   UlList,
   ListItem,
-  ImageComponent
+  ImageComponent,
+  PositionClosed
 } from "components";
 import collegues from "images/colleagues-giving-fist-bump.png";
 
@@ -38,6 +39,7 @@ const Careers = () => {
         </Container>
         <Container width="normal-width" margin="marginTop96">
           <Title>Justitiar / Syndikus IT-Recht (m/w/d)</Title>
+          <PositionClosed />
         </Container>
         <Container width="normal-width">
           <Paragraph>
