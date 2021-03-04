@@ -24,7 +24,7 @@ const Card = ({
   return (
     <>
       <div className={styles.card}>
-        <ImageComponent src={src} margin="marginNone"></ImageComponent>
+        {/* <ImageComponent src={src} margin="marginNone"></ImageComponent> */}
         <Heading marginB="marginB12">{heading}</Heading>
         <div className={styles.card__date}>{date}</div>
         <GlobalCss />
