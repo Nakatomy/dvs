@@ -5,9 +5,11 @@
   border: 1px solid #e4ebf9;
   box-sizing: border-box;
   border-radius: 6px;
-  width: 220px;
+  width: fit-content;
+  padding: 12px;
   height: 40px;
   margin-bottom: 40px;
+  color:#001540;
 }
 
 .title {

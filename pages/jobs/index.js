@@ -18,10 +18,10 @@ import PropTypes from "prop-types";
 import { withTranslation } from "i18n";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 
-const OpenPositions = ({ t }) => {
+const Jobs = ({ t }) => {
   return (
     <>
-      <Meta title={"Open Positions" + " | Digital Vault Services"} />
+      <Meta title={"Jobs" + " | Digital Vault Services"} />
       <Header />
       <Section>
         <Container width="full-width" margin="marginTop96">
@@ -31,22 +31,22 @@ const OpenPositions = ({ t }) => {
           {/* Column 1 */}
           <Container display="gridCard">
             <Card
-              heading="Werkstudent (m/w/d) im Marketing und Vertrieb gesucht!"
+              heading="Werkstudent Marketing und Sales (m/w/d)"
               date="Feb 26"
               linkText={t("link")}
-              href="/open-positions/werkstudent-im-marketing-und-vertrieb"
+              href="/jobs/werkstudent-marketing-und-sales"
             ></Card>
           </Container>
 
           {/* Column 2 */}
           <Container display="gridCard">
             <Card
-              heading="Werkstudent (m/w/d)"
+              heading="Werkstudent Sales (m/w/d)"
               date="Feb 26"
               linkText={t("link")}
-              href="/open-positions/werkstudent-sales"
+              href="/jobs/werkstudent-sales"
             ></Card>
-         
+
           </Container>
         </Container>
         <Spacer size="m" />
@@ -65,12 +65,12 @@ const OpenPositions = ({ t }) => {
   );
 };
 
-OpenPositions.getInitialProps = async () => ({
-  namespacesRequired: ["positions"],
+Jobs.getInitialProps = async () => ({
+  namespacesRequired: ["jobs"],
 });
 
-OpenPositions.propTypes = {
+Jobs.propTypes = {
   t: PropTypes.func.isRequired,
 };
 
-export default withTranslation("positions")(OpenPositions);
+export default withTranslation("jobs")(Jobs);
