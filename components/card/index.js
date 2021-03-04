@@ -2,9 +2,17 @@ import styles from "./style.module.css";
 import cn from "classnames";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import LinkComponent from "components/link";
-import Heading from "components/heading";
+import { Heading, Button, ImageComponent } from "components";
 import { withStyles } from "@material-ui/core/styles";
-const Card = ({ heading, date, href }) => {
+import YoutubeVideo from "components/youtubeVideo";
+const Card = ({
+  heading,
+  date,
+  linkText,
+  href,
+  children,
+  src
+}) => {
   const GlobalCss = withStyles({
     "@global": {
       ".MuiSvgIcon-root": {
@@ -12,23 +20,19 @@ const Card = ({ heading, date, href }) => {
       },
     },
   })(() => null);
+
   return (
     <>
       <div className={styles.card}>
+        <ImageComponent src={src} margin="marginNone"></ImageComponent>
         <Heading marginB="marginB12">{heading}</Heading>
-        <span className={styles.card__date}>{date}</span>
-        <div className={styles["card__link--wrapper"]}>
-          <GlobalCss />
-          <LinkComponent
-            display="flex"
-            color="blue"
-            fontW="fontW600"
-            href={href}
-          >
-            View Details
-            <ArrowForwardIosIcon fontSize="small" />
-          </LinkComponent>
-        </div>
+        <div className={styles.card__date}>{date}</div>
+        <GlobalCss />
+        {children}
+        <Button display="text--only" type="link" href={href}>
+          {linkText}
+          <ArrowForwardIosIcon fontSize="small" />
+        </Button>
       </div>
     </>
   );

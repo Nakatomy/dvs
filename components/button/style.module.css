@@ -11,7 +11,9 @@
     line-height: 24px;
     width: max-content;
     text-decoration: none;
+    outline: none;
 }
+
 
 .btn--center {
 justify-self: center;
@@ -62,6 +64,16 @@ align-self: center;
 .btn--text-blue {
     color: #001540;
 
+}
+
+.btn--link {
+    color: #0075FF;
+    font-size: 16px;
+    border: 0;
+}
+
+.btn--link:focus {
+    box-shadow: none;
 }
 
 .btn--size-m {
