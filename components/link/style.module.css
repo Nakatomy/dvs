@@ -40,3 +40,33 @@ color: #0075FF;
       text-decoration: underline;
 }
 
+.link--heading {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0 0 32px;
+}
+
+@media screen and (max-width: 1365px) {
+    .link--heading {
+            font-size: 32px;
+    }
+}
+
+
+
+@media screen and (max-width: 760px) {
+    .link--heading {
+            font-size: 24px;
+    }
+}
+
+.link--flex {
+    display: flex;
+    width: fit-content;
+}
+
+.link--fontW600 {
+    font-weight: 600;
+}
+

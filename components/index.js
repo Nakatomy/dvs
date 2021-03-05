@@ -38,6 +38,8 @@ import FormTextArea from './formText'
 import ButtonForm from './buttonForm'
 import LeadNav from './leadNav'
 import Cover from './cover'
+import Card from './card'
+import PositionClosed from './positionClosed'
 
 
 
@@ -81,5 +83,7 @@ export {
     FormTextArea,
     ButtonForm,
     LeadNav,
-    Cover
+    Cover,
+    Card,
+    PositionClosed
 };

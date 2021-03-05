@@ -11,7 +11,8 @@ import {
   Meta,
   UlList,
   ListItem,
-  ImageComponent
+  ImageComponent,
+  PositionClosed
 } from "components";
 import collegues from "images/colleagues-giving-fist-bump.png";
 
@@ -20,15 +21,15 @@ const Careers = () => {
   return (
     <>
       <Meta
-        title="Justitiar / Syndikus IT-Recht (m/w/d)"
+        title={"Justitiar / Syndikus IT-Recht (m/w/d)" + " | Digital Vault Services"}
         desc="Wir sind ein junges, innovatives und schnell wachsendes
-            SaaS-Unternehmen mit solidem, teilweise internationalem
-            Gesellschafterhintergrund. Als IT-Dienstleister haben wir gemeinsam
-            mit 16 führenden nationalen und internationalen Partnern aus
-            Wirtschaft und Finanzindustrie unsere Plattform Guarantee Vault als
-            B2B-Lösung zur Erstellung, Abwicklung und sicheren Aufbewahrung
-            digitaler Garantien und Bürgschaften zur Marktreife entwickelt und
-            in Deutschland und Österreich gelauncht."
+              SaaS-Unternehmen mit solidem, teilweise internationalem
+              Gesellschafterhintergrund. Als IT-Dienstleister haben wir gemeinsam
+              mit 16 führenden nationalen und internationalen Partnern aus
+              Wirtschaft und Finanzindustrie unsere Plattform Guarantee Vault als
+              B2B-Lösung zur Erstellung, Abwicklung und sicheren Aufbewahrung
+              digitaler Garantien und Bürgschaften zur Marktreife entwickelt und
+              in Deutschland und Österreich gelauncht."
         image="https://digitalvaultservices.com/_next/static/images/colleagues-giving-fist-bump-fce3aa52e8f30c9d822e48d6194f5801.png"
       />
       <Header />
@@ -38,6 +39,7 @@ const Careers = () => {
         </Container>
         <Container width="normal-width" margin="marginTop96">
           <Title>Justitiar / Syndikus IT-Recht (m/w/d)</Title>
+          <PositionClosed />
         </Container>
         <Container width="normal-width">
           <Paragraph>
@@ -49,7 +51,7 @@ const Careers = () => {
             B2B-Lösung zur Erstellung, Abwicklung und sicheren Aufbewahrung
             digitaler Garantien und Bürgschaften zur Marktreife entwickelt und
             in Deutschland und Österreich gelauncht.
-          </Paragraph>
+            </Paragraph>
           <Paragraph>
             Für unser weiteres Wachstum und die beschlossene Expansion nach
             Europa suchen wir ab sofort für unseren Standort Passau oder aus dem
@@ -57,7 +59,7 @@ const Careers = () => {
             Syndikusanwalt (m/w/d) mit fundierten juristischen Kenntnissen im
             Bereich Digitalisierung und der Besonderheiten des Trade
             Finance-Geschäftes.
-          </Paragraph>
+            </Paragraph>
           <Spacer size="s" />
           <Heading>Ihre Aufgaben</Heading>
           <UlList>
@@ -65,20 +67,20 @@ const Careers = () => {
               Erstellung eigener softwarespezifischer Verträge und Regularien
               sowie Verhandlung dieser mit potentiellen Kunden und Gremien,
               beides im In- und Ausland
-            </ListItem>
+              </ListItem>
             <ListItem>
               Bearbeitung datenschutzrechtlicher Themen und angrenzender
               juristischer Fachgebiete
-            </ListItem>
+              </ListItem>
             <ListItem>
               Juristische Begleitung aller Vertriebs- und Marketingaktivitäten
               des Unternehmens
-            </ListItem>
+              </ListItem>
             <ListItem>
               Beratung von Geschäftsführung und Aufsichtsrat sowie aller
               Fachabteilungen zu allen sonstigen rechtlichen Belangen, ggf.
               Koordination externer juristischer Unterstützung
-            </ListItem>
+              </ListItem>
           </UlList>
           <Spacer size="s" />
           <Heading>Ihr Profil</Heading>
@@ -87,31 +89,31 @@ const Careers = () => {
               Sie haben Ihr Studium der Rechtswissenschaften oder als
               Wirtschaftsjurist mit überdurchschnittlichem Ergebnis
               abgeschlossen
-            </ListItem>
+              </ListItem>
             <ListItem>
               Idealerweise verfügen Sie über Praxiserfahrung im IT- und
               Datenschutzrecht, vorzugs-weise belegt durch Promotion, LLM oder
               eine andere vergleichbare Zusatzqualifikation, sowie juristische
               Erfahrung im Bereich des Trade Finance und Compliance-Umfeld
-            </ListItem>
+              </ListItem>
             <ListItem>
               Verhandlungssicheres Englisch in Wort und Schrift
-            </ListItem>
+              </ListItem>
             <ListItem>
               Die Ausschreibung richtet sich insbesondere an Senior Associates
               oder Manager von Kanzleien sowie Syndikusanwälte der
               Finanzindustrie mit entsprechendem Tätigkeitsschwerpunkt
-            </ListItem>
+              </ListItem>
             <ListItem>
               Sie zeichnet Pragmatismus gepaart mit guter Kooperations- und
               Kommunikationsfähigkeit aus
-            </ListItem>
+              </ListItem>
             <ListItem>
               Sie wollen sich schnell und flexibel in neue und anspruchsvolle
               Sachverhalte einarbeiten und als Teil eines jungen, innovativen
               und internationalen Teams an unserem funktionierenden
               Geschäftsmodell teilhaben
-            </ListItem>
+              </ListItem>
           </UlList>
           <Spacer size="s" />
           <Heading>Unser Angebot</Heading>
@@ -119,35 +121,35 @@ const Careers = () => {
             Wir bieten eine unbefristete Vollzeitstelle in einem modernen Umfeld
             mit flachen Hierarchien, spannende Aufgaben an einem visionären
             Geschäftsmodell und ein tolles Team.
-          </Paragraph>
+            </Paragraph>
           <Paragraph>
             Warum es sich für Sie lohnt, uns eine Bewerbung zu schicken:
-          </Paragraph>
+            </Paragraph>
           <Spacer size="s" />
           <Heading>Wir bieten</Heading>
           <UlList>
             <ListItem>
               Hohe Eigenverantwortung, Gestaltungsspielraum und direktes
               Reporting an die Geschäftsführung
-            </ListItem>
+              </ListItem>
             <ListItem>Attraktive Dotierung plus Erfolgsbeteiligung</ListItem>
             <ListItem>
               Flexible Arbeitszeit mit auf Ihre persönliche Situation
               zugeschnittener Homeoffice- bzw. Präsenzsituation, die
               selbstverständlich auch familiäre Konstellationen berücksichtigt
-            </ListItem>
+              </ListItem>
             <ListItem>
               Spannende, innovative und sehr internationale Arbeitsumgebung
-            </ListItem>
+              </ListItem>
             <ListItem>
               Enge Zusammenarbeit mit einem sympathischen, professionellen und
               leidenschaftlichen Team
-            </ListItem>
+              </ListItem>
             <ListItem>Kurze Entscheidungswege</ListItem>
             <ListItem>
               Wir leben eine offene Feedbackkultur, um uns stets
               weiterzuentwickeln
-            </ListItem>
+              </ListItem>
           </UlList>
           <Paragraph>Werden Sie Teil unserer Erfolgsgeschichte!</Paragraph>
           <Spacer size="s" />
@@ -156,28 +158,28 @@ const Careers = () => {
             Bitte senden Sie ihre vollständigen Bewerbungsunterlagen mit Angabe
             des frühestmöglichen Eintrittstermins und Ihrer Gehaltsvorstellung
             direkt an unsere Geschäftsleitung:
-          </Paragraph>
+            </Paragraph>
           <Paragraph>
             <LinkComponent color="blue" href="mailto:careers@digitalvaultservices.com">
               careers@digitalvaultservices.com
-          </LinkComponent>
+            </LinkComponent>
           </Paragraph>
           <Paragraph>
             die Ihnen auch für Rückfragen unter +49 175 8867 867 gern zur
             Verfügung steht.
-          </Paragraph>
+            </Paragraph>
           <Paragraph>
             Sperrvermerke werden selbstverständlich beachtet.
-          </Paragraph>
+            </Paragraph>
           <Spacer size="s" />
-          <Button
+          {/* <Button
             href="/"
             title="Zurück zur Startseite"
             size="size-l"
             textColor="text-white"
             background="blue"
             border="border-white"
-          />
+          /> */}
         </Container>
       </Section>
     </>

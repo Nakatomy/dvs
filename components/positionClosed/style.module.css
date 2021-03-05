@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  background: #f6f9ff;
+  border: 1px solid #e4ebf9;
+  box-sizing: border-box;
+  border-radius: 6px;
+  width: fit-content;
+  padding: 12px;
+  height: 40px;
+  margin-bottom: 40px;
+  color:#001540;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #001540;
+  margin: 0 0 0 12px;
+}
