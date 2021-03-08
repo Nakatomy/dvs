@@ -2,7 +2,7 @@ import styles from "./style.module.css";
 import cn from "classnames";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import LinkComponent from "components/link";
-import { Heading, Button, ImageComponent } from "components";
+import { Heading, Button, ImageComponent, ButtonLink } from "components";
 import { withStyles } from "@material-ui/core/styles";
 import YoutubeVideo from "components/youtubeVideo";
 const Card = ({
@@ -29,10 +29,7 @@ const Card = ({
         <div className={styles.card__date}>{date}</div>
         <GlobalCss />
         {children}
-        <Button display="text--only" type="link" href={href}>
-          {linkText}
-          <ArrowForwardIosIcon fontSize="small" />
-        </Button>
+        <ButtonLink linkText={linkText} href={href} />
       </div>
     </>
   );

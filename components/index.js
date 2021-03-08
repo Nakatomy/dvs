@@ -40,7 +40,7 @@ import LeadNav from './leadNav'
 import Cover from './cover'
 import Card from './card'
 import PositionClosed from './positionClosed'
-
+import ButtonLink from './buttonLink'
 
 
 export {
@@ -85,5 +85,6 @@ export {
     LeadNav,
     Cover,
     Card,
-    PositionClosed
+    PositionClosed,
+    ButtonLink
 };

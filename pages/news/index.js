@@ -12,8 +12,8 @@ import {
   LinkComponent,
   YoutubeVideo,
   ImageComponent,
-  ButtonWrapper
-
+  ButtonWrapper,
+  ButtonLink
 } from "components";
 import ludgerPhoto from "images/team/MG_Janssen_Ludger_HF.jpg";
 import svenPhoto from "images/team/_MG_Matzelsberger-Sven-QF.jpg";
@@ -30,6 +30,8 @@ import annaPhoto from "images/team/_MG_Mitrovic-Anna-QF.jpg";
 import udoPhoto from "images/team/_MG_Hohlschuh-Udo-QF.jpg";
 import pressRelease from "images/news.jpg";
 import whitepaper from "images/whitepaper/revolutionising-guarantees.png";
+
+import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import styles from "./style.module.css";
 import PropTypes from "prop-types";
 import { i18n, withTranslation } from "i18n";
@@ -37,9 +39,7 @@ import { i18n, withTranslation } from "i18n";
 const News = ({ t }) => {
   return (
     <>
-      <Meta
-        title={t("pageTitle") + " | Digital Vault Services"}
-      />
+      <Meta title={t("pageTitle") + " | Digital Vault Services"} />
       <Header />
       <Section>
         <Container width="full-width" margin="marginTop96">
@@ -68,10 +68,16 @@ const News = ({ t }) => {
         <Spacer size="m" />
         <Container display="grid" width="full-width">
           <GridItem>
-            <ImageComponent src={pressRelease} imgType="desktop"></ImageComponent>
+            <ImageComponent
+              src={pressRelease}
+              imgType="desktop"
+            ></ImageComponent>
           </GridItem>
           <GridItem>
-            <ImageComponent src={pressRelease} imgType="mobile"></ImageComponent>
+            <ImageComponent
+              src={pressRelease}
+              imgType="mobile"
+            ></ImageComponent>
             <Title>{t("newsTitle2")}</Title>
             <Heading>{t("newsSubtitle2")}</Heading>
             <Paragraph>{t("newsParagraph3")}</Paragraph>
@@ -93,19 +99,28 @@ const News = ({ t }) => {
 
         <Container display="grid" width="full-width">
           <GridItem>
-            <YoutubeVideo src="https://www.youtube.com/embed/_X0rziclDpI?start=385" videoType="desktop" />
+            <YoutubeVideo
+              src="https://www.youtube.com/embed/_X0rziclDpI?start=385"
+              videoType="desktop"
+            />
           </GridItem>
           <GridItem>
-            <YoutubeVideo src="https://www.youtube.com/embed/_X0rziclDpI?start=385" videoType="mobile" />
+            <YoutubeVideo
+              src="https://www.youtube.com/embed/_X0rziclDpI?start=385"
+              videoType="mobile"
+            />
             <Title>{t("newsTitle")}</Title>
             <Heading>{t("newsSubtitle")}</Heading>
             <Paragraph>{t("newsParagraph1")}</Paragraph>
-            <Paragraph>
+            {/* <Paragraph>
               {t("newsParagraph2-1")}
               <LinkComponent href="./contacts" color="blue">
-                {t("newsParagraph2-2")}
+                {t("newsParagraph2")}
               </LinkComponent>
-            </Paragraph>
+            </Paragraph> */}
+
+            <ButtonLink  linkText={t("newsParagraph2")} href="/contacts">
+            </ButtonLink>
           </GridItem>
         </Container>
       </Section>
