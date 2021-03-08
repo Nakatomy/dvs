@@ -9,21 +9,21 @@ import ogImage from 'images/cover-image-w1560.png'
 const Meta = (props) => (
     <Head>
         <title>{props.title}</title>
-        <meta name="description" content={props.desc} />
+        {/* <meta name="description" content={props.desc} /> */}
         <meta property="og:type" content="website" />
-        <meta name="og:title" property="og:title" content={props.title} />
-        <meta name="og:description" property="og:description" content={props.desc} />
+        <meta name="title" property="og:title" content={props.title} />
+        <meta name="description" property="og:description" content={props.desc} />
         <meta property="og:site_name" content="Digital Vault Services" />
         <meta property="og:url" content={`${props.url}`} />
         <meta name="article:published_time" property="article:published_time" content={`${props.publishDate}`} />
 
         {
             props.image ? (
-                <meta property="og:image" content={`${props.image}`} />
+                <meta name="image" property="og:image" content={`${props.image}`} />
                 // <meta property="og:image:width" content="1200" />,
                 // <meta property="og:image:height" content="675" />
             ) : (
-                    <meta property="og:image" content={`'https://digitalvaultservices.com/'+ ${ogImage}`} />
+                    <meta name="image" property="og:image" content={`'https://digitalvaultservices.com/'+ ${ogImage}`} />
                     // <meta property="og:image:width" content="1200" />,
                     // <meta property="og:image:height" content="675" />
                 )
