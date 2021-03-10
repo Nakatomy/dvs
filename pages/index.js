@@ -405,7 +405,7 @@ function HomePage({ t }) {
             <Title>{t("newsTitle")}</Title>
             <Heading>{t("newsSubtitle")}</Heading>
             <Paragraph>{t("newsParagraph1")}</Paragraph>
-            <ButtonLink linkText= {t("newsParagraph2")}href="/contacts"/>
+            <ButtonLink linkText={t("newsParagraph2")} href="/contacts" />
           </GridItem>
 
           <GridItem>
@@ -416,7 +416,8 @@ function HomePage({ t }) {
             <Title>{t("newsTitle2")}</Title>
             <Heading>{t("newsSubtitle2")}</Heading>
             <Paragraph>{t("newsParagraph3")}</Paragraph>
-            <Paragraph><LinkComponent href="/whitepaper" color="blue">{t("ButtonNameReadMore")}</LinkComponent></Paragraph>
+            <ButtonLink linkText={t("ButtonNameReadMore")} href="/whitepaper" />
+
           </GridItem>
 
         </Container>
