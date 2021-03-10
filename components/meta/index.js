@@ -10,11 +10,11 @@ const Meta = (props) => (
     <Head>
         <title>{props.title}</title>
         {/* <meta name="description" content={props.desc} /> */}
-        <meta property="og:type" content="website" />
+        <meta name="type" property="og:type" content="website" />
         <meta name="title" property="og:title" content={props.title} />
         <meta name="description" property="og:description" content={props.desc} />
-        <meta property="og:site_name" content="Digital Vault Services" />
-        <meta property="og:url" content={`${props.url}`} />
+        <meta name="site_name" property="og:site_name" content="Digital Vault Services" />
+        <meta name="url" property="og:url" content={`${props.url}`} />
         <meta name="article:published_time" property="article:published_time" content={`${props.publishDate}`} />
 
         {

@@ -36,7 +36,7 @@ const Services = ({ t }) => {
           </GridItem>
           <ImageComponent margin="marginNone" src={i18n.language === "de" ? servicesDe : servicesEn}></ImageComponent>
 
-          <GridItem>
+          <GridItem margin="marginNone">
             <Heading>{t("heading1")}</Heading>
             <UlList>
               <ListItem>{t("listItem1")}</ListItem>
@@ -44,7 +44,7 @@ const Services = ({ t }) => {
             </UlList>
           </GridItem>
 
-          <GridItem>
+          <GridItem margin="marginNone">
             <Heading>{t("heading2")}</Heading>
             <UlList>
               <ListItem>{t("listItem3")}</ListItem>
@@ -52,7 +52,7 @@ const Services = ({ t }) => {
             </UlList>
           </GridItem>
 
-          <GridItem>
+          <GridItem margin="marginNone">
             <Heading>{t("heading3")}</Heading>
             <UlList>
               <ListItem>{t("listItem5")}</ListItem>
@@ -60,7 +60,7 @@ const Services = ({ t }) => {
             </UlList>
           </GridItem>
 
-          <GridItem>
+          <GridItem margin="marginNone">
             <Heading>{t("heading4")}</Heading>
             <UlList>
               <ListItem>{t("listItem7")}</ListItem>

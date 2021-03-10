@@ -17,7 +17,8 @@ import {
   YoutubeVideo,
   Testimonials,
   Testimonial,
-  Spacer
+  Spacer,
+  ButtonLink
 } from "components";
 // import Link from "next/link";
 import bayernLbLogo from "images/partners/partner-bayernlb.svg";
@@ -35,6 +36,7 @@ import { withTranslation } from "../i18n";
 import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 import * as Scroll from 'react-scroll';
 import { Link, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
@@ -403,7 +405,7 @@ function HomePage({ t }) {
             <Title>{t("newsTitle")}</Title>
             <Heading>{t("newsSubtitle")}</Heading>
             <Paragraph>{t("newsParagraph1")}</Paragraph>
-            <Paragraph>{t("newsParagraph2-1")}<LinkComponent href="/contacts" color="blue">{t("newsParagraph2-2")}</LinkComponent></Paragraph>
+            <ButtonLink linkText= {t("newsParagraph2")}href="/contacts"/>
           </GridItem>
 
           <GridItem>
