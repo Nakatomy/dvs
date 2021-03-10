@@ -45,6 +45,7 @@ export default [
 		en: 'Help',
 		de: 'Hilfe',
 		items: [
+			{ id: 'faq', en: 'FAQ', de: 'FAQ', href: '/faq' },
 			{ id: 'privacy-policy', en: 'Privacy Policy', de: 'Datenschutz', href: '/privacy-policy' },
 			{ id: 'imprint', en: 'Imprint', de: 'Impressum', href: '/imprint' }
 		]

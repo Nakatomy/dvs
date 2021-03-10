@@ -40,10 +40,12 @@ import LeadNav from './leadNav'
 import Cover from './cover'
 import Card from './card'
 import PositionClosed from './positionClosed'
+import FaqItem from './faqItem'
 
 
 
 export {
+    FaqItem,
     Meta,
     Header,
     Footer,
