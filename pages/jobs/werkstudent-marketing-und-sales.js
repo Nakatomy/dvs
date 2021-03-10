@@ -81,7 +81,7 @@ const StudentJob = () => {
               Medienwissenschaften, Marketing oder etwas Vergleichbares
               </ListItem>
             <ListItem>
-              Du hast mindestens 15h / Woche Zeit und bist noch mindestens 1
+              Du hast mindestens 16h / Woche Zeit und bist noch mindestens 1
               Jahr immatrikuliert
               </ListItem>
             <ListItem>
@@ -106,7 +106,7 @@ const StudentJob = () => {
           <Paragraph>Darum lohnt es sich an Board zu kommen:</Paragraph>
           <UlList>
             <ListItem>Flache Hierarchien und kurze Entscheidungswege</ListItem>
-            <ListItem>Leistungsgerechte Vergütungg</ListItem>
+            <ListItem>Leistungsgerechte Vergütung</ListItem>
             <ListItem>
               Flexible Arbeitszeiten, angepasst an Dein Studium, Home-Office
               Anteile nach Absprache möglich
