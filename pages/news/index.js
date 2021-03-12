@@ -32,7 +32,7 @@ import pressRelease from "images/news.jpg";
 import whitepaper from "images/whitepaper/revolutionising-guarantees.png";
 
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
-import styles from "./style.module.css";
+// import styles from "./style.module.css";
 import PropTypes from "prop-types";
 import { i18n, withTranslation } from "i18n";
 
