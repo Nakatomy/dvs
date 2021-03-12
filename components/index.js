@@ -41,6 +41,7 @@ import Cover from './cover'
 import Card from './card'
 import PositionClosed from './positionClosed'
 import ButtonLink from './buttonLink'
+import Figure from './figure'
 
 
 export {
@@ -86,5 +87,6 @@ export {
     Cover,
     Card,
     PositionClosed,
-    ButtonLink
+    ButtonLink,
+    Figure
 };
