@@ -36,20 +36,20 @@ const Article = ({ t }) => {
                 zumindest zwei Dinge im Gedächtnis bleiben: zum einen natürlich
                 ein Virus, das uns gezwungen hat, unser soziales Leben auf ein
                 Minimum zu reduzieren und zum anderen der durch Social
-                Distancing be-schleunigte Trend zur Digitalisierung. Vieles, was
+                Distancing beschleunigte Trend zur Digitalisierung. Vieles, was
                 zuvor papierhaft abgewickelt wurde, wanderte in die virtuelle
                 Sphäre und ermöglichte dadurch entsprechende Effizienzgewinne.
               </Paragraph>
               <Paragraph>
-                Ein Beispiel dafür ist das Ge-schäft mit Garantien. Nach wie vor
-                ist die Fehleinschät-zung weit verbreitet, dass Bürgschaften
+                Ein Beispiel dafür ist das Geschäft mit Garantien. Nach wie vor
+                ist die Fehleinschätzung weit verbreitet, dass Bürgschaften
                 immer papierhaft ausgestellt und mit einer Unterschrift
                 versehen sein müssen. Tatsächlich können solche in Deutschland
                 und Österreich immer auch digital ausgestellt und abgewickelt
                 werden, es wurde halt kaum praktiziert.
               </Paragraph>
             </Container>
-            <Figure caption="Ludgar Janßen ist Geschäftsführer bei Digital Vault Services">
+            <Figure caption="Ludger Janßen ist Geschäftsführer bei Digital Vault Services">
               <ImageComponent
                 src={ludgarJanssen}
                 margin="marginNone"
@@ -71,7 +71,7 @@ const Article = ({ t }) => {
             Der Guarantee Vault ist das zentrale Register für die Erstellung und
             sichere Aufbewahrung digitaler Avale. Zudem ermöglicht es den
             jeweiligen Beteiligten Avisierung, Freigabe, Änderung und Rückgabe
-            ihrer Garan-tien. Eine nahtlose, digitale Anbindung bestehender
+            ihrer Garantien. Eine nahtlose, digitale Anbindung bestehender
             Bank- oder Versicherungsportale sowie von Multibank-Plattformen
             oder ERP-Systemen ist über APIs möglich. Über API oder Webbrowser
             kann auch der Begünstigte Zugriff auf das Zentralregister erhalten.
@@ -88,7 +88,7 @@ const Article = ({ t }) => {
 
           <Paragraph>
             <b>Janßen: </b> Der Fokus unserer Aktivitäten liegt nicht auf „Tech“. Es geht nicht
-            um die Umsetzung einer tech-nischen Idee, sondern um die Lösung
+            um die Umsetzung einer technischen Idee, sondern um die Lösung
             eines konkreten Problems des täglichen Geschäftslebens: Wie wickle
             ich Garantien so effizient und transparent wie möglich ab, während
             alle Transaktionsbeteiligten gleichzeitig eingebunden sind?
@@ -96,7 +96,7 @@ const Article = ({ t }) => {
           <Spacer size="s" />
           <Paragraph fontStyle="italic">
             <b>TreasuryLog: </b> Stoßen Sie dabei nicht auf Vorbehalte? Sind Unternehmen wirklich
-            bereit, die papierhafte Ab-wicklung aufzugeben?
+            bereit, die papierhafte Abwicklung aufzugeben?
           </Paragraph>
 
           <Paragraph>
@@ -122,7 +122,7 @@ const Article = ({ t }) => {
             Avalbegünstigter bietet die Nutzung des Vaults schon ab einigen
             wenigen Avalen im Jahr erhebliche Vorteile. Wichtig ist mir auch zu
             betonen, dass es sich dabei neben Bankavalen und
-            Kautionsversiche-rungen der Kreditversicherer insbesondere auch um
+            Kautionsversicherungen der Kreditversicherer insbesondere auch um
             Konzernavale handeln kann.
           </Paragraph>
           <Spacer size="s" />
@@ -131,13 +131,13 @@ const Article = ({ t }) => {
           </Paragraph>
 
           <Paragraph>
-            <b>Janßen: </b> Zunächst sind ganz erhebliche Effizienzge-winne und
-            Kosteneinspareffekte zu nennen. Nie-mand beschäftigt sich gerne mit
-            Papierkrieg. Wir ge-hen gegenüber dem Papierprozess von einem
-            Ge-samteffekt von durchschnittlich 35 Prozent für jeden der
+            <b>Janßen: </b> Zunächst sind ganz erhebliche Effizienzgewinne und
+            Kosteneinspareffekte zu nennen. Niemand beschäftigt sich gerne mit
+            Papierkrieg. Wir gehen gegenüber dem Papierprozess von einem
+            Gesamteffekt von durchschnittlich 35 Prozent für jeden der
             Beteiligten aus. Zusätzlich werden durch die nahtlose
-            Datenübermittlung Fehlerquellen mini-miert, die Prozesstransparenz
-            erhöht und die Ab-wicklung insgesamt signifikant beschleunigt.
+            Datenübermittlung Fehlerquellen minimiert, die Prozesstransparenz
+            erhöht und die Abwicklung insgesamt signifikant beschleunigt.
           </Paragraph>
           <Spacer size="s" />
           <Paragraph fontStyle="italic">
@@ -149,8 +149,8 @@ const Article = ({ t }) => {
             <b>Janßen: </b> Es gibt grundsätzlich für keinen der Avalbeteiligten technische
             Mindeststandards. Zugang zum Guarantee Vault und die Nutzung
             verschiedener digitaler Vorteile sind für jeden bereits mittels der
-            gängi-gen Webbrowser möglich. Zur Nutzung aller Vorteile des Vaults
-            sollte sich ein Avalauftraggeber jedoch di-gital an den Vault
+            gängigen Webbrowser möglich. Zur Nutzung aller Vorteile des Vaults
+            sollte sich ein Avalauftraggeber jedoch digital an den Vault
             anbinden. Dazu kann er sich direkt an uns wenden oder an seine
             Kreditversicherer oder Banken – hier sind wir mit vielen
             hinsichtlich Anbindung an den Guarantee Vault im Gespräch bzw.
@@ -174,7 +174,7 @@ const Article = ({ t }) => {
             Begünstigten zu erwartenden Avalmengen grundsätzlich kostenlos.
             Ehrlicherweise profitiert er von der digitalen Umstellung sofort und
             ganz erheblich. Avalauftraggeber haben die Möglichkeit, zwischen
-            einem Starterpaket und drei unter-schiedlichen, mengenabhängig
+            einem Starterpaket und drei unterschiedlichen, mengenabhängig
             gestaffelten, sogenannten Bundles, zu wählen. Beim Starterpaket
             erfolgt der Zugang zunächst per Webbrowser, eine API kann
             problemlos über ein Bundle zugebucht werden. Beim Starterpaket fällt
@@ -182,7 +182,7 @@ const Article = ({ t }) => {
             sämtliche Services beinhaltet, inklusive künftiger Änderungen,
             Verlängerungen oder Rückgabe des Avals. Alle Bundles beinhalten in
             ihrem Paketpreis neben einem professionellen Onboarding auch die
-            kostenlose API-An-bindung an den Vault, inklusive kostenloser
+            kostenlose API-Anbindung an den Vault, inklusive kostenloser
             Abwicklung einer fest vereinbarten Avalmenge. Lediglich die Kosten
             der internen API-Erstellung auf Seiten des Auftraggebers kommen noch
             hinzu.
@@ -191,12 +191,12 @@ const Article = ({ t }) => {
 
           <Paragraph fontStyle="italic">
             <b>TreasuryLog: </b> Welche Garantieinstrumente und welche Märkte bedienen Sie –
-            weltweit oder im deutsch-sprachigen Raum?
+            weltweit oder im deutschsprachigen Raum?
           </Paragraph>
 
           <Paragraph>
             <b>Janßen: </b> Wir decken alle direkten Bürgschaften und Garantien ab, das heißt
-            Bankavale, Kautionsversi-cherungen und Konzernbürgschaften. Die
+            Bankavale, Kautionsversicherungen und Konzernbürgschaften. Die
             deutlich komplexeren und juristisch anspruchsvolleren indirekten
             Avale sowie Standby Letters of Credit werden zu einem späteren
             Zeitpunkt folgen. Nach erfolgreicher Einführung im
@@ -216,7 +216,7 @@ const Article = ({ t }) => {
             Sicherheitsstandards. Dabei garantieren wir die auch von Banken und
             Kreditversicherungen bekannte permanente Verfügbarkeit von
             mindestens 99,5 Prozent. Ohne Gewährleistung dieses Levels würden
-            wir von den mit uns zusammenarbei-tenden nationalen und
+            wir von den mit uns zusammenarbeitenden nationalen und
             internationalen Banken und Kreditversicherungen auch gar nicht als
             Partner akzeptiert. Darüber hinaus läuft zurzeit auch unsere
             Zertifizierung nach ISO 27001, was wiederum die Einhaltung diverser
