@@ -19,6 +19,8 @@ import {
 import PropTypes from "prop-types";
 import { i18n, withTranslation } from "i18n";
 import ludgarJanssen from "images/ludgar-janssen.png";
+import costSavings from "images/fully-digitized-guarantees/savings-digitization-of-the-guarantees.png"
+import platformChannels from "images/fully-digitized-guarantees/platform-channels.png"
 const Article = ({ t }) => {
   return (
     <>
@@ -78,31 +80,27 @@ const Article = ({ t }) => {
           <Heading>
             TreasuryLog sprach mit Ludger Janßen, dem Ge-schäftsführer der DVS
           </Heading>
-          <Paragraph fontStyle="italic" fontWeight="bold">
-            TreasuryLog:
-          </Paragraph>
+          <Spacer size="s" />
           <Paragraph fontStyle="italic">
-            FinTechs sind ja in aller Munde. Mit Ih-rem haben Sie jetzt das
+            <b>TreasuryLog: </b> FinTechs sind ja in aller Munde. Mit Ih-rem haben Sie jetzt das
             Aval-Geschäft im Visier.
           </Paragraph>
-          <Paragraph fontWeight="bold">Jansen:</Paragraph>
+
           <Paragraph>
-            Der Fokus unserer Aktivitäten liegt nicht auf „Tech“. Es geht nicht
+            <b>Janßen: </b> Der Fokus unserer Aktivitäten liegt nicht auf „Tech“. Es geht nicht
             um die Umsetzung einer tech-nischen Idee, sondern um die Lösung
             eines konkre-ten Problems des täglichen Geschäftslebens: Wie wickle
             ich Garantien so effizient und transparent wie möglich ab, während
             alle Transaktionsbeteiligten gleichzeitig eingebunden sind?
           </Paragraph>
-          <Paragraph fontStyle="italic" fontWeight="bold">
-            TreasuryLog:
-          </Paragraph>
+          <Spacer size="s" />
           <Paragraph fontStyle="italic">
-            Stoßen Sie dabei nicht auf Vorbehalte? Sind Unternehmen wirklich
+            <b>TreasuryLog: </b> Stoßen Sie dabei nicht auf Vorbehalte? Sind Unternehmen wirklich
             bereit, die papierhafte Ab-wicklung aufzugeben?
           </Paragraph>
-          <Paragraph fontWeight="bold">Janßen:</Paragraph>
+
           <Paragraph>
-            Wichtig war die juristisch eindeutige Aufar-beitung. Der Zwang zum
+            <b>Janßen: </b> Wichtig war die juristisch eindeutige Aufar-beitung. Der Zwang zum
             papierhaften Ausstellen und Unterschreiben ist in vielen Ländern
             bereits vor Jahren für den Wirtschaftsverkehr zwischen Unter-nehmen
             eingeschränkt oder abgeschafft worden. So können in Deutschland und
@@ -112,15 +110,13 @@ const Article = ({ t }) => {
             gründliche juristische Analyse durch, wobei wir durch internationale
             Großkanzlei-en unterstützt werden.
           </Paragraph>
-          <Paragraph fontStyle="italic" fontWeight="bold">
-            TreasuryLog:
-          </Paragraph>
+          <Spacer size="s" />
           <Paragraph fontStyle="italic">
-            Wie sieht der typische Kunde von Digi-tal Vault Services aus?
+            <b>TreasuryLog: </b> Wie sieht der typische Kunde von Digi-tal Vault Services aus?
           </Paragraph>
-          <Paragraph fontWeight="bold">Janßen:</Paragraph>
+
           <Paragraph>
-            Ganz grundsätzlich steht der Guarantee Vault allen interessierten
+            <b>Janßen: </b> Ganz grundsätzlich steht der Guarantee Vault allen interessierten
             Unternehmen jeglicher Größe und Branchen offen, richtet sich aber
             natur-gemäß an Firmen mit nennenswertem Avalgeschäft. Als
             Avalbegünstigter bietet die Nutzung des Vaults schon ab einigen
@@ -129,15 +125,13 @@ const Article = ({ t }) => {
             Kautionsversiche-rungen der Kreditversicherer insbesondere auch um
             Konzernavale handeln kann.
           </Paragraph>
-          <Paragraph fontStyle="italic" fontWeight="bold">
-            TreasuryLog:
-          </Paragraph>
+          <Spacer size="s" />
           <Paragraph fontStyle="italic">
-            Sie sprachen von Vorteilen. Welche sind das im Wesentlichen?
+            <b>TreasuryLog: </b> Sie sprachen von Vorteilen. Welche sind das im Wesentlichen?
           </Paragraph>
-          <Paragraph fontWeight="bold">Janßen:</Paragraph>
+
           <Paragraph>
-            Zunächst sind ganz erhebliche Effizienzge-winne und
+            <b>Janßen: </b> Zunächst sind ganz erhebliche Effizienzge-winne und
             Kosteneinspareffekte zu nennen. Nie-mand beschäftigt sich gerne mit
             Papierkrieg. Wir ge-hen gegenüber dem Papierprozess von einem
             Ge-samteffekt von durchschnittlich 35 Prozent für jeden der
@@ -145,16 +139,14 @@ const Article = ({ t }) => {
             Datenübermittlung Fehlerquellen mini-miert, die Prozesstransparenz
             erhöht und die Ab-wicklung insgesamt signifikant beschleunigt.
           </Paragraph>
-          <Paragraph fontStyle="italic" fontWeight="bold">
-            TreasuryLog:
-          </Paragraph>
+          <Spacer size="s" />
           <Paragraph fontStyle="italic">
-            Welche Voraussetzungen muss ein Unternehmen erfüllen, um bei DVS
+            <b>TreasuryLog: </b>  Welche Voraussetzungen muss ein Unternehmen erfüllen, um bei DVS
             anzudocken?
           </Paragraph>
-          <Paragraph fontWeight="bold">Janßen:</Paragraph>
+
           <Paragraph>
-            Es gibt grundsätzlich für keinen der Avalbe-teiligten technische
+            <b>Janßen: </b> Es gibt grundsätzlich für keinen der Avalbe-teiligten technische
             Mindeststandards. Zugang zum Guarantee Vault und die Nutzung
             verschiedener digi-taler Vorteile sind für jeden bereits mittels der
             gängi-gen Webbrowser möglich. Zur Nutzung aller Vorteile des Vaults
@@ -167,19 +159,17 @@ const Article = ({ t }) => {
             Vault aufgrund der vom Auftraggeber bereitgestellten Informationen
             automa-tisch den digitalen Zugang zu seinem Aval.
           </Paragraph>
-          <Figure caption="DVS bietet verschiedene Ein- und Ausgangs-kanäle auf und von  ihrer  Aval-Plattform.">
-            <ImageComponent src="#" />
-          </Figure>
+
+          <ImageComponent src={platformChannels} alt="DVS bietet verschiedene Ein- und Ausgangs-kanäle auf und von  ihrer  Aval-Plattform." />
+
           <Spacer size="s" />
-          <Paragraph fontStyle="italic" fontWeight="bold">
-            TreasuryLog:
+
+
+          <Paragraph fontStyle="italic"><b>TreasuryLog: </b>
+           Können Sie bereits Angaben zu den Kosten machen, die durch die
+          Auslagerung auf DVS entstehen?
           </Paragraph>
-          <Paragraph fontStyle="italic">
-            Können Sie bereits Angaben zu den Kosten machen, die durch die
-            Auslagerung auf DVS entstehen?
-          </Paragraph>
-          <Paragraph fontWeight="bold">Janßen:</Paragraph>
-          <Paragraph>
+          <Paragraph>   <b>Janßen: </b>
             Die Zusammenarbeit ist für die bei kleinen und mittelgroßen
             Begünstigten zu erwartenden Avalmengen grundsätzlich kostenlos.
             Ehrlicherweise profitiert er von der digitalen Umstellung sofort und
@@ -197,16 +187,15 @@ const Article = ({ t }) => {
             der internen API-Erstellung auf Seiten des Auftraggebers kommen noch
             hinzu.
           </Paragraph>
-          <Paragraph fontStyle="italic" fontWeight="bold">
-            TreasuryLog:
-          </Paragraph>
+          <Spacer size="s" />
+
           <Paragraph fontStyle="italic">
-            Welche Garantieinstrumente und wel-che Märkte bedienen Sie –
+            <b>TreasuryLog: </b> Welche Garantieinstrumente und wel-che Märkte bedienen Sie –
             weltweit oder im deutsch-sprachigen Raum?
           </Paragraph>
-          <Paragraph fontWeight="bold">Janßen:</Paragraph>
+
           <Paragraph>
-            Wir decken alle direkten Bürgschaften und Garantien ab, das heißt
+            <b>Janßen: </b> Wir decken alle direkten Bürgschaften und Garantien ab, das heißt
             Bankavale, Kautionsversi-cherungen und Konzernbürgschaften. Die
             deutlich komplexeren und juristisch anspruchsvolleren indi-rekten
             Avale sowie Standby Letters of Credit werden zu einem späteren
@@ -216,16 +205,14 @@ const Article = ({ t }) => {
             Frankreich und in die Schweiz ist bereits be-schlossen und für das
             vierte Quartal 2021 in Vorbe-reitung.
           </Paragraph>
-          <Paragraph fontStyle="italic" fontWeight="bold">
-            TreasuryLog:
-          </Paragraph>
+          <Spacer size="s" />
           <Paragraph fontStyle="italic">
-            Welche Sicherheits- und Verfügbarkeits-standards darf man von Ihrer
+            <b>TreasuryLog: </b> Welche Sicherheits- und Verfügbarkeits-standards darf man von Ihrer
             Plattform erwarten?
           </Paragraph>
-          <Paragraph fontWeight="bold">Janßen:</Paragraph>
+
           <Paragraph>
-            Der Guarantee Vault entspricht höchsten technischen
+            <b>Janßen: </b> Der Guarantee Vault entspricht höchsten technischen
             Sicherheitsstandards. Dabei garantieren wir die auch von Banken und
             Kreditversicherungen bekannte permanente Verfügbarkeit von
             mindes-tens 99,5 Prozent. Ohne Gewährleistung dieses Le-vels würden
@@ -236,11 +223,23 @@ const Article = ({ t }) => {
             Qualitäts- und Prozessstan-dards sicherstellt.
           </Paragraph>
 
-          <Figure caption="Durch die Digitalisierung von Avalen sollen Effizienz-gewinne von rund 40 Pro-zent realisierbar sein.">
-            <ImageComponent src="#" />
-          </Figure>
-          <Spacer size="m" />
 
+          <ImageComponent src={costSavings} alt="Durch die Digitalisierung von Avalen sollen Effizienz-gewinne von rund 40 Pro-zent realisierbar sein." />
+
+
+
+          <Paragraph>
+            {t("sourceArticleText")}
+            <LinkComponent
+              color="blue"
+              target="_blank"
+              href="sourceArticleLink"
+            >
+              {t("sourceArticleLink")}
+            </LinkComponent>
+          </Paragraph>
+
+          <Spacer size="s" />
           <Button
             href="/"
             title={t("ButtonBackToHomePage")}
