@@ -34,22 +34,22 @@ const Article = ({ t }) => {
               <Paragraph>
                 Wenn man in späterer Zeit an das Jahr 2020 zurückdenkt, werden
                 zumindest zwei Dinge im Gedächtnis bleiben: zum einen natürlich
-                ein Virus, das uns gezwungen hat, unser sozia les Leben auf ein
+                ein Virus, das uns gezwungen hat, unser soziales Leben auf ein
                 Minimum zu reduzieren und zum anderen der durch Social
                 Distancing be-schleunigte Trend zur Digitalisierung. Vieles, was
-                zuvor papierhaft abgewickelt wurde, wan-derte in die virtuelle
+                zuvor papierhaft abgewickelt wurde, wanderte in die virtuelle
                 Sphäre und ermöglichte dadurch entsprechende Effizienzgewinne.
               </Paragraph>
               <Paragraph>
                 Ein Beispiel dafür ist das Ge-schäft mit Garantien. Nach wie vor
-                ist die Fehleinschät-zung weit verbreitet, dass Bürg-schaften
-                immer papierhaft ausge-stellt und mit einer Unterschrift
+                ist die Fehleinschät-zung weit verbreitet, dass Bürgschaften
+                immer papierhaft ausgestellt und mit einer Unterschrift
                 versehen sein müssen. Tatsächlich können solche in Deutschland
-                und Österreich immer auch digital aus-gestellt und abgewickelt
+                und Österreich immer auch digital ausgestellt und abgewickelt
                 werden, es wurde halt kaum praktiziert.
               </Paragraph>
             </Container>
-            <Figure caption="Ludgar Janßenist Geschäftsführer bei Digital Vault Services">
+            <Figure caption="Ludgar Janßen ist Geschäftsführer bei Digital Vault Services">
               <ImageComponent
                 src={ludgarJanssen}
                 margin="marginNone"
@@ -58,38 +58,38 @@ const Article = ({ t }) => {
           </Container>
           <Spacer size="s" />
           <Paragraph>
-            In dieses Vakuum ist die Digital Vault Services GmbH (DVS) ge-stoßen
-            und hat ein Geschäftsmo-dell zur vollständigen Digitalisierung des
+            In dieses Vakuum ist die Digital Vault Services GmbH (DVS) gestoßen
+            und hat ein Geschäftsmodell zur vollständigen Digitalisierung des
             gesamten Aval-Managements etabliert. Das Trade-Finance-Fin-Tech hat
             in Zusammenarbeit mit dem bayerischen Bauunternehmen Lindner Group
-            KG, dem kanadi-sche IT-Provider GlobalTrade Corporation, 16
-            Un-ternehmen verschiedener Branchen mit intensivem Avalgeschäft,
+            KG, dem kanadische IT-Provider GlobalTrade Corporation, 16
+            Unternehmen verschiedener Branchen mit intensivem Avalgeschäft,
             sowie Kreditversicherern und Banken das SaaS-Produkt „Guarantee
             Vault“ entwickelt.
           </Paragraph>
           <Paragraph>
             Der Guarantee Vault ist das zentrale Register für die Erstellung und
             sichere Aufbewahrung digitaler Avale. Zudem ermöglicht es den
-            jeweiligen Beteiligten Avisie-rung, Freigabe, Änderung und Rückgabe
+            jeweiligen Beteiligten Avisierung, Freigabe, Änderung und Rückgabe
             ihrer Garan-tien. Eine nahtlose, digitale Anbindung bestehender
-            Bank- oder Versicherungsportale sowie von Multi-bank-Plattformen
+            Bank- oder Versicherungsportale sowie von Multibank-Plattformen
             oder ERP-Systemen ist über APIs möglich. Über API oder Webbrowser
             kann auch der Begünstigte Zugriff auf das Zentralregister erhalten.
           </Paragraph>
           <Spacer size="s" />
           <Heading>
-            TreasuryLog sprach mit Ludger Janßen, dem Ge-schäftsführer der DVS
+            TreasuryLog sprach mit Ludger Janßen, dem Geschäftsführer der DVS
           </Heading>
           <Spacer size="s" />
           <Paragraph fontStyle="italic">
-            <b>TreasuryLog: </b> FinTechs sind ja in aller Munde. Mit Ih-rem haben Sie jetzt das
+            <b>TreasuryLog: </b> FinTechs sind ja in aller Munde. Mit Ihrem haben Sie jetzt das
             Aval-Geschäft im Visier.
           </Paragraph>
 
           <Paragraph>
             <b>Janßen: </b> Der Fokus unserer Aktivitäten liegt nicht auf „Tech“. Es geht nicht
             um die Umsetzung einer tech-nischen Idee, sondern um die Lösung
-            eines konkre-ten Problems des täglichen Geschäftslebens: Wie wickle
+            eines konkreten Problems des täglichen Geschäftslebens: Wie wickle
             ich Garantien so effizient und transparent wie möglich ab, während
             alle Transaktionsbeteiligten gleichzeitig eingebunden sind?
           </Paragraph>
@@ -100,25 +100,25 @@ const Article = ({ t }) => {
           </Paragraph>
 
           <Paragraph>
-            <b>Janßen: </b> Wichtig war die juristisch eindeutige Aufar-beitung. Der Zwang zum
+            <b>Janßen: </b> Wichtig war die juristisch eindeutige Aufarbeitung. Der Zwang zum
             papierhaften Ausstellen und Unterschreiben ist in vielen Ländern
-            bereits vor Jahren für den Wirtschaftsverkehr zwischen Unter-nehmen
+            bereits vor Jahren für den Wirtschaftsverkehr zwischen Unternehmen
             eingeschränkt oder abgeschafft worden. So können in Deutschland und
             Österreich Bürgschaften und Garantien für Unternehmen immer auch
-            digital ausgestellt und abgewickelt werden. Bevor wir unse-re
+            digital ausgestellt und abgewickelt werden. Bevor wir unsere
             Dienstleistungen in einem Land anbieten, führen wir immer eine
             gründliche juristische Analyse durch, wobei wir durch internationale
-            Großkanzlei-en unterstützt werden.
+            Großkanzleien unterstützt werden.
           </Paragraph>
           <Spacer size="s" />
           <Paragraph fontStyle="italic">
-            <b>TreasuryLog: </b> Wie sieht der typische Kunde von Digi-tal Vault Services aus?
+            <b>TreasuryLog: </b> Wie sieht der typische Kunde von Digital Vault Services aus?
           </Paragraph>
 
           <Paragraph>
             <b>Janßen: </b> Ganz grundsätzlich steht der Guarantee Vault allen interessierten
             Unternehmen jeglicher Größe und Branchen offen, richtet sich aber
-            natur-gemäß an Firmen mit nennenswertem Avalgeschäft. Als
+            naturgemäß an Firmen mit nennenswertem Avalgeschäft. Als
             Avalbegünstigter bietet die Nutzung des Vaults schon ab einigen
             wenigen Avalen im Jahr erhebliche Vorteile. Wichtig ist mir auch zu
             betonen, dass es sich dabei neben Bankavalen und
@@ -146,18 +146,18 @@ const Article = ({ t }) => {
           </Paragraph>
 
           <Paragraph>
-            <b>Janßen: </b> Es gibt grundsätzlich für keinen der Avalbe-teiligten technische
+            <b>Janßen: </b> Es gibt grundsätzlich für keinen der Avalbeteiligten technische
             Mindeststandards. Zugang zum Guarantee Vault und die Nutzung
-            verschiedener digi-taler Vorteile sind für jeden bereits mittels der
+            verschiedener digitaler Vorteile sind für jeden bereits mittels der
             gängi-gen Webbrowser möglich. Zur Nutzung aller Vorteile des Vaults
             sollte sich ein Avalauftraggeber jedoch di-gital an den Vault
             anbinden. Dazu kann er sich direkt an uns wenden oder an seine
             Kreditversicherer oder Banken – hier sind wir mit vielen
             hinsichtlich Anbindung an den Guarantee Vault im Gespräch bzw.
-            be-reits in Umsetzung und live. Ein Avalbegünstigter braucht
+            bereits in Umsetzung und live. Ein Avalbegünstigter braucht
             zunächst grundsätzlich nichts unternehmen. Er erhält vom Guarantee
             Vault aufgrund der vom Auftraggeber bereitgestellten Informationen
-            automa-tisch den digitalen Zugang zu seinem Aval.
+            automatisch den digitalen Zugang zu seinem Aval.
           </Paragraph>
 
           <ImageComponent src={platformChannels} alt="DVS bietet verschiedene Ein- und Ausgangs-kanäle auf und von  ihrer  Aval-Plattform." />
@@ -173,41 +173,41 @@ const Article = ({ t }) => {
             Die Zusammenarbeit ist für die bei kleinen und mittelgroßen
             Begünstigten zu erwartenden Avalmengen grundsätzlich kostenlos.
             Ehrlicherweise profitiert er von der digitalen Umstellung sofort und
-            ganz erheblich. Avalauftraggeber haben die Möglich-keit, zwischen
+            ganz erheblich. Avalauftraggeber haben die Möglichkeit, zwischen
             einem Starterpaket und drei unter-schiedlichen, mengenabhängig
-            gestaffelten, soge-nannten Bundles, zu wählen. Beim Starterpaket
-            er-folgt der Zugang zunächst per Webbrowser, eine API kann
+            gestaffelten, sogenannten Bundles, zu wählen. Beim Starterpaket
+            erfolgt der Zugang zunächst per Webbrowser, eine API kann
             problemlos über ein Bundle zugebucht werden. Beim Starterpaket fällt
-            je Aval eine einmalige Trans-aktionsgebühr von 14 Euro an, die
-            sämtliche Servi-ces beinhaltet, inklusive künftiger Änderungen,
-            Ver-längerungen oder Rückgabe des Avals. Alle Bundles beinhalten in
-            ihrem Paketpreis neben einem profes-sionellen Onboarding auch die
+            je Aval eine einmalige Transaktionsgebühr von 14 Euro an, die
+            sämtliche Services beinhaltet, inklusive künftiger Änderungen,
+            Verlängerungen oder Rückgabe des Avals. Alle Bundles beinhalten in
+            ihrem Paketpreis neben einem professionellen Onboarding auch die
             kostenlose API-An-bindung an den Vault, inklusive kostenloser
-            Abwick-lung einer fest vereinbarten Avalmenge. Lediglich die Kosten
+            Abwicklung einer fest vereinbarten Avalmenge. Lediglich die Kosten
             der internen API-Erstellung auf Seiten des Auftraggebers kommen noch
             hinzu.
           </Paragraph>
           <Spacer size="s" />
 
           <Paragraph fontStyle="italic">
-            <b>TreasuryLog: </b> Welche Garantieinstrumente und wel-che Märkte bedienen Sie –
+            <b>TreasuryLog: </b> Welche Garantieinstrumente und welche Märkte bedienen Sie –
             weltweit oder im deutsch-sprachigen Raum?
           </Paragraph>
 
           <Paragraph>
             <b>Janßen: </b> Wir decken alle direkten Bürgschaften und Garantien ab, das heißt
             Bankavale, Kautionsversi-cherungen und Konzernbürgschaften. Die
-            deutlich komplexeren und juristisch anspruchsvolleren indi-rekten
+            deutlich komplexeren und juristisch anspruchsvolleren indirekten
             Avale sowie Standby Letters of Credit werden zu einem späteren
-            Zeitpunkt folgen. Nach erfolgrei-cher Einführung im
+            Zeitpunkt folgen. Nach erfolgreicher Einführung im
             deutschsprachigen Raum wird die Plattform weltweit auf andere dafür
             geeignete Regionen ausgeweitet werden. Die erste Expansion nach
-            Frankreich und in die Schweiz ist bereits be-schlossen und für das
-            vierte Quartal 2021 in Vorbe-reitung.
+            Frankreich und in die Schweiz ist bereits beschlossen und für das
+            vierte Quartal 2021 in Vorbereitung.
           </Paragraph>
           <Spacer size="s" />
           <Paragraph fontStyle="italic">
-            <b>TreasuryLog: </b> Welche Sicherheits- und Verfügbarkeits-standards darf man von Ihrer
+            <b>TreasuryLog: </b> Welche Sicherheits- und Verfügbarkeitsstandards darf man von Ihrer
             Plattform erwarten?
           </Paragraph>
 
@@ -215,12 +215,12 @@ const Article = ({ t }) => {
             <b>Janßen: </b> Der Guarantee Vault entspricht höchsten technischen
             Sicherheitsstandards. Dabei garantieren wir die auch von Banken und
             Kreditversicherungen bekannte permanente Verfügbarkeit von
-            mindes-tens 99,5 Prozent. Ohne Gewährleistung dieses Le-vels würden
+            mindestens 99,5 Prozent. Ohne Gewährleistung dieses Levels würden
             wir von den mit uns zusammenarbei-tenden nationalen und
             internationalen Banken und Kreditversicherungen auch gar nicht als
-            Partner ak-zeptiert. Darüber hinaus läuft zurzeit auch unsere
+            Partner akzeptiert. Darüber hinaus läuft zurzeit auch unsere
             Zertifizierung nach ISO 27001, was wiederum die Einhaltung diverser
-            Qualitäts- und Prozessstan-dards sicherstellt.
+            Qualitäts- und Prozessstandards sicherstellt.
           </Paragraph>
 
 
@@ -233,9 +233,9 @@ const Article = ({ t }) => {
             <LinkComponent
               color="blue"
               target="_blank"
-              href="sourceArticleLink"
+              href="https://www.slg.co.at/publikationen/treasurylog/"
             >
-              {t("sourceArticleLink")}
+              www.slg.co.at
             </LinkComponent>
           </Paragraph>
 
