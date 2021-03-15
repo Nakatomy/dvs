@@ -77,7 +77,10 @@
     /* margin: 0 auto; */
 }
 
-
+.container--gridArticle {
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
 
 
 @media screen and (max-width: 945px) {
@@ -120,7 +123,9 @@
 }
 
 
-
+.container--fullWidth{
+    width: 100%;
+}
 
 .container--gridCards {
     display: grid;
@@ -142,3 +147,4 @@
    
      
 }
+

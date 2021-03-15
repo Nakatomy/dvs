@@ -54,3 +54,15 @@
  color: #fff;
  background-color: rgba(0, 21, 64, .8);
 }
+
+.paragraph--italic {
+    font-style: italic;
+}
+
+.paragraph--bold {
+    font-weight: 500;
+}
+
+.paragraph--marginB12 {
+    margin-bottom: 12px;
+}

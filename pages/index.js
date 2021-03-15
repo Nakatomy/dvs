@@ -31,6 +31,7 @@ import servicesDe from "images/services-life-cycle-de.svg";
 import restApiImg from "images/solution-rest-api.svg";
 import legalImg from "images/legal-feather.jpg";
 import whitepaper from "images/whitepaper/revolutionising-guarantees.png";
+import fullyDigitizedGuarantees from "images/fully-digitized-guarantees/fully-digitized-guarantees-cover.png";
 import PropTypes from "prop-types";
 import { withTranslation } from "../i18n";
 import { useState, useEffect } from "react";
@@ -397,6 +398,23 @@ function HomePage({ t }) {
       </Section>
       <Section id="news">
         <Container display="grid" width="full-width" height="minHeight">
+
+          <GridItem>
+            <ImageComponent src={fullyDigitizedGuarantees} imgType="desktop"></ImageComponent>
+          </GridItem>
+          <GridItem>
+            <ImageComponent src={fullyDigitizedGuarantees} imgType="mobile"></ImageComponent>
+            <Title>{t("newsTitle4")}</Title>
+
+            <Paragraph>{t("newsParagraph8")}</Paragraph>
+            <Paragraph>{t("newsParagraph9")}</Paragraph>
+            <Paragraph>{t("newsParagraph10")}</Paragraph>
+            <ButtonLink linkText={t("ButtonNameReadArticle")} href="/news/fully-digitized-guarantees" />
+
+
+          </GridItem>
+
+
           <GridItem>
             <YoutubeVideo src="https://www.youtube.com/embed/_X0rziclDpI?start=385" videoType="desktop" />
           </GridItem>
