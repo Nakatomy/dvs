@@ -18,7 +18,7 @@ import { withTranslation } from "i18n";
 
 const FAQS = [
     {
-        title: 'Who/What is Digital Vault Services??',
+        title: 'Who/What is Digital Vault Services?',
         content: () => (
             <>
                 Digital Vault Services GmbH is a SaaS provider, founded in 2019 by the worldwide active Trade Finance IT-provider, GlobalTrade Corporation, Toronto/Canada and the owner-operated Lindner Group KG, Arnstorf/Germany.
